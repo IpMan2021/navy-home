@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Indiana State Archives Military Records - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Indiana State Archives Military Records",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/736x/2c/03/e8/2c03e8136ee03fc300e6bf8d894cbacd.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=indiana+state+archives+military+records",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Indiana State Archives Military Records</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">More recent records often accessed to provide proof of service for benefits loans and military funerals. Card file of Indiana Civil War Volunteers. The Indiana State Archives houses census military and federal land records. <br>				
+			</p>
+										<a class="badge badge-light" href="/dod-medical-term.html">dod medical term</a>
+											<a class="badge badge-dark" href="/dodi-140025-dod-civilian-personnel-management-system.html">dodi 140025 dod civilian personnel management system</a>
+											<a class="badge badge-info" href="/does-boscovs-offer-a-military-discount.html">does boscovs offer a military discount</a>
+											<a class="badge badge-info" href="/dod-topline-budget-2020.html">dod topline budget 2020</a>
+											<a class="badge badge-primary" href="/dod-meritorious-civilian-service-award.html">dod meritorious civilian service award</a>
+											<a class="badge badge-primary" href="/does-active-duty-military-pay-california-state-taxes.html">does active duty military pay california state taxes</a>
+											<a class="badge badge-dark" href="/does-home-depot-give-military-discount-online.html">does home depot give military discount online</a>
+											<a class="badge badge-light" href="/dod-medical-jobs.html">dod medical jobs</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you have come to pay a visit to the ideal blog.  Our site provides you with suggestions for seeing the highest quality video and picture content, search and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this video that you view.  You can also contribute to supporting this website by sharing videos and images that you like on this blog on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/3d/a9/913da9c324cbefbc12c9117d4bed86c9.jpg" data-lightbox="roadtrip" data-title="Company A 9th Indiana Infantry Photograph By Matthew Brady Courtesy Of U S National Archives In 2020 Civil War Monuments Civil War Photography American Civil War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/3d/a9/913da9c324cbefbc12c9117d4bed86c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz4DhHdMng6e6BtbKIy-ZJuosPg1h9AiAg4A';" alt="Company A 9th Indiana Infantry Photograph By Matthew Brady Courtesy Of U S National Archives In 2020 Civil War Monuments Civil War Photography American Civil War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Company A 9th Indiana Infantry Photograph By Matthew Brady Courtesy Of U S National Archives In 2020 Civil War Monuments Civil War Photography American Civil War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/32/9e/3b329ef1773ea3071f793d073a364447.jpg" data-lightbox="roadtrip" data-title="The 44th Indiana Infantry An American Civil War Regiment Was Organized At Fort Wayne Indiana On October American Civil War Civil War Civil War Photography">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/32/9e/3b329ef1773ea3071f793d073a364447.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUE6gg2GK3LzShapdUHndZzn4tOyFqGIg5Gw';" alt="The 44th Indiana Infantry An American Civil War Regiment Was Organized At Fort Wayne Indiana On October American Civil War Civil War Civil War Photography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 44th Indiana Infantry An American Civil War Regiment Was Organized At Fort Wayne Indiana On October American Civil War Civil War Civil War Photography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2c/03/e8/2c03e8136ee03fc300e6bf8d894cbacd.jpg" data-lightbox="roadtrip" data-title="Teachers In The Family Tree Look For Teacher Licenses Learn The Differences Between Those Issued By Genealogy History Family Tree Genealogy Family Genealogy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2c/03/e8/2c03e8136ee03fc300e6bf8d894cbacd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs46lCXbVzU8PuPs7_Jn9zQUup4dppPNrINw';" alt="Teachers In The Family Tree Look For Teacher Licenses Learn The Differences Between Those Issued By Genealogy History Family Tree Genealogy Family Genealogy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Teachers In The Family Tree Look For Teacher Licenses Learn The Differences Between Those Issued By Genealogy History Family Tree Genealogy Family Genealogy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/24/7a/c2247a5baf3f108588259f8d37b40cfb.jpg" data-lightbox="roadtrip" data-title="44th Indiana Infantry Credit For Photo Still Picture Branch Nwdns National Archives Civil War Photos American Civil War Civil War History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/24/7a/c2247a5baf3f108588259f8d37b40cfb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsnZsGrPD7ANV61WuufH7s8Vons70q9gX5bA';" alt="44th Indiana Infantry Credit For Photo Still Picture Branch Nwdns National Archives Civil War Photos American Civil War Civil War History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">44th Indiana Infantry Credit For Photo Still Picture Branch Nwdns National Archives Civil War Photos American Civil War Civil War History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/a4/c2/46a4c2294a039fc0c910949153dd7af1.jpg" data-lightbox="roadtrip" data-title="Draft Poster Civil War Photos Civil War Art Civil War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/a4/c2/46a4c2294a039fc0c910949153dd7af1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBCj8eT7_i_5oz7iZMWHxhBOpv0nX-4p1wSw';" alt="Draft Poster Civil War Photos Civil War Art Civil War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Draft Poster Civil War Photos Civil War Art Civil War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/ef/aa/30efaa3dc8369c76a7dad79798683fbe.jpg" data-lightbox="roadtrip" data-title="Pin On I Like This">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/ef/aa/30efaa3dc8369c76a7dad79798683fbe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpvSsBKM8aUn6abipo7ibks-JpgOjs33MBvw';" alt="Pin On I Like This">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On I Like This</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/02/4a/a6/024aa6b5f4de014687040c937b3e3db2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpvSsBKM8aUn6abipo7ibks-JpgOjs33MBvw';" alt="Pin On I Like This">
+										<div class="card-body">
+						<h3 class="h5"><b>Military records can give birth dates marriage dates death dates spouses and childrens names and localities of residence throughout the life of the family.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Indiana state archives military records</strong>. 
+								
+																	Civil War Military service records Aerial Photographs State hospitals Correctional facilities State schools and homes Naturalizations First Land sales and survey records State Agencies General Assembly Governors papers Supreme and Appellate Courts County Records Hoosier Homestead Awards Dissolved corporations State Fair. 
+																	Such records are available as online and offline resources for Indiana genealogy. 
+																	Wayne Vincennes and LaPorte-Winamac are online. 
+																	Alphabetical index of officers commissioned giving name rank and unit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This Collection This data is published by Indiana State Digital Archives. 
+																	The Friends of the Indiana State Archives volunteers have been hard at work for more than twenty years creating indexes to many of the states records. 
+																	The NPRC houses many types of records including Official Military Personnel Files OMPF. 
+																	Indiana State Archives holds field notes and original plats made by federal surveyors and land office tract books recording individual purchases from the federal land office. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Other records have been made available online through the efforts of. 
+																	Patrons can search abbreviated versions. 
+																	They also have original state and county government records from all Indiana counties. 
+																	Web Search Ancestry Web Search makes it easy to find records from content. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Plante Resource Information The item Military service records at the National Archives compiled by Trevor K. 
+																	State-level records remain some of which are available in our Edward Jones Research Center. 
+																	Military service records from WWI - present are held in the National Military Personnel Records Center NPRC in St. 
+																	Military service records at the National Archives compiled by Trevor K. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can find veterans military service records from World War I to the present from the National Personnel Records Center NPRC. 
+																	Destroyed approximately 80 of Army Personnel discharge records from 1912 through 1960 complicating research on the service of WWI Veterans. 
+																	In 1973 a fire at the National Personnel Records Center in St. 
+																	Since before statehood in 1816 Indiana the Crossroads of America has been home to thousands of settlers and immigrants. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Research by Branch Army Navy Marine Corps Air Force Coast Guard Research by War or Conflict The National Archives holds Federal military service records from the Revolutionary War to 1912 in the National Archives in Washington DC. 
+																	To learn more about these records please refer to the sources website. 
+																	The Indiana State Archives collects records of historical value from all branches of Indiana state and local government including governmental history census and naturalization records for families selected medical military and criminal records records of land ownership maps blueprints and photographs. 
+																	The Archives has a growing online digital collection that contains death records military records naturalization records and institutional records. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Indiana State Archives holds the following military records of interest to the genealogist. 
+																	Indiana State Militia 181251. 
+																	You can often find additional information by visiting the source website including references publication information comments historical context and even images. 
+																	State Records from probate information to surname lists state census information private manuscripts newspapers military or veterans information marriage details maps land records genealogical folders estate information deeds death records cemetery information birth certificates and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These files can include the Report of Separation DD Form 214 and show a veterans service history which may include. 
+																	The Indiana Archives and Records Administration assists State and local governments in the cost-effective efficient and secure management of governmental records by providing services throughout the life cycle of records including creation use records inventory and scheduling storage and disposition. 
+																	Of the six federal land offices in Indiana the tract book records of three Ft. 
+																	Many military records are available at the Family History Library the National Archives and the Indiana State Archives in Indianapolis. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military Records at the Indiana State Archives The Indiana State Archives holds records ranging from the territorial period up to 1988. 
+																	The State Archives maintains an alphabetical list of all the soldiers who served in Indiana volunteer regiments infantry and cavalry and artillery batteries. 
+																	The Indiana State Library provides an excellent library of genealogy records including. 
+																	Family histories indexes to records how-to books cemetery transcriptions family history magazines and more as well as microfilmed federal census records Indiana county records passenger lists and military pension information. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Plante represents a specific individual material embodiment of a distinct intellectual or artistic creation found in Indiana State Library. 
+																	Find your Ancestors using the Indiana State Digital Archive Search. 
+																	Statewide Military Records 32nd annual encampment Grand Army of the Republic Indiana Department FamilySearch Books A dictionary of all officers who have been commissioned in the Army of the United States Ancestry American Civil War General Officers Ancestry. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/cb/d4/a3cbd49d20f34ed380ba09c5c6bb834d.png" data-lightbox="roadtrip" data-title="Official Roster Of The Soldiers Of The State Of Ohio In The War Of The Rebellion 1861 1866 Ohio Roster Commission Free Download Borrow And Streaming I In 2020">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/cb/d4/a3cbd49d20f34ed380ba09c5c6bb834d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp-x1LNV12oBF43eklGH7jfYhkQpNiTer15Q';" alt="Official Roster Of The Soldiers Of The State Of Ohio In The War Of The Rebellion 1861 1866 Ohio Roster Commission Free Download Borrow And Streaming I In 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Official Roster Of The Soldiers Of The State Of Ohio In The War Of The Rebellion 1861 1866 Ohio Roster Commission Free Download Borrow And Streaming I In 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/e7/cf/abe7cf9b7174a1c013dd09dc3141264a.jpg" data-lightbox="roadtrip" data-title="Indiana Genealogical Society Blog Genealogy Genealogy History Family Genealogy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/e7/cf/abe7cf9b7174a1c013dd09dc3141264a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtxCPBfHlo3n07XFVsVJa2NZZPIstnI7z_vQ';" alt="Indiana Genealogical Society Blog Genealogy Genealogy History Family Genealogy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indiana Genealogical Society Blog Genealogy Genealogy History Family Genealogy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/76/2f/50762fa56aa095e8d87e2def87999dee.jpg" data-lightbox="roadtrip" data-title="Copies Of Military Records Familytree Com The Spanish American War American War American Civil War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/76/2f/50762fa56aa095e8d87e2def87999dee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp3ESlGtTjIW4P0JkSXa8p8CNrUwuPB1zYEw';" alt="Copies Of Military Records Familytree Com The Spanish American War American War American Civil War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Copies Of Military Records Familytree Com The Spanish American War American War American Civil War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/71/6b/23716b87f1d141b93b6bc69d1f4be6fd.jpg" data-lightbox="roadtrip" data-title="Indiana Birth Certificates 1907 1940 Birth Certificate Indiana State Indiana">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/71/6b/23716b87f1d141b93b6bc69d1f4be6fd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8AxSBaAPiN1aHD873oGB2lBbeWmwknBWcKQ';" alt="Indiana Birth Certificates 1907 1940 Birth Certificate Indiana State Indiana">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indiana Birth Certificates 1907 1940 Birth Certificate Indiana State Indiana</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/3e/06/263e065aab4410963c44989939347471.jpg" data-lightbox="roadtrip" data-title="Combination Atlas Map Of Miami County Indiana Miami County Indiana Atlas Map">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/3e/06/263e065aab4410963c44989939347471.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr8D2RcPyEw9aw07uXkBJmmLYyOFlypy_f6Q';" alt="Combination Atlas Map Of Miami County Indiana Miami County Indiana Atlas Map">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Combination Atlas Map Of Miami County Indiana Miami County Indiana Atlas Map</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/ac/0d/f5ac0d8a50d1642158870ef025368d13.jpg" data-lightbox="roadtrip" data-title="160th Indiana Volunteer Infantry Assorted Images From Ihs Collections Clarksville Indiana Elkhart Indiana Madison Indiana">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/ac/0d/f5ac0d8a50d1642158870ef025368d13.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs3RGOq5Osw4E2v4IcNfGrCiGucg4BvqTY1A';" alt="160th Indiana Volunteer Infantry Assorted Images From Ihs Collections Clarksville Indiana Elkhart Indiana Madison Indiana">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">160th Indiana Volunteer Infantry Assorted Images From Ihs Collections Clarksville Indiana Elkhart Indiana Madison Indiana</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/99/a5/3599a51825e203bdc688eff3506c8158.jpg" data-lightbox="roadtrip" data-title="Oldham County Military Records History War Military Records Civil War Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/99/a5/3599a51825e203bdc688eff3506c8158.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7YHNEp9M1UvZMN8f83oil442DqyL3daJYHQ';" alt="Oldham County Military Records History War Military Records Civil War Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oldham County Military Records History War Military Records Civil War Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/97/20/3e97206f5b96a5b2321f257d7ce420d9.png" data-lightbox="roadtrip" data-title="History Of Wayne County Indiana Together With Sketches Of Its Cities Villages And Towns Inter State Publishing Comp Free Text Wayne County Family History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/97/20/3e97206f5b96a5b2321f257d7ce420d9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRowNLJ2m9axtyUE3t1PXBAEbCaAVXI028vrA';" alt="History Of Wayne County Indiana Together With Sketches Of Its Cities Villages And Towns Inter State Publishing Comp Free Text Wayne County Family History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">History Of Wayne County Indiana Together With Sketches Of Its Cities Villages And Towns Inter State Publishing Comp Free Text Wayne County Family History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/4a/a6/024aa6b5f4de014687040c937b3e3db2.jpg" data-lightbox="roadtrip" data-title="Indiana Genealogical Society Blog Indiana State Soldiers Home Bill Of Fare 1901 Indiana State Certs Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/4a/a6/024aa6b5f4de014687040c937b3e3db2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKXxQpIeCaWTr2_8yV-9VbbNCKSQH4RMiVzg';" alt="Indiana Genealogical Society Blog Indiana State Soldiers Home Bill Of Fare 1901 Indiana State Certs Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indiana Genealogical Society Blog Indiana State Soldiers Home Bill Of Fare 1901 Indiana State Certs Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/39/10/47/391047a2f5b218934683681b11caa722.jpg" data-lightbox="roadtrip" data-title="Combination Atlas Map Of Miami County Indiana Kingman Brothers Free Download Borrow And Streaming Internet Archive Miami County Atlas Map Indiana">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/39/10/47/391047a2f5b218934683681b11caa722.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX9MobXe6t2JN6bqL9d8NN63svIbgMd-CxAg';" alt="Combination Atlas Map Of Miami County Indiana Kingman Brothers Free Download Borrow And Streaming Internet Archive Miami County Atlas Map Indiana">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Combination Atlas Map Of Miami County Indiana Kingman Brothers Free Download Borrow And Streaming Internet Archive Miami County Atlas Map Indiana</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/bc/2a/7dbc2a3cff3f6388d473e8a0b6e4784a.jpg" data-lightbox="roadtrip" data-title="Request Military Service Records Military Records Military Service Vietnam Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/bc/2a/7dbc2a3cff3f6388d473e8a0b6e4784a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK5-lzlpRIvQME-2RoDyw74dNSe8W9uY3XUg';" alt="Request Military Service Records Military Records Military Service Vietnam Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Request Military Service Records Military Records Military Service Vietnam Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/cc/7c/32cc7ccdf378ac5badc05355f7397ead.png" data-lightbox="roadtrip" data-title="Pin On Family History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/cc/7c/32cc7ccdf378ac5badc05355f7397ead.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI5BZyt3hn--d6MDynGbRT0TpxGXcbHoBUJw';" alt="Pin On Family History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Family History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5c/e0/d2/5ce0d27846fbf078826b20be153e855a.gif" data-lightbox="roadtrip" data-title="Pin On American Civil War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5c/e0/d2/5ce0d27846fbf078826b20be153e855a.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS34nDBN3tNrkQrgQksQybtrFsBn39W3xIDGw';" alt="Pin On American Civil War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On American Civil War</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/genuine-us-army-boonie-hat.html">Genuine Us Army Boonie Hat</a></li>
+													<li class="list-group-item"><a href="/gs-civilian-leave-policy.html">Gs Civilian Leave Policy</a></li>
+													<li class="list-group-item"><a href="/free-online-tutoring-for-veterans.html">Free Online Tutoring For Veterans</a></li>
+													<li class="list-group-item"><a href="/h-r-block-sw-military-dr-san-antonio-tx.html">H R Block Sw Military Dr San Antonio Tx</a></li>
+													<li class="list-group-item"><a href="/has-the-2020-defense-budget-been-passed.html">Has The 2020 Defense Budget Been Passed</a></li>
+													<li class="list-group-item"><a href="/free-tutoring-for-military-dependents.html">Free Tutoring For Military Dependents</a></li>
+													<li class="list-group-item"><a href="/free-online-veterans-day-cards.html">Free Online Veterans Day Cards</a></li>
+													<li class="list-group-item"><a href="/hair-length-army-regulations.html">Hair Length Army Regulations</a></li>
+													<li class="list-group-item"><a href="/hari-army.html">Hari Army</a></li>
+													<li class="list-group-item"><a href="/has-the-dod-2020-budget-passed.html">Has The Dod 2020 Budget Passed</a></li>
+													<li class="list-group-item"><a href="/gap-year-ncaa-eligibility.html">Gap Year Ncaa Eligibility</a></li>
+													<li class="list-group-item"><a href="/gs-civilian-rank-equivalent.html">Gs Civilian Rank Equivalent</a></li>
+													<li class="list-group-item"><a href="/general-staff-department-of-the-korean-peoples-army.html">General Staff Department Of The Korean Peoples Army</a></li>
+													<li class="list-group-item"><a href="/headquarters-air-force-staff-directory.html">Headquarters Air Force Staff Directory</a></li>
+													<li class="list-group-item"><a href="/has-the-defense-budget-been-passed-for-2021.html">Has The Defense Budget Been Passed For 2021</a></li>
+													<li class="list-group-item"><a href="/german-defence-budget-2021.html">German Defence Budget 2021</a></li>
+													<li class="list-group-item"><a href="/h-and-r-block-military-spouse-training.html">H And R Block Military Spouse Training</a></li>
+													<li class="list-group-item"><a href="/get-military-discount-home-depot-online.html">Get Military Discount Home Depot Online</a></li>
+													<li class="list-group-item"><a href="/grants-for-spouses-of-disabled-veterans.html">Grants For Spouses Of Disabled Veterans</a></li>
+													<li class="list-group-item"><a href="/harish-masand-air-force.html">Harish Masand Air Force</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

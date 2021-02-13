@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Family Resource Centre Canada - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Family Resource Centre Canada",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/600x315/24/9c/e1/249ce13ad0a2d2a056482f50e5a0af59.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+family+resource+centre+canada",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Family Resource Centre Canada</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">As outlined in the 2013 ombudsman report On the Homefront. Sajjan will make an announcement at the Military Family Resource Centre in Winnipeg. However due to COVID-19 and construction taking place the Uplands Military Community Centre at 330 Croil Private is closed. <br>				
+			</p>
+										<a class="badge badge-info" href="/salvation-army-financial-counseling.html">salvation army financial counseling</a>
+											<a class="badge badge-dark" href="/salvation-army-family-services-fort-mcmurray.html">salvation army family services fort mcmurray</a>
+											<a class="badge badge-primary" href="/scholarships-for-korean-war-veterans-grandchildren.html">scholarships for korean war veterans grandchildren</a>
+											<a class="badge badge-primary" href="/soldier-support-center-legal-office.html">soldier support center legal office</a>
+											<a class="badge badge-warning" href="/salvation-army-lesson-ideas.html">salvation army lesson ideas</a>
+											<a class="badge badge-primary" href="/sao-hollow-realization-the-robot-army.html">sao hollow realization the robot army</a>
+											<a class="badge badge-success" href="/scholarships-and-grants-for-dependents-of-veterans.html">scholarships and grants for dependents of veterans</a>
+											<a class="badge badge-light" href="/shilo-military-family-resource-centre-manitoba.html">shilo military family resource centre manitoba</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to visit the ideal blog.  Our site gives you hints for viewing the highest quality video and picture content, hunt and locate more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, so we recommend this video for you to view.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/01/95/080195aea18e4d86ce1851c829b4a27b.jpg" data-lightbox="roadtrip" data-title="Marking National Child Day On November 20 Canadian Military Family Magazine Military Kids Child Day Family Magazine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/01/95/080195aea18e4d86ce1851c829b4a27b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJqRBvDtHH24a6U3bUSdfFqSLox35aJltIYg';" alt="Marking National Child Day On November 20 Canadian Military Family Magazine Military Kids Child Day Family Magazine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marking National Child Day On November 20 Canadian Military Family Magazine Military Kids Child Day Family Magazine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/cf/8d/85cf8d59a56af7ff15300928f1af1ab9.png" data-lightbox="roadtrip" data-title="Cmfmag Team Favourite Holiday Music Stations Canadian Military Family Magazine Holiday Music Music Station Christmas Music Radio">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/cf/8d/85cf8d59a56af7ff15300928f1af1ab9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmOfsN6LLdjyHfux4krc8sHChbGQ8l8q6enw';" alt="Cmfmag Team Favourite Holiday Music Stations Canadian Military Family Magazine Holiday Music Music Station Christmas Music Radio">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cmfmag Team Favourite Holiday Music Stations Canadian Military Family Magazine Holiday Music Music Station Christmas Music Radio</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/3b/61/c53b61c00d43fe6816491e4d5a52bf6e.jpg" data-lightbox="roadtrip" data-title="Apps To Keep You Feeling Festive Canadian Military Family Magazine Feeling Festive How Are You Feeling Christmas Spirit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/3b/61/c53b61c00d43fe6816491e4d5a52bf6e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiMl-oG5jGH9CHnlDLbu4T76hxMOf6c_T8-Q';" alt="Apps To Keep You Feeling Festive Canadian Military Family Magazine Feeling Festive How Are You Feeling Christmas Spirit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Apps To Keep You Feeling Festive Canadian Military Family Magazine Feeling Festive How Are You Feeling Christmas Spirit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/28/2b/7f282bf29b7c02ea96f2ff98eddb3a6b.jpg" data-lightbox="roadtrip" data-title="Insigne De Le Centre De Parachutisme Canadien Military Flag Canadian Army Military Insignia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/28/2b/7f282bf29b7c02ea96f2ff98eddb3a6b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDFgj7n4jSTLw7LattWKO2NvJPOhgx6Ey_6w';" alt="Insigne De Le Centre De Parachutisme Canadien Military Flag Canadian Army Military Insignia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Insigne De Le Centre De Parachutisme Canadien Military Flag Canadian Army Military Insignia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/94/2c/03942c66f77c21bc318792b07f664536.jpg" data-lightbox="roadtrip" data-title="Vigilamus Pro Te We Stand On Guard For Thee Canadian Forces With Tuesday At Canadian Forces Recruiti Canadian Forces Wounded Warrior Canadian Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/94/2c/03942c66f77c21bc318792b07f664536.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Cd_ys3z_BxN6vICjEbU7bhkSxQ9qbsYEDQ';" alt="Vigilamus Pro Te We Stand On Guard For Thee Canadian Forces With Tuesday At Canadian Forces Recruiti Canadian Forces Wounded Warrior Canadian Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vigilamus Pro Te We Stand On Guard For Thee Canadian Forces With Tuesday At Canadian Forces Recruiti Canadian Forces Wounded Warrior Canadian Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/9d/3a/739d3adfd32886c96d3ab125143dc81c.jpg" data-lightbox="roadtrip" data-title="One Is Not Amused Awkward Royal Family Photos Royal Family Family Photos Photo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/9d/3a/739d3adfd32886c96d3ab125143dc81c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1vGkYxGv_AmFADMNb8Ka5fDjObW1pGIl7kQ';" alt="One Is Not Amused Awkward Royal Family Photos Royal Family Family Photos Photo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">One Is Not Amused Awkward Royal Family Photos Royal Family Family Photos Photo</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/600x315/24/9c/e1/249ce13ad0a2d2a056482f50e5a0af59.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1vGkYxGv_AmFADMNb8Ka5fDjObW1pGIl7kQ';" alt="One Is Not Amused Awkward Royal Family Photos Royal Family Family Photos Photo">
+										<div class="card-body">
+						<h3 class="h5"><b>The pilot will include access to seven Military Family Resource Centre MFRC sites across the country for a period of two years.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military family resource centre canada</strong>. 
+								
+																	Dedicated staff are frontline service providers responsible for connecting military families to a wide range of programs and services. 
+																	Esquimalt Military Family Resource Centre MFRC Nonprofit Organization. 
+																	Your Military Family Resource Centre is well aware of the challenges liv. 
+																	The Program is delivered locally by Military Family Resource Centres MFRCs in 32 Canadian Armed Forces communities in Canada along with service points in the United States and Europe. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Trenton MFRC is dedicated to supporting enriching and enhancing the lives of our military families. 
+																	Our business hours are 800 am to 400 pm. 
+																	Military Family Resource Centres are family governed federally funded provincially or federally incorporated not-for-profit organizations with charitable status. 
+																	New Features Coming Soon. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Calgary Military Family Resource Centre. 
+																	The HR MFRC offers a variety of programs and services for Francophone military families integrating into the community. 
+																	There are currently 32 MFRCs across Canada five in the United States and six overseas. 
+																	Second Language Services for mil. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Comments may be moderated at the Centres discretion. 
+																	MFRCs promote and facilitate community-based services and programs to enhance the well-being of military families. 
+																	Child Care Services Where every military family feels welcome and supported. 
+																	Military Family Resource Centres MFRC MFRCs are essentially the heart of their military communities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Toronto Military Family Resource Centre Toronto MFRC provides support to military and veteran families throughout the GTA. 
+																	The MFRC-NCR team are continuing to support the National Capital Region military family community throughout the pandemic. 
+																	Services Provided by Military Family Resource Centres. 
+																	Deployment is one of the most significant experiences of being in a military family. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Welcome to your home-away-from-home. 
+																	Everywhere military families are posted MFRCs deliver unique local services as well as a range of core programs. 
+																	Military Family Resource Centre Located on Canadian Armed Forces CAF bases across the country Military Family Resource Centers MFRC provide support to the parents or the spouses and children of CAF members. 
+																	January 23 2018 Winnipeg Manitoba National Defence Canadian Armed Forces Sherry Romanado Parliamentary Secretary to the Minister of Veterans Affairs and Associate Minister of National Defence on behalf of Defence Minister Harjit S. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Despite all this military families are tremendously proud to serve and make their family situations work amidst the challenges. 
+																	Their goal is to build strong resilient individuals families and communities. 
+																	Esquimalt MFRC is an independent non-profit organization providing programs services to military members and military families at CFB Esquimalt. 
+																	Assessing the Well-Being of Canadas Military Families in the New Millennium the primary challenges associated with being a military family member typically relate to relocations child care health care spousal employment housing and spousalfamily support while CF members. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With a network of 500 member agencies and thousands of frontline family service practitioners across Canada we are committed to providing leadership and support in the campaign for Canadas children. 
+																	Donate To This Charity. 
+																	As such Military Family Services invests in front-line services for families through Military Family Resource Centres which are located on bases wings and units across Canada. 
+																	See more of Military Family Resource Centre- National Capital Region MFRC-NCR on Facebook. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These sites are located in Victoria Valcartier Edmonton Trenton Shilo Halifax and North Bay. 
+																	The Mainland BC Military Family Resource Centre MFRC provides members of Canadian Armed Forces families with the resources and support they need to meet these challenges and thrive. 
+																	The Borden Military Family Resource Centre The Borden Family Resource Centre is a non-profit charitable community responsive organization which supports the mission of the Canadian Forces by providing a comprehensive range of support services and resources geared to fostering and enhancing ones quality of life. 
+																	Families Canada is the national association of family support centres. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	4 The Toronto MFRC is dedicated to serving and supporting military families across the GTA. 
+																	Canadian Military Family Magazine. 
+																	Located on Canadian Armed Forces Bases and Wings local Military Family Resource Centres MFRCs are the hub of military communities. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/29/cc/0129cccd0e5ebdaeb16598d20072e81b.jpg" data-lightbox="roadtrip" data-title="Pin On Social Work">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/29/cc/0129cccd0e5ebdaeb16598d20072e81b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtAnoI62t_7UGm-gTPTDfgtDGF2-2fT_jw-w';" alt="Pin On Social Work">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Social Work</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/85/08/8685080cb4e7ad00c06eb129b50adcff.jpg" data-lightbox="roadtrip" data-title="100 Images From De Afghanistan Day 87 Jour 87 Canadian Military Canadian Army Canadian Armed Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/85/08/8685080cb4e7ad00c06eb129b50adcff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyC-zCpZA1edJjT9CU-5zcajC1kXRsA3eUTw';" alt="100 Images From De Afghanistan Day 87 Jour 87 Canadian Military Canadian Army Canadian Armed Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">100 Images From De Afghanistan Day 87 Jour 87 Canadian Military Canadian Army Canadian Armed Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/52/1a/14/521a14e1e3b2a7af7af982ee87d8baca.jpg" data-lightbox="roadtrip" data-title="Military Spouse Career Training And Employer Cafe Canadian Military Family Magazine In 2020 Military Spouse Career Military Spouse Career Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/52/1a/14/521a14e1e3b2a7af7af982ee87d8baca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNp17FYSkNym6vroKpT25PC1aNwXVqo61pzg';" alt="Military Spouse Career Training And Employer Cafe Canadian Military Family Magazine In 2020 Military Spouse Career Military Spouse Career Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Career Training And Employer Cafe Canadian Military Family Magazine In 2020 Military Spouse Career Military Spouse Career Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/a7/27/4ba727b7458dd6d337d206878edfe554.jpg" data-lightbox="roadtrip" data-title="Royal Military College Of Canada Cool Photos House Styles Photo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/a7/27/4ba727b7458dd6d337d206878edfe554.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSRah_VFytjf_c3o6Ma5XaTv_deOKa9bPZEg';" alt="Royal Military College Of Canada Cool Photos House Styles Photo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Royal Military College Of Canada Cool Photos House Styles Photo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/3f/43/bb3f43bc74b3a8905696611d6c4c8d74.jpg" data-lightbox="roadtrip" data-title="The Emotional Lifecycle Of Deployment Deployment Emotions Marriage And Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/3f/43/bb3f43bc74b3a8905696611d6c4c8d74.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdPPzPVwyCmpweiuyF9EgGsUlRLQCO-7999g';" alt="The Emotional Lifecycle Of Deployment Deployment Emotions Marriage And Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Emotional Lifecycle Of Deployment Deployment Emotions Marriage And Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/b8/40/13b84022899c43ec2e35017c5b10040d.jpg" data-lightbox="roadtrip" data-title="Canadian Military Flag Officers Chart Military Ranks Canadian Military Canadian Armed Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/b8/40/13b84022899c43ec2e35017c5b10040d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-bfyJgmCJZRgeduu8HT9q4mPT1Hr-iuo9NQ';" alt="Canadian Military Flag Officers Chart Military Ranks Canadian Military Canadian Armed Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Canadian Military Flag Officers Chart Military Ranks Canadian Military Canadian Armed Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/d9/a2/a9d9a20c88685976bde31033d2bb7500.jpg" data-lightbox="roadtrip" data-title="Charles And Camilla Officially Kick Off Whistlestop Tour Of Canada Prince Charles And Camilla Duchess Of Cornwall Prince Charles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/d9/a2/a9d9a20c88685976bde31033d2bb7500.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYvr8HsFdN7P6ln30unlppv0DxPer-xpxE4g';" alt="Charles And Camilla Officially Kick Off Whistlestop Tour Of Canada Prince Charles And Camilla Duchess Of Cornwall Prince Charles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Charles And Camilla Officially Kick Off Whistlestop Tour Of Canada Prince Charles And Camilla Duchess Of Cornwall Prince Charles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/13/3d/81133da74324b0e0ba70b67a49f478a9.jpg" data-lightbox="roadtrip" data-title="Pin On Care Of Our Own">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/13/3d/81133da74324b0e0ba70b67a49f478a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEtyu4tHCns2-pDCf4mS7Y-c6-yKqy0WwLHg';" alt="Pin On Care Of Our Own">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Care Of Our Own</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/1c/d6/c81cd694b9210ca4ae3db3ff9f5ef985.jpg" data-lightbox="roadtrip" data-title="She Looks Gorgeous Here Camilla Duchess Of Cornwall Duchess Of Cornwall Prince Charles And Camilla">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/1c/d6/c81cd694b9210ca4ae3db3ff9f5ef985.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIOWyyKrD-np8l6P-5ER02gFlwxvfV1ShlBw';" alt="She Looks Gorgeous Here Camilla Duchess Of Cornwall Duchess Of Cornwall Prince Charles And Camilla">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">She Looks Gorgeous Here Camilla Duchess Of Cornwall Duchess Of Cornwall Prince Charles And Camilla</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/24/9c/e1/249ce13ad0a2d2a056482f50e5a0af59.jpg" data-lightbox="roadtrip" data-title="Pin On Care Of Our Own">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/24/9c/e1/249ce13ad0a2d2a056482f50e5a0af59.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLDbumyjIxSHqng4SZaNHDKoOiVGcMRlQX7w';" alt="Pin On Care Of Our Own">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Care Of Our Own</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ff/68/f5/ff68f54b21e7f7cf4a8515060947581d--troops-support.jpg" data-lightbox="roadtrip" data-title="Support Out Troops Merchandise Available From The Gmfrc Supportive Merchandise Shopping">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ff/68/f5/ff68f54b21e7f7cf4a8515060947581d--troops-support.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS04iLe3RwsLKJIq-LJJrmavh-r54zu4QExgw';" alt="Support Out Troops Merchandise Available From The Gmfrc Supportive Merchandise Shopping">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Support Out Troops Merchandise Available From The Gmfrc Supportive Merchandise Shopping</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/c1/09/79c109823ba8534ecb7672c66a5e2dad.jpg" data-lightbox="roadtrip" data-title="Rememberance Day Ceremony In St John S Nl Newfoundland And Labrador Newfoundland Most Beautiful Places">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/c1/09/79c109823ba8534ecb7672c66a5e2dad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_gwvwLfp0DaSYqGmEjKXnW5p2Ud2e--CsXQ';" alt="Rememberance Day Ceremony In St John S Nl Newfoundland And Labrador Newfoundland Most Beautiful Places">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rememberance Day Ceremony In St John S Nl Newfoundland And Labrador Newfoundland Most Beautiful Places</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/40/0a/c2400a3f343b0a6dd7c86ff7be58e81a.jpg" data-lightbox="roadtrip" data-title="Prince Charles And Duchess Camilla Visit Canada Camilla Duchess Of Cornwall Prince Charles And Camilla Prince Charles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/40/0a/c2400a3f343b0a6dd7c86ff7be58e81a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5MWPXkFAL7oNAdSnarOW3Xl5lykVD3pLY7w';" alt="Prince Charles And Duchess Camilla Visit Canada Camilla Duchess Of Cornwall Prince Charles And Camilla Prince Charles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Prince Charles And Duchess Camilla Visit Canada Camilla Duchess Of Cornwall Prince Charles And Camilla Prince Charles</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/veterans-crisis-line-upstate-new-york.html">Veterans Crisis Line Upstate New York</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-hotline-phone-number.html">Veterans Crisis Hotline Phone Number</a></li>
+													<li class="list-group-item"><a href="/veterans-job-assistance-program-whitmer.html">Veterans Job Assistance Program Whitmer</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-work-study-program.html">Veterans Affairs Work Study Program</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-white-card-discounts.html">Veterans Affairs White Card Discounts</a></li>
+													<li class="list-group-item"><a href="/veterans-career-transition-program-vctp.html">Veterans Career Transition Program Vctp</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-homeless.html">Veterans Crisis Line Homeless</a></li>
+													<li class="list-group-item"><a href="/vintage-army-dog-tags.html">Vintage Army Dog Tags</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-uk.html">Veterans Crisis Line Uk</a></li>
+													<li class="list-group-item"><a href="/virginia-employment-commission-training-programs.html">Virginia Employment Commission Training Programs</a></li>
+													<li class="list-group-item"><a href="/veterans-medical-records-national-archives.html">Veterans Medical Records National Archives</a></li>
+													<li class="list-group-item"><a href="/veterans-archivesgov.html">Veterans Archivesgov</a></li>
+													<li class="list-group-item"><a href="/veterans-archives-search.html">Veterans Archives Search</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-wallet-cards.html">Veterans Crisis Line Wallet Cards</a></li>
+													<li class="list-group-item"><a href="/virginia-archives-birth-records.html">Virginia Archives Birth Records</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-usa.html">Veterans Crisis Line Usa</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-commercial.html">Veterans Crisis Line Commercial</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-fact-sheet.html">Veterans Crisis Line Fact Sheet</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-psa.html">Veterans Crisis Line Psa</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-bracelet.html">Veterans Crisis Line Bracelet</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

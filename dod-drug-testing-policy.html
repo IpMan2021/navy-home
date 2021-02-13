@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Dod Drug Testing Policy - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Dod Drug Testing Policy",
+  "datePublished": "2021-02-13",
+  "image": "Qg8wU5mo7pUEYM",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=dod+drug+testing+policy",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Dod Drug Testing Policy</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">DoD Policy of drug and alcohol abuse. Background checks help establish and verify personal information that can include the following. Even if a particular drug is detected if the level is below a certain threshold the test result is reported back to the commander as negative. <br>				
+			</p>
+										<a class="badge badge-success" href="/military-members-database.html">military members database</a>
+											<a class="badge badge-light" href="/military-onesource-crisis-line.html">military onesource crisis line</a>
+											<a class="badge badge-primary" href="/military-personnel-division-fort-knox.html">military personnel division fort knox</a>
+											<a class="badge badge-primary" href="/military-ocean-terminal-concord-police-department.html">military ocean terminal concord police department</a>
+											<a class="badge badge-danger" href="/military-mental-health-crisis-line.html">military mental health crisis line</a>
+											<a class="badge badge-dark" href="/military-personnel-data-system-login.html">military personnel data system login</a>
+											<a class="badge badge-primary" href="/military-lands-cantonment-department-jobs-2019.html">military lands cantonment department jobs 2019</a>
+											<a class="badge badge-light" href="/military-leave-human-resources.html">military leave human resources</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you've come to visit the right blog.  Our site gives you hints for viewing the maximum quality video and image content, search and locate more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, therefore we recommend this video for you to view.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://health.mil/-/media/Images/MHS/Photos/Fentanyl-added-to-drug-testing.ashx?h=407&amp;la=en&amp;mw=720&amp;w=720&amp;hash=F87EBDD24C2E442F0EB9BA055490990847024C7E48ED8296B8A26F2ACCF15C3E" data-lightbox="roadtrip" data-title="Dod Adds Fentanyl To Drug Testing Panel Health Mil">
+											<img class="card-img v-image ads-img " src="https://health.mil/-/media/Images/MHS/Photos/Fentanyl-added-to-drug-testing.ashx?h=407&amp;la=en&amp;mw=720&amp;w=720&amp;hash=F87EBDD24C2E442F0EB9BA055490990847024C7E48ED8296B8A26F2ACCF15C3E" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUIo7tDj3cGVdhWe5kIyJWRjg9ShlJj9T8Yw';" alt="Dod Adds Fentanyl To Drug Testing Panel Health Mil">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dod Adds Fentanyl To Drug Testing Panel Health Mil</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Jan/14/2002234338/-1/-1/0/190612-F-RB000-004.JPG" data-lightbox="roadtrip" data-title="Cbd Can Trigger Positive Drug Test National Guard Guard News The National Guard">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Jan/14/2002234338/-1/-1/0/190612-F-RB000-004.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvCd7PT5mEnJ_UY5izIIuOMdGDpr2DPHfa2g';" alt="Cbd Can Trigger Positive Drug Test National Guard Guard News The National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cbd Can Trigger Positive Drug Test National Guard Guard News The National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="svv4U6BW30s0tM" data-lightbox="roadtrip" data-title="Https Www Mepcom Army Mil Portals 112 Documents Pubsforms Regs R 0040 008 Pdf">
+											<img class="card-img v-image ads-img " src="svv4U6BW30s0tM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSouSSkkPSRVIngF8f0z78IfHZ3Fy5xqQtPVA';" alt="Https Www Mepcom Army Mil Portals 112 Documents Pubsforms Regs R 0040 008 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Mepcom Army Mil Portals 112 Documents Pubsforms Regs R 0040 008 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="1-SrHyWokCvIeM" data-lightbox="roadtrip" data-title="Https Prhome Defense Gov Portals 52 Documents Rfm Readiness Ddrp Docs 1997 04 23 20drug 20urinalysis 20testing 20levels Pdf">
+											<img class="card-img v-image ads-img " src="1-SrHyWokCvIeM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxO71xMkcINFOEDcFvGHlvWoeDaenXzDb3bA';" alt="Https Prhome Defense Gov Portals 52 Documents Rfm Readiness Ddrp Docs 1997 04 23 20drug 20urinalysis 20testing 20levels Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Prhome Defense Gov Portals 52 Documents Rfm Readiness Ddrp Docs 1997 04 23 20drug 20urinalysis 20testing 20levels Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="PpWqOBbFLlatPM" data-lightbox="roadtrip" data-title="Https Prhome Defense Gov Portals 52 Documents Rfm Readiness Ddrp Docs 2005 08 11 20standard 20drug 20testing 20panel 20and 20criteria 20for 20reporting 20drug 20use 20in 20the 20military 20drug 20testing 20program Pdf">
+											<img class="card-img v-image ads-img " src="PpWqOBbFLlatPM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb45tgHJIyKUIt4B3fLvd2Unq8sLejXwS-fQ';" alt="Https Prhome Defense Gov Portals 52 Documents Rfm Readiness Ddrp Docs 2005 08 11 20standard 20drug 20testing 20panel 20and 20criteria 20for 20reporting 20drug 20use 20in 20the 20military 20drug 20testing 20program Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Prhome Defense Gov Portals 52 Documents Rfm Readiness Ddrp Docs 2005 08 11 20standard 20drug 20testing 20panel 20and 20criteria 20for 20reporting 20drug 20use 20in 20the 20military 20drug 20testing 20program Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="Pbfd8mhS5GltfM" data-lightbox="roadtrip" data-title="Https Www Samhsa Gov Sites Default Files Meeting Documents Dtab Rti Ericwelsh Dodpresentation Pdf">
+											<img class="card-img v-image ads-img " src="Pbfd8mhS5GltfM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLUMlCjccfkrlYmz7gylxxyEmVbxI8io9EHw';" alt="Https Www Samhsa Gov Sites Default Files Meeting Documents Dtab Rti Ericwelsh Dodpresentation Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Samhsa Gov Sites Default Files Meeting Documents Dtab Rti Ericwelsh Dodpresentation Pdf</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="1HczkHTY57N1jM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLUMlCjccfkrlYmz7gylxxyEmVbxI8io9EHw';" alt="Https Www Samhsa Gov Sites Default Files Meeting Documents Dtab Rti Ericwelsh Dodpresentation Pdf">
+										<div class="card-body">
+						<h3 class="h5"><b>A basic military drug test will always test for marijuana cocaine and amphetamines including ecstasy.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Dod drug testing policy</strong>. 
+								
+																	The US military the Navy in particular exercises a zero tolerance policy when it comes to drug and alcohol abuse. 
+																	Background checks and pre-employment drug testing are typically done by DoD contractors on their employees in accordance with drug free workforce policies required of all government contractors. 
+																	DoD Implements Expanded Drug Testing for Military Applicants March 9 2017 BY Lisa Ferdinando DOD News Drug testing for all applicants for military service is expanding to include the same. 
+																	Of the Services deterrent strategy the Services operate Compulsory Drug Testing CDT and Drug and Alcohol Testing where there is reasonable cause to believe that a service person is unfit through alcohol or drugs and has exceeded prescribed limits for safety-critical duties. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Key to the establishment of a regional Service. 
+																	COVID-19 and Flu Public Education Campaign. 
+																	DoD Instruction 101009 DoD Civilian Employee Drug Abuse Testing Program Responsibilities for the civilian employee testing program. 
+																	ORGANIZATION WITHIN THE MPDATP TECHNICAL QUALIFICATIONS AND RESPONSIBILITIES9 g. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	DoD eliminated it because only four servicemembers had tested positive for the drug after three years and 2095398 specimens. 
+																	Grant Opportunities and Guidance. 
+																	In the wake of LSD testing due to a 2nd Marine Division drug problem the Department of Defense has changed its LSD. 
+																	July 31 2002 DepSecDef DoD Counternarcotics Policy Memorandum Drug Demand Reduction Program initiatives include. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	JSP 835 Version 20 1-1 1 Chapter 21 Manual of Service Law MSL. 
+																	However depending on the laboratory samples may be tested for much more. 
+																	But not all samples are tested for all of these drugs. 
+																	CARES Act Provider Relief Fund. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Technical guidance for the Forensic Drug Testing Laboratories is provided in DoDI 101016 Reference d. 
+																	There are over 150000 Test Designated Positions TDPs within DoD that have been approved by the Department of Health and Human Services DHHS for random drug testing. 
+																	If you are unable to conduct DOT drug or alcohol training or testing due to COVID-19-related supply shortages facility closures State or locally imposed quarantine requirements or other impediments you are to continue to comply with existing applicable DOT Agency requirements to document why a test was not completed. 
+																	Designates a drug testing information technology program manager to achieve a standardized and compliant information assurance posture across the DoD DDRP enterprise. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Amid new Marine Corps LSD problem DoD changes force-wide drug test policy. 
+																	Sets a 100 random. 
+																	In fact DOD military drug testing aims to raise awareness about the abuse of prescription or illicit substances among its personnel. 
+																	National Testing Implementation Forum. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	DoD recognized an efficiency to be gained when specimens are submitted to the a regional drug testing laboratories independent of Service affiliation. 
+																	Right now incoming recruits are tested for more than 26 drugs. 
+																	The US Department of Defense DOD requires all active service members including military and civilian to test for potential substance abuse and addiction. 
+																	The drug was last on the Defense Departments testing battery in 2006. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The DoD willbe a drug-free workplace and that DoD Ffederal civilian employees shall willnot use illegal drugs whether on duty or off duty in accordance with References c and d and the Guidance for Selection of Testing Designated Positions TDPs Reference g. 
+																	DoD components will conduct. 
+																	DoDI 101016 June 15 2020 SECTION 3. 
+																	Testing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	DoD labs are equipped to test for marijuana cocaine amphetamines LSD opiates including morphine and heroin barbiturates and PCP. 
+																	Realigns responsibilities for drug detection and deterrence policy education and oversight in accordance with the policy in DoDD 10104 Reference c. 
+																	The DoD DDRP policy for military service members is promulgated in DoD Instruction 101001 with detailed guidance concerning drug testing procedures contained in DoD Instruction 101016. 
+																	To combat widespread drug use among the military during the 1980s and earlier the DoD implemented an aggressive drug testing policy. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Nationwide Criminal with SSN Trace and Alias. 
+																	If training or testing can be conducted later eg supervisor. 
+																	Expanded testing of Reserves and National Guard consistent Service and Defense. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2014/Jan/02/2000885874/-1/-1/0/131203-A-AB123-001.JPG" data-lightbox="roadtrip" data-title="Dod Adds Synthetic Marijuana To Random Drug Testing">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2014/Jan/02/2000885874/-1/-1/0/131203-A-AB123-001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR02sGVcXH_oZ4p4yFzusifmQSc4cKOaoiMJg';" alt="Dod Adds Synthetic Marijuana To Random Drug Testing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dod Adds Synthetic Marijuana To Random Drug Testing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="qtZLAfEEY7JyYM" data-lightbox="roadtrip" data-title="Http Usasd Armylive Dodlive Mil Files 2016 12 Usasd Policy Memorandum 16 20 Pdf">
+											<img class="card-img v-image ads-img " src="qtZLAfEEY7JyYM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFuwqe-nLY7zQuCwZyS7Qsvbf9_nYsOPi5bg';" alt="Http Usasd Armylive Dodlive Mil Files 2016 12 Usasd Policy Memorandum 16 20 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Usasd Armylive Dodlive Mil Files 2016 12 Usasd Policy Memorandum 16 20 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="Nzc8EOsT20M6dM" data-lightbox="roadtrip" data-title="Https Www Med Navy Mil Sites Jaxdruglab Sitecollectiondocuments Navy 20drug 20screening 20laboratory 20jacksonville 20newsletter 201 2 Pdf">
+											<img class="card-img v-image ads-img " src="Nzc8EOsT20M6dM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGG69V-REYHjgBFIXR5t52zIBOseiTfZj2lg';" alt="Https Www Med Navy Mil Sites Jaxdruglab Sitecollectiondocuments Navy 20drug 20screening 20laboratory 20jacksonville 20newsletter 201 2 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Med Navy Mil Sites Jaxdruglab Sitecollectiondocuments Navy 20drug 20screening 20laboratory 20jacksonville 20newsletter 201 2 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="45nmCvHKDRr4QM" data-lightbox="roadtrip" data-title="Https Www Cnic Navy Mil Content Dam Cnic Cnrh Pdfs Joint 20base 20pearl 20harbor Hickam 5000 Jbphhinst 205355 1 20urinalysis 20program Pdf">
+											<img class="card-img v-image ads-img " src="45nmCvHKDRr4QM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_FV5okaaOaOir9IMeFkxoNCzuhM6G8b6NPA';" alt="Https Www Cnic Navy Mil Content Dam Cnic Cnrh Pdfs Joint 20base 20pearl 20harbor Hickam 5000 Jbphhinst 205355 1 20urinalysis 20program Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Cnic Navy Mil Content Dam Cnic Cnrh Pdfs Joint 20base 20pearl 20harbor Hickam 5000 Jbphhinst 205355 1 20urinalysis 20program Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="Dl9p4XlbPf8iGM" data-lightbox="roadtrip" data-title="Https Www Usna Edu Commandant Directives Instructions 5000 5999 Comdtmidninst 5350 1d Midshipmen Alcohol And Drug Abuse Prevention And Control Pdf">
+											<img class="card-img v-image ads-img " src="Dl9p4XlbPf8iGM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrjD2kkiVHfGHsBc98vxKNdjqt7oe3AMFwyQ';" alt="Https Www Usna Edu Commandant Directives Instructions 5000 5999 Comdtmidninst 5350 1d Midshipmen Alcohol And Drug Abuse Prevention And Control Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Usna Edu Commandant Directives Instructions 5000 5999 Comdtmidninst 5350 1d Midshipmen Alcohol And Drug Abuse Prevention And Control Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="Qg8wU5mo7pUEYM" data-lightbox="roadtrip" data-title="Https Www Mepcom Army Mil Portals 112 Documents Pubsforms Forms F 0040 008 01 E Pdf">
+											<img class="card-img v-image ads-img " src="Qg8wU5mo7pUEYM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwH_Wmx0n4mUvAszPrg6vw_XZ-uOhHe_KsWg';" alt="Https Www Mepcom Army Mil Portals 112 Documents Pubsforms Forms F 0040 008 01 E Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Mepcom Army Mil Portals 112 Documents Pubsforms Forms F 0040 008 01 E Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="rbu2-CFTf8pE2M" data-lightbox="roadtrip" data-title="Https Www Med Navy Mil Sites Jaxdruglab Sitecollectiondocuments Ndsl 20fact 20sheet 20may 2011 Pdf Mobile 1 Source 2fsites 2fjaxdruglab 2f 5flayouts 2fmobile 2fview 2easpx 3flist 3df34b9ab1 252d5973 252d4f53 252da127 252df9b1a6384e11 26view 3de6e77c16 252dd8d8 252d4b4d 252d94a1 252dc8a102516766 26currentpage 3d1">
+											<img class="card-img v-image ads-img " src="rbu2-CFTf8pE2M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXkj4cEhZiP0Gohc8dKZK8XpqXov98hISTMw';" alt="Https Www Med Navy Mil Sites Jaxdruglab Sitecollectiondocuments Ndsl 20fact 20sheet 20may 2011 Pdf Mobile 1 Source 2fsites 2fjaxdruglab 2f 5flayouts 2fmobile 2fview 2easpx 3flist 3df34b9ab1 252d5973 252d4f53 252da127 252df9b1a6384e11 26view 3de6e77c16 252dd8d8 252d4b4d 252d94a1 252dc8a102516766 26currentpage 3d1">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Med Navy Mil Sites Jaxdruglab Sitecollectiondocuments Ndsl 20fact 20sheet 20may 2011 Pdf Mobile 1 Source 2fsites 2fjaxdruglab 2f 5flayouts 2fmobile 2fview 2easpx 3flist 3df34b9ab1 252d5973 252d4f53 252da127 252df9b1a6384e11 26view 3de6e77c16 252dd8d8 252d4b4d 252d94a1 252dc8a102516766 26currentpage 3d1</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="N4XJdivOnh5KIM" data-lightbox="roadtrip" data-title="Https Home Army Mil Ansbach Index Php Download File View 774 427">
+											<img class="card-img v-image ads-img " src="N4XJdivOnh5KIM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqfC31oTfgkIXfB4fzAB1y0Hvo7mRMCbfs2g';" alt="Https Home Army Mil Ansbach Index Php Download File View 774 427">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Home Army Mil Ansbach Index Php Download File View 774 427</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2012/Mar/13/2000170454/780/780/0/120313-F-AG578-001.JPG" data-lightbox="roadtrip" data-title="Air Force Expands Drug Testing Program To Include Abused Prescription Drugs Moody Air Force Base Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2012/Mar/13/2000170454/780/780/0/120313-F-AG578-001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcajXXgCAQOPVBy25V1jRSPgLg94PW3ASVig';" alt="Air Force Expands Drug Testing Program To Include Abused Prescription Drugs Moody Air Force Base Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Expands Drug Testing Program To Include Abused Prescription Drugs Moody Air Force Base Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/9iqM_88wFDc/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Drug Testing In The Army Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/9iqM_88wFDc/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8yPL1P6tFMGkZl-zEr7uA9gQpjdatnd5a7A';" alt="Drug Testing In The Army Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Drug Testing In The Army Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.rgstatic.net/publication/232925154_Compulsory_Drugs_Testing_in_the_British_Army/links/5513ea410cf2eda0df303276/largepreview.png" data-lightbox="roadtrip" data-title="Pdf Compulsory Drugs Testing In The British Army">
+											<img class="card-img v-image ads-img " src="https://i1.rgstatic.net/publication/232925154_Compulsory_Drugs_Testing_in_the_British_Army/links/5513ea410cf2eda0df303276/largepreview.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSS-5_NhsgBXsAH-OX1snTD3FZPO8xTvswhg';" alt="Pdf Compulsory Drugs Testing In The British Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pdf Compulsory Drugs Testing In The British Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="_XD3K62vHWy7mM" data-lightbox="roadtrip" data-title="Https Home Army Mil Gordon Index Php Download File View 647 464">
+											<img class="card-img v-image ads-img " src="_XD3K62vHWy7mM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSySX3pl-xB8u_doZHIDmosrYsWdi0Y4f-QJQ';" alt="Https Home Army Mil Gordon Index Php Download File View 647 464">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Home Army Mil Gordon Index Php Download File View 647 464</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="1HczkHTY57N1jM" data-lightbox="roadtrip" data-title="Https Www Med Navy Mil Sites Nmcphc Documents Navy Drug Screening Labs Steroid Testing Pdf">
+											<img class="card-img v-image ads-img " src="1HczkHTY57N1jM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEpL181asHHNruJP9vww9kFaRCiR1uSExl5w';" alt="Https Www Med Navy Mil Sites Nmcphc Documents Navy Drug Screening Labs Steroid Testing Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Med Navy Mil Sites Nmcphc Documents Navy Drug Screening Labs Steroid Testing Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/department-of-the-army-analysis-and-assessment-of-gateway-process.html">Department Of The Army Analysis And Assessment Of Gateway Process</a></li>
+													<li class="list-group-item"><a href="/department-of-national-defence-winnipeg-address.html">Department Of National Defence Winnipeg Address</a></li>
+													<li class="list-group-item"><a href="/department-of-state-military.html">Department Of State Military</a></li>
+													<li class="list-group-item"><a href="/department-of-national-defense-budget-2021.html">Department Of National Defense Budget 2021</a></li>
+													<li class="list-group-item"><a href="/department-of-national-defence-number.html">Department Of National Defence Number</a></li>
+													<li class="list-group-item"><a href="/department-of-national-defence-real-property.html">Department Of National Defence Real Property</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-announces-upcoming-deployments.html">Department Of The Army Announces Upcoming Deployments</a></li>
+													<li class="list-group-item"><a href="/department-of-national-defense-vacancies.html">Department Of National Defense Vacancies</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-acquisition-regulations.html">Department Of The Army Acquisition Regulations</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-budget-request.html">Department Of The Army Budget Request</a></li>
+													<li class="list-group-item"><a href="/department-of-national-defence-union.html">Department Of National Defence Union</a></li>
+													<li class="list-group-item"><a href="/department-of-national-defence-locations.html">Department Of National Defence Locations</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-administrative-leave.html">Department Of The Army Administrative Leave</a></li>
+													<li class="list-group-item"><a href="/department-of-national-defence-nova-scotia.html">Department Of National Defence Nova Scotia</a></li>
+													<li class="list-group-item"><a href="/department-of-national-defence-photos.html">Department Of National Defence Photos</a></li>
+													<li class="list-group-item"><a href="/department-of-state-military-travel.html">Department Of State Military Travel</a></li>
+													<li class="list-group-item"><a href="/department-of-national-defence-oromocto-nb-address.html">Department Of National Defence Oromocto Nb Address</a></li>
+													<li class="list-group-item"><a href="/department-of-national-defence-organizational-chart.html">Department Of National Defence Organizational Chart</a></li>
+													<li class="list-group-item"><a href="/department-of-national-defence-thunder-bay.html">Department Of National Defence Thunder Bay</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-achievement-medal-for-civilian-service.html">Department Of The Army Achievement Medal For Civilian Service</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

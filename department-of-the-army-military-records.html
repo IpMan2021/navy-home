@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Department Of The Army Military Records - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Department Of The Army Military Records",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/02/96/9f/02969fd4c7886e74352f18ca5876853e.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=department+of+the+army+military+records",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Department Of The Army Military Records</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">They recorded an individuals rank and regiment service number birth place occupation attestation date and service history. Submit a military records request to get your DD214 or other military service records through the milConnect website. Selected Finding Aids Related to NARAs World War II Holdings African Americans Records of Military Agencies Relating to African Americans from the Post-World War I Period to the Korean War Reference Information Paper Casualty Lists and Missing Missing Air Crew Reports MACRs World War II Honor List of Dead and Missing Army and Army Air. <br>				
+			</p>
+										<a class="badge badge-warning" href="/canadian-armed-forces-base-st-jean-quebec-address.html">canadian armed forces base st jean quebec address</a>
+											<a class="badge badge-light" href="/can-veterans-get-a-mil-email-address.html">can veterans get a mil email address</a>
+											<a class="badge badge-info" href="/canadian-armed-forces-base-quebec.html">canadian armed forces base quebec</a>
+											<a class="badge badge-primary" href="/canadian-armed-forces-bases-in-new-brunswick.html">canadian armed forces bases in new brunswick</a>
+											<a class="badge badge-info" href="/can-you-be-a-firefighter-in-the-army.html">can you be a firefighter in the army</a>
+											<a class="badge badge-info" href="/canadian-armed-forces-bases-in-quebec.html">canadian armed forces bases in quebec</a>
+											<a class="badge badge-success" href="/can-i-view-death-certificates-online-for-free.html">can i view death certificates online for free</a>
+											<a class="badge badge-warning" href="/canadian-armed-forces-operation-impact.html">canadian armed forces operation impact</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to pay a visit to the ideal blog.  Our website provides you with suggestions for seeing the maximum quality video and image content, hunt and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, particularly Youtube, so we recommend this video for you to see.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/22/15/65/221565405a24ef879726c6e23083a718.jpg" data-lightbox="roadtrip" data-title="Letter Of Intent To Hire Https Nationalgriefawarenessday Com 40405 Sample Of Letter Of Intent Letter Of Intent Memo Format Lettering">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/22/15/65/221565405a24ef879726c6e23083a718.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5-D5QRRIxqFoBQsj-gWCx1URN41C1gaPIvw';" alt="Letter Of Intent To Hire Https Nationalgriefawarenessday Com 40405 Sample Of Letter Of Intent Letter Of Intent Memo Format Lettering">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Letter Of Intent To Hire Https Nationalgriefawarenessday Com 40405 Sample Of Letter Of Intent Letter Of Intent Memo Format Lettering</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/f7/9b/78f79be322a9f53991df24690534fa1b.jpg" data-lightbox="roadtrip" data-title="Certificate Of Appreciation Wording Best Of Free Customizable Certificates Certificate Of Appreciation Certificate Templates Awards Certificates Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/f7/9b/78f79be322a9f53991df24690534fa1b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhMZvooN_s_hE5YYwDJvBD4MrkpCrEAcMlvA';" alt="Certificate Of Appreciation Wording Best Of Free Customizable Certificates Certificate Of Appreciation Certificate Templates Awards Certificates Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Certificate Of Appreciation Wording Best Of Free Customizable Certificates Certificate Of Appreciation Certificate Templates Awards Certificates Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/0a/8a/1b0a8ab560f40448e03a9be74134c57d.jpg" data-lightbox="roadtrip" data-title="12119872 1 Jpg 1200 1200 The Unit Armed Forces Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/0a/8a/1b0a8ab560f40448e03a9be74134c57d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyGuKO481x2tmnEbUzyQ5tAGM3Lx_xeN5GGQ';" alt="12119872 1 Jpg 1200 1200 The Unit Armed Forces Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">12119872 1 Jpg 1200 1200 The Unit Armed Forces Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/78/65/4c786550e1e97438d72a743142f5ef05.png" data-lightbox="roadtrip" data-title="What Is Ddform 2606 Download Pdf And Other Information Instructions And Latest Version Of This Dodform Here Development Programs Child Development Records">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/78/65/4c786550e1e97438d72a743142f5ef05.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQPJnBQJpcqs8f9UtzlOKTNXUgEvIviozbzw';" alt="What Is Ddform 2606 Download Pdf And Other Information Instructions And Latest Version Of This Dodform Here Development Programs Child Development Records">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Ddform 2606 Download Pdf And Other Information Instructions And Latest Version Of This Dodform Here Development Programs Child Development Records</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/e1/aa/ece1aa4aae906bc020806b41eef88648.jpg" data-lightbox="roadtrip" data-title="Official Seals For The Department Of Defense Department Of The Navy U S Marine Corps Department Of The Air Department Of The Navy National Archives Defense">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/e1/aa/ece1aa4aae906bc020806b41eef88648.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbyN_Guv7UFAzJSb8-k6BJk3YMERfmIV2SlA';" alt="Official Seals For The Department Of Defense Department Of The Navy U S Marine Corps Department Of The Air Department Of The Navy National Archives Defense">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Official Seals For The Department Of Defense Department Of The Navy U S Marine Corps Department Of The Air Department Of The Navy National Archives Defense</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/f9/90/e6f990229e3aa6a89b5ceac26a362e71.jpg" data-lightbox="roadtrip" data-title="Lester G Eisenhower Army Serial Number 33147143 Enlistment Place New Cumberland Pennsylvania Discovered In U S War D Press Release Records New Cumberland">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/f9/90/e6f990229e3aa6a89b5ceac26a362e71.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX-sf1LFq9ns7xih0ckvDBC4WAtLzr-Me8vg';" alt="Lester G Eisenhower Army Serial Number 33147143 Enlistment Place New Cumberland Pennsylvania Discovered In U S War D Press Release Records New Cumberland">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lester G Eisenhower Army Serial Number 33147143 Enlistment Place New Cumberland Pennsylvania Discovered In U S War D Press Release Records New Cumberland</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/83/9b/fa/839bfa80722669d477b42a2f63a6aa0f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX-sf1LFq9ns7xih0ckvDBC4WAtLzr-Me8vg';" alt="Lester G Eisenhower Army Serial Number 33147143 Enlistment Place New Cumberland Pennsylvania Discovered In U S War D Press Release Records New Cumberland">
+										<div class="card-body">
+						<h3 class="h5"><b>Military Personnel Records The National Personnel Records Center Military Personnel Records NPRC-MPR is the repository of millions of military personnel health and medical records of discharged and deceased veterans of all services during the 20th century.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Department of the army military records</strong>. 
+								
+																	Pensioners British Army service records 1760-1913 These records were collected and recorded to determine a persons eligibility for a pension from the Royal Chelsea Hospital. 
+																	The Department of Defence Archives was established as the SA Defence Force SADF Archives on 14 May 1968 following the approval by the Minister of Education of a separate military archives for Military Records in South Africa. 
+																	Some will include a statement about the persons character and. 
+																	Support for schools and the community to learn about and commemorate Australias wartime history. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Youll need to sign in to milConnect to get your military service records To use this feature youll need a Premium DS Logon account. 
+																	The National Archives holds Federal military service records from the Revolutionary War to 1912 in the National Archives Building in Washington DC. 
+																	Imperial War Museum Department of Documents. 
+																	We maintain nominal rolls service records and information about the contributions of Aboriginal and Torres Strait Islander servicemen and women. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Regular Force members who are currently serving were released from service or who died in service as of January 1 1998 Reserve Force members who are currently serving were released from service or who died in service as of March 1 2008. 
+																	Theyre also helpful for ancestry and historical research. 
+																	As the official place of deposit for the records of the Irish Defence Forces and Department of Defence the archival material at the Military Archives constitutes the documentary evidence of Irelands military heritage. 
+																	The secretary of a military department acting through a board for correction of military records has authority to change any military record when necessary to correct an error or remove an injustice. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For a comprehensive overview see. 
+																	Records and military history. 
+																	Royal Army Chaplains Department For centuries the Royal Army Chaplains Department RAChD has ministered to soldiers and their families in times of war and peace. 
+																	WO 97 Chelsea. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A correction board may consider applications for correction of a military record including a review of a discharge issued by courts martial. 
+																	Find some of the most requested links below or see a full list by category. 
+																	We preserve records of those who served our nation to make sure their service is not forgotten. 
+																	Army unit operational record is something that contains information on the organization functions policies decisions procedures operations or other activities of a particular unit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Louis Missouri See details of holdings. 
+																	You can apply for a copy of someone elses service records if any of the following apply. 
+																	The Department of National Defence DND is responsible for holding the following service records. 
+																	Military records from WWI - present are held in the National Military Personnel Records Center NPRC in St. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Personal diaries letters and unpublished memoirs of over 5000 servicemen and women and civilians in war time. 
+																	See details of holdings. 
+																	Your own service records if you are or have been a member of the armed forces the records of someone whos deceased if youre eligible for example youre their immediate next of kin or youre. 
+																	Most military records are on paper or microfilm and youll need to request printed copies to be mailed to you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Youre their immediate next of kin for example their spouse or parent youve got consent from their. 
+																	This material spans the revolutionary period through the foundation of the National Army right up to the present day. 
+																	Records of senior commanders from all three services from both world wars including Marshal of the RAF William Sholto Douglas Field Marshal John Denton Pinkstone French Field Marshal Bernard Law Montgomery and Field Marshal Sir Henry. 
+																	They are not typically available to view online. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Pre-1917 Army Records 1917 and Later Army Records. 
+																	The Department of Defense has many components aside from the service branches. 
+																	Your My HealtheVet or IDme credentials wont work on the milConnect website. 
+																	Military records help prove military service when applying for jobs or government benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Army Personnel Centre Helpdesk 0345 600 9663 provides assistance to Army units outside agencies and the general public who are inquiring about the disclosure of information held on officers and soldiers. 
+																	Chaplains are honoured to provide spiritual support pastoral care and moral guidance to all irrespective of religion or belief. 
+																	Records prior to WWI are in Washington DC. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/ab/74/a6ab7496171ddc4d98373b4fc54b393b.png" data-lightbox="roadtrip" data-title="Da Form 200 Transmittal Record Is An Official Paper Issued By And Used Within The Usarmy Get The Latest Applicable Daform 200 Here Records Form Us Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/ab/74/a6ab7496171ddc4d98373b4fc54b393b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbissAM0pM0S-9tZakDJvU3Jos8tYcDYvq8w';" alt="Da Form 200 Transmittal Record Is An Official Paper Issued By And Used Within The Usarmy Get The Latest Applicable Daform 200 Here Records Form Us Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Da Form 200 Transmittal Record Is An Official Paper Issued By And Used Within The Usarmy Get The Latest Applicable Daform 200 Here Records Form Us Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/fa/3b/effa3bf5670cec854d6cd663214e0f57.jpg" data-lightbox="roadtrip" data-title="Family History Documents Australia History World War One History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/fa/3b/effa3bf5670cec854d6cd663214e0f57.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk5xes5smbVZkzGG85j8b7Xpuv7S5aeDU-zA';" alt="Family History Documents Australia History World War One History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Family History Documents Australia History World War One History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/e4/ac/75e4acce24f1a593234b0bfc32982a52.jpg" data-lightbox="roadtrip" data-title="Pre Induction Training Record War Dept 78 Rpm Http Www Amazon Com Dp B00appsfn4 Ref Cm Sw R Pi Awd 9offsb0fx7w1a Induction Training 78 Rpm Records">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/e4/ac/75e4acce24f1a593234b0bfc32982a52.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbLEqKJ8r7D2N_eepV81Z5Emi0zziU6COWtw';" alt="Pre Induction Training Record War Dept 78 Rpm Http Www Amazon Com Dp B00appsfn4 Ref Cm Sw R Pi Awd 9offsb0fx7w1a Induction Training 78 Rpm Records">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pre Induction Training Record War Dept 78 Rpm Http Www Amazon Com Dp B00appsfn4 Ref Cm Sw R Pi Awd 9offsb0fx7w1a Induction Training 78 Rpm Records</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/b7/b3/00b7b3a0fdc52b1c81ff514fb4cdca29.png" data-lightbox="roadtrip" data-title="How To Read Your Veteran Relative S Dd 214 Form Dna Genealogy Ancestry Records Family Genealogy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/b7/b3/00b7b3a0fdc52b1c81ff514fb4cdca29.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLyFu4wup_WvXdYll4o2OrC_r1BVN0dI3YVw';" alt="How To Read Your Veteran Relative S Dd 214 Form Dna Genealogy Ancestry Records Family Genealogy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Read Your Veteran Relative S Dd 214 Form Dna Genealogy Ancestry Records Family Genealogy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/fe/c5/77fec54262b5eaa2073d51fc003f7339.jpg" data-lightbox="roadtrip" data-title="Tommy Franks One Helluva Man Proud To Be From Oklahoma American Soldiers Soldier Books">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/fe/c5/77fec54262b5eaa2073d51fc003f7339.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-PzD6pbHvZFD3oC24Ft9_-5GLzmA7wqriRg';" alt="Tommy Franks One Helluva Man Proud To Be From Oklahoma American Soldiers Soldier Books">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tommy Franks One Helluva Man Proud To Be From Oklahoma American Soldiers Soldier Books</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/1b/39/9b1b390476fa67cbe326c464e73b3bf4.png" data-lightbox="roadtrip" data-title="Pin On Military Command Crests Of The World">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/1b/39/9b1b390476fa67cbe326c464e73b3bf4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1jQ-uza1nLYhl5DV6d46HTUZsI4JSjpxIUA';" alt="Pin On Military Command Crests Of The World">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Command Crests Of The World</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/96/9f/02969fd4c7886e74352f18ca5876853e.jpg" data-lightbox="roadtrip" data-title="Pin On Just For Fun">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/96/9f/02969fd4c7886e74352f18ca5876853e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyCFULEhGfZPlXXxUiYIvfycqDFqcg-EvpDg';" alt="Pin On Just For Fun">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Just For Fun</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/ba/22/93ba22ff6b55aa10f5e544ea9ae15bc7.jpg" data-lightbox="roadtrip" data-title="Personalized Military Retirement Gift Plaque Military Retirement Retirement Plaques Military Retirement Gift">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/ba/22/93ba22ff6b55aa10f5e544ea9ae15bc7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnkz_KiV-Iwjkm7eaphsx1Xmz94CidYIs8lA';" alt="Personalized Military Retirement Gift Plaque Military Retirement Retirement Plaques Military Retirement Gift">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Personalized Military Retirement Gift Plaque Military Retirement Retirement Plaques Military Retirement Gift</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/9b/fa/839bfa80722669d477b42a2f63a6aa0f.png" data-lightbox="roadtrip" data-title="Dogs Wine For Christmas Slouchy Tee Military Tactics Military Units Military Insignia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/9b/fa/839bfa80722669d477b42a2f63a6aa0f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWzV0ETUzsRoeEh65c2ksdwwRUaJw-1b0Q2Q';" alt="Dogs Wine For Christmas Slouchy Tee Military Tactics Military Units Military Insignia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dogs Wine For Christmas Slouchy Tee Military Tactics Military Units Military Insignia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/69/53/d7/6953d7a272fae46930660004fe60f6d3.jpg" data-lightbox="roadtrip" data-title="Pin By Caliphcomo On Writing A Cover Letter Military Letters Letter Of Recommendation Writing A Cover Letter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/69/53/d7/6953d7a272fae46930660004fe60f6d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmOjn8IY6ubZJvPzN2_rDIZgbb80AYjrNK2Q';" alt="Pin By Caliphcomo On Writing A Cover Letter Military Letters Letter Of Recommendation Writing A Cover Letter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Caliphcomo On Writing A Cover Letter Military Letters Letter Of Recommendation Writing A Cover Letter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/dc/76/67dc76bc25dc44711d0bd70061a07c92.png" data-lightbox="roadtrip" data-title="Pin On History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/dc/76/67dc76bc25dc44711d0bd70061a07c92.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkF-hUdMhX0i7cDGIqwgcwvvsPMFAVIKbeug';" alt="Pin On History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5b/66/59/5b665995dcca26732044c588049ded71.png" data-lightbox="roadtrip" data-title="Australian Army Sniper 2nd Light Horse Gallipoli 1915 World War 1 5x5 Reprint World War One World War American Military History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5b/66/59/5b665995dcca26732044c588049ded71.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC5VJYfMXHUhTBznGv6R1Oyuu8NbbkZP9exQ';" alt="Australian Army Sniper 2nd Light Horse Gallipoli 1915 World War 1 5x5 Reprint World War One World War American Military History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Australian Army Sniper 2nd Light Horse Gallipoli 1915 World War 1 5x5 Reprint World War One World War American Military History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/fb/2a/71fb2a863d8a1b8251edf76c1b9fb354.jpg" data-lightbox="roadtrip" data-title="Pin On Genealogy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/fb/2a/71fb2a863d8a1b8251edf76c1b9fb354.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV5WJQBarv4mBuaCKVnyg8oq2w8x8HsFFkVg';" alt="Pin On Genealogy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Genealogy</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-to-waive-military-retired-pay.html">How To Waive Military Retired Pay</a></li>
+													<li class="list-group-item"><a href="/hr-army-officer.html">Hr Army Officer</a></li>
+													<li class="list-group-item"><a href="/how-to-verify-a-us-army-soldier.html">How To Verify A Us Army Soldier</a></li>
+													<li class="list-group-item"><a href="/how-to-prepare-for-military-retirement.html">How To Prepare For Military Retirement</a></li>
+													<li class="list-group-item"><a href="/hr-functions-army.html">Hr Functions Army</a></li>
+													<li class="list-group-item"><a href="/hr-pay-army.html">Hr Pay Army</a></li>
+													<li class="list-group-item"><a href="/hr-in-air-force.html">Hr In Air Force</a></li>
+													<li class="list-group-item"><a href="/how-to-read-minutes-in-military-time.html">How To Read Minutes In Military Time</a></li>
+													<li class="list-group-item"><a href="/how-to-support-military-families.html">How To Support Military Families</a></li>
+													<li class="list-group-item"><a href="/hr-and-finance-army.html">Hr And Finance Army</a></li>
+													<li class="list-group-item"><a href="/how-to-qualify-for-military-housing.html">How To Qualify For Military Housing</a></li>
+													<li class="list-group-item"><a href="/hr-officer-in-the-army.html">Hr Officer In The Army</a></li>
+													<li class="list-group-item"><a href="/hr-mcmaster-army-bio.html">Hr Mcmaster Army Bio</a></li>
+													<li class="list-group-item"><a href="/hr-in-army.html">Hr In Army</a></li>
+													<li class="list-group-item"><a href="/hr-army-address.html">Hr Army Address</a></li>
+													<li class="list-group-item"><a href="/hr-roles-army.html">Hr Roles Army</a></li>
+													<li class="list-group-item"><a href="/how-to-search-military-service-records.html">How To Search Military Service Records</a></li>
+													<li class="list-group-item"><a href="/hr-jobs-in-pak-army.html">Hr Jobs In Pak Army</a></li>
+													<li class="list-group-item"><a href="/how-to-say-military-time-with-minutes.html">How To Say Military Time With Minutes</a></li>
+													<li class="list-group-item"><a href="/hr-army-mos.html">Hr Army Mos</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

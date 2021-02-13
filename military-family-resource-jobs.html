@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Family Resource Jobs - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Family Resource Jobs",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/26/88/e5/2688e5da20e5196370d4f93eca1b583d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+family+resource+jobs",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Family Resource Jobs</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">A free civilian job placement service offered by Prospect Human Services for ill and injured CAF and BATUS veterans medical releases reservists and family members of serving personnel. And learn about other resources to help you build your career or start a small business. Displayed here are job ads that match your query. <br>				
+			</p>
+										<a class="badge badge-primary" href="/coast-guard-metro-office-park.html">coast guard metro office park</a>
+											<a class="badge badge-warning" href="/crisis-hotline-for-military-spouse.html">crisis hotline for military spouse</a>
+											<a class="badge badge-light" href="/coast-guard-recruiting-office-fresno-ca.html">coast guard recruiting office fresno ca</a>
+											<a class="badge badge-success" href="/college-scholarships-for-grandchildren-of-army-veterans.html">college scholarships for grandchildren of army veterans</a>
+											<a class="badge badge-success" href="/colorado-department-of-military-and-veterans-affairs-centennial.html">colorado department of military and veterans affairs centennial</a>
+											<a class="badge badge-info" href="/colorado-department-of-veterans-affairs-address.html">colorado department of veterans affairs address</a>
+											<a class="badge badge-primary" href="/colorado-state-department-of-veterans-affairs.html">colorado state department of veterans affairs</a>
+											<a class="badge badge-info" href="/college-funding-for-military-dependents.html">college funding for military dependents</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you've come to pay a visit to the right blog.  Our site gives you hints for seeing the highest quality video and image content, search and locate more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, so we recommend this video for you to view.  You can also contribute to supporting this site by sharing videos and graphics that you like on this blog on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/29/c2/22/29c2226c6db9089e15b214a1309412f0.jpg" data-lightbox="roadtrip" data-title="150 Best Jobs Through Military Training Libraryusergroup Com The Library Of Library User Group Military Jobs Military Training Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/29/c2/22/29c2226c6db9089e15b214a1309412f0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9fn3iMPAVscmlYAIOemJUdMvDTjy4_22SzA';" alt="150 Best Jobs Through Military Training Libraryusergroup Com The Library Of Library User Group Military Jobs Military Training Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">150 Best Jobs Through Military Training Libraryusergroup Com The Library Of Library User Group Military Jobs Military Training Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/ea/11/87ea11f4af41e6d1026f9fc7e2395039.jpg" data-lightbox="roadtrip" data-title="Supporting Our Vets Jpg 3300 5100 Military Transition Veteran Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/ea/11/87ea11f4af41e6d1026f9fc7e2395039.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPy3Pye4XsnK-P4nE8aMp8DQLKfA9eQ84Tiw';" alt="Supporting Our Vets Jpg 3300 5100 Military Transition Veteran Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Supporting Our Vets Jpg 3300 5100 Military Transition Veteran Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/45/fe/5045fe7aa97f8d9af75f394dd9150bb7.jpg" data-lightbox="roadtrip" data-title="What Would You Do With Yourtime Education The Workforce Committee City Jobs Dubai City Find A Job">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/45/fe/5045fe7aa97f8d9af75f394dd9150bb7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS9oHByMBLqTfa4cCb2Ck3EajuYCNDatZv3w';" alt="What Would You Do With Yourtime Education The Workforce Committee City Jobs Dubai City Find A Job">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Would You Do With Yourtime Education The Workforce Committee City Jobs Dubai City Find A Job</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/63/7a/82637ae76279b7e04009f2647dc22bce.jpg" data-lightbox="roadtrip" data-title="The Mwr Digital Library Gives Military Families Free Access To Resources Beyond Books Find Out What You Digital Library Military Resources Air Force Families">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/63/7a/82637ae76279b7e04009f2647dc22bce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxyjXkcURckZ7I-mieYG8OR8ctK73nswULog';" alt="The Mwr Digital Library Gives Military Families Free Access To Resources Beyond Books Find Out What You Digital Library Military Resources Air Force Families">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Mwr Digital Library Gives Military Families Free Access To Resources Beyond Books Find Out What You Digital Library Military Resources Air Force Families</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/45/73/39/457339ccf1cb37d087fd3cc3aebf2c3b.jpg" data-lightbox="roadtrip" data-title="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Intrepid Veterans Job Fa Veteran Jobs Job Fair Medical Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/45/73/39/457339ccf1cb37d087fd3cc3aebf2c3b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSolLHyuantSKZZFsJA-3SwO_2Uz80sLPZvPg';" alt="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Intrepid Veterans Job Fa Veteran Jobs Job Fair Medical Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Intrepid Veterans Job Fa Veteran Jobs Job Fair Medical Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/f2/f1/c8f2f1cac18222691921a3b41aa46f62.jpg" data-lightbox="roadtrip" data-title="Job Fair To Benefit Local Military Heroes Arklatexhomepage Com Ktal Nbc 6 Hiring Veterans Veteran Jobs Job Fair">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/f2/f1/c8f2f1cac18222691921a3b41aa46f62.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3zaFRX0Xa8sPvmZAeIB_Rk_TTGd6RDvnFnA';" alt="Job Fair To Benefit Local Military Heroes Arklatexhomepage Com Ktal Nbc 6 Hiring Veterans Veteran Jobs Job Fair">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Job Fair To Benefit Local Military Heroes Arklatexhomepage Com Ktal Nbc 6 Hiring Veterans Veteran Jobs Job Fair</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/cc/3f/74/cc3f741f4e9c4abb642f7c82ec9f9ce0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3zaFRX0Xa8sPvmZAeIB_Rk_TTGd6RDvnFnA';" alt="Job Fair To Benefit Local Military Heroes Arklatexhomepage Com Ktal Nbc 6 Hiring Veterans Veteran Jobs Job Fair">
+										<div class="card-body">
+						<h3 class="h5"><b>Our business hours are 800 am to 400 pm.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military family resource jobs</strong>. 
+								
+																	Resources for military and Veteran family members If youre a military spouse or surviving spouse find out if youre eligible and how to apply for the Department of Defenses Spouse Education Career Opportunities SECO program. 
+																	Sponsored by Military Community Awareness. 
+																	The Youth Assistant works under direction of the Supervisor to plan and facilitate activities and initiatives for youth ages 5-16 yrs that promote healthy youth development address the MFSP domains of wellness and or the Ministry of Educations Early Learning Framework support positive youth interactions and foster engagement in their community. 
+																	Indeed may be compensated by these employers helping keep Indeed free for job seekers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Moose Jaw Military Family Resource Centre MFRC strives to builds strong capable and resilient families in a supportive Canadian Armed Forces community. 
+																	Military Family Services Program At Military Family Services we provide national support and funding for the Military Family Services Program. 
+																	Page 1 of 162 jobs. 
+																	Indeed ranks Job Ads based on a combination of employer bids and relevance such as your search terms and other activity on Indeed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Program is delivered locally by Military Family Resource Centres MFRCs in 32 Canadian Armed Forces communities in Canada along with service points in the United States and Europe. 
+																	The MFRC-NCR team are continuing to support the National Capital Region military family community throughout the pandemic. 
+																	Military Family Resource Centre jobs. 
+																	The wainwrightjobsca website is designed to connect employers with the best workforce talent available and help job seekers and volunteers to find rewarding opportunities in the Wainwright Alberta region. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	National Military Family Association. 
+																	Apply to Counsel Family Service Counselor Para Educator and more. 
+																	Enjoy articles news opinion giveaways free downloads apps and more. 
+																	Indeed ranks Job Ads based on a combination of employer bids and relevance such as your search terms and other activity on Indeed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The duties and responsibilities of a military and family life counselor MFLC center on support and non-medical counseling services for members of the military and their families. 
+																	Learn about receiving your education as a military spouse with resources to help you find an education center chose a school get financial assistance and transfer schools. 
+																	Military Family Resource Centre jobs. 
+																	Welcome to Military Family. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MFRC can refer military family member to the ForcesWork program. 
+																	Military Family Resource jobs. 
+																	A website just for military spouses to learn and grow together in the midst of PCS deployment careers and education. 
+																	What Does a Military and Family Life Counselor Do. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Indeed ranks Job Ads based on a combination of employer bids and relevance such as your search terms and other activity on. 
+																	The Military Spousal Employment Network MSEN is hosting a Virtual Career Fair focused only on virtual employers and Work-from Home jobs on Wednesday January 27th from 10 12 EST. 
+																	Displayed here are job ads that match your query. 
+																	Search the largest FREE Veteran Job board find jobs with military-friendly companies build and post your civilian resume and network with veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The MFRC collaboratively engages with military families and community and defence partners to create positive community transitions and relevant and adaptive family services programs and resources for military families. 
+																	Comox Military Family Resource Centre MFRC posted a job. 
+																	Indeed may be compensated by these employers helping keep Indeed free for job seekers. 
+																	However due to COVID-19 and construction taking place the Uplands Military Community Centre at 330 Croil Private is closed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Indeed may be compensated by these employers helping keep Indeed free for job seekers. 
+																	It is the policy of Family Resource Center of South Florida to offer equal employment opportunities to all persons without regard to race disability color creed religion gender age marital status national origin ancestry citizenship veteran status sexual orientation or any other classification or characteristic protected by federal state or local law. 
+																	New Year New Job. 
+																	From finding a job and stable housing to balancing military benefits and personal finances the following articles and resources will help clear up basic questions address common challenges and provide some advice and support for those trying to take control of their post-military lives. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Displayed here are job ads that match your query. 
+																	Page 1 of 27 jobs. 
+																	MFRC maintains an up to date job board. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/df/ed/35dfedefbb9e105dd89157986354016a.jpg" data-lightbox="roadtrip" data-title="Jobs For Veterans General Electric With Images Veteran Jobs Military Friendly">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/df/ed/35dfedefbb9e105dd89157986354016a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8L12FR0Hnzjnj17NWnN6TueRlD2qoLdXMBQ';" alt="Jobs For Veterans General Electric With Images Veteran Jobs Military Friendly">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jobs For Veterans General Electric With Images Veteran Jobs Military Friendly</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/88/e5/2688e5da20e5196370d4f93eca1b583d.jpg" data-lightbox="roadtrip" data-title="Pin By Sabrina Visconti On Veteran Employment Opportunities Resources Veteran Jobs Military Life Military Homecoming">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/88/e5/2688e5da20e5196370d4f93eca1b583d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkA5z0QAGSb7nEW7F-jlHOYoE9agR_OXAfKA';" alt="Pin By Sabrina Visconti On Veteran Employment Opportunities Resources Veteran Jobs Military Life Military Homecoming">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sabrina Visconti On Veteran Employment Opportunities Resources Veteran Jobs Military Life Military Homecoming</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/dc/5a/c6dc5a27d8e76d2c3b7f89a5655758ad.jpg" data-lightbox="roadtrip" data-title="Skilled Assets The Career Management Experts Military Spouse Career Management Military Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/dc/5a/c6dc5a27d8e76d2c3b7f89a5655758ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ5ZRUAkUqkzJ-gGLNdK_nuWJowOI2pG-rUQ';" alt="Skilled Assets The Career Management Experts Military Spouse Career Management Military Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Skilled Assets The Career Management Experts Military Spouse Career Management Military Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/3f/74/cc3f741f4e9c4abb642f7c82ec9f9ce0.jpg" data-lightbox="roadtrip" data-title="Are You A Veteran Do You Want To Work And Thrive In The Healthcare Field Visit Militaryconnection Com And Aid Your Veteran Jobs Military Jobs Healthcare Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/3f/74/cc3f741f4e9c4abb642f7c82ec9f9ce0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB1fyRk15sJWjLUo2FNBitdjCqnIJYqz1EBQ';" alt="Are You A Veteran Do You Want To Work And Thrive In The Healthcare Field Visit Militaryconnection Com And Aid Your Veteran Jobs Military Jobs Healthcare Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are You A Veteran Do You Want To Work And Thrive In The Healthcare Field Visit Militaryconnection Com And Aid Your Veteran Jobs Military Jobs Healthcare Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/48/27/c748270c812946ce8928d99236491e9d.jpg" data-lightbox="roadtrip" data-title="Key Federal Employment Resource For Veterans Careerpro Inc Veteran Jobs Veteran Help Wanted">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/48/27/c748270c812946ce8928d99236491e9d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnRL8o3fFVjVD9rpINBUnllpMobTbPgNGAQA';" alt="Key Federal Employment Resource For Veterans Careerpro Inc Veteran Jobs Veteran Help Wanted">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Key Federal Employment Resource For Veterans Careerpro Inc Veteran Jobs Veteran Help Wanted</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/86/b9/ae86b9c33bd4f2dba86ff2e267ff6b4a.jpg" data-lightbox="roadtrip" data-title="Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Save The Date Employment Education F Education Fair Veteran Jobs Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/86/b9/ae86b9c33bd4f2dba86ff2e267ff6b4a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjyBGr5XL3AzQP6ZYdgaZ0OUMp9RC8GrDk3A';" alt="Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Save The Date Employment Education F Education Fair Veteran Jobs Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Save The Date Employment Education F Education Fair Veteran Jobs Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1b/dc/c3/1bdcc3ec6bfb3c3350523a36fee35dd7.jpg" data-lightbox="roadtrip" data-title="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers You Re Invited To The Medical Jobs Veteran Healthcare Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1b/dc/c3/1bdcc3ec6bfb3c3350523a36fee35dd7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4nXFBUSIdAT7fggPCqEzs3LHBX1qo7OA2rw';" alt="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers You Re Invited To The Medical Jobs Veteran Healthcare Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers You Re Invited To The Medical Jobs Veteran Healthcare Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/36/f7/8e36f731400fdb0adec7c27996972ec4.jpg" data-lightbox="roadtrip" data-title="Veterans Employment Links Including Career Resources Job Banks Government Va Job Information And More Veteran Jobs Veteran Owned Business Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/36/f7/8e36f731400fdb0adec7c27996972ec4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR062MF734h_lPxvJb5qfA66OlX5ovQPB03jg';" alt="Veterans Employment Links Including Career Resources Job Banks Government Va Job Information And More Veteran Jobs Veteran Owned Business Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Employment Links Including Career Resources Job Banks Government Va Job Information And More Veteran Jobs Veteran Owned Business Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a3/04/b1/a304b142ddcfe43b8b9b5e37891c91ca.jpg" data-lightbox="roadtrip" data-title="Search Through A Huge Resource Of Jobs Women Around The World Are Currently Doing Outside Of Their Home Country Know T Work Abroad Travel Jobs Moving Overseas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a3/04/b1/a304b142ddcfe43b8b9b5e37891c91ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVVoAto5zuevvol3nqkItujiTs6ynX36wdvQ';" alt="Search Through A Huge Resource Of Jobs Women Around The World Are Currently Doing Outside Of Their Home Country Know T Work Abroad Travel Jobs Moving Overseas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Search Through A Huge Resource Of Jobs Women Around The World Are Currently Doing Outside Of Their Home Country Know T Work Abroad Travel Jobs Moving Overseas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/1f/9d/3a1f9dbf523de31800afaa5cb2e25933.jpg" data-lightbox="roadtrip" data-title="Resume Examples Resumecompanion Resume Examples Free Resume Examples Resume Writing Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/1f/9d/3a1f9dbf523de31800afaa5cb2e25933.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQussEqJz06kPiEkNF1_9JC-OTrmsUfyaKBZQ';" alt="Resume Examples Resumecompanion Resume Examples Free Resume Examples Resume Writing Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Resume Examples Resumecompanion Resume Examples Free Resume Examples Resume Writing Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e5/87/34/e58734e4dea44258f29c0f90447abb3c.jpg" data-lightbox="roadtrip" data-title="16 Free Career Resources For Veterans Career Resources Veteran Jobs Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e5/87/34/e58734e4dea44258f29c0f90447abb3c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDO3Y56I4LTi7s6BUR3w6Ak6mU3kd74i1MEA';" alt="16 Free Career Resources For Veterans Career Resources Veteran Jobs Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">16 Free Career Resources For Veterans Career Resources Veteran Jobs Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/6c/89/306c890a02f4e4a066c42714b42a5d56.jpg" data-lightbox="roadtrip" data-title="Fort Meade Veterans Job Fair November 20 2013 Veteran Jobs Job Fair Fort Meade">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/6c/89/306c890a02f4e4a066c42714b42a5d56.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCDw4uZJCbsLixU-hULOD4THomQFRM_8eGJA';" alt="Fort Meade Veterans Job Fair November 20 2013 Veteran Jobs Job Fair Fort Meade">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fort Meade Veterans Job Fair November 20 2013 Veteran Jobs Job Fair Fort Meade</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/42/13/b6/4213b63b8f3db5b1e2b8b5763f813fd3.jpg" data-lightbox="roadtrip" data-title="Pin On Job Career Fairs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/42/13/b6/4213b63b8f3db5b1e2b8b5763f813fd3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSZYQ37MLl2NlbQeymCmJrDgFzDfLJazKO8g';" alt="Pin On Job Career Fairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Job Career Fairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-dog-in-action.html">Military Dog In Action</a></li>
+													<li class="list-group-item"><a href="/military-dog-names-uk.html">Military Dog Names Uk</a></li>
+													<li class="list-group-item"><a href="/military-dog-tags-look-like.html">Military Dog Tags Look Like</a></li>
+													<li class="list-group-item"><a href="/military-dog-tags-walmart.html">Military Dog Tags Walmart</a></li>
+													<li class="list-group-item"><a href="/military-dog-tag-drawing.html">Military Dog Tag Drawing</a></li>
+													<li class="list-group-item"><a href="/military-dog-in-news.html">Military Dog In News</a></li>
+													<li class="list-group-item"><a href="/military-dog-tag-ball-chain.html">Military Dog Tag Ball Chain</a></li>
+													<li class="list-group-item"><a href="/military-dog-movie-watch-online.html">Military Dog Movie Watch Online</a></li>
+													<li class="list-group-item"><a href="/military-dog-name-patch.html">Military Dog Name Patch</a></li>
+													<li class="list-group-item"><a href="/military-dog-movie-bl.html">Military Dog Movie Bl</a></li>
+													<li class="list-group-item"><a href="/military-dog-life-jacket.html">Military Dog Life Jacket</a></li>
+													<li class="list-group-item"><a href="/military-dog-tags-made-near-me.html">Military Dog Tags Made Near Me</a></li>
+													<li class="list-group-item"><a href="/military-dog-tag-traditions.html">Military Dog Tag Traditions</a></li>
+													<li class="list-group-item"><a href="/military-dog-name-generator.html">Military Dog Name Generator</a></li>
+													<li class="list-group-item"><a href="/military-dog-tags-between-teeth.html">Military Dog Tags Between Teeth</a></li>
+													<li class="list-group-item"><a href="/military-dog-injured.html">Military Dog Injured</a></li>
+													<li class="list-group-item"><a href="/military-dog-tags-air-force.html">Military Dog Tags Air Force</a></li>
+													<li class="list-group-item"><a href="/military-dog-tags-in-gold.html">Military Dog Tags In Gold</a></li>
+													<li class="list-group-item"><a href="/military-dog-tag-gold.html">Military Dog Tag Gold</a></li>
+													<li class="list-group-item"><a href="/military-dog-movie-taiwan-full.html">Military Dog Movie Taiwan Full</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

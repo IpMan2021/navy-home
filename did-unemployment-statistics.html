@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Did Unemployment Statistics - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Did Unemployment Statistics",
+  "datePublished": "2021-02-13",
+  "image": "https://www.economicshelp.org/wp-content/uploads/2010/10/unemployment-1881-2015.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=did+unemployment+statistics",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Did Unemployment Statistics</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">129 but this gap has since effectively closed. Rates of unemployment vary across the country - in Northern Ireland it is nearly 20 and 15. The unemployment rate in the UK edged up to 5 percent in the three months to November of 2020 from 49 percent in the previous period and slightly below forecasts of 51 percent. <br>				
+			</p>
+										<a class="badge badge-primary" href="/army-budget-for-2021.html">army budget for 2021</a>
+											<a class="badge badge-primary" href="/army-budget-2020-pakistan-percentage.html">army budget 2020 pakistan percentage</a>
+											<a class="badge badge-success" href="/army-budget-2020-all-countries.html">army budget 2020 all countries</a>
+											<a class="badge badge-success" href="/are-us-military-records-public.html">are us military records public</a>
+											<a class="badge badge-success" href="/are-marines-better-than-soldiers.html">are marines better than soldiers</a>
+											<a class="badge badge-success" href="/armed-forces-recruiting-center-memphis.html">armed forces recruiting center memphis</a>
+											<a class="badge badge-light" href="/army-benefits-center-civilian-website.html">army benefits center civilian website</a>
+											<a class="badge badge-info" href="/annual-budget-department-of-defense.html">annual budget department of defense</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you have come to visit the ideal blog.  Our website provides you with hints for viewing the maximum quality video and picture content, hunt and locate more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, especially Youtube, therefore we recommend this movie that you see.  It is also possible to bring about supporting this website by sharing videos and images that you like on this blog on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this website.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.cnbcfm.com/api/v1/image/106539710-1589571195026-20200515_unrate_nber_bls.png?v=1589571202&amp;w=1600&amp;h=900" data-lightbox="roadtrip" data-title="Unemployment Today Vs The Great Depression How Do The Eras Compare">
+											<img class="card-img v-image ads-img " src="https://image.cnbcfm.com/api/v1/image/106539710-1589571195026-20200515_unrate_nber_bls.png?v=1589571202&amp;w=1600&amp;h=900" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlR-IGzpBT_UGyDZbuGuKj0wSj_rDFAUFNPg';" alt="Unemployment Today Vs The Great Depression How Do The Eras Compare">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Today Vs The Great Depression How Do The Eras Compare</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.statista.com/graphic/1/297778/uae-unemployment-rate.jpg" data-lightbox="roadtrip" data-title="United Arab Emirates Unemployment Rate 2020 Statista">
+											<img class="card-img v-image ads-img " src="https://www.statista.com/graphic/1/297778/uae-unemployment-rate.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCyNdy14TDS4MZK_L1kwZ-pyLG40mGEgAiLw';" alt="United Arab Emirates Unemployment Rate 2020 Statista">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United Arab Emirates Unemployment Rate 2020 Statista</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.statista.com/graphic/1/271330/unemployment-rate-in-india.jpg" data-lightbox="roadtrip" data-title="Unemployment Rate In India 2007 2018 Statista">
+											<img class="card-img v-image ads-img " src="https://www.statista.com/graphic/1/271330/unemployment-rate-in-india.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPEYqZjxuRdyYQt_l_G8F3wtzqgi3InNET-g';" alt="Unemployment Rate In India 2007 2018 Statista">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Rate In India 2007 2018 Statista</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://textimgs.s3.amazonaws.com/boundless-economics/us-unemployment-measures.svg" data-lightbox="roadtrip" data-title="Measuring Unemployment Boundless Economics">
+											<img class="card-img v-image ads-img " src="https://textimgs.s3.amazonaws.com/boundless-economics/us-unemployment-measures.svg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKUlFVUF77nNk2gCbFRxnETin_4X5sBZ-RQg';" alt="Measuring Unemployment Boundless Economics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Measuring Unemployment Boundless Economics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.un.org/development/desa/dpad/wp-content/uploads/sites/45/WESP_MB-August2020_fig3.png" data-lightbox="roadtrip" data-title="World Economic Situation And Prospects August 2020 Briefing No 140 Department Of Economic And Social Affairs">
+											<img class="card-img v-image ads-img " src="https://www.un.org/development/desa/dpad/wp-content/uploads/sites/45/WESP_MB-August2020_fig3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdtXzzRy1AdaKcWuK9CFfCEmDAhjCziVwWPg';" alt="World Economic Situation And Prospects August 2020 Briefing No 140 Department Of Economic And Social Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">World Economic Situation And Prospects August 2020 Briefing No 140 Department Of Economic And Social Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://d2tyltutevw8th.cloudfront.net/media/image/covid-unemployment-1200-1603405581.jpg" data-lightbox="roadtrip" data-title="Unemployment Rates Around The World 2020 Global Finance Magazine">
+											<img class="card-img v-image ads-img " src="https://d2tyltutevw8th.cloudfront.net/media/image/covid-unemployment-1200-1603405581.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA9hi4Ho1KeeMctBC_2PIHq41pO0Ry6qIARw';" alt="Unemployment Rates Around The World 2020 Global Finance Magazine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Rates Around The World 2020 Global Finance Magazine</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.economicshelp.org/wp-content/uploads/2009/12/us-unemployment-1930s-great-depression.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA9hi4Ho1KeeMctBC_2PIHq41pO0Ry6qIARw';" alt="Unemployment Rates Around The World 2020 Global Finance Magazine">
+										<div class="card-body">
+						<h3 class="h5"><b>The UK unemployment rate in the three months to November 2020 was estimated at 50 12 percentage points higher than a year earlier and 06 percentage points higher than the previous quarter.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Did unemployment statistics</strong>. 
+								
+																	Population of approximately 326 million people. 
+																	Unemployment rate had fallen to 84 in August after reaching a peak of 147 in April 2020. 
+																	The historical average unemployment rate January 1948-September 2020 is 58. 
+																	In the three months to November 2020 the redundancy rate reached a record high of 142 per thousand. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Read this statistical bulletin More publications. 
+																	258 million people were ILO unemployed in the March to May 2012 quarter down by 65 thousand on the December 2011 to February 2012 period but up 132 thousand on the same quarter last year. 
+																	Unemployment was relatively low for most of Labours stint but rose considerably during the recession in the late noughties. 
+																	And under Reagan it stayed at or above 10 percent for 10 straight months starting in September. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Modern unemployment statistics did not start being kept until 1948 after Harry Trumans first 35 months in office so this analysis only starts with Eisenhower. 
+																	The official jobless total announced today is 3070621. 
+																	The ILO unemployment rate is 81 down 02 percentage points on the quarter but up 04 percentage points on the year. 
+																	Unemployment rate in France 2006-2018 by socio-professional category Number of jobseekers entitled to RSA registered at Pole emploi in France 2018-2019 The most important statistics. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The total number of unemployed is 1355 million 75 million more than August 2019. 
+																	Part-time workers experienced an unemployment rate almost twice that of their full-time counterparts in April 245 vs. 
+																	Margaret Thatchers premiership was a time of immense social and economic change bringing high unemployment and industrial unrest but also home ownership and low taxation. 
+																	It means one in eight people is out of work. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The unemployment rate was calculated by dividing the number of unemployed by the number in the civilian labor force age 16 non-military and not incarcerated of approximately 1596 million people relative to a US. 
+																	These persons are not included in the official ILO unemployment concept and have a varying degree of attachment to the labour market. 
+																	That is an increase of 06 over the previous three months and. 
+																	The employment rate continued to fall to 725. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	UK economy latest A roundup of the latest data. 
+																	As the total number of unemployed people rose by 114000 during the quarter the unemployment rate reached 81 the highest since the autumn of 1996. 
+																	Why the Unemployment Rate Matters. 
+																	Bureau of Labor Statistics BLS when workers are unemployed their families lose wages and the nation as a whole loses their. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Unemployment rate of 131 in December the second highest observed among all industries. 
+																	The number of people unemployed in the UK and the unemployment rate were both higher when Labour left office in 2010 than when it came to power in 1997. 
+																	Nonetheless it does point to the. 
+																	When Labour won the 1997 election the unemployment rate for. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Unemployment among 16- to 24-year-olds. 
+																	In addition to the unemployment measures covered here Eurostat also publishes statistics for persons who fulfil only partially the definition of unemployment. 
+																	That summary hides a varying trend during that time. 
+																	According to the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	According to the Bureau of Labor Statistics the countrys unemployment rate dropped to 35 in fall 2019 the lowest rate in about 50 years since December 1969. 
+																	It is the 5th consecutive month of rising unemployment to a new high since the three months to August 2016 as a number of coronavirus lockdown measures were reintroduced. 
+																	The most recent unemployment rate - for September to November - was 50 according to the Office for National Statistics ONS. 
+																	In Reagans first term unemployment peaked at 108 percent higher than Obamas 10 percent peak. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The unemployment rate is the number of people unemployed as a percentage of the labour force. 
+																	In April 23 million workers were let go from their jobs in response to the coronavirus pandemic How Unemployment Tracks Recessions. 
+																	Official figures showed unemployment measured by International Labour Organisation ILO standards rose by 164000 in the three months to August from the previous quarter to stand at 179 million. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.economicshelp.org/wp-content/uploads/2017/02/us-unemployment-05-17.png" data-lightbox="roadtrip" data-title="Structural Unemployment Economics Help">
+											<img class="card-img v-image ads-img " src="https://www.economicshelp.org/wp-content/uploads/2017/02/us-unemployment-05-17.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXOeDWBWNv_G-WYnW6lfqdrBdUfcsbtSbY5A';" alt="Structural Unemployment Economics Help">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Structural Unemployment Economics Help</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.investopedia.com/thmb/vXiVqN0EPgyw8IcxwT0h0STVfWU=/660x471/filters:no_upscale():max_bytes(150000):strip_icc()/slack-5bfd84fb46e0fb002649dcb6" data-lightbox="roadtrip" data-title="The Downside Of Low Unemployment">
+											<img class="card-img v-image ads-img " src="https://www.investopedia.com/thmb/vXiVqN0EPgyw8IcxwT0h0STVfWU=/660x471/filters:no_upscale():max_bytes(150000):strip_icc()/slack-5bfd84fb46e0fb002649dcb6" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDruRIN-6TZPdrHRZgNMpM-l2xnqEoHmmtcA';" alt="The Downside Of Low Unemployment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Downside Of Low Unemployment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/institute/infographics/consumption-effects-of-unemployment/find1-fig1.png" data-lightbox="roadtrip" data-title="Consumption Effects Of Unemployment Insurance During The Covid 19 Pandemic">
+											<img class="card-img v-image ads-img " src="https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/institute/infographics/consumption-effects-of-unemployment/find1-fig1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq1vMKyw5lqFI-9iwO3MooCQJf2US575ByAQ';" alt="Consumption Effects Of Unemployment Insurance During The Covid 19 Pandemic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Consumption Effects Of Unemployment Insurance During The Covid 19 Pandemic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.marketplace.org/wp-content/uploads/2020/04/unemployment-rate.png?fit=740%2C434" data-lightbox="roadtrip" data-title="U S Economy Loses 701 000 Jobs Unemployment Rises To 4 4 Marketplace">
+											<img class="card-img v-image ads-img " src="https://www.marketplace.org/wp-content/uploads/2020/04/unemployment-rate.png?fit=740%2C434" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ0JjMjySPoeswiWNLEuq7qCUsU_GpSy88UQ';" alt="U S Economy Loses 701 000 Jobs Unemployment Rises To 4 4 Marketplace">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Economy Loses 701 000 Jobs Unemployment Rises To 4 4 Marketplace</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.economicshelp.org/wp-content/uploads/2009/12/us-unemployment-1930s-great-depression.png" data-lightbox="roadtrip" data-title="Impact Of Economic Recession Economics Help">
+											<img class="card-img v-image ads-img " src="https://www.economicshelp.org/wp-content/uploads/2009/12/us-unemployment-1930s-great-depression.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZxJb0ZKmkKmIIbbG8BgQJdfog0pAtjk5vJw';" alt="Impact Of Economic Recession Economics Help">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Impact Of Economic Recession Economics Help</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.economicshelp.org/wp-content/uploads/2010/10/unemployment-1881-2015.png" data-lightbox="roadtrip" data-title="The Natural Rate Of Unemployment Economics Help">
+											<img class="card-img v-image ads-img " src="https://www.economicshelp.org/wp-content/uploads/2010/10/unemployment-1881-2015.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk1Rk5-tckElQmbXMgG02EMwmdTA0dzNh2Rg';" alt="The Natural Rate Of Unemployment Economics Help">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Natural Rate Of Unemployment Economics Help</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://production-tcf.imgix.net/app/uploads/2018/11/05145850/AmandaJeff-02.png" data-lightbox="roadtrip" data-title="Trump Claims The Economy Is The Best Ever These 11 Facts Tell A Different Story">
+											<img class="card-img v-image ads-img " src="https://production-tcf.imgix.net/app/uploads/2018/11/05145850/AmandaJeff-02.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSun_1KT2bGlX-XBPDR3tvw52FVarIbBc_SiQ';" alt="Trump Claims The Economy Is The Best Ever These 11 Facts Tell A Different Story">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trump Claims The Economy Is The Best Ever These 11 Facts Tell A Different Story</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www2.harpercollege.edu/mhealy/ecogif/uein/blsinflation2009.GIF" data-lightbox="roadtrip" data-title="Unemployment And Inflation">
+											<img class="card-img v-image ads-img " src="http://www2.harpercollege.edu/mhealy/ecogif/uein/blsinflation2009.GIF" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmxwqZV94D6jHLGaJYs3zNkPeVm2KPdj6GaA';" alt="Unemployment And Inflation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment And Inflation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.statista.com/graphic/1/263700/unemployment-rate-in-japan.jpg" data-lightbox="roadtrip" data-title="Japan Unemployment Rate 2020 Statista">
+											<img class="card-img v-image ads-img " src="https://www.statista.com/graphic/1/263700/unemployment-rate-in-japan.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyV6TpufvEnFdgcEmF759BXxQDPVGRljhoTQ';" alt="Japan Unemployment Rate 2020 Statista">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Japan Unemployment Rate 2020 Statista</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://production-tcf.imgix.net/app/uploads/2020/04/22142922/graph-template4444-12.png?w=695&amp;h=695&amp;fit=max&amp;auto=format,compress&amp;q=80" data-lightbox="roadtrip" data-title="Unemployment Insurance And Young People In The Wake Of Covid 19">
+											<img class="card-img v-image ads-img " src="https://production-tcf.imgix.net/app/uploads/2020/04/22142922/graph-template4444-12.png?w=695&amp;h=695&amp;fit=max&amp;auto=format,compress&amp;q=80" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS389Ol4946iBtciqz4tYVUveNgfIxWiTbW6Q';" alt="Unemployment Insurance And Young People In The Wake Of Covid 19">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Insurance And Young People In The Wake Of Covid 19</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.bls.gov/spotlight/2012/recession/images/cps_unemp_demographics.png" data-lightbox="roadtrip" data-title="The Recession Of 2007 2009 Bls Spotlight On Statistics">
+											<img class="card-img v-image ads-img " src="https://www.bls.gov/spotlight/2012/recession/images/cps_unemp_demographics.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTge6m5mMrMEOFk96fMoib4qGkp3GZDi4i_Lw';" alt="The Recession Of 2007 2009 Bls Spotlight On Statistics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Recession Of 2007 2009 Bls Spotlight On Statistics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://psa.gov.ph/sites/default/files/hsd/fig9%20april2020.png" data-lightbox="roadtrip" data-title="Philippine Statistics Authority Republic Of The Philippines">
+											<img class="card-img v-image ads-img " src="https://psa.gov.ph/sites/default/files/hsd/fig9%20april2020.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCpmGQGA0NYyRdk-wcS_RzYTwdUGWHkQ8CkA';" alt="Philippine Statistics Authority Republic Of The Philippines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Philippine Statistics Authority Republic Of The Philippines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ec.europa.eu/eurostat/statistics-explained/images/thumb/2/29/Unemployment_rate_of_persons_aged_15_years_and_over%2C_2018_%28%25%29_world20.png/500px-Unemployment_rate_of_persons_aged_15_years_and_over%2C_2018_%28%25%29_world20.png" data-lightbox="roadtrip" data-title="The Eu In The World Labour Market Statistics Explained">
+											<img class="card-img v-image ads-img " src="https://ec.europa.eu/eurostat/statistics-explained/images/thumb/2/29/Unemployment_rate_of_persons_aged_15_years_and_over%2C_2018_%28%25%29_world20.png/500px-Unemployment_rate_of_persons_aged_15_years_and_over%2C_2018_%28%25%29_world20.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb1Jx3mv7hgElFtRHj2vSK1DujWhWopjNFFg';" alt="The Eu In The World Labour Market Statistics Explained">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Eu In The World Labour Market Statistics Explained</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-ducks-wisconsin-dells-coupons.html">Army Ducks Wisconsin Dells Coupons</a></li>
+													<li class="list-group-item"><a href="/army-dots-site.html">Army Dots Site</a></li>
+													<li class="list-group-item"><a href="/army-foia-fees.html">Army Foia Fees</a></li>
+													<li class="list-group-item"><a href="/army-hair-regulations-female-2020.html">Army Hair Regulations Female 2020</a></li>
+													<li class="list-group-item"><a href="/army-helpline-1904.html">Army Helpline 1904</a></li>
+													<li class="list-group-item"><a href="/army-hr-graduate-scheme.html">Army Hr Graduate Scheme</a></li>
+													<li class="list-group-item"><a href="/army-hair-length-regulations-male-2019.html">Army Hair Length Regulations Male 2019</a></li>
+													<li class="list-group-item"><a href="/army-hr-number.html">Army Hr Number</a></li>
+													<li class="list-group-item"><a href="/army-heroes-apk.html">Army Heroes Apk</a></li>
+													<li class="list-group-item"><a href="/army-enlisted-pay-chart-2012.html">Army Enlisted Pay Chart 2012</a></li>
+													<li class="list-group-item"><a href="/army-hair-regulations-male-uk.html">Army Hair Regulations Male Uk</a></li>
+													<li class="list-group-item"><a href="/army-fire-service-badge.html">Army Fire Service Badge</a></li>
+													<li class="list-group-item"><a href="/army-foia-library.html">Army Foia Library</a></li>
+													<li class="list-group-item"><a href="/army-dot-rank.html">Army Dot Rank</a></li>
+													<li class="list-group-item"><a href="/army-dot-to-dot.html">Army Dot To Dot</a></li>
+													<li class="list-group-item"><a href="/army-hair-regulations-male.html">Army Hair Regulations Male</a></li>
+													<li class="list-group-item"><a href="/army-hair-regulations-female-2021.html">Army Hair Regulations Female 2021</a></li>
+													<li class="list-group-item"><a href="/army-dpw-work-order.html">Army Dpw Work Order</a></li>
+													<li class="list-group-item"><a href="/army-hat-australia.html">Army Hat Australia</a></li>
+													<li class="list-group-item"><a href="/army-headquarters-department-of-army-administration.html">Army Headquarters Department Of Army Administration</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Where To Get Financial Help During Covid - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Where To Get Financial Help During Covid",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/62/f5/77/62f577d35376dfd5c74fa7cf60fa0ac0.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=where+to+get+financial+help+during+covid",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Where To Get Financial Help During Covid</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">When the coronavirus hit in March of 2020 governments and businesses scrambled to create programs that would soften. As we work to get through COVID-19 and support public health in Arizona we are committed to making sure Arizonans have access to the resources they need to stay healthy and be part of our states recovery. Help and financial support while youre self-isolating Staying at home self-isolating can be difficult but its important to stop coronavirus COVID-19 spreading to other people. <br>				
+			</p>
+										<a class="badge badge-warning" href="/dept-of-veterans-affairs-regional-office.html">dept of veterans affairs regional office</a>
+											<a class="badge badge-primary" href="/dept-of-veterans-affairs-nyc.html">dept of veterans affairs nyc</a>
+											<a class="badge badge-danger" href="/dept-of-veterans-affairs-denver-co.html">dept of veterans affairs denver co</a>
+											<a class="badge badge-info" href="/dept-of-veterans-affairs-san-antonio-tx.html">dept of veterans affairs san antonio tx</a>
+											<a class="badge badge-success" href="/dept-of-veterans-affairs-records-management-center-st-louis-mo.html">dept of veterans affairs records management center st louis mo</a>
+											<a class="badge badge-light" href="/dept-of-veterans-affairs-washington-dc.html">dept of veterans affairs washington dc</a>
+											<a class="badge badge-warning" href="/dept-of-veterans-affairs-lincoln-ne.html">dept of veterans affairs lincoln ne</a>
+											<a class="badge badge-warning" href="/dept-of-veterans-affairs-newington-ct.html">dept of veterans affairs newington ct</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to visit the ideal site.  Our website gives you suggestions for seeing the maximum quality video and image content, search and locate more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, especially Youtube, so we recommend this movie that you see.  You can also contribute to supporting this site by sharing videos and images that you like on this blog on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this site.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/e3/e7/35e3e7898fb2a985b7a96069e79805e8.png" data-lightbox="roadtrip" data-title="Pin On Covid 19 Coronavirus Information">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/e3/e7/35e3e7898fb2a985b7a96069e79805e8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUNCZdr-bNFQ8k-CbnGKz6Pe7BEVxWvzJWES1XsYTYtIfVO_ry2kinaxfK6hxOJnk25jEdfoKPsjhChsTw0Uo&amp;ec=45774424';" alt="Pin On Covid 19 Coronavirus Information">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Covid 19 Coronavirus Information</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/ba/cd/3dbacd38c0cb7f9a1236f1a9623aefba.png" data-lightbox="roadtrip" data-title="10 Tips On How To See And Achieve More Financial Gratitude Click The Infographic To Learn More Ideas Infographic Finan Finance Personal Finance Financial">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/ba/cd/3dbacd38c0cb7f9a1236f1a9623aefba.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkCIv_J21OW8ma4sy1u9KzrVfc03rT0vjMlarjTP0AXN2cfMUIfctUgbvSLmE8-_wc8jgX6LyJ34MVektBpgA&amp;ec=45774424';" alt="10 Tips On How To See And Achieve More Financial Gratitude Click The Infographic To Learn More Ideas Infographic Finan Finance Personal Finance Financial">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Tips On How To See And Achieve More Financial Gratitude Click The Infographic To Learn More Ideas Infographic Finan Finance Personal Finance Financial</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c6/7c/b3/c67cb3c8be03ecc3826326d9a900276a.jpg" data-lightbox="roadtrip" data-title="Pin On Financial Health During Covid 19">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c6/7c/b3/c67cb3c8be03ecc3826326d9a900276a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVAeeWvp2pzny9I2pPHw3Pj9B0b5trs97qZmBAEjvaYCnM3KRF9ihf86pbVeUzkvz6_3O_frjk_VCCkstkmUY&amp;ec=45774424';" alt="Pin On Financial Health During Covid 19">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Financial Health During Covid 19</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/c2/0f/8ac20ffb7ffaa61c19bfdbf223e56b45.jpg" data-lightbox="roadtrip" data-title="Pin On Coronavirus Helping Ourselves And Each Other">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/c2/0f/8ac20ffb7ffaa61c19bfdbf223e56b45.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZYdtnHtz5pY68LcHGKAGb66RqlzcSOMGbel7OGCax6XkNLd87j4xrejnvh-OlLX3gprOUzGKccRc0QfcMsm8&amp;ec=45774424';" alt="Pin On Coronavirus Helping Ourselves And Each Other">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Coronavirus Helping Ourselves And Each Other</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/cd/4f/8a/cd4f8af2f31cd86d97d5163a831b0765.jpg" data-lightbox="roadtrip" data-title="Pin On Fiercely Frugal">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/cd/4f/8a/cd4f8af2f31cd86d97d5163a831b0765.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-_4z8WklPeD9oBxt6PN5QMTZgpa94Oxk5NxANuQ6XkmsODHfq5n0otRo4pO5bJE5GuPKvlU7Mnp4ImxucIfM&amp;ec=45774424';" alt="Pin On Fiercely Frugal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Fiercely Frugal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/87/70/0a8770c38bae9caca536c2e90cf12ce3.png" data-lightbox="roadtrip" data-title="Pin On Financial Management">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/87/70/0a8770c38bae9caca536c2e90cf12ce3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1MROuuacdZmXk2N3y1Gxc5xUXTp0a0V_0BieKwpl8D76-82FRJ-HUUoNLToa6IoYPrSW0vDsvMjlcmSaDBao&amp;ec=45774424';" alt="Pin On Financial Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Financial Management</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/35/e3/e7/35e3e7898fb2a985b7a96069e79805e8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1MROuuacdZmXk2N3y1Gxc5xUXTp0a0V_0BieKwpl8D76-82FRJ-HUUoNLToa6IoYPrSW0vDsvMjlcmSaDBao&amp;ec=45774424';" alt="Pin On Financial Management">
+										<div class="card-body">
+						<h3 class="h5"><b>January 15 2021 Bill Fay.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Where to get financial help during covid</strong>. 
+								
+																	If youre struggling to pay for food find out how to get help from a food bank. 
+																	Were in this together and we will return stronger. 
+																	The Extreme Hardship Support Program can provide financial assistance information and referrals to people living in Victoria who are experiencing significant hardship as a result of the coronavirus COVID-19 and who are unable to access Commonwealth Government income support. 
+																	Financial support for businesses during coronavirus COVID-19 Find out what financial support you can get for your business. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Martin Lewis on how to beat the 100 energy price hike confirmed for millions of homes from April. 
+																	What are vaccines and how can they help fight Covid-19. 
+																	For more information about COVID-19 in English or Spanish dial 2-1-1. 
+																	If youre a small business owner who needs financial help during COVID-19 you can receive a 500 grant through GoFundMes Small Business Relief Fund. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Businesses in the retail hospitality and leisure sectors are to be given a one-off grant worth up to 9000 to help them while they have to close during Englands Covid-19 lockdown Chancellor. 
+																	Published 3 April 2020 Last updated 21 January 2021 see all. 
+																	Mental Health Awareness Week 2020. 
+																	If you need public assistance email email protected. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The grant is worth 80 of your average monthly trading profits paid out in a. 
+																	Poetry has definitely helped me during lockdown 27 May 2020 27 May 2020. 
+																	During the first coronavirus lockdown BT Sky TalkTalk and Virgin Media all offered customers the option to pause sports packages while BT and TalkTalk users also could get one months refund. 
+																	The regulator the Financial Conduct Authority has confirmed help will be available until 31 March 2021 to people credit cards and loans and this includes store cards catalogue credit guarantor loans logbook loans credit union loans home-collected credit and community development finance institution loans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The program provides support for temporary and provisional visa holders and undocumented migrants with little or no. 
+																	Home Debt Help Advice Debt Relief Help Options Financial Help for COVID-19. 
+																	Coronavirus COVID-19 support is available everyone who can work from home must do so if you cannot work from home plan your journey to avoid crowds financial support is available if you cannot. 
+																	Read more about how to qualify for the grant on the Small Business Relief Initiative FAQ page. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	September 9 2020 Updated. 
+																	Many companies are offering help for. 
+																	Help with everyday tasks from an NHS volunteer. 
+																	If you have children check if they can get free school meals. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bills are coming due for those who received financial accommodations during the COVID-19 crisis. 
+																	Where can I find financial help during the coronavirus pandemic. 
+																	Self-employed workers can get help from the government through the self-employment income support scheme SEISS. 
+																	Thousands of students in Northern Ireland are to get a one-off 500 payment from the government in a bid to help those struggling with the financial impact of the coronavirus crisis. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Help and support is available while youre at home. 
+																	You should check the guidance on visiting care homes during COVID-19 to find out how visits should be conducted. 
+																	19 Nov 2020. 
+																	Where to Get Financial Assistance During the COVID-19 Crisis Contact your bank or lender if your finances have been strained by the coronavirus pandemic. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This includes things like your mortgage energy bills council tax or court fines. 
+																	Coronavirus COVID-19 support is available to businesses Loans tax relief and cash grants are available Employers might be eligible for financial support to pay wages Self-employed people might. 
+																	We are updating our list of resources available nationally by industry and by state daily during this time of high impact. 
+																	Financial Help for COVID-19. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can check what help you can get if you cant pay your bills. 
+																	Residents cannot meet people indoors on a visit out for example to visit their. 
+																	Coronavirus COVID-19 Find out what support you can get if youre affected by coronavirus Use this service to find out what help and advice you can get from the government and other organisations. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/d0/06/1dd006353b6ceb07747ed9f5f05c82b7.jpg" data-lightbox="roadtrip" data-title="7 Insanely Amazing Tips For Achieving Financial Freedom Smartnancials Financial Freedom Budgeting Money Finance Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/d0/06/1dd006353b6ceb07747ed9f5f05c82b7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCTR6Pz52VlOg3EDBT1W9D1CizOongTRqDyxgkQ9YKlS48xXW4yioZCgZ1Mk9jm8xyhzljQ_hYB_svHYhjvE&amp;ec=45774424';" alt="7 Insanely Amazing Tips For Achieving Financial Freedom Smartnancials Financial Freedom Budgeting Money Finance Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 Insanely Amazing Tips For Achieving Financial Freedom Smartnancials Financial Freedom Budgeting Money Finance Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/f5/77/62f577d35376dfd5c74fa7cf60fa0ac0.jpg" data-lightbox="roadtrip" data-title="Pin On Honda Helps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/f5/77/62f577d35376dfd5c74fa7cf60fa0ac0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFJOAFC6baxcwDOIKd2bhTEkCRGpXwyg3Bocj-I6uUokkyna7fGbsdRq-m75sREwnWh7mUqdPzbu9CEVhIqig&amp;ec=45774424';" alt="Pin On Honda Helps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Honda Helps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/67/0b/00670b9635e6bd4d9ccf7fd39875f1e7.png" data-lightbox="roadtrip" data-title="A Simple 7 Day Plan To Help You Stay Productive Productivity Infographic Day Plan Self Improvement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/67/0b/00670b9635e6bd4d9ccf7fd39875f1e7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFd4LCBLk5HVdQSPsclywv-YnCPOziYnog2ObRQcS2sejpFKiGvEPU3P183t0tGBuZdYw6M4BkUqEySt2zk6I&amp;ec=45774424';" alt="A Simple 7 Day Plan To Help You Stay Productive Productivity Infographic Day Plan Self Improvement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Simple 7 Day Plan To Help You Stay Productive Productivity Infographic Day Plan Self Improvement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/73/d8/7d73d8511664ecd4a3134d5541d5e90e.png" data-lightbox="roadtrip" data-title="Pin On Remote And Hybrid Learning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/73/d8/7d73d8511664ecd4a3134d5541d5e90e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ6ajbXpCe8AM4W9zn2eR-spTQCVUZZwJHEmAU2kl1C3LXEWnUttYI4B8bQK3kzsSN4jNhklXDW_GHwaKp0qM&amp;ec=45774424';" alt="Pin On Remote And Hybrid Learning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Remote And Hybrid Learning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/39/24/eb3924ff85a93bdd8972a0f51184baa0.png" data-lightbox="roadtrip" data-title="6 Key Value Propositions A Good Financial Planner Can Provide For Clients Seeking A Better Return On Life Financial Planner Financial Online Coaching Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/39/24/eb3924ff85a93bdd8972a0f51184baa0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS92ny5cA2T0hEsaBf7f-N4XjPqtTYu43LCmJsev1kp5K0tALF0FG9Cv-ug5VXrrK_HADi8lun-9E1feR5lkbA&amp;ec=45774424';" alt="6 Key Value Propositions A Good Financial Planner Can Provide For Clients Seeking A Better Return On Life Financial Planner Financial Online Coaching Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 Key Value Propositions A Good Financial Planner Can Provide For Clients Seeking A Better Return On Life Financial Planner Financial Online Coaching Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/fd/e5/82fde5c2f7436154c434c2c1a03188d2.jpg" data-lightbox="roadtrip" data-title="The Beginner S Guide To Small Business Cash Flow Forecasting In 2020 Cash Flow Finance Business Finance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/fd/e5/82fde5c2f7436154c434c2c1a03188d2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQICH_IXrAN90s2_esuhKM5vjg6-dxITepc64KwatiuXCuyMwI64yYlmLaIxIfFp7v5LAytaXtl3o5V6r88tQw&amp;ec=45774424';" alt="The Beginner S Guide To Small Business Cash Flow Forecasting In 2020 Cash Flow Finance Business Finance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Beginner S Guide To Small Business Cash Flow Forecasting In 2020 Cash Flow Finance Business Finance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/39/22/6939220a98076860ddb0cf1d575d05e9.jpg" data-lightbox="roadtrip" data-title="The Beginner S Guide To Small Business Cash Flow Forecasting In 2020 Cash Flow Business Finance Forecast">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/39/22/6939220a98076860ddb0cf1d575d05e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCbDigpnjC3nquFk97s7OFZJJ4gKc-yN7PAawbB98HA0RYa-CE-V1hcX_T1pSHW6rinnmNxI5gLiUumJXTDgg&amp;ec=45774424';" alt="The Beginner S Guide To Small Business Cash Flow Forecasting In 2020 Cash Flow Business Finance Forecast">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Beginner S Guide To Small Business Cash Flow Forecasting In 2020 Cash Flow Business Finance Forecast</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/46/0f/bf/460fbfdf85dd31d846ae73ddb00b41f0.jpg" data-lightbox="roadtrip" data-title="5 Urgent Financial Strategies For Small Business Owners Right Now In 2020 Financial Strategies Business Loans Small Business Owner">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/46/0f/bf/460fbfdf85dd31d846ae73ddb00b41f0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlDK7SZZB79amcxzBXnK7HIJUMqmgWVhFqlKBWBh6Z_IKlyzZYCxjV6ShrnLLis-x3ARoj-C1o1pe9zz0ao3w&amp;ec=45774424';" alt="5 Urgent Financial Strategies For Small Business Owners Right Now In 2020 Financial Strategies Business Loans Small Business Owner">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Urgent Financial Strategies For Small Business Owners Right Now In 2020 Financial Strategies Business Loans Small Business Owner</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/be/3e/63be3e7b5798a1563ecbd69ba68d62f5.png" data-lightbox="roadtrip" data-title="Pin On Tips For Small Business Owners">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/be/3e/63be3e7b5798a1563ecbd69ba68d62f5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHZ_mTBoqCIp0mvA0u_W42WsfSsEvIxn2Otw0NKHPcJD3qeK-dOE2ooue9bBOxtmFkvHf62AZM09XQPhS5LBs&amp;ec=45774424';" alt="Pin On Tips For Small Business Owners">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Tips For Small Business Owners</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d2/3f/fa/d23ffacaf70011ae78e5ad880cc0acba.jpg" data-lightbox="roadtrip" data-title="Not Sure If You Should Choose Paying Off Your Mortgage Or Investing For Financial Freedom The Choice Isn T As Cle Financial Planning Mortgage Payoff Investing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d2/3f/fa/d23ffacaf70011ae78e5ad880cc0acba.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3_S0mCcTo3L3577Gn26_AxzC2aucdLQtK4TxMUCiKJQGdZDgye5Nm1DHDXNBtSFLl0kDuc67pWO0I7Celnyg&amp;ec=45774424';" alt="Not Sure If You Should Choose Paying Off Your Mortgage Or Investing For Financial Freedom The Choice Isn T As Cle Financial Planning Mortgage Payoff Investing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Not Sure If You Should Choose Paying Off Your Mortgage Or Investing For Financial Freedom The Choice Isn T As Cle Financial Planning Mortgage Payoff Investing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/b3/a9/aeb3a9190b0509175a54db377d8f5429.jpg" data-lightbox="roadtrip" data-title="Achieve Simple Financial Success With 5 Good Financial Habits Personal Finance Financial Freedom Budgeting Finances">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/b3/a9/aeb3a9190b0509175a54db377d8f5429.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQQ8EYq3r494ZnV0HGx2arDvx0y6rnAfwiXo3OLdKwfYPFDHirls2H5uA7oioVRVb6nPPgF6fai5K_SvYM7qc&amp;ec=45774424';" alt="Achieve Simple Financial Success With 5 Good Financial Habits Personal Finance Financial Freedom Budgeting Finances">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Achieve Simple Financial Success With 5 Good Financial Habits Personal Finance Financial Freedom Budgeting Finances</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/1e/3e/e11e3e9b609ff6cb1f3f871caa2aa2fc.png" data-lightbox="roadtrip" data-title="Cash Sweep Helps You Pay Debt Or Earn Higher Interest Accounting And Finance Financial Accounting Small Business Bookkeeping">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/1e/3e/e11e3e9b609ff6cb1f3f871caa2aa2fc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJOLVwb8K8lQ6GmeCbOln6fNyv_yCaHcGkudB2FFZHwzvCT8wm0POSRFvNEHwApHGSfHsyIAfqRiuwouTGlKc&amp;ec=45774424';" alt="Cash Sweep Helps You Pay Debt Or Earn Higher Interest Accounting And Finance Financial Accounting Small Business Bookkeeping">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cash Sweep Helps You Pay Debt Or Earn Higher Interest Accounting And Finance Financial Accounting Small Business Bookkeeping</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a6/c2/37/a6c237a169ac6e053b1367b2687b8bb5.jpg" data-lightbox="roadtrip" data-title="Pin On Tips For Small Business Owners">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a6/c2/37/a6c237a169ac6e053b1367b2687b8bb5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsgaRx95Crru59IIH-solLBMuwbfU2OMVMS1M5l0lk3pTT_Q0CAQyaAgYETtRw86R94kKsaDldVeCZnllDUW4&amp;ec=45774424';" alt="Pin On Tips For Small Business Owners">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Tips For Small Business Owners</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-to-prepare-for-military-retirement.html">How To Prepare For Military Retirement</a></li>
+													<li class="list-group-item"><a href="/hr-jobs-in-military.html">Hr Jobs In Military</a></li>
+													<li class="list-group-item"><a href="/hr-officer-military.html">Hr Officer Military</a></li>
+													<li class="list-group-item"><a href="/how-to-translate-skills-on-a-resume.html">How To Translate Skills On A Resume</a></li>
+													<li class="list-group-item"><a href="/how-to-pay-off-military-debt.html">How To Pay Off Military Debt</a></li>
+													<li class="list-group-item"><a href="/how-to-search-for-vietnam-veterans.html">How To Search For Vietnam Veterans</a></li>
+													<li class="list-group-item"><a href="/hr-military-acronym.html">Hr Military Acronym</a></li>
+													<li class="list-group-item"><a href="/how-to-military-training.html">How To Military Training</a></li>
+													<li class="list-group-item"><a href="/hr-army-address.html">Hr Army Address</a></li>
+													<li class="list-group-item"><a href="/hr-administrator-army.html">Hr Administrator Army</a></li>
+													<li class="list-group-item"><a href="/hr-army-salary.html">Hr Army Salary</a></li>
+													<li class="list-group-item"><a href="/hr-block-military-tax-filing.html">Hr Block Military Tax Filing</a></li>
+													<li class="list-group-item"><a href="/hr-army-song-download.html">Hr Army Song Download</a></li>
+													<li class="list-group-item"><a href="/hr-competencies-army.html">Hr Competencies Army</a></li>
+													<li class="list-group-item"><a href="/how-to-say-military-time-with-minutes.html">How To Say Military Time With Minutes</a></li>
+													<li class="list-group-item"><a href="/hr-in-south-african-army.html">Hr In South African Army</a></li>
+													<li class="list-group-item"><a href="/how-to-verify-employment-with-the-army.html">How To Verify Employment With The Army</a></li>
+													<li class="list-group-item"><a href="/hr-block-military-taxes-online.html">Hr Block Military Taxes Online</a></li>
+													<li class="list-group-item"><a href="/hr-assistant-us-army.html">Hr Assistant Us Army</a></li>
+													<li class="list-group-item"><a href="/hr-in-army.html">Hr In Army</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

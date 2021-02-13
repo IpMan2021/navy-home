@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Will The Va Pay For Medical Bills - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Will The Va Pay For Medical Bills",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/5f/0c/db/5f0cdb0cef5b7d2c011091990834c094.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=will+the+va+pay+for+medical+bills",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Will The Va Pay For Medical Bills</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Pay at your local VA Medical Center Agent Cashiers Office. For that reason there are government programs associated with the VA as well as each military branch there to help with financial assistance or make payment a little easier. Find your nearest VA medical center. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/department-of-veterans-affairs-glassdoor.html">department of veterans affairs glassdoor</a>
+											<a class="badge badge-primary" href="/department-of-veterans-affairs-nashville.html">department of veterans affairs nashville</a>
+											<a class="badge badge-success" href="/department-of-veterans-affairs-colorado-springs.html">department of veterans affairs colorado springs</a>
+											<a class="badge badge-success" href="/department-of-veterans-affairs-eastern-colorado-healthcare-system.html">department of veterans affairs eastern colorado healthcare system</a>
+											<a class="badge badge-light" href="/department-of-veterans-affairs-chicago.html">department of veterans affairs chicago</a>
+											<a class="badge badge-success" href="/department-of-veterans-affairs-home-loans.html">department of veterans affairs home loans</a>
+											<a class="badge badge-success" href="/department-of-veterans-affairs-mission-statement.html">department of veterans affairs mission statement</a>
+											<a class="badge badge-primary" href="/department-of-veterans-affairs-jacksonville-fl.html">department of veterans affairs jacksonville fl</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you've come to pay a visit to the ideal site.  Our site provides you with suggestions for viewing the highest quality video and image content, search and locate more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, therefore we recommend this movie for you to see.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/a3/36/f4a33604ae77a2e0a87ecd3917771b78.jpg" data-lightbox="roadtrip" data-title="Military Medical Retirement Pay Chart 2020 Va Disability Medical Retirement Va Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/a3/36/f4a33604ae77a2e0a87ecd3917771b78.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTphECfRFvMLwnCtQbvqVb6zI8zQdL1sUnUlw';" alt="Military Medical Retirement Pay Chart 2020 Va Disability Medical Retirement Va Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Medical Retirement Pay Chart 2020 Va Disability Medical Retirement Va Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/1a/12/bd1a12a12d4f85fd93a105960dcceda7.jpg" data-lightbox="roadtrip" data-title="Va Treasury Still Working To Get Stimulus Checks To Potentially Overlooked Veterans In 2020 Department Of Veterans Affairs Veteran Veterans Organizations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/1a/12/bd1a12a12d4f85fd93a105960dcceda7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0a60Nf_N0ISz_LPjB8W4iWiqrX-oCTRnUzA';" alt="Va Treasury Still Working To Get Stimulus Checks To Potentially Overlooked Veterans In 2020 Department Of Veterans Affairs Veteran Veterans Organizations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Treasury Still Working To Get Stimulus Checks To Potentially Overlooked Veterans In 2020 Department Of Veterans Affairs Veteran Veterans Organizations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/00/f7/75/00f775a6e3582419b8d3623690bacf29.jpg" data-lightbox="roadtrip" data-title="5 Steps To Track Overwhelming Medical Bills Medical Billing Medical Cancer Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/00/f7/75/00f775a6e3582419b8d3623690bacf29.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe1Q0svz5SOcDeOtidHqakAJx91gJ0_k64Eg';" alt="5 Steps To Track Overwhelming Medical Bills Medical Billing Medical Cancer Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Steps To Track Overwhelming Medical Bills Medical Billing Medical Cancer Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/6f/90/0e6f9079aa5fff0355b70a7c42974d85.png" data-lightbox="roadtrip" data-title="Va C And P Exam Do S And Don Ts Va Compensation Pension Exam In 2020 Exam Medical Information Private Health Care">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/6f/90/0e6f9079aa5fff0355b70a7c42974d85.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJADlyIUNUyhHGJaWSTeqP3C-1ROHr9vFtxQ';" alt="Va C And P Exam Do S And Don Ts Va Compensation Pension Exam In 2020 Exam Medical Information Private Health Care">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va C And P Exam Do S And Don Ts Va Compensation Pension Exam In 2020 Exam Medical Information Private Health Care</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/31/a4/4d/31a44d4e9b9b06803e7adc2feb5f3fa6.jpg" data-lightbox="roadtrip" data-title="Pin On Personal Money Management">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/31/a4/4d/31a44d4e9b9b06803e7adc2feb5f3fa6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcB1GBi0MDV-HyYJ9XMXMBmi1kWUexcbMQFw';" alt="Pin On Personal Money Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Personal Money Management</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/20/7a/2a207a3410fcc36fa5469c17aba3f60d.jpg" data-lightbox="roadtrip" data-title="Pin On Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/20/7a/2a207a3410fcc36fa5469c17aba3f60d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfvOF3_rsluOJYcpOXTROKXsmPb7_0wnc4Lg';" alt="Pin On Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Veterans</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/f3/09/11/f309111180f7250bae18084ae07f6e24.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfvOF3_rsluOJYcpOXTROKXsmPb7_0wnc4Lg';" alt="Pin On Veterans">
+										<div class="card-body">
+						<h3 class="h5"><b>The issue was raised in a recently published Michigan Court of Appeals case Batts v.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Will the va pay for medical bills</strong>. 
+								
+																	Department of Veterans Affairs Subject. 
+																	Titan Insurance Co Docket No. 
+																	Pay by check or money order made payable to VA Be sure to include the account number and payment. 
+																	Do Insurance Companies Have to Pay for Veterans Medical Bills. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Discover UK showbiz and celebrity breaking news from the MailOnline. 
+																	However there are specific requirements in federal law and regulation that detail the conditions for eligibility for both service-connected and non-service connected conditions. 
+																	To qualify for free health care through the VA you have to meet the military service requirements and they will do an income verification process. 
+																	WASHINGTON The Department of Veterans Affairs must reimburse veterans for emergency medical care at non-VA facilities a federal appeals court ruled Monday a decision that could be worth. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Join the growing number of Veterans already using this service. 
+																	Veterans Medical Bills Can Be Covered by VA Benefits. 
+																	Veterans can pay the balance of their VA bills from the comfort of their own home. 
+																	Bring your payment stub along with a check or money order made payable to VA Be sure to include your account number on the check or money order. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	According to VA the department can pay for emergency medical care if the condition is service-related or caused by a service-related condition and services arent available at a VA facility. 
+																	Batts was a military veteran. 
+																	Please note that billing for injury-related care provided to a Veteran at a VA facility or provided to a Veteran at a non-VA facility and paid for by VA includes Veterans Choice Program must be created by VA at the time it receives a request. 
+																	All co-pays are subject to change at the whims of Congress. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You may also be required to pay co-pay for prescription medications and refills you receive from the VA. 
+																	Jul 19 2017 10 Generally speaking the VA WILL reimburse you for medical treatment that you received for a service connected problem and for non-service connected problems if you end up rated at 50 SC or higher that you incurred while waiting for a decision on Service Connection and a rating level. 
+																	No more writing checks or driving to the local VA to make a payment. 
+																	VA can also pay for emergency medical care for a Veterans non-service connected condition. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There is a medication co-pay cap of 960 per calendar year for all enrolled veterans except those in Group 7 or 8. 
+																	For current co-pay amounts visit the VAs Web site at. 
+																	Though the VAs intent is to help pay for many medical necessities there are situations in which medical debt may accumulate. 
+																	Medical debt consolidation is also another way to lower your monthly payments. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Pay directly from your bank account by debit card or credit card at the Paygov website. 
+																	The Department of Veterans Affairs VA may provide reimbursement of non-VA medical expenses for Veterans for their service-connected conditions to include those who are recently granted service-connected awards. 
+																	Depending on the health condition you may have to pay co-pays for your health care but the rest of the bills are paid for through the federal government. 
+																	Never miss out on gossip celebrity photos videos divorces scandals and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA accused of failing to pay bills for health care company Michael Casey The Associated Press August 15 2018 A New Hampshire health care provider says months of unpaid invoices to Veterans. 
+																	If the repayment plan is approved by your medical provider or the VA the plan will result in a more-affordable monthly payment by spreading the unpaid medical debt out over an extended period of time thereby lowering the monthly payments. 
+																	He was severely injured when a vehicle struck him while he was riding his motor scooter through an intersection. 
+																	Visit your nearest VA medical center and ask for the agent cashiers office. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	PayGov is the secure free fast and easiest way to pay your VA health care and prescription copayments online. 
+																	Copayments range from 8 for a 30-day supply of prescription medicine to 1024 for the first 90 days of inpatient care each year. 
+																	Rules established under the law and published Wednesday in the Federal Register say the VA will pay for veterans to see non-VA doctors if they have to wait longer than 20 days or drive more than 30. 
+																	You can pay online by phone in person at your local VA medical facility or by mail. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	10-447 Reimbursement of Non-VA Medical Expenses for Service-Connected Veterans Author. 
+																	This process normally takes 60 days from when VA receives all information needed. 
+																	To receive VA health care can continue to receive care after five years although they may have to pay copayments for medical problems unrelated to their military service. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/0c/db/5f0cdb0cef5b7d2c011091990834c094.jpg" data-lightbox="roadtrip" data-title="We Pay Your Closing Cost Saturday 03 30 19 From 10 Am 1 00 Pm Limited Spaces Please Reserve Your Spot Call Te Refinance Loans Va Mortgage Loans Va Loan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/0c/db/5f0cdb0cef5b7d2c011091990834c094.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGDUj1Zz7U15bQ8J9un9lGwAsfy13RUfMKNg';" alt="We Pay Your Closing Cost Saturday 03 30 19 From 10 Am 1 00 Pm Limited Spaces Please Reserve Your Spot Call Te Refinance Loans Va Mortgage Loans Va Loan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Pay Your Closing Cost Saturday 03 30 19 From 10 Am 1 00 Pm Limited Spaces Please Reserve Your Spot Call Te Refinance Loans Va Mortgage Loans Va Loan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/9c/83/779c8394047ee64f2a10b7dfeae6723f.png" data-lightbox="roadtrip" data-title="Pin On Manage Debt">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/9c/83/779c8394047ee64f2a10b7dfeae6723f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmBbmXiFmWkHOtvWhhoBRBsWYrevEk669uMQ';" alt="Pin On Manage Debt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Manage Debt</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/6d/0b/d86d0bf2f6c00c18cf9d5572742de218.jpg" data-lightbox="roadtrip" data-title="Attention Veterans These Are The Benefit Amounts You Could Qualify To Help With Your Medical Needs And Expenses Elder Senior Planner Va Benefits Medicaid">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/6d/0b/d86d0bf2f6c00c18cf9d5572742de218.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvgmP-74RJYCsh8SVuzzx_eKG2jO89wc_WFQ';" alt="Attention Veterans These Are The Benefit Amounts You Could Qualify To Help With Your Medical Needs And Expenses Elder Senior Planner Va Benefits Medicaid">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Attention Veterans These Are The Benefit Amounts You Could Qualify To Help With Your Medical Needs And Expenses Elder Senior Planner Va Benefits Medicaid</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/65/b8/5f65b85eff7748ea505ca65f3644f018.jpg" data-lightbox="roadtrip" data-title="Additional 100 Disabled Veteran Benefits For Permanently Disabled Veterans Affairs And Veterans News From Hadit Com Veterans Benefits Va Disability Benefits Disabled Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/65/b8/5f65b85eff7748ea505ca65f3644f018.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1MC_53jqgtEbNe7E-z0Ye7Z8gKrWNmkbuQA';" alt="Additional 100 Disabled Veteran Benefits For Permanently Disabled Veterans Affairs And Veterans News From Hadit Com Veterans Benefits Va Disability Benefits Disabled Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Additional 100 Disabled Veteran Benefits For Permanently Disabled Veterans Affairs And Veterans News From Hadit Com Veterans Benefits Va Disability Benefits Disabled Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/4c/d6/d54cd67b3cf7d4b0f8d9b748d0b7f6f2.png" data-lightbox="roadtrip" data-title="Veteran Benefits To Help Pay For Assisted Living In 2020 Veterans Benefits Veteran Memory Care">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/4c/d6/d54cd67b3cf7d4b0f8d9b748d0b7f6f2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT1JHUSfZFiIcpitQe3lq88DHNZqbs0iaalw';" alt="Veteran Benefits To Help Pay For Assisted Living In 2020 Veterans Benefits Veteran Memory Care">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Benefits To Help Pay For Assisted Living In 2020 Veterans Benefits Veteran Memory Care</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d6/ec/44/d6ec443f7897a47abf3468a70163ad2f.jpg" data-lightbox="roadtrip" data-title="Have Medical Bills In Collections Dispute A Medical Bill With These 6 Tools Debt Relief Programs Medical Billing Debt Relief">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d6/ec/44/d6ec443f7897a47abf3468a70163ad2f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnBV9_eLgrXj8tSTNMGDpeUeVHwsA6tYqP-g';" alt="Have Medical Bills In Collections Dispute A Medical Bill With These 6 Tools Debt Relief Programs Medical Billing Debt Relief">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Have Medical Bills In Collections Dispute A Medical Bill With These 6 Tools Debt Relief Programs Medical Billing Debt Relief</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/09/11/f309111180f7250bae18084ae07f6e24.jpg" data-lightbox="roadtrip" data-title="Attention Veterans Access The Benefits You Ve Earned Through Military Service Elder Care Senior Seniors Va Benefits Military Benefits Veterans Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/09/11/f309111180f7250bae18084ae07f6e24.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp9-9hkQYlrHLEsdLHCgNAah73L_MWPp6v8g';" alt="Attention Veterans Access The Benefits You Ve Earned Through Military Service Elder Care Senior Seniors Va Benefits Military Benefits Veterans Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Attention Veterans Access The Benefits You Ve Earned Through Military Service Elder Care Senior Seniors Va Benefits Military Benefits Veterans Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e0/c8/47/e0c84708121ae0c7e5c94e507c2f0606.jpg" data-lightbox="roadtrip" data-title="Soldier To Civilian Checklist For Establishing Va Medical Benefits In 2020 Soldier Medical Military Retirement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e0/c8/47/e0c84708121ae0c7e5c94e507c2f0606.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9B-RMqPPX_EImceiLoykz3tKgeHmWI7x-mA';" alt="Soldier To Civilian Checklist For Establishing Va Medical Benefits In 2020 Soldier Medical Military Retirement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soldier To Civilian Checklist For Establishing Va Medical Benefits In 2020 Soldier Medical Military Retirement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/83/94/488394e6ac6e20609d90bcc1cc44f3de.jpg" data-lightbox="roadtrip" data-title="Pin On Business Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/83/94/488394e6ac6e20609d90bcc1cc44f3de.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmafSymsFuhAQcFQ6AgTGiDoMH4ayZTNgqbA';" alt="Pin On Business Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Business Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7d/aa/fa/7daafaba8ed25781277a96ee71d78c6a.jpg" data-lightbox="roadtrip" data-title="5 Steps To Track Overwhelming Medical Bills Medical Billing Medical Debt Medical">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7d/aa/fa/7daafaba8ed25781277a96ee71d78c6a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCQbMrSoNTnkmUlVKyljlPqwX1BGBW5gooaw';" alt="5 Steps To Track Overwhelming Medical Bills Medical Billing Medical Debt Medical">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Steps To Track Overwhelming Medical Bills Medical Billing Medical Debt Medical</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/3b/90/8d3b90412c725a7b9edeac16eee7f02c.jpg" data-lightbox="roadtrip" data-title="Medical Bills Businessman Sitting At Desk Holding Pen With Filesand A Card That Ad Sitting Desk Holding Mesothelioma Immunotherapy Medical Billing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/3b/90/8d3b90412c725a7b9edeac16eee7f02c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyFINKatE6GXx9zhEnfY6AsYliGS8CLyUt6Q';" alt="Medical Bills Businessman Sitting At Desk Holding Pen With Filesand A Card That Ad Sitting Desk Holding Mesothelioma Immunotherapy Medical Billing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Medical Bills Businessman Sitting At Desk Holding Pen With Filesand A Card That Ad Sitting Desk Holding Mesothelioma Immunotherapy Medical Billing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/4b/7f/7c4b7fa5ecc749a5672cb8b17a8a5593.jpg" data-lightbox="roadtrip" data-title="Pin By Apex Financial Services Va On Apex Financial Services Va Final Expense Insurance Financial Services Financial Advisors">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/4b/7f/7c4b7fa5ecc749a5672cb8b17a8a5593.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9CVeW00vqt5NnB94yB3ugl6cQ2yvr1ZkLjQ';" alt="Pin By Apex Financial Services Va On Apex Financial Services Va Final Expense Insurance Financial Services Financial Advisors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Apex Financial Services Va On Apex Financial Services Va Final Expense Insurance Financial Services Financial Advisors</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/ad/90/8ead90c0313bd4d386fd4f01c8fd8635.jpg" data-lightbox="roadtrip" data-title="You Can Use Your Health Savings Account Hsa To Pay For Qualified Medical Expenses For Your Spouse Or A Depend In 2020 Emergency Savings Emergency Fund Emergency Room">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/ad/90/8ead90c0313bd4d386fd4f01c8fd8635.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM_HIJr4hRTdgj_yNj_1Oxz4ipuBCUssyK7w';" alt="You Can Use Your Health Savings Account Hsa To Pay For Qualified Medical Expenses For Your Spouse Or A Depend In 2020 Emergency Savings Emergency Fund Emergency Room">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">You Can Use Your Health Savings Account Hsa To Pay For Qualified Medical Expenses For Your Spouse Or A Depend In 2020 Emergency Savings Emergency Fund Emergency Room</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/mychaat.html">Mychaat</a></li>
+													<li class="list-group-item"><a href="/national-archives-military-pension-records.html">National Archives Military Pension Records</a></li>
+													<li class="list-group-item"><a href="/mycanal-hdr.html">Mycanal Hdr</a></li>
+													<li class="list-group-item"><a href="/mycargo-pelni.html">Mycargo Pelni</a></li>
+													<li class="list-group-item"><a href="/navy-and-chief-information-officer.html">Navy And Chief Information Officer</a></li>
+													<li class="list-group-item"><a href="/national-department-of-defence-south-africa.html">National Department Of Defence South Africa</a></li>
+													<li class="list-group-item"><a href="/national-archives-military-records-st-louis.html">National Archives Military Records St Louis</a></li>
+													<li class="list-group-item"><a href="/navy-veterans-database.html">Navy Veterans Database</a></li>
+													<li class="list-group-item"><a href="/mycanal-plus.html">Mycanal Plus</a></li>
+													<li class="list-group-item"><a href="/national-defence-university-department.html">National Defence University Department</a></li>
+													<li class="list-group-item"><a href="/national-archives-and-records-services-of-south-africa.html">National Archives And Records Services Of South Africa</a></li>
+													<li class="list-group-item"><a href="/mycanal-macos.html">Mycanal Macos</a></li>
+													<li class="list-group-item"><a href="/navy-recruiting-center-near-me.html">Navy Recruiting Center Near Me</a></li>
+													<li class="list-group-item"><a href="/navy-seal-edward-gallagher-wife.html">Navy Seal Edward Gallagher Wife</a></li>
+													<li class="list-group-item"><a href="/mycanal-mois-gratuit.html">Mycanal Mois Gratuit</a></li>
+													<li class="list-group-item"><a href="/national-archives-canada-military-service-records.html">National Archives Canada Military Service Records</a></li>
+													<li class="list-group-item"><a href="/mycca-military.html">Mycca Military</a></li>
+													<li class="list-group-item"><a href="/national-archives-veteran-records-request.html">National Archives Veteran Records Request</a></li>
+													<li class="list-group-item"><a href="/mycanal-guide-tv.html">Mycanal Guide Tv</a></li>
+													<li class="list-group-item"><a href="/national-defense-budget-2021.html">National Defense Budget 2021</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

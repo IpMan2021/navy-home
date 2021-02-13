@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is A Ministry Of Defence - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is A Ministry Of Defence",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/ff/32/0a/ff320add7e2d9632a5271967fe1a9ba5.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+a+ministry+of+defence",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is A Ministry Of Defence</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Published 3 February 2021 Explore the topic. This document sets out Ministry of Defence MOD policy on the application of methods of disclosure control and of rounding to statistics produced for external publication. Ministry of Defence Police MDP officers dont patrol the streets they protect sites of national importance plus everything on them and everyone in them. <br>				
+			</p>
+										<a class="badge badge-dark" href="/military-resources-for-mental-health.html">military resources for mental health</a>
+											<a class="badge badge-light" href="/military-retirement-calculator-dfas.html">military retirement calculator dfas</a>
+											<a class="badge badge-secondary" href="/military-retirement-calculator-active-and-reserve-time.html">military retirement calculator active and reserve time</a>
+											<a class="badge badge-warning" href="/military-retirement-calculator-high-36.html">military retirement calculator high 36</a>
+											<a class="badge badge-light" href="/military-retirement-calculator-redux.html">military retirement calculator redux</a>
+											<a class="badge badge-success" href="/military-resource.html">military resource</a>
+											<a class="badge badge-light" href="/military-resource-pack-minecraft.html">military resource pack minecraft</a>
+											<a class="badge badge-secondary" href="/military-retirement-calculator-comparison.html">military retirement calculator comparison</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you've come to pay a visit to the right blog.  Our website gives you hints for viewing the maximum quality video and image content, hunt and locate more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, especially Youtube, so we recommend this movie for you to view.  You can also bring about supporting this site by sharing videos and graphics that you enjoy on this blog on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information that you get on this website.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/a7/0b/b2/a70bb23a3698e1efbe0f1ce8c68ed52d.jpg" data-lightbox="roadtrip" data-title="Defence Ministry Continues Dialogue With Employees Associations On Ordnance Factory Board Corporatisation Ministry Gazetted Officer Defence">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/a7/0b/b2/a70bb23a3698e1efbe0f1ce8c68ed52d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeso3Qsho32Nf3l41Hegg8tE_KGYn3pgzdOQ';" alt="Defence Ministry Continues Dialogue With Employees Associations On Ordnance Factory Board Corporatisation Ministry Gazetted Officer Defence">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Defence Ministry Continues Dialogue With Employees Associations On Ordnance Factory Board Corporatisation Ministry Gazetted Officer Defence</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/c4/2a/d5/c42ad558f51f39cd9b44688df728fb43--ministry-government-jobs.jpg" data-lightbox="roadtrip" data-title="Ministry Of Defence Tenders Tenders Of Ministry Of Defence Ministry Of Defence Online Tender Portal Md Tenders Railway Jobs Police Jobs Recruitment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/c4/2a/d5/c42ad558f51f39cd9b44688df728fb43--ministry-government-jobs.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVafTBMzohXyos83ZiwcPAUaIHrVntXpb1ZA';" alt="Ministry Of Defence Tenders Tenders Of Ministry Of Defence Ministry Of Defence Online Tender Portal Md Tenders Railway Jobs Police Jobs Recruitment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ministry Of Defence Tenders Tenders Of Ministry Of Defence Ministry Of Defence Online Tender Portal Md Tenders Railway Jobs Police Jobs Recruitment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/10/c2/ad/10c2ad01f90149cd45c1ca5d6d44eaaf.jpg" data-lightbox="roadtrip" data-title="Ministry Of Defence Job Circular 2020 Job Circular Job Portal Job Portal Website">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/10/c2/ad/10c2ad01f90149cd45c1ca5d6d44eaaf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxnYC9AUOm9HQWC_qiuVWvyqTZ-GFZZ7OdHA';" alt="Ministry Of Defence Job Circular 2020 Job Circular Job Portal Job Portal Website">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ministry Of Defence Job Circular 2020 Job Circular Job Portal Job Portal Website</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/22/2e/bd222ed7a390c733a13f0643a4c49bc1.jpg" data-lightbox="roadtrip" data-title="Ministry Of Defence Main Building London Uk The Open Plan Environment Supports Interaction Communication And Collaboration In Less Hierarchical Workspaces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/22/2e/bd222ed7a390c733a13f0643a4c49bc1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBP5bhgtUgfu6_-2Om6Fbxk7jfIf0LFrBh6g';" alt="Ministry Of Defence Main Building London Uk The Open Plan Environment Supports Interaction Communication And Collaboration In Less Hierarchical Workspaces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ministry Of Defence Main Building London Uk The Open Plan Environment Supports Interaction Communication And Collaboration In Less Hierarchical Workspaces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/56/36/01563611df78524d2a0b4a54e156a025.png" data-lightbox="roadtrip" data-title="Pin On 0014 Military Defence Bureau Imperial">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/56/36/01563611df78524d2a0b4a54e156a025.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNIxGrWZArO3QWHIIOa_tpSt2WjwoijpNisw';" alt="Pin On 0014 Military Defence Bureau Imperial">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On 0014 Military Defence Bureau Imperial</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/15/5a/e6155ace19f225a4c2cc98e34a5090cd.jpg" data-lightbox="roadtrip" data-title="Pin On British Army Team Working On Bloodhound Ssc 1000mph Car">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/15/5a/e6155ace19f225a4c2cc98e34a5090cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShPWxNXlbbT9p_B55AB1hi902zyL8i_VgquQ';" alt="Pin On British Army Team Working On Bloodhound Ssc 1000mph Car">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On British Army Team Working On Bloodhound Ssc 1000mph Car</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/eb/c9/57/ebc9576f00483847a07ee450a8fa5be1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShPWxNXlbbT9p_B55AB1hi902zyL8i_VgquQ';" alt="Pin On British Army Team Working On Bloodhound Ssc 1000mph Car">
+										<div class="card-body">
+						<h3 class="h5"><b>1 Ministry of Defence Montenegro Manufacturing engineer jobs in Greater Manchester.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is a ministry of defence</strong>. 
+								
+																	A Ministry of Defence or Defense see spelling differences also known as a Department of Defence or Defense is an often-used name for the part of a government responsible for matters of defence found in states where the government is divided into ministries or departments. 
+																	If you believe you have found a vulnerability on any MOD system you can report it using the guidance and policy provided. 
+																	MOD acronyms and abbreviations August 2014 PDF 162MB 402 pages. 
+																	The MOD states that its principal objectives are to defend the United Kingdom of Great Britain and Northern Ireland and its interests and to strengthen. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Displayed here are job ads that match your query. 
+																	The Ministry of Defence MOD or MoD is the British government department responsible for implementing the defence policy set by Her Majestys Government and is the headquarters of the British Armed Forces. 
+																	The Ministry of Defence MoD IAST. 
+																	Page 1 of 80 jobs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Ministry of Defence has 8 defence tasks. 
+																	It is the UKs ministry of defence. 
+																	Ministry of Defence Jobs Announced. 
+																	Definitions for terms and acronyms used throughout MOD documents. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Read the full decision in Miss Emma Gazi v Ministry of Defence. 
+																	A leaked report from the Ministry of Defence has laid bare the catastrophic state of the British Army revealing all but one infantry battalions are dangerously short of battle-ready troops. 
+																	Indeed may be compensated by these employers helping keep Indeed free for jobseekers. 
+																	Ministry of Defence Votes A. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ministry of Defence Civilian jobs. 
+																	2021 to 2022 MOD Votes A seeking parliamentary authority for the maximum numbers of personnel to be maintained for service with the UK Armed Forces. 
+																	Raksha Maṃtralaya is charged with coordinating and supervising all agencies and functions of the government relating directly to national security and the Indian armed forces. 
+																	Defence security and resilience of the UK and its overseas territories nuclear deterrence and the defence nuclear enterprise contribute to improved. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Search job openings see if they fit - company salaries reviews and more posted by Ministry of Defence Montenegro employees. 
+																	For more information see the Indeed Terms of. 
+																	PRIME MINISTERS CORONA RELIEF FUND Click Here. 
+																	Indeed ranks Job Ads based on a combination of employer bids and relevance such as your search terms and other activity on Indeed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1 minute ago One of the more abiding riddles in the officialdom revolves around the viewpoint of who really is responsible for deliberations in the multilayered Ministry of Defence MoD. 
+																	Def Minister Pervez Khattak with PM Imran Khan during inauguration. 
+																	Ministry of Defence definition. 
+																	Is this page useful. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Courts sentencing and tribunals. 
+																	The process is being conducted in constant coordination between the Sultans Armed Forces and the other departments of the ministry of defence and the ministry of labour which publishes the recruitment advertisements on local media and on the Tajneed website which publishes details about the job opportunities available at the military and security entities. 
+																	Photo of Ministry of Defence building taken in 1910 Read More. 
+																	The website also enables job. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The government department responsible for the countrys military measures or resources Meaning pronunciation translations and examples. 
+																	To apply see Careers HE Mr Andreas Papastavrou Ambassador of Greece called on Minister for Def Mr Pervez Khattak in Parliament House Islamabad - 27 Jan 2021. 
+																	Excluding defence pension the total allocations for the ministry for 2021-22 is at Rs 362 lakh crore which is an increase of Rs 2479262 crore over 2020-21. 
+																	The President of India is the ceremonial commander-in-chief of the armed forces of the country. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Published 15 August. 
+																	The Ministry of Defence MOD takes the security of our systems seriously. 
+																	Such a department usually includes all branches of the military and is usually controlled by a Defence Minister. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/32/0a/ff320add7e2d9632a5271967fe1a9ba5.png" data-lightbox="roadtrip" data-title="Ministry Of Defence Recruitment 2018 For Civilian Posts In Namkum Ranchi Recruitment Defence Ministry">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/32/0a/ff320add7e2d9632a5271967fe1a9ba5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX-1iTFdbAzqsgHtwPpp-CjthgNfXx4bppWg';" alt="Ministry Of Defence Recruitment 2018 For Civilian Posts In Namkum Ranchi Recruitment Defence Ministry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ministry Of Defence Recruitment 2018 For Civilian Posts In Namkum Ranchi Recruitment Defence Ministry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/5f/c1/df/5fc1dfb7ced374ba18d6b80868c27ba0.jpg" data-lightbox="roadtrip" data-title="Ministry Of Defence Job Circular 2020 In 2020 Job Circular Job Second Job">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/5f/c1/df/5fc1dfb7ced374ba18d6b80868c27ba0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMU9XFyR-eUtu19bG53TmDZcVPddSj95MQBQ';" alt="Ministry Of Defence Job Circular 2020 In 2020 Job Circular Job Second Job">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ministry Of Defence Job Circular 2020 In 2020 Job Circular Job Second Job</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/9c/f2/249cf2efe504dc5bc44bf31c2f84a5d7.png" data-lightbox="roadtrip" data-title="Ministry Of Defence Recruitment 2019 Job Portal Online Jobs How To Apply">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/9c/f2/249cf2efe504dc5bc44bf31c2f84a5d7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUpQ3jem_vbbAcSVzdmbGZhMTQk1nFlAnUlw';" alt="Ministry Of Defence Recruitment 2019 Job Portal Online Jobs How To Apply">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ministry Of Defence Recruitment 2019 Job Portal Online Jobs How To Apply</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/17/b6/6a17b6dd45605f91bf629657f91ed6a8.png" data-lightbox="roadtrip" data-title="Ministry Of Defence Recruitment 2018 2019 Ministry Of Defence Jobs For Graduates Ministry Of Defence Recruitment 2017 18 Recruitment Ministry Private Company">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/17/b6/6a17b6dd45605f91bf629657f91ed6a8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9fwYfAFH23icuRse2KcEFzCTuYBs3vE7zfQ';" alt="Ministry Of Defence Recruitment 2018 2019 Ministry Of Defence Jobs For Graduates Ministry Of Defence Recruitment 2017 18 Recruitment Ministry Private Company">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ministry Of Defence Recruitment 2018 2019 Ministry Of Defence Jobs For Graduates Ministry Of Defence Recruitment 2017 18 Recruitment Ministry Private Company</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/92/50/ca9250f57e71c52ee74de3042446cadf.png" data-lightbox="roadtrip" data-title="Welcome To Defence Imagery Where Official Royal Navy Army Raf And Ministry Of Defence Images Are Available For Download Royal Navy Raf Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/92/50/ca9250f57e71c52ee74de3042446cadf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST2xOJQTS8C_qkPTOduSHQZL06Iipvxs_Ntg';" alt="Welcome To Defence Imagery Where Official Royal Navy Army Raf And Ministry Of Defence Images Are Available For Download Royal Navy Raf Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Welcome To Defence Imagery Where Official Royal Navy Army Raf And Ministry Of Defence Images Are Available For Download Royal Navy Raf Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/b8/dd/39b8dd8bf918d73e564571b0d9e34564.jpg" data-lightbox="roadtrip" data-title="Ministry Of Defence Police Police Patches Police Uniforms Police Badge">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/b8/dd/39b8dd8bf918d73e564571b0d9e34564.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSweNBPrK-UEyJ71TDu0HAP7GeJpz0LxW7dKw';" alt="Ministry Of Defence Police Police Patches Police Uniforms Police Badge">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ministry Of Defence Police Police Patches Police Uniforms Police Badge</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/a9/0f/b1a90fe8040483ea734fc86ef8bea884.png" data-lightbox="roadtrip" data-title="Czech Ministry Of Defence Heraldry Emblems Defence">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/a9/0f/b1a90fe8040483ea734fc86ef8bea884.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThg0k-Uuu51AkijecbHt1EutW1e0yQW7f_Wg';" alt="Czech Ministry Of Defence Heraldry Emblems Defence">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Czech Ministry Of Defence Heraldry Emblems Defence</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/f5/55/82f5553edcb178cd98e3dfb7d043a33a.gif" data-lightbox="roadtrip" data-title="Pin On Flags">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/f5/55/82f5553edcb178cd98e3dfb7d043a33a.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLyM1J-c1IB4acL5_N_bKjbFFXvkScCur9sQ';" alt="Pin On Flags">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Flags</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/98/fe/0f98fe68458d87e8b722f8a909098c01.png" data-lightbox="roadtrip" data-title="Ministry Of Defence Police Crest Embroidery Design Embroidery Designs Embroidery Defence">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/98/fe/0f98fe68458d87e8b722f8a909098c01.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSG0QO7qNgXoF5UzUPUQzHAnNGzGYq9zjh0Q';" alt="Ministry Of Defence Police Crest Embroidery Design Embroidery Designs Embroidery Defence">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ministry Of Defence Police Crest Embroidery Design Embroidery Designs Embroidery Defence</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/ae/bd/d2aebd85a0881325501248dd69eb9520.png" data-lightbox="roadtrip" data-title="Emblem Of The Ministry Of Defence Of Afghanistan Ministry Of Defense Afghanistan Wikipedia In 2020 Historical Flags Afghanistan Military Insignia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/ae/bd/d2aebd85a0881325501248dd69eb9520.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKuQALtzgB5B9CX7iS6n1gVoIsQgmEcIifWQ';" alt="Emblem Of The Ministry Of Defence Of Afghanistan Ministry Of Defense Afghanistan Wikipedia In 2020 Historical Flags Afghanistan Military Insignia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Emblem Of The Ministry Of Defence Of Afghanistan Ministry Of Defense Afghanistan Wikipedia In 2020 Historical Flags Afghanistan Military Insignia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/32/6b/49326b224b4a0861a60df7f5f2794723.jpg" data-lightbox="roadtrip" data-title="Ministry Of Defence Police Chrome Enamel Star Cap Badge Police Defence Police Uniforms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/32/6b/49326b224b4a0861a60df7f5f2794723.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVOrUPl76NblBC0LOIGEHKhJYnhfvSaGzc3Q';" alt="Ministry Of Defence Police Chrome Enamel Star Cap Badge Police Defence Police Uniforms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ministry Of Defence Police Chrome Enamel Star Cap Badge Police Defence Police Uniforms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/b1/b7/03/b1b7036d10c3fd543846d7555f3fa31d.jpg" data-lightbox="roadtrip" data-title="Mod Indicators Mou With Iit Kanpur Department Of Arpg In 2020 Union Minister Department Mod">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/b1/b7/03/b1b7036d10c3fd543846d7555f3fa31d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVA1wO-OPmpOVsVwIUd6wG2lHIZff33XqvGA';" alt="Mod Indicators Mou With Iit Kanpur Department Of Arpg In 2020 Union Minister Department Mod">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mod Indicators Mou With Iit Kanpur Department Of Arpg In 2020 Union Minister Department Mod</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/c9/57/ebc9576f00483847a07ee450a8fa5be1.jpg" data-lightbox="roadtrip" data-title="Pin On Ministry Of Defence Past Papers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/c9/57/ebc9576f00483847a07ee450a8fa5be1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwF4NJEamQ_AT70eZ-2KFPYzLurZS_bKffFA';" alt="Pin On Ministry Of Defence Past Papers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ministry Of Defence Past Papers</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/department-of-national-defence-ns.html">Department Of National Defence Ns</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-acronym.html">Department Of The Army Acronym</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-analysis-and-assessment-of-gateway-process.html">Department Of The Army Analysis And Assessment Of Gateway Process</a></li>
+													<li class="list-group-item"><a href="/department-of-national-defence-winnipeg.html">Department Of National Defence Winnipeg</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-awards.html">Department Of The Army Awards</a></li>
+													<li class="list-group-item"><a href="/department-of-national-defence-pension-plan.html">Department Of National Defence Pension Plan</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-board-for-correction-of-military-records.html">Department Of The Army Board For Correction Of Military Records</a></li>
+													<li class="list-group-item"><a href="/department-of-national-defense-vacancies.html">Department Of National Defense Vacancies</a></li>
+													<li class="list-group-item"><a href="/department-of-national-defence-media-relations.html">Department Of National Defence Media Relations</a></li>
+													<li class="list-group-item"><a href="/department-of-national-defence-vs-canadian-armed-forces.html">Department Of National Defence Vs Canadian Armed Forces</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-awards-for-civilian-service.html">Department Of The Army Awards For Civilian Service</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-aberdeen-proving-ground-md.html">Department Of The Army Aberdeen Proving Ground Md</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-budget-2019.html">Department Of The Army Budget 2019</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-arlington-va.html">Department Of The Army Arlington Va</a></li>
+													<li class="list-group-item"><a href="/department-of-national-defence-mailing-address.html">Department Of National Defence Mailing Address</a></li>
+													<li class="list-group-item"><a href="/department-of-national-defense-budget-2021-philippines.html">Department Of National Defense Budget 2021 Philippines</a></li>
+													<li class="list-group-item"><a href="/department-of-national-defense-in-the-philippines.html">Department Of National Defense In The Philippines</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-and-air-force-national-guard-bureau.html">Department Of The Army And Air Force National Guard Bureau</a></li>
+													<li class="list-group-item"><a href="/department-of-national-defence-news.html">Department Of National Defence News</a></li>
+													<li class="list-group-item"><a href="/department-of-national-defence-library-and-archives-canada.html">Department Of National Defence Library And Archives Canada</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

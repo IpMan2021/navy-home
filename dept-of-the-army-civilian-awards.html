@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Dept Of The Army Civilian Awards - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Dept Of The Army Civilian Awards",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/71/b0/17/71b0179806f77e312b977cd698ef823d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=dept+of+the+army+civilian+awards",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Dept Of The Army Civilian Awards</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">O Adds new guidance for the Presidential Awards and Department of Defense Honorary Civilian Awards. The medal was approved by the War Department 29 December 1945. 12 13 14 and 15 respectively. <br>				
+			</p>
+										<a class="badge badge-info" href="/how-much-do-us-army-get-paid.html">how much do us army get paid</a>
+											<a class="badge badge-dark" href="/how-to-become-a-public-affairs-officer-in-the-army.html">how to become a public affairs officer in the army</a>
+											<a class="badge badge-success" href="/how-to-be-doctor-in-army.html">how to be doctor in army</a>
+											<a class="badge badge-warning" href="/how-much-is-disney-tickets-for-military.html">how much is disney tickets for military</a>
+											<a class="badge badge-secondary" href="/how-to-become-a-financial-advisor-salary.html">how to become a financial advisor salary</a>
+											<a class="badge badge-primary" href="/how-much-does-the-united-states-spend-on-defense-compared-to-other-countries.html">how much does the united states spend on defense compared to other countries</a>
+											<a class="badge badge-success" href="/how-to-adopt-a-military-dog.html">how to adopt a military dog</a>
+											<a class="badge badge-primary" href="/how-much-does-the-us-spend-on-military-compared-to-other-countries.html">how much does the us spend on military compared to other countries</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to pay a visit to the right site.  Our website gives you hints for seeing the highest quality video and image content, hunt and locate more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie for you to view.  It is also possible to contribute to supporting this site by sharing videos and graphics that you like on this site on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/fc/11/bdfc11f94b2ec699b1cace8a306174e4.jpg" data-lightbox="roadtrip" data-title="404 Not Found Service Medals Military Medals Medals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/fc/11/bdfc11f94b2ec699b1cace8a306174e4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmwCqYw24lbva-dT-vmPvIOypNq7vTYKxQeA';" alt="404 Not Found Service Medals Military Medals Medals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">404 Not Found Service Medals Military Medals Medals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/92/bd/e9/92bde908b698befb588e0406e4733b3f.jpg" data-lightbox="roadtrip" data-title="Navy Distinguished Civilian Service Award Medal Service Awards Medals Military Medals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/92/bd/e9/92bde908b698befb588e0406e4733b3f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKCpYRBX_tWURwDXypmiJ02QapKonMfb75XQ';" alt="Navy Distinguished Civilian Service Award Medal Service Awards Medals Military Medals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Distinguished Civilian Service Award Medal Service Awards Medals Military Medals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/22/5b/71225bb072e6cdd7868ad78d5308c044.jpg" data-lightbox="roadtrip" data-title="Army Outstanding Civilian Service Award Medal Service Awards Medals Military Medals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/22/5b/71225bb072e6cdd7868ad78d5308c044.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzUwBcfGiMSOdpVld1rNPWT6HdqDfCj05FKw';" alt="Army Outstanding Civilian Service Award Medal Service Awards Medals Military Medals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Outstanding Civilian Service Award Medal Service Awards Medals Military Medals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/a3/83/d6a383ec1f02f4124a321a8e20b0e7e9.jpg" data-lightbox="roadtrip" data-title="Army Superior Civilian Service Award Medal Service Awards Military Ribbons Military Awards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/a3/83/d6a383ec1f02f4124a321a8e20b0e7e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcG6QOVbnVayFcuko0v0_ooxEWrTu7ngFurQ';" alt="Army Superior Civilian Service Award Medal Service Awards Military Ribbons Military Awards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Superior Civilian Service Award Medal Service Awards Military Ribbons Military Awards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/08/80/4808805a6bd8e959774663a38eaf711c.jpg" data-lightbox="roadtrip" data-title="Army Outstanding Civilian Service Award Medal Service Awards Medals Military Ribbons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/08/80/4808805a6bd8e959774663a38eaf711c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGUCh_2I8W4QET-F4VTSCwh8hfUf32aVuF8g';" alt="Army Outstanding Civilian Service Award Medal Service Awards Medals Military Ribbons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Outstanding Civilian Service Award Medal Service Awards Medals Military Ribbons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d7/4b/e9/d74be9c526c4d3e747b7e5018fa8b801.jpg" data-lightbox="roadtrip" data-title="Army Achievement Medal For Civilian Service Service Medals Medals Military Medals And Ribbons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d7/4b/e9/d74be9c526c4d3e747b7e5018fa8b801.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbBxg_AHzJsy9axUje5Rldet1_hQnVvDQv3w';" alt="Army Achievement Medal For Civilian Service Service Medals Medals Military Medals And Ribbons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Achievement Medal For Civilian Service Service Medals Medals Military Medals And Ribbons</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ab/ed/be/abedbe2973914c5c6e03991ac01eb8de.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbBxg_AHzJsy9axUje5Rldet1_hQnVvDQv3w';" alt="Army Achievement Medal For Civilian Service Service Medals Medals Military Medals And Ribbons">
+										<div class="card-body">
+						<h3 class="h5"><b>The Department of the Army also awards a limited number of civilian awards.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Dept of the army civilian awards</strong>. 
+								
+																	The Department of the Army Distinguished Civilian Service Award formerly the Department of the Army Decoration for Exceptional Civilian Service is the highest award that may be bestowed by or on behalf of the Secretary of the Army to Army civilian employees. 
+																	Department of the Army Civilian Service Decorations Total Records. 
+																	DEPARTMENT OF THE ARMY COMMANDERS AWARD FOR CIVILIAN SERVICE FULL SET BOXED Includes. 
+																	Secretary of the Army Award for Outstanding Achievement in Materiel Acquisition 8 12 page 17 Department of the Army Certificate of Promotion 8 13 page 17 Armed Forces Civilian Service Medal 8 14 page 18 Award for Outstanding Service in the Army Senior Executive Service 8 15 page 19 Awards for Outstanding Service in a Senior Level or Senior Scientific and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of the Army Civilian Awards The United States Department of the Army offers a variety of awards decorations and incentive programs to honor and recognize the contribution and efforts of its civilian workforce. 
+																	The United States Department of the Army offers a variety of awards decorations and incentive programs to honor and recognize the contribution and efforts of its civilian workforce. 
+																	United States Army decorations. 
+																	Awards and decorations of the United States government are civilian awards of the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The United States Department of the Army offers a variety of awards decorations and incentive programs to honor and recognize the contribution and efforts of its civilian workforce. 
+																	DA Form 7550 Award Citation Certificate. 
+																	Federal government which are typically issued for sustained meritorious service in a civilian capacity while serving in the US. 
+																	The current active decorations of the United States Army as follows the Medal of Honor the highest military award is not shown as it covers all of the military services. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	7 Records per page. 
+																	There are three categories of recognition. 
+																	The Secretary of the Army Award for Valor For civilians who perform an act of heroism or sacrifice with voluntary risk of personal safety in the face of danger either on or off the job Tools for. 
+																	The Department of the Army Civilian Service Achievement Medal is awarded for noteworthy achievements that are of a lesser degree than those recognized by the Commanders Award for Civilian Service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How they are displayed and how and why it is worn. 
+																	There are three categories of recognition. 
+																	It was approved by the Army Chief of Staff on 24 August 1987. 
+																	Monetary honorary and time-off. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Leadership Award chaps. 
+																	Secretary of the Army Award for Small Business Utilization. 
+																	The purpose of this site is to provide information on United States Army heraldic entitlements. 
+																	Monetary honorary and time-off. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Decorations Medals and Awards for Civilian Personnel. 
+																	It consists of a medal lapel pin and certificate. 
+																	The Secretary of the Army or a major commander may award this medal to eligible recipients including civilians not employed by the Army or Army contractors who are eligible for Army honorary awards military personnel Federal Government officials at the policy development level and technical personnel who serve the Army in an advisory capacity or as consultant for outstanding service that makes a substantial contribution or is of significance to the Major Command concerned. 
+																	The United States Department of the Army offers a variety of awards decorations and incentive programs to honor and recognize the contribution and efforts of its civilian workforce. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It consists of a medal lapel pin and certificate. 
+																	Department of the Army civilian awards are governed by Army Regulation 67220 Decorations Awards and Honors Incentive Awards. 
+																	The medal was established as the Meritorious Civilian Service Award by directive of the Secretary of the Army on 26 January 1959. 
+																	Department of the Army civilian awards are governed by Army Regulation 67220 Decorations Awards and Honors Incentive Awards. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In November 2014 the Secretary of the Army approved a modification. 
+																	The Outstanding Civilian Service Award is the third highest honor within the Department of the Army Civilian Awards scheme that the United States Department of the Army can bestow upon a private citizen. 
+																	From Wikipedia the free encyclopedia The Superior Civilian Service Award is the second highest award of the Department of the Army Honorary Awards for Department of the Army Employees. 
+																	Full Sized Medal Mini Medal Ribbon Bar Lapel Pin Original Issue Case DEPARTMENT OF THE ARMY SUPERIOR CIVLIAN SERVICE MEDAL SET BOXED On a disc 1 14 inches 318 cm in diameter overall a star of five points between three equilateral triangles one angle of each extending beyond edge of disc all in bronze. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of the Army Superior Civilian Service Award The Superior Civilian Service Award is the third highest award of the Department of the Army Honorary Awards for Department of the Army Employees. 
+																	24 48 100 150 250 Distinguished Civilian Service Award. 
+																	It is granted by any commander Brigadier General and above or civilian equivalent. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/62/a3/8362a358df09acf4868dfffb9a291864.jpg" data-lightbox="roadtrip" data-title="Navy Superior Civilian Service Award Miniature Medal Service Awards Military Medals Medals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/62/a3/8362a358df09acf4868dfffb9a291864.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSScjJu45JacDslZAq-VTuh2HiVyxXrs1q0_A';" alt="Navy Superior Civilian Service Award Miniature Medal Service Awards Military Medals Medals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Superior Civilian Service Award Miniature Medal Service Awards Military Medals Medals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/38/5f/dd385f71bd9217d258067c23f6a0f868.jpg" data-lightbox="roadtrip" data-title="Air Force Exemplary Civilian Service Award Medal Service Awards Medals Military Medals And Ribbons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/38/5f/dd385f71bd9217d258067c23f6a0f868.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3TB668FHrAtgmMS69HzKCZ24V_1bqTqk0gQ';" alt="Air Force Exemplary Civilian Service Award Medal Service Awards Medals Military Medals And Ribbons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Exemplary Civilian Service Award Medal Service Awards Medals Military Medals And Ribbons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/d8/d9/0bd8d952a84e52c0ccc9a8415d165372.jpg" data-lightbox="roadtrip" data-title="Army Superior Civilian Service Award Anodized Medal Service Awards Medals Military Medals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/d8/d9/0bd8d952a84e52c0ccc9a8415d165372.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8AqkN7ND8HdGNYeacrzKqjERTeVYjR9jn0g';" alt="Army Superior Civilian Service Award Anodized Medal Service Awards Medals Military Medals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Superior Civilian Service Award Anodized Medal Service Awards Medals Military Medals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/ed/be/abedbe2973914c5c6e03991ac01eb8de.jpg" data-lightbox="roadtrip" data-title="Department Of The Air Force Civilian Award For Valor Air Force Medals Medals Military Patch">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/ed/be/abedbe2973914c5c6e03991ac01eb8de.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5zcJaRAtKD-HD71Jf1UVwwSFi7mY0uJiiFQ';" alt="Department Of The Air Force Civilian Award For Valor Air Force Medals Medals Military Patch">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Department Of The Air Force Civilian Award For Valor Air Force Medals Medals Military Patch</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/6c/14/c56c140363c55c4c1ca24730172d11d0.jpg" data-lightbox="roadtrip" data-title="Civilian Service In Vietnam Medal Ribbon Military Medals Military Ribbons Air Force Medals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/6c/14/c56c140363c55c4c1ca24730172d11d0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQynf7-JKYj_YooJidtmu5UJZa2M1ANhoJu3g';" alt="Civilian Service In Vietnam Medal Ribbon Military Medals Military Ribbons Air Force Medals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Civilian Service In Vietnam Medal Ribbon Military Medals Military Ribbons Air Force Medals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/ea/9a/5eea9a6e6271a59c77eb7748c67e4413.jpg" data-lightbox="roadtrip" data-title="Civilian Award For Humanitarian Service Medal Medals Service Medals Military Medals And Ribbons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/ea/9a/5eea9a6e6271a59c77eb7748c67e4413.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1q_sWSOqarDE2W19DYIQ7wtGcUbgJ7_hyZQ';" alt="Civilian Award For Humanitarian Service Medal Medals Service Medals Military Medals And Ribbons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Civilian Award For Humanitarian Service Medal Medals Service Medals Military Medals And Ribbons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/69/5e/e4/695ee47e30a423c3fde9ed69aebeb69c.jpg" data-lightbox="roadtrip" data-title="United Nations Protection Force In Yugoslavia Medal Medals United Nations Us Military Medals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/69/5e/e4/695ee47e30a423c3fde9ed69aebeb69c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAkIURgy86jxenwj-J8x9nqU_uAdvz15Jybg';" alt="United Nations Protection Force In Yugoslavia Medal Medals United Nations Us Military Medals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United Nations Protection Force In Yugoslavia Medal Medals United Nations Us Military Medals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/37/8e/2c/378e2cbf22ff5f55f5f5d88782406ddd.jpg" data-lightbox="roadtrip" data-title="Navy Superior Civilian Service Award Medal Service Awards Medals Military Medals And Ribbons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/37/8e/2c/378e2cbf22ff5f55f5f5d88782406ddd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2hzoz3xOXNM_Ug7vwNfHUm99jApZeA-hLDw';" alt="Navy Superior Civilian Service Award Medal Service Awards Medals Military Medals And Ribbons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Superior Civilian Service Award Medal Service Awards Medals Military Medals And Ribbons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7b/30/a9/7b30a9139315adb33d999322e84a6a39.jpg" data-lightbox="roadtrip" data-title="Pin On Medals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7b/30/a9/7b30a9139315adb33d999322e84a6a39.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQoczXORoqd4BzXZWh8j7qdteLZtnWQ34oag';" alt="Pin On Medals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Medals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/b0/17/71b0179806f77e312b977cd698ef823d.jpg" data-lightbox="roadtrip" data-title="Defense Of Freedom The Secretary Of Defense Medal For The Defense Of Freedom Is A Decoration Established To Acknowledge Ci Medals Military Medals Merit Badge">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/b0/17/71b0179806f77e312b977cd698ef823d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdFo7R2pj1w7F-krXvfD3T8VisJ6hBX_LK-Q';" alt="Defense Of Freedom The Secretary Of Defense Medal For The Defense Of Freedom Is A Decoration Established To Acknowledge Ci Medals Military Medals Merit Badge">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Defense Of Freedom The Secretary Of Defense Medal For The Defense Of Freedom Is A Decoration Established To Acknowledge Ci Medals Military Medals Merit Badge</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/d3/c4/0cd3c47e3c9a37d237c25eb783fe136f.jpg" data-lightbox="roadtrip" data-title="Department Of Transportation 9 11 Medal Medals Military Medals Military Appreciation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/d3/c4/0cd3c47e3c9a37d237c25eb783fe136f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-dSeUL8WXooBKUoY53wZTU9BMxsLz1ORyaw';" alt="Department Of Transportation 9 11 Medal Medals Military Medals Military Appreciation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Department Of Transportation 9 11 Medal Medals Military Medals Military Appreciation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/10/42/af1042828a98b5658057acb1476a3e9d.jpg" data-lightbox="roadtrip" data-title="Defense Superior Service Anodized Miniature Medal Military Logo Military Medals Service Medals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/10/42/af1042828a98b5658057acb1476a3e9d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKVtcRYZdHrCEMrs6IZHLcybKiJIdImQHdMQ';" alt="Defense Superior Service Anodized Miniature Medal Military Logo Military Medals Service Medals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Defense Superior Service Anodized Miniature Medal Military Logo Military Medals Service Medals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/8a/2f/848a2f5de60b333e38ac3eb8e8a5f1a1.jpg" data-lightbox="roadtrip" data-title="Department Of Transportation 9 11 Medal Medals Military Medals And Ribbons Us Military Medals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/8a/2f/848a2f5de60b333e38ac3eb8e8a5f1a1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjhtbzzsVg5DEOJ3w2xdUC3TOE3zdxa8ThCw';" alt="Department Of Transportation 9 11 Medal Medals Military Medals And Ribbons Us Military Medals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Department Of Transportation 9 11 Medal Medals Military Medals And Ribbons Us Military Medals</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/is-42a-a-good-mos.html">Is 42a A Good Mos</a></li>
+													<li class="list-group-item"><a href="/is-there-a-secretary-of-the-coast-guard.html">Is There A Secretary Of The Coast Guard</a></li>
+													<li class="list-group-item"><a href="/is-there-a-dod-travel-ban.html">Is There A Dod Travel Ban</a></li>
+													<li class="list-group-item"><a href="/is-us-army-a-federal-job.html">Is Us Army A Federal Job</a></li>
+													<li class="list-group-item"><a href="/is-coast-guard-department-of-transportation.html">Is Coast Guard Department Of Transportation</a></li>
+													<li class="list-group-item"><a href="/jcpenney-military-jacket.html">Jcpenney Military Jacket</a></li>
+													<li class="list-group-item"><a href="/is-the-dod-id-number-pii.html">Is The Dod Id Number Pii</a></li>
+													<li class="list-group-item"><a href="/is-the-coast-guard-under-the-department-of-defense.html">Is The Coast Guard Under The Department Of Defense</a></li>
+													<li class="list-group-item"><a href="/jcpenney-military-discount-code-online.html">Jcpenney Military Discount Code Online</a></li>
+													<li class="list-group-item"><a href="/is-army-hrc-website-down.html">Is Army Hrc Website Down</a></li>
+													<li class="list-group-item"><a href="/is-there-a-bullying-hotline.html">Is There A Bullying Hotline</a></li>
+													<li class="list-group-item"><a href="/iran-defense-budget-2021.html">Iran Defense Budget 2021</a></li>
+													<li class="list-group-item"><a href="/is-the-army-part-of-the-department-of-defense.html">Is The Army Part Of The Department Of Defense</a></li>
+													<li class="list-group-item"><a href="/is-military-sbp-taxable.html">Is Military Sbp Taxable</a></li>
+													<li class="list-group-item"><a href="/is-2021-defense-budget-approved.html">Is 2021 Defense Budget Approved</a></li>
+													<li class="list-group-item"><a href="/jcpenney-military-discount-online.html">Jcpenney Military Discount Online</a></li>
+													<li class="list-group-item"><a href="/is-coast-guard-homeland-security.html">Is Coast Guard Homeland Security</a></li>
+													<li class="list-group-item"><a href="/is-the-navy-part-of-the-department-of-defense.html">Is The Navy Part Of The Department Of Defense</a></li>
+													<li class="list-group-item"><a href="/is-it-illegal-to-wear-military-rank-insignia.html">Is It Illegal To Wear Military Rank Insignia</a></li>
+													<li class="list-group-item"><a href="/is-the-navy-under-the-department-of-defense.html">Is The Navy Under The Department Of Defense</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

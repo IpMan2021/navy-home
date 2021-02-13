@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Dod Civilian Housing Hawaii - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Dod Civilian Housing Hawaii",
+  "datePublished": "2021-02-13",
+  "image": "https://www.ohananavycommunities.com/sites/ohana_navy_communities/files/neighborhoods12.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=dod+civilian+housing+hawaii",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Dod Civilian Housing Hawaii</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">If youre stationed at Tripler you can live almost anywhere on the island because its near the H1 and H3 freeways just about the midway point between town. Some housing is newer a result of the BRAC money and some is older and due for rehab. There are plenty of websites where you can check out the army base housing such as the Island Palm site the base websites or the Facebook group Moving House for the Military Spouse which has user photos of military base housing worldwide. <br>				
+			</p>
+										<a class="badge badge-primary" href="/pilox-samurai-hijau-army-doff.html">pilox samurai hijau army doff</a>
+											<a class="badge badge-light" href="/philippine-army-public-affairs-office.html">philippine army public affairs office</a>
+											<a class="badge badge-danger" href="/official-military-dog-tag-format.html">official military dog tag format</a>
+											<a class="badge badge-secondary" href="/phone-number-for-veterans-crisis-line.html">phone number for veterans crisis line</a>
+											<a class="badge badge-danger" href="/office-of-veterans-affairs-ysu.html">office of veterans affairs ysu</a>
+											<a class="badge badge-light" href="/oregon-military-department-mission.html">oregon military department mission</a>
+											<a class="badge badge-dark" href="/philippine-air-force-human-resource-management-center.html">philippine air force human resource management center</a>
+											<a class="badge badge-light" href="/percentage-of-federal-budget-defense.html">percentage of federal budget defense</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you've come to visit the ideal blog.  Our website provides you with suggestions for viewing the highest quality video and image content, hunt and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, therefore we recommend this video for you to view.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ohananavycommunities.com/sites/ohana_navy_communities/images/take-a-look-floorplans.jpg" data-lightbox="roadtrip" data-title="Civilian And Navy Housing Ohana Military Communities Navy Welcome">
+											<img class="card-img v-image ads-img " src="https://www.ohananavycommunities.com/sites/ohana_navy_communities/images/take-a-look-floorplans.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Z48n-ERujdw3Oc21MivtG_uAKXuDZsGROA';" alt="Civilian And Navy Housing Ohana Military Communities Navy Welcome">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Civilian And Navy Housing Ohana Military Communities Navy Welcome</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hawaiilife.com/blog_images/2014/11/oahucommunity.jpg" data-lightbox="roadtrip" data-title="The Facts About Military Housing In Hawaii Hawaii Life">
+											<img class="card-img v-image ads-img " src="https://www.hawaiilife.com/blog_images/2014/11/oahucommunity.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJPEG6KpzZQpnE9Te_pSlDZquKHXAVLBGjdw';" alt="The Facts About Military Housing In Hawaii Hawaii Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Facts About Military Housing In Hawaii Hawaii Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2019/Oct/07/2002191481/-1/-1/0/190920-A-TU015-885.JPG" data-lightbox="roadtrip" data-title="Military Housing">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2019/Oct/07/2002191481/-1/-1/0/190920-A-TU015-885.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxDdTh7o9Cu6hlTm239PPEYSdO63MyOm7qHQ';" alt="Military Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ohananavycommunities.com/sites/ohana_navy_communities/files/neighborhoods15.jpg" data-lightbox="roadtrip" data-title="Civilian And Navy Housing Ohana Military Communities Navy Find A Home">
+											<img class="card-img v-image ads-img " src="https://www.ohananavycommunities.com/sites/ohana_navy_communities/files/neighborhoods15.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfqcMBHPUv7M2rpZ--xV9XW6TXnCHSgjwPAw';" alt="Civilian And Navy Housing Ohana Military Communities Navy Find A Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Civilian And Navy Housing Ohana Military Communities Navy Find A Home</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/-images/2009/02/05/29563/size1-army.mil-29563-2009-02-06-130253.jpg" data-lightbox="roadtrip" data-title="Defense Department Civilians Families Offered On Post Housing Options Article The United States Army">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/-images/2009/02/05/29563/size1-army.mil-29563-2009-02-06-130253.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9_jNDnKQDZ2z1aHtty2_BKSyqNNTz86pztg';" alt="Defense Department Civilians Families Offered On Post Housing Options Article The United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Defense Department Civilians Families Offered On Post Housing Options Article The United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ohananavycommunities.com/sites/ohana_navy_communities/files/neighborhoods12.jpg" data-lightbox="roadtrip" data-title="Civilian And Navy Housing Ohana Military Communities Navy Ford Island Landing">
+											<img class="card-img v-image ads-img " src="https://www.ohananavycommunities.com/sites/ohana_navy_communities/files/neighborhoods12.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzHx17FYncBT6Jb4zMwjt3bb70ehb3K2J6wQ';" alt="Civilian And Navy Housing Ohana Military Communities Navy Ford Island Landing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Civilian And Navy Housing Ohana Military Communities Navy Ford Island Landing</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.ohananavycommunities.com/sites/ohana_navy_communities/images/take-a-look-floorplans.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzHx17FYncBT6Jb4zMwjt3bb70ehb3K2J6wQ';" alt="Civilian And Navy Housing Ohana Military Communities Navy Ford Island Landing">
+										<div class="card-body">
+						<h3 class="h5"><b>Our Hale Alii housing area consists of 14 homes considered to be prestigious and historic sites which were built in 1914 1916 and 1919.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Dod civilian housing hawaii</strong>. 
+								
+																	Island Palm Communities wants to provide your family with the best military housing experience during your assignment in Hawaii. 
+																	Hunt Military Communities HMC the military housing division of Hunt Companies Inc has been honored with a 2020 Air Mobility Command AMC Civil Engineer award at its Hanscom housing community in Massachusetts. 
+																	Where do military families live on Oahu. 
+																	Housing amenities include Stove dishwasher refrigerator washer and dryer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The mission of the State of Hawaii Department of Defense which includes the Hawaii National Guard HING Hawaii Emergency Management Agency and State Office of Homeland Security is to assist authorities in providing for the safety welfare and defense of the people of Hawaii. 
+																	McAuliffe Award for Housing Excellence. 
+																	Unaccompanied Personnel Housing UPH Overview Hawaii Regional Bachelor Housing manages and operates all Navy bachelor housing on the island of Oahu. 
+																	All homes are designated for General Officers O7 Senior Officers O6 and Junior Officers O1-O3 W1-W3. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In Honolulu VA loans from April 1 to June 30 were up 206 from the same time last year. 
+																	View Details Floor Plans. 
+																	Choose from a variety of spacious and competitively-priced 3- 4- and 5-bedroom floor plans to suit your familys lifestyle. 
+																	Military Family Housing on Okinawa has a Live Where You Work Policy which means that every effort is made to offer members a unit closest to their duty stations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	TRIPLER There are hundreds of medical personnel at Tripler that giant pink building that overlooks the freeway in Moanalua. 
+																	The DoD standard for commute time between home and work is 60 minutes or less. 
+																	Comprised of 23 communities in and around Oahu and PMRF Kauai these distinct vibrant communities encompass 4500 new renovated and historic homes in a variety of locations neighborhoods floor plans and amenities. 
+																	Military personnel including active duty Coast Guard assigned or attached for duty within a 50-mile radius of the Installations or Coast Guard or Marine Corps facility. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We are proud to offer housing to our military families stationed on Oahu and PMRF Kauai. 
+																	DoD civilians can choose from a variety of two- three- and four-bedroom homes located at Aliamanu Rim Fort Shafter Helemano Red Hill Schofield Barracks Hamilton Community and Wheeler. 
+																	This is the first time this community has been awarded the Brigadier General Michael A. 
+																	Hickam Communities homes feature a variety. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Congress created in the HAP program in 1966 see Section 3374 Title 42 United States Code to financially compensate eligible military and civilian Federal employee homeowners when the real estate market was adversely affected directly related to the closure or reduction-in-scope of operations due to Base Realignment and Closure BRAC. 
+																	We are pleased to offer housing to our military families stationed. 
+																	Our homes and community amenities were designed with input from service members and their families. 
+																	Competitively-priced choose from a variety of spacious 3- 4- and 5-bedroom floor plans that will complement your familys lifestyle. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Downtown Honolulu is located approximately nine miles west. 
+																	Our homes and community amenities were designed with input from service members and their families. 
+																	Priority Class 4 Unaccompanied family members of military personnel including active duty Coast. 
+																	Hickam Communities strives to provide the best military housing experience for your family during your assignment in Hawaii. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are a military member or family looking for housing by Pearl Harbor Naval Base located in Honolulu HI youve come to the right place. 
+																	With over 5800 beds located in 63 facilities. 
+																	Includes families who ERD and return to Hawaii requesting housing. 
+																	Whether youre PCSing ETSing or just need a new place to live youll find the right living space during your time at Pearl Harbor. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	According to the Department of Defense about 17000 military housing units have been contracted out to private companies on federal land in Hawaii. 
+																	Thats making an impact in Hawaii historically an expensive housing market. 
+																	The department maintains its readiness to respond to the needs of the people in the event of disasters either. 
+																	Army Bases in Hawaii - about 35000 military and civilian employees. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ohana Military Communities MCBH offers the quality of living your family deserves and the pricing and flexibility your family needs. 
+																	McMichael writes that at Dover Air Force Base housing contractor Hunt Companies Inc which manages 25 housing areas so far has civilians living in six of those -- and they say the number is. 
+																	Comprised of 12 communities in Aiea Kailua and Pearl City these distinct vibrant communities encompassing 2536 new renovated and historic single duplex triplex and 4-plex family homes. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/5f/9d/b75f9dcceb4d57f4be49ed1316bd5d71.jpg" data-lightbox="roadtrip" data-title="Navy Region Hawaii Catlin Park Neighborhood 3 4 Bedroom Homes Available To E1 To E9 Navy Housing Military Housing Military Family Housing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/5f/9d/b75f9dcceb4d57f4be49ed1316bd5d71.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjCAeJFIgtorv7o9_QgSvZ8vy4wx0lOZ542A';" alt="Navy Region Hawaii Catlin Park Neighborhood 3 4 Bedroom Homes Available To E1 To E9 Navy Housing Military Housing Military Family Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Region Hawaii Catlin Park Neighborhood 3 4 Bedroom Homes Available To E1 To E9 Navy Housing Military Housing Military Family Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cnic.navy.mil/content/dam/cnic/cnrh/images/JBPHH_Maincarousel/JBPHH_Housingforfamilies.jpg" data-lightbox="roadtrip" data-title="Housing For Families">
+											<img class="card-img v-image ads-img " src="https://www.cnic.navy.mil/content/dam/cnic/cnrh/images/JBPHH_Maincarousel/JBPHH_Housingforfamilies.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgJmqZcxFTva-IjjXzSATXSioWzgkZWYGEvQ';" alt="Housing For Families">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Housing For Families</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/ab/b3/40abb366449e89ae0fe51dabb13f91a9.jpg" data-lightbox="roadtrip" data-title="Navy Region Hawaii Radford Terrace Neighborhood 3 4 Bedroom Townhomes Designated For E1 E6 Families Navy Housing Military Family Housing Terrace">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/ab/b3/40abb366449e89ae0fe51dabb13f91a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZlOEI4WytbosBeM6YFTW-vCDia1Poz6RnYQ';" alt="Navy Region Hawaii Radford Terrace Neighborhood 3 4 Bedroom Townhomes Designated For E1 E6 Families Navy Housing Military Family Housing Terrace">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Region Hawaii Radford Terrace Neighborhood 3 4 Bedroom Townhomes Designated For E1 E6 Families Navy Housing Military Family Housing Terrace</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/31/bd/bc31bd23c5959439b05876e505e13d3a.jpg" data-lightbox="roadtrip" data-title="Navy Region Hawaii Halsey Terrace Neighborhood 2 5 Bedroom Homes For Senior Enlisted E7 E9 Junior Officers O1 Hawaii Homes Navy Housing Terrace House">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/31/bd/bc31bd23c5959439b05876e505e13d3a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNENNK--yrPF_WvfjC-3tNQlW4xG_7xcy_WA';" alt="Navy Region Hawaii Halsey Terrace Neighborhood 2 5 Bedroom Homes For Senior Enlisted E7 E9 Junior Officers O1 Hawaii Homes Navy Housing Terrace House">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Region Hawaii Halsey Terrace Neighborhood 2 5 Bedroom Homes For Senior Enlisted E7 E9 Junior Officers O1 Hawaii Homes Navy Housing Terrace House</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/9c/55/d69c5569f6aae0baf57602df33bf1dea.jpg" data-lightbox="roadtrip" data-title="Navy Region Hawaii Hale Moku Neighborhood 2 3 Bedroom Townhouses Available For Junior Enlisted E1 E6 Navy Housing Military Family Housing Hawaii Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/9c/55/d69c5569f6aae0baf57602df33bf1dea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHAx82YvQgkeIXopbmjh9EbKosdngjEACFZA';" alt="Navy Region Hawaii Hale Moku Neighborhood 2 3 Bedroom Townhouses Available For Junior Enlisted E1 E6 Navy Housing Military Family Housing Hawaii Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Region Hawaii Hale Moku Neighborhood 2 3 Bedroom Townhouses Available For Junior Enlisted E1 E6 Navy Housing Military Family Housing Hawaii Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/99/a6/2699a6eb0421f614a91fc6d44c300596.jpg" data-lightbox="roadtrip" data-title="Navy Region Hawaii Maloelap Neighborhood Located In Honolulu This Community Is Designated For Senior Enlisted Navy Housing Navy Housing Hawaii Hawaii Homes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/99/a6/2699a6eb0421f614a91fc6d44c300596.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpDZKlWIUIpJMvQKDJmTXImMOwSSurV9KC7g';" alt="Navy Region Hawaii Maloelap Neighborhood Located In Honolulu This Community Is Designated For Senior Enlisted Navy Housing Navy Housing Hawaii Hawaii Homes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Region Hawaii Maloelap Neighborhood Located In Honolulu This Community Is Designated For Senior Enlisted Navy Housing Navy Housing Hawaii Hawaii Homes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://medialibrarycdn.entrata.com/media_library/12710/57902c1e4c3ab427.jpg" data-lightbox="roadtrip" data-title="2 Bedroom Pt Welcome Red Hill 2 Bed Apartment Island Palm Communities">
+											<img class="card-img v-image ads-img " src="https://medialibrarycdn.entrata.com/media_library/12710/57902c1e4c3ab427.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNvJEah3TBslIAsppM_iLWdNiQLvTfpX-olA';" alt="2 Bedroom Pt Welcome Red Hill 2 Bed Apartment Island Palm Communities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2 Bedroom Pt Welcome Red Hill 2 Bed Apartment Island Palm Communities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/d3/97/d6d3973d677f97543d745a74a0fd2dc1.jpg" data-lightbox="roadtrip" data-title="Forest City Residential Management Inc Navy Housing Military Housing Military Family Housing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/d3/97/d6d3973d677f97543d745a74a0fd2dc1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhFEFnZiBAX8wT-61EhBbal5ncTxbBdgKGaQ';" alt="Forest City Residential Management Inc Navy Housing Military Housing Military Family Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Forest City Residential Management Inc Navy Housing Military Housing Military Family Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/66/02/e66602ff5deda5bbaf2bf16faf3de8fc.jpg" data-lightbox="roadtrip" data-title="Navy Region Hawaii Maloelap Neighborhood Located In Honolulu This Community Is Designated For Senior Navy Housing Military Community Military Family Housing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/66/02/e66602ff5deda5bbaf2bf16faf3de8fc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBU8FE4zHSfpHt7tEGUPl5UqaF4AkkWnqqlA';" alt="Navy Region Hawaii Maloelap Neighborhood Located In Honolulu This Community Is Designated For Senior Navy Housing Military Community Military Family Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Region Hawaii Maloelap Neighborhood Located In Honolulu This Community Is Designated For Senior Navy Housing Military Community Military Family Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/59/89/0b5989b9b76aa748b5983824845b3836.jpg" data-lightbox="roadtrip" data-title="Navy Region Hawaii Battleship Cove Neighborhood Senior Enlisted Community Of 3 4 Bedroom Homes Located On Ford I Navy Housing Hawaii Homes Island Living">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/59/89/0b5989b9b76aa748b5983824845b3836.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpPmlO3il_ozFM4VkVKmWYq7z8mJYlpnMkAQ';" alt="Navy Region Hawaii Battleship Cove Neighborhood Senior Enlisted Community Of 3 4 Bedroom Homes Located On Ford I Navy Housing Hawaii Homes Island Living">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Region Hawaii Battleship Cove Neighborhood Senior Enlisted Community Of 3 4 Bedroom Homes Located On Ford I Navy Housing Hawaii Homes Island Living</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/45/7c/46457cf58d9b31ee339a9b2bbf859758.jpg" data-lightbox="roadtrip" data-title="Forest City Residential Management Inc Navy Housing Military Family Housing Military Community">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/45/7c/46457cf58d9b31ee339a9b2bbf859758.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOlnh2aSu8_NRzItTA2O3C5KuZPCyhoqY5KQ';" alt="Forest City Residential Management Inc Navy Housing Military Family Housing Military Community">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Forest City Residential Management Inc Navy Housing Military Family Housing Military Community</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.housing.af.mil/portals/79/images/AFD-111107-096.jpg" data-lightbox="roadtrip" data-title="Joint Base Pearl Harbor Hickam">
+											<img class="card-img v-image ads-img " src="https://www.housing.af.mil/portals/79/images/AFD-111107-096.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQmS9ln_xD6jTR1_5rTjQRfMNdRsDvDt9stg';" alt="Joint Base Pearl Harbor Hickam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Joint Base Pearl Harbor Hickam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militaryfamily.org/wp-content/uploads/housing-550x350.png" data-lightbox="roadtrip" data-title="Military Families Face Unlivable Conditions In Installation Housing Around The Country National Military Family Association">
+											<img class="card-img v-image ads-img " src="https://militaryfamily.org/wp-content/uploads/housing-550x350.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiZbUGMOrWZaL_HbT0GmV7e_an-eGlfhWiwg';" alt="Military Families Face Unlivable Conditions In Installation Housing Around The Country National Military Family Association">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Families Face Unlivable Conditions In Installation Housing Around The Country National Military Family Association</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/48th-highlanders-of-canada-department-of-national-defence.html">48th Highlanders Of Canada Department Of National Defence</a></li>
+													<li class="list-group-item"><a href="/air-force-ural.html">Air Force Ural</a></li>
+													<li class="list-group-item"><a href="/air-force-heren-jas-sale.html">Air Force Heren Jas Sale</a></li>
+													<li class="list-group-item"><a href="/alaska-dmv-boat-registration-renewal.html">Alaska Dmv Boat Registration Renewal</a></li>
+													<li class="list-group-item"><a href="/air-national-guard-public-affairs-officer.html">Air National Guard Public Affairs Officer</a></li>
+													<li class="list-group-item"><a href="/active-duty-military-spouse-benefits.html">Active Duty Military Spouse Benefits</a></li>
+													<li class="list-group-item"><a href="/air-force-hrpo.html">Air Force Hrpo</a></li>
+													<li class="list-group-item"><a href="/air-force-tear-away-harga.html">Air Force Tear Away Harga</a></li>
+													<li class="list-group-item"><a href="/air-force-jacket.html">Air Force Jacket</a></li>
+													<li class="list-group-item"><a href="/air-force-hr-phone.html">Air Force Hr Phone</a></li>
+													<li class="list-group-item"><a href="/active-military-records-search.html">Active Military Records Search</a></li>
+													<li class="list-group-item"><a href="/air-force-key-spouse-program-afi.html">Air Force Key Spouse Program Afi</a></li>
+													<li class="list-group-item"><a href="/ak-dmva-jobs.html">Ak Dmva Jobs</a></li>
+													<li class="list-group-item"><a href="/air-force-hero-crossword-clue.html">Air Force Hero Crossword Clue</a></li>
+													<li class="list-group-item"><a href="/afi-military-spouse-of-the-year.html">Afi Military Spouse Of The Year</a></li>
+													<li class="list-group-item"><a href="/a-military-post-office.html">A Military Post Office</a></li>
+													<li class="list-group-item"><a href="/air-force-ural-vs-academy-ural-live.html">Air Force Ural Vs Academy Ural Live</a></li>
+													<li class="list-group-item"><a href="/america-defense-budget-2021.html">America Defense Budget 2021</a></li>
+													<li class="list-group-item"><a href="/air-force-veterans-records.html">Air Force Veterans Records</a></li>
+													<li class="list-group-item"><a href="/accounts-department-in-indian-army.html">Accounts Department In Indian Army</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Coast Guard Recruiting Office Jackson Ms - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Coast Guard Recruiting Office Jackson Ms",
+  "datePublished": "2021-02-13",
+  "image": "https://media.defense.gov/2020/Feb/27/2002255948/600/400/0/200227-G-G0000-1016.JPG",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=coast+guard+recruiting+office+jackson+ms",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Coast Guard Recruiting Office Jackson Ms</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Together the Sector and its subordinate units directly support the Coast Guards five main mission areas. In accordance with Coast Guard Recruiting Command guidelines and to protect your privacy you are being advised not to send Personally Identifiable Information PII or any health related issuesconcerns through the email option. Sector Upper Mississippi River UMR is located on the 7th floor of the Robert A. <br>				
+			</p>
+										<a class="badge badge-light" href="/army-dog-sweater.html">army dog sweater</a>
+											<a class="badge badge-warning" href="/army-dog-movie-trailer.html">army dog movie trailer</a>
+											<a class="badge badge-dark" href="/army-dog-jumper.html">army dog jumper</a>
+											<a class="badge badge-light" href="/army-dog-killed-after-retirement.html">army dog killed after retirement</a>
+											<a class="badge badge-success" href="/army-dog-puppy.html">army dog puppy</a>
+											<a class="badge badge-success" href="/army-dog-tag-example.html">army dog tag example</a>
+											<a class="badge badge-danger" href="/army-dog-tag-silencers.html">army dog tag silencers</a>
+											<a class="badge badge-light" href="/army-dog-helmet.html">army dog helmet</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to visit the right blog.  Our website provides you with suggestions for viewing the maximum quality video and picture content, search and locate more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, so we recommend this video that you see.  You can also bring about supporting this site by sharing videos and images that you enjoy on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this website.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.gocoastguard.com/themes/custom/custom/images/layout/find-recruiter-bg.jpg" data-lightbox="roadtrip" data-title="Find A Recruiter Gocoastguard Com">
+											<img class="card-img v-image ads-img " src="http://www.gocoastguard.com/themes/custom/custom/images/layout/find-recruiter-bg.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeprx_ihDu87jAE1W305CxZmTbWUU32Os1mQ';" alt="Find A Recruiter Gocoastguard Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Find A Recruiter Gocoastguard Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/EJrSM2LWwAA-PkX.jpg" data-lightbox="roadtrip" data-title="Master Chief Petty Officer Of The Coast Guard On Twitter I M Excited To Announce The Grand Opening Of The Coast Guard S Newest Recruiting Office In Jackson Ms It S Great We Re Broadening Our">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/EJrSM2LWwAA-PkX.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8aoGYJ3kaPokmxEb4JWshM1cGpLYlWUwCEQ';" alt="Master Chief Petty Officer Of The Coast Guard On Twitter I M Excited To Announce The Grand Opening Of The Coast Guard S Newest Recruiting Office In Jackson Ms It S Great We Re Broadening Our">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Master Chief Petty Officer Of The Coast Guard On Twitter I M Excited To Announce The Grand Opening Of The Coast Guard S Newest Recruiting Office In Jackson Ms It S Great We Re Broadening Our</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militaryyearbookproject.com/images/joomgallery/originals/uscg_recruit_training_center_rtc_photos_5/uscg_training_centeralameda_119/1978coast_guard_training_centeralamedagolf_117_20151111_1354750818.jpg" data-lightbox="roadtrip" data-title="Uscg Training Center Alameda 1978 Coast Guard Training Center Alameda Golf 117 The Military Yearbook Project">
+											<img class="card-img v-image ads-img " src="https://militaryyearbookproject.com/images/joomgallery/originals/uscg_recruit_training_center_rtc_photos_5/uscg_training_centeralameda_119/1978coast_guard_training_centeralamedagolf_117_20151111_1354750818.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEerIkz9dINBUQoM7RdAv-rKday_CnITkr5w';" alt="Uscg Training Center Alameda 1978 Coast Guard Training Center Alameda Golf 117 The Military Yearbook Project">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uscg Training Center Alameda 1978 Coast Guard Training Center Alameda Golf 117 The Military Yearbook Project</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militaryyearbookproject.com/images/joomgallery/originals/uscg_recruit_training_center_rtc_photos_5/uscg_training_centercape_may_120/1970coast_guard_training_center_cape_maycharlie_79_20190217_1849458721.jpg" data-lightbox="roadtrip" data-title="Uscg Training Center Cape May 1970 Coast Guard Training Center Cape May Charlie 79 The Military Yearbook Project">
+											<img class="card-img v-image ads-img " src="https://militaryyearbookproject.com/images/joomgallery/originals/uscg_recruit_training_center_rtc_photos_5/uscg_training_centercape_may_120/1970coast_guard_training_center_cape_maycharlie_79_20190217_1849458721.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS26ajnwWpV8Q9b2g57rvwjhr5RiLCXf0wF-Q';" alt="Uscg Training Center Cape May 1970 Coast Guard Training Center Cape May Charlie 79 The Military Yearbook Project">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uscg Training Center Cape May 1970 Coast Guard Training Center Cape May Charlie 79 The Military Yearbook Project</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militaryyearbookproject.com/images/joomgallery/originals/uscg_recruit_training_center_rtc_photos_5/uscg_training_centercape_may_120/1975_coast_guard_training_center_cape_may_brav_20111126_1878057883.jpg" data-lightbox="roadtrip" data-title="Uscg Training Center Cape May 1975 Coast Guard Training Center Cape May Bravo 95 The Military Yearbook Project">
+											<img class="card-img v-image ads-img " src="https://militaryyearbookproject.com/images/joomgallery/originals/uscg_recruit_training_center_rtc_photos_5/uscg_training_centercape_may_120/1975_coast_guard_training_center_cape_may_brav_20111126_1878057883.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQUzNpwHdIIyJ3Hjgy-kHrmEYrSqEaBeESIg';" alt="Uscg Training Center Cape May 1975 Coast Guard Training Center Cape May Bravo 95 The Military Yearbook Project">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uscg Training Center Cape May 1975 Coast Guard Training Center Cape May Bravo 95 The Military Yearbook Project</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/17308451/origin.jpg" data-lightbox="roadtrip" data-title="This Is How Coast Guard Snipers Fight Drug Runners We Are The Mighty">
+											<img class="card-img v-image ads-img " src="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/17308451/origin.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD9GPhhHJNvhzG5lQiAtQVWZtbAhoRC4XPWw';" alt="This Is How Coast Guard Snipers Fight Drug Runners We Are The Mighty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is How Coast Guard Snipers Fight Drug Runners We Are The Mighty</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/17313671/origin.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD9GPhhHJNvhzG5lQiAtQVWZtbAhoRC4XPWw';" alt="This Is How Coast Guard Snipers Fight Drug Runners We Are The Mighty">
+										<div class="card-body">
+						<h3 class="h5"><b>The Office of The Adjutant General of Iowa is a provider of combat ready units and equipment in support of the national military strategies.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Coast guard recruiting office jackson ms</strong>. 
+								
+																	Young Federal Building in downtown St. 
+																	The Sector is the parent command to three Marine Safety Detachments five River Buoy Tenders and a boat forces unit with 5 response boats. 
+																	Yes Id like to receive more information from the US. 
+																	Coast Guard USCG Project Office PRO Gulf Coast in Pascagoula MS. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	World War I World War II. 
+																	Please click here to speak with a chat representative. 
+																	- Select - I am at least 17 years old with no prior military experience. 
+																	Some programs such as the Coast Guards College Student Pre-Commissioning Initiative also require that you attend a school from a designated list. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To call email or locate a recruiting office near you select your state below. 
+																	A member of Johnson Johnsons Family of Companies is recruiting for a Neuroscience Sales Specialist to support the Mississippi Gulf Coast territory. 
+																	Pearl Harbor D-Day Vietnam Photos Oral Histories Memoirs Browse by Topic. 
+																	Recruiting Education and Training Academy General Sports and Miscellaneous Current Events Our Collections. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This position will provide PRO Gulf Coast Quality Assurance. 
+																	Coast Guard via email about pay and benefits careers eligibility job vacancies and more. 
+																	See reviews photos directions phone numbers and more for Coast Guard Recruiting Office locations in Jackson MS. 
+																	This page contains a list of United States Coast Guard stations in the United States within the United States Coast Guards nine districtsThere are currently many stations located throughout the country along the shores of the Atlantic Ocean Gulf of Mexico Pacific Ocean and Great LakesAlthough many of the stations have been located on shore floating stations have been based on the Ohio. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Go Coast Guard Jackson Ridgeland Mississippi. 
+																	Sea Girt Lighthouse Sea Girt New JerseySEA GIRT LIGHTRELOCATED FROM SEA GIRT INLETStation Established. 
+																	All Lighthouses Light Stations Stations Units Water. 
+																	This is the official Facebook page for the Coast Guard Recruiting Office Jackson. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Email should be used for general recruiting questions without providing Personally. 
+																	Armed Forces Recruiting National Guard 1410 Riverside Dr Jackson MS 39202 601-313-6232 From Business. 
+																	The ASVAB is also offered to high school and post-secondary students as part of the ASVAB Career Exploration Program. 
+																	For information about career opportunities benefits programs etc go to the Find A Recruiter section which provides addresses telephone numbers and e-mail contact information. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See reviews photos directions phone numbers and more for Us Coast Guard Recruiting Office locations in Jackson MS. 
+																	Other Recruiting Related Issues. 
+																	Fixed Wing Rotary Wing Significant Dates in Coast Guard Aviation Land. 
+																	See reviews photos directions phone numbers and more for Us Coast Guard locations in Jackson MS. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Coast Guard service members from Air Station New Orleans Marine Safety-Security Team New Orleans the Gulf Strike Team MSU Vicksburg and Recruiting Office Jackson Mississippi led discussion panels and manned static displays including a Coast Guard HH-60 Jayhawk helicopter. 
+																	1896Year Current Towers First Lit. 
+																	Army training 34 percent of all Soldiers and 69 percent of the women entering the Army each year. 
+																	So I joined the Navy and left 6 months after I walked in the recruiters office Bretts dad served in the Navy in the 60s a time period where perspectives on the military were shifting. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See reviews photos directions phone numbers and more for Army National Guard Recruiting Rentention Office locations in Jackson MS. 
+																	Tuition Assistance pays for up to 100 percent of the cost of tuition or expenses up to a maximum of 250 per credit and a personal maximum of 4500 per fiscal year per student. 
+																	GI Services Nurse Navigator Needed Near Mississippi Gulf Coast Biloxi MS. 
+																	Because of the personalsensitive nature of the information youve submitted only limited individuals have access to it. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Fort Jackson is the largest and most active Initial Entry training Center in the US. 
+																	When the recruiter has determined that you are otherwise qualified heshe will set up a time for you to take the ASVAB at the closest Military Entrance Processing Station MEPS or an affiliated Military Entrance Test MET site. 
+																	See reviews photos directions phone numbers and more for Us Coast Guard Recruiting Office locations in Philadelphia PA. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/17313671/origin.jpg" data-lightbox="roadtrip" data-title="How Cutters Are Sinking The Coast Guard And What To Do About It We Are The Mighty">
+											<img class="card-img v-image ads-img " src="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/17313671/origin.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCvFawiA-WGn7xfLeC1oZDZOhZiN2Cyf9F2A';" alt="How Cutters Are Sinking The Coast Guard And What To Do About It We Are The Mighty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Cutters Are Sinking The Coast Guard And What To Do About It We Are The Mighty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/37/03/e03703da62b507bce2929f28aa1d4b0b.png" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/37/03/e03703da62b507bce2929f28aa1d4b0b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsaeGZ4g--lZ_Qy5Z7Cx31jOC_jp61CPW9MQ';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/19116050/origin.jpg" data-lightbox="roadtrip" data-title="Here S What The Coast Guard Is Cutting Back On During The Shutdown We Are The Mighty">
+											<img class="card-img v-image ads-img " src="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/19116050/origin.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgJbA6HeqnNT3cI7CMUvgfwtZA9IRaJdzZSA';" alt="Here S What The Coast Guard Is Cutting Back On During The Shutdown We Are The Mighty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here S What The Coast Guard Is Cutting Back On During The Shutdown We Are The Mighty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wlox.com/resizer/Ag0xvU3IuNOnCz5tkRGacMm_yw8=/1200x600/arc-anglerfish-arc2-prod-raycom.s3.amazonaws.com/public/GSCSQF7OWJFDFG6F37MQJQMHJM.jpg" data-lightbox="roadtrip" data-title="Coast Guard Station Gulfport Recruiting College Students">
+											<img class="card-img v-image ads-img " src="https://www.wlox.com/resizer/Ag0xvU3IuNOnCz5tkRGacMm_yw8=/1200x600/arc-anglerfish-arc2-prod-raycom.s3.amazonaws.com/public/GSCSQF7OWJFDFG6F37MQJQMHJM.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT51Z91ALh7fxbjbydduILqKK03aG_MSNchyg';" alt="Coast Guard Station Gulfport Recruiting College Students">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coast Guard Station Gulfport Recruiting College Students</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wlox.com/resizer/1iqqojkW35g9-Elv5YBrILOPct8=/1400x0/arc-anglerfish-arc2-prod-raycom.s3.amazonaws.com/public/Z4D4JKF6ZVFTPBPN7RSOID46YI.jpg" data-lightbox="roadtrip" data-title="Coast Guard Returns To Gulfport S Waterfront">
+											<img class="card-img v-image ads-img " src="https://www.wlox.com/resizer/1iqqojkW35g9-Elv5YBrILOPct8=/1400x0/arc-anglerfish-arc2-prod-raycom.s3.amazonaws.com/public/Z4D4JKF6ZVFTPBPN7RSOID46YI.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQbceHkt7sikpUwsXwyNOJYz85gaN4wRapnw';" alt="Coast Guard Returns To Gulfport S Waterfront">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coast Guard Returns To Gulfport S Waterfront</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="okrU1y2ltYLvuM" data-lightbox="roadtrip" data-title="Https Www Reserve Uscg Mil Portals 2 Reservist Cover Magazine 20issue1 20 202020 Pdf Ver Ypnr9jrg39nyl9uf39f7eg 3d 3d">
+											<img class="card-img v-image ads-img " src="okrU1y2ltYLvuM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ89I5rZLDMI2TsYQr_SWsHFl5hLnfmKikqZA';" alt="Https Www Reserve Uscg Mil Portals 2 Reservist Cover Magazine 20issue1 20 202020 Pdf Ver Ypnr9jrg39nyl9uf39f7eg 3d 3d">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Reserve Uscg Mil Portals 2 Reservist Cover Magazine 20issue1 20 202020 Pdf Ver Ypnr9jrg39nyl9uf39f7eg 3d 3d</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Feb/27/2002255948/600/400/0/200227-G-G0000-1016.JPG" data-lightbox="roadtrip" data-title="Ingham 1936 United States Coast Guard All">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Feb/27/2002255948/600/400/0/200227-G-G0000-1016.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTGwA4-Umf0psGfBQbo3Jif2zntsVNPygShA';" alt="Ingham 1936 United States Coast Guard All">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ingham 1936 United States Coast Guard All</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.milart.com/mm5/graphics/00000001/USCG%20Sector%20Jacksonville%20Star%20web.png" data-lightbox="roadtrip" data-title="Milart Com United States Coast Guard">
+											<img class="card-img v-image ads-img " src="http://www.milart.com/mm5/graphics/00000001/USCG%20Sector%20Jacksonville%20Star%20web.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM-cdUAetMsvkCLnW6kJoPtQyKA3Q1HZvtNQ';" alt="Milart Com United States Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Milart Com United States Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/17318380/origin.jpg" data-lightbox="roadtrip" data-title="The Coast Guard Is Outnumbered 20 To 1 In The Arctic We Are The Mighty">
+											<img class="card-img v-image ads-img " src="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/17318380/origin.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5bZFleosJhYo0x8QuDA-XC-gfPmrPM1Njmw';" alt="The Coast Guard Is Outnumbered 20 To 1 In The Arctic We Are The Mighty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Coast Guard Is Outnumbered 20 To 1 In The Arctic We Are The Mighty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/b2/51/22/b2512250f47b6b3b56e4c4e10784db00.jpg" data-lightbox="roadtrip" data-title="The Attempted Rescues Of The Famous Outer Banks Ghost Ship The Carroll A Deering Island Free Press Coast Guard Rescue Ghost Ship Coast Guard Stations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/b2/51/22/b2512250f47b6b3b56e4c4e10784db00.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0xgW0bvaHFkOebdOBW5qYYC-UpGTxHVC9VQ';" alt="The Attempted Rescues Of The Famous Outer Banks Ghost Ship The Carroll A Deering Island Free Press Coast Guard Rescue Ghost Ship Coast Guard Stations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Attempted Rescues Of The Famous Outer Banks Ghost Ship The Carroll A Deering Island Free Press Coast Guard Rescue Ghost Ship Coast Guard Stations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.zianet.com/tmorris/CGASBiloxiGeneralMuster1941.jpg" data-lightbox="roadtrip" data-title="Biloxi Coast Guard Air Station">
+											<img class="card-img v-image ads-img " src="https://www.zianet.com/tmorris/CGASBiloxiGeneralMuster1941.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyW4Oh9VThXTivjgPIVUK0L1tAxsgWawQKww';" alt="Biloxi Coast Guard Air Station">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Biloxi Coast Guard Air Station</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/a9/9f/12/a99f1207bb647a330107cc29ec901324.jpg" data-lightbox="roadtrip" data-title="Women In The Coast Guard Coast Guard Coast Guard Boot Camp Coast Guard Auxiliary">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/a9/9f/12/a99f1207bb647a330107cc29ec901324.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ekh5rlg0lSm70YIMdECJjx2gag6PwgXNTg';" alt="Women In The Coast Guard Coast Guard Coast Guard Boot Camp Coast Guard Auxiliary">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women In The Coast Guard Coast Guard Coast Guard Boot Camp Coast Guard Auxiliary</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2444028305646436" data-lightbox="roadtrip" data-title="Us Coast Guard Women S Leadership Initiative Posts Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2444028305646436" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZh6T9CV06ox3ZUmRSEWtVOEINGwnH8Dt18w';" alt="Us Coast Guard Women S Leadership Initiative Posts Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Coast Guard Women S Leadership Initiative Posts Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/wechat-install.html">Wechat Install</a></li>
+													<li class="list-group-item"><a href="/war-heroes-jimi-hendrix-full-album.html">War Heroes Jimi Hendrix Full Album</a></li>
+													<li class="list-group-item"><a href="/wechat-adalah.html">Wechat Adalah</a></li>
+													<li class="list-group-item"><a href="/war-heroes-rexdl.html">War Heroes Rexdl</a></li>
+													<li class="list-group-item"><a href="/wechat-for-window.html">Wechat For Window</a></li>
+													<li class="list-group-item"><a href="/wechat-mod-2020.html">Wechat Mod 2020</a></li>
+													<li class="list-group-item"><a href="/war-heroes-tvb.html">War Heroes Tvb</a></li>
+													<li class="list-group-item"><a href="/was-2020-budget-passed.html">Was 2020 Budget Passed</a></li>
+													<li class="list-group-item"><a href="/war-in-heroes.html">War In Heroes</a></li>
+													<li class="list-group-item"><a href="/wechat-qr-code-scanner.html">Wechat Qr Code Scanner</a></li>
+													<li class="list-group-item"><a href="/wayne-county-pa-department-of-veterans-affairs.html">Wayne County Pa Department Of Veterans Affairs</a></li>
+													<li class="list-group-item"><a href="/wechat-jelly-bean.html">Wechat Jelly Bean</a></li>
+													<li class="list-group-item"><a href="/wechat-go.html">Wechat Go</a></li>
+													<li class="list-group-item"><a href="/wechat-emoticon.html">Wechat Emoticon</a></li>
+													<li class="list-group-item"><a href="/wechat-china-apk.html">Wechat China Apk</a></li>
+													<li class="list-group-item"><a href="/war-heroes-lords-mobile.html">War Heroes Lords Mobile</a></li>
+													<li class="list-group-item"><a href="/wechat-qq-id.html">Wechat Qq Id</a></li>
+													<li class="list-group-item"><a href="/wechat-jalan-tikus.html">Wechat Jalan Tikus</a></li>
+													<li class="list-group-item"><a href="/wechat-login-google.html">Wechat Login Google</a></li>
+													<li class="list-group-item"><a href="/wechat-aplikasi.html">Wechat Aplikasi</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

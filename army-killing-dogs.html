@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Killing Dogs - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Killing Dogs",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/df/0d/5a/df0d5a8d7c7b4c103c2a22a7a2c64e1d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+killing+dogs",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Killing Dogs</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">THE Army has sparked outrage from dog lovers after it was revealed it had put down more than 1000 dogs which could have been given a new home. The idea was to begin island invasions with landing craft releasing thousands of dogs against the Japanese defenders then followed up by troops as the. PETA released footage showing dogs being snatched from the streets and driven to a grim facility to be killed. <br>				
+			</p>
+										<a class="badge badge-primary" href="/department-of-defense-civilian-retiree-id-card.html">department of defense civilian retiree id card</a>
+											<a class="badge badge-secondary" href="/department-of-defense-program-of-record-definition.html">department of defense program of record definition</a>
+											<a class="badge badge-light" href="/department-of-defense-short-definition.html">department of defense short definition</a>
+											<a class="badge badge-primary" href="/department-of-defense-fuel-spending-supply-acquisition-and-policy.html">department of defense fuel spending supply acquisition and policy</a>
+											<a class="badge badge-warning" href="/department-of-defense-mla-search.html">department of defense mla search</a>
+											<a class="badge badge-info" href="/department-of-defense-civilian-travel-restrictions.html">department of defense civilian travel restrictions</a>
+											<a class="badge badge-light" href="/department-of-defense-map-definition.html">department of defense map definition</a>
+											<a class="badge badge-success" href="/department-of-defense-medical-technologist-jobs.html">department of defense medical technologist jobs</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you've come to visit the ideal blog.  Our website gives you suggestions for viewing the highest quality video and image content, search and locate more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, so we recommend this video that you see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/6f/76/556f76bde13ce53e2a85f94287e42c8b.jpg" data-lightbox="roadtrip" data-title="Military Working Dog Sacrificed Himself To Save Army Rangers In Afghanistan In 2020 Military Working Dogs Working Dogs Army Rangers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/6f/76/556f76bde13ce53e2a85f94287e42c8b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkiXp69HI3ljlx_YGWkqkVBelOZyNuDEM0jA';" alt="Military Working Dog Sacrificed Himself To Save Army Rangers In Afghanistan In 2020 Military Working Dogs Working Dogs Army Rangers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Working Dog Sacrificed Himself To Save Army Rangers In Afghanistan In 2020 Military Working Dogs Working Dogs Army Rangers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/28/76/b4287606bb4aae4d02d26820d718c78b.png" data-lightbox="roadtrip" data-title="Pin On Military Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/28/76/b4287606bb4aae4d02d26820d718c78b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs7OZccQDzbB1LixmVf3TPHWbtOIOtL43-6w';" alt="Pin On Military Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/de/52/d2de52ab06e37da10d40cc3114a31738.jpg" data-lightbox="roadtrip" data-title="Fyi The Above Soldier Was Kia Killed In Action Shortly After This Photo Of He And His Dog Was Taken Military Dogs Military Working Dogs War Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/de/52/d2de52ab06e37da10d40cc3114a31738.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfx8hSt2_ePegGjolceIfYS1STpSvGkNidQQ';" alt="Fyi The Above Soldier Was Kia Killed In Action Shortly After This Photo Of He And His Dog Was Taken Military Dogs Military Working Dogs War Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fyi The Above Soldier Was Kia Killed In Action Shortly After This Photo Of He And His Dog Was Taken Military Dogs Military Working Dogs War Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/5d/b2/615db20acc2288592550dd29a5f5f598.jpg" data-lightbox="roadtrip" data-title="Soldier Dogs The Four Legged Heroes Of Iraq And Afghanistan Military Service Dogs Military Working Dogs Service Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/5d/b2/615db20acc2288592550dd29a5f5f598.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPlftiAZZZlvrMkJMhtLxo9-z2XAxs8WlA8A';" alt="Soldier Dogs The Four Legged Heroes Of Iraq And Afghanistan Military Service Dogs Military Working Dogs Service Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soldier Dogs The Four Legged Heroes Of Iraq And Afghanistan Military Service Dogs Military Working Dogs Service Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a4/e8/26/a4e826dc9a7b03d99f944bb4ecb83716.jpg" data-lightbox="roadtrip" data-title="Soldier Stories Dog Of War Pays Ultimate Sacrifice Master At Arms First Class Leroy Williams Jr And Dinomt An E Military Working Dogs Working Dogs War Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a4/e8/26/a4e826dc9a7b03d99f944bb4ecb83716.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpN3OpJ7h_ZokhBxhQs2cqMG9CeXITIiqDoQ';" alt="Soldier Stories Dog Of War Pays Ultimate Sacrifice Master At Arms First Class Leroy Williams Jr And Dinomt An E Military Working Dogs Working Dogs War Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soldier Stories Dog Of War Pays Ultimate Sacrifice Master At Arms First Class Leroy Williams Jr And Dinomt An E Military Working Dogs Working Dogs War Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/24/3f/50243fc0f24a1501c19ec80c205c6c5f.jpg" data-lightbox="roadtrip" data-title="Dogs In The Army Read First Post Page 98 Military Working Dogs Military Dogs War Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/24/3f/50243fc0f24a1501c19ec80c205c6c5f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtg5IYBtwrF1PAT_tfeMISWh4cOp9k78STCQ';" alt="Dogs In The Army Read First Post Page 98 Military Working Dogs Military Dogs War Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dogs In The Army Read First Post Page 98 Military Working Dogs Military Dogs War Dogs</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/e4/4f/75/e44f7516c24131b7407e7be866370ea0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtg5IYBtwrF1PAT_tfeMISWh4cOp9k78STCQ';" alt="Dogs In The Army Read First Post Page 98 Military Working Dogs Military Dogs War Dogs">
+										<div class="card-body">
+						<h3 class="h5"><b>But World War II witnessed the biggest surge in the use of working dogs to support military operations.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army killing dogs</strong>. 
+								
+																	Army SLAMMED for killing 1000 hero working dogs that could have been re-homed THE Army has been slammed for destroying more than 1000 working dogs which could have been re-homed. 
+																	The canines which saved countless lives between 2010 and 2014 were not. 
+																	When we think about military dogs muscular German Shepherds tend to come to mind. 
+																	In that period the dog training schools were mostly focused on producing anti-tank dogs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	About 40000 dogs were deployed for various tasks in the Red Army. 
+																	Military dogs must have just the right level of aggression and excitability. 
+																	Many of the 51 dogs killed had seen action in Afghanistan and Iraq Many of the 51 animals killed saw action on the front line in Iraq and Afghanistan and saved the lives of hundreds of British. 
+																	Bomb-sniffing dogs were mistreated by the US Army after returning from duty in Afghanistan according to an official report. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There the army hoped to train as many as two million dogs. 
+																	If youre anything like me the moment you think military dog you envision a German Shepherd Dog or Doberman patrolling a barbed wire fence and barking fiercely when confronted by the enemy. 
+																	Prestre proposed using large dogs to kill Japanese soldiers. 
+																	New figures released by the Ministry of Defence show 38. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They arent all German Shepherds. 
+																	US Air Force Staff Sgt. 
+																	The military dog injured during the US raid to kill al-Baghdadi Picture. 
+																	A retired Army official on conditions of anonymity said the Army puts to sleep its dogs if it is unable to keep up with the rigour of its duty even if it has a few years of life ahead. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But several different breeds have shown patriotic heroism over the years. 
+																	Jeremy Bowcock Reality. 
+																	Between 2002 and 2012 more than 800 dogs were. 
+																	Military has used working dogs since the Revolutionary War initially as pack animals and later for more advanced uses such as killing rats in the trenches during World War I he said. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But as always you. 
+																	MWDs certified in patrol bite work are very capable of causing serious bodily harm and. 
+																	At the beginning of World War II a government pamphlet led to a massive cull of British pets. 
+																	Military working dogs bite to kill Photo. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sickening footage shows dogs brutally killed in paradise island Mauritius. 
+																	He convinced the military to lease an entire island in the Mississippi to house the training facilities. 
+																	Dog Soldiers is a 2002 action horror film written directed and edited by Neil Marshall in his directorial debut and starring Sean Pertwee Kevin McKidd Emma Cleasby and Liam CunninghamIn the US it premiered as a Sci Fi Pictures telefilm on the Sci Fi Channel. 
+																	By now everybody has seen the picture. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Many branches use the highly trainable Labrador Retriever. 
+																	The use of anti-tank dogs was escalated during 1941 and 1942 when every effort was made by the Red Army to stop the German advance at the Eastern Front of World War II. 
+																	Its an image that weve so many times in movies and television shows. 
+																	The mouth wide o. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A tan dog in a tactical vest sitting up at the position of attention perky ears framing blackface. 
+																	Youll be surprised with some of the picks on our military dog breeds list. 
+																	This little-discussed moment of panic is explored in a new book. 
+																	Lance Corporal Liam Tasker 26 was shot by insurgents and just hours later his dog Theo died of a reported broken heart A hero soldier who was shot dead whilst serving in Afghanistan was soon. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The elite US Navy SEALS use the Belgian Malinois a breed. 
+																	AP General Mark Milley chairman of the Joint Chiefs of Staff said the military dog performed a tremendous service and. 
+																	The cruel treatment of military dogs has been criticised by a senior MP as it emerged dozens have been destroyed over the past year. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/10/3d/32103d0029d49cf7d9a316ecddc853a0.jpg" data-lightbox="roadtrip" data-title="Pin On Humanity The Good The Bad">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/10/3d/32103d0029d49cf7d9a316ecddc853a0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNyvdwrJfr_giyueTfIS3xPtFZ6qlJHN-g-g';" alt="Pin On Humanity The Good The Bad">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Humanity The Good The Bad</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/0d/5a/df0d5a8d7c7b4c103c2a22a7a2c64e1d.jpg" data-lightbox="roadtrip" data-title="Pin On Dogs In Gas Masks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/0d/5a/df0d5a8d7c7b4c103c2a22a7a2c64e1d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7C6spf20vAa_MGLn8Tt-uT4p-jNq6aCbPcA';" alt="Pin On Dogs In Gas Masks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Dogs In Gas Masks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c7/e1/1c/c7e11cbdaf6e4dac70cb27790dc5b175.jpg" data-lightbox="roadtrip" data-title="Beautiful Dog Military Working Dogs Dog Soldiers Military Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c7/e1/1c/c7e11cbdaf6e4dac70cb27790dc5b175.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj0dwWGT586-1Z4uoy3Zr9vovGjjflbXK2uw';" alt="Beautiful Dog Military Working Dogs Dog Soldiers Military Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Beautiful Dog Military Working Dogs Dog Soldiers Military Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/f9/78/65f978ad705cd85f7accaf866e68ad64.jpg" data-lightbox="roadtrip" data-title="Pin By Diesel 12 On Dogs In 2020 Military Dogs Military Working Dogs War Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/f9/78/65f978ad705cd85f7accaf866e68ad64.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3lz08FxISQy9B_yqf9WTUk3Rb4OM9O5QXgQ';" alt="Pin By Diesel 12 On Dogs In 2020 Military Dogs Military Working Dogs War Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Diesel 12 On Dogs In 2020 Military Dogs Military Working Dogs War Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/3f/1f/e13f1f784537c3097e6609371a708f4b.jpg" data-lightbox="roadtrip" data-title="Military War K9 Handler Battle Buddies Till The End Military Dogs Dog Hero Military Working Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/3f/1f/e13f1f784537c3097e6609371a708f4b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo-gypqOkWklAlVKqIxIfqhhpxFTgLEzUhNQ';" alt="Military War K9 Handler Battle Buddies Till The End Military Dogs Dog Hero Military Working Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military War K9 Handler Battle Buddies Till The End Military Dogs Dog Hero Military Working Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/d9/9c/72d99c4ed5f34bf9fe6d201f2c6d2e94.jpg" data-lightbox="roadtrip" data-title="Military Plaques For Army Air Force Navy Marines Government Military Dogs Military Working Dogs War Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/d9/9c/72d99c4ed5f34bf9fe6d201f2c6d2e94.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUjhp9LjNuEk1rxG4CXYKO1f3xZK6uVRQBJw';" alt="Military Plaques For Army Air Force Navy Marines Government Military Dogs Military Working Dogs War Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Plaques For Army Air Force Navy Marines Government Military Dogs Military Working Dogs War Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/aa/55/9baa5572c15cf348964c70eaecfc5afe.jpg" data-lightbox="roadtrip" data-title="Pin By Camila Castro On Spec Ops Military Service Dogs Military Dogs Army Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/aa/55/9baa5572c15cf348964c70eaecfc5afe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN_mqmaLSQ67IxWN8qMh4G8hzrQ65y4Aw7nA';" alt="Pin By Camila Castro On Spec Ops Military Service Dogs Military Dogs Army Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Camila Castro On Spec Ops Military Service Dogs Military Dogs Army Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/4f/e0/db4fe07419f53e59b95a6f8dd47a87b0.jpg" data-lightbox="roadtrip" data-title="Pin By Speyton On Robbie Amell Max Movie Military Dogs Dog Hero">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/4f/e0/db4fe07419f53e59b95a6f8dd47a87b0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7fORi-uTnObE_DIMw9HJbroxcgbiik8Tzzg';" alt="Pin By Speyton On Robbie Amell Max Movie Military Dogs Dog Hero">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Speyton On Robbie Amell Max Movie Military Dogs Dog Hero</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/6d/05/616d05ed3352c91cb4ae50c2841ebfc9.jpg" data-lightbox="roadtrip" data-title="U S Air Force Staff Sgt Jesse Galvan 386th Expeditionary Security Forces Squadron Military Working Dog Handler Military Working Dogs Military Dogs Dog Hero">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/6d/05/616d05ed3352c91cb4ae50c2841ebfc9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIEl4u7ZMIKPxYM09t3Jr_OOj-TZ0wF989_Q';" alt="U S Air Force Staff Sgt Jesse Galvan 386th Expeditionary Security Forces Squadron Military Working Dog Handler Military Working Dogs Military Dogs Dog Hero">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Air Force Staff Sgt Jesse Galvan 386th Expeditionary Security Forces Squadron Military Working Dog Handler Military Working Dogs Military Dogs Dog Hero</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/4b/8f/3e4b8f800a2812a38ad2b46e5bdf0934.jpg" data-lightbox="roadtrip" data-title="Rescued Adopted Military Working Dogs Military Service Dogs Military Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/4b/8f/3e4b8f800a2812a38ad2b46e5bdf0934.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP4o7kV5Lhi0AUDVCJm_GBTC3Ep705oOERGw';" alt="Rescued Adopted Military Working Dogs Military Service Dogs Military Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rescued Adopted Military Working Dogs Military Service Dogs Military Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/03/4a/46/034a46dd0f503e826e4c453b1572be7d.jpg" data-lightbox="roadtrip" data-title="Pin On Service Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/03/4a/46/034a46dd0f503e826e4c453b1572be7d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ8PmggD_gmvLoBPS-zcgI_tgcdsACQPYi4A';" alt="Pin On Service Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Service Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/4f/75/e44f7516c24131b7407e7be866370ea0.jpg" data-lightbox="roadtrip" data-title="Dogg War Dogs Military Dogs Military Working Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/4f/75/e44f7516c24131b7407e7be866370ea0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdsEyWrCxRDbtRaZD733EVZ1fLy8E-GwbyaA';" alt="Dogg War Dogs Military Dogs Military Working Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dogg War Dogs Military Dogs Military Working Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/dc/2d/b0dc2dd3509edf97d0d8dde64717d0ae.png" data-lightbox="roadtrip" data-title="40 Sizzling Pictures Of Military Service Dogs 3 Png 620 413 Pixels Military Working Dogs Military Service Dogs Military Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/dc/2d/b0dc2dd3509edf97d0d8dde64717d0ae.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTPeYDpCVMdomhnLeTLjwYweY1K6ykYDTpYQ';" alt="40 Sizzling Pictures Of Military Service Dogs 3 Png 620 413 Pixels Military Working Dogs Military Service Dogs Military Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">40 Sizzling Pictures Of Military Service Dogs 3 Png 620 413 Pixels Military Working Dogs Military Service Dogs Military Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/nypd-vs-army.html">Nypd Vs Army</a></li>
+													<li class="list-group-item"><a href="/police-department-military-buy-back.html">Police Department Military Buy Back</a></li>
+													<li class="list-group-item"><a href="/peter-navy-tuiasosopo-wife.html">Peter Navy Tuiasosopo Wife</a></li>
+													<li class="list-group-item"><a href="/pentagon-budget-2016.html">Pentagon Budget 2016</a></li>
+													<li class="list-group-item"><a href="/oklahoma-military-police-department.html">Oklahoma Military Police Department</a></li>
+													<li class="list-group-item"><a href="/oregon-military-department-deers.html">Oregon Military Department Deers</a></li>
+													<li class="list-group-item"><a href="/pilox-hijau-army-doff.html">Pilox Hijau Army Doff</a></li>
+													<li class="list-group-item"><a href="/ohio-civil-war-soldiers-database.html">Ohio Civil War Soldiers Database</a></li>
+													<li class="list-group-item"><a href="/pakistan-military-accounts-department-junior-auditor-salary.html">Pakistan Military Accounts Department Junior Auditor Salary</a></li>
+													<li class="list-group-item"><a href="/pakistan-military-accounts-department-senior-auditor-result-2019.html">Pakistan Military Accounts Department Senior Auditor Result 2019</a></li>
+													<li class="list-group-item"><a href="/pentagon-defense-budget-2019.html">Pentagon Defense Budget 2019</a></li>
+													<li class="list-group-item"><a href="/oregon-military-department-public-affairs.html">Oregon Military Department Public Affairs</a></li>
+													<li class="list-group-item"><a href="/pakistan-army-accounts-department.html">Pakistan Army Accounts Department</a></li>
+													<li class="list-group-item"><a href="/oregon-military-department-salem-oregon.html">Oregon Military Department Salem Oregon</a></li>
+													<li class="list-group-item"><a href="/pennsylvania-department-of-veterans-affairs-address.html">Pennsylvania Department Of Veterans Affairs Address</a></li>
+													<li class="list-group-item"><a href="/oregon-military-department-mission-statement.html">Oregon Military Department Mission Statement</a></li>
+													<li class="list-group-item"><a href="/pakistan-military-accounts-department-ministry-of-defence.html">Pakistan Military Accounts Department Ministry Of Defence</a></li>
+													<li class="list-group-item"><a href="/pa-department-of-military-veterans-affairs.html">Pa Department Of Military Veterans Affairs</a></li>
+													<li class="list-group-item"><a href="/oregon-military-department-agi.html">Oregon Military Department Agi</a></li>
+													<li class="list-group-item"><a href="/pennsylvania-department-of-military-and-veterans-affairs-address.html">Pennsylvania Department Of Military And Veterans Affairs Address</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

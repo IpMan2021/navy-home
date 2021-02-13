@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Are Us Military Federal Employees - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Are Us Military Federal Employees",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/736x/a3/d5/80/a3d580ebb60764ba0966c933f9b2f215.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=are+us+military+federal+employees",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Are Us Military Federal Employees</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Military service members vary by state driven mostly by workforce levels at large bases. Military American Federal assists those who have volunteered their time to military service including Active or Retired Military Veterans and Employed or retired Federal Employees. The federal civil service was established in 1871 5 USC. <br>				
+			</p>
+										<a class="badge badge-warning" href="/home-depot-military-discount-canada.html">home depot military discount canada</a>
+											<a class="badge badge-danger" href="/home-depot-military-discount-for-spouses.html">home depot military discount for spouses</a>
+											<a class="badge badge-primary" href="/headquarters-department-of-the-army-and-direct-reporting-units.html">headquarters department of the army and direct reporting units</a>
+											<a class="badge badge-info" href="/headquarters-department-of-the-army-structure.html">headquarters department of the army structure</a>
+											<a class="badge badge-success" href="/heroes-of-normandie-us-army-box.html">heroes of normandie us army box</a>
+											<a class="badge badge-secondary" href="/home-depot-military-discount-pick-up-in-store.html">home depot military discount pick up in store</a>
+											<a class="badge badge-light" href="/headquarters-department-of-the-army-g3-5-7.html">headquarters department of the army g3 5 7</a>
+											<a class="badge badge-danger" href="/hiring-our-heroes-travis-air-force-base.html">hiring our heroes travis air force base</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you've come to pay a visit to the right site.  Our website provides you with suggestions for viewing the highest quality video and picture content, hunt and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this video for you to view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/34/53/9d345312726d664361374d6a3c262478.jpg" data-lightbox="roadtrip" data-title="Pin By Armed Forces Benefits Network On United States Military Babylon The Great Armed Forces Troops">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/34/53/9d345312726d664361374d6a3c262478.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaFhe_S1HKK7_rXq_vhKBalWcr1gbKUKOAWA';" alt="Pin By Armed Forces Benefits Network On United States Military Babylon The Great Armed Forces Troops">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Armed Forces Benefits Network On United States Military Babylon The Great Armed Forces Troops</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/60/a9/3160a974869470252aa7e6e21347c2bd.jpg" data-lightbox="roadtrip" data-title="Fly To Mcchord Afb Or Fort Lewis With United Military Travel S Easy Military Travel Loans Fly Now Pay Lat Travel Loan Military Installations Us Military Bases">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/60/a9/3160a974869470252aa7e6e21347c2bd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKU30vUEqme7ojLfIf-a9mKd-Nh7FvRqpiyw';" alt="Fly To Mcchord Afb Or Fort Lewis With United Military Travel S Easy Military Travel Loans Fly Now Pay Lat Travel Loan Military Installations Us Military Bases">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fly To Mcchord Afb Or Fort Lewis With United Military Travel S Easy Military Travel Loans Fly Now Pay Lat Travel Loan Military Installations Us Military Bases</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/75/62/d27562f7ff97c309356b7e568dd200e5.jpg" data-lightbox="roadtrip" data-title="Infographic Showing How Much Is Added To Your Fers Pension Through A Military Buyback Military Service Federal Retirement Pensions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/75/62/d27562f7ff97c309356b7e568dd200e5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzHhN5GW3jun3jSzcUxBd5EdLMffqm24JKmA';" alt="Infographic Showing How Much Is Added To Your Fers Pension Through A Military Buyback Military Service Federal Retirement Pensions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infographic Showing How Much Is Added To Your Fers Pension Through A Military Buyback Military Service Federal Retirement Pensions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/12/a2/2512a286e3200fef7cbb4742496e6068.png" data-lightbox="roadtrip" data-title="Thrift Savings Plan Tsp A Guide To Retirement For Veterans In 2020 Financial Motivation Savings And Investment Savings Plan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/12/a2/2512a286e3200fef7cbb4742496e6068.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCc5-J_d3mlk8rlV96AJ_QXMPn1tY-3YbqpA';" alt="Thrift Savings Plan Tsp A Guide To Retirement For Veterans In 2020 Financial Motivation Savings And Investment Savings Plan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thrift Savings Plan Tsp A Guide To Retirement For Veterans In 2020 Financial Motivation Savings And Investment Savings Plan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/1b/02/801b021e4d4bc27e3ba2220edaf36db1.jpg" data-lightbox="roadtrip" data-title="I M His Kinda Crazy American Soldiers God Bless America Military Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/1b/02/801b021e4d4bc27e3ba2220edaf36db1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQelqe8VNARYm4RakL6t535Up179ojAY6NJ0w';" alt="I M His Kinda Crazy American Soldiers God Bless America Military Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I M His Kinda Crazy American Soldiers God Bless America Military Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/cd/09/1bcd0985e40113ec220cf395d9be6c77.png" data-lightbox="roadtrip" data-title="It S Good To Be The King And His Minions Federal Employees Much Better Off Than Private Workers Federation Financial Wellness Worker">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/cd/09/1bcd0985e40113ec220cf395d9be6c77.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKagM46C8Ws25U0co7isOQoOzoRUz6QFNLpA';" alt="It S Good To Be The King And His Minions Federal Employees Much Better Off Than Private Workers Federation Financial Wellness Worker">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">It S Good To Be The King And His Minions Federal Employees Much Better Off Than Private Workers Federation Financial Wellness Worker</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/41/93/a6/4193a6b79743d835845bcfa2ec95011a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKagM46C8Ws25U0co7isOQoOzoRUz6QFNLpA';" alt="It S Good To Be The King And His Minions Federal Employees Much Better Off Than Private Workers Federation Financial Wellness Worker">
+										<div class="card-body">
+						<h3 class="h5"><b>Court decisions had established that an employee of the Federal Government had no right to claim copyright in a work prepared by him for the Government.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Are us military federal employees</strong>. 
+								
+																	State and local employees. 
+																	Non-federal employees in states can vary. 
+																	Learn more about VEOA. 
+																	The Department of Defense does not verify employment for active-duty military members or for civilian employees by telephone. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The term for the departments and workers that make up the federal government is civilian employee. 
+																	When you see anything in the media about federal employees that does not include the military what-so-ever. 
+																	Executive Branch Civilian Employees. 
+																	Jobs that are not offered to candidates outside of the federal government. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The United States federal civil service is the civilian workforce ie non-elected and non-military public sector employees of the United States federal government s departments and agencies. 
+																	Other decisions had held that individuals could not have copyright in books consisting of the text of Federal or State court decisions statutes rules of judicial procedures etc ie governmental edicts and rulings. 
+																	There were a total of 13 million active duty military and more than 800000 reserve. 
+																	Work rules and definitions for federal employees are completely different than the military and vice versa. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Total Number of Direct Employees of the Federal Government This is another way of looking at it with the number of military personnel stacked on top of the number of civilian personnel in the Executive branch with the much smaller number of Judicial and Legislative Branch on top. 
+																	In reality no not at all. 
+																	We guide current and former military personnel to make long-lasting employment benefit and retirement decisions that will serve them well. 
+																	The DOD is the largest employer in the worldwith over 13million active-duty service members soldiers marines sailors and airmen as of 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We have solutions for. 
+																	Are you a current federal civilian employee serving under a Veterans Recruitment Appointment VRA. 
+																	If you are seeking verification of military service or employment with. 
+																	FERS employees are eligible to receive retroactive Agency Automatic 1 Contributions 2 and earnings for the period of nonpay status or separation associated with performing military service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Back in September a group of over 20 senators urged the Trump administration to allow federal workers and military service members the option to opt out of the deferral. 
+																	FERS employees are eligible to receive retroactive. 
+																	If an employee separates from Federal service to enter active duty military service the employee is considered to be on military furlough in leave without pay status for the 24-month period if the employee continues to be eligible for reemployment rights under 5 CFR Part 353 or similar authority. 
+																	Members of the Military Who Return to Federal Civilian Service USERRA contains several provisions regarding the Thrift Savings Plan TSP. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It consists of the Army Marine Corps Navy Air Force Space Force and Coast Guard. 
+																	More employees include over 826000 National Guard and reservists from the armed forces and over 732000 civiliansbringing the total to over 28million employees. 
+																	The president of the United States is the commander-in-chief of the Armed Forces and forms military policy with the Department of Defense DoD and Department of Homeland Security DHS both federal executive departments. 
+																	The United States Armed Forces are the military forces of the United States of America. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Federal employees who work in the Washington DC area will still get the day off work for the presidential inauguration even as many of them continue to work from home according to a memo. 
+																	There are more than 2 million people on the nations payroll. 
+																	The federal government is the nations single largest employer although it employs only about 12 of all government employees compared to 24 at the state level and 63 at the local level. 
+																	Under VEOA eligible veterans can apply to jobs that are only open to status employees ie. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Any job within one of the three branches of the United States government -- executive legislative or judicial -- is a federal job. 
+																	The military is its own entity and has its own laws. 
+																	Government employees in the United States includes the United States federal civil service. 
+																	A civilian employee is any individual that works for the federal government but is not affiliated. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It often excludes military employees. 
+																	Select Yes if you. 
+																	This means politicians and their staff members military. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/4b/7e/074b7e043bd30dcb372bad4fe83f7fec.jpg" data-lightbox="roadtrip" data-title="United Military Travel Military Travel Financing Us Military Bases Retired Military Military Flights">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/4b/7e/074b7e043bd30dcb372bad4fe83f7fec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ2aWYn8b-cg-wxbuuynk08cwQlDTB1ZZfaQ';" alt="United Military Travel Military Travel Financing Us Military Bases Retired Military Military Flights">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United Military Travel Military Travel Financing Us Military Bases Retired Military Military Flights</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/1b/1a/dd1b1a0845ddcf3209c52a2776817f41.png" data-lightbox="roadtrip" data-title="As The Food Service Provider For 12 United States Air Force Bases Sodexo Employee Military Appreciation Month Training And Development United States Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/1b/1a/dd1b1a0845ddcf3209c52a2776817f41.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsYHVjHMDNCQPVTlT12f1vvP5YtN30lAqNEw';" alt="As The Food Service Provider For 12 United States Air Force Bases Sodexo Employee Military Appreciation Month Training And Development United States Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">As The Food Service Provider For 12 United States Air Force Bases Sodexo Employee Military Appreciation Month Training And Development United States Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/e3/26/51e3269f62f656de068ce60836857575.jpg" data-lightbox="roadtrip" data-title="34 Secretive Military Government Operations Few People Know In 2020 History Facts Interesting Historical Facts History Facts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/e3/26/51e3269f62f656de068ce60836857575.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbCC6XkT_ckxuShHr-3LxPE_YSMAsKtVYOOg';" alt="34 Secretive Military Government Operations Few People Know In 2020 History Facts Interesting Historical Facts History Facts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">34 Secretive Military Government Operations Few People Know In 2020 History Facts Interesting Historical Facts History Facts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/93/a6/4193a6b79743d835845bcfa2ec95011a.jpg" data-lightbox="roadtrip" data-title="There Are Now More Bureaucrats With Guns Than U S Marines Marines Federal Agencies Us Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/93/a6/4193a6b79743d835845bcfa2ec95011a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjUNbg1-CTZmLFcdWNgOhKZfUKxME6LvSEjw';" alt="There Are Now More Bureaucrats With Guns Than U S Marines Marines Federal Agencies Us Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">There Are Now More Bureaucrats With Guns Than U S Marines Marines Federal Agencies Us Marines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5a/bd/ff/5abdff60409dfa87b1e4a1332b81623e.jpg" data-lightbox="roadtrip" data-title="We Wait We Hope We Pray Until You Re Home Again Army Wife Life Deployment Quotes Marines Girlfriend">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5a/bd/ff/5abdff60409dfa87b1e4a1332b81623e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToRWOiCHaxGbZ1jXBu3DNCzBDB-f3IL3i5rw';" alt="We Wait We Hope We Pray Until You Re Home Again Army Wife Life Deployment Quotes Marines Girlfriend">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Wait We Hope We Pray Until You Re Home Again Army Wife Life Deployment Quotes Marines Girlfriend</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/ad/48/5dad48f39b2c899debecf55f9190b527.jpg" data-lightbox="roadtrip" data-title="Download Pdf Jobseeker S Guide Ten Steps To A Federal Job For Military Personnel And Spouses By Kathryn K Tro Books To Read Online Military Personnel Ebook">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/ad/48/5dad48f39b2c899debecf55f9190b527.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwBW5YwfLTjzhg-S2hEnamYumhkIOHZZSrwA';" alt="Download Pdf Jobseeker S Guide Ten Steps To A Federal Job For Military Personnel And Spouses By Kathryn K Tro Books To Read Online Military Personnel Ebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download Pdf Jobseeker S Guide Ten Steps To A Federal Job For Military Personnel And Spouses By Kathryn K Tro Books To Read Online Military Personnel Ebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a3/d5/80/a3d580ebb60764ba0966c933f9b2f215.jpg" data-lightbox="roadtrip" data-title="Pin On Your Government World Events">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a3/d5/80/a3d580ebb60764ba0966c933f9b2f215.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSduz5JhXfNzOEjwBoRmw0Uf-h6jifjIVJLAA';" alt="Pin On Your Government World Events">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Your Government World Events</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/29/79/9f/29799f8bcb0bd0c1d28ef6d443956628--snow-days-national-cemetery.jpg" data-lightbox="roadtrip" data-title="Lord Please Protect All Our Military Personnel Wherever They Are Serving Father God Please Protect Their Ma Unknown Soldier Military Photos Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/29/79/9f/29799f8bcb0bd0c1d28ef6d443956628--snow-days-national-cemetery.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb_Se9syiffG300bfc2DZR2onI6aDA4HxGzg';" alt="Lord Please Protect All Our Military Personnel Wherever They Are Serving Father God Please Protect Their Ma Unknown Soldier Military Photos Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lord Please Protect All Our Military Personnel Wherever They Are Serving Father God Please Protect Their Ma Unknown Soldier Military Photos Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/ba/6f/edba6f396147e6c7cfbf34db0b653fa4.jpg" data-lightbox="roadtrip" data-title="Pin On U S Military General">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/ba/6f/edba6f396147e6c7cfbf34db0b653fa4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-dfnujhW49-pr40xiZvwODOLHwSVJPvjiPA';" alt="Pin On U S Military General">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On U S Military General</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/ea/f2/f8eaf28bda494aaa1a68873be8f5745b.jpg" data-lightbox="roadtrip" data-title="Don T Be That Guy Dod Awareness Campaign For Responsible Drinking Online And Offline Communication With The Goal Awareness Campaign Health Federal Employee">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/ea/f2/f8eaf28bda494aaa1a68873be8f5745b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjcRgRdnOLgL9bFnl2_8NsCD84OUF6Rh8UAQ';" alt="Don T Be That Guy Dod Awareness Campaign For Responsible Drinking Online And Offline Communication With The Goal Awareness Campaign Health Federal Employee">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Don T Be That Guy Dod Awareness Campaign For Responsible Drinking Online And Offline Communication With The Goal Awareness Campaign Health Federal Employee</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/f3/d5/6ff3d59a4b41e6ebc775694d7fd4f450.jpg" data-lightbox="roadtrip" data-title="Perdiemcalc Military And Dod Per Diem Calculator Iphone And Ipad App By Militarylounge Com Genre Finance Appl Federal Agencies Calculator App Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/f3/d5/6ff3d59a4b41e6ebc775694d7fd4f450.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLWzBbpyDXs8giP6q5pw1b10Rl9pho8jvxFw';" alt="Perdiemcalc Military And Dod Per Diem Calculator Iphone And Ipad App By Militarylounge Com Genre Finance Appl Federal Agencies Calculator App Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Perdiemcalc Military And Dod Per Diem Calculator Iphone And Ipad App By Militarylounge Com Genre Finance Appl Federal Agencies Calculator App Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/03/9e/d3039e5140201a3eccab5b2b9076b492.jpg" data-lightbox="roadtrip" data-title="The Pros And Cons Of Thrift Savings Plans Military Military Family Money Smart Week">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/03/9e/d3039e5140201a3eccab5b2b9076b492.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9YwC8xmdF4k4rfw93WA8v9ZbbOtBsjGw-Ww';" alt="The Pros And Cons Of Thrift Savings Plans Military Military Family Money Smart Week">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Pros And Cons Of Thrift Savings Plans Military Military Family Money Smart Week</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/86/97/3b869765ffefa5c74f71669cf61e2142.jpg" data-lightbox="roadtrip" data-title="How To Earn Airline Miles From Us Military Tdy Deployments Military Spouse Resources Service Trip Air Traffic Control">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/86/97/3b869765ffefa5c74f71669cf61e2142.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsrPRHho2lZbOhX724hjSN99eTALfOi9yliQ';" alt="How To Earn Airline Miles From Us Military Tdy Deployments Military Spouse Resources Service Trip Air Traffic Control">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Earn Airline Miles From Us Military Tdy Deployments Military Spouse Resources Service Trip Air Traffic Control</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/dept-of-va-regions.html">Dept Of Va Regions</a></li>
+													<li class="list-group-item"><a href="/dept-of-veterans-affairs-baltimore-md.html">Dept Of Veterans Affairs Baltimore Md</a></li>
+													<li class="list-group-item"><a href="/dept-of-va-nashville.html">Dept Of Va Nashville</a></li>
+													<li class="list-group-item"><a href="/dept-of-labor-veterans-preference.html">Dept Of Labor Veterans Preference</a></li>
+													<li class="list-group-item"><a href="/dept-of-military-veterans.html">Dept Of Military Veterans</a></li>
+													<li class="list-group-item"><a href="/dept-of-va-muskogee-ok.html">Dept Of Va Muskogee Ok</a></li>
+													<li class="list-group-item"><a href="/dept-of-military-and-veterans-affairs-annville-pa.html">Dept Of Military And Veterans Affairs Annville Pa</a></li>
+													<li class="list-group-item"><a href="/dept-of-va-portal.html">Dept Of Va Portal</a></li>
+													<li class="list-group-item"><a href="/dept-of-military-affairs-nottoway-va.html">Dept Of Military Affairs Nottoway Va</a></li>
+													<li class="list-group-item"><a href="/dept-of-va-billing.html">Dept Of Va Billing</a></li>
+													<li class="list-group-item"><a href="/dept-of-va-washington-dc.html">Dept Of Va Washington Dc</a></li>
+													<li class="list-group-item"><a href="/dept-of-veterans-affairs-biloxi-ms.html">Dept Of Veterans Affairs Biloxi Ms</a></li>
+													<li class="list-group-item"><a href="/dept-of-military-affairs-wisconsin.html">Dept Of Military Affairs Wisconsin</a></li>
+													<li class="list-group-item"><a href="/dept-of-va-twitter.html">Dept Of Va Twitter</a></li>
+													<li class="list-group-item"><a href="/dept-of-va-logo.html">Dept Of Va Logo</a></li>
+													<li class="list-group-item"><a href="/dept-of-veterans-affairs-benefits.html">Dept Of Veterans Affairs Benefits</a></li>
+													<li class="list-group-item"><a href="/dept-of-veteran-affairs-brisbane.html">Dept Of Veteran Affairs Brisbane</a></li>
+													<li class="list-group-item"><a href="/dept-of-va-janesville-wi.html">Dept Of Va Janesville Wi</a></li>
+													<li class="list-group-item"><a href="/dept-of-va-life-insurance.html">Dept Of Va Life Insurance</a></li>
+													<li class="list-group-item"><a href="/dept-of-va-covid-19-testing.html">Dept Of Va Covid 19 Testing</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

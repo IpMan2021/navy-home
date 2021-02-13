@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Spouse Of The Year 2019 - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Spouse Of The Year 2019",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/7d/c7/a8/7dc7a8bd76370a51e7835963ac0d25ec.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+spouse+of+the+year+2019",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Spouse Of The Year 2019</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">I wasnt sure where I fit into the community and I struggled with feeling very isolated. Clusters of spouses and friends who have leaned on each other over the past few months depending on each other in a way that is unique only to military spouses laughing and chattering excitedly. The Armed Forces Insurance Military Spouse of the Year Program believes that every military spouse serves in their own capacity. <br>				
+			</p>
+										<a class="badge badge-danger" href="/us-army-soldier-types.html">us army soldier types</a>
+											<a class="badge badge-info" href="/us-army-soldier-toys.html">us army soldier toys</a>
+											<a class="badge badge-warning" href="/us-army-stickman-rope-hero-mod-apk.html">us army stickman rope hero mod apk</a>
+											<a class="badge badge-danger" href="/us-army-soldiers-in-germany.html">us army soldiers in germany</a>
+											<a class="badge badge-primary" href="/us-army-tanks-current.html">us army tanks current</a>
+											<a class="badge badge-dark" href="/us-army-soldiers-marching.html">us army soldiers marching</a>
+											<a class="badge badge-dark" href="/us-army-soldier-loadout.html">us army soldier loadout</a>
+											<a class="badge badge-info" href="/us-army-soldiers-general-orders.html">us army soldiers general orders</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to visit the right site.  Our website provides you with hints for viewing the highest quality video and picture content, search and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, so we recommend this movie for you to see.  You can also contribute to supporting this site by sharing videos and images that you enjoy on this site on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this website.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d7/90/bb/d790bb13a1f0bfe79500da96f490e8f7.jpg" data-lightbox="roadtrip" data-title="May 2019 Military Spouse Magazine Military Spouse Magazine Military Spouse Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d7/90/bb/d790bb13a1f0bfe79500da96f490e8f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_E2wwDtWNUfhIWfZwYHbkkmz8TAu9WgyqFA';" alt="May 2019 Military Spouse Magazine Military Spouse Magazine Military Spouse Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">May 2019 Military Spouse Magazine Military Spouse Magazine Military Spouse Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c5/5c/cd/c55ccd6d6e64eff642deaf9776a14fa2.jpg" data-lightbox="roadtrip" data-title="Pin By Military Spouse On Military Spouse Magazine Military Spouse Military Life Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c5/5c/cd/c55ccd6d6e64eff642deaf9776a14fa2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnSv6Qa_C3U5kRzzE_BpVUfFK2Xoto_tG0_g';" alt="Pin By Military Spouse On Military Spouse Magazine Military Spouse Military Life Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Military Spouse On Military Spouse Magazine Military Spouse Military Life Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/65/62/266562a56ab2d602e615fc176eb080cb.png" data-lightbox="roadtrip" data-title="Richelle Futch For 2019 Armed Forces Insurance Military Spouse Of The Year Military Spouse Armed Forces Military Community">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/65/62/266562a56ab2d602e615fc176eb080cb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPK_CuoixbPfRluc5bdR_XBicqnY05l9xPLA';" alt="Richelle Futch For 2019 Armed Forces Insurance Military Spouse Of The Year Military Spouse Armed Forces Military Community">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Richelle Futch For 2019 Armed Forces Insurance Military Spouse Of The Year Military Spouse Armed Forces Military Community</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/06/58/7806585b88165c0ba810bb4586812d76.png" data-lightbox="roadtrip" data-title="Pin On Mimosas In The Morning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/06/58/7806585b88165c0ba810bb4586812d76.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfI5c7jubjHWz3DYP1XI3wjClsx4wTaA14TQ';" alt="Pin On Mimosas In The Morning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mimosas In The Morning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/e8/55/a1e855d55fdacb7f32032c0712ce75e6.png" data-lightbox="roadtrip" data-title="Richelle Futch For The 2019 Armed Forces Insurance Military Spouse Of The Year Military Spouse Armed Forces Milspouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/e8/55/a1e855d55fdacb7f32032c0712ce75e6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH1jhN1JeI1Hizm3pCs4Dtjaskx7sGvUDSug';" alt="Richelle Futch For The 2019 Armed Forces Insurance Military Spouse Of The Year Military Spouse Armed Forces Milspouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Richelle Futch For The 2019 Armed Forces Insurance Military Spouse Of The Year Military Spouse Armed Forces Milspouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/70/fa/bd70fa7e962f1fce0d7120d313090750.jpg" data-lightbox="roadtrip" data-title="Pin On Milspouse Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/70/fa/bd70fa7e962f1fce0d7120d313090750.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUez7q8VxtmzPbyReRbd9pzN81Cz-onmgwIA';" alt="Pin On Milspouse Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Milspouse Life</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/9c/de/28/9cde28319897b79cdf4badcca681b866.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUez7q8VxtmzPbyReRbd9pzN81Cz-onmgwIA';" alt="Pin On Milspouse Life">
+										<div class="card-body">
+						<h3 class="h5"><b>Based on a series of national votes and a panel of judgesmerit-based core criteria were used such as leadership overall military involvement community building capacity and their own story.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military spouse of the year 2019</strong>. 
+								
+																	Three military spouses are on a mission to change the world one act of kindness at a time. 
+																	Jamison has advocated for herself and others like her. 
+																	Providing support encouragement and hope to young military moms which build strong military families. 
+																	Years as a military spouse. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Holly Vega the spouse of Marine Corps Lt. 
+																	Military an online pageant dedicated to women married to military members. 
+																	When I stepped out of my own service to follow my husbands career my transition into being a military spouse without wearing my own uniform was a lot harder than I thought it would be. 
+																	But the impacts of the virus cannot be ignored. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Advocate for Increased Access to Resources and Improve the Financial Health of Military Families 2019 Base Winners Abigail Morris Sheppard AFB Air Force. 
+																	Vega who lives at MacDill Air Force Base Florida was nominated and selected as Marine Corps Spouse of the Year and Armed Forces Insurance Military Spouse of the Year for her volunteerism and. 
+																	A 2019 Government Accountability Office report found. 
+																	The Armed Forces Insurance Military Spouse of the Year Program would not be possible without the help of our incredible partners and sponsors. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2019 Armed Forces Insurance National Guard Spouse of the Year Platform. 
+																	This year has gone at the speed of light but it has been an exciting year in the military spouse world. 
+																	Years as a service member. 
+																	While we believe every military spouse deserves an award we recognize outstanding spouses at the base branch and national level for their tireless dedication to improve. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All of this is done with the goal of identifying a group of people who will use the power of Armed Forces Insurance Military Spouse of the Year to have even. 
+																	Winning her 2019 Navy Military Spouse of the Year. 
+																	Military an online pageant dedicated to women married to military members. 
+																	They support all of our freedoms as well. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Please reach out to the Wright-Patterson Key Spouses Facebook page first shirt or even the Airman and Family Readiness Center The 2020 Military Spouse of the Year award is not Schwickeraths first bit of recognition in 2019 she won Mrs. 
+																	Javier Vega for 18 years was named the 2019 Armed Forces Insurance Military Spouse of the Year during a ceremony at Joint Base Myer-Henderson Hall. 
+																	Our military spouses support so much more than just their service members. 
+																	Soto tried to get a reprieve for one of the military spouses in his Orlando-area district Alejandra Juarez. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Holly Vega the spouse of Marine Corps Lt. 
+																	The Armed Forces Insurance Military Spouse of the Year Program aims to recognize deserving military spouses for their unwavering dedication to their service member the betterment of the military community as a whole and our nation. 
+																	The 2020 Military Spouse of the Year award is not Schwickeraths first bit of recognition in 2019 she won Mrs. 
+																	They are the backbone of our military and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Javier Vega for 18 years was named the 2019 Armed Forces Insurance Military Spouse of the Year during a ceremony at Joint Base Myer-Henderson Hall. 
+																	In 2019 9 of active-duty. 
+																	We have had awards new businesses launches new personal development programmes and new voices helping to spread the word that military spouses have skills determination and a work ethic that cannot be matched and we could quite possibly end up taking over the world. 
+																	Michelle was called to let her know she took the title of for the ENTIRE NAVY. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We acknowledge the selfless hearts and passion for service that military spouses demonstrate. 
+																	Coast Guard spouse Jessica Manfre National Guard spouse Samantha Gomolka and Army spouse Maria Reed met. 
+																	Almost a year into the COVID-19 pandemic the military community is carrying on business as close to usual as possible. 
+																	Paulette Fryar Armed Forces Insurance Military Spouse of the Year Coast Guard Overall Platform. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military spouses are passionate volunteers dedicated public servants and fiercely loyal. 
+																	For years former Marine Corps. 
+																	History of the AFI MSOY Program 2019. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/92/34/ab923431b82755c06a62bccedca8efb2.png" data-lightbox="roadtrip" data-title="Military Spouse Magazine November 2019 Military Spouse Magazine Military Spouse Fantasy Authors">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/92/34/ab923431b82755c06a62bccedca8efb2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSavw5QVM5oMBlGAbXPfAE4a0MNll4u_qzRGw';" alt="Military Spouse Magazine November 2019 Military Spouse Magazine Military Spouse Fantasy Authors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Magazine November 2019 Military Spouse Magazine Military Spouse Fantasy Authors</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9c/de/28/9cde28319897b79cdf4badcca681b866.jpg" data-lightbox="roadtrip" data-title="My Military Spouse Of The Year For Naval Base Kitsap Bremerton Certificate Arrived Today Can T Wait To Put This Baby On In 2020 Navy Spouse Military Spouse Navy Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9c/de/28/9cde28319897b79cdf4badcca681b866.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwIZQnXo86Lo3izaut5dEdTgx5Ewf8GolkWA';" alt="My Military Spouse Of The Year For Naval Base Kitsap Bremerton Certificate Arrived Today Can T Wait To Put This Baby On In 2020 Navy Spouse Military Spouse Navy Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Military Spouse Of The Year For Naval Base Kitsap Bremerton Certificate Arrived Today Can T Wait To Put This Baby On In 2020 Navy Spouse Military Spouse Navy Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6e/b5/74/6eb574816c79fdb4ef9037016425d8ea.png" data-lightbox="roadtrip" data-title="Military Spouse Career Training Military Spouse Career Career Exploration Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6e/b5/74/6eb574816c79fdb4ef9037016425d8ea.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbLlHO5NmH_4eyucYUR-1uvKLEPPOdSuKYeg';" alt="Military Spouse Career Training Military Spouse Career Career Exploration Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Career Training Military Spouse Career Career Exploration Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/37/dd/4d/37dd4d39ba3844e4a5ccdcda40678e4d.jpg" data-lightbox="roadtrip" data-title="Coast Guard Military Spouse Of The Year 2018 Stacy Bilodeau Hawaii Wedding Photographer Military Spouse Magazine Military Spouse Army Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/37/dd/4d/37dd4d39ba3844e4a5ccdcda40678e4d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwEKrTxT8jrcBo9oyM9tn1wB9uKvuZdXTeZw';" alt="Coast Guard Military Spouse Of The Year 2018 Stacy Bilodeau Hawaii Wedding Photographer Military Spouse Magazine Military Spouse Army Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coast Guard Military Spouse Of The Year 2018 Stacy Bilodeau Hawaii Wedding Photographer Military Spouse Magazine Military Spouse Army Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/e0/04/9be004999919e652201992251cb8beec.png" data-lightbox="roadtrip" data-title="Military Spouse Of The Year Becomes Successful Entrepreneur Military Spouse Military Girlfriend Coaching Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/e0/04/9be004999919e652201992251cb8beec.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrwumjWl2xXQcLIo4d95J_64uUFj_mfi0D5Q';" alt="Military Spouse Of The Year Becomes Successful Entrepreneur Military Spouse Military Girlfriend Coaching Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Of The Year Becomes Successful Entrepreneur Military Spouse Military Girlfriend Coaching Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/92/35/659235d56b1de10e53a7c3d111e0cfa4.jpg" data-lightbox="roadtrip" data-title="Http Militaryspouse Com Military Spouse Magazine June 2015 Military Spouse Magazine Military Spouse Army Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/92/35/659235d56b1de10e53a7c3d111e0cfa4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7185dORyrClsYCvmYy47v8Rc-0JZHHp23bA';" alt="Http Militaryspouse Com Military Spouse Magazine June 2015 Military Spouse Magazine Military Spouse Army Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Militaryspouse Com Military Spouse Magazine June 2015 Military Spouse Magazine Military Spouse Army Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/c7/a8/7dc7a8bd76370a51e7835963ac0d25ec.png" data-lightbox="roadtrip" data-title="Pin By Marla Bautista Writer On Media Kit Military Spouse Writer Fort Drum">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/c7/a8/7dc7a8bd76370a51e7835963ac0d25ec.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIJJaRb78JE_I50GS7nYRol-mvfDwsuwTuOg';" alt="Pin By Marla Bautista Writer On Media Kit Military Spouse Writer Fort Drum">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Marla Bautista Writer On Media Kit Military Spouse Writer Fort Drum</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/22/e7/39/22e739c2e55d2935b49d4d47332cda76.jpg" data-lightbox="roadtrip" data-title="83 Power Words For Military Spouses In The New Year Military Spouse Military Spouse Blog Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/22/e7/39/22e739c2e55d2935b49d4d47332cda76.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWAuYVtK0cRxPYb6mChD0lJbSxAxK3qlv5Jw';" alt="83 Power Words For Military Spouses In The New Year Military Spouse Military Spouse Blog Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">83 Power Words For Military Spouses In The New Year Military Spouse Military Spouse Blog Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/2e/2e/6d/2e2e6d9e37ad8fe2edaaf078fd74691c.jpg" data-lightbox="roadtrip" data-title="October 2019 Military Spouse Magazine In 2020 Military Spouse Military Spouse Magazine Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/2e/2e/6d/2e2e6d9e37ad8fe2edaaf078fd74691c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa9Ps_XxJzGdyHO9PRvnoJhjmnnm6P5jqh8Q';" alt="October 2019 Military Spouse Magazine In 2020 Military Spouse Military Spouse Magazine Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">October 2019 Military Spouse Magazine In 2020 Military Spouse Military Spouse Magazine Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/47/62/c1476269c63ca80e131f32369d059e6e.png" data-lightbox="roadtrip" data-title="Pin On Military Spouse Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/47/62/c1476269c63ca80e131f32369d059e6e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8oA1mJ4kWPgBIwE1_uEPW_unPb4eYqiRptg';" alt="Pin On Military Spouse Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Spouse Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4b/df/84/4bdf84fdbfb658a83ad05797994a010f.jpg" data-lightbox="roadtrip" data-title="45 Veteran And Military Spouse Owned Businesses Ultimate Gift Guide 2019 Military Spouse Military Wife Military Marriage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4b/df/84/4bdf84fdbfb658a83ad05797994a010f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkaBhQbIlSPJLYD_NzK10X5rnegvQDGXslMg';" alt="45 Veteran And Military Spouse Owned Businesses Ultimate Gift Guide 2019 Military Spouse Military Wife Military Marriage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">45 Veteran And Military Spouse Owned Businesses Ultimate Gift Guide 2019 Military Spouse Military Wife Military Marriage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/72/ab/4b/72ab4b7147e48746455435e3c0e26ecd.jpg" data-lightbox="roadtrip" data-title="5 Ways To Make Your Military Life Better In The New Year In 2020 Military Spouse Blog Military Life Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/72/ab/4b/72ab4b7147e48746455435e3c0e26ecd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn8dG12EBWSqpOYXZ0UH3QTPFVTnWCH6FYJQ';" alt="5 Ways To Make Your Military Life Better In The New Year In 2020 Military Spouse Blog Military Life Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Ways To Make Your Military Life Better In The New Year In 2020 Military Spouse Blog Military Life Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/8c/39/c28c3904821d0f11d136c9eb6cd5228e.png" data-lightbox="roadtrip" data-title="21 Best Work From Home Jobs For Military Spouses Work From Home Jobs Military Spouse Jobs Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/8c/39/c28c3904821d0f11d136c9eb6cd5228e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpD8BgDKOWwqpGF6ZhD2gV-E8hfWlyvWz5YQ';" alt="21 Best Work From Home Jobs For Military Spouses Work From Home Jobs Military Spouse Jobs Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">21 Best Work From Home Jobs For Military Spouses Work From Home Jobs Military Spouse Jobs Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/intelligence-department-central-military-commission.html">Intelligence Department Central Military Commission</a></li>
+													<li class="list-group-item"><a href="/is-the-department-of-defense-military.html">Is The Department Of Defense Military</a></li>
+													<li class="list-group-item"><a href="/is-defense-budget-compared-to-other-countries.html">Is Defense Budget Compared To Other Countries</a></li>
+													<li class="list-group-item"><a href="/italian-military-records-world-war-2.html">Italian Military Records World War 2</a></li>
+													<li class="list-group-item"><a href="/jcpenneys-on-military-drive.html">Jcpenneys On Military Drive</a></li>
+													<li class="list-group-item"><a href="/is-there-a-dod-travel-ban.html">Is There A Dod Travel Ban</a></li>
+													<li class="list-group-item"><a href="/jcpenney-military-jacket.html">Jcpenney Military Jacket</a></li>
+													<li class="list-group-item"><a href="/irish-army-fire-service.html">Irish Army Fire Service</a></li>
+													<li class="list-group-item"><a href="/is-there-a-veteran-database.html">Is There A Veteran Database</a></li>
+													<li class="list-group-item"><a href="/indiana-state-archives-military-records.html">Indiana State Archives Military Records</a></li>
+													<li class="list-group-item"><a href="/jcpenney-military-discount-code-online.html">Jcpenney Military Discount Code Online</a></li>
+													<li class="list-group-item"><a href="/jcpenney-military-discount.html">Jcpenney Military Discount</a></li>
+													<li class="list-group-item"><a href="/is-2021-defense-budget-approved.html">Is 2021 Defense Budget Approved</a></li>
+													<li class="list-group-item"><a href="/is-army-national-guard-part-of-dod.html">Is Army National Guard Part Of Dod</a></li>
+													<li class="list-group-item"><a href="/jcpenney-portrait-studio-military.html">Jcpenney Portrait Studio Military</a></li>
+													<li class="list-group-item"><a href="/is-army-corps-of-engineers-dod.html">Is Army Corps Of Engineers Dod</a></li>
+													<li class="list-group-item"><a href="/indian-coast-guard-department.html">Indian Coast Guard Department</a></li>
+													<li class="list-group-item"><a href="/is-a-retired-military-officer-a-civilian.html">Is A Retired Military Officer A Civilian</a></li>
+													<li class="list-group-item"><a href="/introduction-to-army-public-affairs-post-test.html">Introduction To Army Public Affairs Post Test</a></li>
+													<li class="list-group-item"><a href="/is-national-guard-under-dod.html">Is National Guard Under Dod</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

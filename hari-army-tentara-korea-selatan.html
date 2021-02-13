@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Hari Army Tentara Korea Selatan - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Hari Army Tentara Korea Selatan",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/474x/5d/dc/5e/5ddc5eb9f6fa40281b4336f9d1823f86.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=hari+army+tentara+korea+selatan",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Hari Army Tentara Korea Selatan</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Melansir The Korea Times Kementerian Pertahanan Nasional Korea Rabu 30122020 mengumumkan bahwa KATUSA dan pegawai sipil Pasukan Amerika Serikat Korea USFK dapat memilih. Setelah Penjajahan Jepang di Korea yang berakhir karena kekalahan Jepang pada Perang Dunia II tahun 1945 Korea dibagi menjadi dua wilayah berdasarkan garis 38 derajat lintang utara sesuai dengan. Karena secara efektif merupakan bagian dari pasukan Tiongkok. <br>				
+			</p>
+										<a class="badge badge-info" href="/lay-me-down-army-song.html">lay me down army song</a>
+											<a class="badge badge-success" href="/lone-star-military-resource-group.html">lone star military resource group</a>
+											<a class="badge badge-success" href="/lego-army-dogs.html">lego army dogs</a>
+											<a class="badge badge-primary" href="/lesson-plan-army-cadets.html">lesson plan army cadets</a>
+											<a class="badge badge-light" href="/kapan-hari-bengek-army.html">kapan hari bengek army</a>
+											<a class="badge badge-light" href="/lesson-plan-british-army.html">lesson plan british army</a>
+											<a class="badge badge-primary" href="/mainland-bc-military-family-resource-centre.html">mainland bc military family resource centre</a>
+											<a class="badge badge-primary" href="/joint-publication-1-02-department-of-defense-dictionary-of-military-and.html">joint publication 1 02 department of defense dictionary of military and</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you have come to pay a visit to the ideal site.  Our site gives you suggestions for viewing the highest quality video and image content, hunt and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, so we recommend this video for you to view.  It is also possible to contribute to supporting this site by sharing videos and images that you enjoy on this blog on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.jejaktapak.com/wp-content/uploads/2020/02/79wajib-militer-korea.jpg" data-lightbox="roadtrip" data-title="Program Komando Cadangan Indonesia Apakah Sama Dengan Wajib Militer Korea Selatan">
+											<img class="card-img v-image ads-img " src="https://www.jejaktapak.com/wp-content/uploads/2020/02/79wajib-militer-korea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLg0hSmGvuNJXJyVwRe28G9Pg6RwwWDVuDcg';" alt="Program Komando Cadangan Indonesia Apakah Sama Dengan Wajib Militer Korea Selatan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Program Komando Cadangan Indonesia Apakah Sama Dengan Wajib Militer Korea Selatan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://asset.kompas.com/crops/FXk36JXEdxdg8YiRLcwcgLjsV6o=/0x0:780x390/750x500/data/photo/2014/06/23/1700458Tentara-Korea-Selatan-kejar-penembak780x390.jpg" data-lightbox="roadtrip" data-title="Ad Korea Selatan Bakal Kurangi 100 000 Tentara Dalam 3 Tahun Ada Apa">
+											<img class="card-img v-image ads-img " src="https://asset.kompas.com/crops/FXk36JXEdxdg8YiRLcwcgLjsV6o=/0x0:780x390/750x500/data/photo/2014/06/23/1700458Tentara-Korea-Selatan-kejar-penembak780x390.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-NpDQ23nbhRpYAqmhLcpyCgeoyXJcCnkLWg';" alt="Ad Korea Selatan Bakal Kurangi 100 000 Tentara Dalam 3 Tahun Ada Apa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ad Korea Selatan Bakal Kurangi 100 000 Tentara Dalam 3 Tahun Ada Apa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn-2.tstatic.net/jogja/foto/bank/images/6-idol-korea-selatan-yang-selesai-wajib-militer-di-tahun-2019-dan-comeback-dalam-drama.jpg" data-lightbox="roadtrip" data-title="6 Idol Korea Selatan Yang Selesai Wajib Militer Di Tahun 2019 Dan Comeback Dalam Drama Tribun Jogja">
+											<img class="card-img v-image ads-img " src="https://cdn-2.tstatic.net/jogja/foto/bank/images/6-idol-korea-selatan-yang-selesai-wajib-militer-di-tahun-2019-dan-comeback-dalam-drama.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvw6PEA1OCiRTxoHCjIeteP6NXVTKDG01WHQ';" alt="6 Idol Korea Selatan Yang Selesai Wajib Militer Di Tahun 2019 Dan Comeback Dalam Drama Tribun Jogja">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 Idol Korea Selatan Yang Selesai Wajib Militer Di Tahun 2019 Dan Comeback Dalam Drama Tribun Jogja</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn-2.tstatic.net/jogja/foto/bank/images/taeyang-dan-daesung-akhiri-wamil-akankah-bigbang-comeback-2.jpg" data-lightbox="roadtrip" data-title="Sederet Fakta Tentang Wajib Militer Di Korea Selatan Yang Perlu Anda Tahu Tribun Jogja">
+											<img class="card-img v-image ads-img " src="https://cdn-2.tstatic.net/jogja/foto/bank/images/taeyang-dan-daesung-akhiri-wamil-akankah-bigbang-comeback-2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQszxK8v_lIalk1QoRbUwyFxRkE4M254vCP2g';" alt="Sederet Fakta Tentang Wajib Militer Di Korea Selatan Yang Perlu Anda Tahu Tribun Jogja">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sederet Fakta Tentang Wajib Militer Di Korea Selatan Yang Perlu Anda Tahu Tribun Jogja</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mmc.tirto.id/image/2017/01/04/ew_ratio-16x9.jpg" data-lightbox="roadtrip" data-title="Alasan Korea Selatan Berlakukan Wajib Militer Pada Warga Laki Laki Tirto Id">
+											<img class="card-img v-image ads-img " src="https://mmc.tirto.id/image/2017/01/04/ew_ratio-16x9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTegylHMOy3IhVJUrqUX_uZN4br-AgWix8-qg';" alt="Alasan Korea Selatan Berlakukan Wajib Militer Pada Warga Laki Laki Tirto Id">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alasan Korea Selatan Berlakukan Wajib Militer Pada Warga Laki Laki Tirto Id</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cf.shopee.co.id/file/c045aa58d473100eac10d62baca6c4b4" data-lightbox="roadtrip" data-title="New Stock Jaket Army Jaket Tentara Korea Beserta Patch Korea Shopee Indonesia">
+											<img class="card-img v-image ads-img " src="https://cf.shopee.co.id/file/c045aa58d473100eac10d62baca6c4b4" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1DaIYNvWTZkjC3hrbySt8UJx6NWDCrN3u1w';" alt="New Stock Jaket Army Jaket Tentara Korea Beserta Patch Korea Shopee Indonesia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Stock Jaket Army Jaket Tentara Korea Beserta Patch Korea Shopee Indonesia</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/d4/f9/b8/d4f9b8a22ae2c238dca15271f85ae6b2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1DaIYNvWTZkjC3hrbySt8UJx6NWDCrN3u1w';" alt="New Stock Jaket Army Jaket Tentara Korea Beserta Patch Korea Shopee Indonesia">
+										<div class="card-body">
+						<h3 class="h5"><b>Tentara Korea Selatan hanya memiliki 98000 tentara 65000 tentara tempur 33000 tentara penyokong tidak memiliki tank dan 22 pesawat yang terdiri dari 12 pesawat tipe penghubung dan 10 pesawat latihan AT6.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Hari army tentara korea selatan</strong>. 
+								
+																	REUTERS Aku harus mandi sendirian kata Kang melalui telepon dari London. 
+																	USINDOPACOM Hypercompetition and US Army Theater Design. 
+																	Belasan Tentara Amerika Serikat Di Korea Selatan Terinfeksi Virus Corona. 
+																	Tetapi kasus Kim adalah salah satu dari peningkatan jumlah tentara gay atau transgender yang telah dilecehkan berdasarkan Pasal 92-6 dari Undang-Undang Pidana Angkatan Darat yang telah digunakan untuk mengeluarkan mereka dan menghukum mereka karena melakukan hubungan seksual berdasarkan kesepakatan ungkap. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army War Colleges USAWC Strategic Studies Institute SSI merilis laporan berjudul An Army Transformed. 
+																	Korea Utara meledakkan kantor penghubung bersama antar-Korea di kota perbatasan Kaesong pada 16 Juni tiga hari setelah saudara perempuan Kim Jong-un Kim Yo-jong mengancam akan menyingkirkan saluran yang tidak berguna itu dan memutuskan hubungan Korea Utara-Selatan. 
+																	Korea Selatan pada hari Senin memperingatkan Pyongyang konsekuensi dari ledakan ranjau darat di Zona Demiliterisasi yang melukai dua tentara Korea Selatan. 
+																	Namun entah bagaimana. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mereka mengharuskan warga pendatang untuk menciumi bau dari air cuka. 
+																	Dalam jangka waktu beberapa hari saja banyak tentara Korea Selatan. 
+																	Sejumlah tentara Korea Selatan memegang sepatu baletnya jelang ikut ambil bagian dalam kelas balet di sebuah pangkalan militer di dekat zona demiliterisasi yang memisahkan kedua Korea di Paju Korea Selatan 13 Juli 2016. 
+																	Dua pangkalan militer itu adalah Garnisun Tentara Yongsan dan Kamp Humphreys. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dunia SABTU 16 JANUARI 2021 223300 WIB LAPORAN. 
+																	Tentara Pembebasan Korea KLA didirikan pada 17 September 1940 di Chungking Tiongkok adalah angkatan bersenjata dari Pemerintahan Sementara Republik KoreaKomandannya adalah Jenderal Ji Cheong-cheon dengan Jenderal Lee Beom-seok pahlawan Pertempuran Cheongsanri dan perdana menteri masa depan Korea Selatan sebagai Kepala Staf. 
+																	Saat sedang bermain paralayang di perbatasan Korea Selatan dan Korea Utara Yoon Se Ri terjatuh. 
+																	Seperti kegiatan yang telah dibagikan oleh akun Facebook US Army Garrison Daegu USAG Daegu. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Semula Ri Jeong Hyeok bersama anak buahnya berniat untuk memulangkan Yoon Se Ri ke Korea Selatan mengingat aturan ketat antara Korea Utara dan Korea Selatan. 
+																	Halo semuanya kali ini rang nyalang tv berbagi info tentang fakta fakta tentara wanita korea utara yang tak banyak diketahuiseorang mantan tentara wanita ko. 
+																	TEMPOCO Jakarta - Angkatan bersenjata Amerika Serikat di Korea Selatan USFF pada Sabtu 16 Januari 2021 mengumumkan memberlakukan sebuah perlindungan pada dua pangkalan militernya yang terbesar sampai Selasa 19 Januari 2021 setelah terjadi kluster penyebaran wabah virus corona di sana. 
+																	Sejak 3 April lalu bahkan tentara angkatan darat Amerika Serikat AS yang berada di pangkalan militer AS di Korea Selatan melakukan tugas baru. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Menerapkan pengawasan ketat di dua pangkalan terbesar miliknya US Army Garrison Yongsan dan Camp Humphreys mulai Sabtu 161 hingga Selasa 191. 
+																	Korea Utara akan membayar harga bila melakukan aksi militer Kontancoid Dipublikasikan 1357 1706. 
+																	Laporan ini mempertanyakan kesiapan AS di Indo-Pasifik. 
+																	Militer Korea Selatan menyatakan Korea Utara harus disalahkan karena sengaja meletakkan ranjau di wilayah Demiliterisasi yang dikendalikan oleh Korea Selatan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jakarta CNBC Indonesia- Militer Korea Selatan menangkap seorang tentara Korea Utara yang melintasi zona demiliterisasi DMZ yang dijaga ketat pada Kamis waktu setempat. 
+																	Berita terkini Korea Selatan - Cara Daftar Beasiswa Kuliah S1 di Korea Selatan dari Beasiswa KGSP untuk Lulusan SMASMKSederajat. 
+																	Dalam konteks persaingan AS-China saat ini preferensi strategis AS dan keinginan Korea Selatan untuk mendapat otonomi yang lebih besar tengah berbenturan. 
+																	Berita Tentara Korea Selatan - Wajib Militer di Korea Selatan telah dikurangi oleh tentara Negara Gingseng lantaran populasi yang berkurang. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Seperti dilansir Yonhap dalam perang Korea yang pecah pada 25 Juni 1950 pasukan Korea Utara yang didukung Uni Soviet dan China menyerang dan berniat mencaplok Korea Selatan. 
+																	Selain itu tidak ada pasukan asing yang berpangkalan di Korea saat itu - meskipun terdapat pangkalan AS di Jepang. 
+																	Suasana berbeda terlihat di Daegu Selatan Korea Selatan beberapa hari belakangan. 
+																	Korsel Longgarkan Aturan Jam Malam. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sejarah Korea Selatan secara resmi dimulai ketika pembentukan negara Korea Selatan pada 15 Agustus 1948 meskipun Syngman Rhee telah mendeklarasikan pembentukannya di Seoul pada 13 Agustus. 
+																	Dalam kondisi darurat itu seorang Tentara Korea Utara Kapten Ri Jeong Hyeok Hyun Bin datang menolongnya. 
+																	Berita Tentara-korea-selatan - Secara teknis Korea Utara dan Korea Selatan masih berperang setelah Perang Korea berakhir dengan gencatan senjata bukan perjanjian damai. 
+																	Korea Selatan Perpanjang Pembatasan Jarak Sosial Hingga Akhir. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Militer Korea Selatan mengatakan tidak mendiskriminasi pelaku seksual minoritas. 
+																	Aku dianggap kotor seseorang bukan laki-laki. 
+																	Korea Selatan mengatakan bahwa tentaranya melepaskan sekitar 20 tembakan peringatan ketika penjaga perbatasan dari Korea Utara mendekati perbatasan untuk mencari tentara Korea Utara yang membelot. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.kaskus.id/images/2020/11/05/10874049_202011050850280085.jpg" data-lightbox="roadtrip" data-title="Membahas Wamil Atau Wajib Militer Di Korea Selatan Kekoreaan">
+											<img class="card-img v-image ads-img " src="https://s.kaskus.id/images/2020/11/05/10874049_202011050850280085.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToEOlmcE0xXBFN7IvSw9ygbxsca_Nqbj0q5A';" alt="Membahas Wamil Atau Wajib Militer Di Korea Selatan Kekoreaan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Membahas Wamil Atau Wajib Militer Di Korea Selatan Kekoreaan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/pNcwhubxMiI/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Ini Dia Perbandingan Tni Dengan Tentara Korea Selatan Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/pNcwhubxMiI/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUHfJaqJgBfJZb1hCJ_UVpfSs1nglLFGNz2Q';" alt="Ini Dia Perbandingan Tni Dengan Tentara Korea Selatan Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ini Dia Perbandingan Tni Dengan Tentara Korea Selatan Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://akcdn.detik.net.id/api/wm/2016/04/01/e4d266a4-d709-4f87-88de-b1e03b357439_169.jpg?w=650" data-lightbox="roadtrip" data-title="7 Drama Korea Bertema Militer Selain Crash Landing On You">
+											<img class="card-img v-image ads-img " src="https://akcdn.detik.net.id/api/wm/2016/04/01/e4d266a4-d709-4f87-88de-b1e03b357439_169.jpg?w=650" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR31QNfmzSeOmB0ORkelPq3n6tbZ9FLyqgTSA';" alt="7 Drama Korea Bertema Militer Selain Crash Landing On You">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 Drama Korea Bertema Militer Selain Crash Landing On You</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/cb/6a/f2cb6a163b350bb3892c37839f08b0b1.jpg" data-lightbox="roadtrip" data-title="Pin Di Tips Cara Pintar Dalam Kehidupan Sehari Hari Anda">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/cb/6a/f2cb6a163b350bb3892c37839f08b0b1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsu_DDGnVKTQVE7IdqBfNpW3C9ZjWacHIgJw';" alt="Pin Di Tips Cara Pintar Dalam Kehidupan Sehari Hari Anda">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Di Tips Cara Pintar Dalam Kehidupan Sehari Hari Anda</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/f7/f0/aef7f06a8f9bb356807b891b9f63285b.jpg" data-lightbox="roadtrip" data-title="Yuk Coba Bikin Budae Jjigae Makanan Tentara Pasukan Korea Selatan Resep Masakan Korea Resep Makanan Resep Masakan Asia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/f7/f0/aef7f06a8f9bb356807b891b9f63285b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJROTRwF5laT7xthuCKCp0iDPBKvQ0pNTUxQ';" alt="Yuk Coba Bikin Budae Jjigae Makanan Tentara Pasukan Korea Selatan Resep Masakan Korea Resep Makanan Resep Masakan Asia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yuk Coba Bikin Budae Jjigae Makanan Tentara Pasukan Korea Selatan Resep Masakan Korea Resep Makanan Resep Masakan Asia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1491562144/upjowganiqq1caphg7zm.jpg" data-lightbox="roadtrip" data-title="Mengenal Wajib Militer Yang Dilakukan Para Pria Korea Selatan Kumparan Com">
+											<img class="card-img v-image ads-img " src="https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1491562144/upjowganiqq1caphg7zm.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj-Ep5QpWg9q5OOLfIh8ZLXGf0jCK2zwgJRA';" alt="Mengenal Wajib Militer Yang Dilakukan Para Pria Korea Selatan Kumparan Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mengenal Wajib Militer Yang Dilakukan Para Pria Korea Selatan Kumparan Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/f9/b8/d4f9b8a22ae2c238dca15271f85ae6b2.jpg" data-lightbox="roadtrip" data-title="Latihan Militer Pasukan Khusus Korea Selatan Pasukan Khusus Militer Korea Selatan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/f9/b8/d4f9b8a22ae2c238dca15271f85ae6b2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBcsCyhnJqt5DjXSMPHYAzPSxEQuB4FUBdpA';" alt="Latihan Militer Pasukan Khusus Korea Selatan Pasukan Khusus Militer Korea Selatan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Latihan Militer Pasukan Khusus Korea Selatan Pasukan Khusus Militer Korea Selatan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/03/47/ca0347829592f902a25a3c21001cd995.jpg" data-lightbox="roadtrip" data-title="Sinopsis The Battle Of Jangsari Kisah Tentara Pelajar Korea Selatan Film Perang Bioskop Film Bagus">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/03/47/ca0347829592f902a25a3c21001cd995.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbXzPYm4A-RfeL6iMPAshOv39qpcWIOFKMSA';" alt="Sinopsis The Battle Of Jangsari Kisah Tentara Pelajar Korea Selatan Film Perang Bioskop Film Bagus">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sinopsis The Battle Of Jangsari Kisah Tentara Pelajar Korea Selatan Film Perang Bioskop Film Bagus</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/c2/7b/cec27bf6fd32864229b12d4940aedb00.jpg" data-lightbox="roadtrip" data-title="Latihan Militer Pasukan Khusus Korea Selatan Militer Korea Selatan Pasukan Khusus">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/c2/7b/cec27bf6fd32864229b12d4940aedb00.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDSxBDi_4hgZeTv8Wa3WxvbYM15jODfF7X7g';" alt="Latihan Militer Pasukan Khusus Korea Selatan Militer Korea Selatan Pasukan Khusus">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Latihan Militer Pasukan Khusus Korea Selatan Militer Korea Selatan Pasukan Khusus</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/imtPAR16A9Q/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Perbedaan Tentara Korea Utara Vs Tentara Korea Selatan Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/imtPAR16A9Q/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCQW0CnZ0lUiZVmA6dUY3wQQTjzneEts8YHg';" alt="Perbedaan Tentara Korea Utara Vs Tentara Korea Selatan Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Perbedaan Tentara Korea Utara Vs Tentara Korea Selatan Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn-2.tstatic.net/tribunnews/foto/bank/images/xiumin-do-yoon-ji-sung-sungyeol-kim-min-seok-dan-lainnya-berperan-dalam-musikal-militer.jpg" data-lightbox="roadtrip" data-title="Pertunjukan Musikal Militer Korea Selatan Akan Bertabur Bintang Ada Xiumin Exo Tribunnews Com Mobile">
+											<img class="card-img v-image ads-img " src="https://cdn-2.tstatic.net/tribunnews/foto/bank/images/xiumin-do-yoon-ji-sung-sungyeol-kim-min-seok-dan-lainnya-berperan-dalam-musikal-militer.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGR_g6lKi1iUX5Itn8WhOsdamy6Cv2Ls3a8g';" alt="Pertunjukan Musikal Militer Korea Selatan Akan Bertabur Bintang Ada Xiumin Exo Tribunnews Com Mobile">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pertunjukan Musikal Militer Korea Selatan Akan Bertabur Bintang Ada Xiumin Exo Tribunnews Com Mobile</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/5a/0b/f05a0b35bd8f5225890cf9c3baab4d07.jpg" data-lightbox="roadtrip" data-title="Pilot T 50i Di Korea Selatan Tentara Militer Dunia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/5a/0b/f05a0b35bd8f5225890cf9c3baab4d07.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSshZmoP7CCxWj6eedPiSGRfM7Sd4H5EPOpRg';" alt="Pilot T 50i Di Korea Selatan Tentara Militer Dunia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pilot T 50i Di Korea Selatan Tentara Militer Dunia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/5d/dc/5e/5ddc5eb9f6fa40281b4336f9d1823f86.jpg" data-lightbox="roadtrip" data-title="Korea Selatan Dan Australia Tingkatkan Kerja Sama Pertahanan Www Iphedia Com Di 2020 Perang Korea Korea Militer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/5d/dc/5e/5ddc5eb9f6fa40281b4336f9d1823f86.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw5syx3L6-UGLdhsr0TehHLBPUw12WDOcrCA';" alt="Korea Selatan Dan Australia Tingkatkan Kerja Sama Pertahanan Www Iphedia Com Di 2020 Perang Korea Korea Militer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Korea Selatan Dan Australia Tingkatkan Kerja Sama Pertahanan Www Iphedia Com Di 2020 Perang Korea Korea Militer</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/37-military-hospital-officers-mess.html">37 Military Hospital Officers Mess</a></li>
+													<li class="list-group-item"><a href="/2021-dod-budget-request.html">2021 Dod Budget Request</a></li>
+													<li class="list-group-item"><a href="/16-28-hours-military-time.html">16 28 Hours Military Time</a></li>
+													<li class="list-group-item"><a href="/2021-defense-budget-cuts.html">2021 Defense Budget Cuts</a></li>
+													<li class="list-group-item"><a href="/2021-national-defense-budget.html">2021 National Defense Budget</a></li>
+													<li class="list-group-item"><a href="/1-hour-in-military-time.html">1 Hour In Military Time</a></li>
+													<li class="list-group-item"><a href="/16-55-hours-military-time.html">16 55 Hours Military Time</a></li>
+													<li class="list-group-item"><a href="/1-hour-15-minutes-in-military-time.html">1 Hour 15 Minutes In Military Time</a></li>
+													<li class="list-group-item"><a href="/00-16-hours-military-time.html">00 16 Hours Military Time</a></li>
+													<li class="list-group-item"><a href="/42a-army-salary.html">42a Army Salary</a></li>
+													<li class="list-group-item"><a href="/37-military-hospital-location.html">37 Military Hospital Location</a></li>
+													<li class="list-group-item"><a href="/37-military-hospital-training-college.html">37 Military Hospital Training College</a></li>
+													<li class="list-group-item"><a href="/24-hour-military-watch.html">24 Hour Military Watch</a></li>
+													<li class="list-group-item"><a href="/42a-army-to-civilian.html">42a Army To Civilian</a></li>
+													<li class="list-group-item"><a href="/37-military-hospital-ghana-website.html">37 Military Hospital Ghana Website</a></li>
+													<li class="list-group-item"><a href="/42a-army-national-guard.html">42a Army National Guard</a></li>
+													<li class="list-group-item"><a href="/42a-army-reserve.html">42a Army Reserve</a></li>
+													<li class="list-group-item"><a href="/42a-in-army.html">42a In Army</a></li>
+													<li class="list-group-item"><a href="/37-military-hospital-laboratory.html">37 Military Hospital Laboratory</a></li>
+													<li class="list-group-item"><a href="/3-military-hospital-dental-department.html">3 Military Hospital Dental Department</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

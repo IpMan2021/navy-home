@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Defense Budget 2021 Usa - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Defense Budget 2021 Usa",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/c0/39/e2/c039e2a747308ed9abf40e4927cf3ec3.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=defense+budget+2021+usa",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Defense Budget 2021 Usa</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Department of Defense budget accounted in fiscal year 2017 for about 148 of the United States federal budgeted expenditures. The 740-billion defense budget envisages allocating 6355 billion for the Pentagons basic needs 266 billion - for national security programs ran by the Department of Energy and 69 billion for overseas operations. FY 2021 Defense Budget. <br>				
+			</p>
+										<a class="badge badge-primary" href="/military-personnel-division.html">military personnel division</a>
+											<a class="badge badge-secondary" href="/military-police-service-records.html">military police service records</a>
+											<a class="badge badge-success" href="/military-medical-unit-crossword-clue.html">military medical unit crossword clue</a>
+											<a class="badge badge-success" href="/military-members-database.html">military members database</a>
+											<a class="badge badge-light" href="/military-of-police-department.html">military of police department</a>
+											<a class="badge badge-primary" href="/military-personnel-division-fort-campbell.html">military personnel division fort campbell</a>
+											<a class="badge badge-success" href="/military-pension-calculator-canada.html">military pension calculator canada</a>
+											<a class="badge badge-light" href="/military-personnel-data-system.html">military personnel data system</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to visit the ideal blog.  Our site gives you suggestions for viewing the maximum quality video and image content, hunt and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, particularly Youtube, therefore we recommend this movie for you to view.  You can also contribute to supporting this website by sharing videos and images that you enjoy on this site on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/c2/b6/53c2b60c736078be06954272ff2381a9.jpg" data-lightbox="roadtrip" data-title="20200215 Terror War Nwo Usa Military 2021 Us Defense Budget Overview Covert Cabal In 2020">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/c2/b6/53c2b60c736078be06954272ff2381a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWyL7nSTDxc_vTTyWC1kGCh3qWwevUH1olHQ';" alt="20200215 Terror War Nwo Usa Military 2021 Us Defense Budget Overview Covert Cabal In 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">20200215 Terror War Nwo Usa Military 2021 Us Defense Budget Overview Covert Cabal In 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/2a/09/e1/2a09e191823ffa89984c6a5de498568d.jpg" data-lightbox="roadtrip" data-title="Army Big 6 Gets 10b More Over 2021 2025 Breaking Defense Defense Industry News Analysis And Commentary Army Big Six Troops Support">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/2a/09/e1/2a09e191823ffa89984c6a5de498568d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRelN6bzqSWI8GVsuFLF8WnaFAonAMcL8tYUQ';" alt="Army Big 6 Gets 10b More Over 2021 2025 Breaking Defense Defense Industry News Analysis And Commentary Army Big Six Troops Support">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Big 6 Gets 10b More Over 2021 2025 Breaking Defense Defense Industry News Analysis And Commentary Army Big Six Troops Support</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/7d/56/a4/7d56a434ba30e59beecb1d5065b7ab91.jpg" data-lightbox="roadtrip" data-title="There Is A Federal Agency Known As The Defense Security Service Dss That Has Been In The Headlines In The Last Decad Security Service Clearance Jobs Security">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/7d/56/a4/7d56a434ba30e59beecb1d5065b7ab91.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGrc7nBbChSDrdMOp0vnv7czMPPQAaR8VZ9A';" alt="There Is A Federal Agency Known As The Defense Security Service Dss That Has Been In The Headlines In The Last Decad Security Service Clearance Jobs Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">There Is A Federal Agency Known As The Defense Security Service Dss That Has Been In The Headlines In The Last Decad Security Service Clearance Jobs Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/c4/7c/6dc47c15b042de846e3aae731a4aa9df.png" data-lightbox="roadtrip" data-title="Us Federal Spending Pie Chart 2020 In 2020 Federal Spending Government Spending Federal Taxes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/c4/7c/6dc47c15b042de846e3aae731a4aa9df.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlCNZaf8nb9JQZsubpOWQLOTgp5zHzS-UpAg';" alt="Us Federal Spending Pie Chart 2020 In 2020 Federal Spending Government Spending Federal Taxes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Federal Spending Pie Chart 2020 In 2020 Federal Spending Government Spending Federal Taxes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/4a/74/bf4a74a157ad1bab2ce22c3daa360823.jpg" data-lightbox="roadtrip" data-title="Don T Cry For The Pentagon Pentagon Military Dont Cry">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/4a/74/bf4a74a157ad1bab2ce22c3daa360823.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDTjaVQ7SmYfYKzKKSoDXLk4P7YV8ae99klg';" alt="Don T Cry For The Pentagon Pentagon Military Dont Cry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Don T Cry For The Pentagon Pentagon Military Dont Cry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/63/c8/3763c84da3b3b08b684c25c7d23651b8.jpg" data-lightbox="roadtrip" data-title="Air Raid Shelter Civil Defense Game Room Sign In 2021 Air Raid Shelter Civil Defense Defense Games">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/63/c8/3763c84da3b3b08b684c25c7d23651b8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcK_extqhCNF9dFp-ZLEL01zNgMv_jTGln7A';" alt="Air Raid Shelter Civil Defense Game Room Sign In 2021 Air Raid Shelter Civil Defense Defense Games">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Raid Shelter Civil Defense Game Room Sign In 2021 Air Raid Shelter Civil Defense Defense Games</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/58/5f/34/585f34c895f540c207290631391a33d4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcK_extqhCNF9dFp-ZLEL01zNgMv_jTGln7A';" alt="Air Raid Shelter Civil Defense Game Room Sign In 2021 Air Raid Shelter Civil Defense Defense Games">
+										<div class="card-body">
+						<h3 class="h5"><b>And I love the Armybut the fundamental defense of the United States and the ability to project power forward will always be for America naval and air and space.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Defense budget 2021 usa</strong>. 
+								
+																	Global Firepower tracks the annual defense spending budgets of each participant in the GFP ranking these being funds allotted by governments to cover various aspects of a standing fighting force - namely procurement maintenance support and pensions. 
+																	This first list is a list of countries by military expenditure share of GDPmore specifically a list of the top 15 countries by percentage share in recent yearsthe amount spent by a nation on its military as a share of its GDP. 
+																	This represents a 15bn cut compared with the enacted FY2020 budget and a 2bn drop from the enacted FY2019 budget of 65bn. 
+																	National Defense Budget Estimates for FY 2021 Green Book Compressed File Operation and Maintenance Overview. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Data presented on this list is through 2021. 
+																	Under President Donald Trump the DoD budget has increased by 19 from 619 billion in fiscal 2017 to 738 billion in fiscal 2020. 
+																	President Donald Trump sent a proposed FY2021 budget request On February 10 2020. 
+																	The proposed fiscal 2021 defense budget still under. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The second list presents this as a share of the general government expenditure. 
+																	The National Defense Authorization Act NDAA has passed the Senate for the 60th year. 
+																	The National Defense Authorization Act or NDAA has passed the US. 
+																	The Pentagons own budget projections would be relatively flat through 2025 averaging about 707 billion per year in 2021 dollars the Congressional Budget Office said in a September analysis. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It was reported by Reuters. 
+																	The US Defense budget will amount to US7162billion in FY2021 after peaking at US7215 billion in FY2020 amounting to an all-time high in terms of the spending level for the last two years of Donald Trumps first term. 
+																	2021 budget Naval Warfare. 
+																	But with President-elect Joe Biden soon to take office Democrats are expected to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Harry Lye 11 February 2020 Last Updated February 11th 2020 1204 The US Department of Defence DoD has requested 45bn for the European Deterrence Initiative EDI in its FY2021 budget request. 
+																	The document also envisages tougher sanctions against Russias Nord Stream 2 and TurkStream pipeline projects. 
+																	Defense Spending by Country 2021 Total annual defense spending by nation. 
+																	The presidents fiscal year 2021 budget request enables irreversible implementation of the National Defense Strategy. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The first list is sourced from the Stockholm International Peace Research. 
+																	Congress for 59 straight years. 
+																	The Budget Squeeze The reduced topline came from the bipartisan budget agreement of 2019 which set 7405 billion for national security for 2021 6364 billion for the base budget 69 billion. 
+																	In 2020 the amount was 732 billion discretionary and mandatory Department of Defense budget authority in 2021 constant dollars. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The upper house of the US Congress - the Senate - voted in favor of the 740 billion National Defense Appropriation Act NDAA. 
+																	Values are presented. 
+																	The fiscal 2020 defense budget topped 738 billion up about 10 percent from the end of the Obama administration. 
+																	This comes after the House of Representatives had earlier last. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	NDAA received a veto-proof majority of 84-13. 
+																	Trump sent Congress a proposed Fiscal Year FY 2021 budget request of 7405 billion for national security 7054 billion of which is for the Department. 
+																	Military Personnel Programs M-1 - Budget Appendix Display M-1 Operation and Maintenance Programs O-1 - Budget Appendix Display O-1 Revolving and Management Fund RF-1 - Budget Appendix Display RF-1 Procurement Programs P-1 - Budget Appendix Display P. 
+																	Because of constitutional limitations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On February 10 2020 President Donald J. 
+																	Military budget and total US federal spending. 
+																	Budget experts long expected defense spending to be flat or decline in 2021 depending on who won the White House. 
+																	According to the Congressional Budget Office defense spending grew 9 annually on average from fiscal year 20002009. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But those increases came at a cost for other federal agencies such as the State. 
+																	CBO Infographic showing 2019 federal spending. 
+																	2021 Defense Budget The Fiscal Year 2021 National Defense Authorization Act has been approved which sets spending for military pay and benefits defense operations and national-security programs for the 2021 fiscal year. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/37/16/9c/37169ccd0dbf6c84dfe6cd48db2b8993.jpg" data-lightbox="roadtrip" data-title="Pin On Aerospace Drone">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/37/16/9c/37169ccd0dbf6c84dfe6cd48db2b8993.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtY95zV3T4G911ohQc7DAJtvC0Y3LGqPmmkA';" alt="Pin On Aerospace Drone">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Aerospace Drone</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/d3/85/dcd385788798623af7504520dd4e3485.jpg" data-lightbox="roadtrip" data-title="A Nation On Entitlements Government Benefits State History Government Spending">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/d3/85/dcd385788798623af7504520dd4e3485.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQge4adZVXtif_xbZx-BbwkG_DV5T18Xb6wQ';" alt="A Nation On Entitlements Government Benefits State History Government Spending">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Nation On Entitlements Government Benefits State History Government Spending</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/39/e2/c039e2a747308ed9abf40e4927cf3ec3.jpg" data-lightbox="roadtrip" data-title="The State Of The Us Economy In One Awesome Annotated Heatmap Economic Map Economy Heat Map">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/39/e2/c039e2a747308ed9abf40e4927cf3ec3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3rDGT3QLNZ_wepyzWr4Gsn5_Kr-nUrgoxwg';" alt="The State Of The Us Economy In One Awesome Annotated Heatmap Economic Map Economy Heat Map">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The State Of The Us Economy In One Awesome Annotated Heatmap Economic Map Economy Heat Map</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fe/c7/2d/fec72d0ae47357967d3db9d3b0a26d24.jpg" data-lightbox="roadtrip" data-title="Sos Save Our Skills While The Dollar Amounts Are The Same 1 2 Trillion Off Defense Budget Is A Small Compared To The Budget Percentages Skills Budgeting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fe/c7/2d/fec72d0ae47357967d3db9d3b0a26d24.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbxLCRiWTCZYEwYyiHamQAbYPPeXl3mTYxgA';" alt="Sos Save Our Skills While The Dollar Amounts Are The Same 1 2 Trillion Off Defense Budget Is A Small Compared To The Budget Percentages Skills Budgeting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sos Save Our Skills While The Dollar Amounts Are The Same 1 2 Trillion Off Defense Budget Is A Small Compared To The Budget Percentages Skills Budgeting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/4e/94/d74e94bebaa6d21fda91c8d5f8e33cfa.jpg" data-lightbox="roadtrip" data-title="In My Defense I Was Left Unsupervised 2x3 Patch Olive Drab In 2021 Patches Custom Patches Camouflage Pattern">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/4e/94/d74e94bebaa6d21fda91c8d5f8e33cfa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrvu5awDM8qzXQP5wSoW90M-Z8Ai34KDRolg';" alt="In My Defense I Was Left Unsupervised 2x3 Patch Olive Drab In 2021 Patches Custom Patches Camouflage Pattern">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">In My Defense I Was Left Unsupervised 2x3 Patch Olive Drab In 2021 Patches Custom Patches Camouflage Pattern</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/5f/34/585f34c895f540c207290631391a33d4.jpg" data-lightbox="roadtrip" data-title="The Indestructible Utility Can An Airtight Cnc Machined Container American Made 1 Wide X 3 Round Choose Color Empire Tactical Usa In 2021 Pocket Craft Tactical Wallet Tactical Accessories">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/5f/34/585f34c895f540c207290631391a33d4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_zyQecTrFO6I8xV0bUA646pIYPmTQUNsARw';" alt="The Indestructible Utility Can An Airtight Cnc Machined Container American Made 1 Wide X 3 Round Choose Color Empire Tactical Usa In 2021 Pocket Craft Tactical Wallet Tactical Accessories">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Indestructible Utility Can An Airtight Cnc Machined Container American Made 1 Wide X 3 Round Choose Color Empire Tactical Usa In 2021 Pocket Craft Tactical Wallet Tactical Accessories</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/b1/0f/b1b10f77b9b0641fe6b5cd58bd0cf578.png" data-lightbox="roadtrip" data-title="Taiwan Sharply Boosts Defense Budget Amid China Tension Taiwan Military Spending News China">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/b1/0f/b1b10f77b9b0641fe6b5cd58bd0cf578.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4uBsBtuFN0zbtTKl2-9KivQZ37N00-8K12A';" alt="Taiwan Sharply Boosts Defense Budget Amid China Tension Taiwan Military Spending News China">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Taiwan Sharply Boosts Defense Budget Amid China Tension Taiwan Military Spending News China</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/c9/07/44c9073cccf28717d27b6b55c56c2823.png" data-lightbox="roadtrip" data-title="Flat Feet Is A Condition That Affects Nearly 8 Million Adults In The Us Many Young Americans Suffering From Joining The Military Joining The Marines Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/c9/07/44c9073cccf28717d27b6b55c56c2823.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvVetYaml0eioqQw54XiJ_gUWoqxwgt8Y4gw';" alt="Flat Feet Is A Condition That Affects Nearly 8 Million Adults In The Us Many Young Americans Suffering From Joining The Military Joining The Marines Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Flat Feet Is A Condition That Affects Nearly 8 Million Adults In The Us Many Young Americans Suffering From Joining The Military Joining The Marines Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/0c/84/880c84df162e6911a9911f4a87d0a515.png" data-lightbox="roadtrip" data-title="34 026 Traffic Accidents Deaths In The Us Latest Traffic Death Accident">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/0c/84/880c84df162e6911a9911f4a87d0a515.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNB889mge9ycL39u-VTRBD0tCwHipDDi7wPA';" alt="34 026 Traffic Accidents Deaths In The Us Latest Traffic Death Accident">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">34 026 Traffic Accidents Deaths In The Us Latest Traffic Death Accident</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/4d/41/f44d4177e8cf7a6269fd948909084862.jpg" data-lightbox="roadtrip" data-title="Us Zip Codes Coding Erie County Zip Code Map">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/4d/41/f44d4177e8cf7a6269fd948909084862.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_clxsv6HSI4n7IQYl_btUdenm5NHtEU_dEA';" alt="Us Zip Codes Coding Erie County Zip Code Map">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Zip Codes Coding Erie County Zip Code Map</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/97/60/4f9760ee6bf28db2dbc8a00630f94088.jpg" data-lightbox="roadtrip" data-title="Pin By Katie Breitbeck On Money Saver 52 Week Money Challenge Money Challenge 52 Week Savings Challenge">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/97/60/4f9760ee6bf28db2dbc8a00630f94088.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWWCoSVkkpuRY1MMhTvuyMpYb-ov5bGJTHlw';" alt="Pin By Katie Breitbeck On Money Saver 52 Week Money Challenge Money Challenge 52 Week Savings Challenge">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Katie Breitbeck On Money Saver 52 Week Money Challenge Money Challenge 52 Week Savings Challenge</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/41/55/f0/4155f01bfa26f727bbebaaa869c95a53.jpg" data-lightbox="roadtrip" data-title="10 Best Places To Travel Alone In The Usa Budgettravelbuff Best Places To Travel Places To Travel Travel Alone">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/41/55/f0/4155f01bfa26f727bbebaaa869c95a53.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQIYHEE12aH89hZLeoDFT8IvfnNUvAc42XRw';" alt="10 Best Places To Travel Alone In The Usa Budgettravelbuff Best Places To Travel Places To Travel Travel Alone">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Best Places To Travel Alone In The Usa Budgettravelbuff Best Places To Travel Places To Travel Travel Alone</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/cd/9f/65/cd9f6575bfaa78d5dd8ba95f2cf160b8.jpg" data-lightbox="roadtrip" data-title="How To Plan Your Solo Travel Budget On Any Budget Budget Travel Free Travel Printables Travel Itinerary Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/cd/9f/65/cd9f6575bfaa78d5dd8ba95f2cf160b8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTatXkX-SWEoqFyNNmTfcCnfgO46jF0pgnrJQ';" alt="How To Plan Your Solo Travel Budget On Any Budget Budget Travel Free Travel Printables Travel Itinerary Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Plan Your Solo Travel Budget On Any Budget Budget Travel Free Travel Printables Travel Itinerary Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-retirement-pay-office.html">Military Retirement Pay Office</a></li>
+													<li class="list-group-item"><a href="/military-retirement-pension-division-order.html">Military Retirement Pension Division Order</a></li>
+													<li class="list-group-item"><a href="/military-sealift-command-hr-department.html">Military Sealift Command Hr Department</a></li>
+													<li class="list-group-item"><a href="/military-service-records-world-war-2.html">Military Service Records World War 2</a></li>
+													<li class="list-group-item"><a href="/military-service-center-university-of-akron.html">Military Service Center University Of Akron</a></li>
+													<li class="list-group-item"><a href="/military-service-veterans-preference.html">Military Service Veterans Preference</a></li>
+													<li class="list-group-item"><a href="/military-retirement-cola-history-chart.html">Military Retirement Cola History Chart</a></li>
+													<li class="list-group-item"><a href="/military-retirement-office.html">Military Retirement Office</a></li>
+													<li class="list-group-item"><a href="/military-retirement-pay-spouse-after-death.html">Military Retirement Pay Spouse After Death</a></li>
+													<li class="list-group-item"><a href="/military-spouse-day.html">Military Spouse Day</a></li>
+													<li class="list-group-item"><a href="/military-retirement-pay-calculator-2019.html">Military Retirement Pay Calculator 2019</a></li>
+													<li class="list-group-item"><a href="/military-spouse-in.html">Military Spouse In</a></li>
+													<li class="list-group-item"><a href="/military-spouses-more-than-500-employers-are-now-looking-to-hire-you.html">Military Spouses More Than 500 Employers Are Now Looking To Hire You</a></li>
+													<li class="list-group-item"><a href="/military-retirement-income-calculator.html">Military Retirement Income Calculator</a></li>
+													<li class="list-group-item"><a href="/military-service-center-fargo.html">Military Service Center Fargo</a></li>
+													<li class="list-group-item"><a href="/military-sealift-command-inspector-general.html">Military Sealift Command Inspector General</a></li>
+													<li class="list-group-item"><a href="/military-retirement-income-tax-calculator.html">Military Retirement Income Tax Calculator</a></li>
+													<li class="list-group-item"><a href="/military-spouse-dental-coverage.html">Military Spouse Dental Coverage</a></li>
+													<li class="list-group-item"><a href="/military-spouse-usajobs.html">Military Spouse Usajobs</a></li>
+													<li class="list-group-item"><a href="/military-retirement-calculator-with-sbp.html">Military Retirement Calculator With Sbp</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

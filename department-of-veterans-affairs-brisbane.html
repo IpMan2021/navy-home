@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Department Of Veterans Affairs Brisbane - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Department Of Veterans Affairs Brisbane",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/78/1e/e0/781ee075cc4835ceaae98114ab98d576.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=department+of+veterans+affairs+brisbane",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Department Of Veterans Affairs Brisbane</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">We pay our respects to Elders past and present. If you have myGov but have not linked to DVA login to myGov and use your DVA direct login details to link these services. Veterans must have a general practitioners referral ensure that the correct DVA form is used and bring their DVA card along with them to the initial appointment. <br>				
+			</p>
+										<a class="badge badge-info" href="/army-dog-tag-uk.html">army dog tag uk</a>
+											<a class="badge badge-info" href="/army-dog.html">army dog</a>
+											<a class="badge badge-secondary" href="/army-dog-tags-is.html">army dog tags is</a>
+											<a class="badge badge-success" href="/army-dog-tags-font.html">army dog tags font</a>
+											<a class="badge badge-info" href="/army-dog-tags-today.html">army dog tags today</a>
+											<a class="badge badge-secondary" href="/army-dog-tag-vector.html">army dog tag vector</a>
+											<a class="badge badge-info" href="/army-dog-tags-meaning.html">army dog tags meaning</a>
+											<a class="badge badge-secondary" href="/army-dogs-images.html">army dogs images</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you have come to pay a visit to the ideal site.  Our website provides you with suggestions for viewing the maximum quality video and image content, search and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, especially Youtube, so we recommend this video that you view.  You can also contribute to supporting this website by sharing videos and graphics that you like on this blog on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this site.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/27/03/2a/27032a52830d2f5521b8cd024555aac4.jpg" data-lightbox="roadtrip" data-title="Department Of Veteran Affairs Terrazzo Design Terrazzo House Painting Cost House Paint Interior Decoration Website">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/27/03/2a/27032a52830d2f5521b8cd024555aac4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPX48Nvk9ze-SBYoQ9XLDpnLrxdTfJgpNLOw';" alt="Department Of Veteran Affairs Terrazzo Design Terrazzo House Painting Cost House Paint Interior Decoration Website">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Department Of Veteran Affairs Terrazzo Design Terrazzo House Painting Cost House Paint Interior Decoration Website</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.dva.gov.au/sites/default/files/About%20DVA/Overview/p01370-ses-org-chart-09dec2020.png" data-lightbox="roadtrip" data-title="Organisational Chart Department Of Veterans Affairs">
+											<img class="card-img v-image ads-img " src="https://www.dva.gov.au/sites/default/files/About%20DVA/Overview/p01370-ses-org-chart-09dec2020.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCcM6c3TJdDmvgjgbPvP-RKXu-MbE-PSk0QA';" alt="Organisational Chart Department Of Veterans Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Organisational Chart Department Of Veterans Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/8c/e3/788ce378aab3499a23479fdcced47eee.jpg" data-lightbox="roadtrip" data-title="Facility Maps And Directory James A Haley Veterans Hospital Tampa Florida Veteran Hospital Hospital Campus Map">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/8c/e3/788ce378aab3499a23479fdcced47eee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnYj5tkW1lusmEv328gPEWKYXLACABpz_iMg';" alt="Facility Maps And Directory James A Haley Veterans Hospital Tampa Florida Veteran Hospital Hospital Campus Map">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Facility Maps And Directory James A Haley Veterans Hospital Tampa Florida Veteran Hospital Hospital Campus Map</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cpp-prod-seek-company-image-uploads.s3.ap-southeast-2.amazonaws.com/795381/logo/705ead10-bcca-11ea-86d1-e52bae5cc086.png" data-lightbox="roadtrip" data-title="Working At Australian Department Of Veterans Affairs Company Profile And Information Seek Com Au">
+											<img class="card-img v-image ads-img " src="https://cpp-prod-seek-company-image-uploads.s3.ap-southeast-2.amazonaws.com/795381/logo/705ead10-bcca-11ea-86d1-e52bae5cc086.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS-O59iCvgP47niCM36SGUsEeYEWjpDPs2yA';" alt="Working At Australian Department Of Veterans Affairs Company Profile And Information Seek Com Au">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Working At Australian Department Of Veterans Affairs Company Profile And Information Seek Com Au</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/63/cd/b863cdc3466c3353e7da45ccc29bbd01.png" data-lightbox="roadtrip" data-title="Pin On Dental Care">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/63/cd/b863cdc3466c3353e7da45ccc29bbd01.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwfkKw8joH4lqAec8Vk9d4Khyb8yMgvNsqXQ';" alt="Pin On Dental Care">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Dental Care</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/EtcgkL0VcAMM8O4.jpg" data-lightbox="roadtrip" data-title="Msahlhiviceq2m">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/EtcgkL0VcAMM8O4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYId44eJj-83f0n2B2ISCC_UN8LHAunHk-Hg';" alt="Msahlhiviceq2m">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msahlhiviceq2m</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/27/03/2a/27032a52830d2f5521b8cd024555aac4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYId44eJj-83f0n2B2ISCC_UN8LHAunHk-Hg';" alt="Msahlhiviceq2m">
+										<div class="card-body">
+						<h3 class="h5"><b>To speak with someone at DVA call 1800 VETERAN.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Department of veterans affairs brisbane</strong>. 
+								
+																	Australian Government Department of Veterans Affairs. 
+																	We recognise and celebrate Aboriginal and Torres Strait Islander people as the First Peoples of Australia and their continuing spiritual and cultural connection to land sea and community. 
+																	Click through for driving directions on Whereis. 
+																	One of DVAs key roles is acknowledging and commemorating the service and sacrifice of all those who served Australia and its allies in wars conflicts and peace operations through commemorations memorials war graves and research. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Department of Veterans Affairs acknowledges the Traditional Custodians of Country throughout Australia. 
+																	DHOAS is administered by the Department of Veterans Affairs on behalf of the Department of Defence. 
+																	1800 VETERAN 1800 838 372 Email. 
+																	GPO Box 9998 Brisbane QLD 4001. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Department of Veterans Affairs DVA is a primary service delivery agency responsible for developing and implementing programs that assist the veteran and defence force communities. 
+																	GPO Box 9998 Brisbane QLD 4001. 
+																	Business contact details for Department Of Veterans Affairs - Queensland Office including phone number reviews map location - TrueLocal. 
+																	As one part of this commemoration DVA has published four nominal rolls. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Community engagement team Department of Veterans Affairs. 
+																	Our online services are moving MyAccount users will now need to login using myGov. 
+																	Department Of Veterans Affairs - Queensland Office in Brisbane QLD 4000. 
+																	DVA also provides administrative support and staff for the Repatriation Commission and the Military Rehabilitation and Compensation Commission MRCC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	View 20 Department of Veterans Affairs jobs in Brisbane QLD at Jora create free email alerts and never miss another career opportunity again. 
+																	Open Arms - Veterans Families Counselling. 
+																	VAPAC Veterans Affairs Pharmaceutical Advisory Centre Department of Veterans Affairs GPO Box 9998 BRISBANE QLD 4001 For RPBS enquiries and telephone approvals 24 hours a day the Freecall number is. 
+																	Department of Veterans Affairs - Brisbane is located in the suburb of Brisbane City the ward of Central in the council of Brisbane the state electorate of Mcconnel and the federal electorate of Brisbane. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Veterans Affairs - Brisbane is located in the suburb of Brisbane City the ward of Central in the council of Brisbane the state electorate of Mcconnel and the federal electorate of Brisbane. 
+																	The Department of Veterans Affairs acknowledges the Traditional Custodians of Country throughout Australia. 
+																	Department of Industry Science Energy and Resources. 
+																	Department of Veterans Affairs is located in Gpo Box 9998 Brisbane QLD 4001. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Scheme is aimed at improving ADF recruitment and retention. 
+																	Let us know what you. 
+																	We pay our respects to Elders past and present. 
+																	Aussie Veterans Pty Ltd. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	BRISBANE QLD 4001 Vetaffairs and DVA e-news View DVAs newspaper Vetaffairs which is published three times a year. 
+																	Chief Health Officer of the Department of Veterans Affairs. 
+																	Deputy Secretary Veterans and Families Services. 
+																	GPO Box 9998 Brisbane Qld 4001. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We recognise and celebrate Aboriginal and Torres Strait Islander people as the First Peoples of Australia and their continuing spiritual and cultural connection to land sea and community. 
+																	Department of Veterans Affairs Queensland Physiotherapy accepts referrals for patient treatment under the Department of Veterans Affairs DVA Allied Health Professionals program. 
+																	The longer you serve in the ADF the more entitlement you accrue under DHOAS and the longer you can receive assistance. 
+																	You can also unsubscribe to Vetaffairs or subscribe to DVA e-news which is published every two months drawing on the frequently updated Latest news for veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	19 November 2020. 
+																	The Department of Veterans Affairs DVA is an Australian Government agency. 
+																	If you dont have myGov you will need to create a myGov account and then link to DVA. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/35/1d/37/351d37d134dc9b04ba5f064775b3f242.jpg" data-lightbox="roadtrip" data-title="The Number Of Va Backed Loans Rose 2 3 Year To Year In September With Millennials Much Of The Reason Of The Top 10 Va Loan Florida City Va Loan Florida">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/35/1d/37/351d37d134dc9b04ba5f064775b3f242.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJHK-Eh95TG50-hSN7anaphpy294dgE7fjBw';" alt="The Number Of Va Backed Loans Rose 2 3 Year To Year In September With Millennials Much Of The Reason Of The Top 10 Va Loan Florida City Va Loan Florida">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Number Of Va Backed Loans Rose 2 3 Year To Year In September With Millennials Much Of The Reason Of The Top 10 Va Loan Florida City Va Loan Florida</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ce/79/ef/ce79ef9431b45592eeb01abd364adccf--perth-brisbane.jpg" data-lightbox="roadtrip" data-title="Are You A Woman Who Wants To Get Ahead Then Stop Doing All Of These Things Right Now Cancer Ruby Rose Australia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ce/79/ef/ce79ef9431b45592eeb01abd364adccf--perth-brisbane.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCYSD810Hmc9m-OvOwlK00KLGkp0-NQ5QJkg';" alt="Are You A Woman Who Wants To Get Ahead Then Stop Doing All Of These Things Right Now Cancer Ruby Rose Australia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are You A Woman Who Wants To Get Ahead Then Stop Doing All Of These Things Right Now Cancer Ruby Rose Australia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/09/0c/b3/090cb361f40b2d36a3f73946e8ced887.jpg" data-lightbox="roadtrip" data-title="Iptvdaily Updated Daily Download For Free M3u Playlist With All Format Tv Vlc Android Hd Iptv Channels Iptv Free Playlist Free Tv Channels Smart Tv">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/09/0c/b3/090cb361f40b2d36a3f73946e8ced887.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_u9SUoBGqYdOrEwZ6VTfQY43OdiJQNNLmTQ';" alt="Iptvdaily Updated Daily Download For Free M3u Playlist With All Format Tv Vlc Android Hd Iptv Channels Iptv Free Playlist Free Tv Channels Smart Tv">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iptvdaily Updated Daily Download For Free M3u Playlist With All Format Tv Vlc Android Hd Iptv Channels Iptv Free Playlist Free Tv Channels Smart Tv</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/12/06/9a1206bbd69ce0151dd4cd2c7dd7bbe9.jpg" data-lightbox="roadtrip" data-title="Sergeant Bert Off To Flying Start In Kokoda Length Trek Contact Magazine In 2020 Sergeant Fundraising Goals Getting Over Him">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/12/06/9a1206bbd69ce0151dd4cd2c7dd7bbe9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqsUX4R83OEZUS-tRZ0XOJjrN6TQXOk9owSw';" alt="Sergeant Bert Off To Flying Start In Kokoda Length Trek Contact Magazine In 2020 Sergeant Fundraising Goals Getting Over Him">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sergeant Bert Off To Flying Start In Kokoda Length Trek Contact Magazine In 2020 Sergeant Fundraising Goals Getting Over Him</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9c/a7/03/9ca703bf3891ded50dd1f2cb775fe7d5.jpg" data-lightbox="roadtrip" data-title="The White Coat Waste Project Dog Abuse Mixed Breed Dogs Dog Cruelty">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9c/a7/03/9ca703bf3891ded50dd1f2cb775fe7d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxBfnODbSVnZDmSf1kS-m7wYAtP-Mx0Iqjgg';" alt="The White Coat Waste Project Dog Abuse Mixed Breed Dogs Dog Cruelty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The White Coat Waste Project Dog Abuse Mixed Breed Dogs Dog Cruelty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/a8/d0/e6a8d091800b2abfdea42d2ffd114257.jpg" data-lightbox="roadtrip" data-title="House In Hamilton Architecture House On Stilts Architect House">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/a8/d0/e6a8d091800b2abfdea42d2ffd114257.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBfyAGnJ02BozGmgluO3b8O-QlwywhCION9A';" alt="House In Hamilton Architecture House On Stilts Architect House">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">House In Hamilton Architecture House On Stilts Architect House</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/08/50/470850247b231ca61bda5df401bf61b7.jpg" data-lightbox="roadtrip" data-title="Copper Miners At Wallaroo South Australia In 1900 South Australia Adelaide South Australia Australia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/08/50/470850247b231ca61bda5df401bf61b7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgmxXSPof2sn79ZI3q-QK8BBDDN2MXA_nHhQ';" alt="Copper Miners At Wallaroo South Australia In 1900 South Australia Adelaide South Australia Australia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Copper Miners At Wallaroo South Australia In 1900 South Australia Adelaide South Australia Australia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/a2/63/3f/a2633f7e33bd7036af0b955356475fd5.jpg" data-lightbox="roadtrip" data-title="Pin By Purple Day Every Day On Epilepsy Purple Day World Epilepsy Day March 26th Purple Day Epilepsy Epilepsy Awareness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/a2/63/3f/a2633f7e33bd7036af0b955356475fd5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd7Se86sVG_kXkeF73Nw3_xBUmo2e45DNwZA';" alt="Pin By Purple Day Every Day On Epilepsy Purple Day World Epilepsy Day March 26th Purple Day Epilepsy Epilepsy Awareness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Purple Day Every Day On Epilepsy Purple Day World Epilepsy Day March 26th Purple Day Epilepsy Epilepsy Awareness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/1e/e0/781ee075cc4835ceaae98114ab98d576.jpg" data-lightbox="roadtrip" data-title="The Emily Seebohm Aquatic Centre Pool Swimming Pools Outdoor Pool">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/1e/e0/781ee075cc4835ceaae98114ab98d576.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq8-8x-UIjm4n6QCtsByFIB1iUDKj067h2yw';" alt="The Emily Seebohm Aquatic Centre Pool Swimming Pools Outdoor Pool">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Emily Seebohm Aquatic Centre Pool Swimming Pools Outdoor Pool</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.dva.gov.au/sites/default/files/vhw_logo_2020_landscape-01.jpg" data-lightbox="roadtrip" data-title="Veterans Health Week Department Of Veterans Affairs">
+											<img class="card-img v-image ads-img " src="https://www.dva.gov.au/sites/default/files/vhw_logo_2020_landscape-01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2tlUYorGdMa4Va-jUMcKx4QC_gfP-r7HWJw';" alt="Veterans Health Week Department Of Veterans Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Health Week Department Of Veterans Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/cf/9a/37cf9a543f9decf31842c224161923bb.jpg" data-lightbox="roadtrip" data-title="Best Paint To Reproduce A Natural Steel Finish Help Cool Paintings Painting It Is Finished">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/cf/9a/37cf9a543f9decf31842c224161923bb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfq7IO1ncj2e0osbfc7Uu4Xg1a0-69fJZsBw';" alt="Best Paint To Reproduce A Natural Steel Finish Help Cool Paintings Painting It Is Finished">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Paint To Reproduce A Natural Steel Finish Help Cool Paintings Painting It Is Finished</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/9c/8f/e19c8f19bbd91182762b3f98dfeb2088.jpg" data-lightbox="roadtrip" data-title="Interpod Modular Bathrooms Specified For Tune Hotel Melbourne To Reduce Time And Cost Modular Bathrooms Modular Modular Building">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/9c/8f/e19c8f19bbd91182762b3f98dfeb2088.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2ASUe06EJNCRtpgXukipQjJsYEEdFemGP2w';" alt="Interpod Modular Bathrooms Specified For Tune Hotel Melbourne To Reduce Time And Cost Modular Bathrooms Modular Modular Building">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Interpod Modular Bathrooms Specified For Tune Hotel Melbourne To Reduce Time And Cost Modular Bathrooms Modular Modular Building</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/28/8b/54/288b5496e015521e0488e6609614b722.jpg" data-lightbox="roadtrip" data-title="5 Best Podiatrists In Melbourne Top Rated Podiatrist Injury Prevention Podiatry Clinic Sports Therapy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/28/8b/54/288b5496e015521e0488e6609614b722.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkbM4bCFPrAwTm9bdTR7-_hcho6Wjch44N6A';" alt="5 Best Podiatrists In Melbourne Top Rated Podiatrist Injury Prevention Podiatry Clinic Sports Therapy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Best Podiatrists In Melbourne Top Rated Podiatrist Injury Prevention Podiatry Clinic Sports Therapy</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/home-depot-truck-rental-military-discount.html">Home Depot Truck Rental Military Discount</a></li>
+													<li class="list-group-item"><a href="/hire-vets-medallion-program-application.html">Hire Vets Medallion Program Application</a></li>
+													<li class="list-group-item"><a href="/home-depot-military-discount-card.html">Home Depot Military Discount Card</a></li>
+													<li class="list-group-item"><a href="/hong-kong-military-rank.html">Hong Kong Military Rank</a></li>
+													<li class="list-group-item"><a href="/home-depot-military-discount-online.html">Home Depot Military Discount Online</a></li>
+													<li class="list-group-item"><a href="/home-depot-military-discount-coupon.html">Home Depot Military Discount Coupon</a></li>
+													<li class="list-group-item"><a href="/hill-air-force-base-hr-department.html">Hill Air Force Base Hr Department</a></li>
+													<li class="list-group-item"><a href="/headquarters-department-of-the-army-website.html">Headquarters Department Of The Army Website</a></li>
+													<li class="list-group-item"><a href="/home-depot-military-discount-washer-dryer.html">Home Depot Military Discount Washer Dryer</a></li>
+													<li class="list-group-item"><a href="/helm-cargloss-army-doff.html">Helm Cargloss Army Doff</a></li>
+													<li class="list-group-item"><a href="/home-depot-military-discount-sign-up-online.html">Home Depot Military Discount Sign Up Online</a></li>
+													<li class="list-group-item"><a href="/headquarters-department-of-the-army-washington-dc.html">Headquarters Department Of The Army Washington Dc</a></li>
+													<li class="list-group-item"><a href="/headquarters-department-of-the-army-assignment.html">Headquarters Department Of The Army Assignment</a></li>
+													<li class="list-group-item"><a href="/help-for-military-wives.html">Help For Military Wives</a></li>
+													<li class="list-group-item"><a href="/home-depot-military-discount-veterans-day.html">Home Depot Military Discount Veterans Day</a></li>
+													<li class="list-group-item"><a href="/home-depot-military-discount-idme.html">Home Depot Military Discount Idme</a></li>
+													<li class="list-group-item"><a href="/health-insurance-for-dod-civilians-overseas.html">Health Insurance For Dod Civilians Overseas</a></li>
+													<li class="list-group-item"><a href="/home-depot-military-discount-code.html">Home Depot Military Discount Code</a></li>
+													<li class="list-group-item"><a href="/heroes-war-tier-list-2020.html">Heroes War Tier List 2020</a></li>
+													<li class="list-group-item"><a href="/home-depot-military-discount-policy-2018.html">Home Depot Military Discount Policy 2018</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

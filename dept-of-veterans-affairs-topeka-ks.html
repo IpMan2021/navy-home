@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Dept Of Veterans Affairs Topeka Ks - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Dept Of Veterans Affairs Topeka Ks",
+  "datePublished": "2021-02-13",
+  "image": "SIGvHeN8FPsRGM",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=dept+of+veterans+affairs+topeka+ks",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Dept Of Veterans Affairs Topeka Ks</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Get help from Veterans Crisis Line. VAs academic partnerships improved Veterans health care. If you are in crisis or having thoughts of suicide. <br>				
+			</p>
+										<a class="badge badge-primary" href="/my-spouse-brings-me-down.html">my spouse brings me down</a>
+											<a class="badge badge-danger" href="/mycah-mcdonald.html">mycah mcdonald</a>
+											<a class="badge badge-danger" href="/mycaa-social-work.html">mycaa social work</a>
+											<a class="badge badge-warning" href="/mycah-buys-a-new-bicycle-that-was-produced-in-detroit.html">mycah buys a new bicycle that was produced in detroit</a>
+											<a class="badge badge-primary" href="/monthly-military-retirement-income-calculator.html">monthly military retirement income calculator</a>
+											<a class="badge badge-warning" href="/mycah-means.html">mycah means</a>
+											<a class="badge badge-danger" href="/ministry-of-peoples-armed-forces-north-korea.html">ministry of peoples armed forces north korea</a>
+											<a class="badge badge-primary" href="/mycah-cornish.html">mycah cornish</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you have come to pay a visit to the right site.  Our website provides you with suggestions for viewing the maximum quality video and image content, hunt and find more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie that you see.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.leavenworth.va.gov/images/_TopekaFacility.jpg" data-lightbox="roadtrip" data-title="Colmery O Neil Veterans Administration Medical Center Va Eastern Kansas Health Care System">
+											<img class="card-img v-image ads-img " src="https://www.leavenworth.va.gov/images/_TopekaFacility.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbGFG-xq5CA7Tu76bZTTfoQ3ga3So02gX7-Q';" alt="Colmery O Neil Veterans Administration Medical Center Va Eastern Kansas Health Care System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Colmery O Neil Veterans Administration Medical Center Va Eastern Kansas Health Care System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.va.gov/directory/guide/image.asp?id=138&amp;parm=facility" data-lightbox="roadtrip" data-title="Va Eastern Kansas Health Care System Colmery O Neil Va Medical Center Locations">
+											<img class="card-img v-image ads-img " src="https://www.va.gov/directory/guide/image.asp?id=138&amp;parm=facility" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFBWDSMpmnCHoVqIrA8-TJ_nNxw3iOzVYXhA';" alt="Va Eastern Kansas Health Care System Colmery O Neil Va Medical Center Locations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Eastern Kansas Health Care System Colmery O Neil Va Medical Center Locations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.va.gov/img/design/logo/va-og-image.png" data-lightbox="roadtrip" data-title="Colmery O Neil Veterans Administration Medical Center Va Eastern Kansas Health Care System">
+											<img class="card-img v-image ads-img " src="https://www.va.gov/img/design/logo/va-og-image.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP1PwtEsS7NGkBYMR2M2_BZqjuYa5bhi1Vng';" alt="Colmery O Neil Veterans Administration Medical Center Va Eastern Kansas Health Care System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Colmery O Neil Veterans Administration Medical Center Va Eastern Kansas Health Care System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=3866942023321007" data-lightbox="roadtrip" data-title="Topeka Va Medical Center Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=3866942023321007" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNic2ZEKG9oFtp9kOQRjpcwOoMOQ8I95Ul2Q';" alt="Topeka Va Medical Center Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Topeka Va Medical Center Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.topeka.va.gov/va_files/2014/responsive/images/header-logo.png" data-lightbox="roadtrip" data-title="Phone Directory Va Eastern Kansas Health Care System">
+											<img class="card-img v-image ads-img " src="https://www.topeka.va.gov/va_files/2014/responsive/images/header-logo.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8PePMOWXjbXzqFQASmVQhVlRuHbgoVRZkpA';" alt="Phone Directory Va Eastern Kansas Health Care System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Phone Directory Va Eastern Kansas Health Care System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="SIGvHeN8FPsRGM" data-lightbox="roadtrip" data-title="Https Www Va Gov Oig Pubs Vaoig 11 04568 148 Pdf">
+											<img class="card-img v-image ads-img " src="SIGvHeN8FPsRGM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVr_TRICWG5AeRpp4AVYdt0lF519rgzu4GhA';" alt="Https Www Va Gov Oig Pubs Vaoig 11 04568 148 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Va Gov Oig Pubs Vaoig 11 04568 148 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="KNNI4P_XmbsHXM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVr_TRICWG5AeRpp4AVYdt0lF519rgzu4GhA';" alt="Https Www Va Gov Oig Pubs Vaoig 11 04568 148 Pdf">
+										<div class="card-body">
+						<h3 class="h5"><b>Founded in 1930 it provides assistance to access burial memorial and medical benefits.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Dept of veterans affairs topeka ks</strong>. 
+								
+																	US Department of Veterans Affairs Salaries in Topeka KS Area 35 salaries for 28 job titles Updated Nov 17 2020 35 US Department of Veterans Affairs employees have shared their salaries on Glassdoor. 
+																	Apply to Oncologist Medical Support Assistant Speech Pathologist and more. 
+																	The department offers disability compensation pension educational and life insurance programs. 
+																	News you can use. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All calls are confidential. 
+																	Veteran Service Representative Three positions Topeka Junction City Manhattan Closes 2112021 IN AN EMOTIONAL CRISIS AND NEED HELP If you are a veteran in emotional crisis and need help RIGHT NOW call this toll-free number 1-800-273-8255 available 247 and tell them you are a veteran. 
+																	The United States Department of Veterans Affairs is a government-run military veteran benefit system. 
+																	Department of Veterans Affairs 810 Vermont Avenue NW Washington DC 20420. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Select your job title and find out how much you could make at US Department of Veterans Affairs. 
+																	23 US Department of Veterans Affairs jobs in Topeka KS. 
+																	Department of Veterans Affairs. 
+																	Last updated August 4 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veteran Services connects veterans with several government agencies and nonprofit organizations at the federal Kansas state and Topeka level. 
+																	See reviews photos directions phone numbers and more for Veterans Affairs Dept locations in Topeka KS. 
+																	The Borne The Battle podcast spotlights important resources offices and benefits VA offers our Veterans. 
+																	Call 1-800-273-8255 Press 1 Text to 838255. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Posted on Wednesday September 13 2017 443 pm September 13 2017 Posted in Mental Health News Releases by OMR 244 views. 
+																	The Disabled American Veterans located in Topeka KS provides support for veterans of the US Armed Forces. 
+																	Topeka KS Kansas Commission on Veterans Affairs Office The Kansas Commission on Veterans Affairs Office is honored to provide assistance information and advocacy to veterans family members active duty guard and reserve military members of our great state. 
+																	The US Veterans Affairs Department located in Topeka KS provides support for veterans of the US Armed Forces. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veteran Services connects veterans with several government agencies and nonprofit organizations at the federal Kansas state and Topeka level. 
+																	US Department of Veterans Affairs - 38 is seeking suitable candidates for the job of Contact Representative - Help Desk in Topeka KS. 
+																	These services include veteran benefits assistance services for veterans with disabilities and information about medical care insurance. 
+																	The Topeka VA Medical Center provides health care services to veterans in North Eastern Kansas and South Eastern Kansas. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Talk to a Veterans Crisis Line responder now. 
+																	Search job openings see if they fit - company salaries reviews and more posted by US Department of Veterans Affairs employees. 
+																	Find a VA health facility regional office or cemetery. 
+																	See reviews photos directions phone numbers and more for Dept Of Veterans Affairs locations in Topeka KS. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Official Blog of the US. 
+																	Search for more Contact Representative - Help Desk jobs in Topeka KS at various government dept. 
+																	Salina Topeka Winfield VCAP Partners LegionVFW The first step towards obtaining veterans benefits is to understand what benefits are available to you and your family. 
+																	The Serve Protect memorial garden is dedicated to our honored veterans and members of the civil services offering options for both cremation and burial. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sign in or create an account to use more tools. 
+																	Veterans Crisis Line to open third call center in Topeka Kansas 100 employees expected to be hired to staff the new call center. 
+																	Apply to Pharmacy Technician Oncologist Social Services Assistant and more. 
+																	VA is opening a Veterans Crisis Line VCL call center in Topeka. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veteran Service Representatives VSRs work with you to identify the benefits that you may be eligible for and assist you in filing federal claims. 
+																	2 visitors have checked in at veterans affairs cbo wfm. 
+																	This special garden is the site of our annual Memorial Day ceremony a time for our community to pay respects and show appreciation for the courage dedication and sacrifices of our nations veterans. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cjonline.com/storyimage/KS/20180814/NEWS/180819303/AR/0/AR-180819303.jpg" data-lightbox="roadtrip" data-title="Employee Found Dead Inside Topeka Va Medical Center Office News The Topeka Capital Journal Topeka Ks">
+											<img class="card-img v-image ads-img " src="https://www.cjonline.com/storyimage/KS/20180814/NEWS/180819303/AR/0/AR-180819303.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE-N_e5RDCXIRmHyho2a7PQwYrV5eQXSjhHw';" alt="Employee Found Dead Inside Topeka Va Medical Center Office News The Topeka Capital Journal Topeka Ks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Employee Found Dead Inside Topeka Va Medical Center Office News The Topeka Capital Journal Topeka Ks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.kansascity.va.gov/careers/Pharmacy_Residency/Pharmact_Residency_Photos/Witt_Lauri.jpg" data-lightbox="roadtrip" data-title="Pharmacy Residency Programs Kansas City Va Medical Center">
+											<img class="card-img v-image ads-img " src="https://www.kansascity.va.gov/careers/Pharmacy_Residency/Pharmact_Residency_Photos/Witt_Lauri.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkGTzXmYet-PzmZ-v9F7ckflbDaEveUUkrqw';" alt="Pharmacy Residency Programs Kansas City Va Medical Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pharmacy Residency Programs Kansas City Va Medical Center</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="qPGVuKVGL9O23M" data-lightbox="roadtrip" data-title="Https Kcva Ks Gov Docs Default Source Default Document Library Qa Vsr 082820202 Pdf Sfvrsn 228b8817 0">
+											<img class="card-img v-image ads-img " src="qPGVuKVGL9O23M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4dqFNgTCq82lXcDIXqtuKThkGb4Hq_n6o1w';" alt="Https Kcva Ks Gov Docs Default Source Default Document Library Qa Vsr 082820202 Pdf Sfvrsn 228b8817 0">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Kcva Ks Gov Docs Default Source Default Document Library Qa Vsr 082820202 Pdf Sfvrsn 228b8817 0</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="NDhtvBbFa6sl6M" data-lightbox="roadtrip" data-title="Https Www Topeka Va Gov Documents Annualreport Pdf">
+											<img class="card-img v-image ads-img " src="NDhtvBbFa6sl6M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqH5fPM3isXztwfZ-tl1t30gt_nsb4TuV-EQ';" alt="Https Www Topeka Va Gov Documents Annualreport Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Topeka Va Gov Documents Annualreport Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mediad.publicbroadcasting.net/p/shared/npr/styles/x_large/nprshared/201809/644570995.jpg" data-lightbox="roadtrip" data-title="The Va Has Expanded Its Crisis Line Helping It Better Respond To Veterans In Need Wunc">
+											<img class="card-img v-image ads-img " src="https://mediad.publicbroadcasting.net/p/shared/npr/styles/x_large/nprshared/201809/644570995.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_SrQnRum9HRyJ3cv65b4TrcpXbtfGJICg3w';" alt="The Va Has Expanded Its Crisis Line Helping It Better Respond To Veterans In Need Wunc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Va Has Expanded Its Crisis Line Helping It Better Respond To Veterans In Need Wunc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1177769022639540" data-lightbox="roadtrip" data-title="Kansas Commission On Veterans Affairs Office Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1177769022639540" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEzbWoCBZRBQs8ufFTli7Ctdd5lsNsFZyRdQ';" alt="Kansas Commission On Veterans Affairs Office Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kansas Commission On Veterans Affairs Office Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="717xTnjeISlG5M" data-lightbox="roadtrip" data-title="Https Kcva Ks Gov Docs Default Source Default Document Library Social Media Covid 19 10142020 Pdf Sfvrsn Cbf8817 0">
+											<img class="card-img v-image ads-img " src="717xTnjeISlG5M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGYO4ntmD87Z-bCYXOz9kmp4dSfV7_z5vyMQ';" alt="Https Kcva Ks Gov Docs Default Source Default Document Library Social Media Covid 19 10142020 Pdf Sfvrsn Cbf8817 0">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Kcva Ks Gov Docs Default Source Default Document Library Social Media Covid 19 10142020 Pdf Sfvrsn Cbf8817 0</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kcva.ks.gov/images/default-source/default-images/winfield-cemetery-20186cdeeaf844d66497be6bff0000eeb478.jpg?sfvrsn=d7088e17_4" data-lightbox="roadtrip" data-title="Winfield Veterans Cemetery Kansas Commission On Veterans Affairs">
+											<img class="card-img v-image ads-img " src="https://kcva.ks.gov/images/default-source/default-images/winfield-cemetery-20186cdeeaf844d66497be6bff0000eeb478.jpg?sfvrsn=d7088e17_4" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPxXINUmkAucRwM6ny0cMgqbrMyPQTfG2H9Q';" alt="Winfield Veterans Cemetery Kansas Commission On Veterans Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Winfield Veterans Cemetery Kansas Commission On Veterans Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="4FnvFmhSeVAfTM" data-lightbox="roadtrip" data-title="Http Kslegislature Org Li B2015 16 Committees Ctte Jt Ks Security 1 Documents Testimony 20151105 08 Pdf">
+											<img class="card-img v-image ads-img " src="4FnvFmhSeVAfTM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQca6_ArY-3fGoLmMafNlkxxiV_peCdI7vcKA';" alt="Http Kslegislature Org Li B2015 16 Committees Ctte Jt Ks Security 1 Documents Testimony 20151105 08 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Kslegislature Org Li B2015 16 Committees Ctte Jt Ks Security 1 Documents Testimony 20151105 08 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="l8n0T2XEHtcZlM" data-lightbox="roadtrip" data-title="Https Kcva Ks Gov Docs Default Source Kcva Reruitment Lpn Sr Recruitement Flyer Pdf Sfvrsn 10">
+											<img class="card-img v-image ads-img " src="l8n0T2XEHtcZlM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZWrqJC2Ma-y0TX1yb9e3Xmxc5tjGGuTEzBA';" alt="Https Kcva Ks Gov Docs Default Source Kcva Reruitment Lpn Sr Recruitement Flyer Pdf Sfvrsn 10">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Kcva Ks Gov Docs Default Source Kcva Reruitment Lpn Sr Recruitement Flyer Pdf Sfvrsn 10</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="gGkZ6XXJLifDbM" data-lightbox="roadtrip" data-title="Https Www Va Gov Healthbenefits Resources Publications Ib10 683 Veterans Copayment Responsibility Faq Pdf">
+											<img class="card-img v-image ads-img " src="gGkZ6XXJLifDbM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPbMAON4GdTXOPCuy_yXC6BBBmXBybFJo0XQ';" alt="Https Www Va Gov Healthbenefits Resources Publications Ib10 683 Veterans Copayment Responsibility Faq Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Va Gov Healthbenefits Resources Publications Ib10 683 Veterans Copayment Responsibility Faq Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://gray-wibw-prod.cdn.arcpublishing.com/resizer/F_3GqUHjCeR__ch4rtqcxhMho2M=/1200x675/smart/cloudfront-us-east-1.images.arcpublishing.com/gray/4WOVUQJTF5IDTIGDBTCVMAFWYQ.jpg" data-lightbox="roadtrip" data-title="Topeka Va Temporarily Drops Outpatient Ptsd Care">
+											<img class="card-img v-image ads-img " src="https://gray-wibw-prod.cdn.arcpublishing.com/resizer/F_3GqUHjCeR__ch4rtqcxhMho2M=/1200x675/smart/cloudfront-us-east-1.images.arcpublishing.com/gray/4WOVUQJTF5IDTIGDBTCVMAFWYQ.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRFn7NmvTJddnRKANGDUtZ8xmfAONpoA8R3g';" alt="Topeka Va Temporarily Drops Outpatient Ptsd Care">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Topeka Va Temporarily Drops Outpatient Ptsd Care</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="KNNI4P_XmbsHXM" data-lightbox="roadtrip" data-title="Https Www Va Gov Oig Pubs Vaoig 14 00730 170 Pdf">
+											<img class="card-img v-image ads-img " src="KNNI4P_XmbsHXM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9IYYBL1QKOLyLjeGK6aW7_B6IfReqBTmMWA';" alt="Https Www Va Gov Oig Pubs Vaoig 14 00730 170 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Va Gov Oig Pubs Vaoig 14 00730 170 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/mfrc-shilo-mb.html">Mfrc Shilo Mb</a></li>
+													<li class="list-group-item"><a href="/military-and-family-support-center-jbab.html">Military And Family Support Center Jbab</a></li>
+													<li class="list-group-item"><a href="/military-and-family-support-center-hawaii.html">Military And Family Support Center Hawaii</a></li>
+													<li class="list-group-item"><a href="/military-affairs-office-liberty-university-online.html">Military Affairs Office Liberty University Online</a></li>
+													<li class="list-group-item"><a href="/mfa-foundation-scholarship.html">Mfa Foundation Scholarship</a></li>
+													<li class="list-group-item"><a href="/mfa-scholarship-israel.html">Mfa Scholarship Israel</a></li>
+													<li class="list-group-item"><a href="/military-branches-in-us.html">Military Branches In Us</a></li>
+													<li class="list-group-item"><a href="/military-accountant-general-department.html">Military Accountant General Department</a></li>
+													<li class="list-group-item"><a href="/military-backpack-hk.html">Military Backpack Hk</a></li>
+													<li class="list-group-item"><a href="/military-accountant-general-office.html">Military Accountant General Office</a></li>
+													<li class="list-group-item"><a href="/military-accountant-general-office-lahore.html">Military Accountant General Office Lahore</a></li>
+													<li class="list-group-item"><a href="/military-72-hour-backpack.html">Military 72 Hour Backpack</a></li>
+													<li class="list-group-item"><a href="/military-affairs-desk-office.html">Military Affairs Desk Office</a></li>
+													<li class="list-group-item"><a href="/max-the-army-dog-full-movie.html">Max The Army Dog Full Movie</a></li>
+													<li class="list-group-item"><a href="/military-and-family-support-center-pearl-harbor.html">Military And Family Support Center Pearl Harbor</a></li>
+													<li class="list-group-item"><a href="/military-buyback-dhs.html">Military Buyback Dhs</a></li>
+													<li class="list-group-item"><a href="/mfagovaz-scholarship.html">Mfagovaz Scholarship</a></li>
+													<li class="list-group-item"><a href="/military-benefits-for-widows-of-veterans.html">Military Benefits For Widows Of Veterans</a></li>
+													<li class="list-group-item"><a href="/military-96-hour-liberty.html">Military 96 Hour Liberty</a></li>
+													<li class="list-group-item"><a href="/military-benefits-for-veterans-day.html">Military Benefits For Veterans Day</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Marc Mitchell Uwm - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Marc Mitchell Uwm",
+  "datePublished": "2021-02-13",
+  "image": "https://i.ytimg.com/vi/9uUI6KCPvAU/maxresdefault.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=marc+mitchell+uwm",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Marc Mitchell Uwm</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Marc Mitchell PhD. Arch Urban Planning 273. See the complete profile on LinkedIn and discover Marcs connections and jobs at similar companies. <br>				
+			</p>
+										<a class="badge badge-danger" href="/army-green-dodge-durango.html">army green dodge durango</a>
+											<a class="badge badge-success" href="/army-enlisted-pay-chart-2018.html">army enlisted pay chart 2018</a>
+											<a class="badge badge-primary" href="/army-dot-com.html">army dot com</a>
+											<a class="badge badge-warning" href="/army-foia-status.html">army foia status</a>
+											<a class="badge badge-danger" href="/army-enlisted-pay-chart-2019.html">army enlisted pay chart 2019</a>
+											<a class="badge badge-danger" href="/army-help-hotline.html">army help hotline</a>
+											<a class="badge badge-danger" href="/army-dpw-hawaii.html">army dpw hawaii</a>
+											<a class="badge badge-danger" href="/army-hr-credentialing.html">army hr credentialing</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to pay a visit to the right blog.  Our website provides you with hints for viewing the maximum quality video and picture content, hunt and find more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, particularly Youtube, so we recommend this movie that you see.  It is also possible to bring about supporting this website by sharing videos and images that you like on this blog on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this site.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/profile_images/938985170971095040/1M-vsWqC.jpg" data-lightbox="roadtrip" data-title="Coach Marc Mitchell Marcmitchell04 Twitter">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/profile_images/938985170971095040/1M-vsWqC.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqSN43ZrXFXzCVtASaoUQ_EA-xsnBqEAM7MQ';" alt="Coach Marc Mitchell Marcmitchell04 Twitter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coach Marc Mitchell Marcmitchell04 Twitter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/6a/2d/9f6a2d909c2fde9e63367296f3981b98.jpg" data-lightbox="roadtrip" data-title="Goldmann S And Woolworth Dept Stores 10th And Mitchell St Milwaukee Wi 1970 S And Gimbels On The Corner Of 1 Milwaukee Milwaukee City Milwaukee Wisconsin">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/6a/2d/9f6a2d909c2fde9e63367296f3981b98.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo5yKsK4wRKInChTvccmeFcl82Mh3pfcZSLQ';" alt="Goldmann S And Woolworth Dept Stores 10th And Mitchell St Milwaukee Wi 1970 S And Gimbels On The Corner Of 1 Milwaukee Milwaukee City Milwaukee Wisconsin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Goldmann S And Woolworth Dept Stores 10th And Mitchell St Milwaukee Wi 1970 S And Gimbels On The Corner Of 1 Milwaukee Milwaukee City Milwaukee Wisconsin</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/d9/d3/f7d9d31e0e144f76eab2dbe0805efcb9.jpg" data-lightbox="roadtrip" data-title="Pin On Brutalism Iii">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/d9/d3/f7d9d31e0e144f76eab2dbe0805efcb9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRft5gyRAw0NSoZnmdDR1DiZT8Hdny4o_Gg0Q';" alt="Pin On Brutalism Iii">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Brutalism Iii</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/fc/0e/11fc0e1632de372d5dbc81eb1281fe19.jpg" data-lightbox="roadtrip" data-title="Vintage Postcard Milwaukee Wisconsin Schlitz Brewing Company Factory Beer Advertising Beer Prints Postcard Beer Advertising">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/fc/0e/11fc0e1632de372d5dbc81eb1281fe19.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJwcVukR2FXHRXDj1vlipmYCF5QVMNiEcczA';" alt="Vintage Postcard Milwaukee Wisconsin Schlitz Brewing Company Factory Beer Advertising Beer Prints Postcard Beer Advertising">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vintage Postcard Milwaukee Wisconsin Schlitz Brewing Company Factory Beer Advertising Beer Prints Postcard Beer Advertising</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3-prod.crainsdetroit.com/s3fs-public/styles/800x600/public/NEWS_160419994_AR_-1_SRLXMFELWRGM.jpg" data-lightbox="roadtrip" data-title="Lorient Capital Thinks Local With New 250 Million Investment Pool">
+											<img class="card-img v-image ads-img " src="https://s3-prod.crainsdetroit.com/s3fs-public/styles/800x600/public/NEWS_160419994_AR_-1_SRLXMFELWRGM.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPWd8diXGfT9t6lAkFQXC2eOj1eNROGfeo0w';" alt="Lorient Capital Thinks Local With New 250 Million Investment Pool">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lorient Capital Thinks Local With New 250 Million Investment Pool</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/dd/02/fcdd023e72463f0ec224fe142048589e.jpg" data-lightbox="roadtrip" data-title="Barless Bear Den Washington Park Milwaukee Wi Washington Park Carlsbad Caverns National Park Milwaukee">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/dd/02/fcdd023e72463f0ec224fe142048589e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFrbNxUrmpKr_EEtR99ewpJDs7RarGUd855A';" alt="Barless Bear Den Washington Park Milwaukee Wi Washington Park Carlsbad Caverns National Park Milwaukee">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Barless Bear Den Washington Park Milwaukee Wi Washington Park Carlsbad Caverns National Park Milwaukee</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/7a/28/ab/7a28ab4b5935e26acd49a07186619327.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFrbNxUrmpKr_EEtR99ewpJDs7RarGUd855A';" alt="Barless Bear Den Washington Park Milwaukee Wi Washington Park Carlsbad Caverns National Park Milwaukee">
+										<div class="card-body">
+						<h3 class="h5"><b>Marc has 1 job listed on their profile.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Marc mitchell uwm</strong>. 
+								
+																	View Marc Milsters profile on LinkedIn the worlds largest professional community. 
+																	View Marc Mitchells profile on LinkedIn the worlds largest professional community. 
+																	The former Milwaukee Custer head coach and Milwaukee King assistant is the new boys basketball coach at Wauwatosa West. 
+																	Milwaukee King hired Marc Mitchell as its new boys basketball coach. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Marc has 2 jobs listed on their profile. 
+																	Those shoes belong to the Pan thers departed tri-captains from last fcfc Were going to play exactly the same way. 
+																	Versity of Wisconsin-Milwaukee mens basketball team charges into the 1993-94 season with some big shoes to fill. 
+																	Arch Urban Planning 493. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Adjunct Professor Architecture 414 229-3075. 
+																	UWMs Jordan Johnson has recorded double-digit assists eight times already this season two better than the previous school record of six set by Marc Mitchell in 1992-93. 
+																	The Notebook - Marc Mitchell is actually the only other UWM player to collect a Division I triple-double having done it twice during the 1992-93 season Kaylon Williams is the first Panther to have 10 or more assists in a game since Cyrus Caldwell had 11 against Fairleigh Dickinson in 1997 this was the second time in four games UWM has had two players with 20 or more points as Anthony. 
+																	Marcus is the Unit of Activity Manager for the NIHR Exeter Clinical Research Facility and oversees technical standards for the RILD Building and associated laboratories and clinical areas. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Point guard Marc Mitchell and forwards Craig. 
+																	Arch Urban Planning 389. 
+																	View the profiles of people named Mark Mitchell. 
+																	In an off-season filled with high-profile coaching changes at the high school level the last domino fell Friday. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The University of WisconsinMilwaukee UWMilwaukee UWM or Milwaukee is a public urban research university in Milwaukee Wisconsin. 
+																	-Steve Antrim UWM Mens Basketball Coacn h season. 
+																	He provides management mentorship and training of staff involved in the technical aspects of clinical medical research. 
+																	See the complete profile on LinkedIn and discover Marcs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Fitzhugh Scott Distinguished Professor in Practice Architecture 414 229-4014. 
+																	Fellowship University Health Network PhD Toronto MSc Victoria BScBPHE Queens Supervising Graduate. 
+																	Marc Mitchell 1984 - Present36 years Music Composing Producing services Electronic to Orchestral music 51 production HD Podcast Production Management Music for Movie Media Game Radio. 
+																	The Epsilon Phi chapter of Phi Sigma Kappa here at the University of Wisconsin Milwaukee is a lifelong brotherhood dedicated to the betterment of the individual the university community and our world. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Associate Professor Architecture 414 229-3815. 
+																	View Marc Mitchell emails profile on LinkedIn the worlds largest professional community. 
+																	Mitchell was the Acting Assistant Secretary of Defense for Special Operations and Low-Intensity Conflict of the United States Department of Defense. 
+																	In an off-season filled with high-profile coaching changes at the high school level the last domino fell Friday. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Join Facebook to connect with Mark Mitchell and others you may know. 
+																	It is the largest university in the Milwaukee metropolitan area and a member of the University of Wisconsin SystemIt is also one of the two doctoral degree-granting public universities and the second largest university in Wisconsin. 
+																	We have found 77 people in the UK with the name Marc Mitchell. 
+																	Click here to find personal data about Marc Mitchell including phone numbers addresses directorships electoral roll information related property prices and other useful information. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	AD Marc Mitchells next chapter in coaching takes him to the suburbs. 
+																	Facebook gives people the power to. 
+																	See the complete profile on LinkedIn and discover Marcs. 
+																	Online Teaching and Learning Support. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Well go back to where everybody is going to handle the ball. 
+																	Marc has 3 jobs listed on their profile. 
+																	Milwaukee King hired Marc Mitchell as its new boys basketball coach. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.foxtv.com/static.fox6now.com/www.fox6now.com/content/uploads/2020/07/724/407/db1f77be-king.jpg?ve=1&amp;tl=1" data-lightbox="roadtrip" data-title="Beyond The Game Basketball At King H S Is Father Son Affair">
+											<img class="card-img v-image ads-img " src="https://images.foxtv.com/static.fox6now.com/www.fox6now.com/content/uploads/2020/07/724/407/db1f77be-king.jpg?ve=1&amp;tl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKJRbrDiclT-FraQYWMMD458yz_IX5Tns7qA';" alt="Beyond The Game Basketball At King H S Is Father Son Affair">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Beyond The Game Basketball At King H S Is Father Son Affair</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/9uUI6KCPvAU/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Marc Mitchell Is A Milwaukee Hoops Legend Throwback College Mixtape Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/9uUI6KCPvAU/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Lbqcq6JyRe0WnN4Vkm1x2jd92SBTr3BP7w';" alt="Marc Mitchell Is A Milwaukee Hoops Legend Throwback College Mixtape Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marc Mitchell Is A Milwaukee Hoops Legend Throwback College Mixtape Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/28/ab/7a28ab4b5935e26acd49a07186619327.jpg" data-lightbox="roadtrip" data-title="1900 1901 Lhasa Potala Palace From Southwest Tibet From The Collections Of The American Geographical Society Library Lhasa Tibet Nepal Travel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/28/ab/7a28ab4b5935e26acd49a07186619327.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKtUVHxuv6hnnWvidOrpBNGpcE1aMeCTdt7g';" alt="1900 1901 Lhasa Potala Palace From Southwest Tibet From The Collections Of The American Geographical Society Library Lhasa Tibet Nepal Travel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1900 1901 Lhasa Potala Palace From Southwest Tibet From The Collections Of The American Geographical Society Library Lhasa Tibet Nepal Travel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5c/0e/d9/5c0ed951e5ef7488354edd9e340bc35c.jpg" data-lightbox="roadtrip" data-title="The Old Modjeska Movie House On Milwaukee S South Side Mitchell St Discover Wisconsin Milwaukee City Milwaukee Wisconsin">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5c/0e/d9/5c0ed951e5ef7488354edd9e340bc35c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfMX1OjnaCWonwOg0WyLDQTXjWrl3EcXRdEA';" alt="The Old Modjeska Movie House On Milwaukee S South Side Mitchell St Discover Wisconsin Milwaukee City Milwaukee Wisconsin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Old Modjeska Movie House On Milwaukee S South Side Mitchell St Discover Wisconsin Milwaukee City Milwaukee Wisconsin</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://uwm.edu/math/wp-content/uploads/sites/112/2019/06/ls-mathematical-sciences-default-people-2.jpg" data-lightbox="roadtrip" data-title="Uwm People Archive Mathematical Sciences">
+											<img class="card-img v-image ads-img " src="https://uwm.edu/math/wp-content/uploads/sites/112/2019/06/ls-mathematical-sciences-default-people-2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnSLXfQOdG0QM8LC0XRaUfYqh2rQ6w3RAj0w';" alt="Uwm People Archive Mathematical Sciences">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uwm People Archive Mathematical Sciences</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/dd/56/5ddd564287535dcf7da1d3130126d112.jpg" data-lightbox="roadtrip" data-title="Jasmine Alcaide Adli Kullanicinin Architecture Models Renderings Panosundaki Pin Mimari">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/dd/56/5ddd564287535dcf7da1d3130126d112.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJnUmW99dVyx0X2t1_5HAtlhgKFfgD7TKQfw';" alt="Jasmine Alcaide Adli Kullanicinin Architecture Models Renderings Panosundaki Pin Mimari">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jasmine Alcaide Adli Kullanicinin Architecture Models Renderings Panosundaki Pin Mimari</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-exp1.licdn.com/dms/image/C5603AQEYJpn-2TJoCw/profile-displayphoto-shrink_200_200/0?e=1611187200&amp;v=beta&amp;t=WGYz_j_XOgdLxJdGDmoli9W6xtbSfpkZcueXxcFtC_A" data-lightbox="roadtrip" data-title="Tom Mitchell Ba Honors U S Department Of State Benjamin Gilman International Scholar Alumni And Ambassador U S Department Of State Linkedin">
+											<img class="card-img v-image ads-img " src="https://media-exp1.licdn.com/dms/image/C5603AQEYJpn-2TJoCw/profile-displayphoto-shrink_200_200/0?e=1611187200&amp;v=beta&amp;t=WGYz_j_XOgdLxJdGDmoli9W6xtbSfpkZcueXxcFtC_A" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNRVqY_X4Kakbh5ASfMKg_5dW8IWAyIlKQuw';" alt="Tom Mitchell Ba Honors U S Department Of State Benjamin Gilman International Scholar Alumni And Ambassador U S Department Of State Linkedin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tom Mitchell Ba Honors U S Department Of State Benjamin Gilman International Scholar Alumni And Ambassador U S Department Of State Linkedin</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mkepanthers.com/images/2020/12/29/IMG_0793.JPG" data-lightbox="roadtrip" data-title="Panthers Resume Play With Pair Of Games At Robert Morris Milwaukee Athletics">
+											<img class="card-img v-image ads-img " src="https://mkepanthers.com/images/2020/12/29/IMG_0793.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-VF0M2s2NojzXVuPFzXGwhrI_ZhUpIDKV3A';" alt="Panthers Resume Play With Pair Of Games At Robert Morris Milwaukee Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Panthers Resume Play With Pair Of Games At Robert Morris Milwaukee Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/4a/5c/cd4a5cd603519cb3d3ab71d12511488f.jpg" data-lightbox="roadtrip" data-title="Elizabeth Allison Walker Lake Ii 2012 Watercolor On Paper 41 X 60 Art Bdg Landscape Atmos American Painting Representational Art Landscape Paintings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/4a/5c/cd4a5cd603519cb3d3ab71d12511488f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY3sjPorZl1uReQOpdTlsq6ZOZQzzxiV5dqQ';" alt="Elizabeth Allison Walker Lake Ii 2012 Watercolor On Paper 41 X 60 Art Bdg Landscape Atmos American Painting Representational Art Landscape Paintings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Elizabeth Allison Walker Lake Ii 2012 Watercolor On Paper 41 X 60 Art Bdg Landscape Atmos American Painting Representational Art Landscape Paintings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/e1/2c/fde12cac965bf916a76607c1cb4bfa2a.jpg" data-lightbox="roadtrip" data-title="Pin On Photos I Didn T Take">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/e1/2c/fde12cac965bf916a76607c1cb4bfa2a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYSpPiLk26qZcjJgigLI9eZXBvlp9u6RjO3A';" alt="Pin On Photos I Didn T Take">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Photos I Didn T Take</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wisconsinwatch.org/wp-content/uploads/2020/08/mitchell_news_class_03-771x514.jpg" data-lightbox="roadtrip" data-title="Disinformation Voter Suppression In Wisconsin Urge Skepticism">
+											<img class="card-img v-image ads-img " src="https://www.wisconsinwatch.org/wp-content/uploads/2020/08/mitchell_news_class_03-771x514.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBVpoN2E4P-z8i5eTXJa8lMhouYtOsqK8ZVw';" alt="Disinformation Voter Suppression In Wisconsin Urge Skepticism">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Disinformation Voter Suppression In Wisconsin Urge Skepticism</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/a9/17/dba91787bb0e648b8b7875324edf4f67.jpg" data-lightbox="roadtrip" data-title="Form Ula Dimension Laboratory Concept Architecture Architecture Model Architecture">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/a9/17/dba91787bb0e648b8b7875324edf4f67.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFeWKz5DK2SnmBlumzxgR1Y6-7vOILtVAg6Q';" alt="Form Ula Dimension Laboratory Concept Architecture Architecture Model Architecture">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Form Ula Dimension Laboratory Concept Architecture Architecture Model Architecture</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.shoptjc.com/wp-content/uploads/2019/10/71895482_10157580054024320_4188804444701327360_n.png" data-lightbox="roadtrip" data-title="September 2019 Couple Of The Month Catarina And Mitchell The Jewelry Center">
+											<img class="card-img v-image ads-img " src="https://www.shoptjc.com/wp-content/uploads/2019/10/71895482_10157580054024320_4188804444701327360_n.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIbemX_3r8hDAg6e6u6AY_La-2E-1rfUg0XA';" alt="September 2019 Couple Of The Month Catarina And Mitchell The Jewelry Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">September 2019 Couple Of The Month Catarina And Mitchell The Jewelry Center</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/wechat-versi-lama.html">Wechat Versi Lama</a></li>
+													<li class="list-group-item"><a href="/wechat-register-account.html">Wechat Register Account</a></li>
+													<li class="list-group-item"><a href="/what-district-is-37-military-hospital.html">What District Is 37 Military Hospital</a></li>
+													<li class="list-group-item"><a href="/what-are-the-military-travel-restrictions.html">What Are The Military Travel Restrictions</a></li>
+													<li class="list-group-item"><a href="/wechat-susah-login.html">Wechat Susah Login</a></li>
+													<li class="list-group-item"><a href="/what-agencies-are-in-the-department-of-veterans-affairs.html">What Agencies Are In The Department Of Veterans Affairs</a></li>
+													<li class="list-group-item"><a href="/wechat.html">Wechat</a></li>
+													<li class="list-group-item"><a href="/wechat-versi-terbaru.html">Wechat Versi Terbaru</a></li>
+													<li class="list-group-item"><a href="/what-are-the-5-military-services.html">What Are The 5 Military Services</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-veterans-have.html">What Benefits Do Veterans Have</a></li>
+													<li class="list-group-item"><a href="/wechat-your-account-has-been-blocked-because-unusual-registration.html">Wechat Your Account Has Been Blocked Because Unusual Registration</a></li>
+													<li class="list-group-item"><a href="/west-virginia-archives-death-records.html">West Virginia Archives Death Records</a></li>
+													<li class="list-group-item"><a href="/what-are-the-departments-of-the-military.html">What Are The Departments Of The Military</a></li>
+													<li class="list-group-item"><a href="/what-are-the-3-types-of-army-counseling.html">What Are The 3 Types Of Army Counseling</a></li>
+													<li class="list-group-item"><a href="/what-are-the-5-branches-of-us-military.html">What Are The 5 Branches Of Us Military</a></li>
+													<li class="list-group-item"><a href="/what-agencies-are-in-homeland-security.html">What Agencies Are In Homeland Security</a></li>
+													<li class="list-group-item"><a href="/what-are-the-16-branches-of-the-us-army.html">What Are The 16 Branches Of The Us Army</a></li>
+													<li class="list-group-item"><a href="/what-agencies-are-in-the-dod.html">What Agencies Are In The Dod</a></li>
+													<li class="list-group-item"><a href="/what-are-the-7-hr-functions.html">What Are The 7 Hr Functions</a></li>
+													<li class="list-group-item"><a href="/what-are-indian-dog-soldiers.html">What Are Indian Dog Soldiers</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

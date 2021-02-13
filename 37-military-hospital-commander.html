@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>37 Military Hospital Commander - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "37 Military Hospital Commander",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/61/3b/07/613b07b8bf1e0d7fdc6e4aeee5e7d4a4.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=37+military+hospital+commander",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>37 Military Hospital Commander</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Comrades of our dear and lovely community I salute all of you for the good job that you have been doing over the years even though some of us are bringing the name of our noble profession into disrepute in various ways. C United Television Subscribe to ou. Military hospitals established at hutted army camps. <br>				
+			</p>
+										<a class="badge badge-danger" href="/texas-military-department-leadership.html">texas military department leadership</a>
+											<a class="badge badge-secondary" href="/the-shoe-dept-military-discount.html">the shoe dept military discount</a>
+											<a class="badge badge-dark" href="/the-department-of-military-affairs.html">the department of military affairs</a>
+											<a class="badge badge-success" href="/texas-military-department-twitter.html">texas military department twitter</a>
+											<a class="badge badge-light" href="/the-sipri-military-expenditure-database.html">the sipri military expenditure database</a>
+											<a class="badge badge-primary" href="/texas-military-department-ein.html">texas military department ein</a>
+											<a class="badge badge-info" href="/the-military-department-in-sultanate-was-called.html">the military department in sultanate was called</a>
+											<a class="badge badge-danger" href="/the-department-of-military-veterans.html">the department of military veterans</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you have come to visit the right site.  Our website provides you with hints for seeing the highest quality video and picture content, search and find more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, especially Youtube, so we recommend this video that you view.  You can also bring about supporting this site by sharing videos and images that you enjoy on this site on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this site.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/1d/37/bf1d37b44624fddad08baaae51778e58.jpg" data-lightbox="roadtrip" data-title="Commander Col Robert S Cornes Ireland Army Community Hospital July 2015 Community Hospital Us Army Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/1d/37/bf1d37b44624fddad08baaae51778e58.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHbOad11ejPRE36Q0kxvLUJ7C4gPntPhSNPg';" alt="Commander Col Robert S Cornes Ireland Army Community Hospital July 2015 Community Hospital Us Army Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Commander Col Robert S Cornes Ireland Army Community Hospital July 2015 Community Hospital Us Army Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/1d/aa/101daa9da14f37e5fdd703ed7d6c9cb4.jpg" data-lightbox="roadtrip" data-title="Maj Elizabeth Vinson The Head Nurse Of The Primary Care Clinics At Fox Army Health Center And The Commander Of The Warrior T Military Nurses Army Nurse Nurse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/1d/aa/101daa9da14f37e5fdd703ed7d6c9cb4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnzc6NHtHqzmOqvVLJ-_sLBXlrcjR6fhDtWA';" alt="Maj Elizabeth Vinson The Head Nurse Of The Primary Care Clinics At Fox Army Health Center And The Commander Of The Warrior T Military Nurses Army Nurse Nurse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Maj Elizabeth Vinson The Head Nurse Of The Primary Care Clinics At Fox Army Health Center And The Commander Of The Warrior T Military Nurses Army Nurse Nurse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/37/dd/f537ddad8d6220d71816ed5cc12cb8f6.jpg" data-lightbox="roadtrip" data-title="American Military Officer Quality Uniform The Republic Of China Special Suits Commander Photography Theme Perform Spy Outfit Performance Wear Kids Winter Coats">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/37/dd/f537ddad8d6220d71816ed5cc12cb8f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT--vX5ThcLJH_Lyb96hgGUvBmqPXdsSxsmaQ';" alt="American Military Officer Quality Uniform The Republic Of China Special Suits Commander Photography Theme Perform Spy Outfit Performance Wear Kids Winter Coats">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">American Military Officer Quality Uniform The Republic Of China Special Suits Commander Photography Theme Perform Spy Outfit Performance Wear Kids Winter Coats</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/48/37/8648374cf7e86494c553f27a6a12bc76.jpg" data-lightbox="roadtrip" data-title="Nurse Lt Bernie Gonda 1968 Army Vietnam 27th Surgical Hospital Chu Lai Air Base Vietnam War Vietnam War Photos Military Nurses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/48/37/8648374cf7e86494c553f27a6a12bc76.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-BcAkg-Y2mMLbtJd5OT_KWhY_Vqq9oREGVQ';" alt="Nurse Lt Bernie Gonda 1968 Army Vietnam 27th Surgical Hospital Chu Lai Air Base Vietnam War Vietnam War Photos Military Nurses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nurse Lt Bernie Gonda 1968 Army Vietnam 27th Surgical Hospital Chu Lai Air Base Vietnam War Vietnam War Photos Military Nurses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/6a/37/b16a37294057fa2c60628c0b0ce583b6.jpg" data-lightbox="roadtrip" data-title="Col Matthew Mattner Commander Fort Drum Meddac July 17 2013 August 12 2015 One Team Fort Drum Leader">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/6a/37/b16a37294057fa2c60628c0b0ce583b6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMMhsJvDtOpxlH_a0WqqEMTgGASotpufi5kg';" alt="Col Matthew Mattner Commander Fort Drum Meddac July 17 2013 August 12 2015 One Team Fort Drum Leader">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Col Matthew Mattner Commander Fort Drum Meddac July 17 2013 August 12 2015 One Team Fort Drum Leader</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/3b/07/613b07b8bf1e0d7fdc6e4aeee5e7d4a4.jpg" data-lightbox="roadtrip" data-title="Lance Cprl Kylie Watson Of The Royal Army Medical Corps Who Stands 5 1 In Her Army Boots Is 1 Of 4 Woman In History Military Cross Women In History Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/3b/07/613b07b8bf1e0d7fdc6e4aeee5e7d4a4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUj8mKSmy1fUzouvonirGfElZFVd6SVQaWmQ';" alt="Lance Cprl Kylie Watson Of The Royal Army Medical Corps Who Stands 5 1 In Her Army Boots Is 1 Of 4 Woman In History Military Cross Women In History Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lance Cprl Kylie Watson Of The Royal Army Medical Corps Who Stands 5 1 In Her Army Boots Is 1 Of 4 Woman In History Military Cross Women In History Military</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/73/58/36/7358363d0a5bbf998da0c570942b107a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUj8mKSmy1fUzouvonirGfElZFVd6SVQaWmQ';" alt="Lance Cprl Kylie Watson Of The Royal Army Medical Corps Who Stands 5 1 In Her Army Boots Is 1 Of 4 Woman In History Military Cross Women In History Military">
+										<div class="card-body">
+						<h3 class="h5"><b>The 37 Military Hospital in Accra has decried the lack of personal protective equipment PPEs for its staff during the coronavirus pandemic.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>37 military hospital commander</strong>. 
+								
+																	Large numbers of public and private buildings often large houses were turned over for use as small hospitals most of which operated as annexes to nearby larger. 
+																	It is the largest military hospital in the Republic of Ghana after the Korle-Bu Teaching Hospital. 
+																	Authorities at the Ghana Armed Forces GAF have announced that immediate investigations into allegations of negligence levelled against some staff of the 37 Military Hospital have begun. 
+																	The name of the hospital is mostly used to refer to the community in which it resides. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 37 Military Hospital is a specialist hospital located in Accra on the main road between Kotoka International Airport and central Accra. 
+																	Land either on existing army bases or acquired nearby for the purpose was converted into major hospitals. 
+																	Part 1 Comrades of our dear and lovely community I salute all of you for the good job that you have been doing over the years even though some of us are bringing the name of our noble profession into disrepute in various ways. 
+																	The 37 Military Hospital Accra has seen a change in leadership after its Commander Brigadier General Brig Gen Michael Akwasi Yeboah-Agyapong rtd retired after serving in the Ghana Armed Forces GAF for 32 years 6 months and 6 days making it a total of 36 years 5 months and 13 days in government service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The hospital is also known for the story of the. 
+																	Brig-Gen Agyapong upon his retirement served in various capacities in the Ghana Armed Forces GAF for 36 years and was succeeded by Colonel Nii Adjali Obodai as the new Commander of the hospital. 
+																	By that time telephone calls had been made to the Commander 37 Military Hospital the CDS and the Defence Minister. 
+																	The 37 Military Hospital is a specialist hospital located in Accra on the main road between Kotoka International Airport and central Accra. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In his remarks the Commander of the 37 Military Hospital Brig Gen Nii Adjah Obodai during the launch stressed that about 70 of breast cancer diagnosed in Ghana were in advanced stages due to late reporting by patients at health facilities especially. 
+																	CDS AND COMMANDER 37 MILITARY HOSPITAL STAND ACCUSED. 
+																	The confused bodyguards managed to open the vehicle to enable the doctor have access to the patient in. 
+																	By Commander MA LARBI Directorate of Public Relations GHQ. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The name 37 was because it was the 37th military hospital to be built in the British colony of West Africa. 
+																	A pull-out ceremony was yesterday held for outgoing Brigadier General Michael Akwasi Yeboah Agyapong Commander of the 37 Military Hospitals in Accra. 
+																	The Commander of the 37 Military Hospital in Accra Brigadier General Michael Akwasi Yeboah Agyapong has appealed to stakeholders and other corporate bodies to support the hospital to construct an. 
+																	UTVNews UTVGhana DespiteMediaPLEASE NOTE. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I want to. 
+																	Addressing staff of the hospital Brigadier. 
+																	The Commanding Officer of the 37 Military Hospital Brigadier General Michael Akwasi Yeboah Agyapong was yesterday pulled out of office after 32 years of service to the Ghana Armed Forces. 
+																	It is the largest military hospital in the Republic of Ghana after the Korle-Bu Teaching Hospital. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Receiving the items on behalf of the hospital the Commander of the 37 Military Hospital Brigadier General Nii Adjah Obodai expressed profound gratitude to GOIL for the gesture done the hospital. 
+																	The Commander rushed to the vehicle on receiving the call without excusing himself from the officers doctors and members of staff with whom he was enjoying. 
+																	Why could they not confide in the medical officer that it was our late Commander-in-Chief and President of the Republic of Ghana whose facilities and installations included the 37 Military Hospital. 
+																	The Commander was at his coffee break and was therefore very close to the location of President Mills in the vehicle. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	May the Almighty God bless all the service personnel and civilian employees who have been very nationalistic patriotic and diligent in the performance of their duties and. 
+																	The 1 Signal Regiment of the Ghana Armed Forces GAF together with the former Commandant of the Military Academy and Training School MATS Maj Gen Amadu Kaadu Abdulai Rtd have presented two bundles of Blankets and Pajamas to the 37 military hospital on Thursday January 16 2020 at the forecourt of the hospitals headquarters in Accra. 
+																	The Commander of the hospital Brigadier General Dr Nii Adjah Obodai made the revelation when Tiger Force Group a debt management company donated some PPEs to support the hospitals coronavirus fight. 
+																	By the time the medical officer got to the vehicle it had automatically locked itself. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Unauthorized upload of this video unto any YouTube channel is prohibited. 
+																	Red Cross St Johns Ambulance auxiliary and private hospitals. 
+																	Speaking at the inauguration of the nine-member Military Hospital Advisory Board and seven-member 37 Military Hospital Nursing Midwifery Training College NMTC Board of Governors Air Marshal Samson-Oje stated that he was mindful of the challenges facing the healthcare service delivery in the Ghana Armed Forces Medical Service and the importance of addressing the challenges. 
+																	May the Almighty God bless all the service personnel and civilian employees who have been very nationalistic. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	He emphasised that in Ghana about 30 of breast cancer cases occur in women less than 35 years as compared to cases in the western countries. 
+																	A group of seven organizations led by Gulf Energy Limited and Care World Global have in recent days donated several medical equipment and assorted disinfectants to the 37 Military Hospital and the Ghana Armed Forces GAF COVID-19 Treatment Centre situated at the EL Wak Sports Stadium in Accra. 
+																	The Commanding Officer of the 37 Military Hospital Brigadier General Michael Akwasi Yeboah Agyapong was yesterday pulled out of office after 32 years of service to the Ghana Armed Forces. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/7a/d4/017ad4b2033d1f208de8c29538c82e04.jpg" data-lightbox="roadtrip" data-title="Officers In Pakistan Army Married To Female Military Officesr And Serving Pakistan In Best Ways Pakistan Army Pakistan Armed Forces Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/7a/d4/017ad4b2033d1f208de8c29538c82e04.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVIDxhBXxgwhJhYi04TYfAgIBROV9j3QS-8g';" alt="Officers In Pakistan Army Married To Female Military Officesr And Serving Pakistan In Best Ways Pakistan Army Pakistan Armed Forces Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Officers In Pakistan Army Married To Female Military Officesr And Serving Pakistan In Best Ways Pakistan Army Pakistan Armed Forces Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/3d/c6/373dc6409abc5ca910fde93de238aab0.jpg" data-lightbox="roadtrip" data-title="Tehran Ip The Islamic Revolution Guards Corps Irgc Navy Commander Admiral Alireza Tangsiri Said That The Forces Systems And Equipm Iran Defender Borders">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/3d/c6/373dc6409abc5ca910fde93de238aab0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXDWfFMMox6APXz8Xhwdhu_Bu0Z6kaWBLpyA';" alt="Tehran Ip The Islamic Revolution Guards Corps Irgc Navy Commander Admiral Alireza Tangsiri Said That The Forces Systems And Equipm Iran Defender Borders">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tehran Ip The Islamic Revolution Guards Corps Irgc Navy Commander Admiral Alireza Tangsiri Said That The Forces Systems And Equipm Iran Defender Borders</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/a6/37/b3a637c100312936b013900da51e11d8.jpg" data-lightbox="roadtrip" data-title="Pin On History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/a6/37/b3a637c100312936b013900da51e11d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhUkgCEWeqZqZXTZ_Z3sD1xYd-C1gezx3TYA';" alt="Pin On History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/ca/e5/39cae55912f43952acbf4516c8a1c615.png" data-lightbox="roadtrip" data-title="Wing Commander Francis Victor Beamish Right The Station Commander Of North Weald Essex Standing With Squad Battle Of Britain Fighter Pilot Royal Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/ca/e5/39cae55912f43952acbf4516c8a1c615.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTU_14xbb_QwB4fyaggPD1UDwyLJgMpz-v5g';" alt="Wing Commander Francis Victor Beamish Right The Station Commander Of North Weald Essex Standing With Squad Battle Of Britain Fighter Pilot Royal Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wing Commander Francis Victor Beamish Right The Station Commander Of North Weald Essex Standing With Squad Battle Of Britain Fighter Pilot Royal Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/87/49/64874987e90df540d8fd465f81fd1d63.jpg" data-lightbox="roadtrip" data-title="Pin By Sue Harden On Military Heroes Navy Seals Naval Special Warfare Command Navy Seal Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/87/49/64874987e90df540d8fd465f81fd1d63.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjTkZvLljI2PAqfSf-dgdApB6JBUaIrfLuxw';" alt="Pin By Sue Harden On Military Heroes Navy Seals Naval Special Warfare Command Navy Seal Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sue Harden On Military Heroes Navy Seals Naval Special Warfare Command Navy Seal Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/50/37/81/503781bb8483cfed83a217a0b1e2eaec.jpg" data-lightbox="roadtrip" data-title="Polish Female Soldiers Female Soldier Military Women Warrior Woman">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/50/37/81/503781bb8483cfed83a217a0b1e2eaec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEvHKuTQ1-01K9A79XoTBxMq0VL5UUfY3tg';" alt="Polish Female Soldiers Female Soldier Military Women Warrior Woman">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Polish Female Soldiers Female Soldier Military Women Warrior Woman</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/58/36/7358363d0a5bbf998da0c570942b107a.jpg" data-lightbox="roadtrip" data-title="Pin On Everything">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/58/36/7358363d0a5bbf998da0c570942b107a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfClIT7TODGK1TUOibWgsNTBWdofx7E0u9VA';" alt="Pin On Everything">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Everything</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/cf/37/cecf371d2c1360686fb941fb909e7bf7.jpg" data-lightbox="roadtrip" data-title="U S Rok Joint Chiefs Chairmen Meet At Pentagon Youtube Military Pentagon">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/cf/37/cecf371d2c1360686fb941fb909e7bf7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQNidd_zHRVLC1hemxujw5VF6PvsjRZt-AhQ';" alt="U S Rok Joint Chiefs Chairmen Meet At Pentagon Youtube Military Pentagon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Rok Joint Chiefs Chairmen Meet At Pentagon Youtube Military Pentagon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/66/22/22/662222dfac87dbc3ee4b28624051a622.jpg" data-lightbox="roadtrip" data-title="1980 S Military Uniforms Ricerca Google">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/66/22/22/662222dfac87dbc3ee4b28624051a622.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs6EACWqVFyncPjtMYU-KPG7RqthPBTOTWyQ';" alt="1980 S Military Uniforms Ricerca Google">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1980 S Military Uniforms Ricerca Google</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/2d/06/9d/2d069da3e4128536e107ae5eee3cc0df--tactical-medic-special-ops.jpg" data-lightbox="roadtrip" data-title="Pararescueman Army Medic Tactical Medic Special Forces Gear">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/2d/06/9d/2d069da3e4128536e107ae5eee3cc0df--tactical-medic-special-ops.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwRKbpltTB-BbdSzRONPJJGuGBzgv6gQX1Aw';" alt="Pararescueman Army Medic Tactical Medic Special Forces Gear">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pararescueman Army Medic Tactical Medic Special Forces Gear</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/b0/f5/8fb0f5ab03f76790223d3fc105f95075.jpg" data-lightbox="roadtrip" data-title="Us Mistakenly Struck Kunduz Hospital Gen Says John Campbell Abc News News Online">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/b0/f5/8fb0f5ab03f76790223d3fc105f95075.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1O-MrYQVOxZ80kKeezJLSd6UmzAAHVN1JDQ';" alt="Us Mistakenly Struck Kunduz Hospital Gen Says John Campbell Abc News News Online">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Mistakenly Struck Kunduz Hospital Gen Says John Campbell Abc News News Online</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/57/df/ea57dfab4a2c0555889dcba617a2b94d.jpg" data-lightbox="roadtrip" data-title="Idf Israel Defense Forces Women Military Girl Military Women Female Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/57/df/ea57dfab4a2c0555889dcba617a2b94d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH3ve3UzzlQ2CC8P-8CEPFVHoMfh1xqhsOaA';" alt="Idf Israel Defense Forces Women Military Girl Military Women Female Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Idf Israel Defense Forces Women Military Girl Military Women Female Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/85/af/ea85afab07aa3a4c7258bbd99399ef2e.jpg" data-lightbox="roadtrip" data-title="Pin On Wtf Facts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/85/af/ea85afab07aa3a4c7258bbd99399ef2e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0PipUn5l1sKGGMsP4eFscDAp7NYDvQd1M6g';" alt="Pin On Wtf Facts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Wtf Facts</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-labrador-dog.html">Army Labrador Dog</a></li>
+													<li class="list-group-item"><a href="/army-ke-dog.html">Army Ke Dog</a></li>
+													<li class="list-group-item"><a href="/army-killing-dogs.html">Army Killing Dogs</a></li>
+													<li class="list-group-item"><a href="/army-human-resources-officer-resume.html">Army Human Resources Officer Resume</a></li>
+													<li class="list-group-item"><a href="/army-hrc-help-desk.html">Army Hrc Help Desk</a></li>
+													<li class="list-group-item"><a href="/army-hrc-website.html">Army Hrc Website</a></li>
+													<li class="list-group-item"><a href="/army-human-resources-warrant-officer.html">Army Human Resources Warrant Officer</a></li>
+													<li class="list-group-item"><a href="/army-indian-dog.html">Army Indian Dog</a></li>
+													<li class="list-group-item"><a href="/army-lesson-plan-outline.html">Army Lesson Plan Outline</a></li>
+													<li class="list-group-item"><a href="/army-jrotc-female-hair-regulations.html">Army Jrotc Female Hair Regulations</a></li>
+													<li class="list-group-item"><a href="/army-hrc-website-down.html">Army Hrc Website Down</a></li>
+													<li class="list-group-item"><a href="/army-hrc-hotline.html">Army Hrc Hotline</a></li>
+													<li class="list-group-item"><a href="/army-human-resources-command-aim.html">Army Human Resources Command Aim</a></li>
+													<li class="list-group-item"><a href="/army-husband-wife-status.html">Army Husband Wife Status</a></li>
+													<li class="list-group-item"><a href="/army-hrc-apps.html">Army Hrc Apps</a></li>
+													<li class="list-group-item"><a href="/army-human-resource-command-fort-knox-ky.html">Army Human Resource Command Fort Knox Ky</a></li>
+													<li class="list-group-item"><a href="/army-military-human-resource-records-management.html">Army Military Human Resource Records Management</a></li>
+													<li class="list-group-item"><a href="/army-hr-training.html">Army Hr Training</a></li>
+													<li class="list-group-item"><a href="/army-hrcapps.html">Army Hrcapps</a></li>
+													<li class="list-group-item"><a href="/army-human-resource-number.html">Army Human Resource Number</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

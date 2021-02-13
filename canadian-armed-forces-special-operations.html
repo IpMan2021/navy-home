@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Canadian Armed Forces Special Operations - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Canadian Armed Forces Special Operations",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/6b/c4/97/6bc49799951a35166272e18f54b39051.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=canadian+armed+forces+special+operations",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Canadian Armed Forces Special Operations</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Regiment doperations speciales du Canada ROSC is an elite unit of the Canadian Armed Forces. It is responsible for all special forces operations that are capable of responding to terrorism and threats to Canadians and Canadian interests around the world. Discover how the Canadian Armed Forces conducts and supports military operations. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/national-defence-and-the-canadian-armed-forces.html">national defence and the canadian armed forces</a>
+											<a class="badge badge-success" href="/national-defense-budget-estimates-for-fy-2021.html">national defense budget estimates for fy 2021</a>
+											<a class="badge badge-secondary" href="/national-archives-veterans-oral-history.html">national archives veterans oral history</a>
+											<a class="badge badge-warning" href="/national-archives-military-records-search.html">national archives military records search</a>
+											<a class="badge badge-primary" href="/mycarrier.html">mycarrier</a>
+											<a class="badge badge-dark" href="/national-archives-va-medical-records.html">national archives va medical records</a>
+											<a class="badge badge-warning" href="/navy-military-retirement-pay-calculator.html">navy military retirement pay calculator</a>
+											<a class="badge badge-danger" href="/national-defence-university-department.html">national defence university department</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you've come to pay a visit to the ideal site.  Our website provides you with hints for viewing the highest quality video and picture content, hunt and locate more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this video that you see.  You can also bring about supporting this site by sharing videos and images that you like on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this website.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/c1/48/dec14813967537139b3ec052b1a3e525.jpg" data-lightbox="roadtrip" data-title="1st Sfod D Militaryarmament Raiders With United States Canadian Armed Forces Canadian Army Canadian Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/c1/48/dec14813967537139b3ec052b1a3e525.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWHhPr7mL-_sPcBWxklOJX6oiRHby7_qb8jw';" alt="1st Sfod D Militaryarmament Raiders With United States Canadian Armed Forces Canadian Army Canadian Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1st Sfod D Militaryarmament Raiders With United States Canadian Armed Forces Canadian Army Canadian Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/99/d1/aa99d1067b46f4e308c00426d28bd347.jpg" data-lightbox="roadtrip" data-title="Canadian Special Forces World Military Special Forces Military Special Forces Military Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/99/d1/aa99d1067b46f4e308c00426d28bd347.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNAY59e7DO1QMo2FZXcV1aTtpKGkbImVk-4g';" alt="Canadian Special Forces World Military Special Forces Military Special Forces Military Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Canadian Special Forces World Military Special Forces Military Special Forces Military Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/c3/e4/cbc3e41c20261bdba8de64749f37a8ec.jpg" data-lightbox="roadtrip" data-title="Newer Members Of Csor Canadian Special Operations Regiment Take Part In A Live Fire Culminating Drill Canadian Forces Canadian Armed Forces Canadian Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/c3/e4/cbc3e41c20261bdba8de64749f37a8ec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfKknnev31Zw2IO7tS7p0fZV2Ip1a_bhLNsQ';" alt="Newer Members Of Csor Canadian Special Operations Regiment Take Part In A Live Fire Culminating Drill Canadian Forces Canadian Armed Forces Canadian Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Newer Members Of Csor Canadian Special Operations Regiment Take Part In A Live Fire Culminating Drill Canadian Forces Canadian Armed Forces Canadian Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/7d/27/a67d27f07d36e6d7b3e9d89e2ebab8ac.jpg" data-lightbox="roadtrip" data-title="Special Operations Canadian Soldiers Canadian Armed Forces Canadian Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/7d/27/a67d27f07d36e6d7b3e9d89e2ebab8ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHqTIaZVGME6mGEW8-93HvVOPnPPPCnUyCA';" alt="Special Operations Canadian Soldiers Canadian Armed Forces Canadian Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Special Operations Canadian Soldiers Canadian Armed Forces Canadian Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/39/1c/c1391cb45737cf87c4db86ffb929a29f.jpg" data-lightbox="roadtrip" data-title="Canadian Special Operations Regiment In Iraq Canadian Forces Canadian Armed Forces Canadian Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/39/1c/c1391cb45737cf87c4db86ffb929a29f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTxIhzFvBQ6AQGTBHYuWS4I7BOw8yGfs5pMQ';" alt="Canadian Special Operations Regiment In Iraq Canadian Forces Canadian Armed Forces Canadian Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Canadian Special Operations Regiment In Iraq Canadian Forces Canadian Armed Forces Canadian Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/0d/c2/c60dc2f6eac57aae18ad61d3b000492c.jpg" data-lightbox="roadtrip" data-title="Canadian Special Operations Regiment Canadian Armed Forces Canadian Military Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/0d/c2/c60dc2f6eac57aae18ad61d3b000492c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6TZ0UUfpzLzr2F28rsPfU1XMC54qC5Wb_tg';" alt="Canadian Special Operations Regiment Canadian Armed Forces Canadian Military Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Canadian Special Operations Regiment Canadian Armed Forces Canadian Military Military</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/a8/bd/fc/a8bdfc776a4117d8fa6eb6db41186e4b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6TZ0UUfpzLzr2F28rsPfU1XMC54qC5Wb_tg';" alt="Canadian Special Operations Regiment Canadian Armed Forces Canadian Military Military">
+										<div class="card-body">
+						<h3 class="h5"><b>Where Canadas military is deployed previous deployments types of operations and how they are conducted.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Canadian armed forces special operations</strong>. 
+								
+																	Operations that the Canadian Armed Forces have participated in around the world since 1945. 
+																	Get to know your military and its role at home and around the world. 
+																	How we conduct operations. 
+																	The Canadian Special Operations Regiment CSOR is a Special Forces unit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	General Jonathan Vance speaks to CTV National News Lisa LaFlamme. 
+																	Types of operations that we conduct such as emergency response and counter-insurgency. 
+																	The Canadian Special Operations Forces Command CANSOFCOM is a formation capable of operating independently but primarily focused on generating special operations forces SOF elements to support CJOC. 
+																	Serving as the centrepiece of Canadas special operations JTF2 is primarily tasked with counter-terrorism. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Canadas special operations forces are generated and commanded by CANSOFCOM which is a high-readiness organization ready to deploy special operations forces on short notice to protect Canada and Canadians from threats to the national interest at home and abroad. 
+																	COMFOSCAN is a command of the Canadian Forces. 
+																	Special Operations Forces Explore the operational tasks and units of Canadas Special Operations Forces who protect Canada and Canadians from threats to the national interest at home and abroad. 
+																	Joint Task Force 2 JTF2. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Joint Task Force 2 JTF2 French. 
+																	Force operationnelle interarmees 2 FOI 2 is a special operations force of the Canadian Armed Forces. 
+																	The NGFV is expected to be able to transport four operators and up to. 
+																	It forms part of the Canadian Special Operations Forces Command. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	CANSOFCOM is capable of contributing to Canadian Armed Forces CAF operations across the full spectrum of conflict from peace. 
+																	53143 likes 1456 talking about this. 
+																	The Canadian Department of National Defence are finally forging ahead with their Next Generation Fighting Vehicle NGFV program to replace their fleet of ageing HMMWVs High Mobility Multipurpose Wheeled Vehicles which in some cases have served CANSOFCOM Canadian Special Operations Forces Command units since the 1990s. 
+																	It has the capability and responsiveness to operate in harsh environments throughout the range of conflict. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Official information on operations. 
+																	Canadian Armed Forces October 21 2016 The Canadian Special Operations Training Centre delivered the Special Operations Common Environmental Training SOCET package to approximately 300 personnel this fall. 
+																	The Canadian Special Operations Regiment CSOR. 
+																	Operation Nanook To assert Canadas sovereignty over its northernmost regions to enhance the Canadian Armed Forces ability to operate in Arctic conditions to improve coordination in whole-of-government operations and to maintain interoperability with mission partners for maximum effectiveness in response to safety and security issues in the North. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The safety of Canadian Armed Forces CAF personnel is paramount and reasonable measures are taken to mitigate the risk to our deployed personnel and preserve our operational capabilities and readiness for current and future deployed operations. 
+																	Military training exercises that keep the Canadian Armed Forces ready for future operations. 
+																	Commandement des Forces doperations speciales du Canada. 
+																	CANSOFCOM provides the Government of Canada with agile highly special operations forces. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Canadian Special Operations Forces Command The Canadian Special Operations Forces Command CANSOFCOM is a high-readiness organization able to deploy special operations forces on very short notice to protect Canadians from threats at home and abroad. 
+																	Deployed Canadian Armed Forces task forces are conducting local liaison with host nation and allied. 
+																	The Canadian Special Operations Regiment CSOR was established on 01 February 2006 although officially stood-up on 13 August 2006 Day 2006. 
+																	Canadian Armed Forces Operations Ottawa Ontario. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The CSOR is headquartered at Canadian Forces Base Petawawa Ottawa Ontario and is commanded by a Lieutenant Colonel OF-4. 
+																	Canadian Special Operations Regiment CSOR Learn about this regiment that combines mobility and firepower with a host of special operations skills required to conduct and enable special operations at home and abroad. 
+																	Promotional video for Canadas Special Forces Command. 
+																	Operation IMPACT Support to multinational mission in Iraq. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The planning and command structure involved in military operations. 
+																	It is the most skilled unit of the Canadian Special Operations Forces Command and is currently based at Dwyer Hill near Ottawa Ontario. 
+																	Canadian Special Operations Forces Command CANSOFCOM French language. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/4c/62/134c621a44da1c294c30bdf57f732225.jpg" data-lightbox="roadtrip" data-title="A Member Of The Canadian Special Operations Regiment Fires A Mounted C6 Gpmg During Training In New Mexico Canadian Army Canadian Armed Forces Canadian Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/4c/62/134c621a44da1c294c30bdf57f732225.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXsA9D3YOIbC1tCjVFHq1nmHRds-tT42888g';" alt="A Member Of The Canadian Special Operations Regiment Fires A Mounted C6 Gpmg During Training In New Mexico Canadian Army Canadian Armed Forces Canadian Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Member Of The Canadian Special Operations Regiment Fires A Mounted C6 Gpmg During Training In New Mexico Canadian Army Canadian Armed Forces Canadian Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/43/14/d54314c925aeebbc94afe7921b4471c7.jpg" data-lightbox="roadtrip" data-title="Canadian Special Operations Regiment Csor Dnd Caf Special Forces Canadian Armed Forces Canadian Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/43/14/d54314c925aeebbc94afe7921b4471c7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc908eXNAiWaDOlQxhblI05-ZASZdieC5J6A';" alt="Canadian Special Operations Regiment Csor Dnd Caf Special Forces Canadian Armed Forces Canadian Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Canadian Special Operations Regiment Csor Dnd Caf Special Forces Canadian Armed Forces Canadian Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/dd/37/acdd37fc96f6f1c01f8de69be4c00d27.jpg" data-lightbox="roadtrip" data-title="Soldiers From The Canadian Special Operations Regiment And Green Berets From 7th Special Forces Group Airborne Wai Special Forces Military Special Operations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/dd/37/acdd37fc96f6f1c01f8de69be4c00d27.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWncDoZZ4Fp74tPm0YdCtoGwe27wJHHBBeaQ';" alt="Soldiers From The Canadian Special Operations Regiment And Green Berets From 7th Special Forces Group Airborne Wai Special Forces Military Special Operations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soldiers From The Canadian Special Operations Regiment And Green Berets From 7th Special Forces Group Airborne Wai Special Forces Military Special Operations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/c4/97/6bc49799951a35166272e18f54b39051.jpg" data-lightbox="roadtrip" data-title="Airsoftgrenades Special Operations Forces Special Operations Canadian Armed Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/c4/97/6bc49799951a35166272e18f54b39051.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHf6S4_5iEvYLWS5kHg1ItqMa842DIKSzA0A';" alt="Airsoftgrenades Special Operations Forces Special Operations Canadian Armed Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Airsoftgrenades Special Operations Forces Special Operations Canadian Armed Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/9c/b0/359cb06b2c04992d6295631cbfb73dfd.jpg" data-lightbox="roadtrip" data-title="Canadian Special Forces Operator In Syria 1086x719 R Militaryporn Canadian Military Special Forces Canadian Armed Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/9c/b0/359cb06b2c04992d6295631cbfb73dfd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTty0fXNrbgRjPki4BwcqhqSuqmj5Ebijqkvw';" alt="Canadian Special Forces Operator In Syria 1086x719 R Militaryporn Canadian Military Special Forces Canadian Armed Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Canadian Special Forces Operator In Syria 1086x719 R Militaryporn Canadian Military Special Forces Canadian Armed Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/dc/d3/2bdcd3a2a5fd7a85e81af1ed6e2cb462.jpg" data-lightbox="roadtrip" data-title="Canada S Special Operations Regiment Csor Canadian Forces Canadian Armed Forces Canadian Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/dc/d3/2bdcd3a2a5fd7a85e81af1ed6e2cb462.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1ieuo-UYQug94PFCWrA4MjHOfT-cXIZ8vKA';" alt="Canada S Special Operations Regiment Csor Canadian Forces Canadian Armed Forces Canadian Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Canada S Special Operations Regiment Csor Canadian Forces Canadian Armed Forces Canadian Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/6b/f7/7e6bf7fd058f142f14394d245b99d396.jpg" data-lightbox="roadtrip" data-title="Canadian Special Operations Regiment Csor Canadian Forces Canadian Soldiers Canadian Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/6b/f7/7e6bf7fd058f142f14394d245b99d396.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBVpF-UQ6D05i_J5AQp6j_ZTSia7ItEd55Lg';" alt="Canadian Special Operations Regiment Csor Canadian Forces Canadian Soldiers Canadian Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Canadian Special Operations Regiment Csor Canadian Forces Canadian Soldiers Canadian Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/95/c8/a3/95c8a377bf9ccedb444a8fde5e47a3c1.jpg" data-lightbox="roadtrip" data-title="200 Likes 1 Comments Canada Strong Canada Strong On Instagram Operators From The Canadian Special O Canadian Forces Canadian Armed Forces Canadian Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/95/c8/a3/95c8a377bf9ccedb444a8fde5e47a3c1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcvBz-PIq7wfYRR0Ql0sIOU3vm-FfjRiLoRw';" alt="200 Likes 1 Comments Canada Strong Canada Strong On Instagram Operators From The Canadian Special O Canadian Forces Canadian Armed Forces Canadian Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">200 Likes 1 Comments Canada Strong Canada Strong On Instagram Operators From The Canadian Special O Canadian Forces Canadian Armed Forces Canadian Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/80/0d/b4800dd4121259ca7d9078ac3b86f8a8.jpg" data-lightbox="roadtrip" data-title="Canadian Special Operations Regiment Snipers Plan An Entry Strategy Into The Sniper Stalk Event Field June 9 20 Canadian Armed Forces Military Special Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/80/0d/b4800dd4121259ca7d9078ac3b86f8a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQad8sVflq2Be2vkbZ9pKe1vsEYevnx6lWQQ';" alt="Canadian Special Operations Regiment Snipers Plan An Entry Strategy Into The Sniper Stalk Event Field June 9 20 Canadian Armed Forces Military Special Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Canadian Special Operations Regiment Snipers Plan An Entry Strategy Into The Sniper Stalk Event Field June 9 20 Canadian Armed Forces Military Special Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/27/38/33/2738338f3cfdf84e09092f25c68a6720.jpg" data-lightbox="roadtrip" data-title="Members Of The Canadian Special Operations Regiment While Training In New Mexico 2015 960 X 950 R Canadian Military Canadian Armed Forces Canadian Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/27/38/33/2738338f3cfdf84e09092f25c68a6720.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn8lscwc_t9PuqZOupPCxPvAdAeKITj3ySxw';" alt="Members Of The Canadian Special Operations Regiment While Training In New Mexico 2015 960 X 950 R Canadian Military Canadian Armed Forces Canadian Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Members Of The Canadian Special Operations Regiment While Training In New Mexico 2015 960 X 950 R Canadian Military Canadian Armed Forces Canadian Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/10/72/e1107296aa00ae41389522ebfccaccb6.jpg" data-lightbox="roadtrip" data-title="Image Result For Canadian Special Operations Forces Command Canadian Armed Forces Canadian Army Royal Canadian Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/10/72/e1107296aa00ae41389522ebfccaccb6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4-KSDblKZkqBaRnBsZpX7KV8M9gYpgas7HA';" alt="Image Result For Canadian Special Operations Forces Command Canadian Armed Forces Canadian Army Royal Canadian Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Image Result For Canadian Special Operations Forces Command Canadian Armed Forces Canadian Army Royal Canadian Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/8b/c9/828bc96e92675e4de5b4fc30d5c01b6f.jpg" data-lightbox="roadtrip" data-title="Pin On Sof">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/8b/c9/828bc96e92675e4de5b4fc30d5c01b6f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhh1srkg-JBiqpGR8Afi2DN35S4P3F7Xq_Gw';" alt="Pin On Sof">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sof</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/bd/fc/a8bdfc776a4117d8fa6eb6db41186e4b.jpg" data-lightbox="roadtrip" data-title="This Iss My New Hottie I Never Met Such Amazing Man As Him Special Forces Canadian Armed Forces Canadian Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/bd/fc/a8bdfc776a4117d8fa6eb6db41186e4b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz1FUVDYYQx8wnuzJ2jojkio2XIVslHyMi0A';" alt="This Iss My New Hottie I Never Met Such Amazing Man As Him Special Forces Canadian Armed Forces Canadian Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Iss My New Hottie I Never Met Such Amazing Man As Him Special Forces Canadian Armed Forces Canadian Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/department-of-veterans-phone-number.html">Department Of Veterans Phone Number</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-services-sandusky-ohio.html">Department Of Veterans Services Sandusky Ohio</a></li>
+													<li class="list-group-item"><a href="/departments-of-the-us-military.html">Departments Of The Us Military</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-benefits-administration.html">Department Of Veterans Benefits Administration</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-services-near-me.html">Department Of Veterans Services Near Me</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-queensland.html">Department Of Veterans Affairs Queensland</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-queens-ny.html">Department Of Veterans Affairs Queens Ny</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-philadelphia-pa-fax-number.html">Department Of Veterans Affairs Philadelphia Pa Fax Number</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-services-marietta-ga.html">Department Of Veterans Services Marietta Ga</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-zanesville-ohio.html">Department Of Veterans Affairs Zanesville Ohio</a></li>
+													<li class="list-group-item"><a href="/departments-in-the-united-states-army.html">Departments In The United States Army</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-ebenefits.html">Department Of Veterans Ebenefits</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-quality-step-increase.html">Department Of Veterans Affairs Quality Step Increase</a></li>
+													<li class="list-group-item"><a href="/department-stores-with-military-discount.html">Department Stores With Military Discount</a></li>
+													<li class="list-group-item"><a href="/dept-military-affairs.html">Dept Military Affairs</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-urgent-care.html">Department Of Veterans Affairs Urgent Care</a></li>
+													<li class="list-group-item"><a href="/dept-of-corrections-va-jobs.html">Dept Of Corrections Va Jobs</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-org-chart.html">Department Of Veterans Affairs Org Chart</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-qld.html">Department Of Veterans Affairs Qld</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-philadelphia.html">Department Of Veterans Affairs Philadelphia</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

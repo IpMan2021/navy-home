@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Army Soldier Contract - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Army Soldier Contract",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/de/14/87/de148750e1bd35caac921e98cb590580.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+army+soldier+contract",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Army Soldier Contract</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Our values contract Armys cultural and ethical foundation is its values and the bonds of trust and respect between each and every person who joins in service to our nation. For first-time enlistments in the US. Army as an enlisted soldier you sign a legal document known as an enlistment contract. <br>				
+			</p>
+										<a class="badge badge-danger" href="/us-army-tanks-for-sale.html">us army tanks for sale</a>
+											<a class="badge badge-danger" href="/us-department-of-defense-dictionary.html">us department of defense dictionary</a>
+											<a class="badge badge-primary" href="/us-military-academy-department-of-history.html">us military academy department of history</a>
+											<a class="badge badge-secondary" href="/us-department-of-army-headquarters.html">us department of army headquarters</a>
+											<a class="badge badge-warning" href="/us-army-tanks-now.html">us army tanks now</a>
+											<a class="badge badge-warning" href="/us-army-uniform-hat-pins.html">us army uniform hat pins</a>
+											<a class="badge badge-primary" href="/us-department-of-defense-branches.html">us department of defense branches</a>
+											<a class="badge badge-success" href="/us-department-of-army-corps-of-engineers.html">us department of army corps of engineers</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you've come to visit the right site.  Our site provides you with suggestions for viewing the highest quality video and picture content, search and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, especially Youtube, so we recommend this movie for you to view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/33/22/8333221328ff3f5eb301b63b39527094.jpg" data-lightbox="roadtrip" data-title="Us Army Selects Lockheed For Communications And Transmission Systems Contract Http Www Army Technology Com News New Us Soldiers Soldier American Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/33/22/8333221328ff3f5eb301b63b39527094.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyMuPivD4pkZcl6oPjqakhifjFQsP3pdLg0A';" alt="Us Army Selects Lockheed For Communications And Transmission Systems Contract Http Www Army Technology Com News New Us Soldiers Soldier American Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Selects Lockheed For Communications And Transmission Systems Contract Http Www Army Technology Com News New Us Soldiers Soldier American Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/50/2d/18502ddb31c74caf838ca2bebe87ee49.jpg" data-lightbox="roadtrip" data-title="Revision Wins Contract To Supply U S Department Of Defense With 90 000 Advanced Combat Helmets Revision Combat Helmet Military Bag Revision Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/50/2d/18502ddb31c74caf838ca2bebe87ee49.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZx_SXiLfMVm3S1UHvQfm3kcDWf9-jCa0hbg';" alt="Revision Wins Contract To Supply U S Department Of Defense With 90 000 Advanced Combat Helmets Revision Combat Helmet Military Bag Revision Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Revision Wins Contract To Supply U S Department Of Defense With 90 000 Advanced Combat Helmets Revision Combat Helmet Military Bag Revision Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/8e/dc/0e8edcfc8128b0a29f12b9fd2b3c5981.jpg" data-lightbox="roadtrip" data-title="American Aor1 Seals And 3 Special Forces Camo 1 35 Lapd Swat Contract Military Diorama Special Forces Military Figures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/8e/dc/0e8edcfc8128b0a29f12b9fd2b3c5981.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi4eWqgmMW0Hyg_K_GLenPdok1ICrzXugu4g';" alt="American Aor1 Seals And 3 Special Forces Camo 1 35 Lapd Swat Contract Military Diorama Special Forces Military Figures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">American Aor1 Seals And 3 Special Forces Camo 1 35 Lapd Swat Contract Military Diorama Special Forces Military Figures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/0d/2d/770d2db572d935daa2c586a7ade622b7.jpg" data-lightbox="roadtrip" data-title="Sierra Nevada Corp Awarded 8 5m U S Army Contract For Tactical Automatic Landing System Components In 2020 Sierra Nevada Nevada Unmanned Aerial Vehicle">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/0d/2d/770d2db572d935daa2c586a7ade622b7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdi8-1QsPKggt_qkqUMuwPDqByV7bYkxsFUA';" alt="Sierra Nevada Corp Awarded 8 5m U S Army Contract For Tactical Automatic Landing System Components In 2020 Sierra Nevada Nevada Unmanned Aerial Vehicle">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sierra Nevada Corp Awarded 8 5m U S Army Contract For Tactical Automatic Landing System Components In 2020 Sierra Nevada Nevada Unmanned Aerial Vehicle</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/14/87/de148750e1bd35caac921e98cb590580.jpg" data-lightbox="roadtrip" data-title="U S Army Awards 17 Million Contract For M1 Abrams Tank Aluminum Road W Tanks Military Us Navy Aircraft Navy Aircraft Carrier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/14/87/de148750e1bd35caac921e98cb590580.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJB4K20aOstLHdw5fAIbPm8MOWYlbJPDHPDQ';" alt="U S Army Awards 17 Million Contract For M1 Abrams Tank Aluminum Road W Tanks Military Us Navy Aircraft Navy Aircraft Carrier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Awards 17 Million Contract For M1 Abrams Tank Aluminum Road W Tanks Military Us Navy Aircraft Navy Aircraft Carrier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/ad/a3/f9ada3d80a3233cd80d24c43b6f3cc43.png" data-lightbox="roadtrip" data-title="Sixteen Companies Chosen For 17 1b Defense Intelligence Contract">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/ad/a3/f9ada3d80a3233cd80d24c43b6f3cc43.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXqB0k5hh5QyHFanUVAKA7VPU0Ldokbf9YpA';" alt="Sixteen Companies Chosen For 17 1b Defense Intelligence Contract">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sixteen Companies Chosen For 17 1b Defense Intelligence Contract</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/28/6f/7b/286f7b747b5b1cc8a7467484e00d195d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXqB0k5hh5QyHFanUVAKA7VPU0Ldokbf9YpA';" alt="Sixteen Companies Chosen For 17 1b Defense Intelligence Contract">
+										<div class="card-body">
+						<h3 class="h5"><b>Military incur a minimum eight-year service.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us army soldier contract</strong>. 
+								
+																	FLIR announced it has received an additional 301 million contract from the United States US Army for sustainment efforts tied in part to the services Man Transportable Robotic System Increment II MTRS Inc. 
+																	Anyone entering the US military has an initial obligation of eight years. 
+																	Each team was then slated to deliver their respective bid samples to the service by late 2019 for soldier assessments testing and evaluation ahead of a final contract award. 
+																	The first one places you in the Delayed Enlistment Program DEP. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military contract for full-motion tracking systems last week. 
+																	CMTL shares are up 379 at 2453 on the last check Monday. 
+																	Serving in the military is a commitment for both the person reporting for duty and also for the military. 
+																	South Carolina-based FN America beat out a crowd of other vendors to land a whale of a military contract for new M4s. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you enlist on active duty youll actually sign two enlistment contracts. 
+																	The badge was approved on June 14 2019 and entered service in October 2019 as a way for soldiers in other military occupational specialties to certify. 
+																	All defense contractors maintain CAGE Commercial and Government Entity Codes and are. 
+																	This is the first production delivery order associated with the 215 million STORM 2 contract the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	CMTL announced today that during its second quarter of fiscal year 2021 its Santa Clara California-based subsidiary Comtech Xicom Technology Inc a world leader in high-power amplifiers was awarded a multi-million dollar contract to develop and manufacture 190W Q-band amplifiers for the. 
+																	L3Harris Technologies NYSELHX has received the first order on its multi-million dollar contract from the US. 
+																	The company was awarded a 119216309 firm-fixed-price contract for a mix of. 
+																	Comtech Awarded Multi-Million Dollar US Military Contract Comtech Telecommunications Corp. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Contract marriage was right in the subject line. 
+																	Body armor in all units is the Improved Outer Tactical Vest which is now being supplemented with the lightweight Modular Body Armor Vest and Soldier Plate Carrier System. 
+																	The Top 100 Contractors Report on the Federal Procurement Data System lists the top 100 defense contractors by sales to the United States Armed Forces and Department of Defense. 
+																	The Army Blue Service Cap is allowed for wear by any soldier ranked CPL or above at the discretion of the commander. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	II and Common Robotic System-Heavy CRS-H ground robot programs. 
+																	This is the contract that is used for military enlistments and re-enlistments. 
+																	The Department of Defense announces contracts valued at 7 million or more each business day at 5 pm. 
+																	The Expert Soldier Badge or ESB is a special skills badge of the United States Army. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Contracts valued at 75 million or more are announced each business day at 5 pm. 
+																	A standard military enlistment contract often requires four years of active duty and four years of inactive reserve service. 
+																	9 UPI -- The Defense Department announced it has awarded 600 million in contracts to several companies for testing of 5G communications technology at five US. 
+																	Military the contract includes minimum active duty andor inactive reserve duty obligations along with the particular job you will hold in the military also referred to as your Military Occupational Specialty or MOS. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How long are US Army Officer contracts. 
+																	Comtech was awarded a 104 million US. 
+																	All first-term enlistments in the US. 
+																	There is a contract a military enlistee will sign to serve a certain number of years but the military also guarantees you a paycheck living quarters food clothing medical and dental care and training. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When you join the US. 
+																	Of all the paperwork you signed during the process to join the military this is the most important document. 
+																	Looking for a contract marriage with someone seeking little or no money and a free place to live Rossen Reports producer Jovanna Billington was. 
+																	Army for the Small Tactical Optical Rifle-Mounted Micro Laser Rangefinder 2 STORM 2L3Harris will deliver more than 1100 combat-ready systems to the Army. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These core values form the bedrock of everything we do. 
+																	Commissioned officers generally have to serve three or four of those years on active duty depending on which service pr program commissioned them. 
+																	Similar in appearance to the Combat Action Badge the ESB would be awarded to soldiers who are neither infantry Special Forces nor combat medics. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/46/f1/3b/46f13bac031c0130b759437075f37d59--the-army-modeling.jpg" data-lightbox="roadtrip" data-title="I Turned Down A Modeling Contract To Join The Army Whisper App Confessions Whisper Confessions Whisper Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/46/f1/3b/46f13bac031c0130b759437075f37d59--the-army-modeling.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqeLIwnu4SQsIIWb0BCUxSbo2dQbUZvOSVZA';" alt="I Turned Down A Modeling Contract To Join The Army Whisper App Confessions Whisper Confessions Whisper Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Turned Down A Modeling Contract To Join The Army Whisper App Confessions Whisper Confessions Whisper Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/6f/7b/286f7b747b5b1cc8a7467484e00d195d.jpg" data-lightbox="roadtrip" data-title="Us Army Awards Jrtc Contract Extension To Cubic Http Www Army Technology Com News Newsus Army Awards Jrtc Contract Extension To Cubic 4 Us Army Army Contract">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/6f/7b/286f7b747b5b1cc8a7467484e00d195d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSme2zGu46LAV5KKxchegkBm_rZCAMA8b5C6g';" alt="Us Army Awards Jrtc Contract Extension To Cubic Http Www Army Technology Com News Newsus Army Awards Jrtc Contract Extension To Cubic 4 Us Army Army Contract">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Awards Jrtc Contract Extension To Cubic Http Www Army Technology Com News Newsus Army Awards Jrtc Contract Extension To Cubic 4 Us Army Army Contract</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/dc/82/84/dc82844ba155775ad17fc47b59b4a918.jpg" data-lightbox="roadtrip" data-title="Pin By Cvetomir Totev On Military In 2020 Military Forces Special Operations Command Military News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/dc/82/84/dc82844ba155775ad17fc47b59b4a918.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzGjjIfExbuDz2cj8akjsgRTWRHazEmeTCJQ';" alt="Pin By Cvetomir Totev On Military In 2020 Military Forces Special Operations Command Military News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Cvetomir Totev On Military In 2020 Military Forces Special Operations Command Military News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/1c/14/dc1c14a1f76bb8238683fb79a5a8b0ae.png" data-lightbox="roadtrip" data-title="Pin On Anti Tank Missile">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/1c/14/dc1c14a1f76bb8238683fb79a5a8b0ae.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9WETfJYX-pH6SjnGBelVPK2mUDqFH5syDQQ';" alt="Pin On Anti Tank Missile">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Anti Tank Missile</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/db/de/99/dbde999b3918c34b5bcf8ea10ff85c55.jpg" data-lightbox="roadtrip" data-title="Iron Man Suit Pitched To Socom By Firms Vying For Armor Contract Revision Military Special Forces Australian Defence Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/db/de/99/dbde999b3918c34b5bcf8ea10ff85c55.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRSX8ryoiPFZuaMvBUy_i9tnPVY_ZTmfpQCw';" alt="Iron Man Suit Pitched To Socom By Firms Vying For Armor Contract Revision Military Special Forces Australian Defence Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iron Man Suit Pitched To Socom By Firms Vying For Armor Contract Revision Military Special Forces Australian Defence Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/b2/c7/3ab2c73fd946754f6987d2583d10f97a.jpg" data-lightbox="roadtrip" data-title="U S Army Marine Corps Purchase Additional M1156 Guidance Kits Marine Corps Army Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/b2/c7/3ab2c73fd946754f6987d2583d10f97a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUcpjhEgRrqtqFUPpSbgwj1XsvkBJoOBLwTQ';" alt="U S Army Marine Corps Purchase Additional M1156 Guidance Kits Marine Corps Army Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Marine Corps Purchase Additional M1156 Guidance Kits Marine Corps Army Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/16/b9/e416b94d6acea92799c3ebd897a37602.jpg" data-lightbox="roadtrip" data-title="Pin On Defpost">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/16/b9/e416b94d6acea92799c3ebd897a37602.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpJ-sRPjjQIDDnQbW5o0BXlH2PdTXTA9MrFw';" alt="Pin On Defpost">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Defpost</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a0/b7/1b/a0b71b2668d803f3bab3ec5652438d77.jpg" data-lightbox="roadtrip" data-title="Lockheed Martin Sues Pentagon Over U S Marines Army Humvee Contract With Oshkosh Corporation Military Vehicles Army Vehicles Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a0/b7/1b/a0b71b2668d803f3bab3ec5652438d77.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF5LWTqi6OpyzrNXnUyIw5yYr8LLxGD9AmGQ';" alt="Lockheed Martin Sues Pentagon Over U S Marines Army Humvee Contract With Oshkosh Corporation Military Vehicles Army Vehicles Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lockheed Martin Sues Pentagon Over U S Marines Army Humvee Contract With Oshkosh Corporation Military Vehicles Army Vehicles Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/d8/1f/7fd81fdd257087f511b1bc1f1de238fe.jpg" data-lightbox="roadtrip" data-title="Flir Awarded Us Army Contract To Deliver Black Hornet Nano Drones">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/d8/1f/7fd81fdd257087f511b1bc1f1de238fe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhLfKCHAFtvaVFB_p6XB66uO4qSXVm_8Zlqg';" alt="Flir Awarded Us Army Contract To Deliver Black Hornet Nano Drones">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Flir Awarded Us Army Contract To Deliver Black Hornet Nano Drones</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f7/2b/1a/f72b1a6415c46d44fa39476e17cc9d60.jpg" data-lightbox="roadtrip" data-title="Breaking Us Army Awards Lasermaxdefense Contract For New Pistol Enhancer Us Army Army Pistol">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f7/2b/1a/f72b1a6415c46d44fa39476e17cc9d60.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzX668CtF05tvqCiiK51c_ggcYEAi5hDYhgw';" alt="Breaking Us Army Awards Lasermaxdefense Contract For New Pistol Enhancer Us Army Army Pistol">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Breaking Us Army Awards Lasermaxdefense Contract For New Pistol Enhancer Us Army Army Pistol</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2e/fe/aa/2efeaa5d3948546fde883460c1438fc9.jpg" data-lightbox="roadtrip" data-title="Us Army Dumb 155mm Rounds Get Smart Artillery Us Army Us Marine Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2e/fe/aa/2efeaa5d3948546fde883460c1438fc9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRW4MeRsSXjYbqejI5h-p2T48kDFHBrVPCoA';" alt="Us Army Dumb 155mm Rounds Get Smart Artillery Us Army Us Marine Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Dumb 155mm Rounds Get Smart Artillery Us Army Us Marine Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/e8/09/b6e8091a0b84c6f28394023e93a8bae4.jpg" data-lightbox="roadtrip" data-title="Thales French Defence Ministry Establish Joint Logistic Support Platform Drone Technology Army Us Army Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/e8/09/b6e8091a0b84c6f28394023e93a8bae4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4aTwueAotMfK6JQSbeUNcrH4JXbRTT6a6MA';" alt="Thales French Defence Ministry Establish Joint Logistic Support Platform Drone Technology Army Us Army Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thales French Defence Ministry Establish Joint Logistic Support Platform Drone Technology Army Us Army Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/07/b7/5d07b78397b846ab3ee36bbfb1eaa4da.jpg" data-lightbox="roadtrip" data-title="Nci Has Been Awarded A Contract To Support The Us Army S Peo Eis Rcas Projects Http Www Army Technology Com News News Afghan War Us Army Us Marine Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/07/b7/5d07b78397b846ab3ee36bbfb1eaa4da.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEdWrqAV8EhcEc4JPESXZMiMTpk29frbL5Cw';" alt="Nci Has Been Awarded A Contract To Support The Us Army S Peo Eis Rcas Projects Http Www Army Technology Com News News Afghan War Us Army Us Marine Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nci Has Been Awarded A Contract To Support The Us Army S Peo Eis Rcas Projects Http Www Army Technology Com News News Afghan War Us Army Us Marine Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/haridwar-air-force.html">Haridwar Air Force</a></li>
+													<li class="list-group-item"><a href="/free-therapy-for-veterans-near-me.html">Free Therapy For Veterans Near Me</a></li>
+													<li class="list-group-item"><a href="/georgia-civil-war-veteran-records.html">Georgia Civil War Veteran Records</a></li>
+													<li class="list-group-item"><a href="/gold-star-spouses-day-2020.html">Gold Star Spouses Day 2020</a></li>
+													<li class="list-group-item"><a href="/hard-boiled-egg-military-diet.html">Hard Boiled Egg Military Diet</a></li>
+													<li class="list-group-item"><a href="/good-military-haircut-las-vegas.html">Good Military Haircut Las Vegas</a></li>
+													<li class="list-group-item"><a href="/headquarters-air-force-staff-directory.html">Headquarters Air Force Staff Directory</a></li>
+													<li class="list-group-item"><a href="/hallmark-movie-army-dog.html">Hallmark Movie Army Dog</a></li>
+													<li class="list-group-item"><a href="/hard-rock-hotel-military-discount.html">Hard Rock Hotel Military Discount</a></li>
+													<li class="list-group-item"><a href="/free-ww2-veterans-records.html">Free Ww2 Veterans Records</a></li>
+													<li class="list-group-item"><a href="/fy-2021-dod-budget-request.html">Fy 2021 Dod Budget Request</a></li>
+													<li class="list-group-item"><a href="/grants-for-nonprofit-military-veteran-organizations.html">Grants For Nonprofit Military Veteran Organizations</a></li>
+													<li class="list-group-item"><a href="/google-show-me-army-download-for-free.html">Google Show Me Army Download For Free</a></li>
+													<li class="list-group-item"><a href="/get-military-discount-home-depot-online.html">Get Military Discount Home Depot Online</a></li>
+													<li class="list-group-item"><a href="/hari-army-nasional.html">Hari Army Nasional</a></li>
+													<li class="list-group-item"><a href="/greenwood-military-family-resource-center.html">Greenwood Military Family Resource Center</a></li>
+													<li class="list-group-item"><a href="/fy-2021-military-construction-budget.html">Fy 2021 Military Construction Budget</a></li>
+													<li class="list-group-item"><a href="/gs-civilian-leave-policy.html">Gs Civilian Leave Policy</a></li>
+													<li class="list-group-item"><a href="/gs-civilian-rank-equivalent.html">Gs Civilian Rank Equivalent</a></li>
+													<li class="list-group-item"><a href="/grants-for-spouse-of-disabled-veteran.html">Grants For Spouse Of Disabled Veteran</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

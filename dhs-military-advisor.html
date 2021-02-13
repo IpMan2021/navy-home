@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Dhs Military Advisor - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Dhs Military Advisor",
+  "datePublished": "2021-02-13",
+  "image": "rvHJZqGaVliRVM",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=dhs+military+advisor",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Dhs Military Advisor</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Department of Homeland Security receives a briefing on how the scenarios are planned during the US. In a meeting at the White House on Friday President Trump weighed appointing Sidney Powell who promoted conspiracy theories about rigged voting machines to investigate voter fraud. The United States Department of Homeland Security DHS is the US. <br>				
+			</p>
+										<a class="badge badge-light" href="/us-army-cid-foia.html">us army cid foia</a>
+											<a class="badge badge-light" href="/us-army-corporate-headquarters-address.html">us army corporate headquarters address</a>
+											<a class="badge badge-dark" href="/us-army-corp-of-engineers-texas.html">us army corp of engineers texas</a>
+											<a class="badge badge-secondary" href="/us-army-civilian-human-resource-agency.html">us army civilian human resource agency</a>
+											<a class="badge badge-success" href="/us-army-corp-of-engineers-parks.html">us army corp of engineers parks</a>
+											<a class="badge badge-success" href="/us-army-corps-of-engineers-erdc.html">us army corps of engineers erdc</a>
+											<a class="badge badge-dark" href="/us-army-corp-of-engineers-grenada-lake.html">us army corp of engineers grenada lake</a>
+											<a class="badge badge-secondary" href="/us-army-corp-of-engineers-careers.html">us army corp of engineers careers</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you've come to visit the right site.  Our site gives you hints for seeing the maximum quality video and picture content, hunt and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, especially Youtube, so we recommend this movie for you to see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/images/2013/08/06/307013/size0-full.jpg" data-lightbox="roadtrip" data-title="Homeland Security Military Advisor Visits Vibrant Response Article The United States Army">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/images/2013/08/06/307013/size0-full.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTML1g7Wi7HFr2Eu_kyNrVT_JLZC9DOtBMCy_Pp0r0jpNYF5MOLUAn35Y38bTWQM8dcfnQXww&amp;ec=45771803';" alt="Homeland Security Military Advisor Visits Vibrant Response Article The United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Homeland Security Military Advisor Visits Vibrant Response Article The United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.dhs.gov/sites/default/files/images/bio/RDML-June-E--Ryan.jpg" data-lightbox="roadtrip" data-title="June E Ryan Homeland Security">
+											<img class="card-img v-image ads-img " src="https://www.dhs.gov/sites/default/files/images/bio/RDML-June-E--Ryan.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwsXaTPDm4DndnJ96AV1sYD6hHfiBAlj7BnCOAhGPkcH4KQvAMym_ZTSJdA3OnU-ABdsDQwg&amp;ec=45771803';" alt="June E Ryan Homeland Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">June E Ryan Homeland Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2019/Jul/19/2002159297/-1/-1/0/190719-G-OY189-000.JPG" data-lightbox="roadtrip" data-title="Rear Admiral Brendan C Mcpherson United States Coast Guard Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2019/Jul/19/2002159297/-1/-1/0/190719-G-OY189-000.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmTp0AQOtUKGLyCa_ckziUVD_f5GtR6oGC9ZUAxIWYSkRMhsH_2TskykRF5a35TcKOZCUAzw&amp;ec=45771803';" alt="Rear Admiral Brendan C Mcpherson United States Coast Guard Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rear Admiral Brendan C Mcpherson United States Coast Guard Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hstoday.us/wp-content/uploads/2020/07/1000w_q95-2020-07-05T190210.507.jpg" data-lightbox="roadtrip" data-title="Coalition Task Force Iraq Transitions To Military Advisor Group Homeland Security Today">
+											<img class="card-img v-image ads-img " src="https://www.hstoday.us/wp-content/uploads/2020/07/1000w_q95-2020-07-05T190210.507.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBN99aqzZwVvm452HZCgOGllKlOvQ-S2cOsnRlCEvc8QdS7g3zxnONfYZmx8Ae9IGOlcsZug&amp;ec=45771803';" alt="Coalition Task Force Iraq Transitions To Military Advisor Group Homeland Security Today">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coalition Task Force Iraq Transitions To Military Advisor Group Homeland Security Today</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2013/May/10/2000020161/600/400/0/060721-F-ZZ000-003.JPG" data-lightbox="roadtrip" data-title="Dept Of Homeland Security Chief Of Staff Visits Norad And Usnorthcom U S Northern Command News Input">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2013/May/10/2000020161/600/400/0/060721-F-ZZ000-003.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY0tXSUUb29NJP1M8aNvhpfk4oJ4UUpkUFDoBmPtHos5T2PdwLLrDnuPRQGg3qXAdWGtl15Q&amp;ec=45771803';" alt="Dept Of Homeland Security Chief Of Staff Visits Norad And Usnorthcom U S Northern Command News Input">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dept Of Homeland Security Chief Of Staff Visits Norad And Usnorthcom U S Northern Command News Input</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ghs.guam.gov/sites/default/files/maj.-gen.-gu-esther-aguigui.jpg" data-lightbox="roadtrip" data-title="Management Ghs Ocd Government Of Guam">
+											<img class="card-img v-image ads-img " src="https://ghs.guam.gov/sites/default/files/maj.-gen.-gu-esther-aguigui.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReZYjiYraOSFws716djJ7HjfpfirrCOn0wQRB6MjPaRhCLUdsXXZz0uKtjVEGzEVYYEhphSA&amp;ec=45771803';" alt="Management Ghs Ocd Government Of Guam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Management Ghs Ocd Government Of Guam</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.hstoday.us/wp-content/uploads/2020/07/1000w_q95-2020-07-05T190210.507.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReZYjiYraOSFws716djJ7HjfpfirrCOn0wQRB6MjPaRhCLUdsXXZz0uKtjVEGzEVYYEhphSA&amp;ec=45771803';" alt="Management Ghs Ocd Government Of Guam">
+										<div class="card-body">
+						<h3 class="h5"><b>Bryan leads the research development innovation and testing and evaluation activities in support of DHS operational components and first responders across the nation.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Dhs military advisor</strong>. 
+								
+																	Federal executive department responsible for public security roughly comparable to the interior or home ministries of other countries. 
+																	Bryan made a presentation at the White House briefing. 
+																	Due to the recommendations implemented by Obama the Homeland Security Council and the National Security Council now have combined staff the National Security Staff NSS. 
+																	Coast Guard Rear Adm. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bryan was the President of ValueBridge Internationals Energy Group in Reston Virginia. 
+																	Skip to main content Skip to navigation Skip to navigation. 
+																	A former homeland security adviser for President George W. 
+																	It began operations in 2003 formed as a result of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Rear Admiral McPherson assumed the duties of the Military Advisor to the Secretary of Homeland Security in June 2019. 
+																	Prior to joining ST Mr. 
+																	June Ryan from left Vice Adm Charles Ray Vice Commandant Charles Michel Vice Adm. 
+																	DHS Military Advisors Past and Present WASHINGTON - Secretary of Homeland Security Jeh Johnson 3rd from left meets with Rear Adm. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military advisors or combat advisors advise on military matters. 
+																	Promoted to flag rank in 2017 Rear Admiral Jones previously served as Military Advisor to the Secretary of Homeland Security providing counsel to the Secretary regarding policies plans and other affairs between the Department of Homeland Security and the Department of Defense. 
+																	Her primary responsibility is to provide counsel to the Secretary in affairs concerning the Departments of Homeland Security and Defense. 
+																	Ryan military advisor to the Secretary US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some are soldiers sent to foreign countries to aid such countries with their military training organization and other various military tasks. 
+																	Her primary responsibility is to provide counsel and support to the Secretary in affairs relating to the coordination and execution of policy and operations between the Department of Homeland Security and the Department of Defense. 
+																	The Assistant to the President for Homeland Security and Counterterrorism commonly referred to as the Homeland Security Advisor and formerly the Deputy National Security Advisor for Homeland Security and Counterterrorism is a senior aide in the National Security Council based in the West Wing of the White House who serves as principle advisor to the President of the United States on. 
+																	William Bill Bryan is the head of the science and technology directorate at the Department of Homeland Security in the Trump administration. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Rear Admiral Joanna Nunan Rear Admiral Joanna Nunan assumed the duties of Military Advisor to the Secretary of Homeland Security in April 2015. 
+																	The Joint Chiefs of Staff consist of the primary military advisers to the Homeland Security Council as well as the National Security Council. 
+																	Bush on Thursday said President Bidens nominee for DHS secretary Alejandro Mayorkas should quickly be confirmed to his post amid the. 
+																	Rear Admiral Ryan assumed the duties as Military Advisor to the Secretary of Homeland Security in June 2013. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	She served as the Deputy Secretary of Homeland Security from 2009 through 2013 after having been confirmed by the US. 
+																	As the science and technology advisor to the DHS Secretary Mr. 
+																	Senate on April 3 2009. 
+																	Former Obama and Bush-era homeland security secretaries on Tuesday urged the Senate to swiftly confirm. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Job Description Duties and Requirements found the articles information and resources on this page helpful. 
+																	Former senior advisor to Trump Stephen Miller weighs in on Watters World EXCLUSIVE. 
+																	His primary responsibility is to provide counsel to the Secretary regarding policies plans and other affairs between the Department of Homeland Security and the Department of Defense. 
+																	Jane Holl Lute born 1956 is an American diplomat and security analyst currently serving as the UN special envoy on the Cyprus dispute. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The primary responsibility of the Military Advisor is to provide counsel and support to the Secretary and Deputy Secretary in affairs relating to policy procedures preparedness activities and operations between DHS and the Department of Defense DoD. 
+																	Joanna Nunan who are former and current DHS Military Advisors Nov. 
+																	Meta description for Lexus job view page. 
+																	Its stated missions involve anti-terrorism border security immigration and customs cyber security and disaster prevention and management. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Fred Midget and Rear Adm. 
+																	While similar in name the Department of Homeland Security is a distinct federal. 
+																	Students who searched for Security Advisor. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://securitydebrief.com/wp-content/uploads/2018/05/CoSFears-240x300.jpeg" data-lightbox="roadtrip" data-title="Doug Fears Named Homeland Security And Counterterrorism Advisor Security Debrief">
+											<img class="card-img v-image ads-img " src="http://securitydebrief.com/wp-content/uploads/2018/05/CoSFears-240x300.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdhn0rymIokBNbCAnhC1U0D5CHrcVEoL6EKLaFqBUWS6avOvED_hkgUjxSVVcEeMtDWhfDhg&amp;ec=45771803';" alt="Doug Fears Named Homeland Security And Counterterrorism Advisor Security Debrief">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Doug Fears Named Homeland Security And Counterterrorism Advisor Security Debrief</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2190175211024538" data-lightbox="roadtrip" data-title="The Homeland Security Advisor George Guam Homeland Security Office Of Civil Defense Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2190175211024538" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSJIARlSyq0EwQvWOuVEi-cBVnu-PznMiQC3WBHHypIpS8xXiRtjCRv-CrDJlPPe3tINhb1w&amp;ec=45771803';" alt="The Homeland Security Advisor George Guam Homeland Security Office Of Civil Defense Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Homeland Security Advisor George Guam Homeland Security Office Of Civil Defense Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-exp1.licdn.com/dms/image/C4D22AQGETtdYpTQCQQ/feedshare-shrink_800/0/1608862465304?e=1614816000&amp;v=beta&amp;t=NLWdC5k3FyYvuc2uIRgAJ20pCzFPj8iNGT1dA_-k3jE" data-lightbox="roadtrip" data-title="Steven Roth Special Assistant To The Military Advisor To The Secretary Of Homeland Security U S Department Of Homeland Security Linkedin">
+											<img class="card-img v-image ads-img " src="https://media-exp1.licdn.com/dms/image/C4D22AQGETtdYpTQCQQ/feedshare-shrink_800/0/1608862465304?e=1614816000&amp;v=beta&amp;t=NLWdC5k3FyYvuc2uIRgAJ20pCzFPj8iNGT1dA_-k3jE" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNXZTNpAcH6VIQWNpCmMRS3KCFgj9hp-V-1cz9-arYz0kPEECIktP4jlj9O6JeNceUqUFo0w&amp;ec=45771803';" alt="Steven Roth Special Assistant To The Military Advisor To The Secretary Of Homeland Security U S Department Of Homeland Security Linkedin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Steven Roth Special Assistant To The Military Advisor To The Secretary Of Homeland Security U S Department Of Homeland Security Linkedin</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="BQm2Qn6oUGuciM" data-lightbox="roadtrip" data-title="Https Www Urmc Rochester Edu Medialibraries Urmcmedia Flrtc Preparedness Response Tools Documents Kreyer Bio Pdf">
+											<img class="card-img v-image ads-img " src="BQm2Qn6oUGuciM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnh46-0aKuKA0OQJz30WWS3Bov2mx95lebHCa5hwMteS3QBpZp-zOAJnYZ3QTcrZV9kHVNvQ&amp;ec=45771803';" alt="Https Www Urmc Rochester Edu Medialibraries Urmcmedia Flrtc Preparedness Response Tools Documents Kreyer Bio Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Urmc Rochester Edu Medialibraries Urmcmedia Flrtc Preparedness Response Tools Documents Kreyer Bio Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.aclu.org/sites/default/files/styles/blog_main_wide_580x384/public/field_image/web16-prison-1160x768.jpg?itok=2emuURxN" data-lightbox="roadtrip" data-title="In Stunning Reversal Law Enforcement Military And Security Advisors Urge Homeland Security To Shift Away From Private Prisons American Civil Liberties Union">
+											<img class="card-img v-image ads-img " src="https://www.aclu.org/sites/default/files/styles/blog_main_wide_580x384/public/field_image/web16-prison-1160x768.jpg?itok=2emuURxN" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2W7jmdNCoRoAtUOqvrj1-5kRtuCsiBA86dTLoQFZRDTp0v0UXAy_8WR1YQ1_bDlvX6iLFsQ&amp;ec=45771803';" alt="In Stunning Reversal Law Enforcement Military And Security Advisors Urge Homeland Security To Shift Away From Private Prisons American Civil Liberties Union">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">In Stunning Reversal Law Enforcement Military And Security Advisors Urge Homeland Security To Shift Away From Private Prisons American Civil Liberties Union</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.justsecurity.org/wp-content/uploads/2020/07/GettyImages-1258761768-e1595854589616-560x370.jpg" data-lightbox="roadtrip" data-title="David Lapan Author At Just Security">
+											<img class="card-img v-image ads-img " src="https://www.justsecurity.org/wp-content/uploads/2020/07/GettyImages-1258761768-e1595854589616-560x370.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw9MQJGBiL4ffbcvKzwfSEc3EIfyWjucIgiSBIZ9Kw-tLg9hfAuyK-k4a62k2T6mEeJYqFkg&amp;ec=45771803';" alt="David Lapan Author At Just Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">David Lapan Author At Just Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Chad_Wolf_official_portrait_2017.jpg/1200px-Chad_Wolf_official_portrait_2017.jpg" data-lightbox="roadtrip" data-title="Chad Wolf Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Chad_Wolf_official_portrait_2017.jpg/1200px-Chad_Wolf_official_portrait_2017.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdc2ExhhZY5f9YLsn3G-oDV1HzVPSbzeLBFzwgRkblaXMUw6bOgD43Ed29R48zPfWorS5WJw&amp;ec=45771803';" alt="Chad Wolf Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chad Wolf Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images05.military.com/sites/default/files/styles/full/public/2017-12/tombossert1800.png.jpg?itok=5vku4jst" data-lightbox="roadtrip" data-title="Homeland Security Adviser Tom Bossert Resigns White House Says Military Com">
+											<img class="card-img v-image ads-img " src="https://images05.military.com/sites/default/files/styles/full/public/2017-12/tombossert1800.png.jpg?itok=5vku4jst" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJYDXtNvkN91-cvToqtUBX6lL2O-p3-idYLBsma1ubBu0rjJEP1OAomYQ3_rdPeEk0QOQUlw&amp;ec=45771803';" alt="Homeland Security Adviser Tom Bossert Resigns White House Says Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Homeland Security Adviser Tom Bossert Resigns White House Says Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.heritage.org/sites/default/files/styles/commentary_header_image_375_mobile_375x196/public/images/2020-11/GettyImages-1143764853.jpg?h=47c441df&amp;itok=ghbCP1ko" data-lightbox="roadtrip" data-title="On Elections Dhs Is An Advisor On Cybersecurity Not The Nation S Policeman Of Election Fraud The Heritage Foundation">
+											<img class="card-img v-image ads-img " src="https://www.heritage.org/sites/default/files/styles/commentary_header_image_375_mobile_375x196/public/images/2020-11/GettyImages-1143764853.jpg?h=47c441df&amp;itok=ghbCP1ko" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmtbkyqZPBCbiTJeoGdtvDzKoPoxoZCSkXbwV-Tsisl1t9Ds-OUUi1X0YEGC_pytAzFb_1TQ&amp;ec=45771803';" alt="On Elections Dhs Is An Advisor On Cybersecurity Not The Nation S Policeman Of Election Fraud The Heritage Foundation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">On Elections Dhs Is An Advisor On Cybersecurity Not The Nation S Policeman Of Election Fraud The Heritage Foundation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.msjdn.org/wp-content/plugins/wp-job-manager/assets/images/company.png" data-lightbox="roadtrip" data-title="Department Of Homeland Security Attorney Advisor Military Spouse Jd Network">
+											<img class="card-img v-image ads-img " src="https://www.msjdn.org/wp-content/plugins/wp-job-manager/assets/images/company.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd87SUCutkcDBg4njuuvZQjt5YKpXIixm0IlO5_aUmRAtADi54Sp3m43pVepEcx4g3i8ZkJA&amp;ec=45771803';" alt="Department Of Homeland Security Attorney Advisor Military Spouse Jd Network">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Department Of Homeland Security Attorney Advisor Military Spouse Jd Network</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2019/Jul/31/2002165355/825/780/0/190731-D-ZZ999-300.JPG" data-lightbox="roadtrip" data-title="David L Norquist U S Department Of Defense Biography">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2019/Jul/31/2002165355/825/780/0/190731-D-ZZ999-300.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCADtLJQHPebhUQsUG-7pn9nACzegU0-5o1wbyHk701RD_Vrl3XhNYv1Iulrvr5MUuTrEHPw&amp;ec=45771803';" alt="David L Norquist U S Department Of Defense Biography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">David L Norquist U S Department Of Defense Biography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="rvHJZqGaVliRVM" data-lightbox="roadtrip" data-title="Https Admin Govexec Com Media Featured Ross Ashley Kpmg Biography Pdf">
+											<img class="card-img v-image ads-img " src="rvHJZqGaVliRVM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGAdW8tLYjo8Zr5_kwLqa7OLNlae2VNWDrTBsvEpFvP4djPgXgMRgJIbjBizNBkY1CtaWmmA&amp;ec=45771803';" alt="Https Admin Govexec Com Media Featured Ross Ashley Kpmg Biography Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Admin Govexec Com Media Featured Ross Ashley Kpmg Biography Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/United_States_National_Command_Authority.svg/464px-United_States_National_Command_Authority.svg.png" data-lightbox="roadtrip" data-title="Organizational Structure Of The United States Department Of Defense Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/United_States_National_Command_Authority.svg/464px-United_States_National_Command_Authority.svg.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFuwvWiJ5UfC4S6Q0suUFLudeLWZOZL-7S0mR1LxAq1w2sYLdb_43JmGSDIa1ZL1WmBDFe_A&amp;ec=45771803';" alt="Organizational Structure Of The United States Department Of Defense Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Organizational Structure Of The United States Department Of Defense Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-retirement-cola-chart.html">Military Retirement Cola Chart</a></li>
+													<li class="list-group-item"><a href="/military-spouse-friendly-schools.html">Military Spouse Friendly Schools</a></li>
+													<li class="list-group-item"><a href="/military-spouse-career-programs.html">Military Spouse Career Programs</a></li>
+													<li class="list-group-item"><a href="/military-retirement-date-calculator.html">Military Retirement Date Calculator</a></li>
+													<li class="list-group-item"><a href="/military-retirement-time-calculator.html">Military Retirement Time Calculator</a></li>
+													<li class="list-group-item"><a href="/military-retirement-pay-calculator-dfas.html">Military Retirement Pay Calculator Dfas</a></li>
+													<li class="list-group-item"><a href="/military-retirement-formula-for-divorce.html">Military Retirement Formula For Divorce</a></li>
+													<li class="list-group-item"><a href="/military-retirement-pay-calculator-monthly.html">Military Retirement Pay Calculator Monthly</a></li>
+													<li class="list-group-item"><a href="/military-retirement-calculator-with-taxes.html">Military Retirement Calculator With Taxes</a></li>
+													<li class="list-group-item"><a href="/military-shirt-ladies.html">Military Shirt Ladies</a></li>
+													<li class="list-group-item"><a href="/military-retirement-pay-calculator-reserves.html">Military Retirement Pay Calculator Reserves</a></li>
+													<li class="list-group-item"><a href="/military-spouse-website.html">Military Spouse Website</a></li>
+													<li class="list-group-item"><a href="/military-spouse-of-the-year-2020.html">Military Spouse Of The Year 2020</a></li>
+													<li class="list-group-item"><a href="/military-spending-bill-2021.html">Military Spending Bill 2021</a></li>
+													<li class="list-group-item"><a href="/military-retirement-calculator-without-tsp.html">Military Retirement Calculator Without Tsp</a></li>
+													<li class="list-group-item"><a href="/military-service-dogs-vets.html">Military Service Dogs Vets</a></li>
+													<li class="list-group-item"><a href="/military-service-center-bismarck-nd.html">Military Service Center Bismarck Nd</a></li>
+													<li class="list-group-item"><a href="/military-retirement-salary-calculator.html">Military Retirement Salary Calculator</a></li>
+													<li class="list-group-item"><a href="/military-retirement-pay-calculator-after-taxes.html">Military Retirement Pay Calculator After Taxes</a></li>
+													<li class="list-group-item"><a href="/military-service-coordinator-jobs-veterans-affairs.html">Military Service Coordinator Jobs Veterans Affairs</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

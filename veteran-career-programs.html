@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Veteran Career Programs - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Veteran Career Programs",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/7a/3a/65/7a3a65a915396223e2150d495244744a.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=veteran+career+programs",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Veteran Career Programs</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">VETS provides free guidance resources and mentors to help you progress your career outside the Armed Forces JOIN AS A VETERAN NOW. We offer 5 support-and-services tracks to help you find and keep a job and live as independently as possible. Paralyzed Veterans of Americas Veterans Career Program formerly known as PAVE program provides FREE employment support and vocational counseling assistance to ALL veterans transitioning service members spouses and caregivers. <br>				
+			</p>
+										<a class="badge badge-success" href="/salvation-army-family-services-hamilton.html">salvation army family services hamilton</a>
+											<a class="badge badge-dark" href="/salvation-army-financial-counselling-fairfield.html">salvation army financial counselling fairfield</a>
+											<a class="badge badge-info" href="/salvation-army-post-office-rd.html">salvation army post office rd</a>
+											<a class="badge badge-info" href="/sao-hr-inhuman-army.html">sao hr inhuman army</a>
+											<a class="badge badge-success" href="/salvation-army-family-services-milton-on.html">salvation army family services milton on</a>
+											<a class="badge badge-success" href="/salvation-army-homeless-hotline.html">salvation army homeless hotline</a>
+											<a class="badge badge-primary" href="/salvation-army-family-services-mississauga.html">salvation army family services mississauga</a>
+											<a class="badge badge-danger" href="/small-business-grant-for-disabled-veteran.html">small business grant for disabled veteran</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you've come to visit the right site.  Our site provides you with hints for viewing the maximum quality video and picture content, hunt and locate more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, therefore we recommend this movie that you view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/ea/11/87ea11f4af41e6d1026f9fc7e2395039.jpg" data-lightbox="roadtrip" data-title="Supporting Our Vets Jpg 3300 5100 Military Transition Veteran Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/ea/11/87ea11f4af41e6d1026f9fc7e2395039.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPy3Pye4XsnK-P4nE8aMp8DQLKfA9eQ84Tiw';" alt="Supporting Our Vets Jpg 3300 5100 Military Transition Veteran Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Supporting Our Vets Jpg 3300 5100 Military Transition Veteran Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2a/00/56/2a00567ca1e58cbd490178426d90a175.jpg" data-lightbox="roadtrip" data-title="Covered 6 Flyer Veteran Jobs Security Training Corporate Security">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2a/00/56/2a00567ca1e58cbd490178426d90a175.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMCLvDyUxRYpr83Vxk6K3wfscY6DC1k4jAwg';" alt="Covered 6 Flyer Veteran Jobs Security Training Corporate Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Covered 6 Flyer Veteran Jobs Security Training Corporate Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/91/d6/6d/91d66d7d2a1c025affc3f7e8aa5dd1f0.jpg" data-lightbox="roadtrip" data-title="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Upcoming Vet Veterans Programs Medical Jobs Healthcare Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/91/d6/6d/91d66d7d2a1c025affc3f7e8aa5dd1f0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx4Mul12Q2L62T2mVic7j0vyAJNmva0rRFQA';" alt="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Upcoming Vet Veterans Programs Medical Jobs Healthcare Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Upcoming Vet Veterans Programs Medical Jobs Healthcare Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/97/9b/31/979b3167c4c2158275ebde88900fcc64.jpg" data-lightbox="roadtrip" data-title="Veteran Training Program In 2020 Online Training Courses Online Training Training Programs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/97/9b/31/979b3167c4c2158275ebde88900fcc64.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyZd42Ql423rFpvg-3sksCZcE15zQaHzf2-w';" alt="Veteran Training Program In 2020 Online Training Courses Online Training Training Programs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Training Program In 2020 Online Training Courses Online Training Training Programs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/26/1e/e7/261ee7013b46b9156db2ee2cd220a84d.jpg" data-lightbox="roadtrip" data-title="Vocational School For Veterans Benefits Expert Advice Vocational School Trade School Online School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/26/1e/e7/261ee7013b46b9156db2ee2cd220a84d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGf7NeA8NMRI2OMMYoM-WBXodQHHHbWt7cZg';" alt="Vocational School For Veterans Benefits Expert Advice Vocational School Trade School Online School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vocational School For Veterans Benefits Expert Advice Vocational School Trade School Online School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/23/8e/c9238e8b559c493718550433e5b22c97.jpg" data-lightbox="roadtrip" data-title="Veterans Job Resource Fair Camarhttp Military Civilian Blogspot Com 2013 01 Veterans Job Resource Fair Camarillo Ca Html Il Veteran Jobs Job Fair Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/23/8e/c9238e8b559c493718550433e5b22c97.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG1OosFAcjIRkv2Rahe9k3gMeMdn_F-027bw';" alt="Veterans Job Resource Fair Camarhttp Military Civilian Blogspot Com 2013 01 Veterans Job Resource Fair Camarillo Ca Html Il Veteran Jobs Job Fair Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Job Resource Fair Camarhttp Military Civilian Blogspot Com 2013 01 Veterans Job Resource Fair Camarillo Ca Html Il Veteran Jobs Job Fair Veteran</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/564x/b0/dd/9e/b0dd9e361b0dcb72db67a7fe8a49171e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG1OosFAcjIRkv2Rahe9k3gMeMdn_F-027bw';" alt="Veterans Job Resource Fair Camarhttp Military Civilian Blogspot Com 2013 01 Veterans Job Resource Fair Camarillo Ca Html Il Veteran Jobs Job Fair Veteran">
+										<div class="card-body">
+						<h3 class="h5"><b>British Forces Resettlement Services 02476 939931.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Veteran career programs</strong>. 
+								
+																	The Personalized Career Planning and Guidance PCPG program offers free educational and career counseling resume support and help finding a training program or job. 
+																	Helping Veterans transition back home and into meaningful careers is a priority at VA. 
+																	If selected you will participate in a 12-week development program that will give you the opportunity to use your military experience while being trained to join our world class Oracle Cloud Infrastructure OCI team. 
+																	Accenture is a proud supporter of the military community. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Youll find that a number of military-friendly employers are committed to hiring veterans. 
+																	The veterans on the Career Services Team will personally assist you with resume preparation and can help you determine employment goals and match you with career opportunities at veteran-friendly employers in Florida. 
+																	We know you bring invaluable experiences leadership and discipline to teams everywhere. 
+																	Programs That Hire Veterans Many organizations in the civilian world value your experience skills work ethic and training as a service member. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Johnson Controls which works to develop systems and equipment for the building and automotive industries offers a variety of programs for veterans. 
+																	Because we. 
+																	Microsoft offers internships and onboarding programs for student veterans who are working toward a degree in a STEM field. 
+																	Support for dependent family members. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If youre a Veteran or service member with a service-connected disability that impacts your ability to work the Veteran Readiness and Employment program formerly called Vocational Rehabilitation and Employment may be able to help. 
+																	Army Career Skills Program CSP Soldiers interested in finding a new career after the Army can look into the Career Skills Program as a means of getting that guaranteed job after leaving the. 
+																	Assess your job skills and see how they apply to civilian jobs. 
+																	Our veteran internship programs will introduce you to the professional services industry strengthen your technical skills build relationships and develop your leadership abilities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get started in an engaging new role that builds on your strengths and experience and allows you to continue serving your country. 
+																	We have benefits and incentives designed for your success. 
+																	The program assists with everything. 
+																	The Veteran Career Transition Assistance Program VetCTAP provides a FREE workshop series to assist veterans and transitioning military with resumes networking interviewing skills and much more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Support for your Veteran-owned small business. 
+																	The ex-forces job board for the forces community provides jobs for Service Leavers from the Royal Navy Army RAF Reserves Veterans and their Families. 
+																	Explore several online programs to help connect you with employers who are looking to hire veterans. 
+																	Veterans Floridas mission can be summed up in our theme Your Pursuit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Paralyzed Veterans of Americas Veterans Career Program offers high-touch one-on-one support to the veteran community to help them find meaningful employment education or volunteer opportunities. 
+																	The Oracle VetTech Academy program is the perfect opportunity for recent transitioning service members veterans and military spouses looking to jump-start their careers in tech. 
+																	Read about student programs Microsoft Software and Systems Academy MSSA Microsoft supports military men and women with the necessary training and resources to empower them to succeed in the tech industry. 
+																	About Contact News Blog Join Now Member Login. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	CareerOneStops Veteran and Military Transition Center can help you. 
+																	From skilling to hiring to giving back were proud to partner with you every step of the way to ensure our veterans Reservists National Guard and military spouses succeed in their new careers with us. 
+																	Veteran Talent Incubation Program VTIP This 20-week self-study program offers veterans and military spouses access to free CCNA training and certification along with the opportunity to get hired into dedicated network engineering roles at Cisco. 
+																	This unique program supports the entire veteran community but specializes in those who have significant barriers to employment such as a catastrophic injury. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Career Preview is an excellent. 
+																	Register to do business with VA and get support for your Veteran-owned small business. 
+																	Register below and a team member will personally contact you. 
+																	Job and Training Resources for Military and Veterans These programs and websites can help you explore careers find training and find jobs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Realising the true potential of service leavers regardless of rank service or circumstance Looking for career advice and support. 
+																	We provide exceptional training coaching flexibility and opportunities for growth and mobility. 
+																	It also has policies in place to ensure job security of members of the Reserves or National Guard. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/4d/85/b44d85d039a401060c60c3d190ea4fd4.jpg" data-lightbox="roadtrip" data-title="Free It Training And Certification Program For Veterans Http Military Civilian Blogspot Com 2014 10 Free It Trainin Veteran Jobs Veterans Programs Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/4d/85/b44d85d039a401060c60c3d190ea4fd4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-4B0Yw65eLmTwWPx-nLtFadLjL6MsJ5EuEw';" alt="Free It Training And Certification Program For Veterans Http Military Civilian Blogspot Com 2014 10 Free It Trainin Veteran Jobs Veterans Programs Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free It Training And Certification Program For Veterans Http Military Civilian Blogspot Com 2014 10 Free It Trainin Veteran Jobs Veterans Programs Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c6/a0/58/c6a058c2bc32d766912d1a4eecc51e18.jpg" data-lightbox="roadtrip" data-title="After Transitioning Out Of The Military Many Veterans Choose To Start On Their Path To A College Degree Or Conti Online College Online College Classes College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c6/a0/58/c6a058c2bc32d766912d1a4eecc51e18.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1xuAeyhmO32uEaWyisSqjCpEsJgho7AuJAw';" alt="After Transitioning Out Of The Military Many Veterans Choose To Start On Their Path To A College Degree Or Conti Online College Online College Classes College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">After Transitioning Out Of The Military Many Veterans Choose To Start On Their Path To A College Degree Or Conti Online College Online College Classes College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fd/9c/17/fd9c1765be291a4c32568417fb61753f.jpg" data-lightbox="roadtrip" data-title="If The School Or Business Is Veteran Friendly You Will Feel Like You Are Part Of The Family Just Like When Military Friendly Scholarships For College Mba">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fd/9c/17/fd9c1765be291a4c32568417fb61753f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-87wZOHrHRvOMjjJKGJQr_uPXBrrOT4irgA';" alt="If The School Or Business Is Veteran Friendly You Will Feel Like You Are Part Of The Family Just Like When Military Friendly Scholarships For College Mba">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If The School Or Business Is Veteran Friendly You Will Feel Like You Are Part Of The Family Just Like When Military Friendly Scholarships For College Mba</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/95/3d/0a/953d0a3f5816ab43145a970d1ff81f5c.jpg" data-lightbox="roadtrip" data-title="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Data Science Inf Data Science Veteran Jobs Science Programs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/95/3d/0a/953d0a3f5816ab43145a970d1ff81f5c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlYWFKZBaA5zkMzuv95lDBahab19SYAMnZYw';" alt="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Data Science Inf Data Science Veteran Jobs Science Programs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Data Science Inf Data Science Veteran Jobs Science Programs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/b0/dd/9e/b0dd9e361b0dcb72db67a7fe8a49171e.jpg" data-lightbox="roadtrip" data-title="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers San Fernando Valley Ve Veteran Medical Jobs Healthcare Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/b0/dd/9e/b0dd9e361b0dcb72db67a7fe8a49171e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo1XGznENkBxp-Pm18snqxq7Ff6mloQq6OuQ';" alt="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers San Fernando Valley Ve Veteran Medical Jobs Healthcare Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers San Fernando Valley Ve Veteran Medical Jobs Healthcare Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/3a/65/7a3a65a915396223e2150d495244744a.png" data-lightbox="roadtrip" data-title="A Military Professional Needs To Remember They Re Applying In The Civilian Sector And Things Are Different Wh Veteran Jobs Veterans Programs Interview Skills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/3a/65/7a3a65a915396223e2150d495244744a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYKf8_JZdE_hQ52HuL-hxn5lnVBC99fAB7Xw';" alt="A Military Professional Needs To Remember They Re Applying In The Civilian Sector And Things Are Different Wh Veteran Jobs Veterans Programs Interview Skills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Military Professional Needs To Remember They Re Applying In The Civilian Sector And Things Are Different Wh Veteran Jobs Veterans Programs Interview Skills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/c1/5d/10c15d6d6bdbf0a5b1bde16228889e2f.jpg" data-lightbox="roadtrip" data-title="Techu24 7 Commercial Food Equiptment Repair Technician Veteran Jobs Technician Repair">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/c1/5d/10c15d6d6bdbf0a5b1bde16228889e2f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL2q_lozHtlcuJNLobYhonIY-_RUTqJEIp9g';" alt="Techu24 7 Commercial Food Equiptment Repair Technician Veteran Jobs Technician Repair">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Techu24 7 Commercial Food Equiptment Repair Technician Veteran Jobs Technician Repair</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/83/48/8e8348bd50ca5044e6bf3cc831757ef2.jpg" data-lightbox="roadtrip" data-title="Today We Re Expanding Our Military And Veterans Program To Include More Spouses Children And Caregivers Across Veterans Programs Support Spouse Career Change">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/83/48/8e8348bd50ca5044e6bf3cc831757ef2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5POE8j4J1vgEAgXsDPbgPvWBqn6Ro6wAsXg';" alt="Today We Re Expanding Our Military And Veterans Program To Include More Spouses Children And Caregivers Across Veterans Programs Support Spouse Career Change">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Today We Re Expanding Our Military And Veterans Program To Include More Spouses Children And Caregivers Across Veterans Programs Support Spouse Career Change</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/52/e4/3452e47531f95a3b042f14a28ea7e051.png" data-lightbox="roadtrip" data-title="Vietnam War Veterans Day Veterans Programs Veteran Managed It Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/52/e4/3452e47531f95a3b042f14a28ea7e051.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWvguedHtnEVRKK0mqdQzGFdVaQRDo2KswEw';" alt="Vietnam War Veterans Day Veterans Programs Veteran Managed It Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vietnam War Veterans Day Veterans Programs Veteran Managed It Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/66/ec/1366ec8337d0e6cc0de08daae85a15a8.jpg" data-lightbox="roadtrip" data-title="Resources And Jobs For Veterans Grow With Google Grow With Google Veteran Jobs Grow Business Free Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/66/ec/1366ec8337d0e6cc0de08daae85a15a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRChDf0ggjLR68lrR89_7ec_Ww1842FX4ZaMA';" alt="Resources And Jobs For Veterans Grow With Google Grow With Google Veteran Jobs Grow Business Free Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Resources And Jobs For Veterans Grow With Google Grow With Google Veteran Jobs Grow Business Free Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/35/fc/2b35fcf43805456b91a4731ea4a9576e.png" data-lightbox="roadtrip" data-title="The Monster And Military Com 2018 Best Companies For Veterans Good Company Veteran Company">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/35/fc/2b35fcf43805456b91a4731ea4a9576e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFUPxBGUxJ-G5qL-iUUSsq9_QrF2n9uGFDLA';" alt="The Monster And Military Com 2018 Best Companies For Veterans Good Company Veteran Company">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Monster And Military Com 2018 Best Companies For Veterans Good Company Veteran Company</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/59/1e/1a591e2fb08982496136c561dde4b50d.png" data-lightbox="roadtrip" data-title="The Monster And Military Com 2018 Best Companies For Veterans Veterans Programs Veteran Good Company">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/59/1e/1a591e2fb08982496136c561dde4b50d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT32kCLDznCQnXu5TiiXPBWVYiTnppXTfI3Jw';" alt="The Monster And Military Com 2018 Best Companies For Veterans Veterans Programs Veteran Good Company">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Monster And Military Com 2018 Best Companies For Veterans Veterans Programs Veteran Good Company</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/83/ca/54/83ca54ddab2fa11888f0364284a92484.jpg" data-lightbox="roadtrip" data-title="College Resources For Veterans And Their Families Accredited Schools Online Find Top Rated Accredited Programs Online Online Education Education System College Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/83/ca/54/83ca54ddab2fa11888f0364284a92484.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNpddbqAFZ-Bza4697qcf15we-64r_xw7Zug';" alt="College Resources For Veterans And Their Families Accredited Schools Online Find Top Rated Accredited Programs Online Online Education Education System College Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Resources For Veterans And Their Families Accredited Schools Online Find Top Rated Accredited Programs Online Online Education Education System College Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/can-civilians-shop-at-exchange.html">Can Civilians Shop At Exchange</a></li>
+													<li class="list-group-item"><a href="/boy-military-dog-names.html">Boy Military Dog Names</a></li>
+													<li class="list-group-item"><a href="/california-military-department-state-active-duty.html">California Military Department State Active Duty</a></li>
+													<li class="list-group-item"><a href="/can-disabled-vets-live-on-base.html">Can Disabled Vets Live On Base</a></li>
+													<li class="list-group-item"><a href="/can-dod-civilians-shop-at-the-exchange.html">Can Dod Civilians Shop At The Exchange</a></li>
+													<li class="list-group-item"><a href="/can-civilians-use-usaa.html">Can Civilians Use Usaa</a></li>
+													<li class="list-group-item"><a href="/brooke-army-medical-center-public-affairs.html">Brooke Army Medical Center Public Affairs</a></li>
+													<li class="list-group-item"><a href="/british-army-hair-regulations-male.html">British Army Hair Regulations Male</a></li>
+													<li class="list-group-item"><a href="/british-army-hair-regulations-male-2019.html">British Army Hair Regulations Male 2019</a></li>
+													<li class="list-group-item"><a href="/can-dod-civilians-shop-at-nex.html">Can Dod Civilians Shop At Nex</a></li>
+													<li class="list-group-item"><a href="/branches-of-the-department-of-defense.html">Branches Of The Department Of Defense</a></li>
+													<li class="list-group-item"><a href="/california-military-department-office-of-the-adjutant-general.html">California Military Department Office Of The Adjutant General</a></li>
+													<li class="list-group-item"><a href="/british-army-lesson-plan-format.html">British Army Lesson Plan Format</a></li>
+													<li class="list-group-item"><a href="/british-army-skill-at-arms-lesson-plan.html">British Army Skill At Arms Lesson Plan</a></li>
+													<li class="list-group-item"><a href="/camp-hero-air-force.html">Camp Hero Air Force</a></li>
+													<li class="list-group-item"><a href="/british-army-fieldcraft-lesson-plans.html">British Army Fieldcraft Lesson Plans</a></li>
+													<li class="list-group-item"><a href="/california-military-department-jobs.html">California Military Department Jobs</a></li>
+													<li class="list-group-item"><a href="/bonus-army-lesson-plan.html">Bonus Army Lesson Plan</a></li>
+													<li class="list-group-item"><a href="/bureau-of-political-military-affairs-pm.html">Bureau Of Political Military Affairs Pm</a></li>
+													<li class="list-group-item"><a href="/brandon-jones-texas-military-department.html">Brandon Jones Texas Military Department</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

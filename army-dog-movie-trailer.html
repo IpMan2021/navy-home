@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Dog Movie Trailer - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Dog Movie Trailer",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/62/30/5b/62305b534c1aa361a0a50a16b438a6a3.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+dog+movie+trailer",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Dog Movie Trailer</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Tom Holloway returns home with his partner Conner a bomb-sniffing dog. Robo-Dog - Official Trailer - 2015 Family Movie HD - Duration. HttpbitlyH2vZUnLike us on FACEBOOK. <br>				
+			</p>
+										<a class="badge badge-danger" href="/dept-of-veterans-affairs-jackson-ms.html">dept of veterans affairs jackson ms</a>
+											<a class="badge badge-warning" href="/dept-of-veterans-affairs-hawaii.html">dept of veterans affairs hawaii</a>
+											<a class="badge badge-success" href="/dept-of-veterans-affairs-records-management-center.html">dept of veterans affairs records management center</a>
+											<a class="badge badge-warning" href="/dept-of-veterans-affairs-volunteer.html">dept of veterans affairs volunteer</a>
+											<a class="badge badge-secondary" href="/dept-of-veterans-affairs-medical-center.html">dept of veterans affairs medical center</a>
+											<a class="badge badge-danger" href="/dept-of-veterans-affairs-fresno-ca.html">dept of veterans affairs fresno ca</a>
+											<a class="badge badge-light" href="/dept-of-veterans-affairs-ri.html">dept of veterans affairs ri</a>
+											<a class="badge badge-success" href="/dept-of-veterans-affairs-florida.html">dept of veterans affairs florida</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to pay a visit to the right site.  Our site provides you with hints for seeing the highest quality video and image content, hunt and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, especially Youtube, therefore we recommend this video that you view.  It is also possible to contribute to supporting this website by sharing videos and graphics that you enjoy on this site on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/7f/92/9b7f92284a8a39de0e10bf41de196d29.jpg" data-lightbox="roadtrip" data-title="Max Official Trailer 1 2015 War Dog Drama Hd War Dogs Dog Movies Dog Hero">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/7f/92/9b7f92284a8a39de0e10bf41de196d29.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdgvcNlsMY6cKKYuB6xgMrpcY_-VALbrnXRQ';" alt="Max Official Trailer 1 2015 War Dog Drama Hd War Dogs Dog Movies Dog Hero">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Max Official Trailer 1 2015 War Dog Drama Hd War Dogs Dog Movies Dog Hero</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/85/98/7385983ac77633dd74c166f75116ebe7.jpg" data-lightbox="roadtrip" data-title="Max Movie Trailer Dog Family Adventure 2015 Military Dogs Military Working Dogs Working Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/85/98/7385983ac77633dd74c166f75116ebe7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3DshGKfXBoVQtcSAArVKlwYkwxscXVQX_Xg';" alt="Max Movie Trailer Dog Family Adventure 2015 Military Dogs Military Working Dogs Working Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Max Movie Trailer Dog Family Adventure 2015 Military Dogs Military Working Dogs Working Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/52/b5/e852b58d1af5f2d69fdb7a22eb79cd10.jpg" data-lightbox="roadtrip" data-title="Militaryworkingdogs Armydogs Maxsuch A Great Movie Max Movie Dog Movies Movie In The Park">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/52/b5/e852b58d1af5f2d69fdb7a22eb79cd10.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJFp-MThraeQlkNqDc6MJdA0fLARCf5jG7bg';" alt="Militaryworkingdogs Armydogs Maxsuch A Great Movie Max Movie Dog Movies Movie In The Park">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Militaryworkingdogs Armydogs Maxsuch A Great Movie Max Movie Dog Movies Movie In The Park</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/c8/77/99/c87799bb7e6a23b8d615ae048948d328.jpg" data-lightbox="roadtrip" data-title="A Dog S Journey Trailer 1 2019 Movieclips Trailers A Dog S Journey Latest Movie Trailers New Trailers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/c8/77/99/c87799bb7e6a23b8d615ae048948d328.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOhH40OLmgoOC-cRSQdtlG_uzxT418AzHeEw';" alt="A Dog S Journey Trailer 1 2019 Movieclips Trailers A Dog S Journey Latest Movie Trailers New Trailers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Dog S Journey Trailer 1 2019 Movieclips Trailers A Dog S Journey Latest Movie Trailers New Trailers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/30/5b/62305b534c1aa361a0a50a16b438a6a3.jpg" data-lightbox="roadtrip" data-title="Megan Leavey Movie Megan Leavey Kate Mara Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/30/5b/62305b534c1aa361a0a50a16b438a6a3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8rcz2fbsfUKBlA7hMxoT5kPjrEbxX1wvjVw';" alt="Megan Leavey Movie Megan Leavey Kate Mara Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Megan Leavey Movie Megan Leavey Kate Mara Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/17/da/e3/17dae3570ca7d09b6e2e4f676f13c1f3.jpg" data-lightbox="roadtrip" data-title="Pin On New Movie Trailers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/17/da/e3/17dae3570ca7d09b6e2e4f676f13c1f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz5meJiA58Ew1RRqpvVlaQoqkpq3l75grj1A';" alt="Pin On New Movie Trailers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On New Movie Trailers</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/1c/c1/4b/1cc14b968a00acdde4d9248e1cbf19e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz5meJiA58Ew1RRqpvVlaQoqkpq3l75grj1A';" alt="Pin On New Movie Trailers">
+										<div class="card-body">
+						<h3 class="h5"><b>With Casper Van Dien Grace Van Dien Stelio Savante Annemarie Pazmino.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army dog movie trailer</strong>. 
+								
+																	Httpbitlysxaw6hSubscribe to COMING SOON. 
+																	If you enjoyed listening to this one maybe you will like. 
+																	Directed by Neil Marshall. 
+																	We recommend you to check other playlists or our favorite music charts. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dog Tags Movie Trailer. 
+																	Boomer is an experienced war dog at the height of his profession in Afghanistan. 
+																	Hoping to resolve his daughters jumbled feelings about his military service as well as residual behavior problems from those. 
+																	As heroes but time away from his family has caused Toms daughter Tara to resent him. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Grindstone Official 49810 views. 
+																	Is a top-secret robotic dog who develops a special friendship with Miles and will go to any length to protect his new companion. 
+																	Family action-adventure starring Casper Van Dien Grace Van Dien and Connor the Dog. 
+																	Directed by Ezra Kemp. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A brave Army dog returns to the US where he helps his heroic handler bond with his resentful daughter on a camping trip despite danger lurking around every corner. 
+																	MEGAN LEAVEY Official Trailer 2017 Kate Mara War Dog Drama Movie HD 2017 - Bleecker Street. 
+																	With Sean Pertwee Kevin McKidd Emma Cleasby Liam Cunningham. 
+																	Directed by Oliver Daly. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A routine military exercise turns into a nightmare in the Scotland wilderness. 
+																	Theyre HERE httpbitlyFamily-FilmsMAX. 
+																	Parents need to know that Army Dog is a live-action movie that takes a father and his teen daughter on an adventure in a mountainous state park. 
+																	15 Aug 2012 Posted by Member 26835147. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With Alex Neustaedter Becky G Alex MacNicoll Dominic Rains. 
+																	With Kate Mara Ramon Rodriguez Tom Felton Bradley Whitford. 
+																	A brave Army dog returns to the US where he helps his heroic handler bond with his resentful daughter on a camping trip despite danger lurking around every corner. 
+																	HttpgoogldHs73Follow us on TWITTER. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A military working dog Max returns from service in Afghanistan The Must-See Films to share with your kids. 
+																	With Casper Van Dien Grace Van Dien Stelio Savante Annemarie Pazmino. 
+																	Directed by Gabriela Cowperthwaite. 
+																	Fun and exciting film for the entire family. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Directed by Ezra Kemp. 
+																	But when he is seriously wounded and loses his. 
+																	Tom Conner and Tara try to connect over a camping trip but unexpected danger sends them on an adventure that will change their lives forever. 
+																	Army stint in Afghanistan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Watch Army Dog Full Movie IN HD Visit. 
+																	Theyre joined by Connor a golden retriever who served as the dads partner during his US. 
+																	ARMY DOG Official Trailer 2015 Casper Van Dien - Duration. 
+																	Sensing detachment from his daughter caused by his time away Tom takes her and Conner on a camping trip. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Httpmwonline-moviesxyzmovie377206 A brave Army dog returns to the US where he helps his heroic handler bo. 
+																	Based on the true life story of a young Marine corporal whose unique discipline and bond with her military combat dog saved many lives during their deployment in Iraq. 
+																	Army Dog Official Trailer Sergeant Tom Holloway and his Army dog Connor return to the US. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/96/83/f296834eed8e211be71dc8478112aab7.jpg" data-lightbox="roadtrip" data-title="See The Trailer For Max The War Dog Movie That Will Make Us Cry War Dogs Dog Movies American Kennel Club">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/96/83/f296834eed8e211be71dc8478112aab7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtnmimLm3hKeNIZX8VoWnsHrUENHRf_dZC7w';" alt="See The Trailer For Max The War Dog Movie That Will Make Us Cry War Dogs Dog Movies American Kennel Club">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">See The Trailer For Max The War Dog Movie That Will Make Us Cry War Dogs Dog Movies American Kennel Club</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/b9/ca/04b9caaf187f5a85a276696b48082022.jpg" data-lightbox="roadtrip" data-title="Max Trailer Hd Official Warner Bros Uk Dog Movies Max Movie Dog Films">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/b9/ca/04b9caaf187f5a85a276696b48082022.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5oUIKtpOlX0jM0954j3EZ5YEFMIGGlujXTg';" alt="Max Trailer Hd Official Warner Bros Uk Dog Movies Max Movie Dog Films">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Max Trailer Hd Official Warner Bros Uk Dog Movies Max Movie Dog Films</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/1c/f8/8f1cf84c40961ebba3ec453f5b9e6c82.jpg" data-lightbox="roadtrip" data-title="Top 10 Best Dog Films Petpress Max Movie Dog Movies Dog Films">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/1c/f8/8f1cf84c40961ebba3ec453f5b9e6c82.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQhR5F-KY6VOAhQPPcYpgsaiEV7QmLH1N94g';" alt="Top 10 Best Dog Films Petpress Max Movie Dog Movies Dog Films">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 10 Best Dog Films Petpress Max Movie Dog Movies Dog Films</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/8b/7f/27/8b7f279f3ad41e7433c359d0b983e3a5.jpg" data-lightbox="roadtrip" data-title="Youtube Dog Movies Youtube Audio Books">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/8b/7f/27/8b7f279f3ad41e7433c359d0b983e3a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBRIBpBVIPL5o-5kZ74YYdRGkoDc9AREZKjg';" alt="Youtube Dog Movies Youtube Audio Books">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Youtube Dog Movies Youtube Audio Books</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/6c/78/636c78ce02fa2538b3831a8819b17d1e.jpg" data-lightbox="roadtrip" data-title="Maxmovie Marine Max Movie Military Dogs Dog Hero">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/6c/78/636c78ce02fa2538b3831a8819b17d1e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3XQzpNlCFMGwqF5rSLBfooj3h3jltNZUyxQ';" alt="Maxmovie Marine Max Movie Military Dogs Dog Hero">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Maxmovie Marine Max Movie Military Dogs Dog Hero</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/9c/00/039c00ba55d9deadde990259654981cd.jpg" data-lightbox="roadtrip" data-title="Max Trailer The American Sniper Of Dog Movies Military Working Dogs Military Dogs Working Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/9c/00/039c00ba55d9deadde990259654981cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL_TLRWw4yUh1XBc2g5EOEj527MMlU5IKX5A';" alt="Max Trailer The American Sniper Of Dog Movies Military Working Dogs Military Dogs Working Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Max Trailer The American Sniper Of Dog Movies Military Working Dogs Military Dogs Working Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/53/76/4c/53764c44fa7165e4b438e373b50bda40.jpg" data-lightbox="roadtrip" data-title="Megan Leavey Trailer Tv Spots Clips Featurette Images And Posters Megan Leavey Tv Spot Megan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/53/76/4c/53764c44fa7165e4b438e373b50bda40.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYGBUqeB1D7Pz964929az_jo3DycLJRQmKYQ';" alt="Megan Leavey Trailer Tv Spots Clips Featurette Images And Posters Megan Leavey Tv Spot Megan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Megan Leavey Trailer Tv Spots Clips Featurette Images And Posters Megan Leavey Tv Spot Megan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/22/ad/fc22ad653659eb37bea9e596d3a5bde4.jpg" data-lightbox="roadtrip" data-title="Yahoo Dog Movies Military Working Dogs Dog Hero">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/22/ad/fc22ad653659eb37bea9e596d3a5bde4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsXqATRNa8u5ie5j5UMvTD8IVbTopGLVw8yg';" alt="Yahoo Dog Movies Military Working Dogs Dog Hero">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yahoo Dog Movies Military Working Dogs Dog Hero</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/21/69/e72169105eb667b3033ec9cee5b767c5.jpg" data-lightbox="roadtrip" data-title="Maxthehero Hero Dogs Featurette Military Dogs Dogs Hero">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/21/69/e72169105eb667b3033ec9cee5b767c5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSozGhBT_keYQOIpfe0_B26br-Rxu8wGrOAZA';" alt="Maxthehero Hero Dogs Featurette Military Dogs Dogs Hero">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Maxthehero Hero Dogs Featurette Military Dogs Dogs Hero</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/08/32/8e08323de82230e291e65d367c296043.jpg" data-lightbox="roadtrip" data-title="Maxmovie Carmen Mia Xitlali Hanging Out With Max Max Movie Max 2015 Tv">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/08/32/8e08323de82230e291e65d367c296043.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgsVYznnWW8soRbuenyJtchreub0zJrKTUTw';" alt="Maxmovie Carmen Mia Xitlali Hanging Out With Max Max Movie Max 2015 Tv">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Maxmovie Carmen Mia Xitlali Hanging Out With Max Max Movie Max 2015 Tv</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/5c/3e/b45c3e910ce667357767a19a43c6db86.jpg" data-lightbox="roadtrip" data-title="Max Love Him Dog Movies Drama Movies Dog Walking">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/5c/3e/b45c3e910ce667357767a19a43c6db86.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtsmZMQ13AL6AzgEKn0JpD6oYJOPH2V3mVzw';" alt="Max Love Him Dog Movies Drama Movies Dog Walking">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Max Love Him Dog Movies Drama Movies Dog Walking</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/0d/35/d40d35d79ae28985ad11b4fbb80d01b6.png" data-lightbox="roadtrip" data-title="Max Official Movie Site Best Friend Hero Marine Own It Now On Digital Hd Or On Blu Ray 10 27 Robbie Amell Dog Movies Max Movie">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/0d/35/d40d35d79ae28985ad11b4fbb80d01b6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQST43tnJcTvH08Bfg2u4AvRvBOQgs6D_SVlg';" alt="Max Official Movie Site Best Friend Hero Marine Own It Now On Digital Hd Or On Blu Ray 10 27 Robbie Amell Dog Movies Max Movie">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Max Official Movie Site Best Friend Hero Marine Own It Now On Digital Hd Or On Blu Ray 10 27 Robbie Amell Dog Movies Max Movie</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/c1/4b/1cc14b968a00acdde4d9248e1cbf19e9.jpg" data-lightbox="roadtrip" data-title="Megan Leavey Aka Rex Movie Review A Soldier And Her Dog Megan Leavey Military Working Dogs Kate Mara">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/c1/4b/1cc14b968a00acdde4d9248e1cbf19e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_1KKeW2hm6WGPhBLrlegT4rpLA5ZlXJBmLA';" alt="Megan Leavey Aka Rex Movie Review A Soldier And Her Dog Megan Leavey Military Working Dogs Kate Mara">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Megan Leavey Aka Rex Movie Review A Soldier And Her Dog Megan Leavey Military Working Dogs Kate Mara</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/us-army-office-of-the-surgeon-general.html">Us Army Office Of The Surgeon General</a></li>
+													<li class="list-group-item"><a href="/us-army-personnel-records-request.html">Us Army Personnel Records Request</a></li>
+													<li class="list-group-item"><a href="/us-army-personnel-records-search.html">Us Army Personnel Records Search</a></li>
+													<li class="list-group-item"><a href="/us-army-national-museum.html">Us Army National Museum</a></li>
+													<li class="list-group-item"><a href="/us-army-office-of-the-provost-marshal-general.html">Us Army Office Of The Provost Marshal General</a></li>
+													<li class="list-group-item"><a href="/us-army-personnel-exchange-program.html">Us Army Personnel Exchange Program</a></li>
+													<li class="list-group-item"><a href="/us-army-personnel-numbers-by-rank.html">Us Army Personnel Numbers By Rank</a></li>
+													<li class="list-group-item"><a href="/us-army-officer-ranks.html">Us Army Officer Ranks</a></li>
+													<li class="list-group-item"><a href="/us-army-livermore-office.html">Us Army Livermore Office</a></li>
+													<li class="list-group-item"><a href="/us-army-personnel-files.html">Us Army Personnel Files</a></li>
+													<li class="list-group-item"><a href="/us-army-north-mailing-address.html">Us Army North Mailing Address</a></li>
+													<li class="list-group-item"><a href="/us-army-personnel-directory.html">Us Army Personnel Directory</a></li>
+													<li class="list-group-item"><a href="/us-army-issued-hats.html">Us Army Issued Hats</a></li>
+													<li class="list-group-item"><a href="/us-army-office-of-energy-initiatives.html">Us Army Office Of Energy Initiatives</a></li>
+													<li class="list-group-item"><a href="/us-army-office-of-personnel-management.html">Us Army Office Of Personnel Management</a></li>
+													<li class="list-group-item"><a href="/us-army-main-office.html">Us Army Main Office</a></li>
+													<li class="list-group-item"><a href="/us-army-number-of-soldiers-by-rank.html">Us Army Number Of Soldiers By Rank</a></li>
+													<li class="list-group-item"><a href="/us-army-personnel-on-instagram.html">Us Army Personnel On Instagram</a></li>
+													<li class="list-group-item"><a href="/us-army-number-of-tanks.html">Us Army Number Of Tanks</a></li>
+													<li class="list-group-item"><a href="/us-army-north-hq.html">Us Army North Hq</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

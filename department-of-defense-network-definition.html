@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Department Of Defense Network Definition - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Department Of Defense Network Definition",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/ef/db/31/efdb311611fcc55c0b612a05d7feb5c9.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=department+of+defense+network+definition",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Department Of Defense Network Definition</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Cyber defense focuses on preventing detecting and providing timely responses to attacks or threats so that no. A STUDY OF CURRENT CYBER THREATS AND BEST PRACTICES FOR NETWORK SECURITY by Major Scott M. Descriptive terms in defense documents policy strategy planning doctrine etc that support the foundation of the 2500 doct rine term DOD Dictionary. <br>				
+			</p>
+										<a class="badge badge-warning" href="/department-of-defense-directive-134410-dodd-134410.html">department of defense directive 134410 dodd 134410</a>
+											<a class="badge badge-secondary" href="/department-of-defense-modernization-priorities.html">department of defense modernization priorities</a>
+											<a class="badge badge-light" href="/department-of-defense-manual-134833-volume-2-manual-of-military-decorations-and-awards.html">department of defense manual 134833 volume 2 manual of military decorations and awards</a>
+											<a class="badge badge-primary" href="/department-of-defense-executive-branch.html">department of defense executive branch</a>
+											<a class="badge badge-success" href="/department-of-defense-civilian-jobs-overseas.html">department of defense civilian jobs overseas</a>
+											<a class="badge badge-info" href="/department-of-defense-definition-of-terrorism.html">department of defense definition of terrorism</a>
+											<a class="badge badge-success" href="/department-of-defense-mla-guidance.html">department of defense mla guidance</a>
+											<a class="badge badge-info" href="/department-of-defense-fy-2019-budget.html">department of defense fy 2019 budget</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you've come to pay a visit to the right blog.  Our website gives you hints for viewing the highest quality video and picture content, search and find more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, so we recommend this video that you see.  You can also contribute to supporting this site by sharing videos and graphics that you like on this blog on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/31/3f/67313fc2cf0ac7ff1e268be4d86c9039.png" data-lightbox="roadtrip" data-title="Difference Between Tcp Ip Model And Osi Model Osi Model Network Engineer Transmission Control Protocol">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/31/3f/67313fc2cf0ac7ff1e268be4d86c9039.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk92JV8Ye3JGZ-AeL2KRxMtzEeyBmIiNBcgg';" alt="Difference Between Tcp Ip Model And Osi Model Osi Model Network Engineer Transmission Control Protocol">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Difference Between Tcp Ip Model And Osi Model Osi Model Network Engineer Transmission Control Protocol</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/fb/a0/d0fba0ac70d22e1ec35053f780014289.jpg" data-lightbox="roadtrip" data-title="The School Of Cisco Networking Scn The Functions Of Open Systems Interconnection Model Osi Networking Basics Cisco Networking Networking">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/fb/a0/d0fba0ac70d22e1ec35053f780014289.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw4K-xwt2VgjTF2j9WX7-v3ylB4J_XBqxtyw';" alt="The School Of Cisco Networking Scn The Functions Of Open Systems Interconnection Model Osi Networking Basics Cisco Networking Networking">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The School Of Cisco Networking Scn The Functions Of Open Systems Interconnection Model Osi Networking Basics Cisco Networking Networking</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/83/9e/b3839e5d9f85ce15c0a322cb4bc3ecee.jpg" data-lightbox="roadtrip" data-title="Pin By Healing Heroes Network On Military Military Terms Army Wife Life Navy Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/83/9e/b3839e5d9f85ce15c0a322cb4bc3ecee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ40i7KZXYqw1GEsOyqgiQrQ9EguB0SyyM0FA';" alt="Pin By Healing Heroes Network On Military Military Terms Army Wife Life Navy Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Healing Heroes Network On Military Military Terms Army Wife Life Navy Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/db/31/efdb311611fcc55c0b612a05d7feb5c9.jpg" data-lightbox="roadtrip" data-title="Cultural Resources Department Of Defense Environmental Safety And Occupational Health Network And Information Exc Occupational Health Resources Occupational">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/db/31/efdb311611fcc55c0b612a05d7feb5c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcd85103Dh-TMNKRNSg29F-CoFcUg73Suv6g';" alt="Cultural Resources Department Of Defense Environmental Safety And Occupational Health Network And Information Exc Occupational Health Resources Occupational">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cultural Resources Department Of Defense Environmental Safety And Occupational Health Network And Information Exc Occupational Health Resources Occupational</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0e/3b/5e/0e3b5eec3c0ab5d5d8fbc9dc036b6e6f.jpg" data-lightbox="roadtrip" data-title="Free Powerpoint Templates For Phd Defense Is Among The Greatest Themes Our Company Generated For Free Powerpoint Templates For Phd Defe Presentation Thesis Phd">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0e/3b/5e/0e3b5eec3c0ab5d5d8fbc9dc036b6e6f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA66p0sxlmijqIlWBZ34YsDneOlk_8nkWIiA';" alt="Free Powerpoint Templates For Phd Defense Is Among The Greatest Themes Our Company Generated For Free Powerpoint Templates For Phd Defe Presentation Thesis Phd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Powerpoint Templates For Phd Defense Is Among The Greatest Themes Our Company Generated For Free Powerpoint Templates For Phd Defe Presentation Thesis Phd</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/d2/d3/3bd2d38412a53e894392ac02b43a8ee9.png" data-lightbox="roadtrip" data-title="What Is Business Process Monitoring In 2020 Reviews Features Pricing Comparison Pat Research B2b Reviews Buying Guides Best Practices Business Process Business Process Management Business Intelligence">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/d2/d3/3bd2d38412a53e894392ac02b43a8ee9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ0MDGEt90HaAQ4U4IzkeNsOhSuwVr9BWRWQ';" alt="What Is Business Process Monitoring In 2020 Reviews Features Pricing Comparison Pat Research B2b Reviews Buying Guides Best Practices Business Process Business Process Management Business Intelligence">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Business Process Monitoring In 2020 Reviews Features Pricing Comparison Pat Research B2b Reviews Buying Guides Best Practices Business Process Business Process Management Business Intelligence</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/b3/83/9e/b3839e5d9f85ce15c0a322cb4bc3ecee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ0MDGEt90HaAQ4U4IzkeNsOhSuwVr9BWRWQ';" alt="What Is Business Process Monitoring In 2020 Reviews Features Pricing Comparison Pat Research B2b Reviews Buying Guides Best Practices Business Process Business Process Management Business Intelligence">
+										<div class="card-body">
+						<h3 class="h5"><b>It elaborates on the tasks to install operate maintain and secure Department of Defense networksChapter 3 also discusses network management and reporting requirements for shared network situational understanding.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Department of defense network definition</strong>. 
+								
+																	Operations to design build configure secure operate maintain and sustain Department of Defense networks to create and preserve information assurance on the Department of Defense information networks. 
+																	But the Defense Department doesnt have a single organization But the Defense Department doesnt have. 
+																	When the militarys internal networks get hacked however its potentially lethal. 
+																	The DISN end-to-end infrastructure is composed of three major segments. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It also employed about 761000 civilians. 
+																	DoD NIC stands for Department of Defense Network Information Center. 
+																	There were about 224000 combined personnel overseas in over 170 countries. 
+																	NFL NASA PSP HIPAArandom Words in meaning. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Global Information Grid GIG is an all-encompassing communications project of the United States Department of Defense. 
+																	THE DEPARTMENT OF DEFENSE INFORMATION NETWORK DODIN. 
+																	Created in 1947 How to pronounce department of defense. 
+																	Head to the redesigned Defensegov where you can learn all about the Defense Department. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Its creation is the primary step in deconflicting terminology nuances within organizational documents that may impact joint doctrine. 
+																	June 2020 The Defense Information System Network DISN has been the United States Department of Defense s enterprise telecommunications network for providing data video and voice services for 40 years. 
+																	The GIG includes any DoD system equipment software or service that transmits stores or processes DoD information and any other associated services necessary to achieve information superiority. 
+																	The globally interconnected end-to-end set of information capabilities and associated processes for collecting processing storing disseminating and managing information on-demand to warfighters policy makers and support personnel including owned and leased communications and computing systems and services software including applications data security services other associated services and national security systems. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	From untraceable and encrypted cloud-based networks to secure communications and collaboration spaces Dexter Edward has products to aid in DoD mission success. 
+																	This Department of Defense Information Network DoDIN Approved Products List APL Process Guide implements the requirement in Department of Defense Instruction DoDI 810004 Unified Capabilities 9 December 2010 and Chairman Joint Chiefs of Staff Instruction CJCSI 621102D Defense Information Systems Network DISN Responsibilities 24 January 2012 that Director Defense Information. 
+																	Chapter 3 discusses Department of Defense information network operations activities. 
+																	Department of Defense information network is the set of information capabilities and associated processes for collecting processing storing disseminating and managing information on-demand to warfighters policy makers and support personnel whether interconnected or stand-alone including owned and leased communications and computing systems and services software including. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Federal government charged with ensuring that the military capacity of the US. 
+																	About 3 million military and permanently assigned civilians receive income from DoD. 
+																	Department of defense definition the department of the US. 
+																	Explore trending topics experience DOD through interactive pieces engage by testing your wit with quizzes and observe DOD in action via photos and videos. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The DREN is an official Department of Defense network specifically designed for computational research engineering and testing and is used to transfer leading network and security technologies and capabilities across the DoD and other federal agencies. 
+																	Department of Defense Term and Definition Approach. 
+																	In addition to those serving in. 
+																	Department of Defense is the nations largest employer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It had about 136 million active duty personnel and 801000 reservists as of June 2020. 
+																	DoD NIC is defined as Department of Defense Network Information Center somewhat frequently. 
+																	The mission of the Department of Defense is to provide a lethal Joint Force to defend the security of our country and sustain. 
+																	Computer Network Defense is defined as Actions taken through the use of computer networks to protect monitor analyze detect and respond to unauthorized activity within Department of Defense information systems and computer networks. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Princetons WordNet 000 0 votesRate this definition. 
+																	Is adequate to safeguard the national security. 
+																	Department of Defense Defense Department United States Department of Defense Defense DoD noun the federal department responsible for safeguarding national security of the United States. 
+																	The Department of Defense Information Network DODIN is being threatened by state actors non-state actors and continuous hacking and cyber-attacks. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dexter Edward can provide software solutions perfectly tailored for Department of Defense operations. 
+																	These tools assist in the defense of cyberattacks while simultaneously increasing operational security at all levels. 
+																	Cyber defense is a computer network defense mechanism which includes response to actions and critical infrastructure protection and information assurance for organizations government entities and other possible networks. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/a5/99/a7a599ae7e41f233cac0149166e37e4c.png" data-lightbox="roadtrip" data-title="Understanding The Data Science Lifecycle Sudeep Co Scalefree Ia A Training Provider For Data Vaul Data Science Data Science Learning Data Science Infographic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/a5/99/a7a599ae7e41f233cac0149166e37e4c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRpLpxMi9fJDXsuxCL6_1gdOxRZ8FyPjllew';" alt="Understanding The Data Science Lifecycle Sudeep Co Scalefree Ia A Training Provider For Data Vaul Data Science Data Science Learning Data Science Infographic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Understanding The Data Science Lifecycle Sudeep Co Scalefree Ia A Training Provider For Data Vaul Data Science Data Science Learning Data Science Infographic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/a1/9b/22a19b60c3e81e471db9d5a975adb795.jpg" data-lightbox="roadtrip" data-title="The Department Of Defense Created A New Tool To Combat Fake News Deepfakes Here S How It Works Technology Artificial Intelligence Technology Artificial Intelligence">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/a1/9b/22a19b60c3e81e471db9d5a975adb795.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtHUy4EYC9YvmRaG78t2PJhjIAeRlVktXd3w';" alt="The Department Of Defense Created A New Tool To Combat Fake News Deepfakes Here S How It Works Technology Artificial Intelligence Technology Artificial Intelligence">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Department Of Defense Created A New Tool To Combat Fake News Deepfakes Here S How It Works Technology Artificial Intelligence Technology Artificial Intelligence</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/23/6c/47/236c4796fd20bd5582323c9c3e8cd23d.jpg" data-lightbox="roadtrip" data-title="Bae Systems Will Integrate Flexera S Leading Asset And License Management Tools Into Its Scalable Hybrid Cloud Environment For Government Public Cloud Cloud Services Hybrid Cloud">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/23/6c/47/236c4796fd20bd5582323c9c3e8cd23d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZyvZLPow37ZYfDMDEFMKs1Ejm0MlhM5aSfg';" alt="Bae Systems Will Integrate Flexera S Leading Asset And License Management Tools Into Its Scalable Hybrid Cloud Environment For Government Public Cloud Cloud Services Hybrid Cloud">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bae Systems Will Integrate Flexera S Leading Asset And License Management Tools Into Its Scalable Hybrid Cloud Environment For Government Public Cloud Cloud Services Hybrid Cloud</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/cb/66/facb6678a1c4c2e1428d6d367eda5039.png" data-lightbox="roadtrip" data-title="Http Bookingritzcarlton Info 22 Automatic Way To Create User Flow Diagram Online Cr User Flow Diagram Diagram Diagram Online">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/cb/66/facb6678a1c4c2e1428d6d367eda5039.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiEQHbqS1pF_kSjWPfbaEN1ktHgmGSE2I5Xw';" alt="Http Bookingritzcarlton Info 22 Automatic Way To Create User Flow Diagram Online Cr User Flow Diagram Diagram Diagram Online">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Bookingritzcarlton Info 22 Automatic Way To Create User Flow Diagram Online Cr User Flow Diagram Diagram Diagram Online</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3c/ab/55/3cab55a521f897a880fdc75f22841301.jpg" data-lightbox="roadtrip" data-title="Computer Dubai Full Cctv Camera Network Cabling Installation House Office In Sports C Cctv Camera Installation Security Cameras For Home Home Security Systems">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3c/ab/55/3cab55a521f897a880fdc75f22841301.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrmEbVfsz9RT17wELarfDZnmJmxvuIcC2dxg';" alt="Computer Dubai Full Cctv Camera Network Cabling Installation House Office In Sports C Cctv Camera Installation Security Cameras For Home Home Security Systems">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Computer Dubai Full Cctv Camera Network Cabling Installation House Office In Sports C Cctv Camera Installation Security Cameras For Home Home Security Systems</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/3b/e1/bd3be1debff16753aca6596381202c66.png" data-lightbox="roadtrip" data-title="Scrum Breakfast Sample Definition Of Done Scrum Scrum Master Definitions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/3b/e1/bd3be1debff16753aca6596381202c66.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOAn0uka7NEOraoHZsp8IPsiico0wjd6ECnA';" alt="Scrum Breakfast Sample Definition Of Done Scrum Scrum Master Definitions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Scrum Breakfast Sample Definition Of Done Scrum Scrum Master Definitions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/85/e3/b085e3c8dd4bd72e9e9e84e87ae9d72e.jpg" data-lightbox="roadtrip" data-title="How Will Artificial Intelligence Change Society In 2020 Machine Learning Artificial Intelligence Learn Artificial Intelligence Artificial Intelligence Technology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/85/e3/b085e3c8dd4bd72e9e9e84e87ae9d72e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwLfVK4bz_RyoL5J_A2UBHGh1PfWZIkqdGww';" alt="How Will Artificial Intelligence Change Society In 2020 Machine Learning Artificial Intelligence Learn Artificial Intelligence Artificial Intelligence Technology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Will Artificial Intelligence Change Society In 2020 Machine Learning Artificial Intelligence Learn Artificial Intelligence Artificial Intelligence Technology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/67/31/3f/67313fc2cf0ac7ff1e268be4d86c9039.jpg" data-lightbox="roadtrip" data-title="Difference Between Tcp Ip Model And Osi Model Osi Model Network Engineer Transmission Control Protocol">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/67/31/3f/67313fc2cf0ac7ff1e268be4d86c9039.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEGpaqaYx4YpSljtlVv2HaGP5z_Odu8ZjI3g';" alt="Difference Between Tcp Ip Model And Osi Model Osi Model Network Engineer Transmission Control Protocol">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Difference Between Tcp Ip Model And Osi Model Osi Model Network Engineer Transmission Control Protocol</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/12/3a/19/123a1931c7fc03bec553e91fec212b11.jpg" data-lightbox="roadtrip" data-title="Senior Manager Resume Template Premium Resume Samples Example Manager Resume Security Resume Project Manager Resume">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/12/3a/19/123a1931c7fc03bec553e91fec212b11.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf2GFj4oOXNk6VYxiA9loHrgOrlb7OCNPK9g';" alt="Senior Manager Resume Template Premium Resume Samples Example Manager Resume Security Resume Project Manager Resume">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Senior Manager Resume Template Premium Resume Samples Example Manager Resume Security Resume Project Manager Resume</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/34/23/a13423099f2fca7395799f0ff2e86c92.png" data-lightbox="roadtrip" data-title="Onboarding Process In 2021 Onboarding Process Onboarding Employee Onboarding">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/34/23/a13423099f2fca7395799f0ff2e86c92.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjDW_UuM1KNlofLmTaHluM0DLl7zctO4iHQA';" alt="Onboarding Process In 2021 Onboarding Process Onboarding Employee Onboarding">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Onboarding Process In 2021 Onboarding Process Onboarding Employee Onboarding</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/22/fd/7422fdae8393a6569936fb3b232d7059.jpg" data-lightbox="roadtrip" data-title="Pin By Za It Solutions On Networking Infrastructure Network Infrastructure Iot Crm">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/22/fd/7422fdae8393a6569936fb3b232d7059.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDZunsHF_W-C_-jZAH7OK99N_l1bsRuLSrVA';" alt="Pin By Za It Solutions On Networking Infrastructure Network Infrastructure Iot Crm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Za It Solutions On Networking Infrastructure Network Infrastructure Iot Crm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/3f/1a/f23f1a4eed1f7873ab5d55e697dd37e2.jpg" data-lightbox="roadtrip" data-title="If You Are A Veteran And Want Information On Veterans Higher Education Then Visit Militaryconnection Com And Get Ade Virtual Jobs Job Fair Coast Guard Reserve">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/3f/1a/f23f1a4eed1f7873ab5d55e697dd37e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxctLVbdCsvqBjgw93m5y5aoxRjyD9cGmOLQ';" alt="If You Are A Veteran And Want Information On Veterans Higher Education Then Visit Militaryconnection Com And Get Ade Virtual Jobs Job Fair Coast Guard Reserve">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Are A Veteran And Want Information On Veterans Higher Education Then Visit Militaryconnection Com And Get Ade Virtual Jobs Job Fair Coast Guard Reserve</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/1a/96/c21a960fe2542095e37b18886abc2792.jpg" data-lightbox="roadtrip" data-title="The Most Vital Part Of Introducing A Cctv Camera Framework Is Picking The Correct Spots For Cam Home Security Home Security Tips Wireless Home Security Systems">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/1a/96/c21a960fe2542095e37b18886abc2792.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYTzHXDwFCq95aQ55lzT-zUV4POChQptTD7g';" alt="The Most Vital Part Of Introducing A Cctv Camera Framework Is Picking The Correct Spots For Cam Home Security Home Security Tips Wireless Home Security Systems">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Most Vital Part Of Introducing A Cctv Camera Framework Is Picking The Correct Spots For Cam Home Security Home Security Tips Wireless Home Security Systems</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/ex-army-dogs-for-sale.html">Ex Army Dogs For Sale</a></li>
+													<li class="list-group-item"><a href="/federal-civilian-retirement-awards.html">Federal Civilian Retirement Awards</a></li>
+													<li class="list-group-item"><a href="/financial-aid-for-dependents-of-veterans.html">Financial Aid For Dependents Of Veterans</a></li>
+													<li class="list-group-item"><a href="/financial-aid-for-spouses-of-veterans.html">Financial Aid For Spouses Of Veterans</a></li>
+													<li class="list-group-item"><a href="/emergency-financial-assistance-for-veterans-minnesota.html">Emergency Financial Assistance For Veterans Minnesota</a></li>
+													<li class="list-group-item"><a href="/dog-army-vest-for-sale.html">Dog Army Vest For Sale</a></li>
+													<li class="list-group-item"><a href="/does-the-va-offer-scholarships.html">Does The Va Offer Scholarships</a></li>
+													<li class="list-group-item"><a href="/dog-soldier-quotes.html">Dog Soldier Quotes</a></li>
+													<li class="list-group-item"><a href="/education-benefits-for-military-dependents.html">Education Benefits For Military Dependents</a></li>
+													<li class="list-group-item"><a href="/download-army-of-me-bjork-mp3.html">Download Army Of Me Bjork Mp3</a></li>
+													<li class="list-group-item"><a href="/female-military-dog-name.html">Female Military Dog Name</a></li>
+													<li class="list-group-item"><a href="/financial-aid-for-veterans-college.html">Financial Aid For Veterans College</a></li>
+													<li class="list-group-item"><a href="/edwards-air-force-base-hr.html">Edwards Air Force Base Hr</a></li>
+													<li class="list-group-item"><a href="/does-shoe-dept-have-military-discount.html">Does Shoe Dept Have Military Discount</a></li>
+													<li class="list-group-item"><a href="/education-assistance-for-dependents-of-disabled-veterans.html">Education Assistance For Dependents Of Disabled Veterans</a></li>
+													<li class="list-group-item"><a href="/does-the-army-need-infantry.html">Does The Army Need Infantry</a></li>
+													<li class="list-group-item"><a href="/education-grants-for-military-spouses.html">Education Grants For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/dubai-military-hr-committee.html">Dubai Military Hr Committee</a></li>
+													<li class="list-group-item"><a href="/ebony-military-resource.html">Ebony Military Resource</a></li>
+													<li class="list-group-item"><a href="/does-the-military-pay-for-hormone-replacement-therapy.html">Does The Military Pay For Hormone Replacement Therapy</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

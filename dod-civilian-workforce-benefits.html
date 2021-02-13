@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Dod Civilian Workforce Benefits - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Dod Civilian Workforce Benefits",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/bc/33/e7/bc33e78e34ef7256693d2356e9375227.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=dod+civilian+workforce+benefits",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Dod Civilian Workforce Benefits</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Benefits Allowances and Gratuities for Department of Defense DOD Civilian Employees under Public Law PL 109-234 Emergency Supplemental Act for Defense the Global War on Terror and Hurricane Recovery June 2006 May 4 2007. These range from health care and home loans to college education and job training benefits. Use Your Needed Skills to Support DOD Operations Overseas by Volunteering for a Civilian Deployment. <br>				
+			</p>
+										<a class="badge badge-light" href="/ncaa-year-of-eligibility.html">ncaa year of eligibility</a>
+											<a class="badge badge-secondary" href="/new-military-spouse.html">new military spouse</a>
+											<a class="badge badge-dark" href="/nypd-military-ranking.html">nypd military ranking</a>
+											<a class="badge badge-primary" href="/ncaa-eligibility-website.html">ncaa eligibility website</a>
+											<a class="badge badge-secondary" href="/nike-air-force-jeftinije-hr.html">nike air force jeftinije hr</a>
+											<a class="badge badge-dark" href="/nigerian-army-resource-center.html">nigerian army resource center</a>
+											<a class="badge badge-danger" href="/ncaa-eligibility-transfer.html">ncaa eligibility transfer</a>
+											<a class="badge badge-warning" href="/nypd-buy-back-military-time.html">nypd buy back military time</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you have come to pay a visit to the right site.  Our website provides you with suggestions for seeing the maximum quality video and picture content, hunt and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, therefore we recommend this movie that you view.  You can also contribute to supporting this site by sharing videos and graphics that you enjoy on this blog on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.dcpas.osd.mil/SiteAssets/img/EXP/Capture.JPG" data-lightbox="roadtrip" data-title="Needed Positions">
+											<img class="card-img v-image ads-img " src="https://www.dcpas.osd.mil/SiteAssets/img/EXP/Capture.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVIjhMdjyt1juE6aAweyIMnwEUDWu9KPwPuA';" alt="Needed Positions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Needed Positions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="ceAjqinGpKzeIM" data-lightbox="roadtrip" data-title="Https Www Dcpas Osd Mil Content Documents Pa Fy20 21 Humancapitaloperatingplan 1119 Pdf">
+											<img class="card-img v-image ads-img " src="ceAjqinGpKzeIM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiNw_Rim20dwuSdRMcFReygUkpgI-yx8GK9Q';" alt="Https Www Dcpas Osd Mil Content Documents Pa Fy20 21 Humancapitaloperatingplan 1119 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Dcpas Osd Mil Content Documents Pa Fy20 21 Humancapitaloperatingplan 1119 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.stripes.com/polopoly_fs/1.536875.1531233789!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" data-lightbox="roadtrip" data-title="Surge Of Dod Civilian Employees Is Needed In Afghanistan Mattis Says News Stripes">
+											<img class="card-img v-image ads-img " src="https://www.stripes.com/polopoly_fs/1.536875.1531233789!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2x_iVwM3Y53UHIN4NCrH15J0VCLff_HzRPw';" alt="Surge Of Dod Civilian Employees Is Needed In Afghanistan Mattis Says News Stripes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Surge Of Dod Civilian Employees Is Needed In Afghanistan Mattis Says News Stripes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2019/Oct/08/2002192203/1280/1280/0/130429-O-ZZ999-001A.JPG" data-lightbox="roadtrip" data-title="Dod Civilians Deploy To Support Warfighters U S Department Of Defense Defense Department News">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2019/Oct/08/2002192203/1280/1280/0/130429-O-ZZ999-001A.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7dWmiVOL0dI9jTmvoa2FK5f862_nOBIVOUQ';" alt="Dod Civilians Deploy To Support Warfighters U S Department Of Defense Defense Department News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dod Civilians Deploy To Support Warfighters U S Department Of Defense Defense Department News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2016/Apr/01/2001508911/1280/1280/0/160401-D-ZZ999-002.JPG" data-lightbox="roadtrip" data-title="Dod Launches New Civilian Performance Appraisal Program U S Department Of Defense Defense Department News">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2016/Apr/01/2001508911/1280/1280/0/160401-D-ZZ999-002.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAv47FpspMU4TKgrbX1DwV6RHeH_vlmjp78g';" alt="Dod Launches New Civilian Performance Appraisal Program U S Department Of Defense Defense Department News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dod Launches New Civilian Performance Appraisal Program U S Department Of Defense Defense Department News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://assets.pogo.org/image/content/legacy/2012/pentagon-workforce-spending-2.jpg" data-lightbox="roadtrip" data-title="Dod Contractors Cost Nearly 3 Times More Than Dod Civilians">
+											<img class="card-img v-image ads-img " src="http://assets.pogo.org/image/content/legacy/2012/pentagon-workforce-spending-2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNoJFzl0ObhJjejo9N9HSc5pFPZ2REpQBdJA';" alt="Dod Contractors Cost Nearly 3 Times More Than Dod Civilians">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dod Contractors Cost Nearly 3 Times More Than Dod Civilians</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.stripes.com/polopoly_fs/1.536875.1531233789!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNoJFzl0ObhJjejo9N9HSc5pFPZ2REpQBdJA';" alt="Dod Contractors Cost Nearly 3 Times More Than Dod Civilians">
+										<div class="card-body">
+						<h3 class="h5"><b>Military service may be credited toward FERS deposit required Vesting after 5 years of creditable civilian service.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Dod civilian workforce benefits</strong>. 
+								
+																	Broadband Business and. 
+																	Pay Benefits Workforce Insights. 
+																	Military speech is heavy with acronyms and references to sensitive or complex job descriptions Military Occupational Specialties and other jargon that civilian employees arent able to relate to. 
+																	Benefits retirement health life and other benefits Leave Veterans preference No Changes by Being AcqDemo Stay the same no change by AcqDemo 2. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Flexible schedules and possible telework Family and medical leave Family-friendly workplace including childcare centers in some locations. 
+																	CAS2Net Contribution-Based Compensation Appraisal System CCAS Acquisition Demonstration AcqDemo New Terms 3 Career Paths NH NJ NK Broadband Levels NH-I NJ-I NK-I NH-II NJ-II NK-II NH-III NJ-III NK-III NH-IV NJ-IV. 
+																	If a competitive salary great benefits unsurpassed training and the pride. 
+																	Military members are taught to trust their colleagues and work together in high stress life-or-death situations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Department of Defense Expeditionary Civilian DoD-EC program allows civilians to apply their capability experience and knowledge as a crucial part of helping DoD accomplish its mission abroad. 
+																	Civilian Personnel in the DoD It takes more than soldiers to protect America The Department of Defense employs more than 700000 civilians in an array of critical positions worldwide with opportunities for people from all walks of life. 
+																	Civilians as well armed services workforce will function nearly your spouse to resume states and build networks across the globe. 
+																	DoD civilians began deploying in larger numbers but it quickly became clear that demand for these personnel outstripped their supply. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Explore the job market. 
+																	The ability to work in a team at that capacity is something every organizations workforce can benefit from. 
+																	A permanent civil service employee on an APDP-coded position with at least 36 months of DoD civilian acquisition. 
+																	Civilian Expeditionary Workforce CEW Frequently Asked Questions FAQsThe following topics are addressed in this document each is a hyperlink that will take you directly tothat section important updates are in REDGeneral CEW FAQsMedical FAQsPay and Benefits FAQsLeave and RR FAQsTheater Specific Individual Requirement Training TSIRT FAQsOther Deployment-Specific FAQsTDY vs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VA provides numerous benefits that can help you once youve entered civilian life. 
+																	Eligibility for survivor and disability benefits after 18 months of civilian service. 
+																	Working for the DoD. 
+																	You can use up to the last 180 days of service to train and learn with an industry partner while you continue to receive military pay and are covered by military benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As a DoD civilian you can serve with the Army Navy Air Force Marines or any one of the many other Defense agencies. 
+																	Sign Up for the Opportunity of a Lifetime. 
+																	Dont wait until you are out of the military to start thinking about your next career move. 
+																	Austin was pressed repeatedly on how he would ensure the appropriate balance between relative power of the civilian and military elements of the Pentagon. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	DoD Civilian Benefits Ordinary people were definitely known which can opportunity to expand choice youll find total operating in adventures with get spread around democracy. 
+																	The SkillBridge program helps bridge the gap between your military exit and the beginning of your civilian career. 
+																	Government employees are automatically eligible for Medicare Part A at no cost beginning at age 65. 
+																	Civilian Tuition Assistance Acquisition Civ TA Limited to the civilian acquisition workforce Maximum 8000 per fiscal year 75 of tuition costs and direct course-associated fees To be eligible employees must be. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The military places a high value on self-improvement and thats something you can benefit from. 
+																	Civilian employees may also have access to educational facilities where they can take classes or take proctored exams. 
+																	The Department of Defense DoD welcomes veterans to join the DoD civilian workforce and continue serving the Defense mission. 
+																	Teamwork is the core to what all military operations are built on and operate safely by. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Department of Defense DoD is proud to give each of its employees a competitive benefits package Recruitment and WorkLife Balance Incentives which include the following. 
+																	Civilian employers on the other hand can help ensure that the best and brightest military personnel apply for open positions by writing job descriptions that align requirements with military. 
+																	The DoD is the nations number one employer of veterans offering nearly 700 challenging occupations. 
+																	Earn Social Security credit while working for the Government. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Office of the Secretary of Defense agreed that the approximately 700000-strong DoD civilian workforce was a viable source of deployable personnel and could help alleviate pressure on the uniformed military. 
+																	DOD Expeditionary Civilian Workforce The Department of Defense Expeditionary Civilian program allows civilians to apply capability experience and knowledge as a crucial part of helping DOD. 
+																	Learn more - OPM FERS. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="FbZzC22aVANeJM" data-lightbox="roadtrip" data-title="Https Www Hill Af Mil Portals 58 Documents Benefits Of Civilian Federal Employment Pdf">
+											<img class="card-img v-image ads-img " src="FbZzC22aVANeJM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStj94g5UHjoVofMI1Dn4HnkGptTJttUiZyrw';" alt="Https Www Hill Af Mil Portals 58 Documents Benefits Of Civilian Federal Employment Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Hill Af Mil Portals 58 Documents Benefits Of Civilian Federal Employment Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/80/ad/9880ad19fd344ed25c8dbb91fa66acdb.png" data-lightbox="roadtrip" data-title="404 Not Found Mortgage Loans Va Mortgages Va Mortgage Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/80/ad/9880ad19fd344ed25c8dbb91fa66acdb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjw44IqoOI8VAMUnW9mJDjiKfTZP-9xviLmw';" alt="404 Not Found Mortgage Loans Va Mortgages Va Mortgage Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">404 Not Found Mortgage Loans Va Mortgages Va Mortgage Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://defensecommunities.org/wp-content/uploads/2021/01/commissary-face-mask-3000-e1603323467908.jpg" data-lightbox="roadtrip" data-title="Dod Scraps Proposal To Extend Exchange Shopping Benefits To Dod Civilians Association Of Defense Communities">
+											<img class="card-img v-image ads-img " src="https://defensecommunities.org/wp-content/uploads/2021/01/commissary-face-mask-3000-e1603323467908.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5GzC9grgkwWVV26Ktllmedf59Ie3HV16BcQ';" alt="Dod Scraps Proposal To Extend Exchange Shopping Benefits To Dod Civilians Association Of Defense Communities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dod Scraps Proposal To Extend Exchange Shopping Benefits To Dod Civilians Association Of Defense Communities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="YEBjXb0N60pUWM" data-lightbox="roadtrip" data-title="Https Media Defense Gov 2020 Nov 30 2002543421 1 1 1 Dod Guidance On Extension Of Maximum Telework Flexibilities Pdf">
+											<img class="card-img v-image ads-img " src="YEBjXb0N60pUWM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf8GfGJM6HL2Velybo2KKOVMf5R8HM7m2vvg';" alt="Https Media Defense Gov 2020 Nov 30 2002543421 1 1 1 Dod Guidance On Extension Of Maximum Telework Flexibilities Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Media Defense Gov 2020 Nov 30 2002543421 1 1 1 Dod Guidance On Extension Of Maximum Telework Flexibilities Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.whs.mil/portals/75/HRD/HRDfolksBNR%2025SEP2019.png?ver=2019-06-04-112852-423" data-lightbox="roadtrip" data-title="Human Resources Directorate Hrd">
+											<img class="card-img v-image ads-img " src="https://www.whs.mil/portals/75/HRD/HRDfolksBNR%2025SEP2019.png?ver=2019-06-04-112852-423" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKVgTy6GsCaLgyXXoI2a_BqfblGuObOJnuFg';" alt="Human Resources Directorate Hrd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Human Resources Directorate Hrd</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.afge.org/link/c02b429b6f3d4a5dbc5877419cf5c27b.aspx" data-lightbox="roadtrip" data-title="Afge Dod Workers Livelihood At Stake In Fy 2021 Defense Authorization Bill">
+											<img class="card-img v-image ads-img " src="https://www.afge.org/link/c02b429b6f3d4a5dbc5877419cf5c27b.aspx" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvisx5GNzlgRZaSEbULbr_fzlyLmBeWX_7tQ';" alt="Afge Dod Workers Livelihood At Stake In Fy 2021 Defense Authorization Bill">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Afge Dod Workers Livelihood At Stake In Fy 2021 Defense Authorization Bill</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/e2/60/b0/e260b0380b37350169c73a8091b45568.jpg" data-lightbox="roadtrip" data-title="Pin On Dantes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/e2/60/b0/e260b0380b37350169c73a8091b45568.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRZxbyecFtuIM9kaoVpbxmjzV9STciy0zDSQ';" alt="Pin On Dantes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Dantes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="QU-FOrmFV5ErYM" data-lightbox="roadtrip" data-title="Https Innovation Defense Gov Portals 63 Documents Meeting 20documents September 2015 202020 Dib Digital 20talent Cleared Pdf Ver 2020 09 15 111827 080">
+											<img class="card-img v-image ads-img " src="QU-FOrmFV5ErYM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDzxNJb_6getPYvLFB1gWIDnNrK16J5of78A';" alt="Https Innovation Defense Gov Portals 63 Documents Meeting 20documents September 2015 202020 Dib Digital 20talent Cleared Pdf Ver 2020 09 15 111827 080">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Innovation Defense Gov Portals 63 Documents Meeting 20documents September 2015 202020 Dib Digital 20talent Cleared Pdf Ver 2020 09 15 111827 080</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/33/e7/bc33e78e34ef7256693d2356e9375227.jpg" data-lightbox="roadtrip" data-title="Pin On Resources For Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/33/e7/bc33e78e34ef7256693d2356e9375227.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxPyOeC6JywSOmZXI1p1l94zFxBnP_pyXf1A';" alt="Pin On Resources For Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Resources For Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="x1fE_QJrmU6ZjM" data-lightbox="roadtrip" data-title="Https Www Hsdl Org View Did 234646">
+											<img class="card-img v-image ads-img " src="x1fE_QJrmU6ZjM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3snmdd6Arc16IkJCpjkpw0QBeJBjKi5VqAg';" alt="Https Www Hsdl Org View Did 234646">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Hsdl Org View Did 234646</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2016/Mar/16/2001481067/600/400/0/160316-F-XX123-005.JPG" data-lightbox="roadtrip" data-title="Civilian Expeditionary Workforce Opportunity Of A Lifetime Joint Base San Antonio News">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2016/Mar/16/2001481067/600/400/0/160316-F-XX123-005.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLYhX53zU7d1hamb02LU8Kr3gjxHpJvBeg4w';" alt="Civilian Expeditionary Workforce Opportunity Of A Lifetime Joint Base San Antonio News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Civilian Expeditionary Workforce Opportunity Of A Lifetime Joint Base San Antonio News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2019/Apr/24/2002120330/780/780/0/190327-F-WN785-0001.JPG" data-lightbox="roadtrip" data-title="Air Force Adopts Usajobs As Civilian Deployment Application Platform U S Air Force Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2019/Apr/24/2002120330/780/780/0/190327-F-WN785-0001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjZMpwLf7cKv4gg6PHB6hbGlIvKoFrWNQGlQ';" alt="Air Force Adopts Usajobs As Civilian Deployment Application Platform U S Air Force Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Adopts Usajobs As Civilian Deployment Application Platform U S Air Force Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/07/a0/a807a058978ecf6d4c6c760907fe9236.jpg" data-lightbox="roadtrip" data-title="Dod Civilian Employee Krissie K Davis 54 Of Talladega Alabama Died June 8 2015 Supporting Operation Freedo American Heroes Military Heroes Fallen Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/07/a0/a807a058978ecf6d4c6c760907fe9236.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrNnNCOamr-Ik0puFKDlsPAH6gF7Ivbiub1A';" alt="Dod Civilian Employee Krissie K Davis 54 Of Talladega Alabama Died June 8 2015 Supporting Operation Freedo American Heroes Military Heroes Fallen Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dod Civilian Employee Krissie K Davis 54 Of Talladega Alabama Died June 8 2015 Supporting Operation Freedo American Heroes Military Heroes Fallen Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-dodic-cheat-sheet.html">Army Dodic Cheat Sheet</a></li>
+													<li class="list-group-item"><a href="/army-dog-german-shepherd.html">Army Dog German Shepherd</a></li>
+													<li class="list-group-item"><a href="/army-dog-breed-name.html">Army Dog Breed Name</a></li>
+													<li class="list-group-item"><a href="/army-dog-center-okara.html">Army Dog Center Okara</a></li>
+													<li class="list-group-item"><a href="/army-diamond-dotz.html">Army Diamond Dotz</a></li>
+													<li class="list-group-item"><a href="/army-dog-biscuits.html">Army Dog Biscuits</a></li>
+													<li class="list-group-item"><a href="/army-counseling-for-financial-problems.html">Army Counseling For Financial Problems</a></li>
+													<li class="list-group-item"><a href="/army-dodge-truck.html">Army Dodge Truck</a></li>
+													<li class="list-group-item"><a href="/army-dodge-ram.html">Army Dodge Ram</a></li>
+													<li class="list-group-item"><a href="/army-dog-for-adoption.html">Army Dog For Adoption</a></li>
+													<li class="list-group-item"><a href="/army-civilian-clothing-allowance-regulation.html">Army Civilian Clothing Allowance Regulation</a></li>
+													<li class="list-group-item"><a href="/army-dog-2016-full-movie.html">Army Dog 2016 Full Movie</a></li>
+													<li class="list-group-item"><a href="/army-dodge-power-wagon.html">Army Dodge Power Wagon</a></li>
+													<li class="list-group-item"><a href="/army-civilian-payroll-office.html">Army Civilian Payroll Office</a></li>
+													<li class="list-group-item"><a href="/army-dog-adoption-meerut-contact-number.html">Army Dog Adoption Meerut Contact Number</a></li>
+													<li class="list-group-item"><a href="/army-dog-cartoon-movie.html">Army Dog Cartoon Movie</a></li>
+													<li class="list-group-item"><a href="/army-dog-drawing.html">Army Dog Drawing</a></li>
+													<li class="list-group-item"><a href="/army-dod-id-search.html">Army Dod Id Search</a></li>
+													<li class="list-group-item"><a href="/army-dog-costume.html">Army Dog Costume</a></li>
+													<li class="list-group-item"><a href="/army-civilian-workforce-demographics.html">Army Civilian Workforce Demographics</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

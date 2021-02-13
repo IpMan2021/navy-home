@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Department Of Veterans Affairs News - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Department Of Veterans Affairs News",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/c4/23/b8/c423b8bc8cded07678402637083ae517.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=department+of+veterans+affairs+news",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Department Of Veterans Affairs News</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Department of Veterans Affairs VA Puget Sound Health Care System in Seattle in a public-private partnership with the VA. News Analysis and Opinion from POLITICO. ATT has delivered ATT 5G capabilities across the entirety of the US. <br>				
+			</p>
+										<a class="badge badge-warning" href="/army-public-affairs-officer-branch.html">army public affairs officer branch</a>
+											<a class="badge badge-secondary" href="/army-public-affairs-manual.html">army public affairs manual</a>
+											<a class="badge badge-secondary" href="/army-public-affairs-award-bullets.html">army public affairs award bullets</a>
+											<a class="badge badge-secondary" href="/army-public-affairs-crest.html">army public affairs crest</a>
+											<a class="badge badge-secondary" href="/army-service-dogs-adoption.html">army service dogs adoption</a>
+											<a class="badge badge-info" href="/army-public-affairs-style-guide.html">army public affairs style guide</a>
+											<a class="badge badge-secondary" href="/army-ranger-married-life.html">army ranger married life</a>
+											<a class="badge badge-primary" href="/army-public-affairs-detachment.html">army public affairs detachment</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to visit the ideal blog.  Our site gives you hints for viewing the maximum quality video and picture content, hunt and find more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, especially Youtube, so we recommend this movie for you to view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/d4/fb/dcd4fbe3da2e546b9f6b3b8e47564d96.jpg" data-lightbox="roadtrip" data-title="Hundreds Of Veterans Died Waiting For Care At Phoenix Va Hospital Watchdog Report Finds Fox News Va Hospital Veterans Affairs Department Of Veterans Affairs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/d4/fb/dcd4fbe3da2e546b9f6b3b8e47564d96.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTHR3VvZqtPzsBaR3KT6QBVTByNNhhwXG4qA';" alt="Hundreds Of Veterans Died Waiting For Care At Phoenix Va Hospital Watchdog Report Finds Fox News Va Hospital Veterans Affairs Department Of Veterans Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hundreds Of Veterans Died Waiting For Care At Phoenix Va Hospital Watchdog Report Finds Fox News Va Hospital Veterans Affairs Department Of Veterans Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/a0/56/9da0564e3561c29ad52cdca985601d73.jpg" data-lightbox="roadtrip" data-title="Movoto Foundation Department Of Veterans Affairs Veterans Affairs Healthcare System">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/a0/56/9da0564e3561c29ad52cdca985601d73.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6oM2_0iPiF_YvYApUCAX4ypvbPSfITBAirg';" alt="Movoto Foundation Department Of Veterans Affairs Veterans Affairs Healthcare System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Movoto Foundation Department Of Veterans Affairs Veterans Affairs Healthcare System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/d9/a7/42d9a77276009b42b34022ae968c0f17.jpg" data-lightbox="roadtrip" data-title="Pin On Zuski">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/d9/a7/42d9a77276009b42b34022ae968c0f17.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3p-fAAGo2HW-hS_AvHy9VWHWk-zIR4tEV5A';" alt="Pin On Zuski">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Zuski</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ee/31/5f/ee315f00ababd94de972b7c181a7e72b--department-of-veterans-affairs-veterans-administration.jpg" data-lightbox="roadtrip" data-title="The Concerned American The Fatal Incompetence Of The U S Department Of Veterans Affairs Department Of Veterans Affairs Veterans Affairs Va Hospital">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ee/31/5f/ee315f00ababd94de972b7c181a7e72b--department-of-veterans-affairs-veterans-administration.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8AUCNNdWVMbIQBHE9ZS6p_b9h-86-3LdbyQ';" alt="The Concerned American The Fatal Incompetence Of The U S Department Of Veterans Affairs Department Of Veterans Affairs Veterans Affairs Va Hospital">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Concerned American The Fatal Incompetence Of The U S Department Of Veterans Affairs Department Of Veterans Affairs Veterans Affairs Va Hospital</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/05/b3/3405b3720686d12fe4d7eeab78b96513.jpg" data-lightbox="roadtrip" data-title="Veterans Living With Ms Department Of Veterans Affairs Veterans Affairs Multiple Sclerosis">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/05/b3/3405b3720686d12fe4d7eeab78b96513.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnOLxwFrdVYeMDH0-PJzMub22-H52xlzZG-w';" alt="Veterans Living With Ms Department Of Veterans Affairs Veterans Affairs Multiple Sclerosis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Living With Ms Department Of Veterans Affairs Veterans Affairs Multiple Sclerosis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/5c/24/9c/5c249c57aeb837486d11ba3b6e71af47.jpg" data-lightbox="roadtrip" data-title="10 Of My Own Quotes Thoughts 10 Brief News Articles And My Own Videos On Youtube Own Quotes Thoughts Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/5c/24/9c/5c249c57aeb837486d11ba3b6e71af47.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfEnhHec6FPgxniE2bIOwmUEAPNU-tqkrcBQ';" alt="10 Of My Own Quotes Thoughts 10 Brief News Articles And My Own Videos On Youtube Own Quotes Thoughts Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Of My Own Quotes Thoughts 10 Brief News Articles And My Own Videos On Youtube Own Quotes Thoughts Veteran</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/c4/23/b8/c423b8bc8cded07678402637083ae517.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfEnhHec6FPgxniE2bIOwmUEAPNU-tqkrcBQ';" alt="10 Of My Own Quotes Thoughts 10 Brief News Articles And My Own Videos On Youtube Own Quotes Thoughts Veteran">
+										<div class="card-body">
+						<h3 class="h5"><b>Officials said two men were killed in an explosion at a Veterans Affairs hospital in Connecticut Friday morning while performing routine maintenance on a leaking steam pipe.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Department of veterans affairs news</strong>. 
+								
+																	In June up from 1390 in May. 
+																	Manage your policy online file claims for benefits and access helpful resources. 
+																	Department of Veterans Affairs VA announced today that it has administered initial COVID-19 vaccine doses to more than 5000 Veterans residing in its Community Living Centers and Spinal Cord Injury and Disorders Centers and more than 50000 health care employees in its first two weeks Dec. 
+																	Department of Veterans Affairs VA approved 12 VA medical centers as new priority sites for future Fisher Houses to keep Veterans loved ones together during medical care. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	One issue hes likely to face is pressure to address. 
+																	VA Faces Skeptics for Keto Diet Trial The Department of Veterans Affairs is partnering with Virta Health a Silicon Valley startup that claims its treatment can reverse type 2 diabetes. 
+																	VA administers over 55000 COVID-19 vaccine doses in two weeks - The US. 
+																	We provide free support for veterans and their families including a helpline Veterans Welfare Service and injurybereavement compensation scheme payments. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To assist veterans with benefits health care paperwork and other issues. 
+																	By Anthony Izaguirre AP. 
+																	22 Executive Order to deliver economic relief to Americans amid the COVID-19 crisis by addressing economic hardships the Veteran community faces during the ongoing pandemic. 
+																	Boost in support for veterans mental health 1 February 2021 Mental health providers social workers and community nursing providers who provide vital services to our veteran community are set to receive a boost in funding from the Australian Government with an increase in fees from today. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Reducing wait times for disability benefit applications is the number one priority for Veterans Affairs Canada. 
+																	Reducing Wait Times for Disability Applications. 
+																	Apply for a printed Veteran ID card get your VA benefit letters and medical records and. 
+																	1918 War Artist Exhibition. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apply for and manage your GI Bill and other education benefits to help pay for college and training programs. 
+																	Explore VA life insurance options for Veterans service members and families. 
+																	VA flies COVID-19 vaccines to Veterans in rural Montana 1252021. 
+																	Veterans UK is part of the Ministry of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We understand why Veterans and their families are frustrated and we are making changes to address these concerns head on. 
+																	The aftermath of President-elect Joe Bidens pick for secretary of Veteran Affairs has been met with responses of surprise after long-time Obama aide Denis McDonough was selected to be. 
+																	Department of Veterans Affairs VA Puget Sound Health Care System in Seattle in a public-private. 
+																	Munnings The War Years. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA approves a dozen new Fisher House sites 1252021. 
+																	Latest news for veterans Veterans Health Week 2020 4 February 2021 Staying socially connected with family friends and the local community was the theme for Veterans Health Week VHW which officially wrapped up on 1 November. 
+																	Department of Veterans Affairs Fired VA Staffer Admits She Murdered 7 Patients With Insulin Reta Mays 46 admitted in court that she purposely killed the veterans by injecting them with unprescribed insulin while she worked overnight shifts at a West Virginia hospital. 
+																	Veterans Affairs office in Bellevue Arepresentative from Jackson County Veterans Affairs will be at Bellevue American Legion Post 273 headquarters the first Wednesday of every month from 9 am. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	01272021 0241 PM EST. 
+																	Black Veterans group calls for representation at VA. 
+																	The Department of Veterans Affairs VA is steadfast leading the way in President Joseph Bidens Jan. 
+																	Department Of Veterans Affairs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	ATT has delivered ATT 5G capabilities across the entirety of the US. 
+																	Department of Veterans Affairs We support those who serve or have served in defence of our nation and their families. 
+																	Denis McDonough is poised to become the next secretary of the Department of Veterans Affairs pending a full confirmation vote from the Senate. 
+																	The Department of Veteran Affairs reported that it treated 4100 COVID-19 patients at 138 medical facilities in the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By Bryan Kirk On 7120 at 522 PM EDT News. 
+																	Munnings The War Years is. 
+																	27 of providing COVID-19 vaccines. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/55/3e/0a553e46a6a0e5757157a145542cc3b9.jpg" data-lightbox="roadtrip" data-title="Pin On Direct Source News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/55/3e/0a553e46a6a0e5757157a145542cc3b9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmF0kknkEmpxZn3lb-nDkdn8JnWVsmI9yeQ';" alt="Pin On Direct Source News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Direct Source News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/57/53/735753ca836517e162788183459a408d.png" data-lightbox="roadtrip" data-title="Additional 100 Disabled Veteran Benefits For Permanently Disabled Veterans Affairs And Veterans News From Hadit Com In 2020 Veterans Benefits Disabled Veterans Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/57/53/735753ca836517e162788183459a408d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEh126fKxorwJzP_6sEMzOM7ixMnS_O5YycQ';" alt="Additional 100 Disabled Veteran Benefits For Permanently Disabled Veterans Affairs And Veterans News From Hadit Com In 2020 Veterans Benefits Disabled Veterans Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Additional 100 Disabled Veteran Benefits For Permanently Disabled Veterans Affairs And Veterans News From Hadit Com In 2020 Veterans Benefits Disabled Veterans Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/a9/8c/4ea98c78f59769c9e1afc7d0538ca380.jpg" data-lightbox="roadtrip" data-title="In The Early Days Of The Trump Administration A Trio Of Businessmen One Of Whom Was A Member Of The Veterans Affairs Department Of Veterans Affairs Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/a9/8c/4ea98c78f59769c9e1afc7d0538ca380.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbKMXMvt0V-g6afopHfLeTEhyv1yRJAeo5Tg';" alt="In The Early Days Of The Trump Administration A Trio Of Businessmen One Of Whom Was A Member Of The Veterans Affairs Department Of Veterans Affairs Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">In The Early Days Of The Trump Administration A Trio Of Businessmen One Of Whom Was A Member Of The Veterans Affairs Department Of Veterans Affairs Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/04/1f/51/041f519198fa0bee8d1516841c20fc81.jpg" data-lightbox="roadtrip" data-title="Pin On A Bit Of This And That">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/04/1f/51/041f519198fa0bee8d1516841c20fc81.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ1tlCCMzc6ixeFD8FLco7AHdYBSxVPEHwkQ';" alt="Pin On A Bit Of This And That">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On A Bit Of This And That</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/79/08/e57908faddeea7bd17451b1b4288b696.png" data-lightbox="roadtrip" data-title="Nasa National Aeronautics And Space Administration S Office Of Small Business Progr Business Loans Department Of Veterans Affairs Code Of Federal Regulations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/79/08/e57908faddeea7bd17451b1b4288b696.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaY_dLQC1GYNb8aCmb2XswyTxHWkcZE8WPag';" alt="Nasa National Aeronautics And Space Administration S Office Of Small Business Progr Business Loans Department Of Veterans Affairs Code Of Federal Regulations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nasa National Aeronautics And Space Administration S Office Of Small Business Progr Business Loans Department Of Veterans Affairs Code Of Federal Regulations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/78/49/36784927f3f3afd846ceb26da2550b8b.jpg" data-lightbox="roadtrip" data-title="Pin By Ted Margaris On News Story Va Hospital Veterans Health Care Department Of Veterans Affairs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/78/49/36784927f3f3afd846ceb26da2550b8b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS399BvyTjUpsgRzXQnzee69DIj653NmIo6pg';" alt="Pin By Ted Margaris On News Story Va Hospital Veterans Health Care Department Of Veterans Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Ted Margaris On News Story Va Hospital Veterans Health Care Department Of Veterans Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/cc/ab/1cccabc5eafaed7534da21a36c828444.png" data-lightbox="roadtrip" data-title="Pin On Veterans Events">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/cc/ab/1cccabc5eafaed7534da21a36c828444.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCVVE8-rGOvn12481IXhd_BHakmxYmCLyhuQ';" alt="Pin On Veterans Events">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Veterans Events</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/23/b8/c423b8bc8cded07678402637083ae517.png" data-lightbox="roadtrip" data-title="Reboot Your Life Seminar For Veterans Veteran Owned Businesses News Vobeacon Veteran Owned Business Veteran Marketing Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/23/b8/c423b8bc8cded07678402637083ae517.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0BCw0pwnW2DfFwBeRb4_oGEV0PgeNUxgREw';" alt="Reboot Your Life Seminar For Veterans Veteran Owned Businesses News Vobeacon Veteran Owned Business Veteran Marketing Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reboot Your Life Seminar For Veterans Veteran Owned Businesses News Vobeacon Veteran Owned Business Veteran Marketing Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/f7/3b/77f73b2c3584514c555c0cbbd55aea23.png" data-lightbox="roadtrip" data-title="Sdvosb Cve Badge In 2020 Veteran Owned Business Veteran Department Of Veterans Affairs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/f7/3b/77f73b2c3584514c555c0cbbd55aea23.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfoLCOJKPt8v-3G8DNl3WdqeTKd-jY0S73Iw';" alt="Sdvosb Cve Badge In 2020 Veteran Owned Business Veteran Department Of Veterans Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sdvosb Cve Badge In 2020 Veteran Owned Business Veteran Department Of Veterans Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/4a/7c/be4a7ca063c2217f49100f26bc93454d.png" data-lightbox="roadtrip" data-title="Pin On Veterans Events">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/4a/7c/be4a7ca063c2217f49100f26bc93454d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYazFneQgwYiLfCc5w2YcAW0brJxHmlBM8pw';" alt="Pin On Veterans Events">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Veterans Events</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/29/9f/90/299f90c9da80c7ce703d9a9524761f89.jpg" data-lightbox="roadtrip" data-title="Veterans Affairs Faces Complaint After Blocking Navy Veteran On Twitter Mobile News Tech Auto T Veterans Affairs Meeting Women Department Of Veterans Affairs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/29/9f/90/299f90c9da80c7ce703d9a9524761f89.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwJfrvk-XG7y5GxdMn97z4LMGi4wPT1c--JA';" alt="Veterans Affairs Faces Complaint After Blocking Navy Veteran On Twitter Mobile News Tech Auto T Veterans Affairs Meeting Women Department Of Veterans Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Affairs Faces Complaint After Blocking Navy Veteran On Twitter Mobile News Tech Auto T Veterans Affairs Meeting Women Department Of Veterans Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/8c/a9/468ca9094944539c2f00a943438a8e94.jpg" data-lightbox="roadtrip" data-title="The Jobs Report Was The Weakest In Months Here S Why Veteran Jobs Advanced Training Veterans Programs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/8c/a9/468ca9094944539c2f00a943438a8e94.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlojoRGlGyy579VjJUiA-Jjcs7vakW2QhrAg';" alt="The Jobs Report Was The Weakest In Months Here S Why Veteran Jobs Advanced Training Veterans Programs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Jobs Report Was The Weakest In Months Here S Why Veteran Jobs Advanced Training Veterans Programs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/76/4c/a3764ceea50289f9cc6ad2e1acf095cc.jpg" data-lightbox="roadtrip" data-title="Check Out Our Latest Press Release The U S Department Of Veterans Affairs Lists Freedom Mortgage Corporatio Learn Spanish Online Learn Chinese Learn Mandarin">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/76/4c/a3764ceea50289f9cc6ad2e1acf095cc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFAaBcu7XG3NTdy1zknfEyqgfIxMJMKJ5G6A';" alt="Check Out Our Latest Press Release The U S Department Of Veterans Affairs Lists Freedom Mortgage Corporatio Learn Spanish Online Learn Chinese Learn Mandarin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Check Out Our Latest Press Release The U S Department Of Veterans Affairs Lists Freedom Mortgage Corporatio Learn Spanish Online Learn Chinese Learn Mandarin</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/human-resource-assistant-army.html">Human Resource Assistant Army</a></li>
+													<li class="list-group-item"><a href="/human-resource-training-army.html">Human Resource Training Army</a></li>
+													<li class="list-group-item"><a href="/hr-specialist-army-uk.html">Hr Specialist Army Uk</a></li>
+													<li class="list-group-item"><a href="/human-resource-specialist-in-the-army.html">Human Resource Specialist In The Army</a></li>
+													<li class="list-group-item"><a href="/human-resource-specialist-military.html">Human Resource Specialist Military</a></li>
+													<li class="list-group-item"><a href="/indian-army-post-office-parcel-tracking.html">Indian Army Post Office Parcel Tracking</a></li>
+													<li class="list-group-item"><a href="/human-resources-army-salary.html">Human Resources Army Salary</a></li>
+													<li class="list-group-item"><a href="/human-resource-for-army.html">Human Resource For Army</a></li>
+													<li class="list-group-item"><a href="/human-resource-specialist-army-reddit.html">Human Resource Specialist Army Reddit</a></li>
+													<li class="list-group-item"><a href="/human-resource-management-in-armed-forces.html">Human Resource Management In Armed Forces</a></li>
+													<li class="list-group-item"><a href="/human-resources-army-national-guard.html">Human Resources Army National Guard</a></li>
+													<li class="list-group-item"><a href="/hrmis-air-force.html">Hrmis Air Force</a></li>
+													<li class="list-group-item"><a href="/indian-army-post-office-jaisalmer.html">Indian Army Post Office Jaisalmer</a></li>
+													<li class="list-group-item"><a href="/human-resource-specialist-in-army.html">Human Resource Specialist In Army</a></li>
+													<li class="list-group-item"><a href="/indian-army-post-office-number.html">Indian Army Post Office Number</a></li>
+													<li class="list-group-item"><a href="/hunter-army-airfield-human-resources.html">Hunter Army Airfield Human Resources</a></li>
+													<li class="list-group-item"><a href="/illinois-department-of-military-affairs-address.html">Illinois Department Of Military Affairs Address</a></li>
+													<li class="list-group-item"><a href="/human-resource-army-job-description.html">Human Resource Army Job Description</a></li>
+													<li class="list-group-item"><a href="/hr-the-army.html">Hr The Army</a></li>
+													<li class="list-group-item"><a href="/human-resource-management-in-military-organizations.html">Human Resource Management In Military Organizations</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

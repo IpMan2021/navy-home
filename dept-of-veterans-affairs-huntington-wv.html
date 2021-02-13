@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Dept Of Veterans Affairs Huntington Wv - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Dept Of Veterans Affairs Huntington Wv",
+  "datePublished": "2021-02-13",
+  "image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=808897823316504&amp;get_thumbnail=1",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=dept+of+veterans+affairs+huntington+wv",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Dept Of Veterans Affairs Huntington Wv</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">VAs Huntington Regional Office RO administers a variety of services including Compensation Education Insurance Loan Guaranty Pension and Veteran Readiness and Employment for Veterans Servicemembers their families and survivors in West Virginia excluding four counties in the northern Panhandle. Department of Veterans Affairs branches locations opening hours and closing hours in in Huntington WV and other contact details such as address phone number website. Services include Government Offices Hospitals United States Government Offices. <br>				
+			</p>
+										<a class="badge badge-danger" href="/do-dod-civilians-get-cola.html">do dod civilians get cola</a>
+											<a class="badge badge-success" href="/did-us-army-come-to-nigeria.html">did us army come to nigeria</a>
+											<a class="badge badge-secondary" href="/division-of-military-and-naval-affairs-new-york-ny.html">division of military and naval affairs new york ny</a>
+											<a class="badge badge-warning" href="/do-civilians-get-bah.html">do civilians get bah</a>
+											<a class="badge badge-dark" href="/did-us-army-came-to-nigeria.html">did us army came to nigeria</a>
+											<a class="badge badge-info" href="/do-gs-civilians-get-housing-allowance.html">do gs civilians get housing allowance</a>
+											<a class="badge badge-secondary" href="/did-congress-pass-the-2020-budget.html">did congress pass the 2020 budget</a>
+											<a class="badge badge-primary" href="/divisions-of-the-canadian-armed-forces.html">divisions of the canadian armed forces</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you've come to visit the right site.  Our site gives you hints for seeing the highest quality video and picture content, search and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie that you see.  It is also possible to bring about supporting this website by sharing videos and graphics that you enjoy on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.huntington.va.gov/images/200710-HWW-COVID-PharmacyPickupnew.JPG" data-lightbox="roadtrip" data-title="Hershel Woody Williams Va Medical Center">
+											<img class="card-img v-image ads-img " src="https://www.huntington.va.gov/images/200710-HWW-COVID-PharmacyPickupnew.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtbsluWg9u-0cSXkxzc-lSrFfCRAeCIafmjQ';" alt="Hershel Woody Williams Va Medical Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hershel Woody Williams Va Medical Center</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://veterans.wv.gov/images/header_mobile.png" data-lightbox="roadtrip" data-title="Wv Veterans Nursing Facility">
+											<img class="card-img v-image ads-img " src="https://veterans.wv.gov/images/header_mobile.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEJlDIrekT1OLkoQtlIpzL_sBOsQdq7ka0zg';" alt="Wv Veterans Nursing Facility">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wv Veterans Nursing Facility</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.benefits.va.gov/ROHuntington/images/RO_huntington.jpg" data-lightbox="roadtrip" data-title="Directions And Maps Huntington Regional Office">
+											<img class="card-img v-image ads-img " src="https://www.benefits.va.gov/ROHuntington/images/RO_huntington.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSQtol-6IJSPbeQzForao6pO3zy1NQYmLC3w';" alt="Directions And Maps Huntington Regional Office">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Directions And Maps Huntington Regional Office</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/da/45/ffda45f87945b3d98e9f1fdabfbe128c.jpg" data-lightbox="roadtrip" data-title="Mike Adkins Photography Art Instruction Huntington West Virginia West Virginia Places">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/da/45/ffda45f87945b3d98e9f1fdabfbe128c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtV9SwIuTIb1DU_pjt9CIVXHrw4JL8b6m54A';" alt="Mike Adkins Photography Art Instruction Huntington West Virginia West Virginia Places">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mike Adkins Photography Art Instruction Huntington West Virginia West Virginia Places</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/9b/64/2b9b6425a28331a12564e79ff327f1c4.png" data-lightbox="roadtrip" data-title="Volunteer Drivers Are Being Sought As Huntington Wv Transitions Back To Working With The National Disabled American Veteran American Veterans Veteran American">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/9b/64/2b9b6425a28331a12564e79ff327f1c4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjOEK0OfrUSpbEXxzLFqQKvHjGtRW1uAW5Iw';" alt="Volunteer Drivers Are Being Sought As Huntington Wv Transitions Back To Working With The National Disabled American Veteran American Veterans Veteran American">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Volunteer Drivers Are Being Sought As Huntington Wv Transitions Back To Working With The National Disabled American Veteran American Veterans Veteran American</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.va.gov/directory/guide/image.asp?id=749&amp;parm=facility" data-lightbox="roadtrip" data-title="Hershel Woody Williams Va Medical Center Locations">
+											<img class="card-img v-image ads-img " src="https://www.va.gov/directory/guide/image.asp?id=749&amp;parm=facility" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLcvmDakuijZTgmOvsjsnPcA4-TdmcMZzdPw';" alt="Hershel Woody Williams Va Medical Center Locations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hershel Woody Williams Va Medical Center Locations</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://blogs.va.gov/VAntage/wp-content/uploads/2021/01/Two-men-GettyImages-1176649690-cropped_vp1-730x402.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLcvmDakuijZTgmOvsjsnPcA4-TdmcMZzdPw';" alt="Hershel Woody Williams Va Medical Center Locations">
+										<div class="card-body">
+						<h3 class="h5"><b>Veteran Services connects veterans with several government agencies and nonprofit organizations at the federal West Virginia state and Huntington level.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Dept of veterans affairs huntington wv</strong>. 
+								
+																	See reviews photos directions phone numbers and more for Department Of Veterans Affairs locations in Huntington WV. 
+																	Department of Veterans Affairs 810 Vermont Avenue NW Washington DC 20420. 
+																	Get reviews hours directions coupons and more for Department of Veterans Affairs at 1540 Spring Valley Dr Huntington WV 25704. 
+																	Systems Administrator - Huntington WV Insignia Technology Services a 9th Way Solutions CompanyServices a 9th Way Solutions company has a contingent opening for a Systems Administrator to join our team supporting the Department of Veterans Affairs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Reviews 304 399-9395 Website. 
+																	Veterans Affairs Regional Office 640 4th Ave Huntington WV 25701. 
+																	Search us department of veterans affairs jobs in Huntington WV. 
+																	Learn more and view updates on the VBA News webpage. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These services are offered at no charge to the veteran or dependent. 
+																	The Huntington Community. 
+																	Salary information comes from 77 data points collected directly from employees users and past and present job advertisements on Indeed in the past 36 months. 
+																	There is 1 Veterans Affairs Department per 6862 people and 1 Veterans Affairs Department per 2 square miles. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Learn more about Dept of Veterans Affairs. 
+																	The departments work brings in 2 Billion of federal benefits per year to West Virginia Veterans a number that has been increasing year-over-year. 
+																	How much does Department of Veterans Affairs in Huntington WV pay. 
+																	Get the right us department of veterans affairs job with company ratings salaries. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Employees of these offices are trained to assist veterans and their dependents in applying for a variety of state and federal benefits. 
+																	The West Virginia Department of Veterans Assistance is a cabinet-level agency dedicated to providing services and benefits assistance to veterans and their qualifying family members. 
+																	Huntington WV 25704 Hours. 
+																	Looking for Veteran Military Organizations in or near Huntington WV. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Is a fully accredited 80-bed acute medical and surgical care facility offering primary and subspecialty outpatient care including rehabilitation and mental health services. 
+																	Department of Veterans Affairs Medical Center in Huntington W. 
+																	The West Virginia Department of Veterans Assistance oversees a total of 16 service offices located throughout the state. 
+																	Menu Reservations Make Reservations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apply to Cardiology Physician Oncologist Neurologist and more. 
+																	Last updated October 12 2018. 
+																	Most positions require you to apply online while some healthcare positions allow you to merely submit a. 
+																	Get hours phone website contacts maps nearby similar companies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Order Online Tickets Tickets See Availability. 
+																	The average Department of Veterans Affairs salary ranges from approximately 47568 per year for Customer Service Representative to 190633 per year for Physician. 
+																	Search for other Veterans Military Organizations in Huntington on The Real Yellow Pages. 
+																	Get directions reviews and information for Veterans Affairs Regional Office in Huntington WV. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Application instructions specific to each job posting can be found at the end of the announcement in the How to Apply section. 
+																	The Disabled American Veterans located in Huntington WV provides support for veterans of the US Armed Forces. 
+																	16 open jobs for us department of veterans affairs. 
+																	As of March 19 2020 the Huntington VA Regional Office is closed to the public. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can obtain information about VBA at wwwvagov or call 1-800-827-1000 if you have specific questions or concerns. 
+																	Veterans Affairs Departments in Huntington West Virginia There are 7 Veterans Affairs Departments in Huntington West Virginia serving a population of 48034 people in an area of 17 square miles. 
+																	VA Job Applications and Forms. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=808897823316504&amp;get_thumbnail=1" data-lightbox="roadtrip" data-title="West Virginia Department Of Veterans Assistance Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=808897823316504&amp;get_thumbnail=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTON56QtAJohMrACooyE7Fl5LyWicKBgGETkA';" alt="West Virginia Department Of Veterans Assistance Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">West Virginia Department Of Veterans Assistance Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/9c/8e/d59c8eb2e5985fe14e2d8b169804d853.jpg" data-lightbox="roadtrip" data-title="Honoring Family And Friends Who Care For Veterans Caregiver Support Respite Care Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/9c/8e/d59c8eb2e5985fe14e2d8b169804d853.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9cnzn92STCxybaN4pb2TdA6-p2ywEwt380w';" alt="Honoring Family And Friends Who Care For Veterans Caregiver Support Respite Care Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Honoring Family And Friends Who Care For Veterans Caregiver Support Respite Care Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://blogs.va.gov/VAntage/wp-content/uploads/2021/01/Two-men-GettyImages-1176649690-cropped_vp1-730x402.jpg" data-lightbox="roadtrip" data-title="Vvvph Zyn5m4bm">
+											<img class="card-img v-image ads-img " src="https://blogs.va.gov/VAntage/wp-content/uploads/2021/01/Two-men-GettyImages-1176649690-cropped_vp1-730x402.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR49kABTARmihnzOgxGtNF2v_0S8RRxg8ld4Q';" alt="Vvvph Zyn5m4bm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vvvph Zyn5m4bm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.va.gov/directory/guide/image.asp?id=6264&amp;parm=facility" data-lightbox="roadtrip" data-title="Homeless Veterans Resource Center Huntington Wv Locations">
+											<img class="card-img v-image ads-img " src="https://www.va.gov/directory/guide/image.asp?id=6264&amp;parm=facility" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWgmefT5VHWXY98QiWoEKIBjsg8G_w4AYtZg';" alt="Homeless Veterans Resource Center Huntington Wv Locations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Homeless Veterans Resource Center Huntington Wv Locations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.huntington.va.gov/images/200330-HWW-Campus.JPG" data-lightbox="roadtrip" data-title="Focus On Construction And Understanding Hershel Woody Williams Va Medical Center">
+											<img class="card-img v-image ads-img " src="https://www.huntington.va.gov/images/200330-HWW-Campus.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNPOMY4kVMSDVo2bAP0H35ncm_mM_UEEB7mA';" alt="Focus On Construction And Understanding Hershel Woody Williams Va Medical Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Focus On Construction And Understanding Hershel Woody Williams Va Medical Center</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.huntington.va.gov/images/lenore.jpg" data-lightbox="roadtrip" data-title="Lenore Va Clinic Hershel Woody Williams Va Medical Center">
+											<img class="card-img v-image ads-img " src="https://www.huntington.va.gov/images/lenore.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1K-XQRPOZAHIZdmrR9zgYVbslLGiFHo5Bew';" alt="Lenore Va Clinic Hershel Woody Williams Va Medical Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lenore Va Clinic Hershel Woody Williams Va Medical Center</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/88/94/538894494252d1e96464eec118e311ce.jpg" data-lightbox="roadtrip" data-title="Veteran S Job Fair At The Prosperity Center All Veterans And Service Members Are Invited To Attend May 31 From 10 3 Veteran Jobs Transitional Skills Job Fair">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/88/94/538894494252d1e96464eec118e311ce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp2_zrwv7ReNTKm5CwqZMQWquw0WQJ-I2Rsw';" alt="Veteran S Job Fair At The Prosperity Center All Veterans And Service Members Are Invited To Attend May 31 From 10 3 Veteran Jobs Transitional Skills Job Fair">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran S Job Fair At The Prosperity Center All Veterans And Service Members Are Invited To Attend May 31 From 10 3 Veteran Jobs Transitional Skills Job Fair</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.va.gov/img/design/logo/va-og-image.png" data-lightbox="roadtrip" data-title="Lenore Va Clinic Hershel Woody Williams Va Medical Center">
+											<img class="card-img v-image ads-img " src="https://www.va.gov/img/design/logo/va-og-image.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP1PwtEsS7NGkBYMR2M2_BZqjuYa5bhi1Vng';" alt="Lenore Va Clinic Hershel Woody Williams Va Medical Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lenore Va Clinic Hershel Woody Williams Va Medical Center</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/8c/03/e58c035786911427b0121bc3491e2ed8.jpg" data-lightbox="roadtrip" data-title="Welch High School In 1913 West Virginia History West Virginia Mountains West Virginia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/8c/03/e58c035786911427b0121bc3491e2ed8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREobLJ6eUiNunHGz6yNKxPIOUueC09uNrWrg';" alt="Welch High School In 1913 West Virginia History West Virginia Mountains West Virginia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Welch High School In 1913 West Virginia History West Virginia Mountains West Virginia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.va.gov/VISN5/images/facilitypics.png" data-lightbox="roadtrip" data-title="Va Capitol Health Care Network">
+											<img class="card-img v-image ads-img " src="https://www.va.gov/VISN5/images/facilitypics.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIBrx50yKHbTRUG---RAjnwEZgRvJUdr9Ulg';" alt="Va Capitol Health Care Network">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Capitol Health Care Network</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.globenewswire.com/news-release/2019/10/04/1925257/0/en/photos/829223/0/829223.jpg?lastModified=10%2F04%2F2019%2007%3A39%3A27&amp;size=2" data-lightbox="roadtrip" data-title="Huntington Va Medical Center Breaks Ground For The First Fisher House In West Virginia">
+											<img class="card-img v-image ads-img " src="http://www.globenewswire.com/news-release/2019/10/04/1925257/0/en/photos/829223/0/829223.jpg?lastModified=10%2F04%2F2019%2007%3A39%3A27&amp;size=2" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1ed54ThXt5YIpJZq-noTiCK1-jrtOWCtjcw';" alt="Huntington Va Medical Center Breaks Ground For The First Fisher House In West Virginia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Huntington Va Medical Center Breaks Ground For The First Fisher House In West Virginia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/e9/d8/8e/e9d88ee924e393712ae18d517f6f47bc.jpg" data-lightbox="roadtrip" data-title="Idaho Sp Trucker Hat Trucker Trucker Hat Hats">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/e9/d8/8e/e9d88ee924e393712ae18d517f6f47bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6H5azA2UelmpQEhn_wiQYNdbdRs7VbxIs5w';" alt="Idaho Sp Trucker Hat Trucker Trucker Hat Hats">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Idaho Sp Trucker Hat Trucker Trucker Hat Hats</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/5b/85/0e5b851b319eabab357a99c0a7a852a6.jpg" data-lightbox="roadtrip" data-title="Virtual Vietnam Veterans Wall Of Faces Ronald K Ash Marine Corps Vietnam Veterans Memorial Vietnam Veterans Vietnam Vets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/5b/85/0e5b851b319eabab357a99c0a7a852a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0C5O_gqYiwK1u-l8BBWO2KmCAbUvI02j1nQ';" alt="Virtual Vietnam Veterans Wall Of Faces Ronald K Ash Marine Corps Vietnam Veterans Memorial Vietnam Veterans Vietnam Vets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virtual Vietnam Veterans Wall Of Faces Ronald K Ash Marine Corps Vietnam Veterans Memorial Vietnam Veterans Vietnam Vets</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-dog-tags-through-the-years.html">Military Dog Tags Through The Years</a></li>
+													<li class="list-group-item"><a href="/military-dog-tag-size.html">Military Dog Tag Size</a></li>
+													<li class="list-group-item"><a href="/military-dog-outfit.html">Military Dog Outfit</a></li>
+													<li class="list-group-item"><a href="/military-dog-tag-details.html">Military Dog Tag Details</a></li>
+													<li class="list-group-item"><a href="/military-dog-name-tags.html">Military Dog Name Tags</a></li>
+													<li class="list-group-item"><a href="/military-dog-in-news.html">Military Dog In News</a></li>
+													<li class="list-group-item"><a href="/military-dog-tag-look-up.html">Military Dog Tag Look Up</a></li>
+													<li class="list-group-item"><a href="/military-dog-tags-outline.html">Military Dog Tags Outline</a></li>
+													<li class="list-group-item"><a href="/military-dog-short-film.html">Military Dog Short Film</a></li>
+													<li class="list-group-item"><a href="/military-dog-names-for-male.html">Military Dog Names For Male</a></li>
+													<li class="list-group-item"><a href="/military-dog-tag-machine-near-me.html">Military Dog Tag Machine Near Me</a></li>
+													<li class="list-group-item"><a href="/military-dog-tag-machine.html">Military Dog Tag Machine</a></li>
+													<li class="list-group-item"><a href="/military-dog-tag-holder.html">Military Dog Tag Holder</a></li>
+													<li class="list-group-item"><a href="/military-dog-tag-template.html">Military Dog Tag Template</a></li>
+													<li class="list-group-item"><a href="/military-dog-night-vision-goggles.html">Military Dog Night Vision Goggles</a></li>
+													<li class="list-group-item"><a href="/military-dog-movie-watch-online.html">Military Dog Movie Watch Online</a></li>
+													<li class="list-group-item"><a href="/military-dog-tags-template.html">Military Dog Tags Template</a></li>
+													<li class="list-group-item"><a href="/military-dog-tags-tattoos-designs.html">Military Dog Tags Tattoos Designs</a></li>
+													<li class="list-group-item"><a href="/military-dog-movie-trailer.html">Military Dog Movie Trailer</a></li>
+													<li class="list-group-item"><a href="/military-dog-tag-keepsake.html">Military Dog Tag Keepsake</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

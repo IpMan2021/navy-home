@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Erase Hard Drive - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Erase Hard Drive",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/3f/37/ca/3f37ca5a26faaa10a0941570c50b33fc.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+erase+hard+drive",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Erase Hard Drive</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">In the Eraser menu select either Secure Erase or Block Wiping the program describes the differences between the two and then. Concept have on site equipment that wipes and repairs hard disk drives of all sizes and types. Several free programs use the DoD 522022-M sanitization standard to erase all the information from a hard drive. <br>				
+			</p>
+										<a class="badge badge-success" href="/us-army-combat-axe.html">us army combat axe</a>
+											<a class="badge badge-primary" href="/us-army-corp-of-engineers-va.html">us army corp of engineers va</a>
+											<a class="badge badge-danger" href="/us-army-corp-of-engineers-tulsa-district.html">us army corp of engineers tulsa district</a>
+											<a class="badge badge-secondary" href="/us-army-corp-of-engineers-jobs.html">us army corp of engineers jobs</a>
+											<a class="badge badge-primary" href="/us-army-corps-of-engineers-antilles-office.html">us army corps of engineers antilles office</a>
+											<a class="badge badge-info" href="/us-army-corp-of-engineers-missouri-river.html">us army corp of engineers missouri river</a>
+											<a class="badge badge-info" href="/us-army-corp-of-engineers-chicago.html">us army corp of engineers chicago</a>
+											<a class="badge badge-danger" href="/us-army-corp-of-engineers-regulations.html">us army corp of engineers regulations</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to visit the right blog.  Our website provides you with hints for seeing the highest quality video and picture content, hunt and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, especially Youtube, so we recommend this movie for you to view.  You can also bring about supporting this website by sharing videos and graphics that you enjoy on this site on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information that you get on this website.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/9d/3e/2d9d3eba9883b5e290b99326479cedd1.png" data-lightbox="roadtrip" data-title="This Usb Hard Drive Eraser Delivers Military Grade Data Destruction Hard Drive Military Grade Usb">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/9d/3e/2d9d3eba9883b5e290b99326479cedd1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1X35_S0OOiXUF9l2wXC_Ak-f6TQXM2Ji6HQ';" alt="This Usb Hard Drive Eraser Delivers Military Grade Data Destruction Hard Drive Military Grade Usb">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Usb Hard Drive Eraser Delivers Military Grade Data Destruction Hard Drive Military Grade Usb</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/b0/11/bcb011968bc5976fe9bdf9217ef85f34.jpg" data-lightbox="roadtrip" data-title="Destruct Hard Drive Data Eraser Permanently Erase Computer Data Military Grade Hdd Erase Tool Hard Drive Pc Hard Drive Military Grade">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/b0/11/bcb011968bc5976fe9bdf9217ef85f34.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUFPnoDbWfSEUuiXYXZxyX1LIkFz0MlWoxUA';" alt="Destruct Hard Drive Data Eraser Permanently Erase Computer Data Military Grade Hdd Erase Tool Hard Drive Pc Hard Drive Military Grade">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Destruct Hard Drive Data Eraser Permanently Erase Computer Data Military Grade Hdd Erase Tool Hard Drive Pc Hard Drive Military Grade</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9f/0e/5f/9f0e5f63598a0ea2ec2e1499f3a7c9cd.jpg" data-lightbox="roadtrip" data-title="Destruct Hard Drive Data Eraser By Lovell Permanently Erase Computer Data Military Grade Hdd Erase Tool Non Recoverable Data Once Hard Drive Eraser Hdd">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9f/0e/5f/9f0e5f63598a0ea2ec2e1499f3a7c9cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjHJVgDfNZa0rZQrcLBZJAULJDFCPL6jMTEA';" alt="Destruct Hard Drive Data Eraser By Lovell Permanently Erase Computer Data Military Grade Hdd Erase Tool Non Recoverable Data Once Hard Drive Eraser Hdd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Destruct Hard Drive Data Eraser By Lovell Permanently Erase Computer Data Military Grade Hdd Erase Tool Non Recoverable Data Once Hard Drive Eraser Hdd</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f8/76/b7/f876b7e087cf2e1f33051d9a5b3573e9.jpg" data-lightbox="roadtrip" data-title="Easily And Securely Raise All The Data On Your Old Computer System Before You Sell It Using A New Usb Device Created By Ga Geeky Gadgets Computer Old Computers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f8/76/b7/f876b7e087cf2e1f33051d9a5b3573e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-lp8nns2c8YP89RKNxeqmDzdml-t6rVSykA';" alt="Easily And Securely Raise All The Data On Your Old Computer System Before You Sell It Using A New Usb Device Created By Ga Geeky Gadgets Computer Old Computers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Easily And Securely Raise All The Data On Your Old Computer System Before You Sell It Using A New Usb Device Created By Ga Geeky Gadgets Computer Old Computers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/be/69/4bbe695d2d9857b8d83bcd1a491b5526.jpg" data-lightbox="roadtrip" data-title="2 5 80gb Portable External Hard Drive Usb3 0 With Military Grade Shockproof Anti Pressure Waterproof And Slim Enclosure For Pc Mac Wii U Xbox One Xbox 36">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/be/69/4bbe695d2d9857b8d83bcd1a491b5526.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSltohpNhwYW1Kbp0sCYignjjQx3NVk0mGrNA';" alt="2 5 80gb Portable External Hard Drive Usb3 0 With Military Grade Shockproof Anti Pressure Waterproof And Slim Enclosure For Pc Mac Wii U Xbox One Xbox 36">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2 5 80gb Portable External Hard Drive Usb3 0 With Military Grade Shockproof Anti Pressure Waterproof And Slim Enclosure For Pc Mac Wii U Xbox One Xbox 36</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/62/74/8f6274cac796df9b7190af3c9d333010.png" data-lightbox="roadtrip" data-title="How To Erase A Hard Drive Using Dban Hard Drive Destruction Document Destruction Hard Drive">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/62/74/8f6274cac796df9b7190af3c9d333010.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuLULfpceLd65L6gMLhSIQXHU1B7h9dsLObg';" alt="How To Erase A Hard Drive Using Dban Hard Drive Destruction Document Destruction Hard Drive">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Erase A Hard Drive Using Dban Hard Drive Destruction Document Destruction Hard Drive</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/bc/b0/11/bcb011968bc5976fe9bdf9217ef85f34.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuLULfpceLd65L6gMLhSIQXHU1B7h9dsLObg';" alt="How To Erase A Hard Drive Using Dban Hard Drive Destruction Document Destruction Hard Drive">
+										<div class="card-body">
+						<h3 class="h5"><b>Make sure this.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military erase hard drive</strong>. 
+								
+																	Wipe a partition only free space or sanitize the entire hard disk. 
+																	A sure way to completely destroy the hard drive is to make it physically impossible to access the disks. 
+																	Once DBAN is up and running in all its. 
+																	Our favorite such tool is DBAN but we also like similar tools including CBL Data Shredder. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Concepts System can wipe hard disks using various techniques and overwrite patterns. 
+																	If you think deleted information cant be retrieved from an old hard drive think again. 
+																	It allows you to completely erase ALL hard drive or external storage information including your personal data programs viruses and malware. 
+																	You can refer to these tools by many names. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	So I planned on using the free DBAN hard drive eraser tool. 
+																	Destruct USB gadget - Computer data wipe tool - Wipe your hard drive - Military Grade Destruction l Wipe all your data l PC hard drive erase l Sell you laptop clean Brand. 
+																	The goal is to make sure the disk will not work when it is loaded into another hard drive. 
+																	If youre hoping to erase a RAID-enabled hard drive youll need to disassemble the RAID volume and set each disk to JBOD mode before you start as well. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The free version only has one way to delete the data on a hard drive erasing with one-pass zeroes but its still good enough for a decent hard drive wipe. 
+																	Its a fast reliable standalone solution to wiping hard drives and deleting everything. 
+																	At the Parted Magic screen double-click the icon to Erase Disk. 
+																	Erasing an HDD using the DoD 522022-M data sanitization method will prevent all software-based file recovery methods as well as hardware-based recovery methods from recovering meaningful data from the drive. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hard Drive eraser data destruction tool Disk Wipe software Drive Wiper and so on. 
+																	In 2001 a DoD memo specified additional overwriting and verification methods that became accepted as part of the standard. 
+																	It was easy to do. 
+																	Wipe Hard Drive Military free download - Hard Time Hard Drive Inspector Professional Erase Your Hard Drive and many more programs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Then I remembered that Windows 10s Format command comes with a special parameter that essentially wipes a hard disk. 
+																	Wipe your data with EaseUS free hard drive erasing software EaseUS free partition manager is the best software to erase or wipe hard drive or partition. 
+																	These tools include different data erasure or data sanitization. 
+																	Its very good for real-time measurement the use of this software is very professional. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Definitely DBan is better since you can use the DoD 522022-M protocol. 
+																	If you do purchase the program then you have a great set of 17 choices for deleting your data. 
+																	39 out of 5 stars 261 ratings 17 answered questions Available from these sellers. 
+																	This can be done by dismantling the pieces of the hard disk with a screwdriver and using a hammer to scratch and mangle the disk. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Paragon algorithm with four overwriting passes and different wiping patterns. 
+																	Just select a hard drive regular or SSD that should be erased and choose a wiping method. 
+																	The tool I use is Wiebetechs Drive eRazer Ultra. 
+																	DESTRUCT PRO is a revolutionary affordable USB device that erases all your files and data from your hard drive providing a military grade wipe making it unrecoverable. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	About this item This fits your. 
+																	Choose your wiping method Variety of military-grade wiping algorithms i. 
+																	Military Standard Hard Disk Secure Data Removal. 
+																	Hard Drive Disk Wipe Military free download - Disk Wipe Flobo Hard Disk Repair Hard Drive Upgrader and many more programs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A bootable USB dongle that automatically erases a hard drive after booting the dongle is equipped with an auto-launching military-grade data wipe software that will permanently remove all traces of data from the drive. 
+																	You hook up the drive to it tap a few buttons and Drive. 
+																	Click the large Wipe Now button type WIPE in the box to confirm you want to continue and then click Start to begin the process. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/b0/a6/46b0a68cdba9f7ec27a50ba966f92c38.png" data-lightbox="roadtrip" data-title="Redkey Usb Computer Data Wipe Tool V3 Pre Order Now Data Storage Device Used Computers Usb">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/b0/a6/46b0a68cdba9f7ec27a50ba966f92c38.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCowl4zZQTG6gdXPgQFZIvwPAM86Zh4GQA-Q';" alt="Redkey Usb Computer Data Wipe Tool V3 Pre Order Now Data Storage Device Used Computers Usb">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Redkey Usb Computer Data Wipe Tool V3 Pre Order Now Data Storage Device Used Computers Usb</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/52/0f/91/520f910210ba9b006a592828138ba5fb.png" data-lightbox="roadtrip" data-title="Dban Darik S Boot And Nuke Wipe Your Hard Drive Before Selling It Or Giving It Away Free And Open Source Security Tips Window Installation Open Source Data">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/52/0f/91/520f910210ba9b006a592828138ba5fb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWnBd5XWJHfLfb1FVbwa315TOExcPFv_OZ1A';" alt="Dban Darik S Boot And Nuke Wipe Your Hard Drive Before Selling It Or Giving It Away Free And Open Source Security Tips Window Installation Open Source Data">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dban Darik S Boot And Nuke Wipe Your Hard Drive Before Selling It Or Giving It Away Free And Open Source Security Tips Window Installation Open Source Data</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/cd/5c/6e/cd5c6e9b8fa118bf4fe7ae2f217d6fe0.jpg" data-lightbox="roadtrip" data-title="Ebay Link Ad Hpe Aw556b 2 Tb Hard Drive 3 5 Internal Sata Sata 300 In 2020 Driving Data Storage Device Hard Drive">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/cd/5c/6e/cd5c6e9b8fa118bf4fe7ae2f217d6fe0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXx4OVYJpLPOSxlCdjTjmbyzpnLTLgp4uTgA';" alt="Ebay Link Ad Hpe Aw556b 2 Tb Hard Drive 3 5 Internal Sata Sata 300 In 2020 Driving Data Storage Device Hard Drive">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ebay Link Ad Hpe Aw556b 2 Tb Hard Drive 3 5 Internal Sata Sata 300 In 2020 Driving Data Storage Device Hard Drive</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/d2/64/dbd264c6bc5d22f575b7867b92761938.jpg" data-lightbox="roadtrip" data-title="Pin On Encryption Security Softwares In India Military Grade">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/d2/64/dbd264c6bc5d22f575b7867b92761938.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQerslNnvNXDuqe784W5WHmsxrrcqpOhE0LFA';" alt="Pin On Encryption Security Softwares In India Military Grade">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Encryption Security Softwares In India Military Grade</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/28/54/c028540ea7694d7c3d4f57a157bfabdf.jpg" data-lightbox="roadtrip" data-title="Just Found Amazing New Website Massgenie Price Drops When You Crowd Shop 151 99 Save 21 Seagate Constellation Es 3 Sata 6gb Seagate Hard Disk Drive Hdd">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/28/54/c028540ea7694d7c3d4f57a157bfabdf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGmj8Yy-Az7BiTwMtDgEACteiIDJy2jP86vQ';" alt="Just Found Amazing New Website Massgenie Price Drops When You Crowd Shop 151 99 Save 21 Seagate Constellation Es 3 Sata 6gb Seagate Hard Disk Drive Hdd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Just Found Amazing New Website Massgenie Price Drops When You Crowd Shop 151 99 Save 21 Seagate Constellation Es 3 Sata 6gb Seagate Hard Disk Drive Hdd</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/b5/09/08/b5090847dbd7dce5728da55cff910b90.jpg" data-lightbox="roadtrip" data-title="Wipe Your Hard Drive Tumblr Funny Funny Laugh">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/b5/09/08/b5090847dbd7dce5728da55cff910b90.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkgdVSG8f1JVriWq_w3YhVhhxwKM32mRY6Vw';" alt="Wipe Your Hard Drive Tumblr Funny Funny Laugh">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wipe Your Hard Drive Tumblr Funny Funny Laugh</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/59/fc/74/59fc746dbb67a35f0f9174b9c9db9ead.jpg" data-lightbox="roadtrip" data-title="How To Send Anonymous Emails In Vpn Secured Web Browsers In India Cloud Services Network Sharing Security">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/59/fc/74/59fc746dbb67a35f0f9174b9c9db9ead.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKl2ZXyZWH3em4J6ZeUegnbORBRq6_rsV_CQ';" alt="How To Send Anonymous Emails In Vpn Secured Web Browsers In India Cloud Services Network Sharing Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Send Anonymous Emails In Vpn Secured Web Browsers In India Cloud Services Network Sharing Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/37/ca/3f37ca5a26faaa10a0941570c50b33fc.jpg" data-lightbox="roadtrip" data-title="Important Files On Your Computer Or Smartphone This Smart Backup Usb Is An Absolute Must Have Usb Stick Usb Computer Gadgets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/37/ca/3f37ca5a26faaa10a0941570c50b33fc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ6pukfV5ZpVQyS8WqA8xq62XVUaUtUkcPng';" alt="Important Files On Your Computer Or Smartphone This Smart Backup Usb Is An Absolute Must Have Usb Stick Usb Computer Gadgets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Important Files On Your Computer Or Smartphone This Smart Backup Usb Is An Absolute Must Have Usb Stick Usb Computer Gadgets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/4a/f3/c24af344b00d55c4641d02e7d8b19d3b.png" data-lightbox="roadtrip" data-title="Pin On Mod Apk">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/4a/f3/c24af344b00d55c4641d02e7d8b19d3b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROLimgH_1Aa66oOLfxmTBhjb0YyLfM658a7Q';" alt="Pin On Mod Apk">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mod Apk</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/16/9f/ea/169fea8cbec6daeb7c3b4902595eec2f.jpg" data-lightbox="roadtrip" data-title="Now Available On Our Store Mobiledemand Mili Check It Out Here Http Www Widgetree Com Products Mobi Microsoft Surface Microsoft Surface Pro Surface Pro">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/16/9f/ea/169fea8cbec6daeb7c3b4902595eec2f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK47YP_QBxopDWYk2TsuuRlYeMlDRShfREsw';" alt="Now Available On Our Store Mobiledemand Mili Check It Out Here Http Www Widgetree Com Products Mobi Microsoft Surface Microsoft Surface Pro Surface Pro">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Now Available On Our Store Mobiledemand Mili Check It Out Here Http Www Widgetree Com Products Mobi Microsoft Surface Microsoft Surface Pro Surface Pro</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/d1/62/ded162c14877756f96f8a6b65b8fb6d0.jpg" data-lightbox="roadtrip" data-title="How To Wipe Your Smartphone S Memory Securely Safe Online Banking Tips India Online Banking Security Smartphone">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/d1/62/ded162c14877756f96f8a6b65b8fb6d0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFPv_W714y27K6hXJ9hxQcnhT9FMUdVQioPA';" alt="How To Wipe Your Smartphone S Memory Securely Safe Online Banking Tips India Online Banking Security Smartphone">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Wipe Your Smartphone S Memory Securely Safe Online Banking Tips India Online Banking Security Smartphone</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/ef/8e/ceef8e4d1eb54133bdb7e37e2ebee652.png" data-lightbox="roadtrip" data-title="Install Ubuntu Desktop Ubuntu Tutorials Installation Desktop Tutorial">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/ef/8e/ceef8e4d1eb54133bdb7e37e2ebee652.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMey0dgtIqev-oQ7w2m0aTaE4otG1BElfDsQ';" alt="Install Ubuntu Desktop Ubuntu Tutorials Installation Desktop Tutorial">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Install Ubuntu Desktop Ubuntu Tutorials Installation Desktop Tutorial</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/f7/f1/9ef7f16eb8ec1cf789a74a46bdae84af.jpg" data-lightbox="roadtrip" data-title="Ramdisks Maximizing High Capacity Ram Flash Memory Card Ssd Seagate">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/f7/f1/9ef7f16eb8ec1cf789a74a46bdae84af.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqaeAL8Nt7NW4oY21WmA1tV0puQTZXlMNLNQ';" alt="Ramdisks Maximizing High Capacity Ram Flash Memory Card Ssd Seagate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ramdisks Maximizing High Capacity Ram Flash Memory Card Ssd Seagate</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/veterans-crisis-line-vagov.html">Veterans Crisis Line Vagov</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-australia.html">Veterans Crisis Line Australia</a></li>
+													<li class="list-group-item"><a href="/volunteer-for-veterans-crisis-line.html">Volunteer For Veterans Crisis Line</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-text-number.html">Veterans Crisis Line Text Number</a></li>
+													<li class="list-group-item"><a href="/veterans-job-assistance-program-whitmer.html">Veterans Job Assistance Program Whitmer</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-military-affairs-fort-pickett.html">Virginia Department Of Military Affairs Fort Pickett</a></li>
+													<li class="list-group-item"><a href="/wake-forest-department-of-military-science.html">Wake Forest Department Of Military Science</a></li>
+													<li class="list-group-item"><a href="/veterans-death-records.html">Veterans Death Records</a></li>
+													<li class="list-group-item"><a href="/virginia-military-institute-department-of-history.html">Virginia Military Institute Department Of History</a></li>
+													<li class="list-group-item"><a href="/veterans-work-study-program-california.html">Veterans Work Study Program California</a></li>
+													<li class="list-group-item"><a href="/veterans-and-military-service-organizations-directory.html">Veterans And Military Service Organizations Directory</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-materials.html">Veterans Crisis Line Materials</a></li>
+													<li class="list-group-item"><a href="/veterans-records-national-archives.html">Veterans Records National Archives</a></li>
+													<li class="list-group-item"><a href="/veterans-job-training-programs.html">Veterans Job Training Programs</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-careers.html">Veterans Crisis Line Careers</a></li>
+													<li class="list-group-item"><a href="/vocational-rehabilitation-and-employment-program-for-disabled-vets.html">Vocational Rehabilitation And Employment Program For Disabled Vets</a></li>
+													<li class="list-group-item"><a href="/veterans-service-records-national-archives.html">Veterans Service Records National Archives</a></li>
+													<li class="list-group-item"><a href="/vietnam-veterans-crisis-line.html">Vietnam Veterans Crisis Line</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-address.html">Veterans Crisis Line Address</a></li>
+													<li class="list-group-item"><a href="/virginia-military-retirement-tax-calculator.html">Virginia Military Retirement Tax Calculator</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

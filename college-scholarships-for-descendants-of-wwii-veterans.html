@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>College Scholarships For Descendants Of Wwii Veterans - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "College Scholarships For Descendants Of Wwii Veterans",
+  "datePublished": "2021-02-13",
+  "image": "https://ww2odyssey.com/wp-content/uploads/2020/01/wwiiodyssey.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=college+scholarships+for+descendants+of+wwii+veterans",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>College Scholarships For Descendants Of Wwii Veterans</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Now those same people can further benefit from their forbearers work and dedications by qualifying for a scholarship that honors WWII vets by paying for their descendants to get a higher education. Army 442nd Regimental Combat Team or US. The Army Aviation Association of America offers a variety of scholarships both through local chapters and at the national level. <br>				
+			</p>
+										<a class="badge badge-dark" href="/dod-civilian-performance-awards.html">dod civilian performance awards</a>
+											<a class="badge badge-danger" href="/dod-civilian-overseas-medical-screening.html">dod civilian overseas medical screening</a>
+											<a class="badge badge-warning" href="/dod-civilian-tuition-assistance-program.html">dod civilian tuition assistance program</a>
+											<a class="badge badge-danger" href="/dod-civilian-proof-of-employment.html">dod civilian proof of employment</a>
+											<a class="badge badge-warning" href="/dod-civilian-raise-fy-2021.html">dod civilian raise fy 2021</a>
+											<a class="badge badge-dark" href="/dod-civilian-overseas-tour-curtailment.html">dod civilian overseas tour curtailment</a>
+											<a class="badge badge-success" href="/dod-civilian-pcs-benefits.html">dod civilian pcs benefits</a>
+											<a class="badge badge-warning" href="/dod-civilian-pay-raise-2021.html">dod civilian pay raise 2021</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to pay a visit to the ideal blog.  Our site gives you suggestions for viewing the maximum quality video and picture content, hunt and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, especially Youtube, therefore we recommend this movie that you view.  You can also contribute to supporting this website by sharing videos and graphics that you enjoy on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/54/f4/b8/54f4b87073d28d7ac07a7f5bb1af2b19.jpg" data-lightbox="roadtrip" data-title="Scholarships Or Grants For Grandchildren Of Wwii Veterans Ehow Scholarships For College Scholarships Nursing Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/54/f4/b8/54f4b87073d28d7ac07a7f5bb1af2b19.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcN1hJTp7kr36qFtI721A-3Q2SP-1tWOSEeg';" alt="Scholarships Or Grants For Grandchildren Of Wwii Veterans Ehow Scholarships For College Scholarships Nursing Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Scholarships Or Grants For Grandchildren Of Wwii Veterans Ehow Scholarships For College Scholarships Nursing Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/28/cb/00/28cb005b7419aa5bbf4989565bb4b520.jpg" data-lightbox="roadtrip" data-title="The Issue Is That Not Every Trainee Who Wishes To Participate In College Receives Either Federally Fun In 2020 Graduate School Scholarships For College University Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/28/cb/00/28cb005b7419aa5bbf4989565bb4b520.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8mB-c41B8xInaM9k9tSO4ZTSklXD3E5r39A';" alt="The Issue Is That Not Every Trainee Who Wishes To Participate In College Receives Either Federally Fun In 2020 Graduate School Scholarships For College University Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Issue Is That Not Every Trainee Who Wishes To Participate In College Receives Either Federally Fun In 2020 Graduate School Scholarships For College University Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/47/44/bf4744d632c97a9004410d5300240f17.png" data-lightbox="roadtrip" data-title="Pin On Financial Aid">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/47/44/bf4744d632c97a9004410d5300240f17.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy4Dzn23h0lUBWQuM5M-leiB5XPMqiqQ71jg';" alt="Pin On Financial Aid">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Financial Aid</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/46/0a/94460a4ae5845519853c5651f0ab6875.png" data-lightbox="roadtrip" data-title="Pin On Kids And Parenting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/46/0a/94460a4ae5845519853c5651f0ab6875.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFDO-4oEWP8FtJwser9tHhuF1gCyi4HjOOiw';" alt="Pin On Kids And Parenting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Kids And Parenting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://grantsupporter.com/wp-content/uploads/2020/11/Scholarships-for-grandchildren-of-WWII-veterans-300x200.jpg" data-lightbox="roadtrip" data-title="Top 7 Scholarships For Grandchildren Of Wwii Veterans Grant Supporter">
+											<img class="card-img v-image ads-img " src="https://grantsupporter.com/wp-content/uploads/2020/11/Scholarships-for-grandchildren-of-WWII-veterans-300x200.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6HDKlEe4_aiUbE5PeoBi-NSF2zju8Lqd6jg';" alt="Top 7 Scholarships For Grandchildren Of Wwii Veterans Grant Supporter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 7 Scholarships For Grandchildren Of Wwii Veterans Grant Supporter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.familiesww2veterans.org/src/img/nav-logo.png" data-lightbox="roadtrip" data-title="Scholarships Families Of Wwii Veterans">
+											<img class="card-img v-image ads-img " src="https://www.familiesww2veterans.org/src/img/nav-logo.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn2LDsy1VbL8eKdlDVbU_p8YyQtWOQtG7AXQ';" alt="Scholarships Families Of Wwii Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Scholarships Families Of Wwii Veterans</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/600x315/7e/f8/53/7ef8531e4f9f337e1bab9939d440ba78.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn2LDsy1VbL8eKdlDVbU_p8YyQtWOQtG7AXQ';" alt="Scholarships Families Of Wwii Veterans">
+										<div class="card-body">
+						<h3 class="h5"><b>Not sure of the amount awarded at each school but my son gets 300 a year for it at Indiana University Bloomington.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>College scholarships for descendants of wwii veterans</strong>. 
+								
+																	Jewell Brewer Scholarship. 
+																	AMVETS is a volunteer-led organization focused on assisting veterans and their children. 
+																	Applicants must have a minimum of 12 or more hours units and a cumulative 25 GPA if an undergraduate and 6 or more hours units and a. 
+																	Veterans including veterans of World War II. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The scholarship also focuses on providing financial aid for students with financial need. 
+																	If youre descended from World War I veterans and youre looking for ways to pay for your college education you may automatically qualify for one or more scholarships. 
+																	Each recipient must report by letter and enclose a copy of official grade transcript to the Second Vice President General by June 15 each year if heshe wishes to be considered for re-award for. 
+																	The Mike Nash Memorial Scholarship was started in 1991. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Navy League of the United States of America provides scholarships for grandchildren of navy veterans along with scholarships for grandchildren of WWII veterans. 
+																	Daughters of Union Veterans of the Civil War 1861-1865 Applicant must have a satisfactory scholastic standing be of good moral character have a firm belief in the United States form of government and be the lineal descendant of a Civil War Union Veteran. 
+																	Military Intelligence Service during or after World War II. 
+																	The Families of World War II Veterans Scholarship is awarded to high school seniors and college students who plan to pursue an undergraduate or graduate degree at a US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Most of the current scholarships are funded by various organizations and foundations such as the Descendants of Korean War Foundation the Hawaii Community Foundation the Samsung American Legion Scholarship Fund the Korean American Scholarship Foundation the Korea-US. 
+																	This scholarship is aimed at graduating high school seniors with 30 minimum GPA. 
+																	The Families of World War II Veterans Scholarship is a one-time award with amounts ranging from 500 to 5000. 
+																	Although both the National Society of the Daughters of the American Revolution and the National Society Sons of the American Revolution are national organizations of Revolutionary War descendants that offer a variety of college scholarships only a few are actually limited to members. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Scholarships for Grandchildren of Veterans Thanks to their grandparents courageous service grandchildren of veterans have access to an array of college opportunities. 
+																	Scholarships also vary by term of support and different named scholarships may provide support for one two or even four years. 
+																	Scholarships for Descendants of World War I Veterans If youre a descendant of World War I veterans rest assured that your familys service has not been forgotten. 
+																	The Veterans of War Society and the Mike Nash Memorial Scholarship Fund are just two of the programs available to grandchildren of war veterans that might offer significant financial aid for college or trade and vocational schools. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Each year ten Japanese American Veterans Association JAVA Memorial Scholarships are given in the amount of 1500 each to high school graduates of Japanese ancestry who are direct lineal descendants of a military service member who served in the US. 
+																	The scholarship is granted to residents of Michigan only who have plan to pursue study in a credible college or university in US. 
+																	Science Cooperation Center KUSCO and the Korean Ministry of Patriots and Veterans Affairs. 
+																	The Fleet Reserve Association FRA provides approximately 90000 worth of scholarships annually to deserving students who are dependents of active FRA members in good standing or deceased members who were in good standing at the time of death. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Scholarship is offered to graduating high school students who wish to attend an accredited college or university the following year. 
+																	As much as 4000 scholarship is available from AMVETS national scholarship program. 
+																	Lillian and Arthur Dunn Scholarship. 
+																	Scholarships vary in amount and are usually valued at between 1000 and 3000 per year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Applicants must show financial need academic promise and merit. 
+																	Help fund college with 1142748 in Scholarships for Descendants of Vietnam War Veterans from American Legion Auxiliary - Department of Michigan American Legion - Kansas and more. 
+																	Notification to the college or university will be sent in August and will include one check made payable to the college or university containing the scholarship amount for the entire academic year. 
+																	Another popular scholarship awarded to family members of military veterans including grandchildren is the one that Kalamzoo Community Foundation repeatedly awards named William D. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The FRA awards several scholarships each year some of which carry donor-specified criteria. 
+																	The Council of College and Military Educators CCME is pleased to offer 1000 scholarships each year to United States Service members active dutyveterans and spouses of Service members who are working towards the completion of higher education degrees. 
+																	Not WWII but descendants of WWI veterans can get the LaVerne Noyes Scholarship at the schools listed in this website. 
+																	There are six scholarships for grandchildren of veterans available each year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It sponsors an annual scholarship for graduating seniors who are grandchildren of US. 
+																	If youre the grandchild of a veteran and youre trying to figure out how to pay for college you may qualify for one or more scholarships. 
+																	College or university of their choice. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5d/81/68/5d8168a64a04448fd32de4e44245ed80.jpg" data-lightbox="roadtrip" data-title="Military Spouse Magazine February 2019 Military Spouse Magazine Military Spouse Resources Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5d/81/68/5d8168a64a04448fd32de4e44245ed80.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCqVqufhxv7hAgTYLNzCq2McHHtQFnEDbZtg';" alt="Military Spouse Magazine February 2019 Military Spouse Magazine Military Spouse Resources Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Magazine February 2019 Military Spouse Magazine Military Spouse Resources Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/33/53/e53353cc22aa38547c68bc0626632042.jpg" data-lightbox="roadtrip" data-title="Pin On Women With A Mission">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/33/53/e53353cc22aa38547c68bc0626632042.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ33gKhHVddCsbG-NRD4DJlKRKmSOJJD9oh3A';" alt="Pin On Women With A Mission">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Women With A Mission</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ww2odyssey.com/wp-content/uploads/2020/01/wwiiodyssey.jpg" data-lightbox="roadtrip" data-title="My Wwii Odyssey Wwii Odyssey">
+											<img class="card-img v-image ads-img " src="https://ww2odyssey.com/wp-content/uploads/2020/01/wwiiodyssey.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCdpsXqwfxLofJLDjSe4TCJqoanqAu78glhw';" alt="My Wwii Odyssey Wwii Odyssey">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Wwii Odyssey Wwii Odyssey</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/de/8e/19de8ef7ec2b9afa7076f5c2002f6817.jpg" data-lightbox="roadtrip" data-title="Pin On God Bless America">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/de/8e/19de8ef7ec2b9afa7076f5c2002f6817.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlaby8vaJLhndzneF8w08CtqajFOv_JU0mlA';" alt="Pin On God Bless America">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On God Bless America</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.legion.org/sites/legion.org/files/styles/scalecrop800x479/public/BronzeStar.jpg?itok=zDfF7-fb" data-lightbox="roadtrip" data-title="Bronze Star Awarded To Family Of World War Ii Pow And Legionnaire The American Legion">
+											<img class="card-img v-image ads-img " src="https://www.legion.org/sites/legion.org/files/styles/scalecrop800x479/public/BronzeStar.jpg?itok=zDfF7-fb" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqc5FVKIVeBTUD9HwBfZBgk8l4Kpx4T4zDDw';" alt="Bronze Star Awarded To Family Of World War Ii Pow And Legionnaire The American Legion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bronze Star Awarded To Family Of World War Ii Pow And Legionnaire The American Legion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://inside.uncc.edu/sites/inside.uncc.edu/files/fields/news_features/detail_image/sims-photo-300px.jpg" data-lightbox="roadtrip" data-title="First Endowed Gold Rush Grant Honors World War Ii Veteran Inside Unc Charlotte Unc Charlotte">
+											<img class="card-img v-image ads-img " src="https://inside.uncc.edu/sites/inside.uncc.edu/files/fields/news_features/detail_image/sims-photo-300px.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-2FVOqUSNJIcrpgIFpp6n3xGPEamzBYRtzA';" alt="First Endowed Gold Rush Grant Honors World War Ii Veteran Inside Unc Charlotte Unc Charlotte">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">First Endowed Gold Rush Grant Honors World War Ii Veteran Inside Unc Charlotte Unc Charlotte</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/7e/f8/53/7ef8531e4f9f337e1bab9939d440ba78.jpg" data-lightbox="roadtrip" data-title="Vietnam War Photos Places Vietnam War Photos Vietnam Vietnam Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/7e/f8/53/7ef8531e4f9f337e1bab9939d440ba78.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjvnKFkxKH0DHsou8qql_PnSUDdavbJhZNTA';" alt="Vietnam War Photos Places Vietnam War Photos Vietnam Vietnam Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vietnam War Photos Places Vietnam War Photos Vietnam Vietnam Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cobseo.org.uk/assets/files/2021/01/John_Sleep-photo-credit-Glyn-Dewis-1-600x600.png" data-lightbox="roadtrip" data-title="Wwii Veteran Celebrates His 100th Birthday Cobseo">
+											<img class="card-img v-image ads-img " src="https://www.cobseo.org.uk/assets/files/2021/01/John_Sleep-photo-credit-Glyn-Dewis-1-600x600.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHuRKsU4KKOGFqeM8aezUhyPUX5MU7ksn4Ew';" alt="Wwii Veteran Celebrates His 100th Birthday Cobseo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wwii Veteran Celebrates His 100th Birthday Cobseo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img.yumpu.com/48772786/1/500x640/dirty-little-secrets-of-world-war-iipdf-rom-1617-mark-them.jpg" data-lightbox="roadtrip" data-title="Dirty Little Secrets Of World War Ii Pdf Rom 16 17 Mark Them">
+											<img class="card-img v-image ads-img " src="https://img.yumpu.com/48772786/1/500x640/dirty-little-secrets-of-world-war-iipdf-rom-1617-mark-them.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy79X706p7tgkbDSrZy1EBjWdjACcSDkC33Q';" alt="Dirty Little Secrets Of World War Ii Pdf Rom 16 17 Mark Them">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dirty Little Secrets Of World War Ii Pdf Rom 16 17 Mark Them</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/2c/7d/682c7deead35d029a857bfb0b4cf6a32.jpg" data-lightbox="roadtrip" data-title="Pin By Bruce C Egloff On Air Force Falcons Football Falcons Football Air Force Nike Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/2c/7d/682c7deead35d029a857bfb0b4cf6a32.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1AZ9htRBSxTWhl3FDrukZTbFzwGFs2TKxwg';" alt="Pin By Bruce C Egloff On Air Force Falcons Football Falcons Football Air Force Nike Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Bruce C Egloff On Air Force Falcons Football Falcons Football Air Force Nike Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.squarespace-cdn.com/content/v1/56dfbdab20c6470c022627e4/1498774049620-UUQHEHWUKUW6YD3709AJ/ke17ZwdGBToddI8pDm48kFyD7pzB8zoMIVY5aiUuFlp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0jG2lbcDYBOeMi4OFSYem8DMb5PTLoEDdB05UqhYu-xbnSznFxIRsaAU-3g5IaylIg/image-asset.jpeg" data-lightbox="roadtrip" data-title="The Veterans Project Ssg Frank Denius Army Wwii Veteran">
+											<img class="card-img v-image ads-img " src="https://images.squarespace-cdn.com/content/v1/56dfbdab20c6470c022627e4/1498774049620-UUQHEHWUKUW6YD3709AJ/ke17ZwdGBToddI8pDm48kFyD7pzB8zoMIVY5aiUuFlp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0jG2lbcDYBOeMi4OFSYem8DMb5PTLoEDdB05UqhYu-xbnSznFxIRsaAU-3g5IaylIg/image-asset.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7PrCpVNs3G72kAo7spCuKI8E3EvfJo1OJrQ';" alt="The Veterans Project Ssg Frank Denius Army Wwii Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Veterans Project Ssg Frank Denius Army Wwii Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bloximages.chicago2.vip.townnews.com/nwitimes.com/content/tncms/assets/v3/editorial/7/71/771bd530-876f-5c5c-97e0-06d415d71620/5e4f393a70865.image.jpg?resize=1200%2C812" data-lightbox="roadtrip" data-title="95 Year Old Wwii Vet Reflects On Serving In Patton S Third Army Life After War Latest Headlines Nwitimes Com">
+											<img class="card-img v-image ads-img " src="https://bloximages.chicago2.vip.townnews.com/nwitimes.com/content/tncms/assets/v3/editorial/7/71/771bd530-876f-5c5c-97e0-06d415d71620/5e4f393a70865.image.jpg?resize=1200%2C812" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbqfBi4mINOwVMYmy4DbTp0OE8Ea6l25j9ZQ';" alt="95 Year Old Wwii Vet Reflects On Serving In Patton S Third Army Life After War Latest Headlines Nwitimes Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">95 Year Old Wwii Vet Reflects On Serving In Patton S Third Army Life After War Latest Headlines Nwitimes Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bloximages.chicago2.vip.townnews.com/saratogian.com/content/tncms/assets/v3/editorial/0/ef/0effd978-a78c-527d-9182-45690238def6/5b9c0594c2b8c.image.jpg?resize=1200%2C891" data-lightbox="roadtrip" data-title="Aerial Photographer Made Dangerous Reconnaissance Wwii Flights In The Pacific News Saratogian Com">
+											<img class="card-img v-image ads-img " src="https://bloximages.chicago2.vip.townnews.com/saratogian.com/content/tncms/assets/v3/editorial/0/ef/0effd978-a78c-527d-9182-45690238def6/5b9c0594c2b8c.image.jpg?resize=1200%2C891" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgn4gB5J02zRvMPV5fADzVrmV72HHb9TsJLw';" alt="Aerial Photographer Made Dangerous Reconnaissance Wwii Flights In The Pacific News Saratogian Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aerial Photographer Made Dangerous Reconnaissance Wwii Flights In The Pacific News Saratogian Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/wechat-penghubung-3-dunia.html">Wechat Penghubung 3 Dunia</a></li>
+													<li class="list-group-item"><a href="/wechat-official.html">Wechat Official</a></li>
+													<li class="list-group-item"><a href="/wechat-indonesia-office.html">Wechat Indonesia Office</a></li>
+													<li class="list-group-item"><a href="/wechat-pay-bca.html">Wechat Pay Bca</a></li>
+													<li class="list-group-item"><a href="/war-in-heroes-and-generals.html">War In Heroes And Generals</a></li>
+													<li class="list-group-item"><a href="/wechat-login-google.html">Wechat Login Google</a></li>
+													<li class="list-group-item"><a href="/wechat-qr-code-scanner.html">Wechat Qr Code Scanner</a></li>
+													<li class="list-group-item"><a href="/wechat-login-website.html">Wechat Login Website</a></li>
+													<li class="list-group-item"><a href="/wechat-download-gratis.html">Wechat Download Gratis</a></li>
+													<li class="list-group-item"><a href="/war-heroescom.html">War Heroescom</a></li>
+													<li class="list-group-item"><a href="/war-heroes-of-france-1944-hacked.html">War Heroes Of France 1944 Hacked</a></li>
+													<li class="list-group-item"><a href="/wechat-for-windows-7.html">Wechat For Windows 7</a></li>
+													<li class="list-group-item"><a href="/war-heroes-of-kargil.html">War Heroes Of Kargil</a></li>
+													<li class="list-group-item"><a href="/wechat-install.html">Wechat Install</a></li>
+													<li class="list-group-item"><a href="/wechat-helper.html">Wechat Helper</a></li>
+													<li class="list-group-item"><a href="/wechat-bermasalah.html">Wechat Bermasalah</a></li>
+													<li class="list-group-item"><a href="/wechat-pes.html">Wechat Pes</a></li>
+													<li class="list-group-item"><a href="/warna-hijau-army-doff.html">Warna Hijau Army Doff</a></li>
+													<li class="list-group-item"><a href="/war-heroes-tvb.html">War Heroes Tvb</a></li>
+													<li class="list-group-item"><a href="/wechat-bot.html">Wechat Bot</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

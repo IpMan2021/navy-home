@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>The Military Departments - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "The Military Departments",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/6a/8e/5f/6a8e5faccc122971735d3ea9308cca64.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=the+military+departments",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>The Military Departments</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">However there is evidence to suggest that various other departments coded with the MI prefix and. The Department of the Army the Department of the Air Force and the Department of the Navy. Department is an organizational term used by the US. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/canadian-armed-forces-recruiting-office-kitchener.html">canadian armed forces recruiting office kitchener</a>
+											<a class="badge badge-warning" href="/civilian-dod-pay-raise-2020.html">civilian dod pay raise 2020</a>
+											<a class="badge badge-info" href="/coast-guard-department-of-defense.html">coast guard department of defense</a>
+											<a class="badge badge-warning" href="/canadian-armed-forces-recruitment-office-toronto.html">canadian armed forces recruitment office toronto</a>
+											<a class="badge badge-secondary" href="/canadian-forces-on-d-day.html">canadian forces on d day</a>
+											<a class="badge badge-primary" href="/civil-war-soldiers-records-pennsylvania.html">civil war soldiers records pennsylvania</a>
+											<a class="badge badge-info" href="/capital-area-military-spouses.html">capital area military spouses</a>
+											<a class="badge badge-info" href="/cgsc-department-of-military-history.html">cgsc department of military history</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you have come to pay a visit to the ideal blog.  Our site gives you suggestions for viewing the maximum quality video and picture content, hunt and locate more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, therefore we recommend this movie that you view.  It is also possible to bring about supporting this site by sharing videos and images that you enjoy on this blog on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ee/0a/c3/ee0ac332e23b643b9d745de6b2713e15.jpg" data-lightbox="roadtrip" data-title="Symbols Of The Five American Military Services Air Force Army Coast Guard Marine Corp And Navy Military Appreciation Military Insignia Military Branches">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ee/0a/c3/ee0ac332e23b643b9d745de6b2713e15.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe8-q9k4sIWNAmsKasUB-CgX3f2h9P5_zdew';" alt="Symbols Of The Five American Military Services Air Force Army Coast Guard Marine Corp And Navy Military Appreciation Military Insignia Military Branches">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Symbols Of The Five American Military Services Air Force Army Coast Guard Marine Corp And Navy Military Appreciation Military Insignia Military Branches</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/1e/80/aa1e803c63732e794b506eecf07ce88a.png" data-lightbox="roadtrip" data-title="Seal Of The U S Department Of The Air Force Daf Is One Of The Three Military Departments Within T United States Air Force Air Force Veteran Air Force Mom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/1e/80/aa1e803c63732e794b506eecf07ce88a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5vyYpeRSU_rguUWo7eq8Mng4oglsdQL-a7w';" alt="Seal Of The U S Department Of The Air Force Daf Is One Of The Three Military Departments Within T United States Air Force Air Force Veteran Air Force Mom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Seal Of The U S Department Of The Air Force Daf Is One Of The Three Military Departments Within T United States Air Force Air Force Veteran Air Force Mom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/7c/e0/1b7ce03ad496382ff79f63f28c36d663.png" data-lightbox="roadtrip" data-title="Free Military Logos Cliparts Download Free Clip Art Free Clip Art On Clipart Library Military Logo Clip Art Ethical Designs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/7c/e0/1b7ce03ad496382ff79f63f28c36d663.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYkAwdy-fSQGxHWoP4XS8fT2m5co63I10mdg';" alt="Free Military Logos Cliparts Download Free Clip Art Free Clip Art On Clipart Library Military Logo Clip Art Ethical Designs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Military Logos Cliparts Download Free Clip Art Free Clip Art On Clipart Library Military Logo Clip Art Ethical Designs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/2f/07/482f072eb7a87ceee39168b5fb06813f.jpg" data-lightbox="roadtrip" data-title="Plz Like Comment Or Repin If You Like Military Challenge Coins Custom Coins Challenge Coins">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/2f/07/482f072eb7a87ceee39168b5fb06813f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnernZJsSU8MEPpbB9bvm1rKl1X_b0siiEZg';" alt="Plz Like Comment Or Repin If You Like Military Challenge Coins Custom Coins Challenge Coins">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Plz Like Comment Or Repin If You Like Military Challenge Coins Custom Coins Challenge Coins</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/bf/e5/fbbfe5895dcf5260a7fed71eb71e842a.jpg" data-lightbox="roadtrip" data-title="Plz Like Comment Or Repin If You Like Military Challenge Coins Military Coins Custom Challenge Coins">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/bf/e5/fbbfe5895dcf5260a7fed71eb71e842a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2JRC73dtB4ulRettctlMtJqVUDZ4dWLqo2w';" alt="Plz Like Comment Or Repin If You Like Military Challenge Coins Military Coins Custom Challenge Coins">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Plz Like Comment Or Repin If You Like Military Challenge Coins Military Coins Custom Challenge Coins</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/fd/05/2dfd055e2a86ebccf68ac231890b1e71.jpg" data-lightbox="roadtrip" data-title="Army Jrotc Ranks School Department Rotc School Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/fd/05/2dfd055e2a86ebccf68ac231890b1e71.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTXtTfJBCzsPoQZB758tXJDGl2hEwQGxTAZg';" alt="Army Jrotc Ranks School Department Rotc School Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Jrotc Ranks School Department Rotc School Army</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/66/b2/cb/66b2cb4cda738110faf3f0f268840d89.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTXtTfJBCzsPoQZB758tXJDGl2hEwQGxTAZg';" alt="Army Jrotc Ranks School Department Rotc School Army">
+										<div class="card-body">
+						<h3 class="h5"><b>Over 1300 graduates in Biomedical Sciences lead aggressive research in medical research.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>The military departments</strong>. 
+								
+																	The Department of Defense has many components aside from the service branches. 
+																	Todays 663 graduates of the School of Nursing blend science research and field. 
+																	Tell us whether you accept cookies. 
+																	Great Britain has had a long and varied military history which has led to a vast number of establishments to be constructed around the UK. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Army National Guard and the Air National Guard are reserve components. 
+																	There are three military departments within the Department of Defense DOD. 
+																	A rich source of information on military campaigns can be found in the letters to and from central government departments and the military commanders in the field. 
+																	A military department provides and embodies traditional civilian control of the military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The command structure is hierarchical with divisions and brigades responsible for administering groupings of smaller units. 
+																	Department of the Army Department of the Navy and Department of the Air Force. 
+																	Army mostly prior to World War I to describe named geographical districts created for control and administration of installations and units. 
+																	Our Forces The Army Marine Corps Navy Air Force Space Force and Coast Guard are the armed forces of the United States. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Nurses and graduates in biomedical sciences provide exceptional service through service in the US. 
+																	The code numbers for the Military Intelligence departments seem at first sight to be illogical. 
+																	On joining the RMP everyone undertakes General Police Duties GPD. 
+																	The department invites Military Veterans and their dependents who wish to apply for education support benefit for the first time and intending to study during the 2021 academic year to apply for the DMV Education Support benefit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These were further extended in 1941 by the National Service Act 1941 which extended the liability to service in civil defence and the National Service No 2 Act 1941 which imposed on all persons of either sex a general obligation to service. 
+																	The out-letters sent from central government were usually written either by the monarch the secretaries-of-state who managed military affairs or the senior officers of the Army stationed in Whitehall namely the Commander-in. 
+																	GPD provide Garrison Policing 24 hour manned Police Stations in larger garrisons and support the military on operations. 
+																	Today Americas Medical School has 691 enrolled students and 5043 graduates. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They investigate crimes ranging from thefts to assaults conduct arrests searches and basic crime scenes. 
+																	Military Department One of the departments within the Department of Defense created by the National Security Act of 1947 as amended. 
+																	Find some of the most requested links below or see a full list by category. 
+																	Carli Pierson It turns out Trumps wall is being paid for by US troops not Mexico. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Military Recruitment Department was set up in 1939 under the aegis of the Director-General of Manpower to administer these National Service Acts. 
+																	In 1920 most of the named departments were redesignated as numbered Corps Areas. 
+																	We use cookies to collect information about how you use GOVUK. 
+																	We use this information to make the website work as well as possible and improve government. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Major Units are regiment or battalion-sized with minor units being smaller either company sized sub-units or platoons. 
+																	Military and civilian careers of distinction. 
+																	With the scaling down of the armed forces since the end of the Cold War many of the defence departments have been merged to save costs this has led to a number of military sites. 
+																	Each of these military departments is also headed up by a civilian service secretary who are also appointed by the president. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Trump condemned by. 
+																	The Department of Defense is composed of the Office of the Secretary of Defense the Joint Chiefs of Staff and the Joint Staff Office of the Inspector General the Combatant Commands the Military Departments Department of the Army DA Department of the Navy DON Department of the Air Force DAF the Defense Agencies and Department of Defense Field Activities the National Guard. 
+																	The DMS is made up of the Royal Navy Medical Service Army Medical Service the Royal Air Force Medical Service and the Joint Medical Group JMG. 
+																	Under the Secretary of Defense there are three military departments. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	US military truck filmed ramming Russian jeep off the road in Syria. 
+																	A career in the Royal Military Police is varied and extremely challenging. 
+																	This invitation is also open to all continuing learners and students of education support in 2020 those who are currently approved and produced with support for. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/8e/5f/6a8e5faccc122971735d3ea9308cca64.png" data-lightbox="roadtrip" data-title="Emblem Of The United States Department Of The Army Svg United States Symbols Army The Unit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/8e/5f/6a8e5faccc122971735d3ea9308cca64.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRshQEJUlUhoGWmwF3kR8CHJWTmtzlA6QD-kg';" alt="Emblem Of The United States Department Of The Army Svg United States Symbols Army The Unit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Emblem Of The United States Department Of The Army Svg United States Symbols Army The Unit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/21/50/73/215073cca66b62eca909017a0e83c5b8.jpg" data-lightbox="roadtrip" data-title="Air Force Geocoin Air Force Air Force Symbol Concealed Carry">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/21/50/73/215073cca66b62eca909017a0e83c5b8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBJxLEvkAGE6ytgUYijQBTSSyvVL5_ptVP-A';" alt="Air Force Geocoin Air Force Air Force Symbol Concealed Carry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Geocoin Air Force Air Force Symbol Concealed Carry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/24/86/a824864b8d43aed41e35bb0bb780a509.png" data-lightbox="roadtrip" data-title="Insignia Of The U S Central Command Military Logo Insignia Military Insignia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/24/86/a824864b8d43aed41e35bb0bb780a509.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc4OFmrObM0icFRXBpdTXTdFQMfWAd80KyJg';" alt="Insignia Of The U S Central Command Military Logo Insignia Military Insignia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Insignia Of The U S Central Command Military Logo Insignia Military Insignia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3d/07/45/3d0745d23b8da1584ab6f0fbe0236acb.jpg" data-lightbox="roadtrip" data-title="Retrowar Us Army Patches Army Patches Military Insignia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3d/07/45/3d0745d23b8da1584ab6f0fbe0236acb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3DhSMvvv9FuPP9b7dCz1fy0u-FY2XyHUIEw';" alt="Retrowar Us Army Patches Army Patches Military Insignia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Retrowar Us Army Patches Army Patches Military Insignia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/6d/6a/08/6d6a08280db01bf8b8357dff7d0db57e.jpg" data-lightbox="roadtrip" data-title="Carved Wood Wall Plaques Great Seals Round Emblems Logos Standard Personalized Or Customized For Federal State Custom Plaques Plaque Wood Wall Plaques">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/6d/6a/08/6d6a08280db01bf8b8357dff7d0db57e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0c5hixWl7M-yTOJrd3Vgrt0B5fciBGObc2w';" alt="Carved Wood Wall Plaques Great Seals Round Emblems Logos Standard Personalized Or Customized For Federal State Custom Plaques Plaque Wood Wall Plaques">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Carved Wood Wall Plaques Great Seals Round Emblems Logos Standard Personalized Or Customized For Federal State Custom Plaques Plaque Wood Wall Plaques</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/b2/cb/66b2cb4cda738110faf3f0f268840d89.jpg" data-lightbox="roadtrip" data-title="Plz Like Comment Or Repin If You Like Military Coins Custom Challenge Coins Military Challenge Coins">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/b2/cb/66b2cb4cda738110faf3f0f268840d89.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9bp_65hKVuddJulPkNhdJTrVwjVBEn1jQsw';" alt="Plz Like Comment Or Repin If You Like Military Coins Custom Challenge Coins Military Challenge Coins">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Plz Like Comment Or Repin If You Like Military Coins Custom Challenge Coins Military Challenge Coins</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/77/f9/8477f9b7e17064b12060144e6955408c.jpg" data-lightbox="roadtrip" data-title="Plz Like Comment Or Repin If You Like Military Challenge Coins Challenge Coins Custom Coins">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/77/f9/8477f9b7e17064b12060144e6955408c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCLNSDJnVv_eCLYhMn-96Mo4iIbh8lbwhm2A';" alt="Plz Like Comment Or Repin If You Like Military Challenge Coins Challenge Coins Custom Coins">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Plz Like Comment Or Repin If You Like Military Challenge Coins Challenge Coins Custom Coins</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/05/e4/8705e42572e6ec375b5744793a5e24a0.jpg" data-lightbox="roadtrip" data-title="Roman San Diego Pd Police Retirment Presentation From Badge Frame Military Shadow Box Police Crafts Shadow Box">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/05/e4/8705e42572e6ec375b5744793a5e24a0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2kWZ6gNxOBfwAg3-k8WDv0pDGQgyXLDjdkA';" alt="Roman San Diego Pd Police Retirment Presentation From Badge Frame Military Shadow Box Police Crafts Shadow Box">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Roman San Diego Pd Police Retirment Presentation From Badge Frame Military Shadow Box Police Crafts Shadow Box</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/dc/95/c6dc952757841e20ce3b97c1824227e0.jpg" data-lightbox="roadtrip" data-title="Http Www Badgeframe Com Shadow Box Holiday Decor Frame">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/dc/95/c6dc952757841e20ce3b97c1824227e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU8rw25kVnoHo1Jm7EP9_xULofeyIN95E-Zw';" alt="Http Www Badgeframe Com Shadow Box Holiday Decor Frame">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Badgeframe Com Shadow Box Holiday Decor Frame</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/6d/90/63/6d90639c2087187f0a1e92233ac68d16.jpg" data-lightbox="roadtrip" data-title="Pin On Balochistan Jobs Government Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/6d/90/63/6d90639c2087187f0a1e92233ac68d16.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPAYJzFToOxF2aUm7xVmmozEjtO1-LJaSiEQ';" alt="Pin On Balochistan Jobs Government Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Balochistan Jobs Government Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/98/40/169840163c23ef79c803949b72553832.jpg" data-lightbox="roadtrip" data-title="Map Of Military Departments And Posts 1860 Map Antique Maps Vintage World Maps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/98/40/169840163c23ef79c803949b72553832.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8nqu2VFKoCZ_vmIQ-xBdZvzTAQoQui9YRag';" alt="Map Of Military Departments And Posts 1860 Map Antique Maps Vintage World Maps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Map Of Military Departments And Posts 1860 Map Antique Maps Vintage World Maps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/47/62/c0476294f43b40cf8f46987da509f621.jpg" data-lightbox="roadtrip" data-title="Hydra S H I E L D Shield Logo Embroidered Departments And Undercover Patch Pvc Armband Military Patches Badges Pvc Patches Patches Custom Patches">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/47/62/c0476294f43b40cf8f46987da509f621.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJMK9na7aS7-uRic7EqZ-QzCiKi7aVXHhAEg';" alt="Hydra S H I E L D Shield Logo Embroidered Departments And Undercover Patch Pvc Armband Military Patches Badges Pvc Patches Patches Custom Patches">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hydra S H I E L D Shield Logo Embroidered Departments And Undercover Patch Pvc Armband Military Patches Badges Pvc Patches Patches Custom Patches</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/30/12/423012524765195c875be4405c5a5377.jpg" data-lightbox="roadtrip" data-title="Pin By Brian Yeater On Challenge Coins Challenge Coins Coins Custom Coins">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/30/12/423012524765195c875be4405c5a5377.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Lwq6_9WBtllQ2jATO9fYFK8ZmJqgAKjmcw';" alt="Pin By Brian Yeater On Challenge Coins Challenge Coins Coins Custom Coins">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Brian Yeater On Challenge Coins Challenge Coins Coins Custom Coins</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-post-office-in-syria.html">Army Post Office In Syria</a></li>
+													<li class="list-group-item"><a href="/army-post-office-jaisalmer.html">Army Post Office Jaisalmer</a></li>
+													<li class="list-group-item"><a href="/army-postal-service-pin-code-list.html">Army Postal Service Pin Code List</a></li>
+													<li class="list-group-item"><a href="/army-ppw-explained.html">Army Ppw Explained</a></li>
+													<li class="list-group-item"><a href="/army-oig-hotline.html">Army Oig Hotline</a></li>
+													<li class="list-group-item"><a href="/army-pay-office-glasgow.html">Army Pay Office Glasgow</a></li>
+													<li class="list-group-item"><a href="/army-navy-contact-number.html">Army Navy Contact Number</a></li>
+													<li class="list-group-item"><a href="/army-pay-helpline.html">Army Pay Helpline</a></li>
+													<li class="list-group-item"><a href="/army-oig-foia.html">Army Oig Foia</a></li>
+													<li class="list-group-item"><a href="/army-post-office-pin-code.html">Army Post Office Pin Code</a></li>
+													<li class="list-group-item"><a href="/army-postal-service-department-of-india-tracking.html">Army Postal Service Department Of India Tracking</a></li>
+													<li class="list-group-item"><a href="/army-post-office-vacancy.html">Army Post Office Vacancy</a></li>
+													<li class="list-group-item"><a href="/army-postal-office-delhi.html">Army Postal Office Delhi</a></li>
+													<li class="list-group-item"><a href="/army-pay-office-phone-number.html">Army Pay Office Phone Number</a></li>
+													<li class="list-group-item"><a href="/army-postal-service-office-in-delhi.html">Army Postal Service Office In Delhi</a></li>
+													<li class="list-group-item"><a href="/army-post-office-calendar-2020.html">Army Post Office Calendar 2020</a></li>
+													<li class="list-group-item"><a href="/army-navy-hotline.html">Army Navy Hotline</a></li>
+													<li class="list-group-item"><a href="/army-postal-service-department-of-india.html">Army Postal Service Department Of India</a></li>
+													<li class="list-group-item"><a href="/army-pha-online-assessment-link.html">Army Pha Online Assessment Link</a></li>
+													<li class="list-group-item"><a href="/army-oct-job-description.html">Army Oct Job Description</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

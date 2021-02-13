@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Is Navy Department Of Defense - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Is Navy Department Of Defense",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/a9/ab/87/a9ab8741a0c535255f998574dd9e4a9e.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=is+navy+department+of+defense",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Is Navy Department Of Defense</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Official website for US. The Defense Department is working closely with the Department of Health and Human Services and State Department to provide support in dealing with the coronavirus outbreak. Leadership edit edit source. <br>				
+			</p>
+										<a class="badge badge-warning" href="/department-of-national-defence-downsview.html">department of national defence downsview</a>
+											<a class="badge badge-danger" href="/department-of-military-tennessee.html">department of military tennessee</a>
+											<a class="badge badge-danger" href="/department-of-national-defence-canada-archives.html">department of national defence canada archives</a>
+											<a class="badge badge-dark" href="/department-of-national-defence-edmonton-address.html">department of national defence edmonton address</a>
+											<a class="badge badge-primary" href="/department-of-military-science-and-tactics-meaning.html">department of military science and tactics meaning</a>
+											<a class="badge badge-info" href="/department-of-national-defence-canada-news.html">department of national defence canada news</a>
+											<a class="badge badge-primary" href="/department-of-national-defence-headquarters.html">department of national defence headquarters</a>
+											<a class="badge badge-success" href="/department-of-military-veterans-twitter.html">department of military veterans twitter</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to visit the right blog.  Our site provides you with suggestions for viewing the highest quality video and image content, hunt and locate more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, particularly Youtube, so we recommend this movie that you see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/ab/4b/a1ab4b0f7b9f8dbbb3881d8d179f9f3e.jpg" data-lightbox="roadtrip" data-title="The Department Of The Navy Was Established As A Cabinet Level Department In 1798 By John Adams But Veterans Day Coloring Page Coloring Pages Patriotic Symbols">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/ab/4b/a1ab4b0f7b9f8dbbb3881d8d179f9f3e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUhOceQocqBs8Z3XoCItzYYeZgOU17iKxdvQ';" alt="The Department Of The Navy Was Established As A Cabinet Level Department In 1798 By John Adams But Veterans Day Coloring Page Coloring Pages Patriotic Symbols">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Department Of The Navy Was Established As A Cabinet Level Department In 1798 By John Adams But Veterans Day Coloring Page Coloring Pages Patriotic Symbols</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/e1/aa/ece1aa4aae906bc020806b41eef88648.jpg" data-lightbox="roadtrip" data-title="Official Seals For The Department Of Defense Department Of The Navy U S Marine Corps Department Of The Air Department Of The Navy National Archives Defense">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/e1/aa/ece1aa4aae906bc020806b41eef88648.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbyN_Guv7UFAzJSb8-k6BJk3YMERfmIV2SlA';" alt="Official Seals For The Department Of Defense Department Of The Navy U S Marine Corps Department Of The Air Department Of The Navy National Archives Defense">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Official Seals For The Department Of Defense Department Of The Navy U S Marine Corps Department Of The Air Department Of The Navy National Archives Defense</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/bf/c9/d1bfc96ed2a438776d79282f058859bd.jpg" data-lightbox="roadtrip" data-title="Policeman Special Police U S Naval Base Pearl Harbor Department Of Defense Police Badge Military Insignia Special Police">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/bf/c9/d1bfc96ed2a438776d79282f058859bd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR014v-qluvkOVmLlEV-6Nkhftx5kH614CLGg';" alt="Policeman Special Police U S Naval Base Pearl Harbor Department Of Defense Police Badge Military Insignia Special Police">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Policeman Special Police U S Naval Base Pearl Harbor Department Of Defense Police Badge Military Insignia Special Police</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/76/c6/4076c6a754f1bac6217dc267535de885.png" data-lightbox="roadtrip" data-title="The Department Of Defense Dod Arose From A Restructuring Of The Us Military In 1949 A Response To United States Armed Forces Us Military Bases Armed Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/76/c6/4076c6a754f1bac6217dc267535de885.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLlVrQM7paOEFDTL7m_VJf3ymbO5lSGwbdmA';" alt="The Department Of Defense Dod Arose From A Restructuring Of The Us Military In 1949 A Response To United States Armed Forces Us Military Bases Armed Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Department Of Defense Dod Arose From A Restructuring Of The Us Military In 1949 A Response To United States Armed Forces Us Military Bases Armed Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/93/60/d09360c153f9c620515e077060b34674.jpg" data-lightbox="roadtrip" data-title="Army Navy Marine Air Force Coast Guard Us Department Of Defense Commemorative Coin Navy Marine Army Navy Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/93/60/d09360c153f9c620515e077060b34674.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCaLN_y8sDrqTG-eggcB3hKseMDus1LMgMbA';" alt="Army Navy Marine Air Force Coast Guard Us Department Of Defense Commemorative Coin Navy Marine Army Navy Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Navy Marine Air Force Coast Guard Us Department Of Defense Commemorative Coin Navy Marine Army Navy Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7f/6e/5e/7f6e5eee4db98e7840cd41c73d54b14a.jpg" data-lightbox="roadtrip" data-title="United States Department Of Defense Pentagon Challenge Coin Challenge Coins Pentagon Challenges">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7f/6e/5e/7f6e5eee4db98e7840cd41c73d54b14a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGLbkpWd8HZfb30GqMqqcSws4GQhqJr7kpCg';" alt="United States Department Of Defense Pentagon Challenge Coin Challenge Coins Pentagon Challenges">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United States Department Of Defense Pentagon Challenge Coin Challenge Coins Pentagon Challenges</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/a5/d5/6d/a5d56d738747ec65a4f6bc089438e6cc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGLbkpWd8HZfb30GqMqqcSws4GQhqJr7kpCg';" alt="United States Department Of Defense Pentagon Challenge Coin Challenge Coins Pentagon Challenges">
+										<div class="card-body">
+						<h3 class="h5"><b>The views expressed here do not represent those of the Department of Defense Department of the Navy or the US.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Is navy department of defense</strong>. 
+								
+																	Department of Defense executive division of the US. 
+																	Headed by the Secretary of Defense the DoD oversees military readiness across the country and employs over one million active duty military service members nearly one. 
+																	Subject to lawful authority the Secretary of Defense and the President. 
+																	Based in the Pentagon it includes the Joint Chiefs of Staff the departments of the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Air Force and numerous defense agencies and allied services. 
+																	US Department of Defense salary trends based on salaries posted anonymously by US Department of Defense employees. 
+																	Select a Branch of Service from the list for an expanded menu of destination websites. 
+																	The Department of the Navy released its strategic blueprint for the Arctic titled a Blue Arctic Jan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The US Department of Defense - Navy Recruitment Department located in McAlester OK is a branch location of the US. 
+																	Navy Department mainly the Office of the Secretary organizational structure 2006 The Department of the Navy is headed by the Secretary of the Navy also known as the SECNAV in naval jargon who has the authority to conduct all of the affairs of the Department. 
+																	Incorporating the Marine Corps it serves along with the army and the air force as part of the nations defense. 
+																	Department of Defense DoD which is responsible for national security and manages the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Defense Agency Financial Report FY 2020 368 pgs 787 MB DoD AFR FY 2020 by section. 
+																	Head to the redesigned Defensegov where you can learn all about the Defense Department. 
+																	There were about 224000 combined personnel overseas in over 170 countries. 
+																	It also employed about 761000 civilians. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Defense is the nations largest employerIt had about 136 million active duty personnel and 801000 reservists as of June 2020. 
+																	Explore trending topics experience DOD through interactive pieces engage by testing your wit with quizzes and observe DOD in action via photos and videos. 
+																	The navys mission is to protect the United States as directed by the president or the secretary of defense by the effective prosecution of war at. 
+																	Navy Department Of Defense is a facilities services company based out of 3259 Winton Rd S Ste 13 Rochester New York United States. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Cutting-edge Spearfish and Sting Ray torpedoes carried by the Royal Navy are receiving a 230 million maintenance uplift. 
+																	Business Tax ID. 
+																	The Navy Department Ministry of Defence was a former ministerial service department of the Ministry of Defence United Kingdom responsible for the control and direction of Her Majestys Naval Service. 
+																	The United States Department of Defense DoD USDOD or DOD is an executive branch department of the federal government charged with coordinating and supervising all agencies and functions of the government directly related to national security and the United States Armed Forces. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1 - DoD At A Glance About the DoD Agency Financial Report Face of Defense Table of Contents and Message from the Secretary of Defense 2 - Managements Discussion and Analysis MDA 3 - Financial Section and Message from the Under Secretary of Defense Comptroller Chief Financial. 
+																	It was established on 1 April 1964 when the Admiralty was absorbed into a unified Ministry of Defence where it became the Navy Department. 
+																	The navy is one of three primary components of the US. 
+																	Joint Chiefs of Staff. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Defense DoD which is responsible for national security and manages the US. 
+																	Armed Forces now working in hospitals vaccine centres and testing. 
+																	The DOD is the largest employer in the world with over 13 million active-duty service members soldiers marines. 
+																	Average salaries for US Department of Defense Us Navy Officer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Federal government responsible for ensuring national security and supervising US. 
+																	The Department of the Navy worked with the Office of the Secretary of Defense and the Joint Staff to conduct the Future Naval Force Structure Study. 
+																	Political oversight of the department originally lay. 
+																	Bryan Durkee is an active duty Navy captain with more than 27 years of service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The US Department of Defense - Navy Department located in Norfolk VA is a branch location of the US. 
+																	This looked at three different fleets that would. 
+																	5 delivering a regional outline spanning the next two decades as the Department continues to. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/c7/de/f4c7defc0055d81b3aee18facb4764b4.jpg" data-lightbox="roadtrip" data-title="United States Department Of Defense Washington Dc Challenge Coin 40mm W Case G44 Ebay In 2020 Challenge Coins United States Armed Forces The Unit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/c7/de/f4c7defc0055d81b3aee18facb4764b4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCy_mUFcst1Uqw1YvHc9fCENNMQFsuUch09A';" alt="United States Department Of Defense Washington Dc Challenge Coin 40mm W Case G44 Ebay In 2020 Challenge Coins United States Armed Forces The Unit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United States Department Of Defense Washington Dc Challenge Coin 40mm W Case G44 Ebay In 2020 Challenge Coins United States Armed Forces The Unit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/92/30/a4/9230a4eba97b3b2048af90a1fbfc33aa.png" data-lightbox="roadtrip" data-title="Special Police Navy Fuel Depot Jacksonville Fla Department Of Defense Police Badge Special Police Military Police">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/92/30/a4/9230a4eba97b3b2048af90a1fbfc33aa.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaI0g8Pd1ajDT1PpZz-qnsXYezUNvhWJPyVA';" alt="Special Police Navy Fuel Depot Jacksonville Fla Department Of Defense Police Badge Special Police Military Police">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Special Police Navy Fuel Depot Jacksonville Fla Department Of Defense Police Badge Special Police Military Police</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/d5/6d/a5d56d738747ec65a4f6bc089438e6cc.jpg" data-lightbox="roadtrip" data-title="Special Police Headquarters Naval District Washington Dc Department Of Defense Police Badge Special Police Military Police">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/d5/6d/a5d56d738747ec65a4f6bc089438e6cc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQADy5sw1Pu_kjO1yQnAvKvLxUN7O-QVt-39Q';" alt="Special Police Headquarters Naval District Washington Dc Department Of Defense Police Badge Special Police Military Police">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Special Police Headquarters Naval District Washington Dc Department Of Defense Police Badge Special Police Military Police</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/e5/55/91e5554ced17b711cd9b4c2bd1277360.jpg" data-lightbox="roadtrip" data-title="Us Navy Police Pearl Harbor Police Badge Police Military Insignia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/e5/55/91e5554ced17b711cd9b4c2bd1277360.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPNQuxFyJDDkgeEyi7lTP7l8qeABa8OvciSQ';" alt="Us Navy Police Pearl Harbor Police Badge Police Military Insignia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Navy Police Pearl Harbor Police Badge Police Military Insignia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/e7/f2/40e7f219e610b15898167cc2e182d8c8.jpg" data-lightbox="roadtrip" data-title="Special Police Sergeant Norfolk Naval Shipyard Department Of Defense Police Badge Police Sergeant Special Police">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/e7/f2/40e7f219e610b15898167cc2e182d8c8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqh5wXpTBZi8lUSFL6bMN0oJX6gHGVZKfNpw';" alt="Special Police Sergeant Norfolk Naval Shipyard Department Of Defense Police Badge Police Sergeant Special Police">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Special Police Sergeant Norfolk Naval Shipyard Department Of Defense Police Badge Police Sergeant Special Police</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/09/e3/1c/09e31c05cb98c26d300bb9fa1108428e.jpg" data-lightbox="roadtrip" data-title="Us Department Of Defense Announced That The Navy Would Be More Determin South China Sea Defense South China">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/09/e3/1c/09e31c05cb98c26d300bb9fa1108428e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGM5xpdPmdTtpYJbFiiVWokzC52tsOg1x4VA';" alt="Us Department Of Defense Announced That The Navy Would Be More Determin South China Sea Defense South China">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Department Of Defense Announced That The Navy Would Be More Determin South China Sea Defense South China</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/91/be/5191bee43c03f5b29f5c2029f17945b4.jpg" data-lightbox="roadtrip" data-title="The Department Of Defense Today Announced The Identities Of Those Killed In Action In Eastern Afghanistan During Operatio Us Navy Logo Navy Logo Military Patch">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/91/be/5191bee43c03f5b29f5c2029f17945b4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaNAg9lj0lJVhTIPV-nRReTn0P2RmAf2VkkQ';" alt="The Department Of Defense Today Announced The Identities Of Those Killed In Action In Eastern Afghanistan During Operatio Us Navy Logo Navy Logo Military Patch">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Department Of Defense Today Announced The Identities Of Those Killed In Action In Eastern Afghanistan During Operatio Us Navy Logo Navy Logo Military Patch</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/ab/87/a9ab8741a0c535255f998574dd9e4a9e.jpg" data-lightbox="roadtrip" data-title="Department Of Defense On Instagram Replenishment Trio Usnsjohnericsson And Gipper 76 Sail In Formation With The Japane In 2020 Us Navy Japanese Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/ab/87/a9ab8741a0c535255f998574dd9e4a9e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT35Bt1A9K15jiAicNjTGTULSgL-HubqoL-cg';" alt="Department Of Defense On Instagram Replenishment Trio Usnsjohnericsson And Gipper 76 Sail In Formation With The Japane In 2020 Us Navy Japanese Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Department Of Defense On Instagram Replenishment Trio Usnsjohnericsson And Gipper 76 Sail In Formation With The Japane In 2020 Us Navy Japanese Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5a/17/21/5a172142d244e881bc41da3199427a53.jpg" data-lightbox="roadtrip" data-title="Department Of Defense Department Of The Navy Letterhead With Etsy Department Of The Navy Defense Department">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5a/17/21/5a172142d244e881bc41da3199427a53.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSghlbGaD6w_R89mM_i05-NQjUKH8ikY8lx6A';" alt="Department Of Defense Department Of The Navy Letterhead With Etsy Department Of The Navy Defense Department">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Department Of Defense Department Of The Navy Letterhead With Etsy Department Of The Navy Defense Department</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e1/cc/1d/e1cc1dc51904e29e2b0e7302b8f0816c.jpg" data-lightbox="roadtrip" data-title="United States Of America United States Navy United States Department Of The Navy United Stat Department Of The Navy United States Navy United States Of America">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e1/cc/1d/e1cc1dc51904e29e2b0e7302b8f0816c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWupRLM5c_UsScCBMmaAopyXcwbk7Sz1kAcA';" alt="United States Of America United States Navy United States Department Of The Navy United Stat Department Of The Navy United States Navy United States Of America">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United States Of America United States Navy United States Department Of The Navy United Stat Department Of The Navy United States Navy United States Of America</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/8c/0a/198c0aebacdd9425517fdf8b4a8c53ff.png" data-lightbox="roadtrip" data-title="Pin On Badges">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/8c/0a/198c0aebacdd9425517fdf8b4a8c53ff.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRggKWZB0UxOakPk1gG3RRETMpBI6Wh6PjhQ';" alt="Pin On Badges">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Badges</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/42/00/2342005fb0a6440397081852ed78d036.jpg" data-lightbox="roadtrip" data-title="Collectible Police Patches Ebay Police Patches Department Of The Navy Police">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/42/00/2342005fb0a6440397081852ed78d036.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjeQGzBrmeqFtMjQc9X7TUItjMTYDNNBOlaQ';" alt="Collectible Police Patches Ebay Police Patches Department Of The Navy Police">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Collectible Police Patches Ebay Police Patches Department Of The Navy Police</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/40/1e/e5/401ee5a093010a8b40477a5323172590.jpg" data-lightbox="roadtrip" data-title="Department Of Defense Distinguished Service Anodized Medal Usamm Marine Corps Medals Navy Marine Military Medals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/40/1e/e5/401ee5a093010a8b40477a5323172590.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThgljzcUv_vQQ29rZpaxTPtSJT5wdnI2v-Xw';" alt="Department Of Defense Distinguished Service Anodized Medal Usamm Marine Corps Medals Navy Marine Military Medals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Department Of Defense Distinguished Service Anodized Medal Usamm Marine Corps Medals Navy Marine Military Medals</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/regent-military-resource-center.html">Regent Military Resource Center</a></li>
+													<li class="list-group-item"><a href="/roses-department-store-on-military-highway.html">Roses Department Store On Military Highway</a></li>
+													<li class="list-group-item"><a href="/public-affairs-course-army.html">Public Affairs Course Army</a></li>
+													<li class="list-group-item"><a href="/public-affairs-officer-navy-job-description.html">Public Affairs Officer Navy Job Description</a></li>
+													<li class="list-group-item"><a href="/salvation-army-family-resource-centre-calgary.html">Salvation Army Family Resource Centre Calgary</a></li>
+													<li class="list-group-item"><a href="/randall-harvey-air-force.html">Randall Harvey Air Force</a></li>
+													<li class="list-group-item"><a href="/primary-sources-on-the-roman-army.html">Primary Sources On The Roman Army</a></li>
+													<li class="list-group-item"><a href="/salvation-army-emergency-hotline.html">Salvation Army Emergency Hotline</a></li>
+													<li class="list-group-item"><a href="/raf-air-force.html">Raf Air Force</a></li>
+													<li class="list-group-item"><a href="/reddit-military-hero.html">Reddit Military Hero</a></li>
+													<li class="list-group-item"><a href="/royal-jordanian-air-force-hq.html">Royal Jordanian Air Force Hq</a></li>
+													<li class="list-group-item"><a href="/postal-service-army.html">Postal Service Army</a></li>
+													<li class="list-group-item"><a href="/sa-dept-defence-military-veterans.html">Sa Dept Defence Military Veterans</a></li>
+													<li class="list-group-item"><a href="/public-affairs-army-officer.html">Public Affairs Army Officer</a></li>
+													<li class="list-group-item"><a href="/public-affairs-us-army.html">Public Affairs Us Army</a></li>
+													<li class="list-group-item"><a href="/salvation-army-barbara-mitchell-family-resource-center.html">Salvation Army Barbara Mitchell Family Resource Center</a></li>
+													<li class="list-group-item"><a href="/russian-military-intelligence-agency-gru.html">Russian Military Intelligence Agency Gru</a></li>
+													<li class="list-group-item"><a href="/regent-university-military-resource-center.html">Regent University Military Resource Center</a></li>
+													<li class="list-group-item"><a href="/roman-army-lesson-plan.html">Roman Army Lesson Plan</a></li>
+													<li class="list-group-item"><a href="/public-affairs-jobs-army.html">Public Affairs Jobs Army</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

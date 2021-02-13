@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Oregon Military Department Records - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Oregon Military Department Records",
+  "datePublished": "2021-02-13",
+  "image": "https://www.oregon.gov/omd/PublishingImages/ONG-2.JPG",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=oregon+military+department+records",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Oregon Military Department Records</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">It is not subject to any federal orders. The Oregon Military Department may charge fees for records in accordance with the statewide policy on Public Records Requests Fees and Charges. The records are arranged alphabetically by county name then numerical by the school district and alphabetical by surname. <br>				
+			</p>
+										<a class="badge badge-warning" href="/department-of-military-lands-cantonments-admit-card.html">department of military lands cantonments admit card</a>
+											<a class="badge badge-danger" href="/department-of-medicine-va.html">department of medicine va</a>
+											<a class="badge badge-warning" href="/department-of-military-affairs-drishti-ias.html">department of military affairs drishti ias</a>
+											<a class="badge badge-secondary" href="/department-of-military-affairs-va.html">department of military affairs va</a>
+											<a class="badge badge-light" href="/department-of-military-affairs-pib.html">department of military affairs pib</a>
+											<a class="badge badge-warning" href="/department-of-labor-military-spouse.html">department of labor military spouse</a>
+											<a class="badge badge-light" href="/department-of-military-affairs-pa.html">department of military affairs pa</a>
+											<a class="badge badge-dark" href="/department-of-military-accounts-jobs-2019.html">department of military accounts jobs 2019</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to pay a visit to the ideal blog.  Our website gives you hints for seeing the maximum quality video and picture content, search and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, therefore we recommend this movie that you view.  It is also possible to contribute to supporting this site by sharing videos and images that you enjoy on this blog on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this website.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.oregon.gov/omd/PublishingImages/MILITARY%20RECORDS.JPG" data-lightbox="roadtrip" data-title="Oregon Military Department Military Records Request Oregon National Guard State Of Oregon">
+											<img class="card-img v-image ads-img " src="https://www.oregon.gov/omd/PublishingImages/MILITARY%20RECORDS.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSryPmtz1SHrUJupzrT1DvKT3UJgOkNILX5QA';" alt="Oregon Military Department Military Records Request Oregon National Guard State Of Oregon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oregon Military Department Military Records Request Oregon National Guard State Of Oregon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://sos.oregon.gov/blue-book/PublishingImages/state/executive/military-DSC_0035_1.jpg" data-lightbox="roadtrip" data-title="State Of Oregon Blue Book Oregon Military Department">
+											<img class="card-img v-image ads-img " src="https://sos.oregon.gov/blue-book/PublishingImages/state/executive/military-DSC_0035_1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFiIV0DGDmTsiVZpqaz0NjOgs1-zJk7j1Mpg';" alt="State Of Oregon Blue Book Oregon Military Department">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">State Of Oregon Blue Book Oregon Military Department</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.oregon.gov/omd/PublishingImages/ONG%20sign.JPG" data-lightbox="roadtrip" data-title="Oregon Military Department Oregon National Guard Oregon National Guard State Of Oregon">
+											<img class="card-img v-image ads-img " src="https://www.oregon.gov/omd/PublishingImages/ONG%20sign.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKwLKjDtn_0Fjae_KHjyPm3dC6QIaq5K20dg';" alt="Oregon Military Department Oregon National Guard Oregon National Guard State Of Oregon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oregon Military Department Oregon National Guard Oregon National Guard State Of Oregon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.oregon.gov/omd/PublishingImages/ONG-2.JPG" data-lightbox="roadtrip" data-title="Oregon Military Department Welcome Page State Of Oregon">
+											<img class="card-img v-image ads-img " src="https://www.oregon.gov/omd/PublishingImages/ONG-2.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQteWjidxoNMAnoKt1LIMzL3-kBmFYDJzQ3Dg';" alt="Oregon Military Department Welcome Page State Of Oregon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oregon Military Department Welcome Page State Of Oregon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.oregon.gov/omd/ONG/Documents/MG_Stencel-20resized.jpg" data-lightbox="roadtrip" data-title="Oregon Military Department Command Group Oregon National Guard State Of Oregon">
+											<img class="card-img v-image ads-img " src="https://www.oregon.gov/omd/ONG/Documents/MG_Stencel-20resized.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgcbRPZ5rKW91nllk5roC3chT_lFcYYKsyhQ';" alt="Oregon Military Department Command Group Oregon National Guard State Of Oregon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oregon Military Department Command Group Oregon National Guard State Of Oregon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.oregon.gov/omd/PublishingImages/BS1.jpg" data-lightbox="roadtrip" data-title="Oregon Military Department Public Records Requests Business Services State Of Oregon">
+											<img class="card-img v-image ads-img " src="https://www.oregon.gov/omd/PublishingImages/BS1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVJDvAF2ENXUKfDHHzs0DrWgMw76gS8403cw';" alt="Oregon Military Department Public Records Requests Business Services State Of Oregon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oregon Military Department Public Records Requests Business Services State Of Oregon</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://theworldwar-prod.s3.amazonaws.com/prod/s3fs-public/1976.225.12a_Cropped.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVJDvAF2ENXUKfDHHzs0DrWgMw76gS8403cw';" alt="Oregon Military Department Public Records Requests Business Services State Of Oregon">
+										<div class="card-body">
+						<h3 class="h5"><b>Oregon Military Department Records Guide Record Series Descriptions Muster Roll Box List - Boxes 128-143 Box 128 1st Coast Artillery Corps cont 1908-1923 3rd-12th Companies 483rd-486th Companies 249th Coast Artillery Corps 1923-1931 Batteries A-C Box 129 249th Coast Artillery Corps cont 1923-1931 Batteries D-E Headquarters Detachment Medical Detachment 1st Cavalry Regiment 1887-1917.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Oregon military department records</strong>. 
+								
+																	The records are arranged alphabetically by county name then numerical by the school district and alphabetical by surname. 
+																	Sample Military Department Enlistment and Service Case File 1914 Sample Finding Aid Cards. 
+																	Oregon Military History Forts-Camps-Roads 1805-1976. 
+																	This collection contains Oregon State Defense Councils Personal Military Service Records for various counties in the state of Oregon. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Series documents claims filed by persons who provided services andor supplies to the Oregon Military Department during the Bannock Indian War. 
+																	This is a collection of WWI Military Service Records for various counties in the state of Oregon. 
+																	For more information view the Oregon Military Departments Public Records Request Policy. 
+																	While most of the Military Departments activities are documented the picture is more completely drawn during war periods. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Oregon State Archives has an extensive collection of early and more current military records of residents. 
+																	Division of State Archives Family History Library Oregon Civil War Service Records of Union Soldiers 1861-1865 Family Search Oregon Grand Army of the Republic Membership Records 1870-1930 Family Search. 
+																	Records include bonds claim abstracts voucher abstracts receipts inventories claim vouchers discharge certificates powers of attorney and correspondence. 
+																	Map produced by the Oregon Military Department in 1976 shows locations of historic forts camps and military roads in Oregon part of Oregon State Library holdings. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Often Oregon military records can provide additional details that can be used to obtain vital records certificates. 
+																	Oregon State Archives Photo The department was the first state agency created in Oregon. 
+																	Many Oregon soldiers spent their last years in the Oregon Soldiers Home in Roseburg. 
+																	This building in Salem houses the central offices of the Oregon Military Department. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The links presented to. 
+																	503-584-3980 Address Oregon Military Department 1776 Militia Way SEPO Box 14350 Salem OR 97309-5047 Social Media. 
+																	This webpage gives you access to several online databases containing Oregon military records as well as related genealogy in Oregon. 
+																	Oregon Military Department 1776 Militia Way SEPO Box 14350 Salem OR 97309-5047. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Oregon combined military service records index 1837-1954 Oregon. 
+																	The records document the application of veterans for admission to the Oregon Soldiers Home a care facility for indigent veterans located in Roseburg Oregon. 
+																	For Military records request please complete form. 
+																	This series documents an individuals military service in Oregon during WWI and used as a basis for medal distribution. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military Records Wiki article provides more information on federal military records and search strategies. 
+																	Applications show application date periods of service enlistment and discharge dates units served applicants signature affidavits and personal information. 
+																	Oregon Military Department 1776 Militia Way SEPO Box 14350 Salem OR 97309-5047. 
+																	This includes information from the Indian Wars and the Oregon National Guard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is under state jurisdiction and its members are employed only within the State of Oregon. 
+																	Oregon Civil War Service Records of Union soldiers 1861-1865 Index and images Oregon World War I Veteran State Aid Applications 1921-1938 index. 
+																	Oregon State Archives Enlistment Record Index. 
+																	Oregon Military Department Records Guide Record Series Descriptions Records held at the Oregon State Archives. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Oregon military records are a great way to get addition information such as birth death and sometimes names of spouses. 
+																	The records of Oregons Indian wars - Cayuse 1847-1850 Rogue River 1855-1856 Modoc 1872-1873 Nez Perce 1877 and Bannock 1878 are particularly interesting. 
+																	This series documents an individuals military service in Oregon during WWI and used as a basis for medal distribution. 
+																	The collection at the state archives should be one of the first places to seek information about a soldier. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The ORSDF is an all-volunteer militia force under the Oregon Military Department that provides reserve personnel to both the Oregon Army National Guard and the Oregon Air National Guard. 
+																	It administers equips and trains the Oregon Army and Air National Guard. 
+																	Oregon Military Department 1776 Militia Way SEPO Box 14350 Salem OR 97309-5047. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.oregon.gov/omd/PublishingImages/PUBLICAFFAIRS.JPG" data-lightbox="roadtrip" data-title="Oregon Military Department Public Affairs Business Services State Of Oregon">
+											<img class="card-img v-image ads-img " src="https://www.oregon.gov/omd/PublishingImages/PUBLICAFFAIRS.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaQKZx3oMQ5Dard26Sb_ckNJnT9YfvRObtUw';" alt="Oregon Military Department Public Affairs Business Services State Of Oregon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oregon Military Department Public Affairs Business Services State Of Oregon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.oregon.gov/omd/PublishingImages/gavel.jpg" data-lightbox="roadtrip" data-title="Oregon Military Department Office Of The Staff Judge Advocate Jag Oregon National Guard State Of Oregon">
+											<img class="card-img v-image ads-img " src="https://www.oregon.gov/omd/PublishingImages/gavel.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN7e0mKUwUFxQ2sJHBU7F0OhZaOGybxH4v2w';" alt="Oregon Military Department Office Of The Staff Judge Advocate Jag Oregon National Guard State Of Oregon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oregon Military Department Office Of The Staff Judge Advocate Jag Oregon National Guard State Of Oregon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://myarmybenefits.us.army.mil/Images/Oregon/Oregon%20National%20Guard.jpg" data-lightbox="roadtrip" data-title="Oregon The Official Army Benefits Website">
+											<img class="card-img v-image ads-img " src="https://myarmybenefits.us.army.mil/Images/Oregon/Oregon%20National%20Guard.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRULv7VSGDmONV4aH0YtawQRNcUI1UHQycgGA';" alt="Oregon The Official Army Benefits Website">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oregon The Official Army Benefits Website</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.oregon.gov/omd/PublishingImages/Oregon%20Nat%27l%20Guard%20v3.jpg" data-lightbox="roadtrip" data-title="Oregon Military Department Armory Rental Program Business Services State Of Oregon">
+											<img class="card-img v-image ads-img " src="https://www.oregon.gov/omd/PublishingImages/Oregon%20Nat%27l%20Guard%20v3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiLLocfhQrwHYBHR8iz8YaT0-_LtGDm50G_Q';" alt="Oregon Military Department Armory Rental Program Business Services State Of Oregon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oregon Military Department Armory Rental Program Business Services State Of Oregon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://sos.oregon.gov/archives/records/agency/planningboard/_w/grazingb106_jpg.jpg" data-lightbox="roadtrip" data-title="State Of Oregon Agency Records Guide Oregon State Planning Board Records Guide 1860 1939">
+											<img class="card-img v-image ads-img " src="https://sos.oregon.gov/archives/records/agency/planningboard/_w/grazingb106_jpg.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaiZpK2qdEbFzfwvlvlLqnFFscPeVP_Rqohg';" alt="State Of Oregon Agency Records Guide Oregon State Planning Board Records Guide 1860 1939">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">State Of Oregon Agency Records Guide Oregon State Planning Board Records Guide 1860 1939</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.oregon.gov/odot/DMV/PublishingImages/DriverID/veterandesignation_large.jpg" data-lightbox="roadtrip" data-title="Oregon Department Of Transportation Veteran Designation Oregon Driver Motor Vehicle Services State Of Oregon">
+											<img class="card-img v-image ads-img " src="https://www.oregon.gov/odot/DMV/PublishingImages/DriverID/veterandesignation_large.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbEzLEE-IfLmO_EZM9CsgAGiUXoRGfhK9_tQ';" alt="Oregon Department Of Transportation Veteran Designation Oregon Driver Motor Vehicle Services State Of Oregon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oregon Department Of Transportation Veteran Designation Oregon Driver Motor Vehicle Services State Of Oregon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://theworldwar-prod.s3.amazonaws.com/prod/s3fs-public/1976.225.12a_Cropped.jpg" data-lightbox="roadtrip" data-title="Military Records By State National Wwi Museum And Memorial">
+											<img class="card-img v-image ads-img " src="https://theworldwar-prod.s3.amazonaws.com/prod/s3fs-public/1976.225.12a_Cropped.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiXBZLLYgsdMATMWwKJ_uKCxgH0o9ih2rLeQ';" alt="Military Records By State National Wwi Museum And Memorial">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Records By State National Wwi Museum And Memorial</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.dvidshub.net/media/thumbs/photos/1911/5887938/1000x663_q95.jpg" data-lightbox="roadtrip" data-title="Dvids News Ov 1 Mohawk Homecoming Honors Army Aviation Oregon National Guard History">
+											<img class="card-img v-image ads-img " src="https://cdn.dvidshub.net/media/thumbs/photos/1911/5887938/1000x663_q95.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-uldvIYvzyIAQI_G_XJGkvEnJ64j7PRjL9Q';" alt="Dvids News Ov 1 Mohawk Homecoming Honors Army Aviation Oregon National Guard History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dvids News Ov 1 Mohawk Homecoming Honors Army Aviation Oregon National Guard History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mediad.publicbroadcasting.net/p/klcc/files/styles/small/public/201505/GUARD3.JPG" data-lightbox="roadtrip" data-title="Nearly 800 Oregon National Guard Soldiers Are Home From Deployment On This Memorial Day Klcc">
+											<img class="card-img v-image ads-img " src="https://mediad.publicbroadcasting.net/p/klcc/files/styles/small/public/201505/GUARD3.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlrzzY22oThPlUoVPaMksyjX4VPiS7soKukA';" alt="Nearly 800 Oregon National Guard Soldiers Are Home From Deployment On This Memorial Day Klcc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nearly 800 Oregon National Guard Soldiers Are Home From Deployment On This Memorial Day Klcc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.dvidshub.net/media/thumbs/photos/2004/6164392/1000x667_q95.jpg" data-lightbox="roadtrip" data-title="Dvids News Air Force F 86 Sabrejet Reassembled At The Oregon Military Museum">
+											<img class="card-img v-image ads-img " src="https://cdn.dvidshub.net/media/thumbs/photos/2004/6164392/1000x667_q95.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqvMRr7mnRnh5cgFB2T6xtjv4Y5YrTwQfo8g';" alt="Dvids News Air Force F 86 Sabrejet Reassembled At The Oregon Military Museum">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dvids News Air Force F 86 Sabrejet Reassembled At The Oregon Military Museum</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.ci.medford.or.us/images/imagemanager/BannerButton-1-120x90.jpg" data-lightbox="roadtrip" data-title="City Of Medford Oregon Record Requests And Fees">
+											<img class="card-img v-image ads-img " src="http://www.ci.medford.or.us/images/imagemanager/BannerButton-1-120x90.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxI-Y9i2VXtTJADyc7eiWhUFIQ8rPIEbMY2A';" alt="City Of Medford Oregon Record Requests And Fees">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">City Of Medford Oregon Record Requests And Fees</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="Kkpt-m8tM5waAM" data-lightbox="roadtrip" data-title="Https Www Osbplf Org Assets Forms Practice Forms Oregon 20judicial 20department 20family 20law 20forms Pdf">
+											<img class="card-img v-image ads-img " src="Kkpt-m8tM5waAM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc19-3nm-DjemowHYkb84O4WzxvFcnM7Hi-A';" alt="Https Www Osbplf Org Assets Forms Practice Forms Oregon 20judicial 20department 20family 20law 20forms Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Osbplf Org Assets Forms Practice Forms Oregon 20judicial 20department 20family 20law 20forms Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://sos.oregon.gov/archives/exhibits/ww2/PublishingImages/protect-guard-20160310-9191.jpg" data-lightbox="roadtrip" data-title="State Of Oregon World War Ii The National Guard Is Off To War Who Will Protect Us Now">
+											<img class="card-img v-image ads-img " src="https://sos.oregon.gov/archives/exhibits/ww2/PublishingImages/protect-guard-20160310-9191.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRajzk1CLYeuxhFkJtiDr0_t74Bu_ZNVjAFYQ';" alt="State Of Oregon World War Ii The National Guard Is Off To War Who Will Protect Us Now">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">State Of Oregon World War Ii The National Guard Is Off To War Who Will Protect Us Now</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/mycah-russell.html">Mycah Russell</a></li>
+													<li class="list-group-item"><a href="/my-spouse-betrayed-me.html">My Spouse Betrayed Me</a></li>
+													<li class="list-group-item"><a href="/my-spouse-and-i-both-have-covid-can-we-isolate-together.html">My Spouse And I Both Have Covid Can We Isolate Together</a></li>
+													<li class="list-group-item"><a href="/my-spouse-kicked-me-out.html">My Spouse Kicked Me Out</a></li>
+													<li class="list-group-item"><a href="/my-hero-air-force.html">My Hero Air Force</a></li>
+													<li class="list-group-item"><a href="/mycaa-army.html">Mycaa Army</a></li>
+													<li class="list-group-item"><a href="/motivasi-ikut-ukm-marching-band.html">Motivasi Ikut Ukm Marching Band</a></li>
+													<li class="list-group-item"><a href="/missile-defense-agency-budget-request-2021.html">Missile Defense Agency Budget Request 2021</a></li>
+													<li class="list-group-item"><a href="/mycah-mcdonald.html">Mycah Mcdonald</a></li>
+													<li class="list-group-item"><a href="/mycah-hatfield-images.html">Mycah Hatfield Images</a></li>
+													<li class="list-group-item"><a href="/mycah-means.html">Mycah Means</a></li>
+													<li class="list-group-item"><a href="/mycaa-milspouse.html">Mycaa Milspouse</a></li>
+													<li class="list-group-item"><a href="/my-spouse-has-anxiety.html">My Spouse Has Anxiety</a></li>
+													<li class="list-group-item"><a href="/ministry-of-defence-egypt-logo.html">Ministry Of Defence Egypt Logo</a></li>
+													<li class="list-group-item"><a href="/my-spouse-picks-fights.html">My Spouse Picks Fights</a></li>
+													<li class="list-group-item"><a href="/ministry-of-defence-in-egypt.html">Ministry Of Defence In Egypt</a></li>
+													<li class="list-group-item"><a href="/mycaa-dental-hygiene.html">Mycaa Dental Hygiene</a></li>
+													<li class="list-group-item"><a href="/my-spouse-complains-about-everything.html">My Spouse Complains About Everything</a></li>
+													<li class="list-group-item"><a href="/mycaa.html">Mycaa</a></li>
+													<li class="list-group-item"><a href="/mycah-pittman-wife.html">Mycah Pittman Wife</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

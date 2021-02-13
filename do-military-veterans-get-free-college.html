@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Do Military Veterans Get Free College - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Do Military Veterans Get Free College",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/ec/20/25/ec20253c51b5f819748caef8a86fb586.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=do+military+veterans+get+free+college",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Do Military Veterans Get Free College</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">While most college first-year students are recent high school graduates for some higher education is made possible by military benefits leading many veterans to struggle with adjusting to the college experience after serving. The militarys Post-911 GI Bill not only covers the soldierveterans with tuition it provides a monthly housing allowance based on location of the school books and supplies stipend and a one. To apply for this benefit youll need to fill out a form for a fee waiver. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/army-pay-officer.html">army pay officer</a>
+											<a class="badge badge-success" href="/army-postal-service-warrant-officer.html">army postal service warrant officer</a>
+											<a class="badge badge-primary" href="/army-navy-hotline-philippines.html">army navy hotline philippines</a>
+											<a class="badge badge-dark" href="/army-pay-helpline.html">army pay helpline</a>
+											<a class="badge badge-danger" href="/army-ocp-dog-collar.html">army ocp dog collar</a>
+											<a class="badge badge-info" href="/army-ppw-status.html">army ppw status</a>
+											<a class="badge badge-warning" href="/army-post-office-nagpur.html">army post office nagpur</a>
+											<a class="badge badge-light" href="/army-nurse-hotline.html">army nurse hotline</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to visit the ideal site.  Our site provides you with hints for viewing the highest quality video and picture content, hunt and locate more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, especially Youtube, therefore we recommend this video that you view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/07/b9/fe/07b9fe4d79011e0ef5f5589adad23513.jpg" data-lightbox="roadtrip" data-title="Free College Laughshop Com Military Humor Military Life Quotes Army Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/07/b9/fe/07b9fe4d79011e0ef5f5589adad23513.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv0vYJJSz8VeZqQnjeBvhoCYle2v7k7t8K_A';" alt="Free College Laughshop Com Military Humor Military Life Quotes Army Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free College Laughshop Com Military Humor Military Life Quotes Army Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/ab/34/0dab3413c3cadba268d9f23dd39d4a1d.png" data-lightbox="roadtrip" data-title="Our Guide To Military Scholarships For Veterans Dependents And Spouses The Scholarship System Military Scholarships Scholarships For College Veteran Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/ab/34/0dab3413c3cadba268d9f23dd39d4a1d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2ewK8xkXgpDqhfP0uUyzRjwFzHpq4bwT03w';" alt="Our Guide To Military Scholarships For Veterans Dependents And Spouses The Scholarship System Military Scholarships Scholarships For College Veteran Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Our Guide To Military Scholarships For Veterans Dependents And Spouses The Scholarship System Military Scholarships Scholarships For College Veteran Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/4a/e5/48/4ae548a0e3aabef94e47f4af00f34ecb.jpg" data-lightbox="roadtrip" data-title="College Scholarships For U S Veterans And Military Families In 2020 Scholarships For College Scholarships Student Grants">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/4a/e5/48/4ae548a0e3aabef94e47f4af00f34ecb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfigLF2uBLPcah17WOpPNtP5AGSEn_4-Zkkw';" alt="College Scholarships For U S Veterans And Military Families In 2020 Scholarships For College Scholarships Student Grants">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Scholarships For U S Veterans And Military Families In 2020 Scholarships For College Scholarships Student Grants</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/95/7a/ab957a796204717c61d71c158f4a0656.png" data-lightbox="roadtrip" data-title="These Are Just A Few Reasons Veterans And Military Members Can Do Well In College College Success College Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/95/7a/ab957a796204717c61d71c158f4a0656.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsUn-fspeKbO6_p44lMPE5YomjbYso3Mnxiw';" alt="These Are Just A Few Reasons Veterans And Military Members Can Do Well In College College Success College Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">These Are Just A Few Reasons Veterans And Military Members Can Do Well In College College Success College Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/15/8d/55158db5925e5b765814d4aba0553d52.jpg" data-lightbox="roadtrip" data-title="Perk Alert Starbucks Brews Up Free College For Veterans Families Free College Veteran American Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/15/8d/55158db5925e5b765814d4aba0553d52.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4ZJ7BecfnapEyomurRSII-RLyA_NZs9uwew';" alt="Perk Alert Starbucks Brews Up Free College For Veterans Families Free College Veteran American Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Perk Alert Starbucks Brews Up Free College For Veterans Families Free College Veteran American Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/7d/bd/587dbdea4c387e181e23c0c00ab36e8f.jpg" data-lightbox="roadtrip" data-title="If You Are A Veteran Looking For Higher Education Then Visit Militaryconnection Com And Learn About Veteran School College Tuition Tuition Assistance Tuition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/7d/bd/587dbdea4c387e181e23c0c00ab36e8f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Db0TNNtQM9NsYflu7FwwtJ1gs5YMY2n1oQ';" alt="If You Are A Veteran Looking For Higher Education Then Visit Militaryconnection Com And Learn About Veteran School College Tuition Tuition Assistance Tuition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Are A Veteran Looking For Higher Education Then Visit Militaryconnection Com And Learn About Veteran School College Tuition Tuition Assistance Tuition</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/474x/4a/e5/48/4ae548a0e3aabef94e47f4af00f34ecb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Db0TNNtQM9NsYflu7FwwtJ1gs5YMY2n1oQ';" alt="If You Are A Veteran Looking For Higher Education Then Visit Militaryconnection Com And Learn About Veteran School College Tuition Tuition Assistance Tuition">
+										<div class="card-body">
+						<h3 class="h5"><b>Active duty military members and their family members can get a free annual pass to more than 2000 national parks in the United States.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Do military veterans get free college</strong>. 
+								
+																	Whether youre seeking a two-year four-year or even a masters degree you can find tuition assistance if you know where to look. 
+																	In support of our disabled veterans many organizations and foundations sponsor college benefits and scholarships to help the children of veterans reach their educational goals. 
+																	Learn More About the CalVet College Fee Waiver Find Your Local County Veteran Service Officers. 
+																	You may be able to get a tax-free relief payment for your council tax or contributions you pay instead of council tax. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Did you know that as a spouse or dependent of a military member or veteran you may qualify for free college tuition. 
+																	Military veterans may get college credit hours from their military service. 
+																	Where the Money Is The military encourages servicemembers to use all programs available whether they are from federal military-related or private sources. 
+																	Ask an admission counselor if the college youre interested in offers fee waivers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To qualify you must be a resident veteran who has at least a 50 VA disability and received a Purple Heart medal. 
+																	Payments are issued at the end of your time abroad. 
+																	Quite often these agencies offer college scholarships grants or interest-free loans for dependent college education. 
+																	Enlisting in the military is not only an opportunity to serve your country but there are several ways the military helps pay for college that act as an added bonus. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Armed Forces be a legal resident of the state of Montana and must maintain satisfactory academic progress while enrolled. 
+																	Veterans and active duty military members who would like to attend college may be eligible for enough tuition assistance and scholarships to pay for their entire degree. 
+																	Montana Montana offers free tuition benefits for veterans within the Montana University system. 
+																	The centerpiece of armed services educational benefits is the GI Bill which encompasses several Department of Veterans Affairs education programs including the Post-911 GI Bill The Montgomery GI. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Each of the service-related societies has its own unique programs eligibility requirements program parameters scholarship application forms and decision processes. 
+																	They are based on. 
+																	Council tax on a property in the UK or. 
+																	Contributions instead of council tax for service family accommodation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At some colleges veterans do not need to pay an application fee. 
+																	VA education and training benefits can help you pay for college tuition find the right school or training program get career counseling and more. 
+																	Many veterans who are heading to school are able to get college credits for their military experience and training including courses in leadership development. 
+																	In Massachusetts they have a tuition waiver for all Massachusetts veterans to all state colleges and universities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To qualify veterans must have been honorably discharged from one of the branches of the US. 
+																	However not all states offer the same assistance each of them offering a variety of state-funded benefits and programs. 
+																	The Vocational Rehabilitation and Employment VetSuccess Act provides disabled veterans with programs to learn new job skills and also offers their dependents a chance to receive a college education. 
+																	What if I need to brush up on some basic academic skills before I head to college. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Arizona Free College Tuition for Veterans The Arizona Purple Heart Tuition Waiver provides qualifying Post 911 veterans with tuition-free education at any public state university or community college. 
+																	04 of 13 Veterans Day Free Meals and Other Freebies. 
+																	You may be able to get a relief payment if you are serving abroad in the Armed Forces and pay. 
+																	The Air Force Aid Society Education Grant Program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some of the student veterans are able to get a good start on their education post-military coupled with the classes they might have taken during active duty. 
+																	The College Tuition Fee Waiver for the Dependents of Veterans -- sometimes called the CalVet Fee Waiver -- is a state benefit that provides a tuition-free education at the CSU and the other state public post-secondary colleges and universities. 
+																	Veterans would need to be in an undergraduate degree program or certificate program must also be a legal resident of Massachusetts and must not be in default of any federal student loans. 
+																	If you join the Army Navy Air Force Coast Guard or Marines then you should be aware of the types of education assistance you can receive. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find out if youre eligible and how to apply for VA education benefits for Veterans service members and their qualified family members. 
+																	There are many out there and youll. 
+																	This has an 80 value to it and is completely free to those in the military. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/b4/d1/d2b4d1521777ac3630df3304a31fcedd.png" data-lightbox="roadtrip" data-title="Pin On Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/b4/d1/d2b4d1521777ac3630df3304a31fcedd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT95JiJrFPHUwT8iKjiSrCMTt8ksb4JMLsBiQ';" alt="Pin On Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/09/e9/24/09e924527262f4b3db528dd21d712ab4.png" data-lightbox="roadtrip" data-title="A Letter From The Daughter Of An Army Man Letters To Veterans Lettering Letter To Daughter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/09/e9/24/09e924527262f4b3db528dd21d712ab4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTKwJEuluc5LjUtRKXc5LZfnmmKuckncwuzA';" alt="A Letter From The Daughter Of An Army Man Letters To Veterans Lettering Letter To Daughter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Letter From The Daughter Of An Army Man Letters To Veterans Lettering Letter To Daughter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/d9/bb/35d9bba90fe8c57dd3a5e995e86a9e6c.jpg" data-lightbox="roadtrip" data-title="To Our Military Community You Make Us A Better Company Veterans Active Duty Service Members And Military Spouses Come By Free College Starbucks Free Tuition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/d9/bb/35d9bba90fe8c57dd3a5e995e86a9e6c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcUjLjK8GJG1o6KzyhHlSJilFsyV4ySNfK7A';" alt="To Our Military Community You Make Us A Better Company Veterans Active Duty Service Members And Military Spouses Come By Free College Starbucks Free Tuition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">To Our Military Community You Make Us A Better Company Veterans Active Duty Service Members And Military Spouses Come By Free College Starbucks Free Tuition</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/26/fd/4a26fddcd48de1b03060f2653a3438cc.jpg" data-lightbox="roadtrip" data-title="What Does The Consumer Financial Protection Bureau Mean To You Support Veterans Military Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/26/fd/4a26fddcd48de1b03060f2653a3438cc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF7qGy6z2mQQ_7U40mSGuwoitslHswpBEcrg';" alt="What Does The Consumer Financial Protection Bureau Mean To You Support Veterans Military Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Does The Consumer Financial Protection Bureau Mean To You Support Veterans Military Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/20/25/ec20253c51b5f819748caef8a86fb586.jpg" data-lightbox="roadtrip" data-title="Pin On Job Hunting Ideas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/20/25/ec20253c51b5f819748caef8a86fb586.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbCp50enni7zx6m1sgSSEa3VMyaXQ5hL_5NQ';" alt="Pin On Job Hunting Ideas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Job Hunting Ideas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/61/d3/4b/61d34b75f40daa8da600fe20f38a9a13.jpg" data-lightbox="roadtrip" data-title="Pin On American Holidays">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/61/d3/4b/61d34b75f40daa8da600fe20f38a9a13.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsaOv9z8Fh4r4PIMeSzzi_vn1RIjKvGdqJhg';" alt="Pin On American Holidays">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On American Holidays</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/04/05/3e/04053ed510f0e0dba8941fa95f546198.jpg" data-lightbox="roadtrip" data-title="College Resources For Veterans And Their Families Accredited Schools Online Find Top Rated Accredited Programs Online Online Education College Resources Education System">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/04/05/3e/04053ed510f0e0dba8941fa95f546198.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgkqvnQmLsGDIFkUL7Nbji_59SloGNzjOjEQ';" alt="College Resources For Veterans And Their Families Accredited Schools Online Find Top Rated Accredited Programs Online Online Education College Resources Education System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Resources For Veterans And Their Families Accredited Schools Online Find Top Rated Accredited Programs Online Online Education College Resources Education System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fe/0d/8b/fe0d8b34acc3fc9ae17d6c6c1d0777bc.jpg" data-lightbox="roadtrip" data-title="Pin On Going Back To School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fe/0d/8b/fe0d8b34acc3fc9ae17d6c6c1d0777bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGbgbGdYwPoW5K_Jpo925wzgiFTXoTUAgeNA';" alt="Pin On Going Back To School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Going Back To School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fd/9c/17/fd9c1765be291a4c32568417fb61753f.jpg" data-lightbox="roadtrip" data-title="If The School Or Business Is Veteran Friendly You Will Feel Like You Are Part Of The Family Just Like When Military Friendly Scholarships For College Mba">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fd/9c/17/fd9c1765be291a4c32568417fb61753f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-87wZOHrHRvOMjjJKGJQr_uPXBrrOT4irgA';" alt="If The School Or Business Is Veteran Friendly You Will Feel Like You Are Part Of The Family Just Like When Military Friendly Scholarships For College Mba">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If The School Or Business Is Veteran Friendly You Will Feel Like You Are Part Of The Family Just Like When Military Friendly Scholarships For College Mba</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/03/a3/7e03a325db6e907ab65a017f4b125f65.jpg" data-lightbox="roadtrip" data-title="Three Businesses That Give Back To Veterans Free College Working At Starbucks College Tuition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/03/a3/7e03a325db6e907ab65a017f4b125f65.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrrysVuSbCH8aTIriEIukXSUVaTc1FbUttVQ';" alt="Three Businesses That Give Back To Veterans Free College Working At Starbucks College Tuition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Three Businesses That Give Back To Veterans Free College Working At Starbucks College Tuition</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/49/5c/8e495c58a9949f4609938ea90ad65b37.jpg" data-lightbox="roadtrip" data-title="College Benefits For Children Of Disabled Veterans Veterans Benefits Disabled Veterans Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/49/5c/8e495c58a9949f4609938ea90ad65b37.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThUStauDyDQma_sQ5sU1gy2VleGIKDe0BF8Q';" alt="College Benefits For Children Of Disabled Veterans Veterans Benefits Disabled Veterans Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Benefits For Children Of Disabled Veterans Veterans Benefits Disabled Veterans Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/63/8a/e3638aa16b0c12cf6d1028d0da3c1d75.jpg" data-lightbox="roadtrip" data-title="Ryan Guina Of Military Wallet Tuition Assistance Scholarships For College Financial Aid For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/63/8a/e3638aa16b0c12cf6d1028d0da3c1d75.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaID-zc5fGwVGp8p4fr2Vayan1SUGQ0m4Y9g';" alt="Ryan Guina Of Military Wallet Tuition Assistance Scholarships For College Financial Aid For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ryan Guina Of Military Wallet Tuition Assistance Scholarships For College Financial Aid For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/1a/e2/cd1ae256f4cba3061912e37a53e33652.jpg" data-lightbox="roadtrip" data-title="Pin By Recruitmilitary On Job Seeking Tips Advice Veteran Jobs Job Fair Job Seeking">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/1a/e2/cd1ae256f4cba3061912e37a53e33652.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl6k2JP-RG1F3_g0a2wo8bdEGLSJ5WMhSing';" alt="Pin By Recruitmilitary On Job Seeking Tips Advice Veteran Jobs Job Fair Job Seeking">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Recruitmilitary On Job Seeking Tips Advice Veteran Jobs Job Fair Job Seeking</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-hr-headquarters-phone-number.html">Army Hr Headquarters Phone Number</a></li>
+													<li class="list-group-item"><a href="/army-female-hair-regulations-pt-uniform.html">Army Female Hair Regulations Pt Uniform</a></li>
+													<li class="list-group-item"><a href="/army-hair-and-nail-regulations.html">Army Hair And Nail Regulations</a></li>
+													<li class="list-group-item"><a href="/army-haircut-at-home.html">Army Haircut At Home</a></li>
+													<li class="list-group-item"><a href="/army-foia-program.html">Army Foia Program</a></li>
+													<li class="list-group-item"><a href="/army-hair-regulations-male-uk.html">Army Hair Regulations Male Uk</a></li>
+													<li class="list-group-item"><a href="/army-green-dodge-challenger-for-sale.html">Army Green Dodge Challenger For Sale</a></li>
+													<li class="list-group-item"><a href="/army-hair-regulations-female-2019.html">Army Hair Regulations Female 2019</a></li>
+													<li class="list-group-item"><a href="/army-dpw-org-chart.html">Army Dpw Org Chart</a></li>
+													<li class="list-group-item"><a href="/army-headquarters-department-of-army-administration.html">Army Headquarters Department Of Army Administration</a></li>
+													<li class="list-group-item"><a href="/army-headquarters-department-of-military-secretary.html">Army Headquarters Department Of Military Secretary</a></li>
+													<li class="list-group-item"><a href="/army-hair-regulations.html">Army Hair Regulations</a></li>
+													<li class="list-group-item"><a href="/army-domestic-violence-hotline.html">Army Domestic Violence Hotline</a></li>
+													<li class="list-group-item"><a href="/army-family-helpline.html">Army Family Helpline</a></li>
+													<li class="list-group-item"><a href="/army-hr-graduate-scheme.html">Army Hr Graduate Scheme</a></li>
+													<li class="list-group-item"><a href="/army-hair-regulations-male.html">Army Hair Regulations Male</a></li>
+													<li class="list-group-item"><a href="/army-enlisted-pay-chart-2018.html">Army Enlisted Pay Chart 2018</a></li>
+													<li class="list-group-item"><a href="/army-helpline-karachi.html">Army Helpline Karachi</a></li>
+													<li class="list-group-item"><a href="/army-fire-department.html">Army Fire Department</a></li>
+													<li class="list-group-item"><a href="/army-hair-regulations-male-2018.html">Army Hair Regulations Male 2018</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

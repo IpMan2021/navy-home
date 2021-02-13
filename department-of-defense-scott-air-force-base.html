@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Department Of Defense Scott Air Force Base - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Department Of Defense Scott Air Force Base",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/bc/2a/6b/bc2a6bfbd4bf1c745ecd68f1feae49f2.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=department+of+defense+scott+air+force+base",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Department Of Defense Scott Air Force Base</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Todays top 372 Department Of Defense jobs in Scott AFB Illinois United States. 2 US Department of Defense reviews in Scott Air Force Base. Leverage your professional network and get hired. <br>				
+			</p>
+										<a class="badge badge-light" href="/army-vehicle-technical-inspection.html">army vehicle technical inspection</a>
+											<a class="badge badge-danger" href="/australian-archives-military-records.html">australian archives military records</a>
+											<a class="badge badge-info" href="/army-study-guide-sharp-questions.html">army study guide sharp questions</a>
+											<a class="badge badge-danger" href="/army-themed-dog-names.html">army themed dog names</a>
+											<a class="badge badge-dark" href="/army-writer-42a.html">army writer 42a</a>
+											<a class="badge badge-warning" href="/australian-army-fire-service.html">australian army fire service</a>
+											<a class="badge badge-dark" href="/belk-veterans-day-discount.html">belk veterans day discount</a>
+											<a class="badge badge-dark" href="/army-wife-india.html">army wife india</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to visit the ideal blog.  Our site gives you hints for viewing the maximum quality video and picture content, hunt and find more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this video for you to see.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/23/32/bc/2332bcdb765198695334dc9b39741e5b.jpg" data-lightbox="roadtrip" data-title="United States Department Of Defense Defense Gov Scott Air Force Base Air Force How To Be Outgoing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/23/32/bc/2332bcdb765198695334dc9b39741e5b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTteryr_mL0PPmEinwURPq7ws5YK8Po0pmR9A';" alt="United States Department Of Defense Defense Gov Scott Air Force Base Air Force How To Be Outgoing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United States Department Of Defense Defense Gov Scott Air Force Base Air Force How To Be Outgoing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/bb/ab/01bbab8ea60085a7d720b551abb706c2.jpg" data-lightbox="roadtrip" data-title="Hand To Hand Combat Military Life Air Force Reserve Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/bb/ab/01bbab8ea60085a7d720b551abb706c2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ-1xKSe7NRt7gJiWR6bgVptNn27kQ-E1kzQ';" alt="Hand To Hand Combat Military Life Air Force Reserve Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hand To Hand Combat Military Life Air Force Reserve Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/e0/b1/4ae0b17763b097ea4752bc91fa4eb2a0.jpg" data-lightbox="roadtrip" data-title="Military Housing Scott Family Housing At Scott Air Force Base Photo Gallery Military Housing Scott Air Force Base Family House">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/e0/b1/4ae0b17763b097ea4752bc91fa4eb2a0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxS6u24RZz-zL_-iwAkcEdI7-gV09GvbfoWg';" alt="Military Housing Scott Family Housing At Scott Air Force Base Photo Gallery Military Housing Scott Air Force Base Family House">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Housing Scott Family Housing At Scott Air Force Base Photo Gallery Military Housing Scott Air Force Base Family House</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/72/94/e7/7294e765540bf4630f99693af7f5cd48.jpg" data-lightbox="roadtrip" data-title="More Than 770 Af Reservists Called Up Providing Medical Support In 2020 Air Force Bases Air Force Scott Air Force Base">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/72/94/e7/7294e765540bf4630f99693af7f5cd48.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6LXsG1OvRhtSxUJTo_omNvLfSkeXIN8wQ3g';" alt="More Than 770 Af Reservists Called Up Providing Medical Support In 2020 Air Force Bases Air Force Scott Air Force Base">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">More Than 770 Af Reservists Called Up Providing Medical Support In 2020 Air Force Bases Air Force Scott Air Force Base</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/15/d4/e215d46d1d5bd80c2d9f8d4454b0ab9e.jpg" data-lightbox="roadtrip" data-title="Pin On Fire Dept Patches For Sale">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/15/d4/e215d46d1d5bd80c2d9f8d4454b0ab9e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkJuuDOWnsg0kYrLBsZDj4X6bswjSrZut32g';" alt="Pin On Fire Dept Patches For Sale">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Fire Dept Patches For Sale</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/4a/c9/854ac9e96cce70663ba8c7edf844f002.jpg" data-lightbox="roadtrip" data-title="U S Air Force Integrated Avionics Attack Control Systems Specialists A1c Russell Scott Morrow On Right And Fighter Aircraft Air Fighter Aircraft Maintenance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/4a/c9/854ac9e96cce70663ba8c7edf844f002.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCKukWHU2kwHDd1nvxfTPY_y6ke9E4B0plyA';" alt="U S Air Force Integrated Avionics Attack Control Systems Specialists A1c Russell Scott Morrow On Right And Fighter Aircraft Air Fighter Aircraft Maintenance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Air Force Integrated Avionics Attack Control Systems Specialists A1c Russell Scott Morrow On Right And Fighter Aircraft Air Fighter Aircraft Maintenance</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/9f/6c/99/9f6c999d76ea21588e93426627964e03.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCKukWHU2kwHDd1nvxfTPY_y6ke9E4B0plyA';" alt="U S Air Force Integrated Avionics Attack Control Systems Specialists A1c Russell Scott Morrow On Right And Fighter Aircraft Air Fighter Aircraft Maintenance">
+										<div class="card-body">
+						<h3 class="h5"><b>375th Medical Group Building 1530 310 W Losey Street Scott Air Force Base Illinois 62225 USA.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Department of defense scott air force base</strong>. 
+								
+																	Lindsey is currently serving as the KC-46 system program manager Air Force Life Cycle Management Center Air Force Materiel Command Wright-Patterson Air Force Base Ohio. 
+																	Multiples doses of a COVID-19 vaccine are prepared for initial use on Scott Air Force Base Ill Jan. 
+																	Apply to Supervisory Contract Specialist Programmer Analyst Jrss Network Operation Controller and more. 
+																	The presence of commercial and external hyperlinks doesnt constitute endorsement by the AFRC Scott AFB AMC the USAF or the Department of Defense DoD of the external web site or the information products or services contained therein. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	GSA updates the Continental US. 
+																	This site is a public service by the Scott AFB Airman Family Readiness Center. 
+																	Search and apply for the latest Physical education jobs in Scott Air Force Base IL. 
+																	The installation is responsible for providing United States aeromedical evacuation capabilities flying C-21 operational support airlift. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2 SAIC 2 Delaware Resource Group of Oklahoma LLC 2 Anthony Associates. 
+																	Scott AFB administered the first three doses of the vaccine to three enlisted Airmen who are first responders in accordance with guidance from the Center of Disease Control and the Department of Defense. 
+																	Transportation Command Directorate of Acquisition Scott Air Force Base Illinois is the contracting activity. 
+																	The 375th Medical Group at Scott Air Force Base began administering a limited supply of the COVID-19 vaccine today to first responders and healthcare workers as outlined by a Department of Defense. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The base provides command and control for all logistics of the United States military in air over land and across the sea. 
+																	The 375th Medical Group at Scott Air Force Base has begun administering the COVID-19 vaccine to active-duty Airmen. 
+																	Before that trainees must complete a two-week training class to ensure they are ready to render final honors to deceased military veterans. 
+																	The primary mission of Scott Air Force Base is global mobility. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 375th Medical Group began administering a limited supply of the COVID-19 vaccine today to first responders and healthcare workers as outlined by a Department of Defense distribution plan. 
+																	US Department of the Air Force 36 United States Army 25 Jacobs 24 CACI 23 US Department of Defense 11 Credence Management Solutions LLC 6 Army National Guard 4 State of Missouri 3 G4S 3 Coupa 2 Sentar 2 Accenture 2 World Wide Technology Inc. 
+																	Scott Air Force Base Illinois 62225 USA. 
+																	The General Services Administration GSA prescribes rates for the Continental US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Email Updates Sign up to receive TRICARE updates and news releases via email. 
+																	Rates once a year or as necessary. 
+																	7 2020 217 The 375th Air Mobility Wing Base Honor Guard recruits members from various sections and units across Scott Air Force Base Ill to perform military funeral honors. 
+																	For more information please visit the individual health services. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Wwwtricaremil is an official website of the Defense Health Agency. 
+																	Team Scott sets policies and executes all air mobility operations. 
+																	618-256-WELL 9355 Dont forget to keep your familys information up-to-date in DEERS. 
+																	Dont forget to keep your familys information up-to-date in DEERS. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	New Department Of Defense jobs added daily. 
+																	SCOTT AIR FORCE BASE Ill. 
+																	Normally the rates are updated at the start of the new fiscal year. 
+																	Calculation of travel per diem rates within the Federal government is a shared responsibility of three organizations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A free inside look at company reviews and salaries posted anonymously by employees. 
+																	Multiples doses of a COVID-19 vaccine are prepared for initial use on Scott Air Force Base Ill Jan. 
+																	Full-time temporary and part-time jobs. 
+																	Air Force became a separate service on 18 September 1947 and on 13 January 1948 Scott Field was re-designated as Scott Air Force Base and the 3310th Technical Training Wing assumed host responsibility from the 3505th Army Air Forces Base Unit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Free fast and easy way find a job of 652000 postings in Scott Air Force Base IL and other big cities in USA. 
+																	Tests X-rays at the 375th Medical Group - Scott Air Force Base consists of Diagnostic Imaging X-ray and Laboratory. 
+																	Scott AFB administered the first three doses of the vaccine to three enlisted Airmen who are first responders in accordance with guidance from the Center of Disease Control and the Department of Defense. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/87/d4/d587d4cd12fefd9cdcbc88e2dbd75b0b.jpg" data-lightbox="roadtrip" data-title="Timeline Photos U S Department Of Defense Dod Facebook Fighter Jets Aircraft Fighter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/87/d4/d587d4cd12fefd9cdcbc88e2dbd75b0b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhF4O7_7jloRWd7PwSu9EQ8BGk4zQgBlFCTw';" alt="Timeline Photos U S Department Of Defense Dod Facebook Fighter Jets Aircraft Fighter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Timeline Photos U S Department Of Defense Dod Facebook Fighter Jets Aircraft Fighter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/03/cd/d603cd9a42079881cbb5e33d4f278716.jpg" data-lightbox="roadtrip" data-title="Best Of The U S Air Force Department Of Defense Image Collection September 1998 Aircraft Images Air Fighter Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/03/cd/d603cd9a42079881cbb5e33d4f278716.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQviSF31cwNNO-YYVxaKPFsldXh45YWpkWTkw';" alt="Best Of The U S Air Force Department Of Defense Image Collection September 1998 Aircraft Images Air Fighter Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Of The U S Air Force Department Of Defense Image Collection September 1998 Aircraft Images Air Fighter Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/9e/3d/139e3d436f62882c822b138ab8aa08d5.jpg" data-lightbox="roadtrip" data-title="Pin On Vehicles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/9e/3d/139e3d436f62882c822b138ab8aa08d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Zq7SNhMpinuEx8N1IESM6E9CmSrmsJEmRQ';" alt="Pin On Vehicles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Vehicles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/e1/32/57e132757efe8f0c178d79eb37e027b1.jpg" data-lightbox="roadtrip" data-title="Air Force Staff Sgt James Matheson Runs Military Working Dog Rromesha Though An Obstacle Course On Scott Air Military Working Dogs Working Dogs Military Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/e1/32/57e132757efe8f0c178d79eb37e027b1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqoAeWililyxlvM04T17QWUo2p4vB2R5hNoA';" alt="Air Force Staff Sgt James Matheson Runs Military Working Dog Rromesha Though An Obstacle Course On Scott Air Military Working Dogs Working Dogs Military Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Staff Sgt James Matheson Runs Military Working Dog Rromesha Though An Obstacle Course On Scott Air Military Working Dogs Working Dogs Military Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/a8/b6/bfa8b677d11bb8e5e728348836c6c4cb.jpg" data-lightbox="roadtrip" data-title="Best Of The U S Air Force Department Of Defense Image Collection September 1998 Aircraft Air Force Aerial">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/a8/b6/bfa8b677d11bb8e5e728348836c6c4cb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9Tehg_ZjakKIwU2j_RFLOeFKZrqXDGKj6Q';" alt="Best Of The U S Air Force Department Of Defense Image Collection September 1998 Aircraft Air Force Aerial">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Of The U S Air Force Department Of Defense Image Collection September 1998 Aircraft Air Force Aerial</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/09/0d/94090d74ddb8746c3e0b01a6957c6b8b.jpg" data-lightbox="roadtrip" data-title="Son Ensures Vietnam Veteran Is Laid To Rest Vietnam War Veterans Vietnam Veterans Vietnam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/09/0d/94090d74ddb8746c3e0b01a6957c6b8b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2juWgfENXAU3rDqImh0PG2MwPa2mCrJHktQ';" alt="Son Ensures Vietnam Veteran Is Laid To Rest Vietnam War Veterans Vietnam Veterans Vietnam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Son Ensures Vietnam Veteran Is Laid To Rest Vietnam War Veterans Vietnam Veterans Vietnam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/32/fa/3532faf949768fd46d9ec74e6b82bb18.jpg" data-lightbox="roadtrip" data-title="Goodfellow Afb 316th Training Squadron Aviation Posters Goodfellow Air Force Base Education And Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/32/fa/3532faf949768fd46d9ec74e6b82bb18.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA-iW4BPnDoAygV37b2vgaXJ2JNMkapUVTug';" alt="Goodfellow Afb 316th Training Squadron Aviation Posters Goodfellow Air Force Base Education And Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Goodfellow Afb 316th Training Squadron Aviation Posters Goodfellow Air Force Base Education And Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/2a/6b/bc2a6bfbd4bf1c745ecd68f1feae49f2.jpg" data-lightbox="roadtrip" data-title="South Africa Capital 4204 Landscape Trip Traveler South Africa Information On Our Site Africadosul Southafrica Air Force Air Force Day Usaf">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/2a/6b/bc2a6bfbd4bf1c745ecd68f1feae49f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZUIHiqYZbIgpBFA2h3cdRaXTNZv5gfMaU-A';" alt="South Africa Capital 4204 Landscape Trip Traveler South Africa Information On Our Site Africadosul Southafrica Air Force Air Force Day Usaf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">South Africa Capital 4204 Landscape Trip Traveler South Africa Information On Our Site Africadosul Southafrica Air Force Air Force Day Usaf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/db/c8/e3dbc89e93249301098f8a78f923b855.jpg" data-lightbox="roadtrip" data-title="Best Of The U S Air Force Department Of Defense Image Collection September 1998 By Expertinfantry Via Flickr Us Military Aircraft Aircraft Lockheed">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/db/c8/e3dbc89e93249301098f8a78f923b855.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3FnZ4LDbXt6_BiTAzflPC7nnoGUgCuSdMPw';" alt="Best Of The U S Air Force Department Of Defense Image Collection September 1998 By Expertinfantry Via Flickr Us Military Aircraft Aircraft Lockheed">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Of The U S Air Force Department Of Defense Image Collection September 1998 By Expertinfantry Via Flickr Us Military Aircraft Aircraft Lockheed</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/3f/e1/3d3fe10e5c52be48551dd6a8bb1d38f1.jpg" data-lightbox="roadtrip" data-title="An F 35a Takes Off From Mountain Home Air Force Base In Idaho U S Air Force Photo Fighter Pilot Fighter Jets Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/3f/e1/3d3fe10e5c52be48551dd6a8bb1d38f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKLcvWaML0y0eRlbqQHs6hquiwJDXKNCoMsQ';" alt="An F 35a Takes Off From Mountain Home Air Force Base In Idaho U S Air Force Photo Fighter Pilot Fighter Jets Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">An F 35a Takes Off From Mountain Home Air Force Base In Idaho U S Air Force Photo Fighter Pilot Fighter Jets Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/6c/99/9f6c999d76ea21588e93426627964e03.jpg" data-lightbox="roadtrip" data-title="Usaf Police 70th Anniversary Commemorative Badge Usaf Air Force Patches 70th Anniversary">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/6c/99/9f6c999d76ea21588e93426627964e03.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1SLgkrlsEegwwwU5rrkyQkgKP95kyxcS-Ow';" alt="Usaf Police 70th Anniversary Commemorative Badge Usaf Air Force Patches 70th Anniversary">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usaf Police 70th Anniversary Commemorative Badge Usaf Air Force Patches 70th Anniversary</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/b2/62/50b262388c07b1a2de073278899b69a0.jpg" data-lightbox="roadtrip" data-title="Air Force Awards Contract For F 15ex Fighters Defense Media Network Fighter Jets Air Force Fighter Aircraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/b2/62/50b262388c07b1a2de073278899b69a0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR18UmeIrUijh1Qf8AcZCBNE7z-mxQcvT2NLw';" alt="Air Force Awards Contract For F 15ex Fighters Defense Media Network Fighter Jets Air Force Fighter Aircraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Awards Contract For F 15ex Fighters Defense Media Network Fighter Jets Air Force Fighter Aircraft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b0/16/cc/b016ccf0dfd12cb28df8e5c04c885702.jpg" data-lightbox="roadtrip" data-title="Pin On Aviation Board">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b0/16/cc/b016ccf0dfd12cb28df8e5c04c885702.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgLa3nWoo7zBqrikTpUUIYDmj4h4FsZK-zNA';" alt="Pin On Aviation Board">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Aviation Board</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/mycanal-instagram.html">Mycanal Instagram</a></li>
+													<li class="list-group-item"><a href="/national-archives-military-pension-records.html">National Archives Military Pension Records</a></li>
+													<li class="list-group-item"><a href="/national-archives-and-records-service-of-south-africa-regulations.html">National Archives And Records Service Of South Africa Regulations</a></li>
+													<li class="list-group-item"><a href="/national-archives-veterans-history-project.html">National Archives Veterans History Project</a></li>
+													<li class="list-group-item"><a href="/mycanal-se-connecter.html">Mycanal Se Connecter</a></li>
+													<li class="list-group-item"><a href="/national-archives-and-records-services-of-south-africa.html">National Archives And Records Services Of South Africa</a></li>
+													<li class="list-group-item"><a href="/mycanal-programme.html">Mycanal Programme</a></li>
+													<li class="list-group-item"><a href="/national-defence-and-canadian-armed-forces-ombudsman.html">National Defence And Canadian Armed Forces Ombudsman</a></li>
+													<li class="list-group-item"><a href="/national-archives-vs-library-of-congress.html">National Archives Vs Library Of Congress</a></li>
+													<li class="list-group-item"><a href="/national-archives-military-records-address.html">National Archives Military Records Address</a></li>
+													<li class="list-group-item"><a href="/national-archives-military-records-dd214.html">National Archives Military Records Dd214</a></li>
+													<li class="list-group-item"><a href="/mycanal-martinique.html">Mycanal Martinique</a></li>
+													<li class="list-group-item"><a href="/national-archives-military-records-search.html">National Archives Military Records Search</a></li>
+													<li class="list-group-item"><a href="/national-archives-and-records-service-of-south-africa-pretoria.html">National Archives And Records Service Of South Africa Pretoria</a></li>
+													<li class="list-group-item"><a href="/national-defence-and-canadian-armed-forces-jobs.html">National Defence And Canadian Armed Forces Jobs</a></li>
+													<li class="list-group-item"><a href="/navy-seal-gallagher-wife.html">Navy Seal Gallagher Wife</a></li>
+													<li class="list-group-item"><a href="/mycanal-ps4.html">Mycanal Ps4</a></li>
+													<li class="list-group-item"><a href="/national-archives-military-records-civil-war.html">National Archives Military Records Civil War</a></li>
+													<li class="list-group-item"><a href="/national-defense-spending-as-percentage-of-gdp.html">National Defense Spending As Percentage Of Gdp</a></li>
+													<li class="list-group-item"><a href="/mycanal-replay-gym-direct.html">Mycanal Replay Gym Direct</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

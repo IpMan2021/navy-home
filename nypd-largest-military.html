@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Nypd Largest Military - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Nypd Largest Military",
+  "datePublished": "2021-02-13",
+  "image": "https://www.blackenterprise.com/wp-content/blogs.dir/1/files/2014/11/PhillipBanksIII300232.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=nypd+largest+military",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Nypd Largest Military</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">130000 150000 187200 467200 112 31. The Police Foundation received a 1 million. The United States police-rank model is generally quasi-military in structure. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/what-did-the-army-security-agency-do.html">what did the army security agency do</a>
+											<a class="badge badge-light" href="/what-are-the-branches-of-us-military.html">what are the branches of us military</a>
+											<a class="badge badge-danger" href="/wechat-register.html">wechat register</a>
+											<a class="badge badge-dark" href="/what-do-army-dog-tags-have-on-them.html">what do army dog tags have on them</a>
+											<a class="badge badge-primary" href="/what-are-good-names-for-a-german-shepherd.html">what are good names for a german shepherd</a>
+											<a class="badge badge-dark" href="/what-benefits-do-veterans-have.html">what benefits do veterans have</a>
+											<a class="badge badge-success" href="/what-are-the-nypd-ranks.html">what are the nypd ranks</a>
+											<a class="badge badge-secondary" href="/west-virginia-archives-death-records.html">west virginia archives death records</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you've come to pay a visit to the right blog.  Our website provides you with hints for viewing the maximum quality video and picture content, search and locate more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, especially Youtube, so we recommend this movie for you to view.  It is also possible to bring about supporting this website by sharing videos and images that you like on this site on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cheatsheet.com/wp-content/uploads/2018/03/NYPD-in-front-of-silver-gates-640x394.jpg" data-lightbox="roadtrip" data-title="The Nypd Is One Of The World S Strongest Militaries">
+											<img class="card-img v-image ads-img " src="https://www.cheatsheet.com/wp-content/uploads/2018/03/NYPD-in-front-of-silver-gates-640x394.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7KN8GW9aCW-fwc-n6192gGJWcvDn8dJhkDw';" alt="The Nypd Is One Of The World S Strongest Militaries">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Nypd Is One Of The World S Strongest Militaries</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/EaLfvotXgAE5nFZ.png" data-lightbox="roadtrip" data-title="Public Citizen On Twitter The Nypd S 6 000 000 000 Budget Would Make It The 33rd Largest Military Spender On The Planet">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/EaLfvotXgAE5nFZ.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV21sdF2aulmgLoLRNT8D4XsP4XqUWKVebCg';" alt="Public Citizen On Twitter The Nypd S 6 000 000 000 Budget Would Make It The 33rd Largest Military Spender On The Planet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Public Citizen On Twitter The Nypd S 6 000 000 000 Budget Would Make It The 33rd Largest Military Spender On The Planet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.wsj.net/public/resources/images/BN-NC600_lynch0_P_20160316101842.jpg" data-lightbox="roadtrip" data-title="Largest Nypd Union Hires Consulting Firm With History Of Fighting City Hall Wsj">
+											<img class="card-img v-image ads-img " src="https://s.wsj.net/public/resources/images/BN-NC600_lynch0_P_20160316101842.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0m9I0ydoMXNU43wovaMoqsxC3U5h7pBsUhA';" alt="Largest Nypd Union Hires Consulting Firm With History Of Fighting City Hall Wsj">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Largest Nypd Union Hires Consulting Firm With History Of Fighting City Hall Wsj</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.villagevoice.com/wp-content/uploads/2011/11/03bloombergcover_cityroom_articleinline_1-1.jpg" data-lightbox="roadtrip" data-title="Bloomberg Claims Nypd 7th Biggest Army In World Um That S Totally Wrong The Village Voicethe Village Voice">
+											<img class="card-img v-image ads-img " src="https://www.villagevoice.com/wp-content/uploads/2011/11/03bloombergcover_cityroom_articleinline_1-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ-7UCVvLkguENUMfOTGx7nG4lDE2C1y8ZLg';" alt="Bloomberg Claims Nypd 7th Biggest Army In World Um That S Totally Wrong The Village Voicethe Village Voice">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bloomberg Claims Nypd 7th Biggest Army In World Um That S Totally Wrong The Village Voicethe Village Voice</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ebony.com/wp-content/uploads/2016/07/Untitled-2_copy10_original_1739.jpg" data-lightbox="roadtrip" data-title="Largest Us Police Force Nypd Charged With Showing Anti Muslim Film No Ebony">
+											<img class="card-img v-image ads-img " src="https://www.ebony.com/wp-content/uploads/2016/07/Untitled-2_copy10_original_1739.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8IK5t5DTaIZJ68CRXQyTttqU_oyLxkEnNFQ';" alt="Largest Us Police Force Nypd Charged With Showing Anti Muslim Film No Ebony">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Largest Us Police Force Nypd Charged With Showing Anti Muslim Film No Ebony</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cityandstateny.com/sites/default/files/styles/article_main_image__764_x_352_/public/NYPD_0.jpg?itok=T-YnpfoP" data-lightbox="roadtrip" data-title="Are Nypd Officers Really All Under Siege City State">
+											<img class="card-img v-image ads-img " src="https://www.cityandstateny.com/sites/default/files/styles/article_main_image__764_x_352_/public/NYPD_0.jpg?itok=T-YnpfoP" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJPyUQgMuHw-vKXZIkdBgaP2Ld58zh6ZHL8Q';" alt="Are Nypd Officers Really All Under Siege City State">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are Nypd Officers Really All Under Siege City State</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www1.nyc.gov/assets/nypd/images/content/precincts/melendez-emilio.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJPyUQgMuHw-vKXZIkdBgaP2Ld58zh6ZHL8Q';" alt="Are Nypd Officers Really All Under Siege City State">
+										<div class="card-body">
+						<h3 class="h5"><b>The 7th largest army globally would actually be Vietnam with 321000 soldiers compared to 33000 or so in the NYPD.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Nypd largest military</strong>. 
+								
+																	Former New York Mayor Mike Bloomberg once stated that the NYPD was the seventh largest military in the world. 
+																	8000 0 0 8000 26 26 Algeria. 
+																	I have my own State Department much to Foggy Bottoms annoyance. 
+																	We have the United Nations in New York and so we have an entree into the diplomatic world that Washington does not have Mayor Bloomberg said. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I have my own army in the NYPD which is the seventh largest army in the world former New York Mayor Michael Bloomberg boasted back in 2011. 
+																	NYPDs new chief of patrol on her new role how she plans to combat pressure from City Hall With 33 years on the police force said to be the largest in the country shes no stranger to the city. 
+																	NYPD consists of 10 bureaus six of which are strictly devoted to enforcement. 
+																	The NYPD is the biggest police force in the country with over 34000 uniformed officers patrolling New Yorks streets and 51000 employees overall -- more than the FBI. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Global Firepower tracks the annual defense spending budgets of each participant in the GFP ranking these being funds allotted by governments to cover various aspects of a standing fighting force - namely procurement maintenance support and pensions. 
+																	Shamsul who joined the NYPD in January 2004 is also the first South Asian to achieve the rank Bangladesh-origin American Shamsul Haque has been promoted to the rank of Lt Commander in the Detective Squad of New York Police Department NYPD a first for any Bangladeshi in the NYPD. 
+																	I have my own army in the NYPD which is the seventh biggest army in the world. 
+																	He received the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The New York City Police Department NYPD officially the City of New York Police Department is the primary law enforcement agency within the City of New YorkEstablished on May 23 1845 the NYPD is one of the oldest police departments in the United States and is the largest police force in the United States. 
+																	Flag Country Active military Reserve military Paramilitary Total Per 1000 capita total Per 1000 capita active Afghanistan. 
+																	Mayor Michael Bloomberg speaking at MIT on Wednesday referred to the NYPD as his personal army As the Village Voice pointed out however the force of about 33000 is nowhere close to. 
+																	180900 0 91600 272500 78 52 Albania. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But when police pension fringe benefits settlements and debt payments are added in police. 
+																	It has a proposed budget. 
+																	Total annual defense spending by nation. 
+																	The NYPD Is One of the Worlds Strongest Militaries When you really think about it New York City is its own little country. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	News from traitor Michael Bloomberg. 
+																	The NYPD has a special place for those who have served and we value the training skills and management experience of military personnel which is one of the main reasons we actively recruit veterans. 
+																	Regardless of its accuracy the claim holds true in many ways. 
+																	Additional benefits available to military veterans include. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Police Officer Exam. 
+																	And tiny Austria spends more on its military than the city does on the NYPD. 
+																	As the largest in the US it currently has about 36008 full-time active officers and 19000 civilian employees. 
+																	Although the large and varied number of federal state and local police and sheriffs departments have different ranks a general model from highest to lowest rank would be. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	September 20 2012 The NYPD is the biggest police force in the country with over 34000 uniformed officers patrolling New Yorks streets and 51000 employees overall -- more than the FBI. 
+																	When financial hardships threatened the NYPD Mounted Unit the Police Foundation stepped in and donated every horse for the next 20 years. 
+																	At 6 billion a year the New York Police Department has the largest police budget in the nation. 
+																	The NYPD headquarters is at 1 Police Plaza located on Park Row in Lower. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The New York City Police Department is the largest police department in the country and is comprised of far more than just detectives and beat copsthe NYPD operates divisions ranging from bomb. 
+																	Their proposed 2021 budget was 592 billion for the fiscal year 2020 and 564 billion for fiscal 2021. 
+																	It has a governing body that is tasked with the mountainous. 
+																	Veterans can earn GI Bill benefits in addition to their salary during their first two years. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The following list is sourced from the 2019 edition of The Military Balance published annually by the International Institute for Strategic Studies. 
+																	A uniform system of insignia based on that of the US Army and Marine Corps is used to help identify an officers seniority. 
+																	This is almost three times as many as the countrys second-largest police department in Chicago. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://storage.googleapis.com/afs-prod/media/d5d61ed4760f42cf8fb45431d33ef4c8/800.jpeg" data-lightbox="roadtrip" data-title="Nypd Diversifies Ranks Naming First Black Detectives Chief">
+											<img class="card-img v-image ads-img " src="https://storage.googleapis.com/afs-prod/media/d5d61ed4760f42cf8fb45431d33ef4c8/800.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrsKtliWShWeWjGE_xslUAPl7t-bDUNJGing';" alt="Nypd Diversifies Ranks Naming First Black Detectives Chief">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nypd Diversifies Ranks Naming First Black Detectives Chief</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.insider.com/5f34593c3f73703151686a1e" data-lightbox="roadtrip" data-title="Why The Nypd Costs 10 Billion A Year And The Real Cost Of The Police Force Business Insider">
+											<img class="card-img v-image ads-img " src="https://i.insider.com/5f34593c3f73703151686a1e" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cVhPM9FViRZd4tQDABYTdVH1emzNE46fLg';" alt="Why The Nypd Costs 10 Billion A Year And The Real Cost Of The Police Force Business Insider">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why The Nypd Costs 10 Billion A Year And The Real Cost Of The Police Force Business Insider</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hstoday.us/wp-content/uploads/2018/04/nypdfb.jpg" data-lightbox="roadtrip" data-title="Nypd Unveils New Drones For Enforcement Use In Select Situations Homeland Security Today">
+											<img class="card-img v-image ads-img " src="https://www.hstoday.us/wp-content/uploads/2018/04/nypdfb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU6A-vb6zzr2DNmhveM9kdFkA5RQvXX-TbJg';" alt="Nypd Unveils New Drones For Enforcement Use In Select Situations Homeland Security Today">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nypd Unveils New Drones For Enforcement Use In Select Situations Homeland Security Today</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mediaassets.pix11.com/tribune-network/tribwpix-files-wordpress/2014/10/nypd-chief-philip-banks-iii.jpg" data-lightbox="roadtrip" data-title="Nypd S Highest Ranking Black Official Resigns">
+											<img class="card-img v-image ads-img " src="https://mediaassets.pix11.com/tribune-network/tribwpix-files-wordpress/2014/10/nypd-chief-philip-banks-iii.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlWXVvZ7p-r-_Pl3N6td7p5nUFGr114vwW5A';" alt="Nypd S Highest Ranking Black Official Resigns">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nypd S Highest Ranking Black Official Resigns</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.abcotvs.com/dip/images/5734156_120419-wabc-rodneyharrison-img.jpg?w=1280&amp;r=16%3A9" data-lightbox="roadtrip" data-title="Rodney Harrison Appointed As Nypd S New Chief Of Detectives Abc7 New York">
+											<img class="card-img v-image ads-img " src="https://cdn.abcotvs.com/dip/images/5734156_120419-wabc-rodneyharrison-img.jpg?w=1280&amp;r=16%3A9" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqdpT-f-wQeHuKT3gpGO1dSGJU389ycrnIdw';" alt="Rodney Harrison Appointed As Nypd S New Chief Of Detectives Abc7 New York">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rodney Harrison Appointed As Nypd S New Chief Of Detectives Abc7 New York</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://nycpba.org/media/34728/190927.jpg" data-lightbox="roadtrip" data-title="Nyc Pba Absolutely The Wrong Approach Nypd Police Union Condemns Oig S Recommendation To Prevent Officer Suicides">
+											<img class="card-img v-image ads-img " src="http://nycpba.org/media/34728/190927.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL5MXxzZuOE_fv1aTi7piu3KP1b0McnBvpeA';" alt="Nyc Pba Absolutely The Wrong Approach Nypd Police Union Condemns Oig S Recommendation To Prevent Officer Suicides">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nyc Pba Absolutely The Wrong Approach Nypd Police Union Condemns Oig S Recommendation To Prevent Officer Suicides</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.manhattantimesnews.com/wp-content/uploads/2017/12/Photo23web.jpg" data-lightbox="roadtrip" data-title="Diversity In The Nypddiversidad En El Nypd Manhattan Times News">
+											<img class="card-img v-image ads-img " src="http://www.manhattantimesnews.com/wp-content/uploads/2017/12/Photo23web.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG_NL_Tp-KXLChc9xndjgUwZKAF0AQM_oWMw';" alt="Diversity In The Nypddiversidad En El Nypd Manhattan Times News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Diversity In The Nypddiversidad En El Nypd Manhattan Times News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www1.nyc.gov/assets/nypd/images/content/precincts/melendez-emilio.jpg" data-lightbox="roadtrip" data-title="50 Precinct Nypd">
+											<img class="card-img v-image ads-img " src="https://www1.nyc.gov/assets/nypd/images/content/precincts/melendez-emilio.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo2SzMXMml9nvNt_KI8SHZL1gN1pZaQlp16A';" alt="50 Precinct Nypd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">50 Precinct Nypd</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.blackenterprise.com/wp-content/blogs.dir/1/files/2014/11/PhillipBanksIII300232.jpg" data-lightbox="roadtrip" data-title="Nyc Top Black Cop Resigns">
+											<img class="card-img v-image ads-img " src="https://www.blackenterprise.com/wp-content/blogs.dir/1/files/2014/11/PhillipBanksIII300232.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJYAorlDJffAkGav8hzNdKiXuO6PHztSBtBA';" alt="Nyc Top Black Cop Resigns">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nyc Top Black Cop Resigns</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www1.nyc.gov/assets/nypd/images/content/admin/monahan-terence.jpg" data-lightbox="roadtrip" data-title="Chief Of Department Nypd">
+											<img class="card-img v-image ads-img " src="https://www1.nyc.gov/assets/nypd/images/content/admin/monahan-terence.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmF5Siigb1VdvuiRC5UIjUzpMSXdeeTrhwqw';" alt="Chief Of Department Nypd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chief Of Department Nypd</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2e/2b/a1/2e2ba1e2f441863666a0a12cd3f9a484.jpg" data-lightbox="roadtrip" data-title="An Nypd Officer On Foot Patrol In Patrol Bureau Manhattan South 2848x4288 Police Women Female Soldier Military Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2e/2b/a1/2e2ba1e2f441863666a0a12cd3f9a484.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqTlBTlRn_DlUygHTTwC8qcNTVt6F37Xk0uQ';" alt="An Nypd Officer On Foot Patrol In Patrol Bureau Manhattan South 2848x4288 Police Women Female Soldier Military Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">An Nypd Officer On Foot Patrol In Patrol Bureau Manhattan South 2848x4288 Police Women Female Soldier Military Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://untappedcities.com/wp-content/uploads/2016/06/NYPD-Police-Band-Macys-Thanksgiving-Parade-NYC.jpg" data-lightbox="roadtrip" data-title="The Top 10 Secrets Of The Nyc Police Department Nypd Untapped New York">
+											<img class="card-img v-image ads-img " src="https://untappedcities.com/wp-content/uploads/2016/06/NYPD-Police-Band-Macys-Thanksgiving-Parade-NYC.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO5VaD9q8wIteBVq7_WUYUospf7D9aMiG-hw';" alt="The Top 10 Secrets Of The Nyc Police Department Nypd Untapped New York">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Top 10 Secrets Of The Nyc Police Department Nypd Untapped New York</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i2.wp.com/www.norwoodnews.org/wp-content/uploads/2020/10/DUQNHCsW0AIIE_9.jpg?ssl=1" data-lightbox="roadtrip" data-title="Chief Nilda Hofmann On 30 Years Of Climbing The Blue Ladder An Ever Evolving Nypd Norwood News">
+											<img class="card-img v-image ads-img " src="https://i2.wp.com/www.norwoodnews.org/wp-content/uploads/2020/10/DUQNHCsW0AIIE_9.jpg?ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-cXeToGL61vwQJ9F7NOzIoF8HD3sqA9-0wQ';" alt="Chief Nilda Hofmann On 30 Years Of Climbing The Blue Ladder An Ever Evolving Nypd Norwood News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chief Nilda Hofmann On 30 Years Of Climbing The Blue Ladder An Ever Evolving Nypd Norwood News</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-records-for-world-war-2-veterans.html">Military Records For World War 2 Veterans</a></li>
+													<li class="list-group-item"><a href="/military-retirement-calculator-for-reservist.html">Military Retirement Calculator For Reservist</a></li>
+													<li class="list-group-item"><a href="/military-records-for-veterans.html">Military Records For Veterans</a></li>
+													<li class="list-group-item"><a href="/military-retirement-calculator-tax-rate.html">Military Retirement Calculator Tax Rate</a></li>
+													<li class="list-group-item"><a href="/military-retiree-cola-chart.html">Military Retiree Cola Chart</a></li>
+													<li class="list-group-item"><a href="/military-records-office-kew.html">Military Records Office Kew</a></li>
+													<li class="list-group-item"><a href="/military-records-world-war-two.html">Military Records World War Two</a></li>
+													<li class="list-group-item"><a href="/military-police-station-fort-drum.html">Military Police Station Fort Drum</a></li>
+													<li class="list-group-item"><a href="/military-resources-meaning.html">Military Resources Meaning</a></li>
+													<li class="list-group-item"><a href="/military-police-station-fort-carson.html">Military Police Station Fort Carson</a></li>
+													<li class="list-group-item"><a href="/military-prevod-na-srpski.html">Military Prevod Na Srpski</a></li>
+													<li class="list-group-item"><a href="/military-recruiting-offices-near-me.html">Military Recruiting Offices Near Me</a></li>
+													<li class="list-group-item"><a href="/military-resource-center-columbus-ohio.html">Military Resource Center Columbus Ohio</a></li>
+													<li class="list-group-item"><a href="/military-retirement-and-va-calculator.html">Military Retirement And Va Calculator</a></li>
+													<li class="list-group-item"><a href="/military-retirement-calculation-formula.html">Military Retirement Calculation Formula</a></li>
+													<li class="list-group-item"><a href="/military-retirement-calculator-excel.html">Military Retirement Calculator Excel</a></li>
+													<li class="list-group-item"><a href="/military-resource-guide.html">Military Resource Guide</a></li>
+													<li class="list-group-item"><a href="/military-rappelling-gloves.html">Military Rappelling Gloves</a></li>
+													<li class="list-group-item"><a href="/military-police-station-fort-lewis-wa.html">Military Police Station Fort Lewis Wa</a></li>
+													<li class="list-group-item"><a href="/military-police-waterloo-station.html">Military Police Waterloo Station</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

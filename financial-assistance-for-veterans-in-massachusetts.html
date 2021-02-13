@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Financial Assistance For Veterans In Massachusetts - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Financial Assistance For Veterans In Massachusetts",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/41/bd/f4/41bdf49f695b36b9942cc7957a37400c.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=financial+assistance+for+veterans+in+massachusetts",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Financial Assistance For Veterans In Massachusetts</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Assistance can continue as long as you are good academic standing and until you have reached 130 semester hours. The Chapter 115 benefits program provides cash assistance based on need. Payments may be one-time or ongoing. <br>				
+			</p>
+										<a class="badge badge-success" href="/indian-defense-budget-2021.html">indian defense budget 2021</a>
+											<a class="badge badge-info" href="/irish-army-press-office.html">irish army press office</a>
+											<a class="badge badge-secondary" href="/is-there-a-secretary-of-the-coast-guard.html">is there a secretary of the coast guard</a>
+											<a class="badge badge-info" href="/is-gap-insurance-illegal-for-military.html">is gap insurance illegal for military</a>
+											<a class="badge badge-dark" href="/is-dod-funded-for-2020.html">is dod funded for 2020</a>
+											<a class="badge badge-danger" href="/jag-army-phone-number.html">jag army phone number</a>
+											<a class="badge badge-info" href="/japan-military-budget-2021.html">japan military budget 2021</a>
+											<a class="badge badge-warning" href="/is-the-2021-dod-budget-approved.html">is the 2021 dod budget approved</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you've come to visit the ideal blog.  Our site provides you with hints for seeing the highest quality video and picture content, hunt and find more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, so we recommend this movie for you to view.  You can also bring about supporting this website by sharing videos and images that you enjoy on this blog on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/09/ca/3509cab54f8ad73a75a69f3a4b0cc1b6.png" data-lightbox="roadtrip" data-title="Veteran Benefits In Massachusetts Veterans Benefits Veteran Massachusetts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/09/ca/3509cab54f8ad73a75a69f3a4b0cc1b6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxQvuRN1eSgySLJeFqKHWARYcV6XxoQJHuyQ';" alt="Veteran Benefits In Massachusetts Veterans Benefits Veteran Massachusetts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Benefits In Massachusetts Veterans Benefits Veteran Massachusetts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/31/ce/da/31ceda0eac90e52baac45184625dee7f--veterans-services-mass-gov.jpg" data-lightbox="roadtrip" data-title="Massachusetts Department Of Veterans Services Mass Gov Veterans Services Veteran Veterans Images">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/31/ce/da/31ceda0eac90e52baac45184625dee7f--veterans-services-mass-gov.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0QJxA6SBcYWtToE4ztfhbV7_Mn5fN7meYgQ';" alt="Massachusetts Department Of Veterans Services Mass Gov Veterans Services Veteran Veterans Images">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Massachusetts Department Of Veterans Services Mass Gov Veterans Services Veteran Veterans Images</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/78/ff/ea78ffd73d9e62b54719769b7e4890d1.jpg" data-lightbox="roadtrip" data-title="4 Tips For Veterans To Transition Into College Successfully Tuition Assistance Military Financial Aid For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/78/ff/ea78ffd73d9e62b54719769b7e4890d1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4ba_XkI6MO6U_IWcEV9usuLiV2gitgY25kA';" alt="4 Tips For Veterans To Transition Into College Successfully Tuition Assistance Military Financial Aid For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 Tips For Veterans To Transition Into College Successfully Tuition Assistance Military Financial Aid For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a0/68/b1/a068b1188467e6c7e6cecd166e774bdc.png" data-lightbox="roadtrip" data-title="Veteran Benefits Office Of Scholarships And Financial Aid Veterans Benefits Northern Arizona University Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a0/68/b1/a068b1188467e6c7e6cecd166e774bdc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStuKDHazbIeR2XdSMaVNcHhCClSK7qRvbxdg';" alt="Veteran Benefits Office Of Scholarships And Financial Aid Veterans Benefits Northern Arizona University Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Benefits Office Of Scholarships And Financial Aid Veterans Benefits Northern Arizona University Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/bd/f4/41bdf49f695b36b9942cc7957a37400c.jpg" data-lightbox="roadtrip" data-title="To All Women Who Have Served And Who Currently Serve In The Military Happy Veterans Day Military Women Military Veterans Veterans Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/bd/f4/41bdf49f695b36b9942cc7957a37400c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgLbRrKxP2GO5IZLPozrjwnqv6fi3ZALgCAQ';" alt="To All Women Who Have Served And Who Currently Serve In The Military Happy Veterans Day Military Women Military Veterans Veterans Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">To All Women Who Have Served And Who Currently Serve In The Military Happy Veterans Day Military Women Military Veterans Veterans Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/85/6a/b8856a2aad490aec21b42da69cfcbf94.jpg" data-lightbox="roadtrip" data-title="Barnett Issues Call For Nef Donations American Red Cross Disaster Relief Financial Assistance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/85/6a/b8856a2aad490aec21b42da69cfcbf94.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSocebT-MCwJziihibpna-u1ekq_GbL0mYgcw';" alt="Barnett Issues Call For Nef Donations American Red Cross Disaster Relief Financial Assistance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Barnett Issues Call For Nef Donations American Red Cross Disaster Relief Financial Assistance</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/4c/10/67/4c10678dfb8f627ebd8e5d706146ccb3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSocebT-MCwJziihibpna-u1ekq_GbL0mYgcw';" alt="Barnett Issues Call For Nef Donations American Red Cross Disaster Relief Financial Assistance">
+										<div class="card-body">
+						<h3 class="h5"><b>The domiciliary accommodates Veterans who for social or financial reasons require minimal assistance with the activities of daily living.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Financial assistance for veterans in massachusetts</strong>. 
+								
+																	Funding is intended to assist with the purchase of livestock vehicles equipment and other implements and supplies required to support the veterans early years in the ran. 
+																	Massachusetts Department of Veterans Services Chapter 115 BenefitsSafety Net Program Massachusetts veterans if you are facing financial difficulties during the current COVID 19 emergency The MA Department of Veterans Services may be able to provide you with financial assistance. 
+																	The financial public assistance program is open to qualifying dependents of veterans who have died providing the same help as though the veteran were still alive. 
+																	The mission of the Department of Veterans Services is to advocate on behalf of all the Commonwealths veterans and provide them with quality support services and to direct an emergency financial assistance program for those veterans and their dependents who are in need. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are a veteran in need of services please call 800-482-2565. 
+																	Lifeline Assistance There are phone grants for veterans in Massachusetts. 
+																	The Massachusetts Military Support Foundation is proud to partner with Ocean State Job Lot to provide brand new winter coats for needy veterans. 
+																	Education Benefits for Massachusetts Veterans Posted on Jan 5 Readjusting to civilian life can pose many challenges for returning veterans including deciding what to do next. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans of Foreign Wars VFW VFW helps military families through its Unmet Needs Program. 
+																	Provides direct services and financial assistance to help search for housing assist with initial rent costs and pay for certain bills related to back rent or utilities. 
+																	Veterans Hospital and Soldiers Home Holyoke Massachusetts The domiciliary for ambulatory Veterans is located in a separate building at the facility at the Soldiers Home. 
+																	The Massachusetts Transitional Aid to Families with Dependent Children Program provides temporary cash assistance and supportive services to children individuals and their families. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We assist all branches of service all ranks and components and treat all with privacy and dignity in appreciation for their service and sacrifice. 
+																	You can locate a VSO by calling the Massachusetts Department of Veterans Services at 617-210-5480. 
+																	Grants of up to 5000 to USA veteran members for financial assistance in the farming business. 
+																	To learn more call 1-866-400-1238. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Somerville Coats4Vets sponsored by Somerville Veterans Center. 
+																	If you have served our country in the armed forces the Department of Veterans Services DVS and the Department of Higher Education DHE provide information on many Continue Reading Education Benefits for. 
+																	The Lifeline Assistance program which is federally funded will help pay for your phone bill if you qualify. 
+																	FINANCIAL ASSISTANCE FOR VETERANS Veterans have stepped up and served our country and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Every person has the right and can afford the opportunity to apply for any category of assistance administered by the Department of Transitional Assistance. 
+																	Having a phone is considered by most people to be essential but it can be a costly bill for those who are struggling financially. 
+																	Chapter 115 is a program of the Massachusetts Department of Veterans Services DVS in partnership with Veterans Service Officers VSOs in every town across the state. 
+																	Financial Hardship provides assistance to veterans that are facing a financial hardship such as a recent job loss. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Veterans Affairs. 
+																	The Massachusetts National Guard Education Assistance Program provides a 100 tuition and fee waiver for active members of the Massachusetts Army National Guard attending a state college university or community college program. 
+																	If you meet the basic eligibility requirements Veterans Inc. 
+																	The Chapter 115 Benefits Program is a Massachusetts state initiative that provides financial aid for food shelterhousing clothing and medical care to veterans and their dependents who have limited incomes and reside in Massachusetts. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans may be eligible for benefits which include. 
+																	Vets that may not have qualified for VA Health Benefits in the past may be approved under the VAs Medical Care Hardship program. 
+																	Domiciliary Veterans are provided. 
+																	The Combat Injured program through USACares provides financial assistance for wounded veterans who are suffering from post-traumatic stress disorder military sexual trauma and traumatic brain injuries. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Massachusetts Military Support Foundation is dedicated our great Nation and the men and women who serve and defend it. 
+																	Access our Chapter 115 Self-Help Guide here. 
+																	Applications must be submitted via a Veterans Service Officer. 
+																	USA Cares provides financial and advocacy assistance to post 911 active duty US military service personnel veterans and their families. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Its called Chapter 115 and Massachusetts is the only state in the country with a benefits program like it. 
+																	Chapter 115 is a needs-based program administered through your local VSO. 
+																	Under Chapter 115 of Massachusetts General Laws the Commonwealth provides a uniform program of financial and medical assistance for indigent veterans and their dependents including rent or mortgage payments until you can find a job or other benefits. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/2a/7c/66/2a7c662f5229619241982ffb5d5ad3d2.jpg" data-lightbox="roadtrip" data-title="Medford Massachusetts Veteran S Square Plaques And Monuments Military Honor Monument Social Organizations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/2a/7c/66/2a7c662f5229619241982ffb5d5ad3d2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpy0e1WyR7EChNhVcNjVgJ7qoahke-7w56MQ';" alt="Medford Massachusetts Veteran S Square Plaques And Monuments Military Honor Monument Social Organizations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Medford Massachusetts Veteran S Square Plaques And Monuments Military Honor Monument Social Organizations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/5b/99/0e5b9945f75334874f6190a80240b2d8.jpg" data-lightbox="roadtrip" data-title="Military Veterans Businesses Sdvosb Vob Dvbe Veteran Owned Business Business Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/5b/99/0e5b9945f75334874f6190a80240b2d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbzKXsw4nYK6J4NZiKjzEmDFYtl7b19x9CDQ';" alt="Military Veterans Businesses Sdvosb Vob Dvbe Veteran Owned Business Business Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Veterans Businesses Sdvosb Vob Dvbe Veteran Owned Business Business Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/0f/83/030f833ea04a3d0e91671434011988a9.jpg" data-lightbox="roadtrip" data-title="What The Va Backlog Reduction Means For Veterans Veterans Disability Timeline Jan Dils Veteran Disab Veteran Military Retirement Benefits Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/0f/83/030f833ea04a3d0e91671434011988a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT67NgTN3RkiFu8uiJq2hzSOQKVGTR3G8WSPw';" alt="What The Va Backlog Reduction Means For Veterans Veterans Disability Timeline Jan Dils Veteran Disab Veteran Military Retirement Benefits Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What The Va Backlog Reduction Means For Veterans Veterans Disability Timeline Jan Dils Veteran Disab Veteran Military Retirement Benefits Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/a6/db/58a6db4c038385c8d9803c32884340d0.jpg" data-lightbox="roadtrip" data-title="We Partner With The Red Sox Foundation Massachusetts General Hospital Home Base Program On Educationa Massachusetts General Hospital Veteran General Hospital">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/a6/db/58a6db4c038385c8d9803c32884340d0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD-yf7slhOnIaq1dnSaK87MnmBUlUIdcfXyw';" alt="We Partner With The Red Sox Foundation Massachusetts General Hospital Home Base Program On Educationa Massachusetts General Hospital Veteran General Hospital">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Partner With The Red Sox Foundation Massachusetts General Hospital Home Base Program On Educationa Massachusetts General Hospital Veteran General Hospital</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/38/08/ef3808c11a699a50e01acadbee1da224.png" data-lightbox="roadtrip" data-title="Boston Ma Downsizing Snowbirds Mortgages Loan Officers Underwriters Processors Fha Real Estate Home Decor In 2021 Real Estate Quotes Fha Loans Mortgage Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/38/08/ef3808c11a699a50e01acadbee1da224.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKMwpAMv-qzla5haA6GiqcnBniBOOqKWKWsA';" alt="Boston Ma Downsizing Snowbirds Mortgages Loan Officers Underwriters Processors Fha Real Estate Home Decor In 2021 Real Estate Quotes Fha Loans Mortgage Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Boston Ma Downsizing Snowbirds Mortgages Loan Officers Underwriters Processors Fha Real Estate Home Decor In 2021 Real Estate Quotes Fha Loans Mortgage Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/47/49/b1474935095cd7231f7b4085a349b47d.jpg" data-lightbox="roadtrip" data-title="Scholarships Available For Veterans At Lsckingwood Deadlines Nov 1 And April 1 Apply Now Startclosegof Scholarships College Info Scholarships For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/47/49/b1474935095cd7231f7b4085a349b47d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8H1zJ5Ik200wJy4oXTwOWiuviFz6W8Pv7iA';" alt="Scholarships Available For Veterans At Lsckingwood Deadlines Nov 1 And April 1 Apply Now Startclosegof Scholarships College Info Scholarships For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Scholarships Available For Veterans At Lsckingwood Deadlines Nov 1 And April 1 Apply Now Startclosegof Scholarships College Info Scholarships For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/c6/31/8ec631e0bb1bce046edbc7d7334c11c7.jpg" data-lightbox="roadtrip" data-title="Zero8hundred Career Resources Veterans Benefits Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/c6/31/8ec631e0bb1bce046edbc7d7334c11c7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDO2BQAHcRnoWgHw8kcw57YRTxUxNR5tpUYA';" alt="Zero8hundred Career Resources Veterans Benefits Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Zero8hundred Career Resources Veterans Benefits Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/a8/a6/87a8a632919c0aeb51394d016135866f.png" data-lightbox="roadtrip" data-title="Kanvet Provides Direct Access To State Of Kansas Veteran Specific Resources And Be Military Family Photography Military Family Photos Military Family Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/a8/a6/87a8a632919c0aeb51394d016135866f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcrzCG_WooKyLAMQ_1yj2EFK-xYxUHMkRPqg';" alt="Kanvet Provides Direct Access To State Of Kansas Veteran Specific Resources And Be Military Family Photography Military Family Photos Military Family Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kanvet Provides Direct Access To State Of Kansas Veteran Specific Resources And Be Military Family Photography Military Family Photos Military Family Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/4c/07/f24c079f0ed374c7127f5d918b7cecfe.jpg" data-lightbox="roadtrip" data-title="Attention Veterans Norcom Mortgage Announces Our Va Rehab Loan 100 Financing Call Us Today 774 241 0770 Rehab Mi One Mortgage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/4c/07/f24c079f0ed374c7127f5d918b7cecfe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_hCW6xAA8tqhsGnmeFc5kvEwucafxug7s8w';" alt="Attention Veterans Norcom Mortgage Announces Our Va Rehab Loan 100 Financing Call Us Today 774 241 0770 Rehab Mi One Mortgage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Attention Veterans Norcom Mortgage Announces Our Va Rehab Loan 100 Financing Call Us Today 774 241 0770 Rehab Mi One Mortgage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/d7/18/a3/d718a33d89bd083fea0ca3f35d397d9a.jpg" data-lightbox="roadtrip" data-title="Top Quotes To Say Thank You In Veterans Day Veterans Day Quotes Happy Veterans Day Quotes Soldier Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/d7/18/a3/d718a33d89bd083fea0ca3f35d397d9a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqnelQnR4uYBp5gxvbECTOrWrewrmXwmCt3g';" alt="Top Quotes To Say Thank You In Veterans Day Veterans Day Quotes Happy Veterans Day Quotes Soldier Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top Quotes To Say Thank You In Veterans Day Veterans Day Quotes Happy Veterans Day Quotes Soldier Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/4a/c6/584ac60e425aef264516936d0819e7ba.jpg" data-lightbox="roadtrip" data-title="New Mexico Department Of Veteran Services Veterans Services Veteran Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/4a/c6/584ac60e425aef264516936d0819e7ba.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSooWAIWiAGzHpTnvDn9iW09c3rTaAEV4_ZkQ';" alt="New Mexico Department Of Veteran Services Veterans Services Veteran Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Mexico Department Of Veteran Services Veterans Services Veteran Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/c2/b4/7fc2b4f27710baf9c0cf521e046ca417.jpg" data-lightbox="roadtrip" data-title="Pin On Social Work">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/c2/b4/7fc2b4f27710baf9c0cf521e046ca417.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo1xVTWdtns7V2mp4S2X6oy2MvZJ7mvijpoQ';" alt="Pin On Social Work">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Social Work</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/10/67/4c10678dfb8f627ebd8e5d706146ccb3.jpg" data-lightbox="roadtrip" data-title="Hydrotherapy Relief For 3 Common Health Issues In Veterans Veteran Military Heroes Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/10/67/4c10678dfb8f627ebd8e5d706146ccb3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhibALeoOmQOugeuaaKa9C4OUk2_AsVDmgEg';" alt="Hydrotherapy Relief For 3 Common Health Issues In Veterans Veteran Military Heroes Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hydrotherapy Relief For 3 Common Health Issues In Veterans Veteran Military Heroes Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/us-army-hrc-my-board-file.html">Us Army Hrc My Board File</a></li>
+													<li class="list-group-item"><a href="/us-army-hrc-arb.html">Us Army Hrc Arb</a></li>
+													<li class="list-group-item"><a href="/us-army-hrc-ask.html">Us Army Hrc Ask</a></li>
+													<li class="list-group-item"><a href="/us-army-human-resources-command-dru.html">Us Army Human Resources Command Dru</a></li>
+													<li class="list-group-item"><a href="/us-army-human-resources-command.html">Us Army Human Resources Command</a></li>
+													<li class="list-group-item"><a href="/us-army-hrc-retirement-calculator.html">Us Army Hrc Retirement Calculator</a></li>
+													<li class="list-group-item"><a href="/us-army-hrc-help-desk.html">Us Army Hrc Help Desk</a></li>
+													<li class="list-group-item"><a href="/us-army-hq-phone-number.html">Us Army Hq Phone Number</a></li>
+													<li class="list-group-item"><a href="/us-army-hrc-orb.html">Us Army Hrc Orb</a></li>
+													<li class="list-group-item"><a href="/us-army-human-resources-command-mailing-address.html">Us Army Human Resources Command Mailing Address</a></li>
+													<li class="list-group-item"><a href="/us-army-hrc-awards-branch.html">Us Army Hrc Awards Branch</a></li>
+													<li class="list-group-item"><a href="/us-army-hrc-special-actions-branch.html">Us Army Hrc Special Actions Branch</a></li>
+													<li class="list-group-item"><a href="/us-army-hq.html">Us Army Hq</a></li>
+													<li class="list-group-item"><a href="/us-army-hrc-command.html">Us Army Hrc Command</a></li>
+													<li class="list-group-item"><a href="/us-army-human-resource-specialist-job-description.html">Us Army Human Resource Specialist Job Description</a></li>
+													<li class="list-group-item"><a href="/us-army-hq-europe.html">Us Army Hq Europe</a></li>
+													<li class="list-group-item"><a href="/us-army-hrc-my-records-portal.html">Us Army Hrc My Records Portal</a></li>
+													<li class="list-group-item"><a href="/us-army-hrc-tools-and-applications.html">Us Army Hrc Tools And Applications</a></li>
+													<li class="list-group-item"><a href="/us-army-hrc-trend-report.html">Us Army Hrc Trend Report</a></li>
+													<li class="list-group-item"><a href="/us-army-hrc-promotion-list.html">Us Army Hrc Promotion List</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

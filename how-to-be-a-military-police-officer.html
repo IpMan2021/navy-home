@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How To Be A Military Police Officer - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How To Be A Military Police Officer",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/68/33/3e/68333e7d2652fe1c807be8f632d6b038.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+to+be+a+military+police+officer",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How To Be A Military Police Officer</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Then you go on the Military Police Officers Course at the Defence School of Policing and Guarding. As an officer for the Royal Military Police RMP would I be in the field. I am interested in the Royal Military Police is this quite hard to get into. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/military-retirement-calculator-for-divorce.html">military retirement calculator for divorce</a>
+											<a class="badge badge-warning" href="/military-police-station-fort-polk.html">military police station fort polk</a>
+											<a class="badge badge-danger" href="/military-police-station-fort-lewis-wa.html">military police station fort lewis wa</a>
+											<a class="badge badge-primary" href="/military-retirement-calculator-active-duty.html">military retirement calculator active duty</a>
+											<a class="badge badge-light" href="/military-reserve-retirement-pay-calculator-usaa.html">military reserve retirement pay calculator usaa</a>
+											<a class="badge badge-info" href="/military-resource-advisor-job-description.html">military resource advisor job description</a>
+											<a class="badge badge-dark" href="/military-records-of-veterans.html">military records of veterans</a>
+											<a class="badge badge-success" href="/military-reserve-retirement-calculator-usmc.html">military reserve retirement calculator usmc</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you have come to visit the right site.  Our website provides you with suggestions for viewing the highest quality video and image content, search and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, so we recommend this movie for you to see.  You can also contribute to supporting this site by sharing videos and images that you like on this blog on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information you get on this website.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/a1/39/f6a13987246d4bf4cd8b1f10db13ed04.jpg" data-lightbox="roadtrip" data-title="Us Military Police Officer Playing Thumb War With An Iraqi Boy In Baghdad Mp Soldiers Build Rapport W Military Heroes Military Police Army American Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/a1/39/f6a13987246d4bf4cd8b1f10db13ed04.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqUorKT0CfFPyYqqWoZu_diXIjBxLze-Bciw';" alt="Us Military Police Officer Playing Thumb War With An Iraqi Boy In Baghdad Mp Soldiers Build Rapport W Military Heroes Military Police Army American Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Military Police Officer Playing Thumb War With An Iraqi Boy In Baghdad Mp Soldiers Build Rapport W Military Heroes Military Police Army American Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/b3/be/afb3be0acb2bfe489048fc39f34341fb.jpg" data-lightbox="roadtrip" data-title="Ministry Of Defence Firearms Officer On Guard Near Buckingham Palace London Military Police London Police Police Officer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/b3/be/afb3be0acb2bfe489048fc39f34341fb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDanjBHBTmSeOm8AGY6_YwaXcUmWCNBqnTXg';" alt="Ministry Of Defence Firearms Officer On Guard Near Buckingham Palace London Military Police London Police Police Officer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ministry Of Defence Firearms Officer On Guard Near Buckingham Palace London Military Police London Police Police Officer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/1b/c9/831bc9108ec1f13a00da8fa2071817b3.jpg" data-lightbox="roadtrip" data-title="Swat 96 Swat Police Officer Requirements Military Police">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/1b/c9/831bc9108ec1f13a00da8fa2071817b3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShCtij5KzNiTDpNUm4KHUIJDm98niUGU5ufw';" alt="Swat 96 Swat Police Officer Requirements Military Police">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Swat 96 Swat Police Officer Requirements Military Police</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/50/26/99502644831b2aaff0e468091afe1fc4.jpg" data-lightbox="roadtrip" data-title="Army Military Police Uniforms Of The 70 S Showing Wac Mp Uniform Military Police Military Police Army Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/50/26/99502644831b2aaff0e468091afe1fc4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvZxMY0W7A7mtG4RbjdW9hmNwoJlVHbbsFpQ';" alt="Army Military Police Uniforms Of The 70 S Showing Wac Mp Uniform Military Police Military Police Army Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Military Police Uniforms Of The 70 S Showing Wac Mp Uniform Military Police Military Police Army Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/8a/d3/6c8ad35ed1d6acec2603907fd1840084.png" data-lightbox="roadtrip" data-title="Pin On Uniformes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/8a/d3/6c8ad35ed1d6acec2603907fd1840084.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcKXB8NIkPtddL-GBFovlI_5Zte_5GSRf9mg';" alt="Pin On Uniformes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Uniformes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/90/c3/17/90c31794f58bf9addab81c8be582fa94.jpg" data-lightbox="roadtrip" data-title="Afo Arv Authorised Firearms Officer Armed Response Vehicle Officer Sourc Military Special Forces Special Forces Military Police">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/90/c3/17/90c31794f58bf9addab81c8be582fa94.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPTJfmekr9oRbnDdP9whYr4jMdb3lrij-Osg';" alt="Afo Arv Authorised Firearms Officer Armed Response Vehicle Officer Sourc Military Special Forces Special Forces Military Police">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Afo Arv Authorised Firearms Officer Armed Response Vehicle Officer Sourc Military Special Forces Special Forces Military Police</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/99/50/26/99502644831b2aaff0e468091afe1fc4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPTJfmekr9oRbnDdP9whYr4jMdb3lrij-Osg';" alt="Afo Arv Authorised Firearms Officer Armed Response Vehicle Officer Sourc Military Special Forces Special Forces Military Police">
+										<div class="card-body">
+						<h3 class="h5"><b>They operate in various field environments performs individual and team patrol movements both mounted and dismounted tactical drills battle procedures convoys military operations other.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How to be a military police officer</strong>. 
+								
+																	Over 12 weeks you get a detailed insight into police duties investigations evidence handling military law and other key aspects of policing. 
+																	While this varies from branch to branch a score of 31 is typically the lowest score. 
+																	While every country has specific rules regarding enlistment steps to become a military police officer typically involve enlistment in the military along with passing a series of tests and training both academic and physical. 
+																	How to Become a Military Police Officer Becoming a member of the military police will require meeting certain metrics and undergoing intensive training. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hey as a royal military police do you go into combat and fight with soldiers. 
+																	This lasts 24 weeks. 
+																	Weve determined that 302 of military police officers have a bachelors degree. 
+																	You can then take further training including the Serious Crimes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The requirements a person must meet to become a military police officer may depend on the organization he hopes to serve. 
+																	Step 2 Then you do the Initial Police and Driver Training course at the Defence School of Policing and Guarding. 
+																	In terms of higher education levels we found that 60 of military police officers have masters degrees. 
+																	Individuals who aspire to be military police. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Not Just Police Officers The Military Police and Masters at Arms in the Navy lead manage supervise and perform force protection duties including use of deadly force to protect personnel and resources. 
+																	If youre interested in becoming a military police officer one of the first things to consider is how much education you need. 
+																	As a RAF Police Officer you will develop skills and gain experience similar to those of a senior civilian police officer corporate. 
+																	RAF Police Officers can expect to be employed on a wide range of operational and staff duties and may be selected to undertake further training in fields such as the investigation of serious crime counter intelligence cyber security and information assurance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Offloaded military equipment is one of their main sources of equipment. 
+																	First you become a highly skilled soldier with 14 weeks basic training. 
+																	A military police officer may be responsible for guarding bases. 
+																	Once you have successfully passed Sandhurst you will then go on the undertake the Military Police Officers Course which will take place at the Defence School of Policing and Guarding. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This course which is effectively the second stage of your RMP Officer training takes a total for 12 weeks to complete. 
+																	Many police jobs require a high school diploma and possibly some college study of criminal justice. 
+																	A leader exhibits self-discipline initiative confidence and intelligence. 
+																	Military Police Officer training includes completion of the Military Police Officer Basic Course MPOBC where you will learn leadership skills tactics maintenance and operational aspects of the systems and tools used in the Military Police Corps. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Being a leader in the Army requires certain qualities. 
+																	Can royal military police soldiers become a member of the close protection unit or is that only for rmp officers. 
+																	Military weapons are given to some police Experts say one of the major issues in American police enforcement is the type of weapons some officers carry. 
+																	The Defence Force School of Policing will provide you with your service police training and education. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military police must meet the basic Armed Forced Qualification Test AFQT score needed to join the military. 
+																	Specialize in maintaining a visible presence while ensuring that all military facilities are kept safe and secure. 
+																	Typically however hell have to join a military organization complete basic training and attend military police school. 
+																	All Military Police Officers are required to complete the Service Police Officer Basic Course program at the Defence Force School of Policing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You come back and become a police officer the potential for retraumatizing is very high Theres a screening process for that said Jennifer Bice a Santa Clara County sheriffs deputy. 
+																	Applicants will likely be rejected for multiple traffic violations drug offenses or other issues. 
+																	Professional Summary Vigilant Military Police Officer with a strong desire to ensure the safety of military personnel and civilian visitors to the base. 
+																	Adept at identifying possible security and safety issues. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	He may have to pass a range of physical and written tests as well. 
+																	The Army is a Registered Training Organisation and therefore the Defence Force School of Policing complies with the requirements of the Australian. 
+																	This prepares you for your first posting as an RMP Platoon Commander. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/6a/d2/e56ad24ab81eb866e0cc14209bc069b3.jpg" data-lightbox="roadtrip" data-title="The Military Police Do Every Thing An Regular Police Officer Does But Stays On A Military Base Police Military Police Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/6a/d2/e56ad24ab81eb866e0cc14209bc069b3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvaV30uVyPS9QiTl6ZYyLTydVb4YLB1zMF-w';" alt="The Military Police Do Every Thing An Regular Police Officer Does But Stays On A Military Base Police Military Police Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Military Police Do Every Thing An Regular Police Officer Does But Stays On A Military Base Police Military Police Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/f3/2d/1cf32dcdf341358d1c2cb9f7003de348.jpg" data-lightbox="roadtrip" data-title="A Female Us Army Military Police Officer Military Police Military Graphics Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/f3/2d/1cf32dcdf341358d1c2cb9f7003de348.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_8Fbs85Q51o53f-frI54MHZ8GnJ_OMdQY8A';" alt="A Female Us Army Military Police Officer Military Police Military Graphics Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Female Us Army Military Police Officer Military Police Military Graphics Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/1a/1a/0f1a1a452fcba80c00a04c77cb6fb7b0.jpg" data-lightbox="roadtrip" data-title="Riversky S Take Kang Ha Neul Is Officially A Military Police Officer Kang Haneul Korean Actors Actors">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/1a/1a/0f1a1a452fcba80c00a04c77cb6fb7b0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYp_kI83ojpGflZ7G6ySpcsf03B7jAkWoTKg';" alt="Riversky S Take Kang Ha Neul Is Officially A Military Police Officer Kang Haneul Korean Actors Actors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Riversky S Take Kang Ha Neul Is Officially A Military Police Officer Kang Haneul Korean Actors Actors</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/bf/9a/ccbf9a757c68610947e5647a94fd05c5.jpg" data-lightbox="roadtrip" data-title="Nypds Most Jacked Cop Michael Counihan Talks With Men In Uniform Police Hot Cops">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/bf/9a/ccbf9a757c68610947e5647a94fd05c5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqFeiZxubChGtP3WwvST8lnz_FdE6FyJYbwg';" alt="Nypds Most Jacked Cop Michael Counihan Talks With Men In Uniform Police Hot Cops">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nypds Most Jacked Cop Michael Counihan Talks With Men In Uniform Police Hot Cops</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/32/3b/8b323b450ec5b0e8568bca52064f05f4.jpg" data-lightbox="roadtrip" data-title="Military Police This Is The Khaki Summer Uniforms We Wore In Hot Military Police Military Police Army Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/32/3b/8b323b450ec5b0e8568bca52064f05f4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLQA7vDFalhvBjIXKDNtrqGj0ENS1Ztp5CDQ';" alt="Military Police This Is The Khaki Summer Uniforms We Wore In Hot Military Police Military Police Army Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Police This Is The Khaki Summer Uniforms We Wore In Hot Military Police Military Police Army Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/6f/99/966f9938b9dc860ad474a49bdf3979ce.png" data-lightbox="roadtrip" data-title="Military Police Officer 31a Military Police Military Police Officer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/6f/99/966f9938b9dc860ad474a49bdf3979ce.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjpPPjfId-_f_kpytV8UahnJnUoNcU3TXtmA';" alt="Military Police Officer 31a Military Police Military Police Officer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Police Officer 31a Military Police Military Police Officer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/33/3e/68333e7d2652fe1c807be8f632d6b038.jpg" data-lightbox="roadtrip" data-title="Swat 80 Military Special Forces Special Police Military Police">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/33/3e/68333e7d2652fe1c807be8f632d6b038.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDpfK3gabd7yi4PafmJNGobp7MdpE_NhtF4w';" alt="Swat 80 Military Special Forces Special Police Military Police">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Swat 80 Military Special Forces Special Police Military Police</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b1/64/e5/b164e5946eafdb4753c36e771bc4931e.jpg" data-lightbox="roadtrip" data-title="Pin On Don T Ask Don T Tell">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b1/64/e5/b164e5946eafdb4753c36e771bc4931e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsoR7LJcRaqZlLAWLXgGTMDNDYISQMcoETrw';" alt="Pin On Don T Ask Don T Tell">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Don T Ask Don T Tell</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/92/bd/8792bd832b5e26f6afe0f2c1062627d1.png" data-lightbox="roadtrip" data-title="Jay Harrington On Twitter Military Girl Army Girl Police Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/92/bd/8792bd832b5e26f6afe0f2c1062627d1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ93nl2_MkW5JB3aT7NeQNY2wTUpExDtsXMvQ';" alt="Jay Harrington On Twitter Military Girl Army Girl Police Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jay Harrington On Twitter Military Girl Army Girl Police Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/c0/da/67c0da3db11bee60555fcabb7ec4e8bf.jpg" data-lightbox="roadtrip" data-title="Pin On Military Airsoft Guns">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/c0/da/67c0da3db11bee60555fcabb7ec4e8bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW322VlWhAnocqpSJH40Te6WJE5bOw0xW7hw';" alt="Pin On Military Airsoft Guns">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Airsoft Guns</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/fc/15/49fc15e3d70c5ef26502ad73882e3917.jpg" data-lightbox="roadtrip" data-title="Thai Military Policewomen Make An Arrest Don T Move One Calls Out Turn Round And Place Your Hands Behind Your Bac Military Girl Army Women Military Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/fc/15/49fc15e3d70c5ef26502ad73882e3917.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuF-NYRB0mQXeGfPWh8pWukNK1WtyIVowbzQ';" alt="Thai Military Policewomen Make An Arrest Don T Move One Calls Out Turn Round And Place Your Hands Behind Your Bac Military Girl Army Women Military Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thai Military Policewomen Make An Arrest Don T Move One Calls Out Turn Round And Place Your Hands Behind Your Bac Military Girl Army Women Military Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/70/00/cd7000c590b8cc9c7f0b1b55c1781292.jpg" data-lightbox="roadtrip" data-title="U S Army Military Police Ft Bragg N C Wearing Old School Mp Helmets With New Style Class B Unifo Military Police Army Police Uniforms Army Service Uniform">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/70/00/cd7000c590b8cc9c7f0b1b55c1781292.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnSNnwkkkuw0p7I8_ITmcBYxivARHHnLLNZg';" alt="U S Army Military Police Ft Bragg N C Wearing Old School Mp Helmets With New Style Class B Unifo Military Police Army Police Uniforms Army Service Uniform">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Military Police Ft Bragg N C Wearing Old School Mp Helmets With New Style Class B Unifo Military Police Army Police Uniforms Army Service Uniform</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/66/26/7b6626d84b005d26fab392e464aae430.jpg" data-lightbox="roadtrip" data-title="Pin On Go Army And Navy And Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/66/26/7b6626d84b005d26fab392e464aae430.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWcrS1NbHYPM6JgfGzGHTo2EMrzq3PHvtXLg';" alt="Pin On Go Army And Navy And Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Go Army And Navy And Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/marc-mitchell-uwo-ratemyprof.html">Marc Mitchell Uwo Ratemyprof</a></li>
+													<li class="list-group-item"><a href="/mango-languages-free-download.html">Mango Languages Free Download</a></li>
+													<li class="list-group-item"><a href="/korean-military-haircut.html">Korean Military Haircut</a></li>
+													<li class="list-group-item"><a href="/jobs-in-pakistan-military-accounts-department.html">Jobs In Pakistan Military Accounts Department</a></li>
+													<li class="list-group-item"><a href="/mango-languages-free-login.html">Mango Languages Free Login</a></li>
+													<li class="list-group-item"><a href="/lackland-afb-fire-department.html">Lackland Afb Fire Department</a></li>
+													<li class="list-group-item"><a href="/korean-military-hats.html">Korean Military Hats</a></li>
+													<li class="list-group-item"><a href="/loan-grants-for-military-veterans.html">Loan Grants For Military Veterans</a></li>
+													<li class="list-group-item"><a href="/marc-mitchell-uwm.html">Marc Mitchell Uwm</a></li>
+													<li class="list-group-item"><a href="/lackland-afb-finance-office-hours.html">Lackland Afb Finance Office Hours</a></li>
+													<li class="list-group-item"><a href="/mango-languages-military-onesource.html">Mango Languages Military Onesource</a></li>
+													<li class="list-group-item"><a href="/lancaster-county-pa-department-of-veterans-affairs.html">Lancaster County Pa Department Of Veterans Affairs</a></li>
+													<li class="list-group-item"><a href="/korean-military-departments.html">Korean Military Departments</a></li>
+													<li class="list-group-item"><a href="/kentucky-department-of-military-affairs-address.html">Kentucky Department Of Military Affairs Address</a></li>
+													<li class="list-group-item"><a href="/lincoln-military-housing-office-fort-sam-houston.html">Lincoln Military Housing Office Fort Sam Houston</a></li>
+													<li class="list-group-item"><a href="/lebanese-army-hotline.html">Lebanese Army Hotline</a></li>
+													<li class="list-group-item"><a href="/lesson-plan-army-cadets.html">Lesson Plan Army Cadets</a></li>
+													<li class="list-group-item"><a href="/make-your-army-dog-tags.html">Make Your Army Dog Tags</a></li>
+													<li class="list-group-item"><a href="/jobs-at-texas-military-department.html">Jobs At Texas Military Department</a></li>
+													<li class="list-group-item"><a href="/mango-languages-for-military.html">Mango Languages For Military</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

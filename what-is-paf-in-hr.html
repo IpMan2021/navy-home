@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is Paf In Hr - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is Paf In Hr",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/564x/e1/94/6b/e1946b412807361dac080d8fdb0e9667.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+paf+in+hr",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is Paf In Hr</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The New Hire PAF Form is used to initiate administrative hires when Template Based Hire TBH cannot be used. As in any other occupation people familiar with the field start talking in abbreviations because its easy and familiarthey do it out of habit unaware the other person doesnt know what theyre saying. After the HR Business Partner has allocated the PD to the appropriate job classification you will need a position number. <br>				
+			</p>
+										<a class="badge badge-info" href="/department-of-the-army-jobs-vacancies.html">department of the army jobs vacancies</a>
+											<a class="badge badge-info" href="/department-of-the-army-personnel-records.html">department of the army personnel records</a>
+											<a class="badge badge-primary" href="/department-of-the-army-jacksonville-district-corps-of-engineers.html">department of the army jacksonville district corps of engineers</a>
+											<a class="badge badge-info" href="/department-of-the-army-memorandum-implementation-of-the-digital-training-management-system.html">department of the army memorandum implementation of the digital training management system</a>
+											<a class="badge badge-danger" href="/department-of-the-army-management-office.html">department of the army management office</a>
+											<a class="badge badge-success" href="/department-of-the-army-general-counsel.html">department of the army general counsel</a>
+											<a class="badge badge-success" href="/department-of-the-army-information-security-program.html">department of the army information security program</a>
+											<a class="badge badge-dark" href="/department-of-the-army-inspector-general-course.html">department of the army inspector general course</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to pay a visit to the ideal site.  Our site provides you with hints for seeing the highest quality video and picture content, hunt and locate more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this video that you view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/1f/8e/221f8ebc59ad388b194c855a211e0bb5.png" data-lightbox="roadtrip" data-title="What Is The Benefits Of Payroll Management Software Payroll Payroll Software Credit Score">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/1f/8e/221f8ebc59ad388b194c855a211e0bb5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKVFqngT_VjMHjBoEXtySMdzZHpP31VZ6SuQ';" alt="What Is The Benefits Of Payroll Management Software Payroll Payroll Software Credit Score">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is The Benefits Of Payroll Management Software Payroll Payroll Software Credit Score</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/78/f6/2f/78f62f4ac3443e1faf3fc19c66057b60.jpg" data-lightbox="roadtrip" data-title="Pakistan Air Force Jobs 2020 Jobs Join Paf Paf Jobs 2020 Air Force Jobs Jobs In Pakistan Latest Jobs In Pakistan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/78/f6/2f/78f62f4ac3443e1faf3fc19c66057b60.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFtyvuFm12xiAuvfYFv5fGjH_JKJvWW8MBBA';" alt="Pakistan Air Force Jobs 2020 Jobs Join Paf Paf Jobs 2020 Air Force Jobs Jobs In Pakistan Latest Jobs In Pakistan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pakistan Air Force Jobs 2020 Jobs Join Paf Paf Jobs 2020 Air Force Jobs Jobs In Pakistan Latest Jobs In Pakistan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/8d/4f/40/8d4f4016a5067fac86dd037cb5ea580f.jpg" data-lightbox="roadtrip" data-title="Pin On Careerspakistan Com">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/8d/4f/40/8d4f4016a5067fac86dd037cb5ea580f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKosc6OJlpQj_z6I76YSaTsjVkGZ5a5S45RA';" alt="Pin On Careerspakistan Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Careerspakistan Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/88/19/888819a5ea6fa68c865addef3a05ae97.png" data-lightbox="roadtrip" data-title="How To Use The Paf Model To Improve Training And Elearning Instructional Design Infographic Instructional Design Elearning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/88/19/888819a5ea6fa68c865addef3a05ae97.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUz52Y25uWbXL4CnLrT3IfLrf5IbAePTqrkg';" alt="How To Use The Paf Model To Improve Training And Elearning Instructional Design Infographic Instructional Design Elearning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Use The Paf Model To Improve Training And Elearning Instructional Design Infographic Instructional Design Elearning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/bb/c4/9b/bbc49bd5a49730f06eb19118a9a4eff4.jpg" data-lightbox="roadtrip" data-title="Paf Hospital Jobs Pakistan Airforce Paf Jobs June 2020 Hospital Jobs Medical Jobs Online Careers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/bb/c4/9b/bbc49bd5a49730f06eb19118a9a4eff4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKb-dpplFtlOhQX9xjMGCZIu-Y7xlg8SAjOQ';" alt="Paf Hospital Jobs Pakistan Airforce Paf Jobs June 2020 Hospital Jobs Medical Jobs Online Careers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Paf Hospital Jobs Pakistan Airforce Paf Jobs June 2020 Hospital Jobs Medical Jobs Online Careers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e6/a0/d9/e6a0d95f99008bf1d98a084ac0980329.jpg" data-lightbox="roadtrip" data-title="Published 2019 06 13 See All Jobs At Https Www Dailyjobz Com Job Newspaper Jobs Latest Jobs In Pakistan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e6/a0/d9/e6a0d95f99008bf1d98a084ac0980329.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrHRX-RkOMZ-d8a5HiGztjL_FkYBqRWpBr8A';" alt="Published 2019 06 13 See All Jobs At Https Www Dailyjobz Com Job Newspaper Jobs Latest Jobs In Pakistan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Published 2019 06 13 See All Jobs At Https Www Dailyjobz Com Job Newspaper Jobs Latest Jobs In Pakistan</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/474x/af/19/d3/af19d3600671d5d802b8da3362ac1ff2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrHRX-RkOMZ-d8a5HiGztjL_FkYBqRWpBr8A';" alt="Published 2019 06 13 See All Jobs At Https Www Dailyjobz Com Job Newspaper Jobs Latest Jobs In Pakistan">
+										<div class="card-body">
+						<h3 class="h5"><b>OKTA Exploration and Production Limited Islamabad has announced the latest advertisement to fill the OKTA Jobs in Pakistan 2021Interested candidates from across the form across the country can apply and can get these Private Sector Jobs 2021 who are well qualified and experienced in related field.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is paf in hr</strong>. 
+								
+																	July 30 2018 Once an employee is hired and their record is in the PAC system changes that cannot be made electronically are submitted using a Personnel Action Form PAF. 
+																	PAF Processing The Personnel Action Form commonly known as the PAF is used for virtually all employment changes. 
+																	Box 1892 Houston Texas 77251-1892. 
+																	This e-form will allow users to submit all personnel transactions in an electronic format by having the user enter specific information. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The system was programmed to use the e-Business Suite Organization Manager s and Contact settings. 
+																	What does PAF stand for. 
+																	Human Resources 615 West 131 Street Studebaker Building 4th Floor New York NY 10027. 
+																	This focus considers that each firm is heterogeneous and it can keep that heterogeneity for a long period of time. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Org Change Pay Rate Change Exemption Change Change in Number of Hours Supervisor Change Separation of Employment. 
+																	Completing a Personnel Action Form PAFpdf 30758 KB. 
+																	Managers and HR practitioners who want to select employees and leaders who are sharp thinkers and quick learners. 
+																	HR professionals and organizations looking for a brief and accurate online cognitive ability test for a wide variety of jobs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	PAFs are used to make changes to an employees current status including but not limited to. 
+																	Personnel Action Form PAF August 08 2018. 
+																	What is the PAF. 
+																	Personnel Action Forms Available through WebSalary or DrexelOne Personnel Action Forms PAFs allow you to implement changes on employee job records. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	NFL NASA PSP HIPAArandom Words in meaning. 
+																	PAF is defined as Personnel Action Form very frequently. 
+																	Organizations seeking to incorporate a strong predictor of job performance into their hiring process. 
+																	Appointment of new hires separations promotions transfers reclassifications sabbaticals leave of absences special salary actions and labor distribution changes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A resource is a kind of production factor which is at the firms disposal that is each one is controlled by the firm in spite of having no property right to it. 
+																	50 It may be appropriate to document the frequency of arrhythmia by Holter monitoring in patients with symptomatic recurrences and to repeat monitoring if. 
+																	HR practice Employee relations Equality diversity Learning training Pay benefits Wellbeing Recruitment retention HR strategy HR Tech The HR profession Global All HR topics Legal Case law Commentary Flexible working Legal timetable Shared parental leave Redundancy Maternity Paternity TUPE. 
+																	This paper applies the resource-based theory on human resources and analyzes its effect on human resource management. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	PAF stands for Personnel. 
+																	When establishing a position the entire PAF must be completed to ensure the correct position type is established. 
+																	These consist of but are not limited to. 
+																	Most of the current crop of college officials understand the principle of academic freedom PAF as something like You cant interfere with particular points of view held in the university In other words to them it means Buzz off. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The PAF workflow was designed to meet 86 of all position approvals on campus. 
+																	The gallery of passport stamps by country or territory contains an alphabetical list of sovereign states or dependent territories with images of their passport stamps including visasAll Schengen countries Albania Bulgaria Croatia Cyprus Moldova North Macedonia Romania and Turkey use the same format for their stamps and stamps are not issued while traveling from one Schengen country to. 
+																	6100 Main Houston Texas 77005-1892. 
+																	To see a listing please view the Faculty Staff and Graduate Assistants by Office web page -- managers will appear in bold. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Changes That Can Be Processed with PAFs Accessible through WebSalary PAFs can be used to make the following information changes. 
+																	The Personnel Assessment Form PAF. 
+																	Chat global warming Postal codes. 
+																	In an effort to help streamline the personnel transaction submission process the Personnel Action Form PAF has been implemented to take the place of previous traditional methods of transaction submission. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The management of PAF patients should include the recognition that abolition of symptoms of PAF does not necessarily mean abolition of the arrhythmia as heart rate slowing may abolish symptoms and asymptomatic episodes are common. 
+																	New Hire PAFpdf 4441 KB. 
+																	Learning and understanding Human Resources and management acronyms and abbreviations is a challenge. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/29/7b/4b/297b4b6e46e21684bed50c6f44d376d6.jpg" data-lightbox="roadtrip" data-title="The Jay Enn Safety Group Faisalabad Jobs 2020 For Hr Manager Hr Admin Officer Production Manager I Hr Management Organizational Communication Management">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/29/7b/4b/297b4b6e46e21684bed50c6f44d376d6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRS-aDnFfo4PXYOIfY0mz3rm3mVB3op5o-Ew';" alt="The Jay Enn Safety Group Faisalabad Jobs 2020 For Hr Manager Hr Admin Officer Production Manager I Hr Management Organizational Communication Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Jay Enn Safety Group Faisalabad Jobs 2020 For Hr Manager Hr Admin Officer Production Manager I Hr Management Organizational Communication Management</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/32/30/e4/3230e40515e7afba026152f330999de9.jpg" data-lightbox="roadtrip" data-title="Latest Jobs December 2018 Hr Department Hiring New Staff Multiple Positions Lats Date 12 December 2018 Please Keep Supp Hospital Jobs Medical College Job">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/32/30/e4/3230e40515e7afba026152f330999de9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZG9qk3kx2wrg1QcDe4t8AKfmISX0DehBguw';" alt="Latest Jobs December 2018 Hr Department Hiring New Staff Multiple Positions Lats Date 12 December 2018 Please Keep Supp Hospital Jobs Medical College Job">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Latest Jobs December 2018 Hr Department Hiring New Staff Multiple Positions Lats Date 12 December 2018 Please Keep Supp Hospital Jobs Medical College Job</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/40/17/f1/4017f12350f4bfeb5b50ed79bb39b4a5.jpg" data-lightbox="roadtrip" data-title="Advertise Jobs At Paf College Sargodha Online Ift Tt 2eohudr If You Educational Subjects Scholarships For College Freshman College Education Subjects">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/40/17/f1/4017f12350f4bfeb5b50ed79bb39b4a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9kW03NXGYDTEUZFEQyVppTADZ-FUoRjPulw';" alt="Advertise Jobs At Paf College Sargodha Online Ift Tt 2eohudr If You Educational Subjects Scholarships For College Freshman College Education Subjects">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Advertise Jobs At Paf College Sargodha Online Ift Tt 2eohudr If You Educational Subjects Scholarships For College Freshman College Education Subjects</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/de/17/c2de17c0602c46bb7f841ffccf5f9e34.gif" data-lightbox="roadtrip" data-title="Join Airforce As Technicians Jobs 2020 Royal Bahrain Air Force Job Online Jobs Technician">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/de/17/c2de17c0602c46bb7f841ffccf5f9e34.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWjX4N-j-mWQmaH29lp5gNLnYaOoKz4exSOA';" alt="Join Airforce As Technicians Jobs 2020 Royal Bahrain Air Force Job Online Jobs Technician">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Join Airforce As Technicians Jobs 2020 Royal Bahrain Air Force Job Online Jobs Technician</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/22/6b/58226b3f7d8f84df6c83109cd66383d9.png" data-lightbox="roadtrip" data-title="Jobs Advertisement College Job Un Jobs Administrative Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/22/6b/58226b3f7d8f84df6c83109cd66383d9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoxw0ILs-xeCx6bMj5kHWL0Gh8B73PDc2kvw';" alt="Jobs Advertisement College Job Un Jobs Administrative Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jobs Advertisement College Job Un Jobs Administrative Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5b/09/30/5b0930a12dd38a21370bf846226c1f25.jpg" data-lightbox="roadtrip" data-title="Jobs Advertisement In 2020 Air Force Jobs Job Advertisement Government Of Pakistan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5b/09/30/5b0930a12dd38a21370bf846226c1f25.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX4n0nzBFpMQ3nezDhHjbmURUMSg5znHyRBw';" alt="Jobs Advertisement In 2020 Air Force Jobs Job Advertisement Government Of Pakistan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jobs Advertisement In 2020 Air Force Jobs Job Advertisement Government Of Pakistan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/c7/1a/d3c71a3ef8fce243b9048821a7ea0394.gif" data-lightbox="roadtrip" data-title="Join Paf Jobs 2018 For Aero Trades Pf Di Women Nursing Assistants Jobs In Pakistan Scholarships For College Online Teachers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/c7/1a/d3c71a3ef8fce243b9048821a7ea0394.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ4e2ynawq3tpLBDV-sMJXqTUNtox_8Fynbg';" alt="Join Paf Jobs 2018 For Aero Trades Pf Di Women Nursing Assistants Jobs In Pakistan Scholarships For College Online Teachers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Join Paf Jobs 2018 For Aero Trades Pf Di Women Nursing Assistants Jobs In Pakistan Scholarships For College Online Teachers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/16/f1/0c16f1b070f4e0011aad3f2967a9ebb2.jpg" data-lightbox="roadtrip" data-title="Pakistani Hero Destroyed The Israeli 3 Jets Paf India Pakkistan Isra Hero Kashmir Pakistan Pakistani">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/16/f1/0c16f1b070f4e0011aad3f2967a9ebb2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGrIfLxrTRDvU5NV949I0eIp2HVfibCm-Ubg';" alt="Pakistani Hero Destroyed The Israeli 3 Jets Paf India Pakkistan Isra Hero Kashmir Pakistan Pakistani">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pakistani Hero Destroyed The Israeli 3 Jets Paf India Pakkistan Isra Hero Kashmir Pakistan Pakistani</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/21/44/d8/2144d8b0e1446694d596edd8eb954248.png" data-lightbox="roadtrip" data-title="Jobs Advertisement Air Force Jobs Jobs In Pakistan Job Advertisement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/21/44/d8/2144d8b0e1446694d596edd8eb954248.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT190d9zrCOXOzlQiK4Nv-ToDh3R4VgUW_8uw';" alt="Jobs Advertisement Air Force Jobs Jobs In Pakistan Job Advertisement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jobs Advertisement Air Force Jobs Jobs In Pakistan Job Advertisement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/e1/94/6b/e1946b412807361dac080d8fdb0e9667.jpg" data-lightbox="roadtrip" data-title="Latest Jobs In Paf Base Fisal Karachi 2020 Jobs In Paf Base Fisal Karachi 2020 Latest Jobs Vacancies In Pakistan Air Fo In 2020 Teaching Jobs Job Teacher Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/e1/94/6b/e1946b412807361dac080d8fdb0e9667.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKGcyIYvnLcWnf59PHTcuG4TQukABk1ysF3Q';" alt="Latest Jobs In Paf Base Fisal Karachi 2020 Jobs In Paf Base Fisal Karachi 2020 Latest Jobs Vacancies In Pakistan Air Fo In 2020 Teaching Jobs Job Teacher Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Latest Jobs In Paf Base Fisal Karachi 2020 Jobs In Paf Base Fisal Karachi 2020 Latest Jobs Vacancies In Pakistan Air Fo In 2020 Teaching Jobs Job Teacher Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/66/19/1a661907abc639a01f596c4b4df8c551.png" data-lightbox="roadtrip" data-title="Jobs Advertisement Job Advertisement Hr Jobs Company Job">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/66/19/1a661907abc639a01f596c4b4df8c551.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb31ciwGh0CQH5mU3SWqQTp3VueUB4Dapqxg';" alt="Jobs Advertisement Job Advertisement Hr Jobs Company Job">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jobs Advertisement Job Advertisement Hr Jobs Company Job</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/22/13/7a2213a2c2374ebb29c55519a4d1e1df.gif" data-lightbox="roadtrip" data-title="Job Oppprotunities In Air University Islamabad Http Www Dailypaperpk Com Jobs 179209 Job Oppprotunities Faculty And Staff University Business Administration">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/22/13/7a2213a2c2374ebb29c55519a4d1e1df.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp2nMuJ9cf5MLSnnQ19dL5uI7SueI7pX9T4A';" alt="Job Oppprotunities In Air University Islamabad Http Www Dailypaperpk Com Jobs 179209 Job Oppprotunities Faculty And Staff University Business Administration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Job Oppprotunities In Air University Islamabad Http Www Dailypaperpk Com Jobs 179209 Job Oppprotunities Faculty And Staff University Business Administration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/af/19/d3/af19d3600671d5d802b8da3362ac1ff2.jpg" data-lightbox="roadtrip" data-title="Pcb Jobs 2020 Psl Jobs Govt Jobs July 2020 Apply Medical Jobs Jobs In Pakistan Online Careers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/af/19/d3/af19d3600671d5d802b8da3362ac1ff2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCah1Z5_PaMVsyFWz0rL9GHnH9WG2iwa6OhQ';" alt="Pcb Jobs 2020 Psl Jobs Govt Jobs July 2020 Apply Medical Jobs Jobs In Pakistan Online Careers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pcb Jobs 2020 Psl Jobs Govt Jobs July 2020 Apply Medical Jobs Jobs In Pakistan Online Careers</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/mycah-perry-lee.html">Mycah Perry Lee</a></li>
+													<li class="list-group-item"><a href="/mycanal-box-orange.html">Mycanal Box Orange</a></li>
+													<li class="list-group-item"><a href="/my-spouse-brings-me-down.html">My Spouse Brings Me Down</a></li>
+													<li class="list-group-item"><a href="/my-biz-dod-army.html">My Biz Dod Army</a></li>
+													<li class="list-group-item"><a href="/my-spouse-has-covid-and-i-dont.html">My Spouse Has Covid And I Dont</a></li>
+													<li class="list-group-item"><a href="/mycaa-approved-online-schools.html">Mycaa Approved Online Schools</a></li>
+													<li class="list-group-item"><a href="/montana-department-of-military-and-veterans-affairs.html">Montana Department Of Military And Veterans Affairs</a></li>
+													<li class="list-group-item"><a href="/my-spouse-kicked-me-out.html">My Spouse Kicked Me Out</a></li>
+													<li class="list-group-item"><a href="/mycah-ocampo.html">Mycah Ocampo</a></li>
+													<li class="list-group-item"><a href="/moncton-military-family-resource-centre.html">Moncton Military Family Resource Centre</a></li>
+													<li class="list-group-item"><a href="/mycaa-financial-assistance.html">Mycaa Financial Assistance</a></li>
+													<li class="list-group-item"><a href="/montana-army-national-guard-public-affairs.html">Montana Army National Guard Public Affairs</a></li>
+													<li class="list-group-item"><a href="/my-spouse-picks-fights.html">My Spouse Picks Fights</a></li>
+													<li class="list-group-item"><a href="/mycaa-military.html">Mycaa Military</a></li>
+													<li class="list-group-item"><a href="/ministry-of-defence-india-budget.html">Ministry Of Defence India Budget</a></li>
+													<li class="list-group-item"><a href="/mycah-hatfield-height.html">Mycah Hatfield Height</a></li>
+													<li class="list-group-item"><a href="/missouri-archives-military-records.html">Missouri Archives Military Records</a></li>
+													<li class="list-group-item"><a href="/my-spouse-has-covid-can-i-go-to-work.html">My Spouse Has Covid Can I Go To Work</a></li>
+													<li class="list-group-item"><a href="/mycaa-photography.html">Mycaa Photography</a></li>
+													<li class="list-group-item"><a href="/mn-dept-of-veterans-affairs-jobs.html">Mn Dept Of Veterans Affairs Jobs</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

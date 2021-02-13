@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>California Military Department Gi Bill Award Program - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "California Military Department Gi Bill Award Program",
+  "datePublished": "2021-02-13",
+  "image": "https://calguard.ca.gov/wp-content/uploads/sites/62/2019/10/OCP-Official-Photo-Cross-240x300.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=california+military+department+gi+bill+award+program",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>California Military Department Gi Bill Award Program</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The site now has a modern look. This State Grant can pay for. Summaries 9 Actions 26 Sponsors 2 Full Texts 5 Votes 10. <br>				
+			</p>
+										<a class="badge badge-success" href="/department-of-the-army-inspector-general-course.html">department of the army inspector general course</a>
+											<a class="badge badge-primary" href="/department-of-the-army-memo-seal.html">department of the army memo seal</a>
+											<a class="badge badge-light" href="/department-of-the-army-government-purchase-card-operating-procedures-2019.html">department of the army government purchase card operating procedures 2019</a>
+											<a class="badge badge-info" href="/department-of-the-army-office-symbol.html">department of the army office symbol</a>
+											<a class="badge badge-primary" href="/department-of-the-army-jobs-vacancies.html">department of the army jobs vacancies</a>
+											<a class="badge badge-info" href="/department-of-the-army-institute-of-heraldry.html">department of the army institute of heraldry</a>
+											<a class="badge badge-dark" href="/department-of-the-army-headquarters-g-357-address.html">department of the army headquarters g 357 address</a>
+											<a class="badge badge-primary" href="/department-of-the-army-guard-patch.html">department of the army guard patch</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you've come to visit the ideal blog.  Our site gives you suggestions for viewing the highest quality video and image content, search and locate more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, particularly Youtube, so we recommend this video for you to see.  You can also contribute to supporting this site by sharing videos and graphics that you enjoy on this site on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://calguard.ca.gov/wp-content/uploads/sites/62/2019/07/Cal_Guard_Banner.png" data-lightbox="roadtrip" data-title="Cmd Gi Bill Award Program Cal Guard">
+											<img class="card-img v-image ads-img " src="https://calguard.ca.gov/wp-content/uploads/sites/62/2019/07/Cal_Guard_Banner.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0RwzgpZXhDplbWt5zkKwggzO-qo6alUhD-g';" alt="Cmd Gi Bill Award Program Cal Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cmd Gi Bill Award Program Cal Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.csac.ca.gov/sites/default/themes/dtheme/img/logo-2020.png" data-lightbox="roadtrip" data-title="California Military Department Gi Bill Award Program California Student Aid Commission">
+											<img class="card-img v-image ads-img " src="https://www.csac.ca.gov/sites/default/themes/dtheme/img/logo-2020.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWt8WtrseZJy2X9REs-qOo_q3uNivNgTqe6Q';" alt="California Military Department Gi Bill Award Program California Student Aid Commission">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">California Military Department Gi Bill Award Program California Student Aid Commission</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="AcbDP247ItCPEM" data-lightbox="roadtrip" data-title="Https Www Csac Ca Gov Sites Main Files File Attachments Cng Eaap Webinar Training For Institutions Pdf">
+											<img class="card-img v-image ads-img " src="AcbDP247ItCPEM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl1cA0p2ZdDwJpTHJtrR-fQ7FUID6WWGB93A';" alt="Https Www Csac Ca Gov Sites Main Files File Attachments Cng Eaap Webinar Training For Institutions Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Csac Ca Gov Sites Main Files File Attachments Cng Eaap Webinar Training For Institutions Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.146aw.ang.af.mil/portals/42/ANG%20FedTA%20FLYER%20%28146AW%29.jpg" data-lightbox="roadtrip" data-title="Education Tuition Benefits">
+											<img class="card-img v-image ads-img " src="https://www.146aw.ang.af.mil/portals/42/ANG%20FedTA%20FLYER%20%28146AW%29.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDiRLuYIA_-1ZCubXrrXgMbzr0eYasxxv74A';" alt="Education Tuition Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Education Tuition Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://calguard.ca.gov/wp-content/uploads/sites/62/2019/05/CASG.png" data-lightbox="roadtrip" data-title="California State Guard Csg Cal Guard">
+											<img class="card-img v-image ads-img " src="https://calguard.ca.gov/wp-content/uploads/sites/62/2019/05/CASG.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQff3TE2qHu2StkTjirg3-8d3eMcbQ7mNnmDQ';" alt="California State Guard Csg Cal Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">California State Guard Csg Cal Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="O0Z70f2FkWoteM" data-lightbox="roadtrip" data-title="Https Calguard Ca Gov Wp Content Uploads Sites 62 Education Cmd Gi Bill Statement Of Understanding 2020 2021 Pdf">
+											<img class="card-img v-image ads-img " src="O0Z70f2FkWoteM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9VhWRHKWZkkC4Ili87kPBMLgjV5pPWXiofQ';" alt="Https Calguard Ca Gov Wp Content Uploads Sites 62 Education Cmd Gi Bill Statement Of Understanding 2020 2021 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Calguard Ca Gov Wp Content Uploads Sites 62 Education Cmd Gi Bill Statement Of Understanding 2020 2021 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://calguard.ca.gov/wp-content/uploads/sites/62/2019/10/OCP-Official-Photo-Cross-240x300.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9VhWRHKWZkkC4Ili87kPBMLgjV5pPWXiofQ';" alt="Https Calguard Ca Gov Wp Content Uploads Sites 62 Education Cmd Gi Bill Statement Of Understanding 2020 2021 Pdf">
+										<div class="card-body">
+						<h3 class="h5"><b>This veteran benefit program will not cover expenses related to books housing or meals.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>California military department gi bill award program</strong>. 
+								
+																	CMD GI Bill Award Program. 
+																	Department of Veterans Affairs the Post-911 GI Bill is the best option for many servicemembers. 
+																	The California National Guard Education Assistance Award Program covers all or or a portion of costs at selected state universities and community colleges. 
+																	CMD Joint Behavioral Health Office. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Eligible California veterans and qualifying military dependents may be eligible for a waiver of statewide tuition and fees for California State University University of California and any State of California community college. 
+																	Dear Student Parent or Financial Aid Counselor I am happy to announce California Student Aid Commission just introduced dramatic improvements to the WebGrants 4 Students financial aid portal. 
+																	CMD Patriotic Employer Certificate Request. 
+																	This State Grant can pay for up to 100 of the tuition and fees at a University of California California State University or a California Community College. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The CMD GI Bill issues educational awards to qualifying members of the California Army or Air National Guard California State Guard and the California Naval Militia. 
+																	The California National Guard Education Assistance Award Program CNG EAAP has changed to the California Military Department GI BillAward Program CMD GI Bill as of the 2020-2021 academic year The program will remain unchanged for renewal participants who entered the program prior to the 2020-2021 academic year. 
+																	Includes more robust security. 
+																	California AB2722 Student financial aid. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	California Military Department GI Bill Award Program CMD GI BILL January 2020. 
+																	G-1 Civilian Education Branch. 
+																	The California National Guard Education Assistance Award Program issues financial awards to qualifying members of the California Army or Air National Guard and State Military Reserve. 
+																	To be considered for the award you must meet the general cal grant eligibility requirements and complete a FAFSA or CADAA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	California Military Department GI Bill Award Program Overview October 24 2017 If you are an active member in the California National Guard the State Military Reserve or the Naval Militia you may be eligible for a state-funded program designed to provide an educational incentive to improve your skills competencies and abilities. 
+																	Only students who are not awarded a Cal Grant Entitlement award can apply. 
+																	California State Approving Agency for Veterans Education CSAAVE was created for service members veterans and dependents who want to receive GI Bill benefits with the intent of attending college education and job training programs which must be CSAAVE-approved and monitored. 
+																	The California Military Department GI Bill Award Program CMD GI Bill is a State-funded grant designed as an educational incentive to improve skills competencies and abilities for up to 1000 service members as the budget allows who remain active in the California Military Department California Army or Air National Guard the California State Guard formerly the State Military Reserve or the California Naval Militia. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	My relation to the applicant is. 
+																	The CMD GI Bill issues educational awards to qualifying members of the California Army or Air National Guard California State Guard and the California Naval Militia. 
+																	Fleet Week 2020. 
+																	There are several GI Bills but most current military members and recent veterans will fall under the Post-911 GI Bill which was enacted in 2009According to the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	E California Military Department GI Bill awards may be renewed for each new academic year for a maximum of the greater of either 1 four years of full-time equivalent enrollment or 2 the duration for which the qualifying member would otherwise be eligible pursuant to the Cal Grant Program Chapter 17 commencing with Section 69430 if the Adjutant General certifies the qualifying. 
+																	And is compatible with virtually. 
+																	Equal Opportunity and Equal Employment Opportunity. 
+																	The California Military Department GI Bill Award Program CMD GI Bill formerly the California National Guard Education Assistance Award Program CNG EAAP is a State-funded grant for up to 1000 service members in the California Military Department CMD or as many participants as the annual budget will allow. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This State Grant can pay for up to 100 of the tuition. 
+																	Guard members must remain in an active. 
+																	Professor School Counselor Commander Civilian Employer. 
+																	California Military Department GI Bill Award Program If you are an active member in the California National Guard the State Military Reserve or the Naval Militia you may be eligible for a state-funded program designed to provide an educational incentive to improve your skills competencies and abilities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sexual Assault Prevention Response. 
+																	Is easier to navigate. 
+																	California Military Department GI Bill Award Program. 
+																	Current members of the armed forces and veterans may be entitled to education benefits through the Post-911 GI Bill. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is the official website for the California Military Department GI Bill Award Program CMD GI Bill formerly known as the California National Guard Education Assistance Award Program CNG EAAP. 
+																	I understand that the California Military Department GI Bill Award Program is a State- funded grant for California National Guard California State Guard and Naval Militia service members. 
+																	Freedom of Information Act. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://calguard.ca.gov/wp-content/uploads/sites/62/2019/03/mg_coggan2star.png" data-lightbox="roadtrip" data-title="California State Guard Commanding General Cal Guard">
+											<img class="card-img v-image ads-img " src="https://calguard.ca.gov/wp-content/uploads/sites/62/2019/03/mg_coggan2star.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb_Sxkk2cta9gRZ3nzDh87j3Ck0LPO_Nxptg';" alt="California State Guard Commanding General Cal Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">California State Guard Commanding General Cal Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="P9e3HB2ZO12vDM" data-lightbox="roadtrip" data-title="Https Calguard Ca Gov Wp Content Uploads Sites 62 Education Cmd Gi Bill Servicecommitmentacknowledgement Pdf">
+											<img class="card-img v-image ads-img " src="P9e3HB2ZO12vDM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrksg63lwCU1nXCiBpBz50443o-ISermGBpQ';" alt="Https Calguard Ca Gov Wp Content Uploads Sites 62 Education Cmd Gi Bill Servicecommitmentacknowledgement Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Calguard Ca Gov Wp Content Uploads Sites 62 Education Cmd Gi Bill Servicecommitmentacknowledgement Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://calguard.ca.gov/wp-content/uploads/sites/62/2017/11/LOGO_CNG-1.png" data-lightbox="roadtrip" data-title="J 9 Facilities And Infrastructure Cal Guard">
+											<img class="card-img v-image ads-img " src="https://calguard.ca.gov/wp-content/uploads/sites/62/2017/11/LOGO_CNG-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8D1rIRdjHZ6OpYItHex09gzbSYPDoLx1cig';" alt="J 9 Facilities And Infrastructure Cal Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">J 9 Facilities And Infrastructure Cal Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://calguard.ca.gov/wp-content/uploads/sites/62/2019/05/Family-Programs-Logo.png" data-lightbox="roadtrip" data-title="Family Programs Cal Guard">
+											<img class="card-img v-image ads-img " src="https://calguard.ca.gov/wp-content/uploads/sites/62/2019/05/Family-Programs-Logo.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQftp5q4KodaOepx7xYQbLkESL3YZTUTvRLjA';" alt="Family Programs Cal Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Family Programs Cal Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://calguard.ca.gov/wp-content/uploads/sites/62/CDTF/CDTF_Logo.png" data-lightbox="roadtrip" data-title="Cdtf Cal Guard">
+											<img class="card-img v-image ads-img " src="https://calguard.ca.gov/wp-content/uploads/sites/62/CDTF/CDTF_Logo.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSclBh0jscp83fSTBh0gd7s9QionyYIJpfz5A';" alt="Cdtf Cal Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cdtf Cal Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://calguard.ca.gov/wp-content/uploads/sites/62/2018/06/ig_logo.gif" data-lightbox="roadtrip" data-title="Office Of The Inspector General Cal Guard">
+											<img class="card-img v-image ads-img " src="https://calguard.ca.gov/wp-content/uploads/sites/62/2018/06/ig_logo.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzjqrHziI7p4UDSAFLSL6DQZuMGRgaUvO4WQ';" alt="Office Of The Inspector General Cal Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Office Of The Inspector General Cal Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://calguard.ca.gov/wp-content/uploads/sites/62/2019/06/MajorGeneralJones.jpg" data-lightbox="roadtrip" data-title="Air Commander Cal Guard">
+											<img class="card-img v-image ads-img " src="https://calguard.ca.gov/wp-content/uploads/sites/62/2019/06/MajorGeneralJones.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0TtJQp9h3th-jVXcdVCT8OXBUdm85DOpoLg';" alt="Air Commander Cal Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Commander Cal Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="kQ0WbS6VdK_cWM" data-lightbox="roadtrip" data-title="Https Calguard Ca Gov Wp Content Uploads Sites 62 Education Cmd Gi Bill Faqs Pdf">
+											<img class="card-img v-image ads-img " src="kQ0WbS6VdK_cWM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfKJZBe-3nkmi8vYmABZeUqM95RAP5JyABsQ';" alt="Https Calguard Ca Gov Wp Content Uploads Sites 62 Education Cmd Gi Bill Faqs Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Calguard Ca Gov Wp Content Uploads Sites 62 Education Cmd Gi Bill Faqs Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/09/california-state-veterans-benefits.jpg" data-lightbox="roadtrip" data-title="California Veteran S Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/09/california-state-veterans-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXsyuuC6ZH74Ga34yoY-jsWXvfKNygFOF_7w';" alt="California Veteran S Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">California Veteran S Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://calguard.ca.gov/wp-content/uploads/sites/62/2019/10/OCP-Official-Photo-Cross-240x300.jpg" data-lightbox="roadtrip" data-title="Youth And Community Programs Task Force Commander Cal Guard">
+											<img class="card-img v-image ads-img " src="https://calguard.ca.gov/wp-content/uploads/sites/62/2019/10/OCP-Official-Photo-Cross-240x300.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTngast6k06Qgxd87kRaNTn7o9bqNH6XAxTog';" alt="Youth And Community Programs Task Force Commander Cal Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Youth And Community Programs Task Force Commander Cal Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://calguard.ca.gov/wp-content/uploads/sites/62/2020/05/BG-Smiley-DJS-OCP-29May19-240x300.jpg" data-lightbox="roadtrip" data-title="Joint Staff Director Cal Guard">
+											<img class="card-img v-image ads-img " src="https://calguard.ca.gov/wp-content/uploads/sites/62/2020/05/BG-Smiley-DJS-OCP-29May19-240x300.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6fTuLSCNrK5uANpdK-3CwaukjJCfNP3tPvg';" alt="Joint Staff Director Cal Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Joint Staff Director Cal Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://calguard.ca.gov/wp-content/uploads/sites/62/2020/10/Cyber-Dawn.jpg" data-lightbox="roadtrip" data-title="Fleet Week 2020 Cal Guard">
+											<img class="card-img v-image ads-img " src="https://calguard.ca.gov/wp-content/uploads/sites/62/2020/10/Cyber-Dawn.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2tGVow4k3YOGu24jqdl1Bx1M0fXy4VajrCw';" alt="Fleet Week 2020 Cal Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fleet Week 2020 Cal Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://calguard.ca.gov/wp-content/uploads/sites/62/2017/12/PAO-BANNER.jpg" data-lightbox="roadtrip" data-title="Public Affairs Office Cal Guard">
+											<img class="card-img v-image ads-img " src="https://calguard.ca.gov/wp-content/uploads/sites/62/2017/12/PAO-BANNER.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScnThdiARrXWTWwqXgLr7te1iin5KvnIflsg';" alt="Public Affairs Office Cal Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Public Affairs Office Cal Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/do-veterans-get-help-with-funeral-costs.html">Do Veterans Get Help With Funeral Costs</a></li>
+													<li class="list-group-item"><a href="/do-military-police-qualify-for-leosa.html">Do Military Police Qualify For Leosa</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-covid-testing.html">Dod Civilian Covid Testing</a></li>
+													<li class="list-group-item"><a href="/do-police-officers-salute-military.html">Do Police Officers Salute Military</a></li>
+													<li class="list-group-item"><a href="/dod-2020-budget-deal.html">Dod 2020 Budget Deal</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-covid-travel-restrictions.html">Dod Civilian Covid Travel Restrictions</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-benefits-hawaii.html">Dod Civilian Benefits Hawaii</a></li>
+													<li class="list-group-item"><a href="/dod-budget-cuts-2013.html">Dod Budget Cuts 2013</a></li>
+													<li class="list-group-item"><a href="/dod-army-pay-chart.html">Dod Army Pay Chart</a></li>
+													<li class="list-group-item"><a href="/dockers-army-pants.html">Dockers Army Pants</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-creed.html">Dod Civilian Creed</a></li>
+													<li class="list-group-item"><a href="/do-you-get-a-dodge-charger-for-joining-the-army.html">Do You Get A Dodge Charger For Joining The Army</a></li>
+													<li class="list-group-item"><a href="/dod-budget-cuts-2020.html">Dod Budget Cuts 2020</a></li>
+													<li class="list-group-item"><a href="/dod-army-pay-scale.html">Dod Army Pay Scale</a></li>
+													<li class="list-group-item"><a href="/do-state-department-have-military-rank.html">Do State Department Have Military Rank</a></li>
+													<li class="list-group-item"><a href="/do-veterans-qualify-for-pell-grants.html">Do Veterans Qualify For Pell Grants</a></li>
+													<li class="list-group-item"><a href="/do-you-pay-state-taxes-on-military-retirement.html">Do You Pay State Taxes On Military Retirement</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-contractor-jobs-overseas.html">Dod Civilian Contractor Jobs Overseas</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-dependent-id-card.html">Dod Civilian Dependent Id Card</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-discounts.html">Dod Civilian Discounts</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

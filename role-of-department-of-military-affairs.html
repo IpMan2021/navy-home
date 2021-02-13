@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Role Of Department Of Military Affairs - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Role Of Department Of Military Affairs",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/ba/41/87/ba41875769f14605eb463b63f9302c67.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=role+of+department+of+military+affairs",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Role Of Department Of Military Affairs</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Department of Veterans Affairs is headed by the Secretary of Veterans Affairs appointed by the President with the advice and consent of the Senate. Evolving Politico-Security Paradigm in JK. The Department of States Bureau of Political-Military Affairs PM Office of Security Assistance PMSA oversees several security sector assistance programs funded under Title 22 of the US. <br>				
+			</p>
+										<a class="badge badge-success" href="/is-my-spouse-my-dependent.html">is my spouse my dependent</a>
+											<a class="badge badge-danger" href="/is-the-coast-guard-part-of-the-department-of-homeland-security.html">is the coast guard part of the department of homeland security</a>
+											<a class="badge badge-primary" href="/is-army-hrc-website-down.html">is army hrc website down</a>
+											<a class="badge badge-secondary" href="/is-there-a-travel-ban-due-to-covid.html">is there a travel ban due to covid</a>
+											<a class="badge badge-light" href="/is-there-a-vet-hotline.html">is there a vet hotline</a>
+											<a class="badge badge-danger" href="/is-navy-department-of-defense.html">is navy department of defense</a>
+											<a class="badge badge-dark" href="/indian-military-haircut.html">indian military haircut</a>
+											<a class="badge badge-dark" href="/jcpenney-online-military-discount.html">jcpenney online military discount</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you have come to pay a visit to the ideal blog.  Our site gives you suggestions for seeing the maximum quality video and picture content, search and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, especially Youtube, therefore we recommend this video that you view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b1/a3/70/b1a3703fe4203426919b04137bdc1fb0.jpg" data-lightbox="roadtrip" data-title="Year End Review 2019 Ministry Of Defence Defence Ministry Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b1/a3/70/b1a3703fe4203426919b04137bdc1fb0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLbt5TQ7d99d60TWNx4WAMIIsqTwwythp0rQ';" alt="Year End Review 2019 Ministry Of Defence Defence Ministry Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Year End Review 2019 Ministry Of Defence Defence Ministry Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/a3/31/75a33133929cb023ddb277763babc108.jpg" data-lightbox="roadtrip" data-title="What The Va Says About Particulate Matter With Images Department Of Veterans Affairs Veterans Affairs Sayings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/a3/31/75a33133929cb023ddb277763babc108.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx8NdckkRSc4OcdGlrigvynTOdG0l1BJ8rpQ';" alt="What The Va Says About Particulate Matter With Images Department Of Veterans Affairs Veterans Affairs Sayings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What The Va Says About Particulate Matter With Images Department Of Veterans Affairs Veterans Affairs Sayings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/41/87/ba41875769f14605eb463b63f9302c67.jpg" data-lightbox="roadtrip" data-title="Pin By Larry Sparks On U S Navy Navy Job Title Department Of Veterans Affairs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/41/87/ba41875769f14605eb463b63f9302c67.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRLXW09IK3u__O3R7qA6_s_QwSD43W5kb5Jg';" alt="Pin By Larry Sparks On U S Navy Navy Job Title Department Of Veterans Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Larry Sparks On U S Navy Navy Job Title Department Of Veterans Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/17/30/3b1730f64fdfbba05b49a92eb8c99b65.jpg" data-lightbox="roadtrip" data-title="Women In Combat One Newspaper S Photographic Tribute Those People Women In Combat Military Military Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/17/30/3b1730f64fdfbba05b49a92eb8c99b65.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThsND5XE_0xlf7exLR-lm5LqfWtTrpUJenwQ';" alt="Women In Combat One Newspaper S Photographic Tribute Those People Women In Combat Military Military Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women In Combat One Newspaper S Photographic Tribute Those People Women In Combat Military Military Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/32/cd/0d32cdb429af2602c2efaa3c4a951673.jpg" data-lightbox="roadtrip" data-title="Pin By Alisha On Xm In 2020 Advice Management Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/32/cd/0d32cdb429af2602c2efaa3c4a951673.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxDSXoSWNKHzvYEVXHxFVvj8xmpmlTAStYPA';" alt="Pin By Alisha On Xm In 2020 Advice Management Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Alisha On Xm In 2020 Advice Management Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/e3/33/0be333cbb1835196d9254d8a00cd65d0.jpg" data-lightbox="roadtrip" data-title="Army Ranger Dies During Parachute Training After Surviving 8 Deployments Army Rangers Parachute Training Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/e3/33/0be333cbb1835196d9254d8a00cd65d0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjMmo8acHbLhvxgOVqnieNDOm37Oz31pal2w';" alt="Army Ranger Dies During Parachute Training After Surviving 8 Deployments Army Rangers Parachute Training Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Ranger Dies During Parachute Training After Surviving 8 Deployments Army Rangers Parachute Training Army</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/3b/17/30/3b1730f64fdfbba05b49a92eb8c99b65.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjMmo8acHbLhvxgOVqnieNDOm37Oz31pal2w';" alt="Army Ranger Dies During Parachute Training After Surviving 8 Deployments Army Rangers Parachute Training Army">
+										<div class="card-body">
+						<h3 class="h5"><b>For further information please contact helpdeskk4dinfo.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Role of department of military affairs</strong>. 
+								
+																	The Office of Military Affairs OMA works to deploy the most appropriate and effective military capability in peacekeeping missions. 
+																	Department of Veterans Affairs The Department of Veterans Affairs runs programs benefiting veterans and members of their families. 
+																	Records Request Kentucky National Guard The Kentucky National Guard has dual role with a federal state mission providing support to the Commonwealth the Nation both here and abroad. 
+																	The Modi government Tuesday announced the creation of a new Department of Military Affairs DMA in the defence ministry. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	One was the Military Member who supervised all administrative and financial matters. 
+																	The new Chief of Defence Staff CDS will serve as the secretary of this department but this will have no bearing on the power and position of the secretary of defence ThePrint has learnt. 
+																	ROLE OF DEPARTMENT OF MILITARY AFFAIRS IN MILITARY TRANSFORMATION. 
+																	Helpdesk Report National Security Office responsibilities and functions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The mission of the Department of Military and Veterans Affairs is to provide trained and ready forces prepared for rapid response to a wide range of civil and military operations while providing exemplary services to citizens and Veterans of New Jersey. 
+																	Emergency Management Mitigation Preparedness Response Recovery to Protect the Lives Environment Property of the People. 
+																	The Secretary of. 
+																	This invitation is also open to all continuing learners and students of education support in 2020 those who are currently approved and produced with support for. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Kentucky Department of Military Affairs Menu. 
+																	Ben attended the Royal Military Academy Sandhurst and Millfield School in Somerset. 
+																	Apart from the above the mandate of the Department of Military Affairs will include the following areas. 
+																	Previously known as the Department for Peacekeeping Operations DPKO it was created on 1 January 2019 as part of a restructuring of the UNs peace and security apparatus. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Department of Peace Operations DPO is a department of the United Nations charged with the planning preparation management and direction of UN peacekeeping operations. 
+																	Evolving Politico-Security Paradigm in JK. 
+																	Two members in the Council were responsible for military affairs. 
+																	The Military Affairs Commission MAC serves a critical mission in the State of Arizona to ensure that the missions of federal military installations located in Arizona are protected and can meet any future need that this country faces. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military will continue to play a vital role in securing the homeland through military missions overseas and by executing homeland defense and civil support missions and supporting emergency preparedness planning activities. 
+																	The departments of the Government of the United Kingdom are the principal units through which it exercises executive authorityA department is composed of employed officials known as civil servants and is politically accountable through a ministerMost major departments are headed by a secretary of state who sits in the cabinet and typically supported by a team of junior ministers. 
+																	The Military Department was abolished in March 1906 and was replaced by two separate departments. 
+																	Ben Wallace was appointed Secretary of State for Defence on 24 July 2019. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Centre adopts an inter-disciplinary approach to various issues that impinge upon Indias national security in general and the armed forces in particular. 
+																	The Centre for Military Affairs comprises of a mix of serving officers of the Indian Armed Forces and civilian experts. 
+																	Foreign Military Financing FMF International Military Education and Training IMET and the Peacekeeping Operations PKO account. 
+																	COVID-19 Information For Veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department for Environment Food and Rural Affairs resource accounts 2007 to 2008 28 July 2008 Action taken by Government to encourage the conservation of water. 
+																	The prominent role of the Department of Veterans Affairs and its joined up approach to veteran welfare are such that they have been deemd to distinguish the US response to veteran homelessness internationally. 
+																	The core task of OMA is to provide military expertise to the. 
+																	Helpdesk reports are commissioned by the UK Department for International Development and other Government departments but the views and opinions expressed do not necessarily reflect those of DFID the UK Government K4D or any other contributing organisation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Barrister Bashani talks on the issue of Situation in PoK and GB at the Webinar organised by USI on Evolving Politico-Security Paradigm in JK on 15 January 2021. 
+																	The department invites Military Veterans and their dependents who wish to apply for education support benefit for the first time and intending to study during the 2021 academic year to apply for the DMV Education Support benefit. 
+																	The other was the commander-in-chief who was responsible for all operational matters. 
+																	April 2004 to March 2008. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The DPO retains the core functions and. 
+																	Lt Gen Ranbir Singh. 
+																	Promoting jointness in procurement training and staffing for the Services through joint planning and integration of their requirements. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d1/bd/f3/d1bdf345e16eedaec02f3364981937e8.jpg" data-lightbox="roadtrip" data-title="U S Army 1st Lt Dat Dang And Sgt Maurice Wendorf Of The 98th Expeditionary Signal Battalion Discuss The Functions Of A Suppl Technology Job Vets New Program">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d1/bd/f3/d1bdf345e16eedaec02f3364981937e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSgGHoXa2I_Uw4q7rlS9TQh65Ze-Dl28rYmA';" alt="U S Army 1st Lt Dat Dang And Sgt Maurice Wendorf Of The 98th Expeditionary Signal Battalion Discuss The Functions Of A Suppl Technology Job Vets New Program">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army 1st Lt Dat Dang And Sgt Maurice Wendorf Of The 98th Expeditionary Signal Battalion Discuss The Functions Of A Suppl Technology Job Vets New Program</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/75/f1/e475f1ec5cff6b600e525c5455116451.jpg" data-lightbox="roadtrip" data-title="Apple Google Microsoft And Mozilla Unite To Ban Kazakhstan S Citizen Tracking Certificate In 2020 Internet Traffic Microsoft Citizen">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/75/f1/e475f1ec5cff6b600e525c5455116451.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNfO8oLJITYxn5wjVz0JssDmYZ6Uz7pYuXSA';" alt="Apple Google Microsoft And Mozilla Unite To Ban Kazakhstan S Citizen Tracking Certificate In 2020 Internet Traffic Microsoft Citizen">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Apple Google Microsoft And Mozilla Unite To Ban Kazakhstan S Citizen Tracking Certificate In 2020 Internet Traffic Microsoft Citizen</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/cb/b0/d0cbb0f8c74216a612676927af6eba2b.jpg" data-lightbox="roadtrip" data-title="Arvn Ranger Advisor 1965 Uniforms U S Militaria Forum In 2020 Vietnam War Vietnam War Photos Vietnam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/cb/b0/d0cbb0f8c74216a612676927af6eba2b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSACN5wh6UBcElwkUCF94dCLtkKnGTNjsbM0w';" alt="Arvn Ranger Advisor 1965 Uniforms U S Militaria Forum In 2020 Vietnam War Vietnam War Photos Vietnam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Arvn Ranger Advisor 1965 Uniforms U S Militaria Forum In 2020 Vietnam War Vietnam War Photos Vietnam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/44/7c/ef447ca2d071fa6cc697604aeca9a6c5.png" data-lightbox="roadtrip" data-title="Education Training Benefits For Veterans The Department Of Veterans Affairs Provides Vari Veteran Jobs Education And Training Department Of Veterans Affairs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/44/7c/ef447ca2d071fa6cc697604aeca9a6c5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTULdF6bGzoVas--9_ALkTKevQXGPesQo-8Tw';" alt="Education Training Benefits For Veterans The Department Of Veterans Affairs Provides Vari Veteran Jobs Education And Training Department Of Veterans Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Education Training Benefits For Veterans The Department Of Veterans Affairs Provides Vari Veteran Jobs Education And Training Department Of Veterans Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/9e/0c/059e0cebeeed811f29704933c8c38887.jpg" data-lightbox="roadtrip" data-title="Nov 11 Veterans Day Poster Via Us Dept Of Veterans Affairs Honoring All Who Served In War Veterans Day Images Veterans Day Thank You Veterans Day Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/9e/0c/059e0cebeeed811f29704933c8c38887.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStyQKfGCK8q2ZiM16QobVFegE5JSEyTPQAHg';" alt="Nov 11 Veterans Day Poster Via Us Dept Of Veterans Affairs Honoring All Who Served In War Veterans Day Images Veterans Day Thank You Veterans Day Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nov 11 Veterans Day Poster Via Us Dept Of Veterans Affairs Honoring All Who Served In War Veterans Day Images Veterans Day Thank You Veterans Day Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/2a/dc/b3/2adcb3be11e6ced089e03f6e2280dfd3.jpg" data-lightbox="roadtrip" data-title="Military To Civilian Resume Sample In 2020 Resume Resume Examples Financial Aid For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/2a/dc/b3/2adcb3be11e6ced089e03f6e2280dfd3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2ztG6ysLM0sdgTW-Ue0M6JJ7x3J6wOoJ9aw';" alt="Military To Civilian Resume Sample In 2020 Resume Resume Examples Financial Aid For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military To Civilian Resume Sample In 2020 Resume Resume Examples Financial Aid For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/e8/90/bde89017d9306d18b0efa3488de1e4da.jpg" data-lightbox="roadtrip" data-title="Great Va Case Study On Tech And Telehealth Veterans Affairs Department Of Veterans Affairs Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/e8/90/bde89017d9306d18b0efa3488de1e4da.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg9s40W9Aa-9CRCe26RvzapioRthM5Ow12CQ';" alt="Great Va Case Study On Tech And Telehealth Veterans Affairs Department Of Veterans Affairs Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Great Va Case Study On Tech And Telehealth Veterans Affairs Department Of Veterans Affairs Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/e2/02/13e2023cde47cd5aa23a8898001ec989.png" data-lightbox="roadtrip" data-title="5 Patriotic Options For Veterans Day Or Any Patriotic Holiday Army Veteran Military Veterans Department Of Veterans Affairs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/e2/02/13e2023cde47cd5aa23a8898001ec989.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdP8o1EOvTY7fAYzCAFTE_09hZiVWBma0UTw';" alt="5 Patriotic Options For Veterans Day Or Any Patriotic Holiday Army Veteran Military Veterans Department Of Veterans Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Patriotic Options For Veterans Day Or Any Patriotic Holiday Army Veteran Military Veterans Department Of Veterans Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a0/2a/81/a02a81d49668f28a5245b3047172097e.jpg" data-lightbox="roadtrip" data-title="Army Acronyms Va Department Of Veterans Affairs Us Army Training Army Wife Army Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a0/2a/81/a02a81d49668f28a5245b3047172097e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfq9No9SxNXfDPrLG_-0D7ID5xzkVcUhcC4Q';" alt="Army Acronyms Va Department Of Veterans Affairs Us Army Training Army Wife Army Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Acronyms Va Department Of Veterans Affairs Us Army Training Army Wife Army Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e0/49/3b/e0493b3dfad796967135d5055c0443d9--military-service-veterans-day.jpg" data-lightbox="roadtrip" data-title="The U S Government Honors All Military Service Veterans By Providing First Rate Health Benefits And Services It Health Administration Veterans Affairs Public">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e0/49/3b/e0493b3dfad796967135d5055c0443d9--military-service-veterans-day.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2459zhvAmGg5aRAWHJdSk5x3x8tsfv2jVEw';" alt="The U S Government Honors All Military Service Veterans By Providing First Rate Health Benefits And Services It Health Administration Veterans Affairs Public">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The U S Government Honors All Military Service Veterans By Providing First Rate Health Benefits And Services It Health Administration Veterans Affairs Public</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/af/21/5f/af215f6bf6a89ad05d225304f07f4e5d.jpg" data-lightbox="roadtrip" data-title="Army Memorandum Template 4 Memorandum Template Memo Template Paper Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/af/21/5f/af215f6bf6a89ad05d225304f07f4e5d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcYAZyhVz646mjPal8iiZTazTlnqqmCAJtUA';" alt="Army Memorandum Template 4 Memorandum Template Memo Template Paper Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Memorandum Template 4 Memorandum Template Memo Template Paper Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/2a/23/612a23309b854dab37f8ad50845bf172.jpg" data-lightbox="roadtrip" data-title="Pin On Youth Challenge Program">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/2a/23/612a23309b854dab37f8ad50845bf172.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-hEiol1l4gQeJ9DO7pR-yOLc_roUp66QcmA';" alt="Pin On Youth Challenge Program">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Youth Challenge Program</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/d5/b6/e4d5b611ea241586cb2c4aa5f6127dd8.jpg" data-lightbox="roadtrip" data-title="Veterans Administration Patchwork System Eats Most Of 4b Tech Budget Veterans Administration Department Of Veterans Affairs Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/d5/b6/e4d5b611ea241586cb2c4aa5f6127dd8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwd3vjz_NVvV3D2Z6eouAfbaZ3NwCNZh-9Uw';" alt="Veterans Administration Patchwork System Eats Most Of 4b Tech Budget Veterans Administration Department Of Veterans Affairs Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Administration Patchwork System Eats Most Of 4b Tech Budget Veterans Administration Department Of Veterans Affairs Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/hr-block-military-login.html">Hr Block Military Login</a></li>
+													<li class="list-group-item"><a href="/hr-for-the-army.html">Hr For The Army</a></li>
+													<li class="list-group-item"><a href="/hr-metrics-army.html">Hr Metrics Army</a></li>
+													<li class="list-group-item"><a href="/hr-army-bharti-2019.html">Hr Army Bharti 2019</a></li>
+													<li class="list-group-item"><a href="/hr-playbook-army.html">Hr Playbook Army</a></li>
+													<li class="list-group-item"><a href="/how-to-retire-from-the-federal-government-csrs.html">How To Retire From The Federal Government Csrs</a></li>
+													<li class="list-group-item"><a href="/hr-career-in-the-army.html">Hr Career In The Army</a></li>
+													<li class="list-group-item"><a href="/how-to-register-for-military-discount-at-home-depot.html">How To Register For Military Discount At Home Depot</a></li>
+													<li class="list-group-item"><a href="/hr-jobs-in-pakistan-army.html">Hr Jobs In Pakistan Army</a></li>
+													<li class="list-group-item"><a href="/how-to-look-up-wwii-military-records.html">How To Look Up Wwii Military Records</a></li>
+													<li class="list-group-item"><a href="/how-to-military-training.html">How To Military Training</a></li>
+													<li class="list-group-item"><a href="/hr-jobs-in-pak-army.html">Hr Jobs In Pak Army</a></li>
+													<li class="list-group-item"><a href="/how-to-request-military-records-for-deceased.html">How To Request Military Records For Deceased</a></li>
+													<li class="list-group-item"><a href="/how-to-qualify-as-a-military-veteran.html">How To Qualify As A Military Veteran</a></li>
+													<li class="list-group-item"><a href="/hr-army.html">Hr Army</a></li>
+													<li class="list-group-item"><a href="/hr-department-army.html">Hr Department Army</a></li>
+													<li class="list-group-item"><a href="/hr-credentialing-army.html">Hr Credentialing Army</a></li>
+													<li class="list-group-item"><a href="/hr-administrator-army.html">Hr Administrator Army</a></li>
+													<li class="list-group-item"><a href="/hr-advisor-air-force.html">Hr Advisor Air Force</a></li>
+													<li class="list-group-item"><a href="/how-to-report-bullying-in-the-army.html">How To Report Bullying In The Army</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

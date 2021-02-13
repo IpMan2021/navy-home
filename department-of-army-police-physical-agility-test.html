@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Department Of Army Police Physical Agility Test - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Department Of Army Police Physical Agility Test",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/474x/0c/20/a8/0c20a861e79875396c16da51b5356bfe.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=department+of+army+police+physical+agility+test",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Department Of Army Police Physical Agility Test</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Physical Fitness Test The Recruitment Section administers the Physical Agility Test PAT to all recruited applicants for sworn position. The police agility test is also referred to as the physical ability test physical performance test or fitness test. Video covers 4 stations including 1 sit ups 2 push ups 3 obstaclerunning course 4 b. <br>				
+			</p>
+										<a class="badge badge-info" href="/what-are-some-military-codes.html">what are some military codes</a>
+											<a class="badge badge-warning" href="/what-are-good-names-for-a-german-shepherd.html">what are good names for a german shepherd</a>
+											<a class="badge badge-dark" href="/what-are-the-department-in-us-army.html">what are the department in us army</a>
+											<a class="badge badge-info" href="/wechat-zip.html">wechat zip</a>
+											<a class="badge badge-warning" href="/wechat.html">wechat</a>
+											<a class="badge badge-success" href="/what-are-the-divisions-of-the-us-army.html">what are the divisions of the us army</a>
+											<a class="badge badge-danger" href="/what-do-army-dogs-eat.html">what do army dogs eat</a>
+											<a class="badge badge-light" href="/what-are-the-ranks-of-the-army.html">what are the ranks of the army</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you've come to visit the right site.  Our website provides you with suggestions for viewing the highest quality video and picture content, search and find more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, so we recommend this movie for you to view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ad/53/53/ad535353a934b59143239b2e85e5fe07.jpg" data-lightbox="roadtrip" data-title="Pin On Military First Responders">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ad/53/53/ad535353a934b59143239b2e85e5fe07.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-CS7IeAXjY0aaNxPRuMleZp7J-2tTrfME6g';" alt="Pin On Military First Responders">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military First Responders</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/db/44/07/db4407f2861ba8f7b6253dd47178a66c.jpg" data-lightbox="roadtrip" data-title="Police Officer Workout Top 10 Exercises Every Police Officer Should Do Police Workout Police Workout Training Police">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/db/44/07/db4407f2861ba8f7b6253dd47178a66c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOpjFAwOpLoj4wLIJHeFbA0mcHoelBJxu26A';" alt="Police Officer Workout Top 10 Exercises Every Police Officer Should Do Police Workout Police Workout Training Police">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Police Officer Workout Top 10 Exercises Every Police Officer Should Do Police Workout Police Workout Training Police</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/b0/70/42b070d1cc51ef0ab7ff420e6b0a1195.jpg" data-lightbox="roadtrip" data-title="Police Officer Workout Routines To Get You In Service Shape Police Workout Police Workout Training Police Academy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/b0/70/42b070d1cc51ef0ab7ff420e6b0a1195.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8PwhuXVt8vKx5Hp6Ko0jZnTXRcCW1HXhAqw';" alt="Police Officer Workout Routines To Get You In Service Shape Police Workout Police Workout Training Police Academy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Police Officer Workout Routines To Get You In Service Shape Police Workout Police Workout Training Police Academy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/fb/44/13fb44ce3d96d0851f7baeea49dff3c9.jpg" data-lightbox="roadtrip" data-title="Police Ranks Law Enforcement Careers Law Enforcement Police">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/fb/44/13fb44ce3d96d0851f7baeea49dff3c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4PzIZqjs-Vh-kQ6RCkbW_S_6-zWaoD80vNA';" alt="Police Ranks Law Enforcement Careers Law Enforcement Police">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Police Ranks Law Enforcement Careers Law Enforcement Police</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/8d/49/e58d494646f589c8a5b122c942f057c2.jpg" data-lightbox="roadtrip" data-title="Pin On Amtrakapd Amtrak Police Department">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/8d/49/e58d494646f589c8a5b122c942f057c2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwTm2I48BbW4kPKMEw1a4WXajwZ8ZqzcP4DQ';" alt="Pin On Amtrakapd Amtrak Police Department">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Amtrakapd Amtrak Police Department</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/38/db/b038db229ee70bfda8eed870f41abaff.jpg" data-lightbox="roadtrip" data-title="Pin On Police Military Preparation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/38/db/b038db229ee70bfda8eed870f41abaff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFeVUB8CyypbY6yuKdZYU8xQj1gNGJGzNnsA';" alt="Pin On Police Military Preparation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Police Military Preparation</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/b0/38/db/b038db229ee70bfda8eed870f41abaff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFeVUB8CyypbY6yuKdZYU8xQj1gNGJGzNnsA';" alt="Pin On Police Military Preparation">
+										<div class="card-body">
+						<h3 class="h5"><b>Officer Bart Child 29 and another officer were on the.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Department of army police physical agility test</strong>. 
+								
+																	Sample of Department of the Army civilian police-continued page 13 Figure 61. 
+																	The Asheville Police Departments pre-hire physical agility test includes a push-up test sit-up test 300-meter sprint and 15 mile run. 
+																	Sample of Department of the Army civilian police credentials page 12 Figure 52. 
+																	1 Physical Agility Test PAT Requirements 1. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The greatest strength of the Garden Grove Police Department is the quality of our staff and the training talent and commitment they bring to providing superior public service. 
+																	Candidates can be required to take and pass a physical fitness test. 
+																	The test consists of the following tasks. 
+																	American Council of Education ACE with current credit recommendations of 10 semester hours Effective Sept 2011. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The test is an electronically timed test and requires maximum speed and effort from applicants to negotiate several traffic cones. 
+																	It is an initial Army civilian police field certification course designed to enable DADoD Law Enforcement Agencies to better perform their Law Enforcement Antiterrorism Physical Security and Force Protection missions. 
+																	Internal Control Evaluation page 35 Figure List Figure 51. 
+																	WSMR Directorate of Emergency Services In accordance with AR 190-56 The Army Civilian Police and Security Guard Program dated 15 October 2009 and AMCPE-S 190 Physical Agility Testing for. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is offered by all police departments and is supposed to measure the ability of a person to perform the rigors of police work. 
+																	Passing this test indicates the applicant possesses the minimum physical ability level to display hisher trainability while in the Academy. 
+																	Push-Ups Sit-Ups 15 Mile Run ANNE ARUNDEL COUNTY POLICE DEPARTMENT. 
+																	Department of the Army Civilian Police officers and military police personnel respond to all calls for law enforcement assistance that take place within the installation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Physical Ability Test page 34 E. 
+																	College Park GA Police Departments physical agility test. 
+																	A Department of Army civilian police officer died Thursday morning while running as part of a physical agility test according to KOLD-TV. 
+																	The Physical Agility Test PAT is a critical element on my civilian performance plan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of the Army Civilian Police officers and military police personnel respond to all calls for law enforcement assistance that take place within the installation. 
+																	It is necessary to define and measure the physical abilities required of police work in a manner that is objective practical and non-discriminatory. 
+																	Accredited through three agencies. 
+																	This test is based on the Agility Test developed by the San Jose Police Department San Jose California. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Self-Evaluation Form The Pasadena Police Department administers a Physical Agility Test PAT during the application process. 
+																	POLICE OFFICER PHYSICAL AGILITY TEST The Pasadena Police Departments Police Officer Physical Agility Test simulates and measures an officers physical ability to respond to critical incidents apprehend suspects and potentially control prisoners. 
+																	Back to Top. 
+																	Sample of specifications for the DACP badge and hat insignia page 21. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Garden Grove is a great place to live and work and I invite you to see what opportunities are available here and apply for one of the open recruitment positions below. 
+																	I understand the test requires me to run 15 miles 241 km in 1617 minutes execute 32 push-ups run 300 meters in 66 seconds perform the Illinois Agility test in 181 seconds and perform a vertical jump of 165 inches. 
+																	This Illinois Agility test assesses an applicants speed and athletic agility. 
+																	If the crime is found to be a major felony then the matter is generally referred to the special agents of the applicable military investigative agency CID Army Counterintelligence NCIS OSI FBI etc. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This test could take the form of the same type of test that is issued to military members as in the case of Department of the Army officers or the so-called Illinois Agility Test a type of obstacle course as in the case of some Department of the Navy officers. 
+																	Thank you for considering us and I wish you all. 
+																	The Physical Agility Test will evaluate your performance level in the following physical tasks and are based upon your Age and Gender. 
+																	Candidates must also pass the state-mandated Police Officer Physical Agility Test or POPAT in order to graduate Basic Law Enforcement Training or BLET. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Physical Agility Test is administered to the applicant by the Academy Instructors. 
+																	The APD gives you a quick look at the physical agility portion of the training center for recruits. 
+																	If the crime is found to be a major felony then the matter is generally referred to the special agents of the applicable military investigative agency CID Army Counterintelligence NCIS OSI FBI etc. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/72/dc/7972dccc21cb2acd712fcf4a123c788f.jpg" data-lightbox="roadtrip" data-title="Muscle Memory Is Everything You Respond How You Train Train Smart Police Humor Cops Humor Police Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/72/dc/7972dccc21cb2acd712fcf4a123c788f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6GUtcHsHzGB_sgGCFRLBhB8dpWdz8kfH3GQ';" alt="Muscle Memory Is Everything You Respond How You Train Train Smart Police Humor Cops Humor Police Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Muscle Memory Is Everything You Respond How You Train Train Smart Police Humor Cops Humor Police Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/26/a8/b826a89f91e4bff8c4d8cf6399545f41.jpg" data-lightbox="roadtrip" data-title="Pin On Military Tactical Fitness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/26/a8/b826a89f91e4bff8c4d8cf6399545f41.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTluOZ7IK5PL0dVTyEmrhaFaB1RCRiLPPfpUA';" alt="Pin On Military Tactical Fitness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Tactical Fitness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/d1/85/6c/d1856c7e9eec6d7c056f6858087df211.jpg" data-lightbox="roadtrip" data-title="How To Make A Policeman Hat Out Of Paper Ehow Police Costume Kids Kids Police Officer Costume Policeman Costume Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/d1/85/6c/d1856c7e9eec6d7c056f6858087df211.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWCpvpwFgAd5-ECwo-AboaGE9mSRmbfR2krQ';" alt="How To Make A Policeman Hat Out Of Paper Ehow Police Costume Kids Kids Police Officer Costume Policeman Costume Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Make A Policeman Hat Out Of Paper Ehow Police Costume Kids Kids Police Officer Costume Policeman Costume Kids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/ea/41/75/ea4175dda2d18113ed6944c7e9411fd3.jpg" data-lightbox="roadtrip" data-title="Pin On Police">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/ea/41/75/ea4175dda2d18113ed6944c7e9411fd3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxYmS-2u4CjPuSkU-LM5IV9ddZ3ikcGxbTWA';" alt="Pin On Police">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Police</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/0c/20/a8/0c20a861e79875396c16da51b5356bfe.jpg" data-lightbox="roadtrip" data-title="Pin On Military Diet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/0c/20/a8/0c20a861e79875396c16da51b5356bfe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSR9bIxVyCGV4NheJUbPDWLXlKqUBxU4jMZA';" alt="Pin On Military Diet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Diet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/72/fe/fa72fe2d540ba749cdafe565879e6be1.jpg" data-lightbox="roadtrip" data-title="Policeman Prayers Police Workout Police Officer Jobs Police">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/72/fe/fa72fe2d540ba749cdafe565879e6be1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvR6vhZBVrjTS3xqPk8rvfGppOkBP7RAby2g';" alt="Policeman Prayers Police Workout Police Officer Jobs Police">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Policeman Prayers Police Workout Police Officer Jobs Police</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/97/4e/cf974e5a64db39e83ac61ad9c67e0c74.jpg" data-lightbox="roadtrip" data-title="Can You Be Arrested Running From Police Police Officer Requirements Law Enforcement Jobs Police Workout">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/97/4e/cf974e5a64db39e83ac61ad9c67e0c74.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL3BS7swSTGJinvELEFYTfPZn1m2-Z15oM1A';" alt="Can You Be Arrested Running From Police Police Officer Requirements Law Enforcement Jobs Police Workout">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can You Be Arrested Running From Police Police Officer Requirements Law Enforcement Jobs Police Workout</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/64/f5/0864f54612b0163b55f39c8271169f8b.jpg" data-lightbox="roadtrip" data-title="Pin On Fitness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/64/f5/0864f54612b0163b55f39c8271169f8b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmJ_sv-yqwxB_HPj-XzH4ty6mXd8IKfTzH0A';" alt="Pin On Fitness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Fitness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/08/09/060809b1dddb4340869e4673903b4e4c.jpg" data-lightbox="roadtrip" data-title="Pin On Amtrakapd Amtrak Police Department">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/08/09/060809b1dddb4340869e4673903b4e4c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlS9fJwTVj0aH9Y8zdLt0DtHtm8Iws9oYyFw';" alt="Pin On Amtrakapd Amtrak Police Department">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Amtrakapd Amtrak Police Department</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9c/7b/58/9c7b58d014a80d8899b8712646cfc6f2.jpg" data-lightbox="roadtrip" data-title="Pin On Fitness Sets Full Body">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9c/7b/58/9c7b58d014a80d8899b8712646cfc6f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaEQavKyWHAs9rBEjdTQ5bxE2y2Zp-VcCysA';" alt="Pin On Fitness Sets Full Body">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Fitness Sets Full Body</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/91/8f/5f918f27bf86a03f19361eb3c536abfb.jpg" data-lightbox="roadtrip" data-title="How To Get Physically Fit For The Police Academy Livestrong Com Police Workout Police Academy Training Police Officer Requirements">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/91/8f/5f918f27bf86a03f19361eb3c536abfb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiUJOkiwwzRW5ogicmoA5y972QnaVbgxLOSQ';" alt="How To Get Physically Fit For The Police Academy Livestrong Com Police Workout Police Academy Training Police Officer Requirements">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Get Physically Fit For The Police Academy Livestrong Com Police Workout Police Academy Training Police Officer Requirements</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/13/90/1d1390ffd15d1eae3b19a4fb8ce75327.jpg" data-lightbox="roadtrip" data-title="Tuesday May 6 Houston Police Department Houston Police Job Fair">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/13/90/1d1390ffd15d1eae3b19a4fb8ce75327.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHwN49dPalKlKZ0P5_9oD-OlvlhaxFx-14qg';" alt="Tuesday May 6 Houston Police Department Houston Police Job Fair">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tuesday May 6 Houston Police Department Houston Police Job Fair</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/84/5e/e2845ee97765ee4eafc505f462f9f20c.jpg" data-lightbox="roadtrip" data-title="Pin On Bad Guys">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/84/5e/e2845ee97765ee4eafc505f462f9f20c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-nIsF7tvwVVori82qg5ORP5xhI21cxxXQMw';" alt="Pin On Bad Guys">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Bad Guys</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/bonus-army-lesson-plan.html">Bonus Army Lesson Plan</a></li>
+													<li class="list-group-item"><a href="/call-the-veterans-crisis-line.html">Call The Veterans Crisis Line</a></li>
+													<li class="list-group-item"><a href="/budget-defense-maroc-2021.html">Budget Defense Maroc 2021</a></li>
+													<li class="list-group-item"><a href="/can-civilians-rent-military-housing.html">Can Civilians Rent Military Housing</a></li>
+													<li class="list-group-item"><a href="/british-directorate-of-military-intelligence.html">British Directorate Of Military Intelligence</a></li>
+													<li class="list-group-item"><a href="/british-army-divisions-ww1.html">British Army Divisions Ww1</a></li>
+													<li class="list-group-item"><a href="/can-dod-civilians-buy-disney-tickets-at-shades-of-green.html">Can Dod Civilians Buy Disney Tickets At Shades Of Green</a></li>
+													<li class="list-group-item"><a href="/branches-of-the-military-lesson-plan.html">Branches Of The Military Lesson Plan</a></li>
+													<li class="list-group-item"><a href="/budget-for-the-department-of-defense.html">Budget For The Department Of Defense</a></li>
+													<li class="list-group-item"><a href="/can-dod-civilians-shop-at-the-navy-exchange.html">Can Dod Civilians Shop At The Navy Exchange</a></li>
+													<li class="list-group-item"><a href="/british-army-lesson-plan.html">British Army Lesson Plan</a></li>
+													<li class="list-group-item"><a href="/california-military-department-adjutant-general.html">California Military Department Adjutant General</a></li>
+													<li class="list-group-item"><a href="/brooke-army-medical-center-public-affairs.html">Brooke Army Medical Center Public Affairs</a></li>
+													<li class="list-group-item"><a href="/british-army-divisions-2020.html">British Army Divisions 2020</a></li>
+													<li class="list-group-item"><a href="/can-dod-civilian-spouse-id-card.html">Can Dod Civilian Spouse Id Card</a></li>
+													<li class="list-group-item"><a href="/can-dod-civilians-shop-at-the-commissary.html">Can Dod Civilians Shop At The Commissary</a></li>
+													<li class="list-group-item"><a href="/can-civilians-shop-at-exchange.html">Can Civilians Shop At Exchange</a></li>
+													<li class="list-group-item"><a href="/can-a-dod-civilian-join-usaa.html">Can A Dod Civilian Join Usaa</a></li>
+													<li class="list-group-item"><a href="/british-army-hr-email-address.html">British Army Hr Email Address</a></li>
+													<li class="list-group-item"><a href="/can-dod-civilians-travel-to-mexico.html">Can Dod Civilians Travel To Mexico</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

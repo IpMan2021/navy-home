@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Defense Spending Bill 2021 Votes - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Defense Spending Bill 2021 Votes",
+  "datePublished": "2021-02-13",
+  "image": "https://image.cnbcfm.com/api/v1/image/106810763-1607957193131-gettyimages-1229929066-CONGRESS_STIMULUS.jpeg?v=1607957275&amp;w=1600&amp;h=900",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=defense+spending+bill+2021+votes",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Defense Spending Bill 2021 Votes</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">WASHINGTON House and Senate lawmakers reached a deal this week on the 2021 National Defense Authorization Act teeing up a 7405 billion defense spending and policy bill for votes in both. This keeps Section 230 in place. This week on the Senate floor Mitch McConnell wants to vote to. <br>				
+			</p>
+										<a class="badge badge-warning" href="/what-is-public-affairs-in-the-army.html">what is public affairs in the army</a>
+											<a class="badge badge-warning" href="/what-is-the-annual-budget-for-the-department-of-defense.html">what is the annual budget for the department of defense</a>
+											<a class="badge badge-light" href="/what-is-rd-budget.html">what is rd budget</a>
+											<a class="badge badge-warning" href="/what-is-the-army-human-resource-command.html">what is the army human resource command</a>
+											<a class="badge badge-warning" href="/what-is-the-service-number-for-military.html">what is the service number for military</a>
+											<a class="badge badge-secondary" href="/what-is-the-department-of-defense.html">what is the department of defense</a>
+											<a class="badge badge-success" href="/what-is-the-defense-department-budget.html">what is the defense department budget</a>
+											<a class="badge badge-danger" href="/what-is-status-of-2020-federal-budget.html">what is status of 2020 federal budget</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to pay a visit to the right site.  Our website gives you hints for seeing the highest quality video and picture content, hunt and locate more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, so we recommend this video for you to view.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://specials-images.forbesimg.com/imageserve/5fd3adc299ea4d062fab0402/960x0.jpg?cropX1=0&amp;cropX2=4759&amp;cropY1=436&amp;cropY2=3112" data-lightbox="roadtrip" data-title="Senate Averts Shutdown Passes 741 Billion Defense Bill With Veto Proof Majority Buying Time For Stimulus And Budget Deal">
+											<img class="card-img v-image ads-img " src="https://specials-images.forbesimg.com/imageserve/5fd3adc299ea4d062fab0402/960x0.jpg?cropX1=0&amp;cropX2=4759&amp;cropY1=436&amp;cropY2=3112" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6izJujeKfmyG7P8oHFbS5Ggl1zb2slrT-AQ';" alt="Senate Averts Shutdown Passes 741 Billion Defense Bill With Veto Proof Majority Buying Time For Stimulus And Budget Deal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Senate Averts Shutdown Passes 741 Billion Defense Bill With Veto Proof Majority Buying Time For Stimulus And Budget Deal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.cnbcfm.com/api/v1/image/106812916-1608221444334-106812916-1608220430109-2020-04-01T221141Z_284071760_RC2YVF9DS3ZX_RTRMADP_3_HEALTH-CORONAVIRUS-USA.JPG?v=1608221478&amp;w=678&amp;h=381" data-lightbox="roadtrip" data-title="Trump Says He Will Veto 740 Billion Defense Bill Breaking With Republicans">
+											<img class="card-img v-image ads-img " src="https://image.cnbcfm.com/api/v1/image/106812916-1608221444334-106812916-1608220430109-2020-04-01T221141Z_284071760_RC2YVF9DS3ZX_RTRMADP_3_HEALTH-CORONAVIRUS-USA.JPG?v=1608221478&amp;w=678&amp;h=381" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPnLs_qR12nvwR9DIzVIztt_Ul168isbllCQ';" alt="Trump Says He Will Veto 740 Billion Defense Bill Breaking With Republicans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trump Says He Will Veto 740 Billion Defense Bill Breaking With Republicans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.cnbcfm.com/api/v1/image/106816816-1609200905215-39936321700_b0eceddbe7_k.jpg?v=1609201032" data-lightbox="roadtrip" data-title="House Overrides Trump Veto Of 740 Billion Defense Bill">
+											<img class="card-img v-image ads-img " src="https://image.cnbcfm.com/api/v1/image/106816816-1609200905215-39936321700_b0eceddbe7_k.jpg?v=1609201032" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT-b4IYa2BNSlRzzg0kNt8kRvu1ccRjIYWEw';" alt="House Overrides Trump Veto Of 740 Billion Defense Bill">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">House Overrides Trump Veto Of 740 Billion Defense Bill</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lh3.googleusercontent.com/TbHpCAB7QGaDSKbpujK3SlHNy9F8BEtEmMtVgjgyEeyNiuwbZd_DskdhUy3ahniuIIXf5MN_DfucsK_6-Tz1ptAuJnVqzyzV-0EdexpOnMJyXWnBxsk4d-sruvHWITIGQd_UKas3" data-lightbox="roadtrip" data-title="Faq Will Fiscal Year 2021 Begin With A Government Shutdown Concord Coalition">
+											<img class="card-img v-image ads-img " src="https://lh3.googleusercontent.com/TbHpCAB7QGaDSKbpujK3SlHNy9F8BEtEmMtVgjgyEeyNiuwbZd_DskdhUy3ahniuIIXf5MN_DfucsK_6-Tz1ptAuJnVqzyzV-0EdexpOnMJyXWnBxsk4d-sruvHWITIGQd_UKas3" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwxkJFrTLv3KokLrzCTupYIOFB86V1vZVu6w';" alt="Faq Will Fiscal Year 2021 Begin With A Government Shutdown Concord Coalition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Faq Will Fiscal Year 2021 Begin With A Government Shutdown Concord Coalition</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Great_Seal_of_the_United_States_%28obverse%29.svg/1200px-Great_Seal_of_the_United_States_%28obverse%29.svg.png" data-lightbox="roadtrip" data-title="William M Mac Thornberry National Defense Authorization Act For Fiscal Year 2021 Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Great_Seal_of_the_United_States_%28obverse%29.svg/1200px-Great_Seal_of_the_United_States_%28obverse%29.svg.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGjp8kRxsjsJlJOIue2tghL8e3T4455ac-EA';" alt="William M Mac Thornberry National Defense Authorization Act For Fiscal Year 2021 Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">William M Mac Thornberry National Defense Authorization Act For Fiscal Year 2021 Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/02/2021-Defense-Budget_MilitaryBenefits.jpg" data-lightbox="roadtrip" data-title="2021 Defense Budget Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/02/2021-Defense-Budget_MilitaryBenefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX7Ch5fXp4XrvkTsV6rbL7YhpuKw4s3Sv6Qg';" alt="2021 Defense Budget Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2021 Defense Budget Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://image.cnbcfm.com/api/v1/image/106814914-16086411732020-12-21t221025z_678628670_rc2yrk9dpmnh_rtrmadp_0_health-coronavirus-usa-congress.jpeg?v=1608641222" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX7Ch5fXp4XrvkTsV6rbL7YhpuKw4s3Sv6Qg';" alt="2021 Defense Budget Military Benefits">
+										<div class="card-body">
+						<h3 class="h5"><b>House Votes to Override Trumps Veto of 2021 Defense Policy Bill The US.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Defense spending bill 2021 votes</strong>. 
+								
+																	Republicans supported passage by 14040. 
+																	This comes after the House of Representatives had earlier last. 
+																	The bill passed in the Senate with a veto proof majority of 84-13 earlier this month and the House has already voted to override the Presidents veto. 
+																	6395 along with far-left members like Bernie Sanders and Elizabeth Warren but also the GOPs hard right stalwarts including Rand Paul of Kentucky and Mike Lee of Utah. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The National Defense Authorization Act NDAA has passed the Senate for the 60th year. 
+																	The bill now becomes law. 
+																	List Of GOP Senators Who Voted To Override Trumps Defense Bill Veto. 
+																	McConnell linked that plan to fast passage of the defense bill but Sanders wants a straight chamber vote on the 2000 proposal. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For fiscal year 2021 the bill provides 6946 billion in new discretionary spending authority for the Department of Defense for functions under the Defense Subcommittees jurisdiction an increase of 13 billion above the FY 2020 enacted level and 37 billion below the Presidents budget request. 
+																	The Senate voted 81-13 on Friday to override President Donald Trumps veto of the fiscal 2021 defense authorization bill marking a rebuke to the outgoing commander in chief that paves the way. 
+																	Every leader of the. 
+																	The bill provides a 3 percent pay raise for US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	4049 116th in the Senate. 
+																	The 81-13 vote in the Senate followed an earlier 322-87 override vote in the House of the widely popular defense measure. 
+																	The bill is one of the largest spending measures ever enacted. 
+																	On New Years Day Cory Booker D-Twitter found himself voting AGAINST overriding President Donald Trumps controversial veto of the defense spending bill formally known as the National Defense Authorization Act for Fiscal Year 2021 or HR. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Senate vote 81-13 came after an unusual political detour for the National Defense Authorization Act which establishes policy and handles myriad other issues for the military services. 
+																	On January 1 the Senate voted 81-13 to override the Presidents veto of the NDAA. 
+																	Lamar Alexander Tennessee. 
+																	The Consolidated Appropriations Act 2021 is a 23 trillion spending bill that combines 900 billion in stimulus relief for the COVID-19 pandemic in the United States with a 14 trillion omnibus spending bill for the 2021 federal fiscal year combining 12 separate annual appropriations bills and prevents a government shutdown. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Known as the National Defense Authorization Act NDAA the compromise spending measure for the 2021 fiscal year appropriates funds for the military and passed the Senate and House earlier this. 
+																	The Senate is expected to also override the presidential veto sometime this. 
+																	On Passage of the Bill in the Senate. 
+																	This was a vote to pass S. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Senate joined the House of Representatives on Friday by overriding President Donald Trumps veto of a 740 billion annual spending bill with a 81-13 vote reaching the two thirds majority needed. 
+																	Democrats supported passage by 19537. 
+																	The Senate voted Friday to override President Trumps veto of the National Defense Authorization Act marking the first override of his presidency and delivering a rare emphatic and final rebuke. 
+																	NDAA received a veto-proof majority of 84-13. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Here is the list of Republican Senators that voted to override President Trumps veto of the National Defense Authorization Act. 
+																	The bill passed with a vote of 84-13 easily earning a veto-proof majority if the president follows through with his veto threat. 
+																	Capitol Building is seen past the Washington Monument as the sun sets in Washington on Dec. 
+																	Senate Democrats successfully negotiated a provision in the bill to begin the process of removing confederate symbols from the military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The House vote for the National Defense Authorization Act NDAA was by a massive margin 33578. 
+																	Path to Defense Bill. 
+																	This is an authorization bill which directs how federal funds should or should not be used. 
+																	The bill supports hefty defense funding of 7405 billion with 6364 billion going directly to the DoD and the rest allocated to other national security requirements shown in the accompanying table. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The federal budget process occurs in two stages. 
+																	Troops and guides defense. 
+																	January 1 2021 January 1 2021 Published by. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.cnbcfm.com/api/v1/image/106816318-16088549251608854919-13126457633-1080pnbcnews.jpg?v=1608854924" data-lightbox="roadtrip" data-title="Trump Vetoes 740 Billion Ndaa Defense Bill">
+											<img class="card-img v-image ads-img " src="https://image.cnbcfm.com/api/v1/image/106816318-16088549251608854919-13126457633-1080pnbcnews.jpg?v=1608854924" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR74lUKfWsQKih3MCyzfr4jujwRr1pCFEIQuQ';" alt="Trump Vetoes 740 Billion Ndaa Defense Bill">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trump Vetoes 740 Billion Ndaa Defense Bill</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.govtrack.us/congress/bills/116/s4049/thumbnail" data-lightbox="roadtrip" data-title="National Defense Authorization Act For Fiscal Year 2021 2020 116th Congress S 4049 Govtrack Us">
+											<img class="card-img v-image ads-img " src="https://www.govtrack.us/congress/bills/116/s4049/thumbnail" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnJDsgm_zryCacOdLKDHxLqH6wcFhM3EBlXw';" alt="National Defense Authorization Act For Fiscal Year 2021 2020 116th Congress S 4049 Govtrack Us">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Defense Authorization Act For Fiscal Year 2021 2020 116th Congress S 4049 Govtrack Us</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.cnbcfm.com/api/v1/image/106814914-16086411732020-12-21t221025z_678628670_rc2yrk9dpmnh_rtrmadp_0_health-coronavirus-usa-congress.jpeg?v=1608641222" data-lightbox="roadtrip" data-title="Covid Stimulus Update Congress Passes Relief And Government Funding Bill">
+											<img class="card-img v-image ads-img " src="https://image.cnbcfm.com/api/v1/image/106814914-16086411732020-12-21t221025z_678628670_rc2yrk9dpmnh_rtrmadp_0_health-coronavirus-usa-congress.jpeg?v=1608641222" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsLRG0TQEwS1NuSFQZ-Vl6Xcm5INfYRXbRgw';" alt="Covid Stimulus Update Congress Passes Relief And Government Funding Bill">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Covid Stimulus Update Congress Passes Relief And Government Funding Bill</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/President_Trump_Signs_H.R._133_%2850773855346%29.jpg/220px-President_Trump_Signs_H.R._133_%2850773855346%29.jpg" data-lightbox="roadtrip" data-title="Consolidated Appropriations Act 2021 Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/President_Trump_Signs_H.R._133_%2850773855346%29.jpg/220px-President_Trump_Signs_H.R._133_%2850773855346%29.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqT-EBJcPracFGKTOho59lY2gtXchhJjbCww';" alt="Consolidated Appropriations Act 2021 Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Consolidated Appropriations Act 2021 Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.govtrack.us/congress/bills/116/hr6395/thumbnail" data-lightbox="roadtrip" data-title="National Defense Authorization Act For Fiscal Year 2021 2021 116th Congress H R 6395 Govtrack Us">
+											<img class="card-img v-image ads-img " src="https://www.govtrack.us/congress/bills/116/hr6395/thumbnail" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqYa3jJxIybBrX048P0bAV57Wp6nrvkxTekQ';" alt="National Defense Authorization Act For Fiscal Year 2021 2021 116th Congress H R 6395 Govtrack Us">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Defense Authorization Act For Fiscal Year 2021 2021 116th Congress H R 6395 Govtrack Us</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/51/b4/f951b4869cabafb65ff357ba19a63b6f.jpg" data-lightbox="roadtrip" data-title="Pin On 2021 Trump">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/51/b4/f951b4869cabafb65ff357ba19a63b6f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnzLSjis_82Itzskem1XciA_ZEtGGQ77jVPQ';" alt="Pin On 2021 Trump">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On 2021 Trump</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.cnbcfm.com/api/v1/image/106810763-1607957193131-gettyimages-1229929066-CONGRESS_STIMULUS.jpeg?v=1607957275&amp;w=1600&amp;h=900" data-lightbox="roadtrip" data-title="Coronavirus Stimulus Updates Bipartisan Relief Bill Released">
+											<img class="card-img v-image ads-img " src="https://image.cnbcfm.com/api/v1/image/106810763-1607957193131-gettyimages-1229929066-CONGRESS_STIMULUS.jpeg?v=1607957275&amp;w=1600&amp;h=900" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfcvOhcafSNJ04GMmtPypYVL7bFgTVjaGzSQ';" alt="Coronavirus Stimulus Updates Bipartisan Relief Bill Released">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coronavirus Stimulus Updates Bipartisan Relief Bill Released</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://static.politifact.com/politifact/rulings/meter-false.jpg" data-lightbox="roadtrip" data-title="Politifact Bernie Sanders Is Wrong Twice In Claim About Defense Budget Voting Record">
+											<img class="card-img v-image ads-img " src="https://static.politifact.com/politifact/rulings/meter-false.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt0hJJBAAvbpWgd38K-_fW93wFz4ksrzTq9g';" alt="Politifact Bernie Sanders Is Wrong Twice In Claim About Defense Budget Voting Record">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Politifact Bernie Sanders Is Wrong Twice In Claim About Defense Budget Voting Record</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://appropriations.house.gov/sites/democrats.appropriations.house.gov/files/wysiwyg_uploaded/Military%20Construction%20-%20Veterans%20Affairs%20FY21%20Fact%20Sheet.png" data-lightbox="roadtrip" data-title="Military Construction Va House Committee On Appropriations">
+											<img class="card-img v-image ads-img " src="https://appropriations.house.gov/sites/democrats.appropriations.house.gov/files/wysiwyg_uploaded/Military%20Construction%20-%20Veterans%20Affairs%20FY21%20Fact%20Sheet.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3wJzuQdnsOF7fAdDmZpcfy8BhULNm6X-AZw';" alt="Military Construction Va House Committee On Appropriations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Construction Va House Committee On Appropriations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.cnbcfm.com/api/v1/image/106810150-16077126351607712631-12897792050-1080pnbcnews.jpg?v=1607712634&amp;w=1910&amp;h=1000" data-lightbox="roadtrip" data-title="Government Shutdown Trump Signs Funding Bill Amid Covid Relief Push">
+											<img class="card-img v-image ads-img " src="https://image.cnbcfm.com/api/v1/image/106810150-16077126351607712631-12897792050-1080pnbcnews.jpg?v=1607712634&amp;w=1910&amp;h=1000" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRqowg5GmIhNWVirTbQY0fCUc4zjZ0KJRHwA';" alt="Government Shutdown Trump Signs Funding Bill Amid Covid Relief Push">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Government Shutdown Trump Signs Funding Bill Amid Covid Relief Push</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.cnbcfm.com/api/v1/image/106814184-16085506541608550652-13065270779-1080pnbcnews.jpg?v=1608550654&amp;w=1910&amp;h=1000" data-lightbox="roadtrip" data-title="Coronavirus Stimulus Update Congress Agrees To 900 Billion Relief Bill">
+											<img class="card-img v-image ads-img " src="https://image.cnbcfm.com/api/v1/image/106814184-16085506541608550652-13065270779-1080pnbcnews.jpg?v=1608550654&amp;w=1910&amp;h=1000" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZbUwIKy91Ntng75Z-Kd5Y4KvDe0xIogYuFw';" alt="Coronavirus Stimulus Update Congress Agrees To 900 Billion Relief Bill">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coronavirus Stimulus Update Congress Agrees To 900 Billion Relief Bill</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.cnbcfm.com/api/v1/image/106834861-1612377484915-gettyimages-1300171522-reynolds029_20210203121301610.jpeg?v=1612456375" data-lightbox="roadtrip" data-title="Vavhfwd3r3q6dm">
+											<img class="card-img v-image ads-img " src="https://image.cnbcfm.com/api/v1/image/106834861-1612377484915-gettyimages-1300171522-reynolds029_20210203121301610.jpeg?v=1612456375" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA1P_iYgsCetbrTHp9NHPTYsf-yLz8ugS2BA';" alt="Vavhfwd3r3q6dm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vavhfwd3r3q6dm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.aip.org/sites/default/files/styles/740-wide-manual/public/aipcorp/images/fyi/air-force-arctic-survival-school-instructor.jpg?itok=lB_NSWTk&amp;c=9e78e22c9534324e39fb0852ca6b57b8" data-lightbox="roadtrip" data-title="William M Mac Thornberry National Defense Authorization Act For Fiscal Year 2021 H R 6395 S 4049 American Institute Of Physics">
+											<img class="card-img v-image ads-img " src="https://www.aip.org/sites/default/files/styles/740-wide-manual/public/aipcorp/images/fyi/air-force-arctic-survival-school-instructor.jpg?itok=lB_NSWTk&amp;c=9e78e22c9534324e39fb0852ca6b57b8" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsGl0sDimEVWam5kiFuyi-yKJaoOW17NJYOw';" alt="William M Mac Thornberry National Defense Authorization Act For Fiscal Year 2021 H R 6395 S 4049 American Institute Of Physics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">William M Mac Thornberry National Defense Authorization Act For Fiscal Year 2021 H R 6395 S 4049 American Institute Of Physics</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-dog-vest-amazon.html">Military Dog Vest Amazon</a></li>
+													<li class="list-group-item"><a href="/military-dog-tags-india.html">Military Dog Tags India</a></li>
+													<li class="list-group-item"><a href="/military-dog-short-film.html">Military Dog Short Film</a></li>
+													<li class="list-group-item"><a href="/military-dog-tag-id-number-lookup.html">Military Dog Tag Id Number Lookup</a></li>
+													<li class="list-group-item"><a href="/military-dog-tag-ball-chain.html">Military Dog Tag Ball Chain</a></li>
+													<li class="list-group-item"><a href="/military-dog-movie-bl.html">Military Dog Movie Bl</a></li>
+													<li class="list-group-item"><a href="/military-dog-tags-houston-tx.html">Military Dog Tags Houston Tx</a></li>
+													<li class="list-group-item"><a href="/military-dog-tags-used-for.html">Military Dog Tags Used For</a></li>
+													<li class="list-group-item"><a href="/military-dog-tags-ebay.html">Military Dog Tags Ebay</a></li>
+													<li class="list-group-item"><a href="/military-dog-jobs.html">Military Dog Jobs</a></li>
+													<li class="list-group-item"><a href="/military-dog-tags-online.html">Military Dog Tags Online</a></li>
+													<li class="list-group-item"><a href="/military-dog-movie-max.html">Military Dog Movie Max</a></li>
+													<li class="list-group-item"><a href="/military-dog-tags-drawing.html">Military Dog Tags Drawing</a></li>
+													<li class="list-group-item"><a href="/military-dog-tag-embossing-machine.html">Military Dog Tag Embossing Machine</a></li>
+													<li class="list-group-item"><a href="/military-dog-tags-engraved.html">Military Dog Tags Engraved</a></li>
+													<li class="list-group-item"><a href="/military-dog-tags-uk.html">Military Dog Tags Uk</a></li>
+													<li class="list-group-item"><a href="/military-dog-tags-ireland.html">Military Dog Tags Ireland</a></li>
+													<li class="list-group-item"><a href="/military-dog-tags-how-to-wear.html">Military Dog Tags How To Wear</a></li>
+													<li class="list-group-item"><a href="/military-dog-tags-jewelry.html">Military Dog Tags Jewelry</a></li>
+													<li class="list-group-item"><a href="/military-dog-tag-locket.html">Military Dog Tag Locket</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

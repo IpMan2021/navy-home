@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Dept Of Veterans Affairs Nyc - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Dept Of Veterans Affairs Nyc",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/6a/ec/93/6aec93482a45f23102ba12c323217005.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=dept+of+veterans+affairs+nyc",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Dept Of Veterans Affairs Nyc</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Borne The Battle podcast spotlights important resources offices and benefits VA offers our Veterans. News you can use. Apply to Emergency Medicine Physician Vocational Rehabilitation Counselor Dentist and more. <br>				
+			</p>
+										<a class="badge badge-primary" href="/veterans-crisis-line-statistics.html">veterans crisis line statistics</a>
+											<a class="badge badge-dark" href="/veterans-crisis-line-volunteer.html">veterans crisis line volunteer</a>
+											<a class="badge badge-info" href="/veterans-career-transition-program-syracuse-university.html">veterans career transition program syracuse university</a>
+											<a class="badge badge-primary" href="/veterans-records-archives.html">veterans records archives</a>
+											<a class="badge badge-primary" href="/war-heroes-cheat.html">war heroes cheat</a>
+											<a class="badge badge-success" href="/virginia-job-training-programs.html">virginia job training programs</a>
+											<a class="badge badge-dark" href="/veterans-crisis-line-twitter.html">veterans crisis line twitter</a>
+											<a class="badge badge-dark" href="/veterans-affairs-voc-rehab-program.html">veterans affairs voc rehab program</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you have come to pay a visit to the right site.  Our website provides you with hints for viewing the maximum quality video and picture content, hunt and locate more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, particularly Youtube, so we recommend this video for you to view.  It is also possible to contribute to supporting this website by sharing videos and images that you like on this site on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/04/06/3d0406ea2b900bfa9162e8e69771a0da.png" data-lightbox="roadtrip" data-title="Pin By Joanna King On You Named Me What Dentist Phlebotomist Gynecologists">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/04/06/3d0406ea2b900bfa9162e8e69771a0da.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9NLMhGKoLlK4lrLpp6ROi3yUFvukkbgkYgg';" alt="Pin By Joanna King On You Named Me What Dentist Phlebotomist Gynecologists">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Joanna King On You Named Me What Dentist Phlebotomist Gynecologists</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/d7/21/b6d72127ce22da7611fa5bcac32c0815.png" data-lightbox="roadtrip" data-title="Va Police Badge Police Badge Police Fire Badge">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/d7/21/b6d72127ce22da7611fa5bcac32c0815.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4H_H3d6DQTAnKxL29as1QvvoyeQVLKAeBnw';" alt="Va Police Badge Police Badge Police Fire Badge">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Police Badge Police Badge Police Fire Badge</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/ec/93/6aec93482a45f23102ba12c323217005.jpg" data-lightbox="roadtrip" data-title="Pin On Public Health">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/ec/93/6aec93482a45f23102ba12c323217005.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDIqXi_0JzKH24446xvkyryc2AS4rI4IVByA';" alt="Pin On Public Health">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Public Health</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/5b/4a/625b4a7db61e13adb761cf1811c4de83.jpg" data-lightbox="roadtrip" data-title="Policecars Police Cars Police Police Car Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/5b/4a/625b4a7db61e13adb761cf1811c4de83.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEnEgLd7yXVuVei1IgdEnYImOjQvez1NGJzg';" alt="Policecars Police Cars Police Police Car Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Policecars Police Cars Police Police Car Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/84/7c/14847ca93309a1f574d429dedb865b44.jpg" data-lightbox="roadtrip" data-title="Pin On Hometown 3">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/84/7c/14847ca93309a1f574d429dedb865b44.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYRCJcy1fgvyOB7Yogk5u-en7io4lY2Merkw';" alt="Pin On Hometown 3">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Hometown 3</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=4300699003278471" data-lightbox="roadtrip" data-title="W68v2exjkuer2m">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=4300699003278471" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRox-8aDrvti7HJu8V3LpEZ7f6fOOq-ccslhQ';" alt="W68v2exjkuer2m">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">W68v2exjkuer2m</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/b6/d7/21/b6d72127ce22da7611fa5bcac32c0815.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRox-8aDrvti7HJu8V3LpEZ7f6fOOq-ccslhQ';" alt="W68v2exjkuer2m">
+										<div class="card-body">
+						<h3 class="h5"><b>For information about veterans benefits contact the New York State Division of Veterans Affairs call 1-888-VETS-NYS or visit veteransnygov.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Dept of veterans affairs nyc</strong>. 
+								
+																	Buffalo NY 14202 Monday-Friday 8am-430pm. 
+																	Indicates required fields. 
+																	For other concerns you may be able to access VA care from home by phone or using VA virtual care options. 
+																	Accredited DVS staff members are helping NYC veterans and their families process Veterans Affairs VA claims. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are 28 Veterans Affairs Departmentsin Suffolk County New York serving a population of 1497595 peoplein an area of 912 square miles. 
+																	The Department of Veterans Affairs provides services and information to veterans their dependents and surviving spouses active and reserve service members and their dependents regarding the many federal state local and foreign benefits that they may be eligible for and assists them in applying for and obtaining these benefits. 
+																	There is 1 Veterans Affairs Department per 53485 people and 1 Veterans Affairs Department per 32 square miles. 
+																	130 South Elmwood Ave. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For support filing your VA claim please email us at claimsveteransnycgov or call 212-416-5250. 
+																	Core Services By working closely with other State federal local and private agencies the Division of Veterans Services utilizes the expertise and resources of others to help Veterans and their families with specific needs such as. 
+																	VA does not endorse and is not responsible for the content of the linked websites. 
+																	For information about Department of Labor veterans services call 1-888-469-7365 and ask for the Veterans Program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	NEW YORK REGIONAL OFFICE UPDATE Effective close of business Wednesday November 25 2020 the New York Regional Office will be closed to the public until further notice due to increased COVID-19 activity. 
+																	DVS is ready to help veterans get the benefits they have earned. 
+																	Bush on 15 March 1989. 
+																	Apply to Program Assistant Call Center Representative Trade Assistant and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Veterans Affairs 810 Vermont Avenue NW Washington DC 20420. 
+																	Talk to a Veterans Crisis Line responder now. 
+																	This decision protects our Veterans and those with underlying conditions as well as our employees. 
+																	The Department of Veterans Affairs Act of 1988 PubL. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you have symptoms of fever cough and shortness of breath call us at 1-800-877-6976 before visiting us. 
+																	Today the Office for Veterans Affairs OVA and the MOD have announced that 100 UK Armed Forces charities will benefit from nearly 6-million of extra funding to support serving personnel. 
+																	Find a VA health facility regional office or cemetery. 
+																	Send a Message to DVS. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Contact In Your Borough Locations. 
+																	It was signed into law by President Ronald Reagan on 25 October 1988 however came into effect under the term of his successor George H. 
+																	If you would like to learn more about the benefits and services you may be eligible for as a Veteran servicemember or as a family member of a Veteran or servicemember please call the New York State Division of Veterans Services Help Line at 18888387697 VETSNYS where you may also schedule an initial phone contact appointment with one of our Veterans Benefits Advisors. 
+																	VAs academic partnerships improved Veterans health care. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By clicking on the links above you will leave the Department of Veterans Affairs Website. 
+																	The New York State Division of Veterans Services DVS or Division advocates on behalf of New Yorks Veterans and their families as individuals and as a group to ensure they receive benefits granted by law for service in the United States Armed Forces. 
+																	Department of Veterans Services 311 Search all NYCgov websites. 
+																	Sign in or create an account to use more tools. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Department of Veterans Affairs surpassed 40000 coronavirus cases on Monday but the number of active cases within the health system continued to decline since hitting a peak in late. 
+																	You can also reach us at 212-416-5250. 
+																	Last updated October 12 2018. 
+																	100527 changed the former Veterans Administration an independent government agency established in 1930 into a Cabinet-level Department of Veterans Affairs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Division provides free benefits advising. 
+																	To connect to services please visit VetConnectNYC. 
+																	Some regional offices have re-opened with. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/05/33/d905332d08c73e832e8a3bade32cc277.png" data-lightbox="roadtrip" data-title="Ford Utility Interceptor Police Cars Police Interceptor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/05/33/d905332d08c73e832e8a3bade32cc277.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ05NzbnhW_4mHpNQSVfqfFGX6hQA_65NkL0Q';" alt="Ford Utility Interceptor Police Cars Police Interceptor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ford Utility Interceptor Police Cars Police Interceptor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.benefits.va.gov/RONEWYORK/images/RO_new_york.jpg" data-lightbox="roadtrip" data-title="Directions And Maps New York Regional Office">
+											<img class="card-img v-image ads-img " src="https://www.benefits.va.gov/RONEWYORK/images/RO_new_york.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfE1W_SmC2pNs6Greyh1C5WFj6C0Yc5ynmsg';" alt="Directions And Maps New York Regional Office">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Directions And Maps New York Regional Office</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/59/46/d359466245bd858d9b760b2b4e082f0a.jpg" data-lightbox="roadtrip" data-title="Spartanburg South Carolina Ems Emergency Medical Technician Ambulance Emt Patch Emergency Medical Services Emergency Medical Medical Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/59/46/d359466245bd858d9b760b2b4e082f0a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtZ-vA1UBTZrncxhbQ_ACeNUxB3KgwtJVYUQ';" alt="Spartanburg South Carolina Ems Emergency Medical Technician Ambulance Emt Patch Emergency Medical Services Emergency Medical Medical Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Spartanburg South Carolina Ems Emergency Medical Technician Ambulance Emt Patch Emergency Medical Services Emergency Medical Medical Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/95/e8/ad/95e8adae4dd90be36182436190944897--police.jpg" data-lightbox="roadtrip" data-title="Ny Finest And Bravest Brave Police Police Department">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/95/e8/ad/95e8adae4dd90be36182436190944897--police.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwT2k-sSvCWorpEJyQDnKil2aXtpV1HuRkqw';" alt="Ny Finest And Bravest Brave Police Police Department">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ny Finest And Bravest Brave Police Police Department</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/7c/23/8b7c23d64d3789bb90b3eef51d1eb70a.jpg" data-lightbox="roadtrip" data-title="Happy 4th Of July Bradshaw Fd Fire Trucks Volunteer Firefighter Flags Of The World">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/7c/23/8b7c23d64d3789bb90b3eef51d1eb70a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCGv47NJJLcSPKMyLh7Ep0z7cxIgMyF_JhVA';" alt="Happy 4th Of July Bradshaw Fd Fire Trucks Volunteer Firefighter Flags Of The World">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Happy 4th Of July Bradshaw Fd Fire Trucks Volunteer Firefighter Flags Of The World</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/50/55/e05055a088b8a49bda4b5910f63fbac5.jpg" data-lightbox="roadtrip" data-title="Patriot Brass Los Angeles S Biggest Marching Band Yet Marching Band Performance Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/50/55/e05055a088b8a49bda4b5910f63fbac5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYC-f6zABfChjVMcp1W1Eubwnxf6AqWhPdtg';" alt="Patriot Brass Los Angeles S Biggest Marching Band Yet Marching Band Performance Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Patriot Brass Los Angeles S Biggest Marching Band Yet Marching Band Performance Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.va.gov/health/vamc/images/NationalHistory_Veterans_Administration.jpg" data-lightbox="roadtrip" data-title="Our History Va Ny Harbor Healthcare System">
+											<img class="card-img v-image ads-img " src="https://www.va.gov/health/vamc/images/NationalHistory_Veterans_Administration.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgIszqeJCglWRz2VJD1fj8bpTG9LHbJqnVPA';" alt="Our History Va Ny Harbor Healthcare System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Our History Va Ny Harbor Healthcare System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/df/17/fcdf17d8cd10b02b3cafa66cef265a1f.jpg" data-lightbox="roadtrip" data-title="Lombardi S Market Fine Foods Catering Fine Food Catering Food">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/df/17/fcdf17d8cd10b02b3cafa66cef265a1f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8EGChibQ60g9Gls167cP3jdJCAKKXnhceCw';" alt="Lombardi S Market Fine Foods Catering Fine Food Catering Food">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lombardi S Market Fine Foods Catering Fine Food Catering Food</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/14/64/511464bc9e7831b5c47d60215168e825.jpg" data-lightbox="roadtrip" data-title="Pin On Sweet Home Chicago">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/14/64/511464bc9e7831b5c47d60215168e825.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3cs3-ERQGHWlc-GXWladAPiCuZ_g7IriybQ';" alt="Pin On Sweet Home Chicago">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sweet Home Chicago</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4d/7d/fe/4d7dfe25097704c7bcafddd322c45b78.jpg" data-lightbox="roadtrip" data-title="Toyota Hilux Policia De La Provincia De Chaco Toyota Toyotaargentina Toyotahilux Policia Police Polizei Polici Police Cars Police Emergency Vehicles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4d/7d/fe/4d7dfe25097704c7bcafddd322c45b78.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-On-SHrpTO1Zlj6W_W8r7DzvQV4EkA7PXug';" alt="Toyota Hilux Policia De La Provincia De Chaco Toyota Toyotaargentina Toyotahilux Policia Police Polizei Polici Police Cars Police Emergency Vehicles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Toyota Hilux Policia De La Provincia De Chaco Toyota Toyotaargentina Toyotahilux Policia Police Polizei Polici Police Cars Police Emergency Vehicles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/6a/29/d56a29cee45c7afc68e2714b7e2171f5.jpg" data-lightbox="roadtrip" data-title="A Bit Of A Chill Firefighter Firefighter Pictures Fdny Firefighters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/6a/29/d56a29cee45c7afc68e2714b7e2171f5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3Oli1OXzTPZpqAw9qJgi8zp-HthWHod3e4A';" alt="A Bit Of A Chill Firefighter Firefighter Pictures Fdny Firefighters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Bit Of A Chill Firefighter Firefighter Pictures Fdny Firefighters</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://suffolkcountyny.gov/Portals/4/EasyDNNRotator/2162/bfusyqq4.jpg" data-lightbox="roadtrip" data-title="Suffolk County Veterans Services Agency Home">
+											<img class="card-img v-image ads-img " src="https://suffolkcountyny.gov/Portals/4/EasyDNNRotator/2162/bfusyqq4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwqbcb0y3lcwBznkxxk1cYcFj7GiM6uZ7M8Q';" alt="Suffolk County Veterans Services Agency Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Suffolk County Veterans Services Agency Home</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/93/20/869320bcf15c323cf617936515f70688.jpg" data-lightbox="roadtrip" data-title="Houston Fire Department Boberos De Houston Generic Theme Firefighter Fire Department Fire">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/93/20/869320bcf15c323cf617936515f70688.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2BwFCg-19uvEbPI-ywCjOVyOM0oGXPWoXXQ';" alt="Houston Fire Department Boberos De Houston Generic Theme Firefighter Fire Department Fire">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Houston Fire Department Boberos De Houston Generic Theme Firefighter Fire Department Fire</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-department-head.html">Military Department Head</a></li>
+													<li class="list-group-item"><a href="/military-department-gthtdjl.html">Military Department Gthtdjl</a></li>
+													<li class="list-group-item"><a href="/military-divorce-legal-assistance.html">Military Divorce Legal Assistance</a></li>
+													<li class="list-group-item"><a href="/military-death-records-world-war-ii.html">Military Death Records World War Ii</a></li>
+													<li class="list-group-item"><a href="/military-department-ci-organization.html">Military Department Ci Organization</a></li>
+													<li class="list-group-item"><a href="/military-department-email.html">Military Department Email</a></li>
+													<li class="list-group-item"><a href="/military-dog-hero-names.html">Military Dog Hero Names</a></li>
+													<li class="list-group-item"><a href="/military-cap-plume.html">Military Cap Plume</a></li>
+													<li class="list-group-item"><a href="/military-dog-full-movie-chinese-2019.html">Military Dog Full Movie Chinese 2019</a></li>
+													<li class="list-group-item"><a href="/military-child-care-resource-and-referral.html">Military Child Care Resource And Referral</a></li>
+													<li class="list-group-item"><a href="/military-department-of-health.html">Military Department Of Health</a></li>
+													<li class="list-group-item"><a href="/military-caps-near-me.html">Military Caps Near Me</a></li>
+													<li class="list-group-item"><a href="/military-divisions-usa.html">Military Divisions Usa</a></li>
+													<li class="list-group-item"><a href="/military-department-of-indiana.html">Military Department Of Indiana</a></li>
+													<li class="list-group-item"><a href="/military-department-of-form-and-finance.html">Military Department Of Form And Finance</a></li>
+													<li class="list-group-item"><a href="/military-department-names.html">Military Department Names</a></li>
+													<li class="list-group-item"><a href="/military-department-of-tennessee.html">Military Department Of Tennessee</a></li>
+													<li class="list-group-item"><a href="/military-divisions-us.html">Military Divisions Us</a></li>
+													<li class="list-group-item"><a href="/military-divisions-navy.html">Military Divisions Navy</a></li>
+													<li class="list-group-item"><a href="/military-diet-hard-boiled-egg-substitute.html">Military Diet Hard Boiled Egg Substitute</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

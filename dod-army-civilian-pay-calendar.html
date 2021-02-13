@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Dod Army Civilian Pay Calendar - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Dod Army Civilian Pay Calendar",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/564x/de/c3/ba/dec3ba4c39a7993e0e1d897231e10174.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=dod+army+civilian+pay+calendar",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Dod Army Civilian Pay Calendar</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">2020 2021 Payroll Calendar Dod Civilian Pay Period Calendar 2020 Payroll Calendar ADP Dod Civilian Pay Period Calendar 2020 Payroll Calendar ADP Dod Civilian Pay Period Calendar 2020 2021 Payroll Templates. There are many kinds of pay. The information may help avoid any confusion as to when you should expect to see the payment. <br>				
+			</p>
+										<a class="badge badge-light" href="/department-of-the-army-eeo-complaints.html">department of the army eeo complaints</a>
+											<a class="badge badge-success" href="/department-of-the-army-civilian-personnel-records.html">department of the army civilian personnel records</a>
+											<a class="badge badge-warning" href="/department-of-the-army-civilian-fitness-program.html">department of the army civilian fitness program</a>
+											<a class="badge badge-secondary" href="/department-of-the-army-civilian-pay-scale.html">department of the army civilian pay scale</a>
+											<a class="badge badge-warning" href="/department-of-the-army-civilian-service-commendation-medal.html">department of the army civilian service commendation medal</a>
+											<a class="badge badge-danger" href="/department-of-the-army-civilian-personnel-office.html">department of the army civilian personnel office</a>
+											<a class="badge badge-dark" href="/department-of-the-army-civilian-code-of-conduct.html">department of the army civilian code of conduct</a>
+											<a class="badge badge-secondary" href="/department-of-the-army-forms.html">department of the army forms</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to pay a visit to the ideal site.  Our site gives you suggestions for viewing the maximum quality video and picture content, search and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie that you see.  It is also possible to bring about supporting this site by sharing videos and images that you like on this blog on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information that you get on this site.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="biut1iQkqApO0M" data-lightbox="roadtrip" data-title="Https Www Dcms Uscg Mil Portals 10 Cg 1 Cg121 Docs Pdf Pay Calendar2020 Pdf Ver 2019 11 18 111433 060">
+											<img class="card-img v-image ads-img " src="biut1iQkqApO0M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSABmiJ9taLSy_O8BR4eBMFzdWY9bOUcy3tyQ';" alt="Https Www Dcms Uscg Mil Portals 10 Cg 1 Cg121 Docs Pdf Pay Calendar2020 Pdf Ver 2019 11 18 111433 060">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Dcms Uscg Mil Portals 10 Cg 1 Cg121 Docs Pdf Pay Calendar2020 Pdf Ver 2019 11 18 111433 060</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/de/c3/ba/dec3ba4c39a7993e0e1d897231e10174.jpg" data-lightbox="roadtrip" data-title="Pin On Driving License">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/de/c3/ba/dec3ba4c39a7993e0e1d897231e10174.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR49DzHikDdX7zzZN-HdSpDfiH1v6ZxZ7Q83g';" alt="Pin On Driving License">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Driving License</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.payperiodscalendar.com/wp-content/uploads/2020/01/Doj-2020-Pay-Period-Calendar.jpg" data-lightbox="roadtrip" data-title="Federal Pay Period Calendar 2020 Dod 2021 Pay Periods Calendar">
+											<img class="card-img v-image ads-img " src="https://www.payperiodscalendar.com/wp-content/uploads/2020/01/Doj-2020-Pay-Period-Calendar.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPAlWk5lLw3TPqgJE3N0TRvPsLpznW3HjovA';" alt="Federal Pay Period Calendar 2020 Dod 2021 Pay Periods Calendar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Federal Pay Period Calendar 2020 Dod 2021 Pay Periods Calendar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/a6/3f/27/a63f27ca3eca51650bb1ca5e4990c686.jpg" data-lightbox="roadtrip" data-title="2019 Military Pay Charts Based On A 2 6 Pay Increase As Proposed In The Fy2019 Dod Budget Money Financ Military Pay Military Pay Chart Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/a6/3f/27/a63f27ca3eca51650bb1ca5e4990c686.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1519W0utF9eFnSNHXDkNAQmpbDQ7hNZ3wWg';" alt="2019 Military Pay Charts Based On A 2 6 Pay Increase As Proposed In The Fy2019 Dod Budget Money Financ Military Pay Military Pay Chart Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2019 Military Pay Charts Based On A 2 6 Pay Increase As Proposed In The Fy2019 Dod Budget Money Financ Military Pay Military Pay Chart Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/25/e3/de/25e3deaeedae9e4e192d6188b45c2b4e.jpg" data-lightbox="roadtrip" data-title="Pin On 1 For Sabrina">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/25/e3/de/25e3deaeedae9e4e192d6188b45c2b4e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHJO6wv0uUge8tjzHwbAG-8gRHW0Vk8qdcVg';" alt="Pin On 1 For Sabrina">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On 1 For Sabrina</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.payperiodscalendar.com/wp-content/uploads/2020/01/2020-Pay-Period-Holiday-Calendar-Los-Alamos-National-Lab-346x188.jpg" data-lightbox="roadtrip" data-title="Dfas Payroll Calendar 2021 2021 Pay Periods Calendar">
+											<img class="card-img v-image ads-img " src="https://www.payperiodscalendar.com/wp-content/uploads/2020/01/2020-Pay-Period-Holiday-Calendar-Los-Alamos-National-Lab-346x188.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlRwO5cZIzmZApkGR5LpzpYzC1igzJJLBK7A';" alt="Dfas Payroll Calendar 2021 2021 Pay Periods Calendar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dfas Payroll Calendar 2021 2021 Pay Periods Calendar</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/564x/02/92/b4/0292b491fcbedc391599b272b801d23e--big-data-federal.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlRwO5cZIzmZApkGR5LpzpYzC1igzJJLBK7A';" alt="Dfas Payroll Calendar 2021 2021 Pay Periods Calendar">
+										<div class="card-body">
+						<h3 class="h5"><b>2020 2021 Payroll Calendar Army Civilian Pay Calendar 2020 Payroll Calendar ADP Army Civilian Pay Calendar 2020 Payroll Calendar ADP Army Civilian Pay Calendar 2020 2021 Payroll Templates.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Dod army civilian pay calendar</strong>. 
+								
+																	6323a - providing 15 days of leave each fiscal year with no military pay offset ie full military and civilian pay. 
+																	This table reflects the schedule of 2020 military pay dates for the active and reserve components. 
+																	Learn how to request and submit your Estimated Earnings during military service to get started. 
+																	Department of Defense Department of Veterans Affairs Military Employment Verification Warrior Care Website Defense Contract Mgmt Agency DoD Forms Department of State Civilian Personnel Mgmt Service DTS Travel Center System for Award Mgmt SAM. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some spouse SBP annuitants will see an increase in the SBP annuity payment they receive on February 1 2021. 
+																	The chart below outlines the 2021 retirement payment calendar. 
+																	The DoD has civilian and military workers at over 400 military bases across the United States and worldwide. 
+																	Whenever a payday falls on a weekend or holiday pay is issued on the last workday preceding the 1st and the 15th. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Department of DefenseDoD is based in Arlington Virginia in the Pentagon. 
+																	February 1 SBP payments January 2021 SBP and SSIA payments are paid on February 1 2021. 
+																	DFAS Payroll Calendar 2021 To assist you in preparing for 2021 below is a list of the days you need to anticipate getting your retired or annuitant pay. 
+																	2021 Payrollbe used but you can easily change it and give it your. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2021 Military Pay Charts Check out the 2021 US military pay scale charts for all ranks for active duty as well as Reserve and Guard components. 
+																	In contrast many agencies choose to continue to pay the employee his or her full civilian. 
+																	Retired and annuitant pay is due to the very first of the month. 
+																	DFAS military pay dates active duty and reserve are scheduled for the 1 st and 15 th of every month unless those dates fall on a weekend or holiday. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Payroll 2021 army civilian dod payroll calendar 2021page2 payroll calendar army civilian dod payroll calendar 2021page2 pay period army civilian dod payroll calendar 2021page2 calendars payment. 
+																	6323b - providing up to 22 days of leave each calendar year but with civilian pay. 
+																	Payroll 2021 army civilian dod payroll calendar 2021 payroll calendar army civilian dod payroll calendar 2021 pay period army civilian dod payroll calendar 2021 calendars payment. 
+																	2021 payroll federal dod pay dates army civilianpage3 2021 pay periods federal dod pay dates army civilianpage3 2021 pay schedule 3 federal dod pay dates army civilianpage3 gsa opm federal pay scale. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army civilian pay calendar 2021 2021 pay periods calendar army civilian pay calendar 2021 2021 payroll calendar army civilian pay calendar 2021 pay period calendar army civilian pay calendar 2021 biweekly weekly and monthly. 
+																	Some spouse SBP annuitants will not see a change in phase one of the SBP-DIC Offset Phased Elimination. 
+																	SBP-DIC OFFSET PHASED ELIMINATION - 2021 PHASE ONE. 
+																	Army civilian dod payroll calendar 2021page2 Montana Payroll Calendar 2021. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2021 Proposed Military Pay Raise. 
+																	Regular military leave under 5 USC. 
+																	Members with Free Active Duty Checking accounts will receive their Direct Deposit of Net Pay DDNP one business day early. 
+																	You DO NOT need to call DFAS to tell us. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	ARMY PAY SCALES April 2020 - March 2021 updated August 2020. 
+																	If youre thinking about applying your military time towards your civilian retirement use the new Military Service EarningsBuy-Back Estimator to help you make your decision. 
+																	Want your time in the military to count toward your civilian retirement service requirement. 
+																	If the very first falls on a weekend or vacation senior citizens get paid on the last service day of the previous month and annuitants get paid on the very first company. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Department of Defense DoD Payroll Calendar 2021. 
+																	For those retired from the military your payment timeframe differs a little from Active Duty military pay dates. 
+																	Department of the army civilian pay calendar 2021 2021 pay periods calendar department of the army civilian pay calendar 2021 2021 payroll calendar department of the army civilian pay calendar 2021 pay period calendar department of the army civilian pay calendar 2021 biweekly weekly and monthly. 
+																	Basic pay is being given by all and is the primary component of a person. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	An agency may calculate the amount of military pay less any travel transportation or per diem allowances an employee will receive for the time period that corresponds to the 22 workdays of military leave and reduce the employees civilian pay by that amount during the 22 workdays of military leave. 
+																	Special military leave for contingency operations or law enforcement purposes under 5 USC. 
+																	Active duty and reserve members are paid twice a month. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://payrollcalendar.net/wp-content/uploads/2020/09/DFAS-Payroll-Calendar-2021.png" data-lightbox="roadtrip" data-title="Dfas Payroll Calendar 2020 And 2021 Payroll Calendar">
+											<img class="card-img v-image ads-img " src="https://payrollcalendar.net/wp-content/uploads/2020/09/DFAS-Payroll-Calendar-2021.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTNtnUFylMO93oqj-ozB7FRxedjdcB9eTJmw';" alt="Dfas Payroll Calendar 2020 And 2021 Payroll Calendar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dfas Payroll Calendar 2020 And 2021 Payroll Calendar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://payrollcalendar.net/wp-content/uploads/2020/07/2021-OPM-Payroll-Calendars-Printable-2021.png" data-lightbox="roadtrip" data-title="Opm Payroll Calendar 2021 Payroll Calendar">
+											<img class="card-img v-image ads-img " src="https://payrollcalendar.net/wp-content/uploads/2020/07/2021-OPM-Payroll-Calendars-Printable-2021.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2KTI0A42tgyrwvL2kY0zQWFEwPHdFvlmdcQ';" alt="Opm Payroll Calendar 2021 Payroll Calendar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Opm Payroll Calendar 2021 Payroll Calendar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/b0/dd/9e/b0dd9e361b0dcb72db67a7fe8a49171e.jpg" data-lightbox="roadtrip" data-title="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers San Fernando Valley Ve Veteran Medical Jobs Healthcare Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/b0/dd/9e/b0dd9e361b0dcb72db67a7fe8a49171e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo1XGznENkBxp-Pm18snqxq7Ff6mloQq6OuQ';" alt="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers San Fernando Valley Ve Veteran Medical Jobs Healthcare Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers San Fernando Valley Ve Veteran Medical Jobs Healthcare Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/02/92/b4/0292b491fcbedc391599b272b801d23e--big-data-federal.jpg" data-lightbox="roadtrip" data-title="Big Data At Its Best The Federal Contractor Misconduct Data Base Big Data Contractors Federation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/02/92/b4/0292b491fcbedc391599b272b801d23e--big-data-federal.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1edDBRNqHV4ccySG2_dgZvNkSsoX9ZdDXrw';" alt="Big Data At Its Best The Federal Contractor Misconduct Data Base Big Data Contractors Federation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Big Data At Its Best The Federal Contractor Misconduct Data Base Big Data Contractors Federation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/75/c0/cc75c0dc3ed3760dd0eb433c1230ccc8.jpg" data-lightbox="roadtrip" data-title="Leaving The Military Family Members Are Invited To Attend Jblm Acap With Their Service Member To Learn About Service Specific Va Benefits Employment Learning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/75/c0/cc75c0dc3ed3760dd0eb433c1230ccc8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6bwxQ3DtxBRaYNeN5AbjpvL2wR4xtsu3ueA';" alt="Leaving The Military Family Members Are Invited To Attend Jblm Acap With Their Service Member To Learn About Service Specific Va Benefits Employment Learning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Leaving The Military Family Members Are Invited To Attend Jblm Acap With Their Service Member To Learn About Service Specific Va Benefits Employment Learning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/35/6b/40356bece73e6b57858f2b080fa0842c.jpg" data-lightbox="roadtrip" data-title="Pin On Army Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/35/6b/40356bece73e6b57858f2b080fa0842c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSW0P-CxcbgHeLxZQuyQiKaG0kLDb_PJsA-Q';" alt="Pin On Army Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Army Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ea/1c/3f/ea1c3f82bfca42d757e6cd8bd2646b41.jpg" data-lightbox="roadtrip" data-title="New Hire Training Plan Template Unique New Hire Lesson Plans Day 1 Lesson Plan Templates Simple Business Plan Template Army Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ea/1c/3f/ea1c3f82bfca42d757e6cd8bd2646b41.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMqcjLgAK_ZIIC54L8LdS6HBPmCBr3d5iNkQ';" alt="New Hire Training Plan Template Unique New Hire Lesson Plans Day 1 Lesson Plan Templates Simple Business Plan Template Army Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Hire Training Plan Template Unique New Hire Lesson Plans Day 1 Lesson Plan Templates Simple Business Plan Template Army Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/9c/5c/949c5cac7bdc19791f8634af01c1f76c.jpg" data-lightbox="roadtrip" data-title="Anc Memorial Day 2015 Section 60 Grave 10222 Memorial Day Calendar Organization Patriotic Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/9c/5c/949c5cac7bdc19791f8634af01c1f76c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSBfSYXFPZQ0vLBw0fPDDwlprDa2mQKc-Bbw';" alt="Anc Memorial Day 2015 Section 60 Grave 10222 Memorial Day Calendar Organization Patriotic Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Anc Memorial Day 2015 Section 60 Grave 10222 Memorial Day Calendar Organization Patriotic Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/a3/83/d6a383ec1f02f4124a321a8e20b0e7e9.jpg" data-lightbox="roadtrip" data-title="Army Superior Civilian Service Award Medal Service Awards Military Ribbons Military Medals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/a3/83/d6a383ec1f02f4124a321a8e20b0e7e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcG6QOVbnVayFcuko0v0_ooxEWrTu7ngFurQ';" alt="Army Superior Civilian Service Award Medal Service Awards Military Ribbons Military Medals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Superior Civilian Service Award Medal Service Awards Military Ribbons Military Medals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/ab/aa/41abaa5717db32d7ff139aec1b528829.jpg" data-lightbox="roadtrip" data-title="Rix Industries Is Seeking A Dynamic New Director For The Dod Navy Gse Market Integrated Team This Position I Business Development Marketing Director Marketing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/ab/aa/41abaa5717db32d7ff139aec1b528829.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQgRXvSVX5ZDXXbbzjIGnwz_YCtXXWRO2EKQ';" alt="Rix Industries Is Seeking A Dynamic New Director For The Dod Navy Gse Market Integrated Team This Position I Business Development Marketing Director Marketing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rix Industries Is Seeking A Dynamic New Director For The Dod Navy Gse Market Integrated Team This Position I Business Development Marketing Director Marketing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/3a/85/983a85b3eb836c59ee42038f458cdaae.jpg" data-lightbox="roadtrip" data-title="United States Army 18th Medical Command Csm Warrior Ethos Challenge Coin 6021 In 2020 Challenge Coins Army Challenge Coins United States Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/3a/85/983a85b3eb836c59ee42038f458cdaae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvjzNxD9rUkYxP5bAjfvQ-ZD5_VX9Utyezyg';" alt="United States Army 18th Medical Command Csm Warrior Ethos Challenge Coin 6021 In 2020 Challenge Coins Army Challenge Coins United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United States Army 18th Medical Command Csm Warrior Ethos Challenge Coin 6021 In 2020 Challenge Coins Army Challenge Coins United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/d9/4c/a3d94cc8c5fa419aec1d0d81d0130d8b.gif" data-lightbox="roadtrip" data-title="Library Activities At Sgt Yano Visit Www Himwr Com For Dates And Times Library Activities Event Activities America S Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/d9/4c/a3d94cc8c5fa419aec1d0d81d0130d8b.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLoRzz-XeJoqpocA39Oq6CKoW9lNIIefNFbg';" alt="Library Activities At Sgt Yano Visit Www Himwr Com For Dates And Times Library Activities Event Activities America S Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Library Activities At Sgt Yano Visit Www Himwr Com For Dates And Times Library Activities Event Activities America S Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/04/68/8b/04688baafa744ddb295b8bde66a2b1dd.jpg" data-lightbox="roadtrip" data-title="Analysis Example Business Analysis Analysis Swot Analysis Examples">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/04/68/8b/04688baafa744ddb295b8bde66a2b1dd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkiTi8uH-KMpySxkXyZUhoNIIqQOL9m7xjyQ';" alt="Analysis Example Business Analysis Analysis Swot Analysis Examples">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Analysis Example Business Analysis Analysis Swot Analysis Examples</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/department-of-the-army-civilian-leave-policy.html">Department Of The Army Civilian Leave Policy</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-civilian-mandatory-training.html">Department Of The Army Civilian Mandatory Training</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-civilian-police-requirements.html">Department Of The Army Civilian Police Requirements</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-civilian-medals.html">Department Of The Army Civilian Medals</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-exords.html">Department Of The Army Exords</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-ein.html">Department Of The Army Ein</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-civilian-hr.html">Department Of The Army Civilian Hr</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-field-operating-agencies.html">Department Of The Army Field Operating Agencies</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-fort-meade-md.html">Department Of The Army Fort Meade Md</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-civilian-careers.html">Department Of The Army Civilian Careers</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-fort-jackson-sc.html">Department Of The Army Fort Jackson Sc</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-civilian-police-badge.html">Department Of The Army Civilian Police Badge</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-civilian-rank-equivalents.html">Department Of The Army Civilian Rank Equivalents</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-civilian-oath.html">Department Of The Army Civilian Oath</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-civilian-position-descriptions.html">Department Of The Army Civilian Position Descriptions</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-civilian-police-academy-address.html">Department Of The Army Civilian Police Academy Address</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-fort-knox-ky.html">Department Of The Army Fort Knox Ky</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-civilian-service-achievement-medal.html">Department Of The Army Civilian Service Achievement Medal</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-finance.html">Department Of The Army Finance</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-foia-request.html">Department Of The Army Foia Request</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

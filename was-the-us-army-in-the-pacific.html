@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Was The Us Army In The Pacific - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Was The Us Army In The Pacific",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/d0/ac/2d/d0ac2d4bed14183c0849ff2e1596c9fb.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=was+the+us+army+in+the+pacific",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Was The Us Army In The Pacific</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Army Pacific forces the Department of Defense has announced. Each had command of all US. Charles Flynn commanded the 25th Infantry Division in Hawaii after which he became deputy command general of US. <br>				
+			</p>
+										<a class="badge badge-light" href="/australian-military-records-world-war-1.html">australian military records world war 1</a>
+											<a class="badge badge-primary" href="/army-veteran-dog-tags.html">army veteran dog tags</a>
+											<a class="badge badge-secondary" href="/army-spouse-scholarships-grants.html">army spouse scholarships grants</a>
+											<a class="badge badge-light" href="/army-veterans-helpline-portal.html">army veterans helpline portal</a>
+											<a class="badge badge-secondary" href="/belgian-embassy-military-supply-office.html">belgian embassy military supply office</a>
+											<a class="badge badge-success" href="/best-dod-civilian-jobs.html">best dod civilian jobs</a>
+											<a class="badge badge-danger" href="/benefits-for-military-veterans-in-texas.html">benefits for military veterans in texas</a>
+											<a class="badge badge-secondary" href="/army-unit-public-affairs-representative-course.html">army unit public affairs representative course</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to pay a visit to the right site.  Our website provides you with hints for seeing the highest quality video and picture content, search and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, so we recommend this movie that you see.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/34/1e/16341eef58349a43159a59dccf6c803a.jpg" data-lightbox="roadtrip" data-title="1944 South Pacific Army Drawing War Art Military Illustration">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/34/1e/16341eef58349a43159a59dccf6c803a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgpkqWaAi1H8OTCbjsF_3CdR1J9fRRwoIF0A&amp;ec=45771800';" alt="1944 South Pacific Army Drawing War Art Military Illustration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1944 South Pacific Army Drawing War Art Military Illustration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/f7/50/16f750c0ce94f2a8921e7d6655ddda15.jpg" data-lightbox="roadtrip" data-title="Pin On Estados Unidos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/f7/50/16f750c0ce94f2a8921e7d6655ddda15.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiTtI4P62S5YXN_x9biWjfrcDUgSU5x7Ab3A&amp;ec=45771800';" alt="Pin On Estados Unidos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Estados Unidos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e9/6c/3b/e96c3bda5b56a861c35d2050e84465c6.jpg" data-lightbox="roadtrip" data-title="Us Ranger Pacific Front Wwii Pin By Paolo Marzioli Wwii Wwii Uniforms Ranger">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e9/6c/3b/e96c3bda5b56a861c35d2050e84465c6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6eGu1jdiHpWBGYcJ0vriBiwm9xueteFs88Q&amp;ec=45771800';" alt="Us Ranger Pacific Front Wwii Pin By Paolo Marzioli Wwii Wwii Uniforms Ranger">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Ranger Pacific Front Wwii Pin By Paolo Marzioli Wwii Wwii Uniforms Ranger</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/6c/ab/4e6cab6066cffb0a7ed78a1229c28554.jpg" data-lightbox="roadtrip" data-title="U S Army Scout Pacific War Pin By Paolo Marzioli History War Wwii Uniforms Modern War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/6c/ab/4e6cab6066cffb0a7ed78a1229c28554.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzMpcxlb2ay4Pey_qs7XqTssr_6qt2z_-7NQ&amp;ec=45771800';" alt="U S Army Scout Pacific War Pin By Paolo Marzioli History War Wwii Uniforms Modern War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Scout Pacific War Pin By Paolo Marzioli History War Wwii Uniforms Modern War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/5d/47/815d476e4938256e6b48dfed4d09567e.jpg" data-lightbox="roadtrip" data-title="Pin On World War 2">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/5d/47/815d476e4938256e6b48dfed4d09567e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWiV3XxAbgRs4n3YfYiSlaarA21-jw8vebcA&amp;ec=45771800';" alt="Pin On World War 2">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On World War 2</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a4/fc/b4/a4fcb47c7e6b4088578b9ecd5a3ff0e2.jpg" data-lightbox="roadtrip" data-title="Pin On Wwii Usmc Uniforms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a4/fc/b4/a4fcb47c7e6b4088578b9ecd5a3ff0e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdXutZFJB6CwQXMMSt_cZ3jjkBDhOZZkvwHw&amp;ec=45771800';" alt="Pin On Wwii Usmc Uniforms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Wwii Usmc Uniforms</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/59/cf/d6/59cfd68752c07dd8bcefa23098e317c1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdXutZFJB6CwQXMMSt_cZ3jjkBDhOZZkvwHw&amp;ec=45771800';" alt="Pin On Wwii Usmc Uniforms">
+										<div class="card-body">
+						<h3 class="h5"><b>The general narrative of World War II credits the Marines and Navy for the victory in the Pacific and the Army and US.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Was the us army in the pacific</strong>. 
+								
+																	Army Pacific forces the Department of Defense has announced. 
+																	The book documents the US Army disposing of 29 million kilograms of mustard agent and nerve agents and 454 tons of radioactive waste into the Pacific Ocean as well as the US militarys use of. 
+																	Pacific War major theatre of World War II that covered a large portion of the Pacific Ocean East Asia and Southeast Asia with significant engagements occurring as far south as northern Australia and as far north as the Aleutian Islands. 
+																	In recent years Lt. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Its a sign of how the Pacific is becoming strategically vital as countries choose to align with either Washington or Beijing. 
+																	Military forces assigned to his area. 
+																	Scott LongstreetArmy Fifteen general officer assignments were. 
+																	On 6 December 1945 USASTAF was abolished by the inactivation of its headquarters and headquarters squadron. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	PACUSA was reassigned to Tokyo Japan on 17 May 1946. 
+																	In 1941 the US Army was scattered across the Pacific in small outposts except for the Philippines where there was a significant American presence in support of US-trained Philippine forces. 
+																	The Southwest Pacific Area SWPA under Army General Douglas MacArthur. 
+																	Michael Flynn has been designated as the new head of the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Amid reports that US Army Pacific commander Gen. 
+																	Michael Flynn has been designated as the new head of the US. 
+																	The main areas that this command has jurisdiction in include Hawaii Alaska the Pacific Ocean South Korea and Japan. 
+																	This year the Army is slated to conduct another Defender Pacific exercise that will center on southwest Pacific. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Few people in the west are likely to have heard of a nation called Palau an archipelago in the western Pacific Ocean. 
+																	The United States Indo-Pacific strategy includes an important role for the ground forces of the US. 
+																	Charles Flynn the younger brother of former National Security Adviser Gen. 
+																	The Autumn 2020 issue of Parameters the quarterly journal of the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military forces in the Pacific Theatre were divided into two commands. 
+																	The United States Army Pacific USARPAC is an Army Service Component Command ASCC of the United States Army and is the army component unit of the United States Indo-Pacific Command. 
+																	Paul LaCamera would be the new leader of US Forces Korea a USFK spokesman said no official announcement has been made about a new commander. 
+																	Army Air Corps for victory in Europe. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Flynns Brother to Command US Army Pacific Forces. 
+																	In April 1942 US. 
+																	The tiny state of Palau has invited the US to build a military base on its territory. 
+																	Troops advancing on Tarawa Gilbert Islands in 1943. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The main areas that this command has jurisdiction in include Hawaii Alaska the Pacific Ocean South Korea and Japan. 
+																	And the Pacific Ocean Areas POA under Navy Admiral Chester W. 
+																	The United States Army Pacific USARPAC is an Army Service Component Command ASCC of the United States Army and is the army component unit of the United States Indo-Pacific Command. 
+																	In it Army units will plan to draw prepositioned stock in the region exercise. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Charles Flynn the younger brother of former National Security Adviser Gen. 
+																	Flynn assistant deputy chief of staff for G-357 has been tapped to lead US. 
+																	The Department of the Pacific or Pacific Department was a major command Department of the United States Army from 1853 to 1858. 
+																	Has a persistent military presence and routinely operates throughout the Indo-Pacific including the waters and airspace surrounding the South China Sea and East China Sea just as we have approached the region for the past 240 years. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In reality there are actually a few Marine veterans of fighting in Europe and a massive number of Army veterans who fought in the Pacific. 
+																	Its personnel equipment and aircraft were assigned to Pacific Air Command United States Army PACUSA which was assigned to United States Army Forces Pacific AFPAC. 
+																	It replaced the Pacific Division and was itself replaced by the Department of California and the Department of Oregon. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/a4/a4/ac/a4a4acf635d2aad585b3672b5eeb8f6d.jpg" data-lightbox="roadtrip" data-title="Pin On U S Army Uniforms Pacific Theatre Of Operations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/a4/a4/ac/a4a4acf635d2aad585b3672b5eeb8f6d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi1VFKQwvneuRnpPPPNQT26GoXZaTLFKWelA&amp;ec=45771800';" alt="Pin On U S Army Uniforms Pacific Theatre Of Operations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On U S Army Uniforms Pacific Theatre Of Operations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/f1/6b/3d/f16b3d6a383649b3fec4aa31601d35e9.jpg" data-lightbox="roadtrip" data-title="U S Marines In The Pacific Theater Combat Art Military Drawings Military Artwork">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/f1/6b/3d/f16b3d6a383649b3fec4aa31601d35e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB8tALUa6FMFEmyNk7x-12zukllc7ejGhsaw&amp;ec=45771800';" alt="U S Marines In The Pacific Theater Combat Art Military Drawings Military Artwork">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Marines In The Pacific Theater Combat Art Military Drawings Military Artwork</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5a/d2/17/5ad21702a9a67cb9abad340d54974c38.jpg" data-lightbox="roadtrip" data-title="U S Soldier In Pacific War Combat Art Military Artwork Army Drawing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5a/d2/17/5ad21702a9a67cb9abad340d54974c38.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdi96eC2xjM9sQ5miOneqlweYRlcO_Xao_Pw&amp;ec=45771800';" alt="U S Soldier In Pacific War Combat Art Military Artwork Army Drawing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Soldier In Pacific War Combat Art Military Artwork Army Drawing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/88/2c/ae882cdeca31ff213e14de43e3fe838e.jpg" data-lightbox="roadtrip" data-title="Pin On World War 2">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/88/2c/ae882cdeca31ff213e14de43e3fe838e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL_t8rYxXm8CJMrTP4pQz3UVj_VbTDDIslrg&amp;ec=45771800';" alt="Pin On World War 2">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On World War 2</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/d9/fa/edd9fa2fb8162149068645c98cead724.jpg" data-lightbox="roadtrip" data-title="Military Uniforms Wwii Military Uniform Wwii Uniforms Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/d9/fa/edd9fa2fb8162149068645c98cead724.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWcR1OH5MffShoV2vQU0eE1JUW7nyFlUptog&amp;ec=45771800';" alt="Military Uniforms Wwii Military Uniform Wwii Uniforms Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Uniforms Wwii Military Uniform Wwii Uniforms Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/6d/9b/3a6d9b71c63c76f2e5a45728a360f6fa.jpg" data-lightbox="roadtrip" data-title="Pin On World War 2">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/6d/9b/3a6d9b71c63c76f2e5a45728a360f6fa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWdSjY705hXIGT9KwTQaDtDS9SmIg4mBTcmw&amp;ec=45771800';" alt="Pin On World War 2">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On World War 2</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/0c/77/08/0c77087ef5a02090a3743dec503bf772.jpg" data-lightbox="roadtrip" data-title="Pin On World War Ii">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/0c/77/08/0c77087ef5a02090a3743dec503bf772.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQFX7pp6m7k5P8kBaQFf1-D9lLJ-ddiGARxw&amp;ec=45771800';" alt="Pin On World War Ii">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On World War Ii</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3e/fc/66/3efc66bc0b0ad752f764bff58040ed8a.jpg" data-lightbox="roadtrip" data-title="Pin On Military Uniforms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3e/fc/66/3efc66bc0b0ad752f764bff58040ed8a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7xZVvAf0h9kN7gNL__AiY7D_5tgBH8hJZcg&amp;ec=45771800';" alt="Pin On Military Uniforms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Uniforms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/a6/6a/83a66a058e1aa46e0054e83c243e4e97.jpg" data-lightbox="roadtrip" data-title="Pin On Military Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/a6/6a/83a66a058e1aa46e0054e83c243e4e97.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8FxuijoH8r1tszS74l5C6cKoIpgMOcREEeQ&amp;ec=45771800';" alt="Pin On Military Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/ac/2d/d0ac2d4bed14183c0849ff2e1596c9fb.jpg" data-lightbox="roadtrip" data-title="Pin On The Pacific Ww2">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/ac/2d/d0ac2d4bed14183c0849ff2e1596c9fb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5vHZWKxTDRuOv-0YEZmvt-0w7W2xUJOcGrg&amp;ec=45771800';" alt="Pin On The Pacific Ww2">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On The Pacific Ww2</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/62/de/b262deea1a57c2c57c10a6b01812aaf4.jpg" data-lightbox="roadtrip" data-title="U S Paratrooper Pacific Theater 1943 45 Pin By Paolo Marzioli Army Poster Military Cards United States Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/62/de/b262deea1a57c2c57c10a6b01812aaf4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSVhZ-Vsi53aal2FpoldsEkFCTUO8vWfceYA&amp;ec=45771800';" alt="U S Paratrooper Pacific Theater 1943 45 Pin By Paolo Marzioli Army Poster Military Cards United States Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Paratrooper Pacific Theater 1943 45 Pin By Paolo Marzioli Army Poster Military Cards United States Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/3c/70/d93c7091eea883ace84d0f4d19ed967d.jpg" data-lightbox="roadtrip" data-title="Marine In The Pacific Combat Art Military Artwork War Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/3c/70/d93c7091eea883ace84d0f4d19ed967d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkm5ynvNhI0nxny-diIIuWHaevXwlHAjdU2g&amp;ec=45771800';" alt="Marine In The Pacific Combat Art Military Artwork War Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marine In The Pacific Combat Art Military Artwork War Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/cf/d6/59cfd68752c07dd8bcefa23098e317c1.jpg" data-lightbox="roadtrip" data-title="Pin On History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/cf/d6/59cfd68752c07dd8bcefa23098e317c1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoVVYaeV7Spm4k8omCbXBd3A4Vnt8pXDSS8w&amp;ec=45771800';" alt="Pin On History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On History</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/dept-of-veterans-affairs-waco-tx.html">Dept Of Veterans Affairs Waco Tx</a></li>
+													<li class="list-group-item"><a href="/dept-of-veterans-affairs-texas.html">Dept Of Veterans Affairs Texas</a></li>
+													<li class="list-group-item"><a href="/dept-of-veterans-affairs-gi-bill.html">Dept Of Veterans Affairs Gi Bill</a></li>
+													<li class="list-group-item"><a href="/dept-of-veterans-affairs-phone-number.html">Dept Of Veterans Affairs Phone Number</a></li>
+													<li class="list-group-item"><a href="/dept-of-veterans-affairs-st-paul-mn.html">Dept Of Veterans Affairs St Paul Mn</a></li>
+													<li class="list-group-item"><a href="/dept-of-veterans-affairs-provider-phone-number.html">Dept Of Veterans Affairs Provider Phone Number</a></li>
+													<li class="list-group-item"><a href="/dept-of-veterans-affairs-vaccine.html">Dept Of Veterans Affairs Vaccine</a></li>
+													<li class="list-group-item"><a href="/dept-of-veterans-affairs-san-diego.html">Dept Of Veterans Affairs San Diego</a></li>
+													<li class="list-group-item"><a href="/dept-of-veterans-affairs-murfreesboro-tn.html">Dept Of Veterans Affairs Murfreesboro Tn</a></li>
+													<li class="list-group-item"><a href="/dept-of-veterans-affairs-colorado-springs.html">Dept Of Veterans Affairs Colorado Springs</a></li>
+													<li class="list-group-item"><a href="/dept-of-veterans-affairs-los-angeles.html">Dept Of Veterans Affairs Los Angeles</a></li>
+													<li class="list-group-item"><a href="/dept-of-veterans-affairs-okc.html">Dept Of Veterans Affairs Okc</a></li>
+													<li class="list-group-item"><a href="/dept-of-veterans-affairs-indianapolis-indiana.html">Dept Of Veterans Affairs Indianapolis Indiana</a></li>
+													<li class="list-group-item"><a href="/dept-of-veterans-affairs-employee-benefits.html">Dept Of Veterans Affairs Employee Benefits</a></li>
+													<li class="list-group-item"><a href="/dept-of-veterans-affairs-fresno-ca.html">Dept Of Veterans Affairs Fresno Ca</a></li>
+													<li class="list-group-item"><a href="/dept-of-veterans-affairs-orlando-fl.html">Dept Of Veterans Affairs Orlando Fl</a></li>
+													<li class="list-group-item"><a href="/dept-of-veterans-affairs-leavenworth-ks.html">Dept Of Veterans Affairs Leavenworth Ks</a></li>
+													<li class="list-group-item"><a href="/dept-of-veterans-affairs-org-chart.html">Dept Of Veterans Affairs Org Chart</a></li>
+													<li class="list-group-item"><a href="/dept-of-veterans-affairs-organizational-chart.html">Dept Of Veterans Affairs Organizational Chart</a></li>
+													<li class="list-group-item"><a href="/dept-of-veterans-affairs-nyc.html">Dept Of Veterans Affairs Nyc</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

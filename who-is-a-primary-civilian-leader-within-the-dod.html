@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Who Is A Primary Civilian Leader Within The Dod - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Who Is A Primary Civilian Leader Within The Dod",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/16/95/14/169514a545caa4e298fec2476d41d644.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=who+is+a+primary+civilian+leader+within+the+dod",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Who Is A Primary Civilian Leader Within The Dod</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The President of the United States is according to the Constitution the Commander-in-Chief of the US. Within the framework of the US Constitution. Defense Senior Leader Development Program DSLDP DESCRIPTION. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/us-navy-wife-tries-to-ship-military-boats-to-china.html">us navy wife tries to ship military boats to china</a>
+											<a class="badge badge-primary" href="/us-military-records-world-war-2.html">us military records world war 2</a>
+											<a class="badge badge-dark" href="/uwf-military-resource-center.html">uwf military resource center</a>
+											<a class="badge badge-danger" href="/us-military-budget-by-department.html">us military budget by department</a>
+											<a class="badge badge-danger" href="/us-military-budget-vs-world.html">us military budget vs world</a>
+											<a class="badge badge-info" href="/utep-military-resource-center.html">utep military resource center</a>
+											<a class="badge badge-warning" href="/us-military-microsoft-office.html">us military microsoft office</a>
+											<a class="badge badge-primary" href="/uw-madison-marching-band-songs.html">uw madison marching band songs</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you have come to pay a visit to the right blog.  Our website gives you suggestions for seeing the maximum quality video and picture content, search and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, so we recommend this movie that you see.  It is also possible to bring about supporting this site by sharing videos and images that you like on this site on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information that you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/75/bc/ec75bc0f393543cb2cb8a5a097e09bdf.jpg" data-lightbox="roadtrip" data-title="Pin On Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/75/bc/ec75bc0f393543cb2cb8a5a097e09bdf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHFurygQfYGQzisXmXZ8w7FxJP-2qY5alzCA';" alt="Pin On Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Marines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/79/47/7e79473e9ee1994d2a6aea0996fe2d17.jpg" data-lightbox="roadtrip" data-title="Marine Corps Recruit Depot San Diego United States Marine Corps Us Marine Corps Marine Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/79/47/7e79473e9ee1994d2a6aea0996fe2d17.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7qp-rrUw9LqdFprjmWECbC7800ttzduw_9w';" alt="Marine Corps Recruit Depot San Diego United States Marine Corps Us Marine Corps Marine Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marine Corps Recruit Depot San Diego United States Marine Corps Us Marine Corps Marine Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/c0/41/46c041e0accbe38da4b3f1ee28bab7ad.jpg" data-lightbox="roadtrip" data-title="If You Can Make Better Business Intelligence Resume You Will Be Better Than Other Candidates And You Ll Be Chosen For The Position You Need Actual Resume F">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/c0/41/46c041e0accbe38da4b3f1ee28bab7ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl_59NJA3zb-ShPtI15pSXeseNMucShz0KHw';" alt="If You Can Make Better Business Intelligence Resume You Will Be Better Than Other Candidates And You Ll Be Chosen For The Position You Need Actual Resume F">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Can Make Better Business Intelligence Resume You Will Be Better Than Other Candidates And You Ll Be Chosen For The Position You Need Actual Resume F</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/6e/70/026e70eac16211ce868acd91d01764ae.jpg" data-lightbox="roadtrip" data-title="Usmc Drill Instructors Recruit Training Regiment Us Marine Corps United States Marine Corps American Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/6e/70/026e70eac16211ce868acd91d01764ae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD_PUlqKLD57OmD-FkWFLtxXig_bBIACO6Sw';" alt="Usmc Drill Instructors Recruit Training Regiment Us Marine Corps United States Marine Corps American Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usmc Drill Instructors Recruit Training Regiment Us Marine Corps United States Marine Corps American Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2013/Dec/06/2001080258/825/780/0/733620-W-KUJ24-677.jpg" data-lightbox="roadtrip" data-title="Dr Rebecca B Chavez U S Department Of Defense Biography">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2013/Dec/06/2001080258/825/780/0/733620-W-KUJ24-677.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCUMmuMacSYkLqP3wYw1MUdK-JfEWUVaeVbA';" alt="Dr Rebecca B Chavez U S Department Of Defense Biography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dr Rebecca B Chavez U S Department Of Defense Biography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/58/80/3d58804208ac8de678377b7be619aa58.png" data-lightbox="roadtrip" data-title="Leader With T2 Mobile Health Program Talks About Latest Mobile App Medical Social Work Compassion Fatigue Health Programs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/58/80/3d58804208ac8de678377b7be619aa58.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsi5cVlopoUUE5LZaSEywc0SCQVRjRPzP5Ng';" alt="Leader With T2 Mobile Health Program Talks About Latest Mobile App Medical Social Work Compassion Fatigue Health Programs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Leader With T2 Mobile Health Program Talks About Latest Mobile App Medical Social Work Compassion Fatigue Health Programs</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/10/89/64/108964eb266f21cff73607f36bef4f6e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsi5cVlopoUUE5LZaSEywc0SCQVRjRPzP5Ng';" alt="Leader With T2 Mobile Health Program Talks About Latest Mobile App Medical Social Work Compassion Fatigue Health Programs">
+										<div class="card-body">
+						<h3 class="h5"><b>Armed Forces and Chief Executive of the Federal Government.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Who is a primary civilian leader within the dod</strong>. 
+								
+																	113 to lead the Department and all of its component. 
+																	The military teaches you a whole host of things how to endure difficult circumstances how to lead others how to work within a huge bureaucracy and it instills a crazy high level of discipline. 
+																	You have to be a military member or be a civilian civil servant contractor or DoD employee. 
+																	Top Civilian and Military Leaders. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Civilian leaders within the department continue to exercise their necessary authorities and responsibilities for US. 
+																	The composition of the Joint Chiefs of Staff is defined by statute and consists of a chairman CJCS a. 
+																	Greta Holtz is the leader of the state department. 
+																	Civilian control is often seen as a prerequisite feature of a stable liberal democracyUse of the term in scholarly analyses tends to take. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Nuclear deterrence and the defence nuclear enterprise. 
+																	It also instills a serious work ethic in a lot of people that makes them more productive than theyve ever been in their entire lives. 
+																	The Joint Chiefs of Staff JCS is the body of the most senior uniformed leaders within the United States Department of Defense that advises the president of the United States the secretary of defense the Homeland Security Council and the National Security Council on military matters. 
+																	Who are the primary military leaders within the DOD. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A military also known collectively as armed forces is a heavily armed highly organized force primarily intended for warfareIt is typically officially authorized and maintained by a sovereign state with its members identifiable by their distinct military uniformIt may consist of one or more military branches such as an army navy air force space force marines or coast guard. 
+																	Military leadership is not the authoritarian style depicted in Hollywood movies. 
+																	The Ministry of Defence has 8 defence tasks. 
+																	This is the government agency which controls. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Under the direction of the President the Secretary. 
+																	The National Security Agency NSA is a national-level intelligence agency of the United States Department of Defense under the authority of the Director of National IntelligenceThe NSA is responsible for global monitoring collection and processing of information and data for foreign and domestic intelligence and counterintelligence purposes specializing in a discipline known as signals. 
+																	The Secretary of Defense is the Principal Assistant to the President in all matters relating to the Department of Defense and is vested with statutory authority 10 USC. 
+																	But in those eight to 14 weeks men and women develop discipline and responsibility -- qualities required in the militarys transactional transformational and servant leadership styles. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These are styles that can and have been applied in many small businesses. 
+																	Civilian control of the military is a doctrine in military and political science that places ultimate responsibility for a countrys strategic decision-making in the hands of the civilian political leadership rather than professional military officers. 
+																	Top civilian defense decision-makers work with the secretary to develop policy operational and fiscal plans manage resources and evaluate programs. 
+																	What happens at the Pentagon. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sure basic training is hard. 
+																	-Reached the highest commissioned officer rank -Have 10 months Minimum-1 year of service in DOD -Be approved by the Cabinet and the other DOD Leaders. 
+																	Tellingly over six months after the leaders of the armed service committees sent a bipartisan letter to Secretary Esper expressing their concern over the departments failure to implement the law DoD has not formally replied and has taken only token actions. 
+																	The secretary of defense is the highest ranking leader in the department and serves as the principal advisor to the president the commander in chief of the armed forces on defense policy. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Upon separation from the armed forces many veterans. 
+																	Defense and national security policy while working closely with the military. 
+																	The Department of Defense has many components aside from the service branches. 
+																	The United States Department of Defense DoD USDOD or DOD is an executive branch department of the federal government charged with coordinating and supervising all agencies and functions of the government directly related to national security and the United States Armed ForcesThe DOD is the largest employer in the world with over 13 million active-duty service members soldiers marines. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Defence security and resilience of the UK and its overseas territories. 
+																	To earn the position of a DOD Leader you must have completed the following. 
+																	Its the headquarters of the United States Department of Defence. 
+																	The Secretary of Defense is the principal defense policy adviser to the President and is responsible for the formulation of general defense policy and policy related to all matters of direct concern to the Department of Defense and for the execution of approved policy. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sadly that effort has met much resistance within DoD and half-hearted implementation has produced limited effects. 
+																	Find some of the most requested links below or see a full list by category. 
+																	As endorsed by the Deputy Secretary of Defense DSLDP is the premier DoD-wide leadership development program for senior Defense civilians and a key component of the Departments talent management and succession planning strategy. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2014/Jan/30/2001080261/825/780/0/134787-B-EBL42-028.jpg" data-lightbox="roadtrip" data-title="Matthew P Dubois U S Department Of Defense Biography">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2014/Jan/30/2001080261/825/780/0/134787-B-EBL42-028.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-aqdSIHnwi-1vvdolfJUDCJ5HaiT8IZRGYw';" alt="Matthew P Dubois U S Department Of Defense Biography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Matthew P Dubois U S Department Of Defense Biography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/95/14/169514a545caa4e298fec2476d41d644.jpg" data-lightbox="roadtrip" data-title="Warrant Officer Resume Examples Best Of Tello Resume Resume Examples Warrant Officer Teacher Resume Examples">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/95/14/169514a545caa4e298fec2476d41d644.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszCKiTax4JFNAIyd-7cv8SwjU00NP-iPZCA';" alt="Warrant Officer Resume Examples Best Of Tello Resume Resume Examples Warrant Officer Teacher Resume Examples">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Warrant Officer Resume Examples Best Of Tello Resume Resume Examples Warrant Officer Teacher Resume Examples</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/89/64/108964eb266f21cff73607f36bef4f6e.jpg" data-lightbox="roadtrip" data-title="New Tricare Fees Could Be Coming To You Primary Care News Proposal">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/89/64/108964eb266f21cff73607f36bef4f6e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWaakOwQOf6wqnuF9OvWElkspW05EZq65zLg';" alt="New Tricare Fees Could Be Coming To You Primary Care News Proposal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Tricare Fees Could Be Coming To You Primary Care News Proposal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/images/2018/08/08/526444/max1200.jpg" data-lightbox="roadtrip" data-title="Ms Deana Funderburk Deputy Assistant Secretary Of The Army Policy And Legislation Article The United States Army">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/images/2018/08/08/526444/max1200.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4oNJaJyTzngWmNwmNPB9GCiGl7Yj7eb1_aQ';" alt="Ms Deana Funderburk Deputy Assistant Secretary Of The Army Policy And Legislation Article The United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ms Deana Funderburk Deputy Assistant Secretary Of The Army Policy And Legislation Article The United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2015/Nov/16/2001318559/825/780/0/151116-Z-ZZZ99-001.JPG" data-lightbox="roadtrip" data-title="Dr Melissa L Flagg U S Department Of Defense Biography">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2015/Nov/16/2001318559/825/780/0/151116-Z-ZZZ99-001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCSm-fbVfF9pDYqXlLIt6j2R87AI2MOBjp4g';" alt="Dr Melissa L Flagg U S Department Of Defense Biography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dr Melissa L Flagg U S Department Of Defense Biography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/d9/16/a5d91658d002a2bb4d0dcf89eb11975f.png" data-lightbox="roadtrip" data-title="Evas Is Now Decm And V3 3 Has Been Released Earned Value Management Eva Release">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/d9/16/a5d91658d002a2bb4d0dcf89eb11975f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8G6wkrrnHw-XOKaeCu3Z31q-1uoLQop0xlw';" alt="Evas Is Now Decm And V3 3 Has Been Released Earned Value Management Eva Release">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Evas Is Now Decm And V3 3 Has Been Released Earned Value Management Eva Release</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2015/Jul/13/2001267852/1280/1280/0/605910-W-VUD07-470.jpg" data-lightbox="roadtrip" data-title="Face Of Defense Marine Serves His New Country U S Department Of Defense Defense Department News">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2015/Jul/13/2001267852/1280/1280/0/605910-W-VUD07-470.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4eN2hZq68vajXe0srIdCozIXKX4ROXTDNdA';" alt="Face Of Defense Marine Serves His New Country U S Department Of Defense Defense Department News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Face Of Defense Marine Serves His New Country U S Department Of Defense Defense Department News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/66/c0/c6/66c0c64c0295be47963cdf4a6d349202.jpg" data-lightbox="roadtrip" data-title="Bach Recognizes Namesake Florence Blanchfield For Women S Equality Day Clarksville Tn Online Women S Equality Fort Campbell Army Nurse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/66/c0/c6/66c0c64c0295be47963cdf4a6d349202.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpn75-iQORwiwbjYG8ledgtD2_lPK2cVcTmA';" alt="Bach Recognizes Namesake Florence Blanchfield For Women S Equality Day Clarksville Tn Online Women S Equality Fort Campbell Army Nurse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bach Recognizes Namesake Florence Blanchfield For Women S Equality Day Clarksville Tn Online Women S Equality Fort Campbell Army Nurse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://quizlet.com/fb-pic/graph.facebook.com/810542759057043/picture?type=large" data-lightbox="roadtrip" data-title="Command And Military Organization Flashcards Quizlet">
+											<img class="card-img v-image ads-img " src="https://quizlet.com/fb-pic/graph.facebook.com/810542759057043/picture?type=large" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7SCehscn5qmGSJmIaAF-L87ubs9IC9CZatQ';" alt="Command And Military Organization Flashcards Quizlet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Command And Military Organization Flashcards Quizlet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/7d/30/da7d307d1386ff245bd8ea3f8254647f.jpg" data-lightbox="roadtrip" data-title="Pin On Arctic Tough">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/7d/30/da7d307d1386ff245bd8ea3f8254647f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKXdUrkfBHf5ynus9pC09Hk7wvWr80QVMpxw';" alt="Pin On Arctic Tough">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Arctic Tough</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/64/1a/a1641a38cae089e866700de5bde72c5c.jpg" data-lightbox="roadtrip" data-title="Va 75 Sunday Punchers A 6e Intruder 162179 Aa501 1997 Military Aircraft Aviation Image Aircraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/64/1a/a1641a38cae089e866700de5bde72c5c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxoGipfBtGPrT4Jk6kbVg-0W7MAxvCXUCUpw';" alt="Va 75 Sunday Punchers A 6e Intruder 162179 Aa501 1997 Military Aircraft Aviation Image Aircraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va 75 Sunday Punchers A 6e Intruder 162179 Aa501 1997 Military Aircraft Aviation Image Aircraft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2018/Apr/30/2001910283/825/780/0/180426-M-WQ182-016.JPG" data-lightbox="roadtrip" data-title="Marines Learn Survival Skills In Scottish Highlands U S Department Of Defense Defense Department News">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2018/Apr/30/2001910283/825/780/0/180426-M-WQ182-016.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcBOf8ggxebErIrA8iZu7mzAUvILvg2wnPCg';" alt="Marines Learn Survival Skills In Scottish Highlands U S Department Of Defense Defense Department News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marines Learn Survival Skills In Scottish Highlands U S Department Of Defense Defense Department News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2018/Oct/23/2002054356/825/780/0/181023-D-FN314-001.JPG" data-lightbox="roadtrip" data-title="Indo Pacific Command Chief Receives Old Salt Award U S Department Of Defense Defense Department News">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2018/Oct/23/2002054356/825/780/0/181023-D-FN314-001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEgIUC6YArVP7Ye_peViMpGEk0j3H0k1QsKw';" alt="Indo Pacific Command Chief Receives Old Salt Award U S Department Of Defense Defense Department News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indo Pacific Command Chief Receives Old Salt Award U S Department Of Defense Defense Department News</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/nike-air-force-black-harga.html">Nike Air Force Black Harga</a></li>
+													<li class="list-group-item"><a href="/nike-air-force-1-07-lv8-utility-hrvatska.html">Nike Air Force 1 07 Lv8 Utility Hrvatska</a></li>
+													<li class="list-group-item"><a href="/north-county-coastal-military-veterans-affairs-resource-center.html">North County Coastal Military Veterans Affairs Resource Center</a></li>
+													<li class="list-group-item"><a href="/nypd-military-age-waiver.html">Nypd Military Age Waiver</a></li>
+													<li class="list-group-item"><a href="/nebraska-military-dept.html">Nebraska Military Dept</a></li>
+													<li class="list-group-item"><a href="/nebraska-national-guard-military-police.html">Nebraska National Guard Military Police</a></li>
+													<li class="list-group-item"><a href="/nigerian-army-department-of-military-secretary.html">Nigerian Army Department Of Military Secretary</a></li>
+													<li class="list-group-item"><a href="/nh-department-of-military-affairs-and-veterans-services.html">Nh Department Of Military Affairs And Veterans Services</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-with-covid.html">Ncaa Eligibility With Covid</a></li>
+													<li class="list-group-item"><a href="/north-carolina-department-of-military-and-veterans-affairs-raleigh-nc.html">North Carolina Department Of Military And Veterans Affairs Raleigh Nc</a></li>
+													<li class="list-group-item"><a href="/new-jersey-department-of-military-and-veterans-affairs-veterans-service-offices.html">New Jersey Department Of Military And Veterans Affairs Veterans Service Offices</a></li>
+													<li class="list-group-item"><a href="/nypd-military-trail-boynton-beach.html">Nypd Military Trail Boynton Beach</a></li>
+													<li class="list-group-item"><a href="/new-jersey-department-of-military-and-veterans-affairs-address.html">New Jersey Department Of Military And Veterans Affairs Address</a></li>
+													<li class="list-group-item"><a href="/nellis-air-force-base-hr.html">Nellis Air Force Base Hr</a></li>
+													<li class="list-group-item"><a href="/new-jersey-department-of-military-and-veterans-affairs-jobs.html">New Jersey Department Of Military And Veterans Affairs Jobs</a></li>
+													<li class="list-group-item"><a href="/north-carolina-department-of-military-and-veterans-affairs-scholarship.html">North Carolina Department Of Military And Veterans Affairs Scholarship</a></li>
+													<li class="list-group-item"><a href="/nmfa-scholarship.html">Nmfa Scholarship</a></li>
+													<li class="list-group-item"><a href="/nypd-brooklyn-army-terminal.html">Nypd Brooklyn Army Terminal</a></li>
+													<li class="list-group-item"><a href="/new-zealand-military-records-world-war-1.html">New Zealand Military Records World War 1</a></li>
+													<li class="list-group-item"><a href="/nypd-bigger-than-army.html">Nypd Bigger Than Army</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

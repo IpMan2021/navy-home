@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Housing Office - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Housing Office",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/4c/75/22/4c7522885c9d84ec35d65e3cac6db2dc.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+housing+office",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Housing Office</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Find or post a home on the largest most trusted global housing network for military communities. If you are a military member or family looking for housing by RAF Lakenheath - East Anglia Regional Housing Office located in SFK youve come to the right place. Each year the Joint Services Housing Advice Office JSHAO delivers a programme of housing briefs at various military locations across the UK and overseas. <br>				
+			</p>
+										<a class="badge badge-dark" href="/military-spouse-id.html">military spouse id</a>
+											<a class="badge badge-info" href="/military-retirement-pay-calculator.html">military retirement pay calculator</a>
+											<a class="badge badge-dark" href="/military-retirement-cola-history-chart.html">military retirement cola history chart</a>
+											<a class="badge badge-dark" href="/military-retirement-calculator-without-tsp.html">military retirement calculator without tsp</a>
+											<a class="badge badge-light" href="/military-spouse-depression.html">military spouse depression</a>
+											<a class="badge badge-light" href="/military-retirement-pay-calculator-reserves.html">military retirement pay calculator reserves</a>
+											<a class="badge badge-dark" href="/military-retirement-salary-calculator.html">military retirement salary calculator</a>
+											<a class="badge badge-info" href="/military-retirement-formula-for-divorce.html">military retirement formula for divorce</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you have come to visit the ideal blog.  Our website provides you with suggestions for viewing the highest quality video and image content, hunt and locate more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, particularly Youtube, therefore we recommend this video that you view.  You can also contribute to supporting this site by sharing videos and graphics that you like on this blog on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this website.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/e4/55/4ce4556e0d935d279fd5732b1e377e7a.jpg" data-lightbox="roadtrip" data-title="Termites Fell From Light Fixtures Onto The Bed And Floor Military Families Come Forth To Congress With Appalling Military Housing Military Life House Hunting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/e4/55/4ce4556e0d935d279fd5732b1e377e7a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRV1ysjSnYgKDZiWPKHUsYXboJN058Wb-vUw';" alt="Termites Fell From Light Fixtures Onto The Bed And Floor Military Families Come Forth To Congress With Appalling Military Housing Military Life House Hunting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Termites Fell From Light Fixtures Onto The Bed And Floor Military Families Come Forth To Congress With Appalling Military Housing Military Life House Hunting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/2a/8e/49/2a8e491004956b6f135ddb59adcf8955.jpg" data-lightbox="roadtrip" data-title="5 Tips For Finding A Home At Your New Duty Station Daily Mom Military Military Duty Stations Finding A House Military Housing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/2a/8e/49/2a8e491004956b6f135ddb59adcf8955.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcPSeSdruSVkk1rmnB6U5JoczlAhpbvajILw';" alt="5 Tips For Finding A Home At Your New Duty Station Daily Mom Military Military Duty Stations Finding A House Military Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Tips For Finding A Home At Your New Duty Station Daily Mom Military Military Duty Stations Finding A House Military Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/31/16/4031169f95d664a68a407927104bcbb7.png" data-lightbox="roadtrip" data-title="Dm Dod Housing Network On Base Housing Off Base Housing Lodging Schools Recreation Businesses Community Research Q Mor Fort Living In Alaska Mansions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/31/16/4031169f95d664a68a407927104bcbb7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI1Tsk5DdncS6DS3wqH-6_AV8Wu995za7wZQ';" alt="Dm Dod Housing Network On Base Housing Off Base Housing Lodging Schools Recreation Businesses Community Research Q Mor Fort Living In Alaska Mansions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dm Dod Housing Network On Base Housing Off Base Housing Lodging Schools Recreation Businesses Community Research Q Mor Fort Living In Alaska Mansions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2e/20/b5/2e20b5da93ba99c11ccf22642b931570.jpg" data-lightbox="roadtrip" data-title="High Quality Military Container House Used Military Tents For Sale Used Mobile Clinic For Sale Whatsapp 861862010 Container House Tent Sale Toilets For Sale">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2e/20/b5/2e20b5da93ba99c11ccf22642b931570.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMPZhKclnU3vKkiLSWDXgbLrhwaRqLf-q3Bg';" alt="High Quality Military Container House Used Military Tents For Sale Used Mobile Clinic For Sale Whatsapp 861862010 Container House Tent Sale Toilets For Sale">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">High Quality Military Container House Used Military Tents For Sale Used Mobile Clinic For Sale Whatsapp 861862010 Container House Tent Sale Toilets For Sale</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/04/77/ea/0477ea5709f7c0ef187dde8af04fca2b.jpg" data-lightbox="roadtrip" data-title="Housing At Patrick Henry Village Usag Heidelberg Stuttgart Housing Office Vehicle Registration Passport Schedule Custo In 2020 Heidelberg Village House">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/04/77/ea/0477ea5709f7c0ef187dde8af04fca2b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgnnFpwG5-0qD7gU4vV2PFtpCMPpibQqYasg';" alt="Housing At Patrick Henry Village Usag Heidelberg Stuttgart Housing Office Vehicle Registration Passport Schedule Custo In 2020 Heidelberg Village House">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Housing At Patrick Henry Village Usag Heidelberg Stuttgart Housing Office Vehicle Registration Passport Schedule Custo In 2020 Heidelberg Village House</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/e1/e0/d3e1e065bb93c2f151cc8dd5ca34ccd2.jpg" data-lightbox="roadtrip" data-title="Pin On White Walls Group Ideas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/e1/e0/d3e1e065bb93c2f151cc8dd5ca34ccd2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjsuCxQy1JYuh_inP4IgpjZG6nooY5oCaAqQ';" alt="Pin On White Walls Group Ideas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On White Walls Group Ideas</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/74/c5/1f/74c51fec2f67284c016b7f951af371b6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjsuCxQy1JYuh_inP4IgpjZG6nooY5oCaAqQ';" alt="Pin On White Walls Group Ideas">
+										<div class="card-body">
+						<h3 class="h5"><b>Finding a new home can be an exciting experience especially when you have the right resources to help you through the process.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military housing office</strong>. 
+								
+																	Help from the military You can get specialist advice from the Ministry of Defences MOD housing advice service - the Joint Service Housing Advice Office JSHAO - before you leave the forces. 
+																	Office of Public Affairs 202 512-4800 youngc1gaogov Private-sector companies build renovate and maintain about 99 of family housing at military bases in the United States. 
+																	Guests include Department of Defense travelers on official business as well as military members. 
+																	In these cases the family members can continue to live in military family housing while the member is away. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	JSHAO can also signpost. 
+																	The first is living on post. 
+																	All personnel on permanent change of station orders to Stuttgart both military and civilians must in-process with the housing office no later than two business days from date of arrival. 
+																	They provide information and guidance on the various civilian housing options for Service personnel at any point in their career and for those leaving the military and currently resident in Service accommodation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	0345 111 0000 office hours or 0845 0500 900 out of hours Market Drayton Donnington Wood Telford. 
+																	We assign housing units based on the household size on a first-come first-served basis rather than on rank or position. 
+																	Contact the Housing Management Office at 850-882-4533 or DSN 312-872-4533 as soon as you know you are moving to Eglin Air Force Base. 
+																	The Joint Services Housing Advice Office JSHAO provides advice and guidance to you and your serving soldier about housing options not only just when making the transition to civilian life but during the whole of your Army career. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Housing Office 301 295-6564 or The Housing Referral Office 301 295-11380798. 
+																	Requirements for Family Housing To live in military family housing you must be living in the house with your dependent s. 
+																	We provide local oversight of the privatized housing companies. 
+																	Active-duty military personnel with command. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The government housing team will provide you the latest information about privatized housing and details about the application process. 
+																	PFI housing Telephone Regions covered. 
+																	You may submit an. 
+																	Overview Military housing is available at 27 locations across Canada. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Added Joint Service Housing Advice Office. 
+																	The Naval Base Kitsap Housing Service Center is located on NBK Bangor on the first floor of Bangor Plaza in the southwest corner of the building formerly the Resource CenterITT Office. 
+																	Misawa Military Housing Office Misawa Aomori. 
+																	There are exceptions for those who are temporarily deployed or who are serving a remote overseas tour. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Email us at housingusafmil Housing Maintenance needed. 
+																	The housing office is located on the second floor of the welcome center. 
+																	While the Army Housing Office services unaccompanied Soldiers E-1 through E-6 and personnel assigned to Germersheim Army Depot the Air Force Housing Office manages on-post and off-post housing. 
+																	Find the latest Misawa Military Housing Office information RIGHT HERE. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Military Housing Office MHO is the office of primary responsibility for installation housing programs and an advocate on behalf of all military members and families for safe affordable and quality housing. 
+																	You can apply if youre. 
+																	The following personnel are eligible for on-post housing in Stuttgart. 
+																	The military provides two options for the use of your Basic Allowance For Housing BAH. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Civilian housing briefs 2020 Updated 24 March 2020. 
+																	Army Lodging provides hotel accommodations to service members families retirees and civilians. 
+																	The JSHAO also runs the MOD referral scheme which may help you to find a housing association home. 
+																	Your second option is using your BAH to rent or buy a home off post. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military OneSource and your installations housing office provides tools referrals to services and personalized support to make your next move the best one yet. 
+																	20 March 2020 Updated the page with a important notice about upcoming housing briefings. 
+																	The HMO will also update you on any base specific policies regarding residing in privatized housing. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/f2/af/91f2af02ad4d4b49bbac0554a1da6204.jpg" data-lightbox="roadtrip" data-title="Military Housing San Diego California Bedroombuydirect Com San Diego Military Housing Military Housing San Diego California">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/f2/af/91f2af02ad4d4b49bbac0554a1da6204.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwLi3R7AbwoGV7sDeXU3MXyQPoNXh3o04a_w';" alt="Military Housing San Diego California Bedroombuydirect Com San Diego Military Housing Military Housing San Diego California">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Housing San Diego California Bedroombuydirect Com San Diego Military Housing Military Housing San Diego California</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/c5/1f/74c51fec2f67284c016b7f951af371b6.jpg" data-lightbox="roadtrip" data-title="Jeb Little Creek Fort Story Bradford Cove Neighborhood 3 4 Bedroom Single Family Homes Available For Military Housing Lincoln Military Housing Base Housing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/c5/1f/74c51fec2f67284c016b7f951af371b6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9B2IreMXwOTqLU8JSlAV-Z1wECOgNP4NBtw';" alt="Jeb Little Creek Fort Story Bradford Cove Neighborhood 3 4 Bedroom Single Family Homes Available For Military Housing Lincoln Military Housing Base Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jeb Little Creek Fort Story Bradford Cove Neighborhood 3 4 Bedroom Single Family Homes Available For Military Housing Lincoln Military Housing Base Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/e0/b1/4ae0b17763b097ea4752bc91fa4eb2a0.jpg" data-lightbox="roadtrip" data-title="Military Housing Scott Family Housing At Scott Air Force Base Photo Gallery Military Housing Scott Air Force Base Family House">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/e0/b1/4ae0b17763b097ea4752bc91fa4eb2a0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxS6u24RZz-zL_-iwAkcEdI7-gV09GvbfoWg';" alt="Military Housing Scott Family Housing At Scott Air Force Base Photo Gallery Military Housing Scott Air Force Base Family House">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Housing Scott Family Housing At Scott Air Force Base Photo Gallery Military Housing Scott Air Force Base Family House</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/3b/f2/313bf297651826207d7b5287a1f91ef0.jpg" data-lightbox="roadtrip" data-title="What To Consider When Living On Base Military Housing Military Base Housing Military Relocation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/3b/f2/313bf297651826207d7b5287a1f91ef0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0xxZ4_sO2V2_O2wnG2VxuiCxFD0PtUyJDyw';" alt="What To Consider When Living On Base Military Housing Military Base Housing Military Relocation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What To Consider When Living On Base Military Housing Military Base Housing Military Relocation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/fc/78/befc784ccec220ab7beaefb0df42a41b.jpg" data-lightbox="roadtrip" data-title="21 Military Housing Hacks Tips For Decorating And Storage Military Housing Hacks Military Housing Base Housing Decor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/fc/78/befc784ccec220ab7beaefb0df42a41b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7H5OaHCFcwZTJ4SaiYdQSpzwcjm_ZCooXSA';" alt="21 Military Housing Hacks Tips For Decorating And Storage Military Housing Hacks Military Housing Base Housing Decor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">21 Military Housing Hacks Tips For Decorating And Storage Military Housing Hacks Military Housing Base Housing Decor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/75/22/4c7522885c9d84ec35d65e3cac6db2dc.jpg" data-lightbox="roadtrip" data-title="Ns Norfolk Queens Way Neighborhood 3 4 Bedroom Homes In The Norfolk Crossing District Design Military Housing Lincoln Military Housing Naval Station Norfolk">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/75/22/4c7522885c9d84ec35d65e3cac6db2dc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbCuJZIRlYK77oOeoG931sDZW9rFCP6DTA-A';" alt="Ns Norfolk Queens Way Neighborhood 3 4 Bedroom Homes In The Norfolk Crossing District Design Military Housing Lincoln Military Housing Naval Station Norfolk">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ns Norfolk Queens Way Neighborhood 3 4 Bedroom Homes In The Norfolk Crossing District Design Military Housing Lincoln Military Housing Naval Station Norfolk</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/6e/67/8e6e67d90171b096681231ab989d6dab.jpg" data-lightbox="roadtrip" data-title="Nas Patuxent River Challenger Estates Lincoln Military Housing E1 O6 Military Housing Lincoln Military Housing Military Base Housing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/6e/67/8e6e67d90171b096681231ab989d6dab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvp3MTwN3maKWSHxClienKuzjNUclKezaSBA';" alt="Nas Patuxent River Challenger Estates Lincoln Military Housing E1 O6 Military Housing Lincoln Military Housing Military Base Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nas Patuxent River Challenger Estates Lincoln Military Housing E1 O6 Military Housing Lincoln Military Housing Military Base Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/7d/ea/b37dea7e00a3633a16839464f74cbf35.jpg" data-lightbox="roadtrip" data-title="Ns Norfolk Ben Moreell Neighborhood 3 5 Bedroom Townhomes Designated For E1 E9 Service Members Military Housing Navy Housing Lincoln Military Housing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/7d/ea/b37dea7e00a3633a16839464f74cbf35.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyB8RqoZomZUq5xpwrbdIwnLlJnOJNvCvZfw';" alt="Ns Norfolk Ben Moreell Neighborhood 3 5 Bedroom Townhomes Designated For E1 E9 Service Members Military Housing Navy Housing Lincoln Military Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ns Norfolk Ben Moreell Neighborhood 3 5 Bedroom Townhomes Designated For E1 E9 Service Members Military Housing Navy Housing Lincoln Military Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/b0/f6/6bb0f675dae4b24af4ac5f94ed298db7.png" data-lightbox="roadtrip" data-title="Quick And Easy Tips For Decorating Military Housing Military Home Decor Cozy Living Rooms Warm Home Decor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/b0/f6/6bb0f675dae4b24af4ac5f94ed298db7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQygXB1k7fB4QGuU9_FQOZqjwS3-22BLUsJQ';" alt="Quick And Easy Tips For Decorating Military Housing Military Home Decor Cozy Living Rooms Warm Home Decor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Quick And Easy Tips For Decorating Military Housing Military Home Decor Cozy Living Rooms Warm Home Decor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/56/a5/b856a56b095c4708a7e380c78f22a427.jpg" data-lightbox="roadtrip" data-title="Naval Base Guam Housing Apra View Neighborhood Military Housing Guam Navy Housing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/56/a5/b856a56b095c4708a7e380c78f22a427.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKxzm2hVdbqnvwK2gldakjFttW82-36McJMw';" alt="Naval Base Guam Housing Apra View Neighborhood Military Housing Guam Navy Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Naval Base Guam Housing Apra View Neighborhood Military Housing Guam Navy Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/c5/0f/40c50f618d87a2b17967f667633bdd6a.jpg" data-lightbox="roadtrip" data-title="Andersen Air Force Base Family Housing Family House House Air Force Bases">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/c5/0f/40c50f618d87a2b17967f667633bdd6a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQayIVSgnJ88uRgQRqco67LezB8jcFkMq6gvg';" alt="Andersen Air Force Base Family Housing Family House House Air Force Bases">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Andersen Air Force Base Family Housing Family House House Air Force Bases</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/85/a8/e285a8d4dc15d24b033111fe362c19a8.jpg" data-lightbox="roadtrip" data-title="Patrick Henry Village Heidelberg Germany Army Housing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/85/a8/e285a8d4dc15d24b033111fe362c19a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROSiPH8_GEZJ0HBPMrOiIN-3dTPdPMiNEqdw';" alt="Patrick Henry Village Heidelberg Germany Army Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Patrick Henry Village Heidelberg Germany Army Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/d1/a2/1ad1a23fa632b77d1e0522ec0f05b4a6.jpg" data-lightbox="roadtrip" data-title="Vogelweh Housing Germany Oh Wow I Lived Here Too Germany Military Housing Germany Europe">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/d1/a2/1ad1a23fa632b77d1e0522ec0f05b4a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVIN74mn8Fpnbt28iS4WoV_dIJSqVs6-QM-g';" alt="Vogelweh Housing Germany Oh Wow I Lived Here Too Germany Military Housing Germany Europe">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vogelweh Housing Germany Oh Wow I Lived Here Too Germany Military Housing Germany Europe</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-to-apply-for-us-military-leave.html">How To Apply For Us Military Leave</a></li>
+													<li class="list-group-item"><a href="/how-much-do-officers-make-in-the-coast-guard.html">How Much Do Officers Make In The Coast Guard</a></li>
+													<li class="list-group-item"><a href="/how-to-become-a-military-veteran.html">How To Become A Military Veteran</a></li>
+													<li class="list-group-item"><a href="/how-much-tax-is-deducted-from-military-retirement-pay.html">How Much Tax Is Deducted From Military Retirement Pay</a></li>
+													<li class="list-group-item"><a href="/how-to-become-a-public-affairs-officer.html">How To Become A Public Affairs Officer</a></li>
+													<li class="list-group-item"><a href="/how-to-become-a-postal-officer.html">How To Become A Postal Officer</a></li>
+													<li class="list-group-item"><a href="/how-much-does-an-appointment-with-a-financial-advisor-cost.html">How Much Does An Appointment With A Financial Advisor Cost</a></li>
+													<li class="list-group-item"><a href="/how-much-does-canadian-armed-forces-pay.html">How Much Does Canadian Armed Forces Pay</a></li>
+													<li class="list-group-item"><a href="/how-to-apply-for-military-housing.html">How To Apply For Military Housing</a></li>
+													<li class="list-group-item"><a href="/how-to-be-a-military-intelligence-officer.html">How To Be A Military Intelligence Officer</a></li>
+													<li class="list-group-item"><a href="/how-to-apply-for-unemployment-va.html">How To Apply For Unemployment Va</a></li>
+													<li class="list-group-item"><a href="/how-to-be-a-doctor-in-military.html">How To Be A Doctor In Military</a></li>
+													<li class="list-group-item"><a href="/how-to-be-a-protocol-officer.html">How To Be A Protocol Officer</a></li>
+													<li class="list-group-item"><a href="/how-to-be-a-firefighter-in-the-army.html">How To Be A Firefighter In The Army</a></li>
+													<li class="list-group-item"><a href="/how-much-of-the-us-budget-is-defense.html">How Much Of The Us Budget Is Defense</a></li>
+													<li class="list-group-item"><a href="/how-much-did-the-us-spend-on-defense-in-2018.html">How Much Did The Us Spend On Defense In 2018</a></li>
+													<li class="list-group-item"><a href="/how-much-do-military-intelligence-officers-make.html">How Much Do Military Intelligence Officers Make</a></li>
+													<li class="list-group-item"><a href="/how-to-become-a-dod-civilian.html">How To Become A Dod Civilian</a></li>
+													<li class="list-group-item"><a href="/how-much-is-defence-budget-of-pakistan.html">How Much Is Defence Budget Of Pakistan</a></li>
+													<li class="list-group-item"><a href="/how-much-is-drill-pay-for-army-reserve.html">How Much Is Drill Pay For Army Reserve</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Emergency Funds For Military Families - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Emergency Funds For Military Families",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/736x/af/64/be/af64bef726f3b3269f51288aa14c3667.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=emergency+funds+for+military+families",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Emergency Funds For Military Families</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The point of having an emergency fund is to be able to pay for these things without taking on high interest debt such as from credit cards or loans. For most of the workforce the emergency fund is a euphemism for unemployment or health insurance deductible. To date the program has helped some 1000 military families with nearly 500000 worth of emergency loans and financial counseling from the highly regarded Consumer Credit Counseling Service. <br>				
+			</p>
+										<a class="badge badge-success" href="/department-of-military-lands-cantonments-job-circular-2020.html">department of military lands cantonments job circular 2020</a>
+											<a class="badge badge-danger" href="/department-of-military-and-veterans-affairs-nj.html">department of military and veterans affairs nj</a>
+											<a class="badge badge-light" href="/department-of-military-and-veterans-affairs-colorado.html">department of military and veterans affairs colorado</a>
+											<a class="badge badge-light" href="/department-of-military-affairs-santa-fe-nm.html">department of military affairs santa fe nm</a>
+											<a class="badge badge-info" href="/department-of-intelligence-of-the-armed-forces-of-armenia.html">department of intelligence of the armed forces of armenia</a>
+											<a class="badge badge-secondary" href="/department-of-military-and-veterans-affairs-new-jersey.html">department of military and veterans affairs new jersey</a>
+											<a class="badge badge-primary" href="/department-of-military-affairs-current-affairs.html">department of military affairs current affairs</a>
+											<a class="badge badge-warning" href="/department-of-military-affairs-ky.html">department of military affairs ky</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to pay a visit to the right blog.  Our site provides you with hints for viewing the highest quality video and picture content, hunt and locate more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, especially Youtube, so we recommend this video that you see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e3/70/f3/e370f3615cae040be9ff4eb07b255f76.jpg" data-lightbox="roadtrip" data-title="Pin On Military Savings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e3/70/f3/e370f3615cae040be9ff4eb07b255f76.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaZe2xFindHz4U4oi8iCraZWvMdAUqROXkQg';" alt="Pin On Military Savings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Savings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/1d/37/571d37e2b8c556ba87fe7ff431869d9f.png" data-lightbox="roadtrip" data-title="6 Reasons Every Military Family Needs An Emergency Fund Military Family Emergency Fund Military Spouse Support">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/1d/37/571d37e2b8c556ba87fe7ff431869d9f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLEqgh2KGjX7kmebFYsD0WNfgQJw55h_92yQ';" alt="6 Reasons Every Military Family Needs An Emergency Fund Military Family Emergency Fund Military Spouse Support">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 Reasons Every Military Family Needs An Emergency Fund Military Family Emergency Fund Military Spouse Support</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/96/80/94968013761a0895b242f3777889829a.png" data-lightbox="roadtrip" data-title="How Much Of An Emergency Fund Does A Military Family Need Military To Million Emergency Fund Family Money Saving Military Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/96/80/94968013761a0895b242f3777889829a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgDsdenO8mJzVI1b_-7oaL9Nuq7PFNKWOsVA';" alt="How Much Of An Emergency Fund Does A Military Family Need Military To Million Emergency Fund Family Money Saving Military Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Much Of An Emergency Fund Does A Military Family Need Military To Million Emergency Fund Family Money Saving Military Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/24/c0/8624c0e1ec4637806560100f50b60b32.png" data-lightbox="roadtrip" data-title="Emergency Fund Emergency Fund Budgeting Emergency Savings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/24/c0/8624c0e1ec4637806560100f50b60b32.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5MDI7xR5ys3oX7KLYAymAB6UwskzFF1VRXg';" alt="Emergency Fund Emergency Fund Budgeting Emergency Savings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Emergency Fund Emergency Fund Budgeting Emergency Savings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/7a/be/f87abe954099144861c95afea9da4924.png" data-lightbox="roadtrip" data-title="Emergency Savings Emergency Savings Emergency Fund Money Management">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/7a/be/f87abe954099144861c95afea9da4924.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkaUKFM-NUIOvk442lHbVRptwrn5wx2lPLtw';" alt="Emergency Savings Emergency Savings Emergency Fund Money Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Emergency Savings Emergency Savings Emergency Fund Money Management</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/55/5b/23555bcd9d2a8eb99e9bdc4c46dd20f8.jpg" data-lightbox="roadtrip" data-title="Build Your Emergency Fund Savings Plan Today In 2020 Emergency Fund Emergency Fund Saving Emergency Fund Savings Plan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/55/5b/23555bcd9d2a8eb99e9bdc4c46dd20f8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROjtCY0ENJ8ANyrq5oC59IpTjH1RM36PQdJw';" alt="Build Your Emergency Fund Savings Plan Today In 2020 Emergency Fund Emergency Fund Saving Emergency Fund Savings Plan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Build Your Emergency Fund Savings Plan Today In 2020 Emergency Fund Emergency Fund Saving Emergency Fund Savings Plan</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/35/c7/79/35c779d69be9a71ba364780d021991f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROjtCY0ENJ8ANyrq5oC59IpTjH1RM36PQdJw';" alt="Build Your Emergency Fund Savings Plan Today In 2020 Emergency Fund Emergency Fund Saving Emergency Fund Savings Plan">
+										<div class="card-body">
+						<h3 class="h5"><b>BBC Children in Need Emergency Essentials Programme supports children and young people who are facing exceptionally difficult circumstances and is delivered by Family Fund Business Services.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Emergency funds for military families</strong>. 
+								
+																	For the past 75 years AER has maintained a rich history of taking care of Soldiers said Patsy Piggott Army Community Service AER specialist. 
+																	Once youve made it a. 
+																	The Military Families Fund provides emergency financial assistance to military families faced with unforeseen and often immediate needs that have resulted due to conditions of service. 
+																	The MOAA Foundation is also pleased to offer Emergency Financial Relief Grants for military and veteran families or caregivers in need of immediate bill-pay support due to the COVID-19 crisis. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Assistance can include funds for emergency travel burial of a loved one emergency food and shelter etc. 
+																	The Importance of Emergency Funds for Military Families. 
+																	The focus as always is to continue to provide. 
+																	The programme provides items that meet a childs most basic needs such as a bed to sleep in a cooker to provide a hot meal and other items or services critical to a childs wellbeing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They may be able to offer you help with a range of support from housing advice to buying household goods and health care. 
+																	Since June we have received more than 200 applications and have awarded more than 80000 in grants to those in need. 
+																	Military Family Support Programming Survey concluded that enlisted military families and veteran families were the least prepared for a financial emergency or significant loss of income. 
+																	AER provided 70 million in loans and grants to 40000 Soldiers and Families in 2019. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The American Red Cross can help you with travel funds food and shelter in the case of an emergency or tragedy. 
+																	December 21 2016. 
+																	You should save and maintain roughly six months worth of income for unexpected expenses. 
+																	Building an emergency fund is challenging but its not impossible. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	January 29 2021 2 min. 
+																	Fees for predatory payday loans can be an astronomical 19 for each 100 borrowed until payday. 
+																	Financial assistance for female veterans. 
+																	Type emergency savings into Google and youll find hundreds of articles that all promote the same general message. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Soldiers Sailors Airmen and Families Association SSAFA is a charity that offers support to people whove served or are currently serving in the Forces. 
+																	However when youre in the military then you could cut your emergency fund down to vehicle repair or plane tickets for emergency leave. 
+																	Building an emergency fund is an essential first step toward financial wellness. 
+																	In a perfect world all military families would have a PCS fund that would help take care of all. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Third military families have this silly habit of moving frequently and sometimes unexpectedly. 
+																	Families of retired service members that are experiencing financial difficulties can receive grants of up to 1500 to help pay for basic living expenses. 
+																	Soldiers and Family members will learn why its important to start saving their money now especially for retirement on Tuesday from 530-730 pmMilitary Saves Week provides Families and. 
+																	When Ensign Zachery Christensen asked to participate in Military Times annual financial review. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VFW helps military families through its Unmet Needs Program. 
+																	Military families facing financial hardships have options thanks to the Army Emergency Relief fund which begins its annual drive here March 1 and continues through May 15. 
+																	Theres an even more radical approach to an emergency fund. 
+																	An emergency fund can feel like an unachievable luxury for many military families especially when 24 of military spouses are unemployed and 77 are under-employed according to the 2019 Blue Star Families Military Life Survey PDF opens in a new window. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The American Red Cross works together with a variety of aid societies aimed at providing emergency reliable financial assistance to eligible military families in times of crisis and need. 
+																	This could be a job loss an illness or a major expense say major car or home repairs. 
+																	Army Emergency Relief has always been an important tool for Commanders. 
+																	In my nearly 40 years of service I repeatedly witnessed the impact Army Leaders had on their Soldiers lives by sending them to their AER Office for financial assistance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The American Red Cross works in partnership with military aid societies to provide quality reliable financial assistance to eligible applicants 247365. 
+																	Simply put an emergency fund is money youve set aside into an account specifically for the purpose of covering you during a financial emergency. 
+																	Young military families need an emergency fund Karen Jowers. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/d7/20/b9d7206c5321c6ddbb4148c291aa620b.png" data-lightbox="roadtrip" data-title="5 Bank Accounts Every Military Family Should Have Today Shared Finances Military Family Emergency Fund">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/d7/20/b9d7206c5321c6ddbb4148c291aa620b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvr7nnMLYnh5v092UZ48sMlxOYDcZTLhmX-w';" alt="5 Bank Accounts Every Military Family Should Have Today Shared Finances Military Family Emergency Fund">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Bank Accounts Every Military Family Should Have Today Shared Finances Military Family Emergency Fund</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/06/1c/1b061cbb451f564741588409d3ff60dc.jpg" data-lightbox="roadtrip" data-title="Pin On All Nextgen Milspouse All The Time">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/06/1c/1b061cbb451f564741588409d3ff60dc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2G6lcFVrn1knstsEjek5PImj__xHHCrcihQ';" alt="Pin On All Nextgen Milspouse All The Time">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On All Nextgen Milspouse All The Time</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/35/c7/79/35c779d69be9a71ba364780d021991f7.jpg" data-lightbox="roadtrip" data-title="I Could Never Seem To Stick To A Budget Before This Finally I M Able To Keep My Finances Organi Family Money Saving Military Family Budget Military Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/35/c7/79/35c779d69be9a71ba364780d021991f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPRjqZ0H2hHNUkfKzyCCbNF1mujEu9VAf-1w';" alt="I Could Never Seem To Stick To A Budget Before This Finally I M Able To Keep My Finances Organi Family Money Saving Military Family Budget Military Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Could Never Seem To Stick To A Budget Before This Finally I M Able To Keep My Finances Organi Family Money Saving Military Family Budget Military Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/df/25/bfdf258d7fdedfd0f46a973c5168edab.jpg" data-lightbox="roadtrip" data-title="The Importance Of Emergency Funds Emergency Fund Ways To Save Money Emergency">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/df/25/bfdf258d7fdedfd0f46a973c5168edab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO9-nbHaXK8GKYj7Ct-Em7Hno50QgPZ2Oeyg';" alt="The Importance Of Emergency Funds Emergency Fund Ways To Save Money Emergency">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Importance Of Emergency Funds Emergency Fund Ways To Save Money Emergency</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/4a/f0/d54af0ccab40c1906f5a573db3692c25.png" data-lightbox="roadtrip" data-title="Teamwork Makes That Green Work Saving Money Budget Stress Less Blue Star Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/4a/f0/d54af0ccab40c1906f5a573db3692c25.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjDoG3d8FXxMtXyjKZI3ytI9JT2SXYUPeO-w';" alt="Teamwork Makes That Green Work Saving Money Budget Stress Less Blue Star Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Teamwork Makes That Green Work Saving Money Budget Stress Less Blue Star Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/66/98/456698430afb226b1dbca3c2f6d0c0af.jpg" data-lightbox="roadtrip" data-title="Bluehost Com Emergency Fund Family Money Saving Budgeting Money">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/66/98/456698430afb226b1dbca3c2f6d0c0af.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQShg4zzgnWn87whTuo4SoXxiEd537RTKHgyQ';" alt="Bluehost Com Emergency Fund Family Money Saving Budgeting Money">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bluehost Com Emergency Fund Family Money Saving Budgeting Money</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/bb/0d/26bb0db1ae0a3d1389c0772d979de0ef.png" data-lightbox="roadtrip" data-title="Separating From The Military Money Skills Kids Money Family Learning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/bb/0d/26bb0db1ae0a3d1389c0772d979de0ef.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTabz1lngVSsFwtQE1F3bnyrK0na68o10ZoNQ';" alt="Separating From The Military Money Skills Kids Money Family Learning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Separating From The Military Money Skills Kids Money Family Learning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/02/53/fd02534cba954c43eb555f0bd916c41a.png" data-lightbox="roadtrip" data-title="Easy Way For Military Families To Pay Off Debt Fast Debt Payoff Money Saving Tips Saving Money">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/02/53/fd02534cba954c43eb555f0bd916c41a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP4I-VPV_BmPGuh4oGFrojtwePV125h6b2GQ';" alt="Easy Way For Military Families To Pay Off Debt Fast Debt Payoff Money Saving Tips Saving Money">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Easy Way For Military Families To Pay Off Debt Fast Debt Payoff Money Saving Tips Saving Money</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ef/13/ff/ef13ff5756ac3b041097bc5a719aa5d5.jpg" data-lightbox="roadtrip" data-title="Emergency Fund Everything You Need To Know Updated 2019 Emergency Fund Money Management Advice Saving Money Budget">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ef/13/ff/ef13ff5756ac3b041097bc5a719aa5d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkED9igRykrGeUiGQjF7B-0EifAAZ6CMPGkQ';" alt="Emergency Fund Everything You Need To Know Updated 2019 Emergency Fund Money Management Advice Saving Money Budget">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Emergency Fund Everything You Need To Know Updated 2019 Emergency Fund Money Management Advice Saving Money Budget</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/af/64/be/af64bef726f3b3269f51288aa14c3667.jpg" data-lightbox="roadtrip" data-title="Legitimate Active Duty Side Hustles For Military Members Family In 2020 Make More Money Side Hustle Sides">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/af/64/be/af64bef726f3b3269f51288aa14c3667.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvMa2YUHUhBSzy_oiP7ze9QAmKs_Vz9Vs7KA';" alt="Legitimate Active Duty Side Hustles For Military Members Family In 2020 Make More Money Side Hustle Sides">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Legitimate Active Duty Side Hustles For Military Members Family In 2020 Make More Money Side Hustle Sides</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/ae/43/13ae43e198e703271ef94133c62d7754.png" data-lightbox="roadtrip" data-title="Great Ways To Save Money On Deployment Use These Tips To Make Your Deployment Savings Plan Saving Money Ways To Save Money Saving Money Budget">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/ae/43/13ae43e198e703271ef94133c62d7754.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ91Q3RaGjA-lL9uAPiT6E2XHqU7GRgRyumKw';" alt="Great Ways To Save Money On Deployment Use These Tips To Make Your Deployment Savings Plan Saving Money Ways To Save Money Saving Money Budget">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Great Ways To Save Money On Deployment Use These Tips To Make Your Deployment Savings Plan Saving Money Ways To Save Money Saving Money Budget</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/e1/28/a5e1282e98d38c4d1d80d5827a928e44.jpg" data-lightbox="roadtrip" data-title="Looking To Separate Or Retire From The Military Wondering How Much You Should Have Saved In Your Emergency F Military Transition Emergency Fund Financial Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/e1/28/a5e1282e98d38c4d1d80d5827a928e44.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHVXH1s2Ag5NSaqF4Rai1LaGphs8kvxBoYtg';" alt="Looking To Separate Or Retire From The Military Wondering How Much You Should Have Saved In Your Emergency F Military Transition Emergency Fund Financial Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Looking To Separate Or Retire From The Military Wondering How Much You Should Have Saved In Your Emergency F Military Transition Emergency Fund Financial Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/1d/db/811ddbe39fe40df8f5130fe1f2eaf0fa.png" data-lightbox="roadtrip" data-title="Budgeting Your Military Paycheck Infographic Omni Military Loans Budgeting Financial Tips Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/1d/db/811ddbe39fe40df8f5130fe1f2eaf0fa.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTypWP_XPK76cw_nHLIwPPizmoD5m5tdcfi6w';" alt="Budgeting Your Military Paycheck Infographic Omni Military Loans Budgeting Financial Tips Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Budgeting Your Military Paycheck Infographic Omni Military Loans Budgeting Financial Tips Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/best-military-unit-nicknames.html">Best Military Unit Nicknames</a></li>
+													<li class="list-group-item"><a href="/australian-army-lesson-plan-template.html">Australian Army Lesson Plan Template</a></li>
+													<li class="list-group-item"><a href="/bexar-county-military-and-veterans-services-center-san-antonio-tx.html">Bexar County Military And Veterans Services Center San Antonio Tx</a></li>
+													<li class="list-group-item"><a href="/army-study-guide-sharp-questions.html">Army Study Guide Sharp Questions</a></li>
+													<li class="list-group-item"><a href="/army-wives-michael-holden.html">Army Wives Michael Holden</a></li>
+													<li class="list-group-item"><a href="/army-wives-support-groups-online.html">Army Wives Support Groups Online</a></li>
+													<li class="list-group-item"><a href="/bc-military-family-resource-centre.html">Bc Military Family Resource Centre</a></li>
+													<li class="list-group-item"><a href="/army-wife-guide.html">Army Wife Guide</a></li>
+													<li class="list-group-item"><a href="/benefits-for-vietnam-veterans-dependents.html">Benefits For Vietnam Veterans Dependents</a></li>
+													<li class="list-group-item"><a href="/benefits-of-dod-civilian.html">Benefits Of Dod Civilian</a></li>
+													<li class="list-group-item"><a href="/best-military-dog-names.html">Best Military Dog Names</a></li>
+													<li class="list-group-item"><a href="/australia-defense-budget-2021.html">Australia Defense Budget 2021</a></li>
+													<li class="list-group-item"><a href="/best-army-dog-names.html">Best Army Dog Names</a></li>
+													<li class="list-group-item"><a href="/ashe-army-dot-shop.html">Ashe Army Dot Shop</a></li>
+													<li class="list-group-item"><a href="/army-to-spouse.html">Army To Spouse</a></li>
+													<li class="list-group-item"><a href="/blank-department-of-the-army-letterhead.html">Blank Department Of The Army Letterhead</a></li>
+													<li class="list-group-item"><a href="/army-tradoc-hair-regulations.html">Army Tradoc Hair Regulations</a></li>
+													<li class="list-group-item"><a href="/army-wives-support-groups-uk.html">Army Wives Support Groups Uk</a></li>
+													<li class="list-group-item"><a href="/best-female-military-dog-names.html">Best Female Military Dog Names</a></li>
+													<li class="list-group-item"><a href="/army-using-dog.html">Army Using Dog</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Army Corp Of Engineers Chicago - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Army Corp Of Engineers Chicago",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/474x/92/e6/fd/92e6fd99544103ea0a95ab894f136bb3.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+army+corp+of+engineers+chicago",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Army Corp Of Engineers Chicago</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">See reviews salaries interviews from US Army Corps of Engineers employees in Chicago IL. Paul Culberson was recently named the new CommanderDistrict Engineer for the Chicago District of the US Army Corps of Engineers USACE. Leverage your professional network and get hired. <br>				
+			</p>
+										<a class="badge badge-danger" href="/perks-of-being-an-army-ranger.html">perks of being an army ranger</a>
+											<a class="badge badge-secondary" href="/pentagon-budget-cut-vote-roll-call.html">pentagon budget cut vote roll call</a>
+											<a class="badge badge-light" href="/oregon-military-department-deers.html">oregon military department deers</a>
+											<a class="badge badge-info" href="/pantai-army-dock.html">pantai army dock</a>
+											<a class="badge badge-light" href="/oklahoma-department-of-military-affairs.html">oklahoma department of military affairs</a>
+											<a class="badge badge-secondary" href="/oregon-military-department-logo.html">oregon military department logo</a>
+											<a class="badge badge-info" href="/oregon-military-department-budget.html">oregon military department budget</a>
+											<a class="badge badge-light" href="/pakistan-military-accounts-department-jobs-2019.html">pakistan military accounts department jobs 2019</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you've come to visit the right site.  Our website provides you with suggestions for seeing the maximum quality video and picture content, hunt and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, particularly Youtube, therefore we recommend this video for you to view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/71/8f/39718fdf65f921f55c7c9b9618fe3b0e.jpg" data-lightbox="roadtrip" data-title="Korean War Era Infrared Sniper Scope Us Army Corps Of Engineers Korean War Sniper">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/71/8f/39718fdf65f921f55c7c9b9618fe3b0e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUUl8W1DAFgRM2usPGzAFJOMBmRQFLg6Ka1A';" alt="Korean War Era Infrared Sniper Scope Us Army Corps Of Engineers Korean War Sniper">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Korean War Era Infrared Sniper Scope Us Army Corps Of Engineers Korean War Sniper</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/ae/b3/40aeb37f2ee50e388a096d16ba3f18a7.jpg" data-lightbox="roadtrip" data-title="Stage 1 Construction Of The Mccook Reservoir Us Army Corps Of Engineers Flood Risk Reservoir">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/ae/b3/40aeb37f2ee50e388a096d16ba3f18a7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw9NMfjj3IuiELQRWhJzxgc3voHlyNKi0ZIQ';" alt="Stage 1 Construction Of The Mccook Reservoir Us Army Corps Of Engineers Flood Risk Reservoir">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stage 1 Construction Of The Mccook Reservoir Us Army Corps Of Engineers Flood Risk Reservoir</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/bc/f5/99bcf56fedfe27aced26ebf5b22ec61d.jpg" data-lightbox="roadtrip" data-title="Corps Of Engineers Castle Fort Necklace Us Army Usace Made Army Pin Army Us Army Corps Of Engineers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/bc/f5/99bcf56fedfe27aced26ebf5b22ec61d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLssUrYAYkFJ77GWhAP7dFHOiAiDozYCG85A';" alt="Corps Of Engineers Castle Fort Necklace Us Army Usace Made Army Pin Army Us Army Corps Of Engineers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Corps Of Engineers Castle Fort Necklace Us Army Usace Made Army Pin Army Us Army Corps Of Engineers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/18/34/5e/18345e145a38ad8a900714b95b5d60e5.jpg" data-lightbox="roadtrip" data-title="U S Army Corps Of Engineers Hat Badge Floating Etsy Engineer Hat Badge Army Corps Of Engineers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/18/34/5e/18345e145a38ad8a900714b95b5d60e5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgYliRAfZVqAZ3gyGBYNFQjEnHZqHfankfLw';" alt="U S Army Corps Of Engineers Hat Badge Floating Etsy Engineer Hat Badge Army Corps Of Engineers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Corps Of Engineers Hat Badge Floating Etsy Engineer Hat Badge Army Corps Of Engineers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/63/39/9f63397b0dadfe9e022d7b0659f867fa.jpg" data-lightbox="roadtrip" data-title="Jeff Nichols On Twitter Jeff Nichols Us Army Corps Of Engineers Army Corps Of Engineers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/63/39/9f63397b0dadfe9e022d7b0659f867fa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx_j00sgR4z-2lJHwHXQerBd0UA8Zh1p7-KA';" alt="Jeff Nichols On Twitter Jeff Nichols Us Army Corps Of Engineers Army Corps Of Engineers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jeff Nichols On Twitter Jeff Nichols Us Army Corps Of Engineers Army Corps Of Engineers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/41/a3/d441a33fba12f142134531a9a7d37721.jpg" data-lightbox="roadtrip" data-title="Fort Point Nhs Was Constructed By The U S Army Corps Of Engineers Between 1853 And 1861 To Prevent Entr San Francisco Bay Area San Francisco Aerial Photograph">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/41/a3/d441a33fba12f142134531a9a7d37721.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH3fpO6WF-W33KxEBS1hOagUmba4snMK8Ouw';" alt="Fort Point Nhs Was Constructed By The U S Army Corps Of Engineers Between 1853 And 1861 To Prevent Entr San Francisco Bay Area San Francisco Aerial Photograph">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fort Point Nhs Was Constructed By The U S Army Corps Of Engineers Between 1853 And 1861 To Prevent Entr San Francisco Bay Area San Francisco Aerial Photograph</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/18/34/5e/18345e145a38ad8a900714b95b5d60e5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH3fpO6WF-W33KxEBS1hOagUmba4snMK8Ouw';" alt="Fort Point Nhs Was Constructed By The U S Army Corps Of Engineers Between 1853 And 1861 To Prevent Entr San Francisco Bay Area San Francisco Aerial Photograph">
+										<div class="card-body">
+						<h3 class="h5"><b>The United States Army Corps of Engineers USACE is an engineer formation of the United States Army that has three primary mission areas.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us army corp of engineers chicago</strong>. 
+								
+																	Apply on company website. 
+																	Culberson was commissioned as a second lieutenant in the Corps of Engineers through ROTC from the New Mexico Military Institute in 1996. 
+																	Army Corps of Engineers Great Lakes and Ohio River Division Maj. 
+																	Get Directions 312 846-5330. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Regulatory Branch 231 South LaSalle Street Suite 1500 Chicago Illinois 60604 Phone 312 846-5530 Fax 312 353-4110 lrcregwebusacearmymil. 
+																	The Lock Queue Report displays hourly updates from all the locks in the US Army Corps of Engineers and displays all vessels which have traveled through each lock structure. 
+																	The day-to-day activities of the three mission areas are administered by a lieutenant general known as the commanding general chief of engineers. 
+																	231 S La Salle St Ste 1500 159156 mi Chicago IL IL 60604. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Engineer regiment military construction and civil works. 
+																	This is the official fan page of the US. 
+																	Chicago Mayor Lori Lightfoot and the Army Corps of Engineers are working to turn a major convention center into a 3000-bed temporary hospital to treat infected patients. 
+																	Army Corps of Engineers is to deliver vital public and military engineering services. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Reisinger in the position. 
+																	5587 people follow this. 
+																	Army Corps of Engineers published Engineer Circular 1110-2-6075 Inundation Maps and Emergency Action Plans and Incident Management for Dams and Levee Systems in October. 
+																	New Army Corps Of Engineers jobs added daily. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Whittle Jr met one-on-one with employees of the Corps Chicago District followed by a tour of current projects during his Sept. 
+																	4 US Army Corps of Engineers reviews in Chicago IL. 
+																	News Releases USACE News USACE Publishes Policy Update for Inundation Maps and the National Inventory of Dams The US. 
+																	Army Corps of Engineers Chicago District. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	He has held numerous positions. 
+																	Army Corps of Engineers. 
+																	Help Duties Summary About the PositionThis position is the the. 
+																	Partnering in peace and war to strengthen our nations security energize the economy and reduce risks from disasters. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The report displays ship names numbers of barges direction of travel and the times recorded while transiting the lock. 
+																	5222 people like this. 
+																	Army Corps of Engineers Chicago District closed out fiscal year 2020 with a record-breaking 241M program. 
+																	The Chicago Army Corps of Engineers located in Chicago IL is a branch location of the federal Army Corps of Engineers USACECOE. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The mission of the US. 
+																	We have proudly. 
+																	Army Corps of Engineers Chicago District on Messenger. 
+																	First visit to Chicago District for new commanding general of Great Lakes and Ohio River Division Newly appointed commanding general of the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Todays top 50 Army Corps Of Engineers jobs in Chicago Illinois United States. 
+																	Please note that the Regulatory Program is different for each state. 
+																	US Army Corps of Engineers Chicago IL US 5 months ago Be among the first 25 applicants. 
+																	A free inside look at company reviews and salaries posted anonymously by employees. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Army Corps of Engineers perform a wide range of civil military and environmental engineering services in Cook County. 
+																	A significant contribution to the spike in execution was 137M from the Federal. 
+																	Learn about US Army Corps of Engineerss Chicago office. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/02/02/750202a8e98eff609b063530b52e407f.jpg" data-lightbox="roadtrip" data-title="Dredging Map Duluth U S Army Corps Of Engineers Army Corps Of Engineers Army Corps Duluth">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/02/02/750202a8e98eff609b063530b52e407f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWy26HZJHYKcKneEolz8yPDXXgjw7MoxxUYg';" alt="Dredging Map Duluth U S Army Corps Of Engineers Army Corps Of Engineers Army Corps Duluth">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dredging Map Duluth U S Army Corps Of Engineers Army Corps Of Engineers Army Corps Duluth</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/92/e6/fd/92e6fd99544103ea0a95ab894f136bb3.jpg" data-lightbox="roadtrip" data-title="Ebay Ad Url Vintage Gold Filled U S Army Corps Of Engineers Lapel Pin Marked 1 10 10k Gf In 2020 Army Corps Of Engineers Vintage Gold Lapel Pins">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/92/e6/fd/92e6fd99544103ea0a95ab894f136bb3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjLI46fuUJMp5HcDUcwtMDJcfeadLm_5btMQ';" alt="Ebay Ad Url Vintage Gold Filled U S Army Corps Of Engineers Lapel Pin Marked 1 10 10k Gf In 2020 Army Corps Of Engineers Vintage Gold Lapel Pins">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ebay Ad Url Vintage Gold Filled U S Army Corps Of Engineers Lapel Pin Marked 1 10 10k Gf In 2020 Army Corps Of Engineers Vintage Gold Lapel Pins</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/ac/92/34ac9278c4896dd8bdc8f59199d5048d.jpg" data-lightbox="roadtrip" data-title="Nearly 6 Acres Of New Green Space Coming Soon To Lakefront Lakefront Green Space Chicago Real Estate">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/ac/92/34ac9278c4896dd8bdc8f59199d5048d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyNM_s_n32302jCi_uwja0JZcHdxMSB9ybEA';" alt="Nearly 6 Acres Of New Green Space Coming Soon To Lakefront Lakefront Green Space Chicago Real Estate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nearly 6 Acres Of New Green Space Coming Soon To Lakefront Lakefront Green Space Chicago Real Estate</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/c6/e0/35c6e0a8ab9367493fc870088bcadfef.png" data-lightbox="roadtrip" data-title="Usace L A District Employee Dons Navy Blue And Gold Us Army Corps Of Engineers Army Corps Of Engineers Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/c6/e0/35c6e0a8ab9367493fc870088bcadfef.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs0x1pZYAt99YobLBPTAmPKdvETmVuq3lQNA';" alt="Usace L A District Employee Dons Navy Blue And Gold Us Army Corps Of Engineers Army Corps Of Engineers Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usace L A District Employee Dons Navy Blue And Gold Us Army Corps Of Engineers Army Corps Of Engineers Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/8d/9d/bd8d9def244ae19fe6513dc75ebd1a14.jpg" data-lightbox="roadtrip" data-title="Captain Kerstin Hedlund A U S Army Chaplain Salutes Army Chaplain Chaplain Us Army Corps Of Engineers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/8d/9d/bd8d9def244ae19fe6513dc75ebd1a14.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWDfbPvm7VERo0osxbMgYgOkzHgQNPs4DVsg';" alt="Captain Kerstin Hedlund A U S Army Chaplain Salutes Army Chaplain Chaplain Us Army Corps Of Engineers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Captain Kerstin Hedlund A U S Army Chaplain Salutes Army Chaplain Chaplain Us Army Corps Of Engineers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/79/1c/0e791cbaa17a35e4a1106157e809be0b.jpg" data-lightbox="roadtrip" data-title="Military Sale Us Army Corps Of Engineers Tie Tack Essayons Etsy Us Army Corps Of Engineers Army Corps Of Engineers Us Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/79/1c/0e791cbaa17a35e4a1106157e809be0b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAD7Oo8xtmmwh0VtaCM62mJt_vYtw0EJWP7A';" alt="Military Sale Us Army Corps Of Engineers Tie Tack Essayons Etsy Us Army Corps Of Engineers Army Corps Of Engineers Us Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Sale Us Army Corps Of Engineers Tie Tack Essayons Etsy Us Army Corps Of Engineers Army Corps Of Engineers Us Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/2f/76/ae2f76a87e8bc0ba0b6dd4bba21b489a.jpg" data-lightbox="roadtrip" data-title="Mobile District Missions Civil Works Recreation Tennessee Tombigbee Waterway Waterway Tennessee Map Us Army Corps Of Engineers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/2f/76/ae2f76a87e8bc0ba0b6dd4bba21b489a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuobmrWOPQzACkQZtvUbCi6L35IN7ndc_EFA';" alt="Mobile District Missions Civil Works Recreation Tennessee Tombigbee Waterway Waterway Tennessee Map Us Army Corps Of Engineers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mobile District Missions Civil Works Recreation Tennessee Tombigbee Waterway Waterway Tennessee Map Us Army Corps Of Engineers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6e/1d/05/6e1d055b4c8f06ad826a23b9e4c5b279.jpg" data-lightbox="roadtrip" data-title="Members Of The U S Army Garrison Wiesbaden Europe District U S Army Corps Of Engineers Hessis Access Control Access Control System Army Corps Of Engineers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6e/1d/05/6e1d055b4c8f06ad826a23b9e4c5b279.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp_S3L5hcRLJ8dVD84HIZsEpPVTb8iDNZZJw';" alt="Members Of The U S Army Garrison Wiesbaden Europe District U S Army Corps Of Engineers Hessis Access Control Access Control System Army Corps Of Engineers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Members Of The U S Army Garrison Wiesbaden Europe District U S Army Corps Of Engineers Hessis Access Control Access Control System Army Corps Of Engineers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/3e/a4/26/3ea426b80e9271f971f64a5f5841aa9c.jpg" data-lightbox="roadtrip" data-title="Pin By Gwendolyn Artis On Brave Soldiers Us Army Corps Of Engineers American Veterans African American History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/3e/a4/26/3ea426b80e9271f971f64a5f5841aa9c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU1Ug_cLHMMyKLvhQpfNgGSJY2_XNkZut-og';" alt="Pin By Gwendolyn Artis On Brave Soldiers Us Army Corps Of Engineers American Veterans African American History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Gwendolyn Artis On Brave Soldiers Us Army Corps Of Engineers American Veterans African American History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/59/92/e75992a2e9e6b707216471a7579bdf89.jpg" data-lightbox="roadtrip" data-title="Us Army Engineer Logo Metal Art Clock By Tomkaysclocks On Etsy 48 00 Army Corps Of Engineers Army Day Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/59/92/e75992a2e9e6b707216471a7579bdf89.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvu5cqsFgKjJv8l762XwpWUgcUpIJN47prA';" alt="Us Army Engineer Logo Metal Art Clock By Tomkaysclocks On Etsy 48 00 Army Corps Of Engineers Army Day Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Engineer Logo Metal Art Clock By Tomkaysclocks On Etsy 48 00 Army Corps Of Engineers Army Day Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/06/7d/88067d87dee02499a8188af030957d63.jpg" data-lightbox="roadtrip" data-title="Louisville District Missions Civil Works Recreation Lakes Mississinewa Lake Lake Us Army Corps Of Engineers Army Corps Of Engineers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/06/7d/88067d87dee02499a8188af030957d63.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU9EpijOBo3jrg6obS7zD_cnBSZSSxhdIQcA';" alt="Louisville District Missions Civil Works Recreation Lakes Mississinewa Lake Lake Us Army Corps Of Engineers Army Corps Of Engineers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Louisville District Missions Civil Works Recreation Lakes Mississinewa Lake Lake Us Army Corps Of Engineers Army Corps Of Engineers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/d9/8c/30/d98c30b7090bd09f7db0601a2865ea17--air-force-reserve-us-army-reserve.jpg" data-lightbox="roadtrip" data-title="Window Graphic 30x65 U S Army Reserve Army National Guard National Guard Army Corps Of Engineers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/d9/8c/30/d98c30b7090bd09f7db0601a2865ea17--air-force-reserve-us-army-reserve.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR70x5W2lFy6TubXcjS4VCsFytbkp9WW0hiZA';" alt="Window Graphic 30x65 U S Army Reserve Army National Guard National Guard Army Corps Of Engineers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Window Graphic 30x65 U S Army Reserve Army National Guard National Guard Army Corps Of Engineers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/7e/40/537e40ddb53fe188057e614c15e3a513.jpg" data-lightbox="roadtrip" data-title="Napa Bypass Project Nears Halfway Mark Us Army Corps Of Engineers Army Corps Of Engineers Monster Trucks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/7e/40/537e40ddb53fe188057e614c15e3a513.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJUhuAkqkHGjIGrOerGVmJSqhai8PBZriLVA';" alt="Napa Bypass Project Nears Halfway Mark Us Army Corps Of Engineers Army Corps Of Engineers Monster Trucks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Napa Bypass Project Nears Halfway Mark Us Army Corps Of Engineers Army Corps Of Engineers Monster Trucks</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-is-csrs-and-fers.html">What Is Csrs And Fers</a></li>
+													<li class="list-group-item"><a href="/what-is-debt-reset-program.html">What Is Debt Reset Program</a></li>
+													<li class="list-group-item"><a href="/what-is-cia-in-india.html">What Is Cia In India</a></li>
+													<li class="list-group-item"><a href="/what-do-military-police-wear.html">What Do Military Police Wear</a></li>
+													<li class="list-group-item"><a href="/what-is-an-office-symbol-in-the-army.html">What Is An Office Symbol In The Army</a></li>
+													<li class="list-group-item"><a href="/what-is-a-military-engagement.html">What Is A Military Engagement</a></li>
+													<li class="list-group-item"><a href="/what-is-16-military-time.html">What Is 16 Military Time</a></li>
+													<li class="list-group-item"><a href="/what-is-42a-in-the-army.html">What Is 42a In The Army</a></li>
+													<li class="list-group-item"><a href="/what-does-the-department-of-the-army-do.html">What Does The Department Of The Army Do</a></li>
+													<li class="list-group-item"><a href="/what-is-a-dod-model.html">What Is A Dod Model</a></li>
+													<li class="list-group-item"><a href="/what-is-fy-2021.html">What Is Fy 2021</a></li>
+													<li class="list-group-item"><a href="/what-does-eo-mean-in-the-army.html">What Does Eo Mean In The Army</a></li>
+													<li class="list-group-item"><a href="/what-is-counterintelligence-in-the-army.html">What Is Counterintelligence In The Army</a></li>
+													<li class="list-group-item"><a href="/what-is-dod-disability.html">What Is Dod Disability</a></li>
+													<li class="list-group-item"><a href="/what-entity-is-responsible-for-army-public-affairs-resources.html">What Entity Is Responsible For Army Public Affairs Resources</a></li>
+													<li class="list-group-item"><a href="/what-does-army-civil-affairs-do.html">What Does Army Civil Affairs Do</a></li>
+													<li class="list-group-item"><a href="/what-is-a-dd-form-2765.html">What Is A Dd Form 2765</a></li>
+													<li class="list-group-item"><a href="/what-is-a-distinguished-service-award.html">What Is A Distinguished Service Award</a></li>
+													<li class="list-group-item"><a href="/what-is-disabled-vet-leave.html">What Is Disabled Vet Leave</a></li>
+													<li class="list-group-item"><a href="/what-does-the-defence-intelligence-agency-do.html">What Does The Defence Intelligence Agency Do</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

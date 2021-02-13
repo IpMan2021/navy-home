@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Department Of National Defence Research - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Department Of National Defence Research",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/89/9d/23/899d2313403f28a1c7399943141ceb51.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=department+of+national+defence+research",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Department Of National Defence Research</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Governed by 48 CFR 35017 - Federally Funded Research and Development Centers. Defence Research and Development Canada is proud to announce the first federal department quantum ST strategy which will keep DNDCAF on the cutting edge of quantum innovation. National Defence and the Canadian Armed Forces COVID-19 Most requested. <br>				
+			</p>
+										<a class="badge badge-primary" href="/ncaa-eligibility-no-participation-history.html">ncaa eligibility no participation history</a>
+											<a class="badge badge-primary" href="/ncaa-5th-year-eligibility.html">ncaa 5th year eligibility</a>
+											<a class="badge badge-primary" href="/ncaa-eligibility-email.html">ncaa eligibility email</a>
+											<a class="badge badge-light" href="/ncaa-eligibility-dual-enrollment.html">ncaa eligibility dual enrollment</a>
+											<a class="badge badge-primary" href="/ncaa-eligibility-jobs.html">ncaa eligibility jobs</a>
+											<a class="badge badge-dark" href="/ncaa-eligibility-sat.html">ncaa eligibility sat</a>
+											<a class="badge badge-light" href="/ncaa-eligibility-account.html">ncaa eligibility account</a>
+											<a class="badge badge-dark" href="/ncaa-eligibility-center-email.html">ncaa eligibility center email</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you have come to pay a visit to the right site.  Our website provides you with suggestions for seeing the highest quality video and image content, hunt and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, particularly Youtube, therefore we recommend this video that you view.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/c9/9b/b4c99b67b87889452a0d03e21c4ca51f.jpg" data-lightbox="roadtrip" data-title="Drdo Defence Research Development Organisation With Its Vision Of Getting Transformed Into A Technological Leader Of World C Indian Navy Defence Armaments">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/c9/9b/b4c99b67b87889452a0d03e21c4ca51f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqhWtx4CnYEWfyPuHUMe2N7zc0IpUyEzRuZQ';" alt="Drdo Defence Research Development Organisation With Its Vision Of Getting Transformed Into A Technological Leader Of World C Indian Navy Defence Armaments">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Drdo Defence Research Development Organisation With Its Vision Of Getting Transformed Into A Technological Leader Of World C Indian Navy Defence Armaments</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/05/b7/8405b7403214bc05d7b1c9fd1f747b26.gif" data-lightbox="roadtrip" data-title="Pakistan Army National Defence University Ndu Jobs 2020 Pakistan Army Jobs In Pakistan University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/05/b7/8405b7403214bc05d7b1c9fd1f747b26.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0-Xt7YJq3aF6bFb3ibxCgQh8rwRpaEpUZGw';" alt="Pakistan Army National Defence University Ndu Jobs 2020 Pakistan Army Jobs In Pakistan University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pakistan Army National Defence University Ndu Jobs 2020 Pakistan Army Jobs In Pakistan University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/b5/1b/04b51bd74152218f31d5a2f4f213aea9.jpg" data-lightbox="roadtrip" data-title="Defence Research Development Organisation Drdo Works Under The Ministry Of Defence Drdo Dedicatedly Working Towa Weapon Systems Design Development Defence">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/b5/1b/04b51bd74152218f31d5a2f4f213aea9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWh1duchJiofRNf8pQ99UzBulJcbY7614zTQ';" alt="Defence Research Development Organisation Drdo Works Under The Ministry Of Defence Drdo Dedicatedly Working Towa Weapon Systems Design Development Defence">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Defence Research Development Organisation Drdo Works Under The Ministry Of Defence Drdo Dedicatedly Working Towa Weapon Systems Design Development Defence</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/db/c4/06dbc435165f700ef2af4b31eed397e3.jpg" data-lightbox="roadtrip" data-title="Drdo Develops Sensor To Detect Radiation Levels Darwinsnews Darwin Government Jobs Recruitment Defence">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/db/c4/06dbc435165f700ef2af4b31eed397e3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ80e_Tq2MgrZeYLm6GtKYaRshFsAwk3gShtg';" alt="Drdo Develops Sensor To Detect Radiation Levels Darwinsnews Darwin Government Jobs Recruitment Defence">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Drdo Develops Sensor To Detect Radiation Levels Darwinsnews Darwin Government Jobs Recruitment Defence</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/03/9d/91/039d9139fca0389f4e03809243950757.jpg" data-lightbox="roadtrip" data-title="Drdo Mts Online Form 2019 Drdo Mts Online Form 2019 Latest Jobs Please Vist Sarkariposta Com Short De Research And Development Government Jobs Recruitment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/03/9d/91/039d9139fca0389f4e03809243950757.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEeOeYwfO_dzKuunu18aIuGbcQ1C7_QQlwGw';" alt="Drdo Mts Online Form 2019 Drdo Mts Online Form 2019 Latest Jobs Please Vist Sarkariposta Com Short De Research And Development Government Jobs Recruitment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Drdo Mts Online Form 2019 Drdo Mts Online Form 2019 Latest Jobs Please Vist Sarkariposta Com Short De Research And Development Government Jobs Recruitment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/83/6e/f0836ef0d19271d023aa8f5947de142b.png" data-lightbox="roadtrip" data-title="Pin On Cortex Factory">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/83/6e/f0836ef0d19271d023aa8f5947de142b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjzTw97vcLcuvlyUId2TApAsPTfYAAlzMUTA';" alt="Pin On Cortex Factory">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Cortex Factory</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/84/05/b7/8405b7403214bc05d7b1c9fd1f747b26.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjzTw97vcLcuvlyUId2TApAsPTfYAAlzMUTA';" alt="Pin On Cortex Factory">
+										<div class="card-body">
+						<h3 class="h5"><b>The National Defence Research Institute FOA was established in 1945 Instruction TS CII No.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Department of national defence research</strong>. 
+								
+																	For example MIT Lincoln Laboratory founded in 1951 originated as the Radiation Laboratory at MIT and the Navys Operation Research Group evolved into the Center for Naval Analyses. 
+																	Aligned to the US. 
+																	- RAND National Defense Research Institute. 
+																	It is Australias second largest government-funded science organisation after the CSIROThe agencys name was changed from Defence Science and Technology Organisation DSTO to Defence Science. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Department of National Defence supports the Canadian Armed Forces who serve on the sea on land and in the air with the Navy Army Air Force and Special Forces to defend Canadians interests at home and abroad. 
+																	The NISDRG program supports excellent research that deepens understanding of emerging science and technology and addresses intelligence and national security interests. 
+																	The Defence Science and Technology Group DST is part of the Australian Department of Defence dedicated to providing science and technology support for Australias defence and national security needs. 
+																	The Strategy will move innovation from the lab into the hands of CAF members to protect Canadas defence and security interests. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Defence industry development Show more. 
+																	Find a job in the Forces. 
+																	A new research report by the Department of National Defence suggests the longer the COVID-19 pandemic rages the stronger right-wing extremism and other threats in Canada and around the world are. 
+																	Department of Energy DoE National Research Laboratories National Labs Number. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Recherche et developpement pour la defense Canada RDDC is an agency of the Department of National Defence DND whose purpose is to provide the Canadian Armed Forces CAF other government departments and public safety and national security communities with knowledge and technology. 
+																	Visit the Defence Science Centre for more information. 
+																	17 as of June 2020. 
+																	Write to the Troops. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On 13 October 2020 the Office of National Intelligence and the Department of Defence announced the National Intelligence and Security Discovery Research Grants NISDRG program. 
+																	Department of Energy DoE by contract. 
+																	Talk to a recruiter. 
+																	The first FFRDCs served the Department of Defense. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NDSEG Graduate Fellowship Program is designed to increase the number of Science Technology Engineering Math STEM talent within DoD and the Nation by offering graduate fellowships to promising baccalaureates Graduate Fellowships. 
+																	Boren National Security Education Act of 1991 mandated that the Secretary of Defense create and sustain a program to award. 
+																	Since then other government organizations have sponsored FFRDCs to meet their specific needs. 
+																	The mission of the Department of Defense is to provide the military forces needed to deter war and to protect the security of our country. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Defence Research and Development Canada DRDC an agency of the Department of National Defence DND and the Social Sciences and Humanities Research Council SSHRC have signed a joint initiative agreement to support social sciences research and related activities pertaining to military personnel readiness organizational and operational effectiveness and human effectiveness in modern operations. 
+																	Defence Research and Development Canada research centres Defence Research and Development Canada DRDC operates eight research centres across Canada each with a unique combination of expertise and facilities to carry out world-class science and technology research. 
+																	National Security Education Program The David L. 
+																	Description The Department of National Defences Mobilizing Insights in Defence and Security MINDS program is committed to fostering the next generation of security and defence scholars in the Canadian academic community and to encouraging a strong Canadian knowledge base in contemporary defence and security issues. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The United States Department of Defense DoD USDOD or DOD is an executive branch department of the federal government charged with coordinating and supervising all agencies and functions of the government directly related to national security and the United States Armed ForcesThe DOD is the largest employer in the world with over 13 million active-duty service members soldiers marines. 
+																	Defence Research and Development Canada We are the national leader in defence science and technology and develop and deliver new technical solutions and advice to the Department of National Defence the Canadian Armed Forces other federal departments and the safety and security communities. 
+																	Contact us for general questions about DRDC. 
+																	Our team work to grow WAs defence industry capability and contribution. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The departments headquarters is at the Pentagon. 
+																	Defence Research and Development Canada DRDC. 
+																	The Defence Science Centre supports the commercialisation of defence-related research and cultivate a competitive local defence industry that will diversify and strengthen WAs economy and create new jobs. 
+																	24 and took over operations at the Swedish Armed Forces Chemical Institute Foersvarsvaesendets kemiska anstalt FKA the Military Physics Institute and the Telecommunications Technical Working Group of the Swedish Board of Inventions Statens uppfinnarnaemnds teletekniska arbetsgrupp SUN that. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Technically are FFRDCs with the exception of the National Energy Technology Laboratory. 
+																	Description The Department of National Defence Research Initiative DNDRI a joint initiative of Defence Research and Development Canada DRDC and SSHRC supports social sciences and humanities research aligned with areas of interest to the Canadian Armed Forces CAF and the Department of National Defence DND. 
+																	The Department of National Defence was established by the National Defence Act which merged the Department of Militia and Defence which was created in 1906 when the British Army withdrew its forces stationed in Canada the Department of Naval Services the department responsible for the administration of the Royal Canadian Navy and the Air Board which oversaw aviation in Canada. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/26/64/312664123863330ee69d82827ff43fce.jpg" data-lightbox="roadtrip" data-title="Ministry Of National Food Security Research Department Jobs 2020 In 2020 Food Security Security Private Sector">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/26/64/312664123863330ee69d82827ff43fce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRis5YRl1OjL9rhzQoVIj4ZHlnh_o7ClfmKBg';" alt="Ministry Of National Food Security Research Department Jobs 2020 In 2020 Food Security Security Private Sector">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ministry Of National Food Security Research Department Jobs 2020 In 2020 Food Security Security Private Sector</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/9d/23/899d2313403f28a1c7399943141ceb51.jpg" data-lightbox="roadtrip" data-title="Pin On National">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/9d/23/899d2313403f28a1c7399943141ceb51.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPc4TTmYo9WW7ijAUpgzbLvqkehtm41UOc_g';" alt="Pin On National">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On National</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/7f/b4/627fb4171561e7bd6458170d5fc78fb0.webp" data-lightbox="roadtrip" data-title="Pin On World">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/7f/b4/627fb4171561e7bd6458170d5fc78fb0.webp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS-DUTmfAsk6owAvJ7GGiU9E3x4j7O1lSRyg';" alt="Pin On World">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On World</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/a7/e3/9ea7e3b76812304b0cab7bcf164239d2.jpg" data-lightbox="roadtrip" data-title="The Bureau Of Police Research Development Bpr D Is Organizing A Two Day National Conference For Young Super Development Research And Development Conference">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/a7/e3/9ea7e3b76812304b0cab7bcf164239d2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT05e9n5Bxhoo3baw6Hr1tdQQ80WmW6fjhatQ';" alt="The Bureau Of Police Research Development Bpr D Is Organizing A Two Day National Conference For Young Super Development Research And Development Conference">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Bureau Of Police Research Development Bpr D Is Organizing A Two Day National Conference For Young Super Development Research And Development Conference</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/17/b7/02/17b702013594fb81db364f96c45eb6e5.jpg" data-lightbox="roadtrip" data-title="Job Opportunities In National Defence University Ndu Islamabad For Jobs Detail And How To Apply Paperpk Http Job Opportunities Job Research Publications">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/17/b7/02/17b702013594fb81db364f96c45eb6e5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp4HP3AwpFQUT9SOEe733kkOglpQBYT7tQxg';" alt="Job Opportunities In National Defence University Ndu Islamabad For Jobs Detail And How To Apply Paperpk Http Job Opportunities Job Research Publications">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Job Opportunities In National Defence University Ndu Islamabad For Jobs Detail And How To Apply Paperpk Http Job Opportunities Job Research Publications</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/19/5c/f3195c6e650bec6caee4aee69edd55ce.gif" data-lightbox="roadtrip" data-title="National Defence University Jobs 2020 Jobs In Pakistan University Latest Jobs In Pakistan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/19/5c/f3195c6e650bec6caee4aee69edd55ce.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmPKY9xTuMDLC1F7k8OoaE6xJy_Q1R2eGv-w';" alt="National Defence University Jobs 2020 Jobs In Pakistan University Latest Jobs In Pakistan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Defence University Jobs 2020 Jobs In Pakistan University Latest Jobs In Pakistan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/a9/ed/dea9ed0eab8248c029dd1036ca82a3f9.jpg" data-lightbox="roadtrip" data-title="Pin On Army Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/a9/ed/dea9ed0eab8248c029dd1036ca82a3f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTESOruwuKM7zeap9OrDJxQLNQQFIKESnOOAA';" alt="Pin On Army Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Army Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/63/3d/9d633d7b953da3f6e66f73c6e8c4b37f.jpg" data-lightbox="roadtrip" data-title="Pin On Newsjobz Com">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/63/3d/9d633d7b953da3f6e66f73c6e8c4b37f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3D9dhDo8sfvQD-u0I0Kt0cZ9orY96AlLbww';" alt="Pin On Newsjobz Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Newsjobz Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/87/20/76/872076764a8b982b924f79ae68fa0e88.jpg" data-lightbox="roadtrip" data-title="Amid Pakistani Unprovoked Firing That Killed 5 Civilians Iaf Evacuates 2 Injured Kids Safely Kids Breaking News Paks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/87/20/76/872076764a8b982b924f79ae68fa0e88.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOHtjsEcVOXIC5683Xijv5Rg2KMGsfftbOXg';" alt="Amid Pakistani Unprovoked Firing That Killed 5 Civilians Iaf Evacuates 2 Injured Kids Safely Kids Breaking News Paks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Amid Pakistani Unprovoked Firing That Killed 5 Civilians Iaf Evacuates 2 Injured Kids Safely Kids Breaking News Paks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/00/14/ff0014b3ba546bae2c262968ca294d04.png" data-lightbox="roadtrip" data-title="Critical Care Medical Education Critical Care Medical Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/00/14/ff0014b3ba546bae2c262968ca294d04.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzU6jVflRwZgGjNx4GnDHd6VYxvmoPU1pmJA';" alt="Critical Care Medical Education Critical Care Medical Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Critical Care Medical Education Critical Care Medical Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ab/6e/f0/ab6ef0b214615cd3a9cec37afa3dc65b.jpg" data-lightbox="roadtrip" data-title="National Tb Control Programme Ntp Pakistan Jobs May 2020 National Health Service Service Jobs National Health">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ab/6e/f0/ab6ef0b214615cd3a9cec37afa3dc65b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP8m8kYv6ohjmfz4ZMKhhqGuB5u8KMB5uQxA';" alt="National Tb Control Programme Ntp Pakistan Jobs May 2020 National Health Service Service Jobs National Health">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Tb Control Programme Ntp Pakistan Jobs May 2020 National Health Service Service Jobs National Health</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/e7/14/de/e714decb176874261998b2902047068a.jpg" data-lightbox="roadtrip" data-title="Pin On Alicia Ashton">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/e7/14/de/e714decb176874261998b2902047068a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHiVIejsB_jg7PNq3ohI_cG-QrBLt5nt1mSg';" alt="Pin On Alicia Ashton">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Alicia Ashton</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/61/13/046113248e7fa7ec19ab8c562c143511.png" data-lightbox="roadtrip" data-title="Gsrtc Various Updates Of Conductor Mechanic Other Posts 2019 Teacher Recruitment Railway Jobs National Defence Academy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/61/13/046113248e7fa7ec19ab8c562c143511.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSatgXhKUuoD889J_noeyszo_Y4GADl10LWXw';" alt="Gsrtc Various Updates Of Conductor Mechanic Other Posts 2019 Teacher Recruitment Railway Jobs National Defence Academy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gsrtc Various Updates Of Conductor Mechanic Other Posts 2019 Teacher Recruitment Railway Jobs National Defence Academy</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/mycanal-apk-download.html">Mycanal Apk Download</a></li>
+													<li class="list-group-item"><a href="/missile-defense-agency-budget-request-2021.html">Missile Defense Agency Budget Request 2021</a></li>
+													<li class="list-group-item"><a href="/mycaa-army.html">Mycaa Army</a></li>
+													<li class="list-group-item"><a href="/mycanal-application.html">Mycanal Application</a></li>
+													<li class="list-group-item"><a href="/my-spouse-complains-about-everything.html">My Spouse Complains About Everything</a></li>
+													<li class="list-group-item"><a href="/montgomery-county-pa-department-of-veterans-affairs.html">Montgomery County Pa Department Of Veterans Affairs</a></li>
+													<li class="list-group-item"><a href="/my-spouse-has-anxiety.html">My Spouse Has Anxiety</a></li>
+													<li class="list-group-item"><a href="/mycanal-deconnecter-appareils.html">Mycanal Deconnecter Appareils</a></li>
+													<li class="list-group-item"><a href="/my-spouse-is-never-in-my-dreams.html">My Spouse Is Never In My Dreams</a></li>
+													<li class="list-group-item"><a href="/msn-usa.html">Msn Usa</a></li>
+													<li class="list-group-item"><a href="/mycaa-spouse.html">Mycaa Spouse</a></li>
+													<li class="list-group-item"><a href="/ministry-of-defence-cairo-egypt.html">Ministry Of Defence Cairo Egypt</a></li>
+													<li class="list-group-item"><a href="/ministry-of-defence-us-budget.html">Ministry Of Defence Us Budget</a></li>
+													<li class="list-group-item"><a href="/my-wife-is-in-the-military.html">My Wife Is In The Military</a></li>
+													<li class="list-group-item"><a href="/ministry-of-defence-egypt-tenders.html">Ministry Of Defence Egypt Tenders</a></li>
+													<li class="list-group-item"><a href="/mycah-name.html">Mycah Name</a></li>
+													<li class="list-group-item"><a href="/mycah-hatfield-height.html">Mycah Hatfield Height</a></li>
+													<li class="list-group-item"><a href="/msu-department-of-military-science.html">Msu Department Of Military Science</a></li>
+													<li class="list-group-item"><a href="/mycah-taylor.html">Mycah Taylor</a></li>
+													<li class="list-group-item"><a href="/mycaa-template.html">Mycaa Template</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

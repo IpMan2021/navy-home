@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Call To Service - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Call To Service",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/736x/b2/ee/55/b2ee55db4e4b9d994ed14cea759704ff.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+call+to+service",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Call To Service</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">One of Englands biggest ambulance services has requested help from the army to deal with an ongoing surge in coronavirus calls and high staff absence rates. The NCS program offers a choice of one of the following incentives. Loan Repayment of a qualifying student loan. <br>				
+			</p>
+										<a class="badge badge-success" href="/us-army-recruiting-office-caguas.html">us army recruiting office caguas</a>
+											<a class="badge badge-success" href="/us-army-recruiting-office-phoenix-az.html">us army recruiting office phoenix az</a>
+											<a class="badge badge-success" href="/us-army-public-affairs-logo.html">us army public affairs logo</a>
+											<a class="badge badge-primary" href="/us-army-recruiting-office-near-me.html">us army recruiting office near me</a>
+											<a class="badge badge-info" href="/us-army-recruiting-office-fayetteville-fayetteville-nc.html">us army recruiting office fayetteville fayetteville nc</a>
+											<a class="badge badge-info" href="/us-army-public-affairs-phone-number.html">us army public affairs phone number</a>
+											<a class="badge badge-warning" href="/us-army-recruiting-office-puyallup.html">us army recruiting office puyallup</a>
+											<a class="badge badge-info" href="/us-army-reserve-personnel-command.html">us army reserve personnel command</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to pay a visit to the right blog.  Our website provides you with hints for viewing the highest quality video and picture content, search and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this movie that you see.  You can also contribute to supporting this site by sharing videos and images that you enjoy on this blog on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this website.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/9d/0c/7b9d0caa495957ba52cfe8837dc636b6.jpg" data-lightbox="roadtrip" data-title="Pin On God Bless The Usa And Those Who Love And Stand Beside Her">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/9d/0c/7b9d0caa495957ba52cfe8837dc636b6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE-59KDQ-X0bXghwKpNF67NbNpM-ESP2t6Nw';" alt="Pin On God Bless The Usa And Those Who Love And Stand Beside Her">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On God Bless The Usa And Those Who Love And Stand Beside Her</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/0b/aa/c40baa4dd429414c403371218b0a7fe0.jpg" data-lightbox="roadtrip" data-title="Do Not Call Me Hero I Was Doing My Job Fighting The War I Do Not Want My Son To Fight Military Quotes Warrior Quotes Military Life Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/0b/aa/c40baa4dd429414c403371218b0a7fe0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkiCgB_BPwwHknczLgpkcfpDnJwMAe9Zm9ZQ';" alt="Do Not Call Me Hero I Was Doing My Job Fighting The War I Do Not Want My Son To Fight Military Quotes Warrior Quotes Military Life Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Do Not Call Me Hero I Was Doing My Job Fighting The War I Do Not Want My Son To Fight Military Quotes Warrior Quotes Military Life Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/3d/54/c83d54976d972e27d08864da7244e137.jpg" data-lightbox="roadtrip" data-title="Call From Home Marine Mom Marine Mom Quotes Military Mom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/3d/54/c83d54976d972e27d08864da7244e137.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPuxKTXzJeXqiVJMYOzVNdFr6OzZX-81Zyww';" alt="Call From Home Marine Mom Marine Mom Quotes Military Mom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Call From Home Marine Mom Marine Mom Quotes Military Mom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/95/fb/68/95fb6893c0ee93b4e21015d1bfc8484c.jpg" data-lightbox="roadtrip" data-title="Us Army Veterans National Association Of Black Military Women At Http Www Nabmw Com Warrior Woman Army Veteran Military Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/95/fb/68/95fb6893c0ee93b4e21015d1bfc8484c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEKYNasSzJPWfIEeDCfTX78nvWROFl6e2jUw';" alt="Us Army Veterans National Association Of Black Military Women At Http Www Nabmw Com Warrior Woman Army Veteran Military Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Veterans National Association Of Black Military Women At Http Www Nabmw Com Warrior Woman Army Veteran Military Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/c7/3d/fbc73dd7dcd1eb38c6013788bb638e2a.jpg" data-lightbox="roadtrip" data-title="The Army It S Just Like Call Of Duty Bro You Ll Be A Hero Funny Army Memes Marines Funny Marine Corps Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/c7/3d/fbc73dd7dcd1eb38c6013788bb638e2a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaURAuQD1nkoqF4V3TNzlhX1LtmzEap-CRbw';" alt="The Army It S Just Like Call Of Duty Bro You Ll Be A Hero Funny Army Memes Marines Funny Marine Corps Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Army It S Just Like Call Of Duty Bro You Ll Be A Hero Funny Army Memes Marines Funny Marine Corps Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/2a/3b/532a3b605344b5d7d39e2d736a2ecbae.jpg" data-lightbox="roadtrip" data-title="Proud To Call My Friends Proud To Call My Brothers Military Life Quotes Military Quotes Military Jokes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/2a/3b/532a3b605344b5d7d39e2d736a2ecbae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR31mvcMNlxzqAHuZHkUP6l_OmlR93ivXU-2A';" alt="Proud To Call My Friends Proud To Call My Brothers Military Life Quotes Military Quotes Military Jokes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Proud To Call My Friends Proud To Call My Brothers Military Life Quotes Military Quotes Military Jokes</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/0d/a3/c0/0da3c01e382ea514eeb306de8d5ed4a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR31mvcMNlxzqAHuZHkUP6l_OmlR93ivXU-2A';" alt="Proud To Call My Friends Proud To Call My Brothers Military Life Quotes Military Quotes Military Jokes">
+										<div class="card-body">
+						<h3 class="h5"><b>CALLs Vision The Center for Army Lessons Learned is forward thinking aligning resources to deliver timely and relevant information fostering readiness of the fielded force and informing the.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army call to service</strong>. 
+								
+																	The act specified that single men aged 18 to 40 years old were liable to be called up for military service unless they were widowed with children or ministers of a religion. 
+																	Do not process store or transmit any Personally Identifiable Information PII UNCLASSIFIEDFOUO or CLASSIFIED information on this system. 
+																	The British Army is currently managing one of the largest military modernisation projects in the World. 
+																	Offered by the federal government this program is offered to all military personnel regardless of their enlisted branch. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Typically this is done with a state of emergency. 
+																	Discover more on our British Army Supporting Education website. 
+																	Army Human Resources Command Soldiers First United States Army Human Resources Command Soldiers First Site Map. 
+																	Concurrently we are looking to upgrade Challenger 2 and Warrior and introducing the Ajax and Boxer families of vehicles. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For example if they were serving with the Royal Army Service Corps they were allotted a number from 1 to 294000. 
+																	The security accreditation level of this site is UNCLASSIFIED and below. 
+																	Both of these must be true. 
+																	If you believe that somebody is posing as an Army Service Person trying to fraudulently obtain money from you we would strongly advise you to cease communication to not send any moneygift cards and to contact Action Fraud the UKs national reporting centre for fraud and cyber-crime. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The National Call to Service Program otherwise known as the NSC program is one of the many GI education benefits available to service men and women who have dedicated a total duration of eight years serving in the force. 
+																	RFA 96 provides for the call out of Reserve Forces for permanent service. 
+																	You completed your initial entry training and then continued to serve on active duty for 15 months in a military occupational specialty designated by the Secretary of Defense and. 
+																	Action Fraud provides a fraud-reporting and advice centre where people can report fraud attempted fraud. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The National Call to Service Program is an excellent enlistment program allowing options to serve both in the military and as a civilian. 
+																	The president of the United States has Presidential Reserve Call Up Authority This means that when needed the president can recall individuals to military service to support military operations. 
+																	National Call To Service. 
+																	They are employed at theater armies or in support of corps and division echelons. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	DLDs are assigned or attached to selected theater armies and Army Service component commands. 
+																	By Courtesy of Army Futures Command. 
+																	This process is also referred to as mobilisation and serves as the primary mechanism for Reservists to undertake military. 
+																	If youre interested in talking to us about what we could offer your school or college please contact our outreach team on RG-NRCOutreachAdminmodgovuk or call us on 0345 600 8080. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get military service records for the army Royal Navy Royal Marines or RAF from 1920 - who can apply how long it takes cost how to apply. 
+																	A cash bonus of 5000. 
+																	Army committed to an armoured future. 
+																	The plea comes as 999 calls in the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I felt the call and it resonated in my heart so similarly to the call to service I answered when I joined the military so. 
+																	In a state of emergency the president can recall members for an indefinite period of time. 
+																	Military service teaches leadership teamwork and personal accountability where civilian service provides an opportunity to directly help under-privileged people in a meaningful way. 
+																	The Army is dramatically expanding its National Call to Service NCS Enlistment Program commonly called the Two-Year Enlistment Congress mandated that all of the military services offer the NCS program effective October 2003. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All new recruits after the introduction of army numbers until the formation of the General Service Corps in 1942 were allotted a number from the first corps or regiment they joined after enlistment. 
+																	You may be eligible for the National Call to Service program if you meet the requirements listed below. 
+																	Army psychologist on the COVID-19 battlefront By Thomas Brading Army News Service June 9 2020 BUFFALO New York -- He knew they werent calling to say hello. 
+																	Conscription during the First World War began when the British government passed the Military Service Act in January 1916. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Another Call to Service. 
+																	Therefore an army number will. 
+																	These number blocks are shown in the table below. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/dd/4d/38dd4d0927e0a848e2c11ffd524a2f60.jpg" data-lightbox="roadtrip" data-title="Pin By Griffmc On Out Of The Box Thoughts Military Jokes Military Humor Marines Funny">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/dd/4d/38dd4d0927e0a848e2c11ffd524a2f60.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu2WZLVT_b55oVwT3qcwL_MpAViKKDJ1w8_A';" alt="Pin By Griffmc On Out Of The Box Thoughts Military Jokes Military Humor Marines Funny">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Griffmc On Out Of The Box Thoughts Military Jokes Military Humor Marines Funny</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/e6/3e/70e63e4940aeea80b859f7ab18288889.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Careers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/e6/3e/70e63e4940aeea80b859f7ab18288889.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnx9OBzWhPgcMHXDFsNZJo6OuhcUCXEEICaA';" alt="Pin On Guard Careers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Careers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b2/ee/55/b2ee55db4e4b9d994ed14cea759704ff.jpg" data-lightbox="roadtrip" data-title="Thank You For Your Service Veteransday Veterans Military Military Life Quotes Soldier Quotes Thank You Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b2/ee/55/b2ee55db4e4b9d994ed14cea759704ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmk_SJV6HlqESU9eI4okKkGUUVXJeoZ2nNYQ';" alt="Thank You For Your Service Veteransday Veterans Military Military Life Quotes Soldier Quotes Thank You Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thank You For Your Service Veteransday Veterans Military Military Life Quotes Soldier Quotes Thank You Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/2c/37/79/2c37791c6fd15ebda9a13c635bb3ebe3.jpg" data-lightbox="roadtrip" data-title="Military Wants Volunteers For 3 Week All Mre Diet In 2020 Army Service Uniform Army Army Times">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/2c/37/79/2c37791c6fd15ebda9a13c635bb3ebe3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSbD8xyobHJh4LrwTacZWZrNhz1V1M9xYkeA';" alt="Military Wants Volunteers For 3 Week All Mre Diet In 2020 Army Service Uniform Army Army Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wants Volunteers For 3 Week All Mre Diet In 2020 Army Service Uniform Army Army Times</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/de/37/bd/de37bd39b5bd169eb35d8faf61c55c4a.jpg" data-lightbox="roadtrip" data-title="Military Retirement Sign 12x24 Gift Army Air Force Navy Marines Wood Family Service Military Retirement Gift Military Retirement Military Retirement Parties">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/de/37/bd/de37bd39b5bd169eb35d8faf61c55c4a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSruBLuqMwAMQMTO8ImAqZ9EXOzbJiZ1CVEow';" alt="Military Retirement Sign 12x24 Gift Army Air Force Navy Marines Wood Family Service Military Retirement Gift Military Retirement Military Retirement Parties">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Retirement Sign 12x24 Gift Army Air Force Navy Marines Wood Family Service Military Retirement Gift Military Retirement Military Retirement Parties</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/a3/c0/0da3c01e382ea514eeb306de8d5ed4a9.jpg" data-lightbox="roadtrip" data-title="There Is No Doubt That Deployment Pay Has Some Issues Why Should One Service Member In No Real Danger Be Paid Th Deployment Pay Military Wife Life Army Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/a3/c0/0da3c01e382ea514eeb306de8d5ed4a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl8yr8S_pLRWHKplpIErM8E2TVkSdll-1WJg';" alt="There Is No Doubt That Deployment Pay Has Some Issues Why Should One Service Member In No Real Danger Be Paid Th Deployment Pay Military Wife Life Army Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">There Is No Doubt That Deployment Pay Has Some Issues Why Should One Service Member In No Real Danger Be Paid Th Deployment Pay Military Wife Life Army Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/65/58/19655882f072ff2e53403061f435bea9.jpg" data-lightbox="roadtrip" data-title="Pin By Dylan Burns On This I Believe Speech Military Quotes Army Quotes Military Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/65/58/19655882f072ff2e53403061f435bea9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrrHAegzjVknFohH7aK_5SpTqwriBQW4Q5Hg';" alt="Pin By Dylan Burns On This I Believe Speech Military Quotes Army Quotes Military Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Dylan Burns On This I Believe Speech Military Quotes Army Quotes Military Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/8d/c1/ae8dc120d3cdcd419bc3351976b91d5a.jpg" data-lightbox="roadtrip" data-title="Pin On Testimonials">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/8d/c1/ae8dc120d3cdcd419bc3351976b91d5a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCqBURW-zV_hhGkaTAt8TuoEeOTGhDBFRe9w';" alt="Pin On Testimonials">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Testimonials</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/90/d6/9d90d6b6ed5082a264108245028fa2e9.png" data-lightbox="roadtrip" data-title="Pin By Rosiejones6721 On Jay Morton In 2020 Cute Disney Wallpaper Special Air Service Cute Disney">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/90/d6/9d90d6b6ed5082a264108245028fa2e9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiw6zQQHclWapW30HfswArPUkvjGcO7sfeWg';" alt="Pin By Rosiejones6721 On Jay Morton In 2020 Cute Disney Wallpaper Special Air Service Cute Disney">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Rosiejones6721 On Jay Morton In 2020 Cute Disney Wallpaper Special Air Service Cute Disney</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/4b/7d/d14b7d1b49c11b4dc2e7410ba29bdcd4.jpg" data-lightbox="roadtrip" data-title="They Answered Our Nation S Call Fort Bragg Paratroopers Killed In Afghanistan Remembered As Selfless Courageous Paratrooper Army Service Ribbon Secretary Of The Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/4b/7d/d14b7d1b49c11b4dc2e7410ba29bdcd4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuDzcijyrjdkYQrm4Fl0m0BbWKoLjHvqGKgg';" alt="They Answered Our Nation S Call Fort Bragg Paratroopers Killed In Afghanistan Remembered As Selfless Courageous Paratrooper Army Service Ribbon Secretary Of The Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">They Answered Our Nation S Call Fort Bragg Paratroopers Killed In Afghanistan Remembered As Selfless Courageous Paratrooper Army Service Ribbon Secretary Of The Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/fc/f6/be/fcf6bef676095247b3a44a8840cee4ee.jpg" data-lightbox="roadtrip" data-title="Pin By Fabian Torales On Military In 2020 Special Forces Military Pictures Special Air Service">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/fc/f6/be/fcf6bef676095247b3a44a8840cee4ee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnCb2U0cwEiLTswkD_FUQTWhv0AfogxWms6w';" alt="Pin By Fabian Torales On Military In 2020 Special Forces Military Pictures Special Air Service">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Fabian Torales On Military In 2020 Special Forces Military Pictures Special Air Service</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2c/c4/74/2cc474ecc02c8f50bcccdb5041aacd64.jpg" data-lightbox="roadtrip" data-title="Nationalguard Soldier Sgt Millard Views A Map In The Call For Fire Exercise During The Ncng Best Warrior Competition The Compet Military Uniform Soldier Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2c/c4/74/2cc474ecc02c8f50bcccdb5041aacd64.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlqaVp9-r2I8YtdEt4HR_T0pMiVqBCOAwwwg';" alt="Nationalguard Soldier Sgt Millard Views A Map In The Call For Fire Exercise During The Ncng Best Warrior Competition The Compet Military Uniform Soldier Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nationalguard Soldier Sgt Millard Views A Map In The Call For Fire Exercise During The Ncng Best Warrior Competition The Compet Military Uniform Soldier Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/22/40/032240cf5765156ecb4512d4acea16b3.jpg" data-lightbox="roadtrip" data-title="Pin On Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/22/40/032240cf5765156ecb4512d4acea16b3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyDngEVGcfDEZ4NHxOl7QaJmBsPQ9zAQwWkg';" alt="Pin On Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-dog-tags-making.html">Army Dog Tags Making</a></li>
+													<li class="list-group-item"><a href="/army-dog-tags-necklace.html">Army Dog Tags Necklace</a></li>
+													<li class="list-group-item"><a href="/army-dogs-for-adoption-in-delhi.html">Army Dogs For Adoption In Delhi</a></li>
+													<li class="list-group-item"><a href="/army-dog-tags-real.html">Army Dog Tags Real</a></li>
+													<li class="list-group-item"><a href="/army-dogs-for-adoption.html">Army Dogs For Adoption</a></li>
+													<li class="list-group-item"><a href="/army-dog-tag-things.html">Army Dog Tag Things</a></li>
+													<li class="list-group-item"><a href="/army-dog-wikipedia.html">Army Dog Wikipedia</a></li>
+													<li class="list-group-item"><a href="/army-dog-tag-svg.html">Army Dog Tag Svg</a></li>
+													<li class="list-group-item"><a href="/army-dog-tags-for-dogs.html">Army Dog Tags For Dogs</a></li>
+													<li class="list-group-item"><a href="/army-dog-tags-svg.html">Army Dog Tags Svg</a></li>
+													<li class="list-group-item"><a href="/army-dog-vector.html">Army Dog Vector</a></li>
+													<li class="list-group-item"><a href="/army-dog-unit-ni.html">Army Dog Unit Ni</a></li>
+													<li class="list-group-item"><a href="/army-dog-tags-near-me.html">Army Dog Tags Near Me</a></li>
+													<li class="list-group-item"><a href="/army-dog-tags-ebay.html">Army Dog Tags Ebay</a></li>
+													<li class="list-group-item"><a href="/army-dog-with-prosthetic-leg.html">Army Dog With Prosthetic Leg</a></li>
+													<li class="list-group-item"><a href="/army-dog-tags-for-sale-pretoria.html">Army Dog Tags For Sale Pretoria</a></li>
+													<li class="list-group-item"><a href="/army-dog-tags-titanium.html">Army Dog Tags Titanium</a></li>
+													<li class="list-group-item"><a href="/army-dog-tags-uk.html">Army Dog Tags Uk</a></li>
+													<li class="list-group-item"><a href="/army-dogs-jumping-out-of-planes.html">Army Dogs Jumping Out Of Planes</a></li>
+													<li class="list-group-item"><a href="/army-dog-tags-silver.html">Army Dog Tags Silver</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

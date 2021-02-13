@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How To Contact Whistleblower - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How To Contact Whistleblower",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/f5/0e/3c/f50e3c8769a9eefdd1e2726e6157a662.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+to+contact+whistleblower",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How To Contact Whistleblower</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">900am to 500pm Monday to Friday excluding English public holidays. Please note that a 24-hour voicemail service is in operation for this. You can be sure we will respect confidences because that is our business. <br>				
+			</p>
+										<a class="badge badge-danger" href="/uw-madison-marching-band-music.html">uw madison marching band music</a>
+											<a class="badge badge-light" href="/us-military-passport-office-near-me.html">us military passport office near me</a>
+											<a class="badge badge-info" href="/us-military-budget-by-year.html">us military budget by year</a>
+											<a class="badge badge-dark" href="/us-military-budget-2020-pie-chart.html">us military budget 2020 pie chart</a>
+											<a class="badge badge-dark" href="/us-military-vacation-department.html">us military vacation department</a>
+											<a class="badge badge-light" href="/usajobs-military-spouse.html">usajobs military spouse</a>
+											<a class="badge badge-secondary" href="/us-military-post-office.html">us military post office</a>
+											<a class="badge badge-warning" href="/us-military-academy-history-department.html">us military academy history department</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to pay a visit to the ideal blog.  Our site provides you with hints for seeing the maximum quality video and image content, hunt and locate more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, particularly Youtube, so we recommend this movie for you to view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/1a/db/411adb7d2c69548dd00d59655f049b3a.png" data-lightbox="roadtrip" data-title="Whistleblower Claims Google Stole Money From Publishers Using Adsense Blog Monetization Make More Money Marketing Podcasts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/1a/db/411adb7d2c69548dd00d59655f049b3a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-NPFpl4O12jgm3ZWg1rMVFIv9Y5cahVSTHg';" alt="Whistleblower Claims Google Stole Money From Publishers Using Adsense Blog Monetization Make More Money Marketing Podcasts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Whistleblower Claims Google Stole Money From Publishers Using Adsense Blog Monetization Make More Money Marketing Podcasts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/b4/51/b1b4512455eb230fe9d3fd9c4bef7e43.jpg" data-lightbox="roadtrip" data-title="Image Result For Whistleblower Image Whistleblower Print Images">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/b4/51/b1b4512455eb230fe9d3fd9c4bef7e43.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSPt09jWA0TX4bXoP3mXElTeLccztEmM4LkA';" alt="Image Result For Whistleblower Image Whistleblower Print Images">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Image Result For Whistleblower Image Whistleblower Print Images</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f3/02/0b/f3020bbd58861bd8eebad88c7f997702.jpg" data-lightbox="roadtrip" data-title="Pin By Sara Elizabeth Siegler On Whistleblower How To Apply Faculties Student">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f3/02/0b/f3020bbd58861bd8eebad88c7f997702.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMpxjuM-gfOYO56eeCjwtWV6uj5mtbhFci9Q';" alt="Pin By Sara Elizabeth Siegler On Whistleblower How To Apply Faculties Student">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sara Elizabeth Siegler On Whistleblower How To Apply Faculties Student</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/80/83/39/808339df7d77de1950e20a65bec3158f.jpg" data-lightbox="roadtrip" data-title="The Laws That Protect The Whistleblowers Against Unlawful Retaliation By The Employees Can Be Exceedingl With Images Whistleblower Attorneys Environment Health And Safety">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/80/83/39/808339df7d77de1950e20a65bec3158f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2CTx4I-SR2qO9KbDxcd68GZSvCShFgMEEiQ';" alt="The Laws That Protect The Whistleblowers Against Unlawful Retaliation By The Employees Can Be Exceedingl With Images Whistleblower Attorneys Environment Health And Safety">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Laws That Protect The Whistleblowers Against Unlawful Retaliation By The Employees Can Be Exceedingl With Images Whistleblower Attorneys Environment Health And Safety</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/0e/3c/f50e3c8769a9eefdd1e2726e6157a662.jpg" data-lightbox="roadtrip" data-title="Hotline Poster Jpg 1650 2550 Federal Employee Subcontractors Federation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/0e/3c/f50e3c8769a9eefdd1e2726e6157a662.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj4Pev8jZ3GWQpboJIjJTm6ZQ8FeOUyrHgAA';" alt="Hotline Poster Jpg 1650 2550 Federal Employee Subcontractors Federation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hotline Poster Jpg 1650 2550 Federal Employee Subcontractors Federation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ec/47/b2/ec47b2840f550020323d80ab00f92c07.jpg" data-lightbox="roadtrip" data-title="Pin By Nicole Lijoi On Philosophy Wisdom Wisdom Philosophy Whistleblower">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ec/47/b2/ec47b2840f550020323d80ab00f92c07.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIYTkKuxMb4hy_leezLCkjOw5rVemOjDyiUg';" alt="Pin By Nicole Lijoi On Philosophy Wisdom Wisdom Philosophy Whistleblower">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Nicole Lijoi On Philosophy Wisdom Wisdom Philosophy Whistleblower</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/4b/b1/95/4bb1955deab7c8a58316d755c4757739.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIYTkKuxMb4hy_leezLCkjOw5rVemOjDyiUg';" alt="Pin By Nicole Lijoi On Philosophy Wisdom Wisdom Philosophy Whistleblower">
+										<div class="card-body">
+						<h3 class="h5"><b>If you need to speak to one of our Customer Experience Advocates please see below for our contact information.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How to contact whistleblower</strong>. 
+								
+																	Blow across your tongue and over your bottom teeth and lip. 
+																	In addition we work with organisations on improving their speak up arrangements and campaign for better legal protection of whistleblowers. 
+																	Direct your breath downwards towards your lower teeth. 
+																	If youd like to speak to someone about whistleblowing you can. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As a whistleblower youre protected by law. 
+																	Intelligence Department Ref PIDA Financial Conduct Authority 12 Endeavour Square London E20 1JN. 
+																	Every year we support around 3000 whistleblowers who call our Advice Line. 
+																	Contact Tim McCormack the Whistleblower today. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are a whistleblower who wants to request Government Accountability Project assistance please fill out our intake form or call our office at 202 457-0034. 
+																	Whistleblowercouk allows people to have the option of confidentially selling stories to the press while retaining their anonymity- or we can separately help find you legal representation from specialist whistleblower lawyers. 
+																	Call our dedicated team. 
+																	You should be able to feel the downward force of the air on your tongue. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We give a personal guarantee that the identity of people who contact whistlebowercouk will not be divulged to any third party without the express permission of the whistle blower. 
+																	Live Chat Email After Hours. 
+																	The firm has dedicated its law practice to representing only whistleblowers for nearly 30 years. 
+																	1 If I contact whistleblowercouk how can my anonymity and confidentiality be assured. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can reach the Office of the Whistleblower at 202 551-4790. 
+																	This should be a listening session offering the employee an opportunity to explain his concerns and identify how he believes they may best be addressed. 
+																	Media And Legal Help For Whistleblowers We specialise in dealing with whistleblowers who want to discreetly disclose information to the media or find legal representation. 
+																	A whistleblower pointing the finger elsewhere within the company may find that the investigation leads uncomfortably close to his or her own niche in the company. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A large organisation may have a policy where employees can contact their immediate manager or a specific team of individuals who are trained to handle whistleblowing disclosures. 
+																	The air will flow at a sharp angle created by the top of your tongue and your upper teeth downward across your lower teeth and lip. 
+																	Check who scheme members should contact. 
+																	He will listen to your fraud case to see if he can take your case. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The best practice is for the employer to contact a known whistleblower within 24 hours of his complaint. 
+																	But if potential whistleblowers fear they will suffer retaliation harassment alienation intimidation discrimination job loss stress or emotional hardship they will be reluctant to contact the ethics hotline to report problems. 
+																	If so whether the whistleblower has anything to hide he or she may experience the fear mistrust and inconvenience often visited upon even innocent employees of companies under investigation. 
+																	Intelligence Department Ref PIDA Financial Conduct Authority 12 Endeavour Square London E20 1JN. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Protect aims to make whistleblowing work for individuals organisations and society. 
+																	Developing the Audit Program. 
+																	44 020 7066 9200 during office hours or leave a message. 
+																	View our case studiesOur impact in 2020 Fortunately my claims were taken. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Any contact with a Government Accountability Project team member or Government Accountability Projects consideration of your case does NOT constitute our agreement to represent you unless an authorized staff member has explicitly stated so in writing. 
+																	If you have more questions about our process or are ready report it to us you can. 
+																	Call Us at 855-999-0471. 
+																	Contact a whistleblower attorney at Phillips Cohen If you would like to speak confidentially with a whistleblower attorney and have your matter reviewed Phillips Cohen LLP offers free and confidential reviews of whistleblower cases. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	0207 066 9200 email. 
+																	Contact the Advisory Conciliation and Arbitration Service Acas the whistleblowing charity Protect or your trade union for more guidance. 
+																	Contact the Advisory Conciliation and Arbitration Service Acas for help and advice on resolving a workplace dispute. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/9a/f0/3f9af0dc3127517371e7787f8e32f18e.jpg" data-lightbox="roadtrip" data-title="Pin By Sara Elizabeth Siegler On Whistleblower Whistleblower Feelings Prevention">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/9a/f0/3f9af0dc3127517371e7787f8e32f18e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh-Gn84JAPnwLTPNN-iYKcMpYfRovk92tMVg';" alt="Pin By Sara Elizabeth Siegler On Whistleblower Whistleblower Feelings Prevention">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sara Elizabeth Siegler On Whistleblower Whistleblower Feelings Prevention</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/53/53/bf5353dccd37fe3838a97ae3da3277ed.png" data-lightbox="roadtrip" data-title="Pin By Sara Elizabeth Siegler On Whistleblower Whistleblower Screenshots Best">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/53/53/bf5353dccd37fe3838a97ae3da3277ed.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGKoy64pFGnfktXnIl4BGDAUfr58qceXU87Q';" alt="Pin By Sara Elizabeth Siegler On Whistleblower Whistleblower Screenshots Best">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sara Elizabeth Siegler On Whistleblower Whistleblower Screenshots Best</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/61/f0/d261f000a1308f9507b52b70b3571cdc.jpg" data-lightbox="roadtrip" data-title="Pin By Sara Elizabeth Siegler On Whistleblower Cold Pack Submissive Unclear">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/61/f0/d261f000a1308f9507b52b70b3571cdc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIXMFaPm-YgjWW9nn2F7KQ8esVX5o4Y3ch_Q';" alt="Pin By Sara Elizabeth Siegler On Whistleblower Cold Pack Submissive Unclear">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sara Elizabeth Siegler On Whistleblower Cold Pack Submissive Unclear</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/d8/33/bcd8334ba39bd311855b0096cf06fdda.jpg" data-lightbox="roadtrip" data-title="South Eastern Trading Offers A Broad Range Of Financial Solutions And Advice To Our Clients Services Like Inv In 2020 Wealth Management Asset Management Whistleblower">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/d8/33/bcd8334ba39bd311855b0096cf06fdda.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIi1LrmeDtCH1SMVN0ayk0JVv_5WFo-KSRwQ';" alt="South Eastern Trading Offers A Broad Range Of Financial Solutions And Advice To Our Clients Services Like Inv In 2020 Wealth Management Asset Management Whistleblower">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">South Eastern Trading Offers A Broad Range Of Financial Solutions And Advice To Our Clients Services Like Inv In 2020 Wealth Management Asset Management Whistleblower</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/5d/21/a35d2167a2cf234485c856981bd1b758.jpg" data-lightbox="roadtrip" data-title="Pin By Sara Elizabeth Siegler On Whistleblower Memorandum Oncology No Response">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/5d/21/a35d2167a2cf234485c856981bd1b758.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVVcY957aVQNfU5bN2YCLv8Xk2EK14-CBr9w';" alt="Pin By Sara Elizabeth Siegler On Whistleblower Memorandum Oncology No Response">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sara Elizabeth Siegler On Whistleblower Memorandum Oncology No Response</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/9d/af/649daf36ec4122a70fbf017f350c6d72.jpg" data-lightbox="roadtrip" data-title="Pin By Sara Elizabeth Siegler On Whistleblower Human Tissue Pathology Jewell">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/9d/af/649daf36ec4122a70fbf017f350c6d72.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSZQYw1kjFEKMNmO043hbNoaK0FRJBVfNX3Q';" alt="Pin By Sara Elizabeth Siegler On Whistleblower Human Tissue Pathology Jewell">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sara Elizabeth Siegler On Whistleblower Human Tissue Pathology Jewell</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/e2/96/9fe2960a12e5ead9f4a9156737b62300.jpg" data-lightbox="roadtrip" data-title="Federal False Claims Act Penalties The Nevarez Law Firm Pc Law Firm False Claims False">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/e2/96/9fe2960a12e5ead9f4a9156737b62300.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkbkrCGK3Mo4T3SGBYvfxpHkL0f6Q4tGu3tg';" alt="Federal False Claims Act Penalties The Nevarez Law Firm Pc Law Firm False Claims False">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Federal False Claims Act Penalties The Nevarez Law Firm Pc Law Firm False Claims False</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/08/56/fb/0856fb90bfc5938fab953c4d17897234.jpg" data-lightbox="roadtrip" data-title="Pin By Sara Elizabeth Siegler On Whistleblower Whistleblower">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/08/56/fb/0856fb90bfc5938fab953c4d17897234.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaGwNuuZc75JlVuRMMtua2S1cEMHLbCE-IpA';" alt="Pin By Sara Elizabeth Siegler On Whistleblower Whistleblower">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sara Elizabeth Siegler On Whistleblower Whistleblower</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/f7/4f/66f74f0b1d6f103aaa65a51dbda73411.jpg" data-lightbox="roadtrip" data-title="A Custom Wordpress Site Designed By Scott Banks And Developed By Jim Craddock At Yellahoose Http Clienthoston Wordpress Site Design Trial Lawyer Site Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/f7/4f/66f74f0b1d6f103aaa65a51dbda73411.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyNGs3Fzjh2_2ULeP7IHGVyNkI_04Bfl9mCQ';" alt="A Custom Wordpress Site Designed By Scott Banks And Developed By Jim Craddock At Yellahoose Http Clienthoston Wordpress Site Design Trial Lawyer Site Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Custom Wordpress Site Designed By Scott Banks And Developed By Jim Craddock At Yellahoose Http Clienthoston Wordpress Site Design Trial Lawyer Site Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/b1/95/4bb1955deab7c8a58316d755c4757739.jpg" data-lightbox="roadtrip" data-title="Pin On Wrongful Termination">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/b1/95/4bb1955deab7c8a58316d755c4757739.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvyKtxgt42wTaCL7JKe2DOyl9JxZrNSa1E5Q';" alt="Pin On Wrongful Termination">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Wrongful Termination</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/0e/11/1b0e1156b139dd2bca26f77d9c2004be.jpg" data-lightbox="roadtrip" data-title="Embedded Image National Cancer Institute Whistleblower Cancer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/0e/11/1b0e1156b139dd2bca26f77d9c2004be.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpg8cTd7TaQ-FTXRque0MFWIgVQFEHkgKKA';" alt="Embedded Image National Cancer Institute Whistleblower Cancer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Embedded Image National Cancer Institute Whistleblower Cancer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/e3/c2/55e3c24f02fdd4e540ea7e9473c8a847.jpg" data-lightbox="roadtrip" data-title="Pin By Sara Elizabeth Siegler On Whistleblower The Ohio State University Ohio University Ohio State">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/e3/c2/55e3c24f02fdd4e540ea7e9473c8a847.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlV5pprGrrFFIFtTJPTaeLJv70gxsQiFgEDA';" alt="Pin By Sara Elizabeth Siegler On Whistleblower The Ohio State University Ohio University Ohio State">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sara Elizabeth Siegler On Whistleblower The Ohio State University Ohio University Ohio State</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/e8/e9/1be8e9169f6382719dc4872dd7d23e19.jpg" data-lightbox="roadtrip" data-title="Pin By Sara Elizabeth Siegler On Whistleblower No Response Memorandum Whistleblower">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/e8/e9/1be8e9169f6382719dc4872dd7d23e19.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdyTk-t5Fb_mQtX-L9OggsrokvDvSn5o-MgA';" alt="Pin By Sara Elizabeth Siegler On Whistleblower No Response Memorandum Whistleblower">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sara Elizabeth Siegler On Whistleblower No Response Memorandum Whistleblower</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-health-records-archives.html">Military Health Records Archives</a></li>
+													<li class="list-group-item"><a href="/military-house.html">Military House</a></li>
+													<li class="list-group-item"><a href="/military-haircut-korea.html">Military Haircut Korea</a></li>
+													<li class="list-group-item"><a href="/military-haircut-chinese.html">Military Haircut Chinese</a></li>
+													<li class="list-group-item"><a href="/military-hero.html">Military Hero</a></li>
+													<li class="list-group-item"><a href="/military-houses-for-rent.html">Military Houses For Rent</a></li>
+													<li class="list-group-item"><a href="/military-haircuts.html">Military Haircuts</a></li>
+													<li class="list-group-item"><a href="/military-haircut-back-side.html">Military Haircut Back Side</a></li>
+													<li class="list-group-item"><a href="/military-h-hour.html">Military H Hour</a></li>
+													<li class="list-group-item"><a href="/military-hour-to-hours.html">Military Hour To Hours</a></li>
+													<li class="list-group-item"><a href="/military-haircut-womens.html">Military Haircut Womens</a></li>
+													<li class="list-group-item"><a href="/military-hardship-discharge.html">Military Hardship Discharge</a></li>
+													<li class="list-group-item"><a href="/military-hat-ro.html">Military Hat Ro</a></li>
+													<li class="list-group-item"><a href="/military-helmet-weight.html">Military Helmet Weight</a></li>
+													<li class="list-group-item"><a href="/military-hat.html">Military Hat</a></li>
+													<li class="list-group-item"><a href="/military-hours-and-minutes-chart.html">Military Hours And Minutes Chart</a></li>
+													<li class="list-group-item"><a href="/military-golden-hour.html">Military Golden Hour</a></li>
+													<li class="list-group-item"><a href="/military-hd500.html">Military Hd500</a></li>
+													<li class="list-group-item"><a href="/military-haircut-comb-over.html">Military Haircut Comb Over</a></li>
+													<li class="list-group-item"><a href="/military-hard-labor-sentence.html">Military Hard Labor Sentence</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

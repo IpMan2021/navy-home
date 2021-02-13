@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Housing Office San Diego - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Housing Office San Diego",
+  "datePublished": "2021-02-13",
+  "image": "https://lincolnmilitary.com/assets/images/1Naval-Complex-SD_Park-Summit_Exterior.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+housing+office+san+diego",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Housing Office San Diego</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Naval Base San Diego Navy Lodge San Diego 619 234-6142. San Diego PPV housing is located on and off government property and in most cases is former military housing. All military personnel unaccompanied and accompanied their families and DoD employees are eligible for these services. <br>				
+			</p>
+										<a class="badge badge-warning" href="/us-army-denim-hat.html">us army denim hat</a>
+											<a class="badge badge-danger" href="/us-army-counter-stickman-rope-hero-mod-apk.html">us army counter stickman rope hero mod apk</a>
+											<a class="badge badge-secondary" href="/us-army-employer-address.html">us army employer address</a>
+											<a class="badge badge-danger" href="/us-army-corps-of-engineers-japan-district.html">us army corps of engineers japan district</a>
+											<a class="badge badge-danger" href="/us-army-corps-of-engineers-kansas-city-district-regulatory.html">us army corps of engineers kansas city district regulatory</a>
+											<a class="badge badge-light" href="/us-army-corps-of-engineers-office.html">us army corps of engineers office</a>
+											<a class="badge badge-danger" href="/us-army-corps-of-engineers-korean-war.html">us army corps of engineers korean war</a>
+											<a class="badge badge-secondary" href="/us-army-corps-of-engineers-mailing-address.html">us army corps of engineers mailing address</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to visit the right site.  Our website gives you suggestions for seeing the highest quality video and picture content, hunt and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this video that you view.  It is also possible to contribute to supporting this site by sharing videos and images that you like on this site on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this site.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.militarybyowner.com/assets/1/6/Screen_Shot_2020-04-28_at_8.26.57_PM.png" data-lightbox="roadtrip" data-title="San Diego Naval Base Housing Information Militarybyowner">
+											<img class="card-img v-image ads-img " src="https://www.militarybyowner.com/assets/1/6/Screen_Shot_2020-04-28_at_8.26.57_PM.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROLgNiez4srmwKRI96bgWY8WyfSjRbJBxhFA';" alt="San Diego Naval Base Housing Information Militarybyowner">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">San Diego Naval Base Housing Information Militarybyowner</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lincolnmilitary.com/assets/images/IMG_9531.jpg" data-lightbox="roadtrip" data-title="Bayview Hills Lincoln Military Housing">
+											<img class="card-img v-image ads-img " src="https://lincolnmilitary.com/assets/images/IMG_9531.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiVdkiNCx8u2oaQtVEjq30CwoWoBhRFYG2zg';" alt="Bayview Hills Lincoln Military Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bayview Hills Lincoln Military Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lincolnmilitary.com/assets/images/cache/EDIT_IMG_4565-6111b0d4be2e1c26e350ba8b1cdf9f05.jpg" data-lightbox="roadtrip" data-title="Pomerado Terrace Lincoln Military Housing">
+											<img class="card-img v-image ads-img " src="https://lincolnmilitary.com/assets/images/cache/EDIT_IMG_4565-6111b0d4be2e1c26e350ba8b1cdf9f05.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCTP_Eq0F1bmMvKldIW5k2Ig-gLOFELCzFbw';" alt="Pomerado Terrace Lincoln Military Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pomerado Terrace Lincoln Military Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lincolnmilitary.com/assets/images/EDIT_IMG_4933.jpg" data-lightbox="roadtrip" data-title="Canyon View Murphy Canyon Lincoln Military Housing">
+											<img class="card-img v-image ads-img " src="https://lincolnmilitary.com/assets/images/EDIT_IMG_4933.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd1iLXma0imcW9FxB8E5weoSa-xazMFPuFpw';" alt="Canyon View Murphy Canyon Lincoln Military Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Canyon View Murphy Canyon Lincoln Military Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lincolnmilitary.com/assets/images/IMG_9876.jpg" data-lightbox="roadtrip" data-title="Silver Strand I Lincoln Military Housing">
+											<img class="card-img v-image ads-img " src="https://lincolnmilitary.com/assets/images/IMG_9876.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxfVHfw68lbAQVKKY-alUrMoqo0V_EloTMGQ';" alt="Silver Strand I Lincoln Military Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Silver Strand I Lincoln Military Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lincolnmilitary.com/assets/images/1Naval-Complex-SD_Park-Summit_Exterior.jpg" data-lightbox="roadtrip" data-title="Park Summit Lincoln Military Housing">
+											<img class="card-img v-image ads-img " src="https://lincolnmilitary.com/assets/images/1Naval-Complex-SD_Park-Summit_Exterior.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOSZDSzoZ_OXso_KlFwtOgGXB1FkVqC8VwBg';" alt="Park Summit Lincoln Military Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Park Summit Lincoln Military Housing</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://lincolnmilitary.com/assets/images/1Naval-Complex-SD_Park-Summit_Exterior.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOSZDSzoZ_OXso_KlFwtOgGXB1FkVqC8VwBg';" alt="Park Summit Lincoln Military Housing">
+										<div class="card-body">
+						<h3 class="h5"><b>On-base housing for MCRD San Diego is privatized.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military housing office san diego</strong>. 
+								
+																	San Diego region is the largest housing complex network in the world. 
+																	Balcony or patio garages and central AC. 
+																	Naval Base San Diego Family Housing Service Center. 
+																	The Housing Service Centers trained professionals can help you choose the right housing to meet your needs whether in Military Family or Unaccompanied Housing or in one of San Diegos unique neighborhoods. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are a military member or family looking for housing by Naval Base San Diego located in San Diego CA youve come to the right place. 
+																	They are the family housing company for all military personnel and their families stationed at any base within the San Diego Military Complex. 
+																	Housing Information Basic Allowance For Housing BAH is provided by the military to help active service members with housing costs and can be used for either on- or off-post housing. 
+																	In National City and the farthest South gate at Pier 13. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Naval Base San Diego NBSD is the principal homeport of the Pacific Fleet consisting of 60 Navy ships 2 Coast Guard cutters and home base to 150 commands. 
+																	Lincoln Military Housing offers a diverse selection of apartments for rent in Miramarwithin 48 communities in the San Diego area serving Naval Base San Diego Naval Base Point Loma Naval Base Coronado Marine Corps Air Station Miramar and Marine Corps Recruit Depot. 
+																	For more information on VASH and other Veterans programs with the County of San Diego please call 858 694-8789. 
+																	All ships at Naval Base San Diego are. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Please call the Veterans Affairs VA office 619 400-5157 or go to VA Homeless Vets. 
+																	NB San Diego on-base housing is privatized and managed by Lincoln Military Housing 858 300-7493 which offers over 30 neighbors with a large variety of home styles and sizes base on rank and family needs. 
+																	Call 619-556-8443 or visit the Metro San Diego Family Housing Center located. 
+																	Naval Base San Diego consists of the wet side on the bay side of Harbor Drive with the Main Gate at 32nd St. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Lincoln Military Housing is committed to making your transition and subsequent living experience everything you deserve. 
+																	Our mission is to provide housing support for all families and unaccompanied personnel moving to or departing from the San Diego Region. 
+																	Marine Corps Recruit Depot San Diego Privatized Family Housing 858 300-7493. 
+																	San Diegos Military Housing Welcome Center offers personalized housing services to help with temporary and long-term apartment condo and home rentals in addition to home buying counseling. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Naval Air Station North Island Privatized Family Housing Office. 
+																	Lincoln Military Housing offers 9135 homes within 48 communities in the San Diego area serving Naval Base San Diego Naval Base Point Loma Naval Base Coronado Marine Corps Air Station Miramar and Marine Corps Recruit Depot. 
+																	The San Diego Naval Housing Welcome Center 619 556-766773238443 will be your first point of contact when you receive moving orders and provides services that will help you with referrals relocation. 
+																	Lincoln military housing - district office san diego lincoln military housing - district office san diego photos lincoln military housing - district office san diego location. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Contact Lincoln Military Housing 858 300-7493 to check available housing for your rank and family size. 
+																	You are strongly. 
+																	858 300-7493 619 556. 
+																	Naval Base San Diego Family Housing Service Center. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	From 1969 to 2019 a period of 50 years a hard copy of the SAN DIEGAN was given to every relocating family by the housing referral office on every base in San Diego County and place in everyones military relocation packet. 
+																	This included the Marines Navy Army Air Force and even the Coast Guard. 
+																	As such the wait time for base housing can be long so military families should be prepared to occupy civilian-sector housing for a period of time prior to receiving military housing assignment. 
+																	Naval Base San Diego. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In addition to navy personnel we also provide housing assistance to service members assigned to MCAS Miramar MCRD and USCG Sector San Diego. 
+																	Best San Diego Off-Base Military Housing If youre in the military and looking for San Diego off-base housing Irvine Company Apartments Communities have great options with apartments near Camp Pendleton Miramar Air Station and downtown San Diego naval bases including 32nd Street Naval Station and Naval Base Coronado. 
+																	Dont hesitate to let us know how we can serve you. 
+																	Home amenities may include. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	San Diego Military Bases. 
+																	They have 48 communities serving several Naval and Marine bases in San Diego with a variety of house styles and sizes. 
+																	There are also gates at 8th St. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lincolnmilitary.com/assets/images/EDIT_IMG_50121.jpg" data-lightbox="roadtrip" data-title="Aero Ridge Murphy Canyon Lincoln Military Housing">
+											<img class="card-img v-image ads-img " src="https://lincolnmilitary.com/assets/images/EDIT_IMG_50121.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJoDTVSM1Nq6gnOQ0mB_zPCrS4H7WU4NPckQ';" alt="Aero Ridge Murphy Canyon Lincoln Military Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aero Ridge Murphy Canyon Lincoln Military Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lincolnmilitary.com/assets/images/La-Mesa-Park1.jpg" data-lightbox="roadtrip" data-title="La Mesa Park Lincoln Military Housing">
+											<img class="card-img v-image ads-img " src="https://lincolnmilitary.com/assets/images/La-Mesa-Park1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTMsTEioddFty8tNY1qeqSeRFq3gbbFRTp6w';" alt="La Mesa Park Lincoln Military Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">La Mesa Park Lincoln Military Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://usmclife.com/wp-content/uploads/2011/10/Miramar3.jpg" data-lightbox="roadtrip" data-title="Usmc Life Military Housing Miramar Marine Corps Base Usmc Life">
+											<img class="card-img v-image ads-img " src="http://usmclife.com/wp-content/uploads/2011/10/Miramar3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEGjIfyTd4TTatoLIH-yCw8sqNqxCOBeTXpQ';" alt="Usmc Life Military Housing Miramar Marine Corps Base Usmc Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usmc Life Military Housing Miramar Marine Corps Base Usmc Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://farm4.static.flickr.com/3466/3318549070_8697ce6b42.jpg" data-lightbox="roadtrip" data-title="Where Do You Want To Live Military Com">
+											<img class="card-img v-image ads-img " src="http://farm4.static.flickr.com/3466/3318549070_8697ce6b42.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSinJt25Euh05SPiHw4mtE_G-2JOEKSzCFrlQ';" alt="Where Do You Want To Live Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Where Do You Want To Live Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/f2/af/91f2af02ad4d4b49bbac0554a1da6204.jpg" data-lightbox="roadtrip" data-title="Military Housing San Diego California Bedroombuydirect Com San Diego Military Housing Military Housing San Diego California">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/f2/af/91f2af02ad4d4b49bbac0554a1da6204.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwLi3R7AbwoGV7sDeXU3MXyQPoNXh3o04a_w';" alt="Military Housing San Diego California Bedroombuydirect Com San Diego Military Housing Military Housing San Diego California">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Housing San Diego California Bedroombuydirect Com San Diego Military Housing Military Housing San Diego California</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lincolnmilitary.com/assets/images/IMG_8727.jpg" data-lightbox="roadtrip" data-title="Chesterton Townhomes Lincoln Military Housing">
+											<img class="card-img v-image ads-img " src="https://lincolnmilitary.com/assets/images/IMG_8727.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGtZkkZeuTjyOSOQ3thf2Lb8GEnfrx25LZCw';" alt="Chesterton Townhomes Lincoln Military Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chesterton Townhomes Lincoln Military Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/40/02/4f4002537fe52bf63cf80fecc47852f0.jpg" data-lightbox="roadtrip" data-title="San Diego Bayview Hills Lincoln Military Housing E1 E6 Military Housing Lincoln Military Housing San Diego Naval Base Housing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/40/02/4f4002537fe52bf63cf80fecc47852f0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmYDJD1ZtiCQu3bmCAgubMMXX3A_ayAsETSQ';" alt="San Diego Bayview Hills Lincoln Military Housing E1 E6 Military Housing Lincoln Military Housing San Diego Naval Base Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">San Diego Bayview Hills Lincoln Military Housing E1 E6 Military Housing Lincoln Military Housing San Diego Naval Base Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lincolnmilitary.com/assets/images/cache/IMG_5141_EDIT-5ec4163ddba1d7574fd3707c25aad6e8.jpg" data-lightbox="roadtrip" data-title="Santo Terrace Murphy Canyon Lincoln Military Housing">
+											<img class="card-img v-image ads-img " src="https://lincolnmilitary.com/assets/images/cache/IMG_5141_EDIT-5ec4163ddba1d7574fd3707c25aad6e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYurVO2r6j0Gipo5sZPjh39d5Ke7VYul2S-A';" alt="Santo Terrace Murphy Canyon Lincoln Military Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Santo Terrace Murphy Canyon Lincoln Military Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lincolnmilitary.com/assets/images/cache/Chollas-Heights-Townhomes-20191-3bcee879efdc8bb069f95ff622d2c647.jpg" data-lightbox="roadtrip" data-title="Chollas Heights Lincoln Military Housing">
+											<img class="card-img v-image ads-img " src="https://lincolnmilitary.com/assets/images/cache/Chollas-Heights-Townhomes-20191-3bcee879efdc8bb069f95ff622d2c647.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnYpzoqWNbP5fYthnSK3dh3bn1dtDx_FvL8w';" alt="Chollas Heights Lincoln Military Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chollas Heights Lincoln Military Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lincolnmilitary.com/assets/images/cache/EDIT_IMG_4340-45067916a6e94143daeb40ed0170e6aa.jpg" data-lightbox="roadtrip" data-title="Gallery Bayview Hills Lincoln Military Housing">
+											<img class="card-img v-image ads-img " src="https://lincolnmilitary.com/assets/images/cache/EDIT_IMG_4340-45067916a6e94143daeb40ed0170e6aa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT66kZCmfd1caTDziiI08Uqij11q67B9vHuGQ';" alt="Gallery Bayview Hills Lincoln Military Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gallery Bayview Hills Lincoln Military Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lincolnmilitary.com/assets/images/1.-Naval-Complex-SD_Home-Terrace_Exterior-3.JPG" data-lightbox="roadtrip" data-title="Home Terrace Lincoln Military Housing">
+											<img class="card-img v-image ads-img " src="https://lincolnmilitary.com/assets/images/1.-Naval-Complex-SD_Home-Terrace_Exterior-3.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5q7Hg6DtBL8314kFLO2u65sWiDdWdGA07Jg';" alt="Home Terrace Lincoln Military Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Terrace Lincoln Military Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lincolnmilitary.com/assets/images/1c_san_mateo_point_137_Peterson__001.jpg" data-lightbox="roadtrip" data-title="San Mateo Point Lincoln Military Housing">
+											<img class="card-img v-image ads-img " src="https://lincolnmilitary.com/assets/images/1c_san_mateo_point_137_Peterson__001.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbJsEsAQ5CLu592oCaACXCQE4sTB3qrrZjyA';" alt="San Mateo Point Lincoln Military Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">San Mateo Point Lincoln Military Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://admin.hostingloop.com/wp-content/uploads/2019/10/the-village-mission-valley.jpg" data-lightbox="roadtrip" data-title="Best Off Base Military Housing In San Diego Irvine Company">
+											<img class="card-img v-image ads-img " src="https://admin.hostingloop.com/wp-content/uploads/2019/10/the-village-mission-valley.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Z1d3GAmfI1vdAHfblR0YIfrsYbvFsU5yNA';" alt="Best Off Base Military Housing In San Diego Irvine Company">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Off Base Military Housing In San Diego Irvine Company</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/us-army-fire-department-hohenfels.html">Us Army Fire Department Hohenfels</a></li>
+													<li class="list-group-item"><a href="/us-army-hatchet.html">Us Army Hatchet</a></li>
+													<li class="list-group-item"><a href="/us-army-hat-amazon.html">Us Army Hat Amazon</a></li>
+													<li class="list-group-item"><a href="/us-army-flag-hat.html">Us Army Flag Hat</a></li>
+													<li class="list-group-item"><a href="/us-army-generals-pay.html">Us Army Generals Pay</a></li>
+													<li class="list-group-item"><a href="/us-army-fire-service.html">Us Army Fire Service</a></li>
+													<li class="list-group-item"><a href="/us-army-germany-address.html">Us Army Germany Address</a></li>
+													<li class="list-group-item"><a href="/us-army-headquarters-europe.html">Us Army Headquarters Europe</a></li>
+													<li class="list-group-item"><a href="/us-army-futures-command-headquarters-address.html">Us Army Futures Command Headquarters Address</a></li>
+													<li class="list-group-item"><a href="/us-army-flexfit-hat.html">Us Army Flexfit Hat</a></li>
+													<li class="list-group-item"><a href="/us-army-foia-reading-room.html">Us Army Foia Reading Room</a></li>
+													<li class="list-group-item"><a href="/us-army-headquarters-mailing-address.html">Us Army Headquarters Mailing Address</a></li>
+													<li class="list-group-item"><a href="/us-army-headquarters-address-pentagon.html">Us Army Headquarters Address Pentagon</a></li>
+													<li class="list-group-item"><a href="/us-army-generals-stars.html">Us Army Generals Stars</a></li>
+													<li class="list-group-item"><a href="/us-army-generals-current.html">Us Army Generals Current</a></li>
+													<li class="list-group-item"><a href="/us-army-generals-in-ww2.html">Us Army Generals In Ww2</a></li>
+													<li class="list-group-item"><a href="/us-army-general-hat.html">Us Army General Hat</a></li>
+													<li class="list-group-item"><a href="/us-army-headquarters-location.html">Us Army Headquarters Location</a></li>
+													<li class="list-group-item"><a href="/us-army-hats-and-shirts.html">Us Army Hats And Shirts</a></li>
+													<li class="list-group-item"><a href="/us-army-generals-korean-war.html">Us Army Generals Korean War</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

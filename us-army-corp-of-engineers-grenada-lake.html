@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Army Corp Of Engineers Grenada Lake - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Army Corp Of Engineers Grenada Lake",
+  "datePublished": "2021-02-13",
+  "image": "https://bloximages.newyork1.vip.townnews.com/deltanews.tv/content/tncms/assets/v3/editorial/3/bf/3bfcd212-4a85-11e9-836d-df472585cf5c/5c9150ac4b084.image.jpg?resize=400%2C300",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+army+corp+of+engineers+grenada+lake",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Army Corp Of Engineers Grenada Lake</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">All persons placing structure s in Sardis Arkabutla Grenada and Enid lakes must abide by the terms outlined in the following regulations according to US. Army Corps of Engineers COE Title. Located in the gently rolling hills of pine and hardwood forests at the entrance to the Mississippi Delta. <br>				
+			</p>
+										<a class="badge badge-primary" href="/hrc-army-portal.html">hrc army portal</a>
+											<a class="badge badge-info" href="/human-resources-army-job.html">human resources army job</a>
+											<a class="badge badge-warning" href="/human-resource-in-the-army.html">human resource in the army</a>
+											<a class="badge badge-secondary" href="/human-resource-in-army.html">human resource in army</a>
+											<a class="badge badge-danger" href="/human-resource-specialist-army-ait.html">human resource specialist army ait</a>
+											<a class="badge badge-warning" href="/human-resource-command-army.html">human resource command army</a>
+											<a class="badge badge-primary" href="/human-resources-specialist-army-salary.html">human resources specialist army salary</a>
+											<a class="badge badge-secondary" href="/human-resource-salary-in-army.html">human resource salary in army</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you have come to pay a visit to the right blog.  Our website gives you hints for viewing the highest quality video and picture content, search and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, therefore we recommend this video that you view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2015/Jan/23/2001005207/780/780/0/150123-D-CE999-003.JPG" data-lightbox="roadtrip" data-title="New Floating Dock Available At Grenada Lake Vicksburg District News Releases">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2015/Jan/23/2001005207/780/780/0/150123-D-CE999-003.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkPmjq9f4BrmzUlrJzB0CDnw2VhqIWRNswvA';" alt="New Floating Dock Available At Grenada Lake Vicksburg District News Releases">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Floating Dock Available At Grenada Lake Vicksburg District News Releases</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=3095892883780413" data-lightbox="roadtrip" data-title="Grenada Lake Vicksburg District Us Army Corps Of Engineers Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=3095892883780413" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa6rO-uXsAsNzm-W1cH_TUdhtCHGceeIKl6w';" alt="Grenada Lake Vicksburg District Us Army Corps Of Engineers Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Grenada Lake Vicksburg District Us Army Corps Of Engineers Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.mvk.usace.army.mil/portals/58/siteimages/MS%20Lakes/Grenada%20Lake/Sunrise%20Sesame%20St%2010-26-00.jpg" data-lightbox="roadtrip" data-title="Grenada Lake">
+											<img class="card-img v-image ads-img " src="https://www.mvk.usace.army.mil/portals/58/siteimages/MS%20Lakes/Grenada%20Lake/Sunrise%20Sesame%20St%2010-26-00.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdQoxaOZeHfNMJkaeZhwDm_El_ZVyOnQTumQ';" alt="Grenada Lake">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Grenada Lake</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2015/Jan/23/2001005208/-1/-1/0/150123-D-CE999-002.JPG" data-lightbox="roadtrip" data-title="New Floating Dock Available At Grenada Lake">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2015/Jan/23/2001005208/-1/-1/0/150123-D-CE999-002.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5hMMvopseir3YLwK9mo24lW9KDV71fumEbA';" alt="New Floating Dock Available At Grenada Lake">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Floating Dock Available At Grenada Lake</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://atlas-assets.roadtrippers.com/uploads/place_image/image/1026973813/-strip_-quality_60_-interlace_Plane_-resize_640x360_U__-gravity_center_-extent_640x360/place_image-image-0c8838e7-405c-4ed8-80e1-bc899f9aeaa0.jpg" data-lightbox="roadtrip" data-title="Grenada Lake Vicksburg District Us Army Corps Of Engineers Grenada Ms Roadtrippers">
+											<img class="card-img v-image ads-img " src="https://atlas-assets.roadtrippers.com/uploads/place_image/image/1026973813/-strip_-quality_60_-interlace_Plane_-resize_640x360_U__-gravity_center_-extent_640x360/place_image-image-0c8838e7-405c-4ed8-80e1-bc899f9aeaa0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYYGCGEE1SIlbnUmA16BdkIw0UvBg7wMBm8A';" alt="Grenada Lake Vicksburg District Us Army Corps Of Engineers Grenada Ms Roadtrippers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Grenada Lake Vicksburg District Us Army Corps Of Engineers Grenada Ms Roadtrippers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.squarespace-cdn.com/content/v1/5864203d03596e67554acebf/1544073241814-FUOXY34IKNAEWV6Q3VOZ/ke17ZwdGBToddI8pDm48kOfIvovjSEt-9Ic8dKQbhEMUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcdksG0Pj4h7sau7QjVogmprvs55XWvxH3-Vjo7I4sU4VkLsBjz8_ha0Izn6MsvTEe/Grenada+Lake+Brochure+Map.JPG?format=1500w" data-lightbox="roadtrip" data-title="North Mississippi Corps Lakes Hunting Barton Outfitters">
+											<img class="card-img v-image ads-img " src="https://images.squarespace-cdn.com/content/v1/5864203d03596e67554acebf/1544073241814-FUOXY34IKNAEWV6Q3VOZ/ke17ZwdGBToddI8pDm48kOfIvovjSEt-9Ic8dKQbhEMUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcdksG0Pj4h7sau7QjVogmprvs55XWvxH3-Vjo7I4sU4VkLsBjz8_ha0Izn6MsvTEe/Grenada+Lake+Brochure+Map.JPG?format=1500w" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjjJsDUGz1vZaTIeIoWj-4qWfsPEHAsgnNAw';" alt="North Mississippi Corps Lakes Hunting Barton Outfitters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">North Mississippi Corps Lakes Hunting Barton Outfitters</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://bloximages.newyork1.vip.townnews.com/deltanews.tv/content/tncms/assets/v3/editorial/3/bf/3bfcd212-4a85-11e9-836d-df472585cf5c/5c9150ac4b084.image.jpg?resize=400%2C300" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjjJsDUGz1vZaTIeIoWj-4qWfsPEHAsgnNAw';" alt="North Mississippi Corps Lakes Hunting Barton Outfitters">
+										<div class="card-body">
+						<h3 class="h5"><b>USACE is maintaining access to our projects by keeping day.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us army corp of engineers grenada lake</strong>. 
+								
+																	Areas closed at Grenada Lake for the end of the season include Blue HoleHaswerway Wildlife Management Area and Old Fort. 
+																	40 140 40 Discharge. 
+																	Army Corps of Engineers USACE Vicksburg District has closed several recreation areas at Grenada Lake due to seasonal timelines and current lake levels. 
+																	Sunday February 7 2021 10000 AM Level is 1885 feet. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Grenada Lake was constructed to help control flooding along the Yazoo River Basin. 
+																	21500 feet Flood Pool. 
+																	8 This 90427 acre project has something to offer almost every outdoor enthusiast. 
+																	Grenada Lake Vicksburg District US Army Corps of Engineers Grenada MS. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MS Website Fish Wildlife Travel Guide Road Reports. 
+																	Grenada Lake Vicksburg District US Army Corps of Engineers Today at 725 AM Grenada Lake Reading 4 January 2021 Lake Level. 
+																	Grenada Lake Vicksburg District US Army Corps of Engineers Located in the gently rolling hills of pine and hardwood forests at the entrance to the Mississippi Delta Grenada Lake is an inland paradise. 
+																	Army Corps of Engineers USACE Vicksburg District notified local authorities and emergency management personnel April 20 that flows from Grenada Lake located near Interstate 55 in north. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2400 cfs See More. 
+																	The Army Corps of Engineers perform a wide range of civil military and environmental engineering services in Grenada County. 
+																	Grenada Lake MS on the Yalobusha and Skuna Rivers is home to the Thunder on Water festival held annually in June. 
+																	Army Corps of Engineers Recreation Services Status Select a State to view current status of USACE lake or river project OR View on Map As America confronts the challenges of Coronavirus disease COVID-19 protecting the health and safety of the recreating public volunteers and our government personnel is our highest priority. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Corps Lakes Gateway Mississippi. 
+																	Army Corps of Engineers Dam Name. 
+																	Recreationgov 877 444-6777 USACE Recreation Brochure Mississippi Take Me Fishing Get Outdoors Age Disability Discount Passes. 
+																	Army Corps of Engineers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Several campsites face the water May through August but the water level is dropped for water storage in winter making the shoreline as far as a mile from the campground. 
+																	US Army Corps of Engineers Campground And Boat Launc is located at 2202 Scenic Loop 333 Grenada MS 38901. 
+																	It is one of four flood control lakes in North Mississippi constructed by the US. 
+																	The Mississippi Department of Wildlife Fisheries and Parks establishes and enforces hunting. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Grenada Army Corps of Engineers located in Grenada MS is a branch location of the federal Army Corps of Engineers USACECOE. 
+																	001 Feet Level Controlled by. 
+																	Grenada Lake is a reservoir on the Yalobusha River in the US. 
+																	Grenada Lake is also closed to hunting on the west end of the lake from Perry Creek to Knights Creek. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Coastal And Hydraulics Laboratory Engineer. 
+																	Army Corps of Engineers Vicksburg District has closed several recreation areas at Grenada Lake along with several boat ramps and restroom buildings at Sardis Lake due to seasonal timelines and current lake levels. 
+																	Grenada Lake Water Level. 
+																	Grenada Dam CEMVK Daily Levels By Month Grenada Lake Forums. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Within the campground there is a small 17 acre lake that has a swimming beach and is stocked with Bream Largemouth Bass and Catfish for the campers to enjoy catching. 
+																	They can be contacted via phone at 662 226-5911 for pricing directions reservations and more. 
+																	Army Corps of Engineers Southwestern Division announce changes to lake operations in Kansas Missouri Arkansas Oklahoma and Texas amid health concerns. 
+																	The campground is on the north shore of Grenada Lake. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Us Army Corps of Engineers Mississippi. 
+																	Great Travel Deals Lodging Travelers Military Homefront MilitaryCivilians on OCO Leave. 
+																	A visitor center fitness trail and tennis courts are just some of the recreation opportunities located on the lake in addition to camping boating and picnicking facilities. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2015/Jan/23/2001005209/-1/-1/0/150123-D-CE999-001.JPG" data-lightbox="roadtrip" data-title="New Floating Dock Available At Grenada Lake">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2015/Jan/23/2001005209/-1/-1/0/150123-D-CE999-001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyMBwil07TX4Z84zHuOkC4mUwpIfGkOu3E7Q';" alt="New Floating Dock Available At Grenada Lake">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Floating Dock Available At Grenada Lake</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-s/04/ab/cb/dd/grenada-lake.jpg" data-lightbox="roadtrip" data-title="North Abutment Recreation Area Review Of Grenada Lake Grenada Ms Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-s/04/ab/cb/dd/grenada-lake.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdUbPs9dZpjfNctqYjxkGmEXx0eSfvrTkCMg';" alt="North Abutment Recreation Area Review Of Grenada Lake Grenada Ms Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">North Abutment Recreation Area Review Of Grenada Lake Grenada Ms Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.visitgrenadams.com/wp-content/uploads/2020/11/IMG_9545-1-scaled.jpg" data-lightbox="roadtrip" data-title="Grenada Lake In Mississippi Visit Grenada">
+											<img class="card-img v-image ads-img " src="https://www.visitgrenadams.com/wp-content/uploads/2020/11/IMG_9545-1-scaled.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8BCIo_TfkAArrkxCsjjQaleoKe8rx6-J34g';" alt="Grenada Lake In Mississippi Visit Grenada">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Grenada Lake In Mississippi Visit Grenada</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/Q-tiT1Vf9mk/maxresdefault.jpg" data-lightbox="roadtrip" data-title="03 30 2018 Grenada Ms Grenada Lake Spillway Stormwall">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/Q-tiT1Vf9mk/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL9-3OQAaRORPI7760FqxIkYuu9HcC2ijKbg';" alt="03 30 2018 Grenada Ms Grenada Lake Spillway Stormwall">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">03 30 2018 Grenada Ms Grenada Lake Spillway Stormwall</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://photo1.sunsphere.net/?id=A1058D25-549D-4665-8878-FDA77B0F723E&amp;width=640&amp;ext=jpg&amp;height=200&amp;crop=y" data-lightbox="roadtrip" data-title="Grenada Lake Mississippi Community And Visitors Guide">
+											<img class="card-img v-image ads-img " src="https://photo1.sunsphere.net/?id=A1058D25-549D-4665-8878-FDA77B0F723E&amp;width=640&amp;ext=jpg&amp;height=200&amp;crop=y" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRJSDcB3TdZ-s8srsp_i3Kl-XRFVOke6R5uw';" alt="Grenada Lake Mississippi Community And Visitors Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Grenada Lake Mississippi Community And Visitors Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2019/Feb/26/2002093554/780/780/0/190226-D-BM664-004.JPG" data-lightbox="roadtrip" data-title="High Water Impacts Mississippi Reservoirs Grenada Lake Flows Enter Spillway Vicksburg District News Releases">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2019/Feb/26/2002093554/780/780/0/190226-D-BM664-004.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-lml1BDte-Z8CS0V178mXMZUseG9j7Orvmw';" alt="High Water Impacts Mississippi Reservoirs Grenada Lake Flows Enter Spillway Vicksburg District News Releases">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">High Water Impacts Mississippi Reservoirs Grenada Lake Flows Enter Spillway Vicksburg District News Releases</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=3556495364386827" data-lightbox="roadtrip" data-title="Grenada Lake Vicksburg District Us Army Corps Of Engineers Avaleht Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=3556495364386827" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgFrsQoO2X07kdsoQntwnUemDX9YZ0eqeZUA';" alt="Grenada Lake Vicksburg District Us Army Corps Of Engineers Avaleht Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Grenada Lake Vicksburg District Us Army Corps Of Engineers Avaleht Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.grenadastar.com/sites/default/files/field/image/Resized_20200827_130745.jpeg" data-lightbox="roadtrip" data-title="Lake Check Moves Into Second Step Of Inspection The Grenada Star">
+											<img class="card-img v-image ads-img " src="https://www.grenadastar.com/sites/default/files/field/image/Resized_20200827_130745.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIN05XUsmhIllllrny4vgd0Aqst4z1KEWQ_Q';" alt="Lake Check Moves Into Second Step Of Inspection The Grenada Star">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lake Check Moves Into Second Step Of Inspection The Grenada Star</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=521316531600251" data-lightbox="roadtrip" data-title="Fedserv Rbs Grenada Lake Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=521316531600251" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYNR35qNOqSFbV80uDoVVG7gfGhfPXV8D3bg';" alt="Fedserv Rbs Grenada Lake Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fedserv Rbs Grenada Lake Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.recreation.gov/public/images/2281.jpg" data-lightbox="roadtrip" data-title="Grenada Lake Mississippi Recreation Gov">
+											<img class="card-img v-image ads-img " src="https://cdn.recreation.gov/public/images/2281.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA3gnu5gn2qexVqoQpGEOl7NWUs6REc1Rg0w';" alt="Grenada Lake Mississippi Recreation Gov">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Grenada Lake Mississippi Recreation Gov</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bloximages.newyork1.vip.townnews.com/deltanews.tv/content/tncms/assets/v3/editorial/3/bf/3bfcd212-4a85-11e9-836d-df472585cf5c/5c9150ac4b084.image.jpg?resize=400%2C300" data-lightbox="roadtrip" data-title="Levee At Grenada Lakes Closed Due To Monitoring Community Deltanews Tv">
+											<img class="card-img v-image ads-img " src="https://bloximages.newyork1.vip.townnews.com/deltanews.tv/content/tncms/assets/v3/editorial/3/bf/3bfcd212-4a85-11e9-836d-df472585cf5c/5c9150ac4b084.image.jpg?resize=400%2C300" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3pd78EJ2E8AhoolFoAQocI0z5EPrEgXW1NA';" alt="Levee At Grenada Lakes Closed Due To Monitoring Community Deltanews Tv">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Levee At Grenada Lakes Closed Due To Monitoring Community Deltanews Tv</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/e4/5d/85e45de94849a1b5a9b9ca7eb4c32265.jpg" data-lightbox="roadtrip" data-title="Rv A Gogo North Abutment Campground Grenada Lake Mississippi Rv Parks Vacation Spots Campground">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/e4/5d/85e45de94849a1b5a9b9ca7eb4c32265.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNphU1dh2T1eaD8EDNCfHjqbGkX6b0nDOurw';" alt="Rv A Gogo North Abutment Campground Grenada Lake Mississippi Rv Parks Vacation Spots Campground">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rv A Gogo North Abutment Campground Grenada Lake Mississippi Rv Parks Vacation Spots Campground</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ow44num6eh-flywheel.netdna-ssl.com/wp-content/uploads/2019/11/Grenada-Lake.jpg" data-lightbox="roadtrip" data-title="Grenada Lake Ms Fishing Charters And Guides Fishanywhere">
+											<img class="card-img v-image ads-img " src="https://ow44num6eh-flywheel.netdna-ssl.com/wp-content/uploads/2019/11/Grenada-Lake.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-0PfLHXyRg3J9oxApE9yJp1Y9JrKj7yOgDg';" alt="Grenada Lake Ms Fishing Charters And Guides Fishanywhere">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Grenada Lake Ms Fishing Charters And Guides Fishanywhere</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/did-the-us-army-use-the-sherman-firefly.html">Did The Us Army Use The Sherman Firefly</a></li>
+													<li class="list-group-item"><a href="/do-army-dogs-get-paid.html">Do Army Dogs Get Paid</a></li>
+													<li class="list-group-item"><a href="/dept-of-veterans-services-massachusetts.html">Dept Of Veterans Services Massachusetts</a></li>
+													<li class="list-group-item"><a href="/did-the-us-army-slaughter-bison.html">Did The Us Army Slaughter Bison</a></li>
+													<li class="list-group-item"><a href="/do-military-dog-tags-have-blood-type.html">Do Military Dog Tags Have Blood Type</a></li>
+													<li class="list-group-item"><a href="/different-departments-in-us-army.html">Different Departments In Us Army</a></li>
+													<li class="list-group-item"><a href="/dhs-military-leave.html">Dhs Military Leave</a></li>
+													<li class="list-group-item"><a href="/do-all-branches-of-the-military-have-dog-tags.html">Do All Branches Of The Military Have Dog Tags</a></li>
+													<li class="list-group-item"><a href="/dept-of-veterans-affairsgov.html">Dept Of Veterans Affairsgov</a></li>
+													<li class="list-group-item"><a href="/do-background-checks-show-failed-drug-tests.html">Do Background Checks Show Failed Drug Tests</a></li>
+													<li class="list-group-item"><a href="/did-the-us-army-fight-in-vietnam.html">Did The Us Army Fight In Vietnam</a></li>
+													<li class="list-group-item"><a href="/did-us-army-ever-use-lever-action-rifles.html">Did Us Army Ever Use Lever Action Rifles</a></li>
+													<li class="list-group-item"><a href="/dnd-canadian-armed-forces.html">Dnd Canadian Armed Forces</a></li>
+													<li class="list-group-item"><a href="/directorate-of-military-intelligence-sri-lanka.html">Directorate Of Military Intelligence Sri Lanka</a></li>
+													<li class="list-group-item"><a href="/different-branches-of-the-us-army.html">Different Branches Of The Us Army</a></li>
+													<li class="list-group-item"><a href="/division-insignia-of-the-united-states-army.html">Division Insignia Of The United States Army</a></li>
+													<li class="list-group-item"><a href="/do-dod-employees-qualify-for-va-loans.html">Do Dod Employees Qualify For Va Loans</a></li>
+													<li class="list-group-item"><a href="/do-dod-civilian-dependents-get-id-cards.html">Do Dod Civilian Dependents Get Id Cards</a></li>
+													<li class="list-group-item"><a href="/do-employers-have-to-pay-military-leave.html">Do Employers Have To Pay Military Leave</a></li>
+													<li class="list-group-item"><a href="/division-of-military-retirement-in-divorce-in-california.html">Division Of Military Retirement In Divorce In California</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

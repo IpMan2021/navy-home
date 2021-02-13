@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Department Of The Army G 3 - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Department Of The Army G 3",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/a0/07/c6/a007c67b87478cc38555e903b1cf35e4.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=department+of+the+army+g+3",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Department Of The Army G 3</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Daniel Noce Chief of Staff EUCOM from Brigadier General McClure 15 January 1951 Record Group 319 Army-Chief of Special Warfare 1951-54 box 6 091412 Propaganda National Archives. Department of the Army HQDA Field Operating Agencies and Staff Support Agencies Headquarters Department of the Army. Aguto deputy chief of staff G-357 US. <br>				
+			</p>
+										<a class="badge badge-danger" href="/dod-civilian-creed.html">dod civilian creed</a>
+											<a class="badge badge-dark" href="/dod-civilian-deployment-pay-calculator.html">dod civilian deployment pay calculator</a>
+											<a class="badge badge-danger" href="/do-veterans-qualify-for-pell-grants.html">do veterans qualify for pell grants</a>
+											<a class="badge badge-warning" href="/dod-civilian-bonus.html">dod civilian bonus</a>
+											<a class="badge badge-secondary" href="/dod-civilian-death-benefits.html">dod civilian death benefits</a>
+											<a class="badge badge-info" href="/do-veterans-get-help-with-funeral-costs.html">do veterans get help with funeral costs</a>
+											<a class="badge badge-secondary" href="/do-you-pay-state-taxes-on-military-retirement.html">do you pay state taxes on military retirement</a>
+											<a class="badge badge-primary" href="/do-overseas-military-pay-state-taxes.html">do overseas military pay state taxes</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to pay a visit to the ideal site.  Our site gives you hints for viewing the highest quality video and picture content, search and locate more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, therefore we recommend this video for you to see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/f3/b8/a6f3b8f19ac3e2772f71c93b9f5b1be4.jpg" data-lightbox="roadtrip" data-title="Pin On Military Stuff">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/f3/b8/a6f3b8f19ac3e2772f71c93b9f5b1be4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMlYKoibDAJu2tw1H7RDS29l0RJiaHbb5vcg';" alt="Pin On Military Stuff">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Stuff</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/93/3a/07933a62f46b581bf84757691abadae7.jpg" data-lightbox="roadtrip" data-title="Memo For Record Example Raptor Redmini Co With Regard To Army Memorandum Template Word Memorandum Template Writing A Reference Letter Plan Book Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/93/3a/07933a62f46b581bf84757691abadae7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZeBH8IczCBjTv8fmx_sQvb4UzbKOJPXpYA';" alt="Memo For Record Example Raptor Redmini Co With Regard To Army Memorandum Template Word Memorandum Template Writing A Reference Letter Plan Book Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Memo For Record Example Raptor Redmini Co With Regard To Army Memorandum Template Word Memorandum Template Writing A Reference Letter Plan Book Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/48/78/4b487831fffb7bd29fbee4bf2268b406.jpg" data-lightbox="roadtrip" data-title="Pantsir S1 Man Air Defense Missile System Uae United Arab Emirates Army 004 Jpg Military Vehicles Tanks Military Army Vehicles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/48/78/4b487831fffb7bd29fbee4bf2268b406.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTyiV0EGAMVsw0yPuvtbtC1mEwTJDtgO3dJQ';" alt="Pantsir S1 Man Air Defense Missile System Uae United Arab Emirates Army 004 Jpg Military Vehicles Tanks Military Army Vehicles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pantsir S1 Man Air Defense Missile System Uae United Arab Emirates Army 004 Jpg Military Vehicles Tanks Military Army Vehicles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/a1/03/dda1035f7fa052fd296ec7066368d06a.jpg" data-lightbox="roadtrip" data-title="Pin On Historical Military Uniforms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/a1/03/dda1035f7fa052fd296ec7066368d06a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo8Qh1NLANdh9XxFBoIDIHYS86fju3js0Gng';" alt="Pin On Historical Military Uniforms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Historical Military Uniforms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/60/0a/6c600abf2aaa0359efeabebe203c2668.jpg" data-lightbox="roadtrip" data-title="Pin On Baku F2 Mc In Ht">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/60/0a/6c600abf2aaa0359efeabebe203c2668.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ68Uj2CrwXPVD1qDGDM4dYd60-GRZH-OEgTg';" alt="Pin On Baku F2 Mc In Ht">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Baku F2 Mc In Ht</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/f9/96/f3f996138e927608e3631128ac5990dc.png" data-lightbox="roadtrip" data-title="War Department Bike Pictures In 2020 Military Motorcycle British Motorcycles Bike">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/f9/96/f3f996138e927608e3631128ac5990dc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8xszlElG4BJFbmPiQK2eHQ5aH01l3TOe3w';" alt="War Department Bike Pictures In 2020 Military Motorcycle British Motorcycles Bike">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">War Department Bike Pictures In 2020 Military Motorcycle British Motorcycles Bike</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/6c/60/0a/6c600abf2aaa0359efeabebe203c2668.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8xszlElG4BJFbmPiQK2eHQ5aH01l3TOe3w';" alt="War Department Bike Pictures In 2020 Military Motorcycle British Motorcycles Bike">
+										<div class="card-body">
+						<h3 class="h5"><b>3013 to conduct its affairs and to.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Department of the army g 3</strong>. 
+								
+																	Re -characterizes selected topic to be accomplished as commander responsibilities app F. 
+																	United States Army Training and Doctrine Command. 
+																	Chapman Headquarters Department of the Army G357 from 1 May 2010 to 30 April 2020. 
+																	Department of the Army Chart summarizing the organization of the Department of the Armys Headquarters as of 2010. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	O Authorizes Army command Army service component command and direct reporting unit to develop supplemental guidance in order to provide. 
+																	Agency is the G-357 Doctrine Division Army Branch United States Army Combined Arms Support Command. 
+																	List of initialisms acronyms words made from parts of other words pronounceable and other abbreviations used by the government and the military of the United States. 
+																	This order supersedes United States Army Human Resources Command Permanent Order. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	General Order 10 Department of the Army May 8 1974 effective May 20 1974 Deputy Chief of Staff G-357 Department of the Army General Order 3 Department of the Army 1 April 2005 effective 8 November 2004. 
+																	The Department of the Army is the federal government agency within which the United States Army USA is organized and it is led by the secretary of the Army who has statutory authority under 10 USC. 
+																	Note that this list is intended to be specific to the United States government and militaryother nations will have their own acronyms. 
+																	G-1 - Office of the Deputy Chief of Staff for Personnel ODCSPERG-2 - Office of the Deputy Chief of Staff for Intelligence ODCSINTG-357 Operations and PlansG-4 - Office of the Deputy Chief of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The EMDS enterprise developed and managed by the Armys Deputy Chief of Staff G-357 provides Army leaders with access to critical disparate classified and unclassified readiness and. 
+																	The Chief of Staff of the Army announces the following general officer assignments. 
+																	Responsible to the DCS G-357 for executing assigned responsibilities. 
+																	1 Department of the Army 17 January 1951 established the division as of 15 January 1951 General Council. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Flynn deputy chief of staff G-357 US. 
+																	USA Operations and Plans Support Group Overview Locations Duties Requirements Required Documents Benefits How to apply Help Overview. 
+																	Lieutenant General Flynn has served in a variety of command staff and leadership positions from platoon leader to division commander. 
+																	United States Army Installation Management Command. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Operations military staff G3 battlecruiser a post First World War design for the Royal Navy that was curtailed by the Washington Naval Treaty G3 NATO the Assistant Chief Of Staff or senior staff officer on Operations and Plans at the division level and higher Gotha GIII a 1916 German heavy bomber. 
+																	Provides ACOM coordination to support TRADOC CFL for Fielded Force Integration for TRADOC and the Army. 
+																	The United States Department of the Army DA is one of the three military departments within the Department of Defense of the United States of America. 
+																	Department of the Army G-3 Operations Washington DC Letter to Maj. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Service Competitive Pay scale grade GS 11 - 13 Salary 72750 to. 
+																	The approval authority is CG CAC Ft. 
+																	The chief of staff Army announces the following officer assignments. 
+																	Reports to the DCS G-357 for all Army Capability Development Fielded Force Integration and external integration responsibilities directives authorities policies planning and programming guidance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	ATCL-TS ATP 4-90 2221 Adams. 
+																	G-357 Sergeant Major of the Army. 
+																	Department of the Army common mandatory requirements and established a new table F 2 to set conditions for future Deputy Chief of Staff G 357 publications. 
+																	Deputy Chief of Staff G-3 DCoS Operations is the principal staff officer to the CG for matters concerning operations plans training exercises and organization. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	United States Army Materiel. 
+																	Mission DCS G-357 is responsible for planning coordinating synchronizing and executing pre and post mobilization training and validation of Reserve Component forces in CONUS as FORSCOMs. 
+																	Send comments and recommendations on a Department of the Army DA Form 2028 Recommended Changes to Publications and Blank Forms to Commander United States Army Combined Arms Support Command ATTN. 
+																	Army Forces Command Fort Bragg North Carolina to commanding. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In June 2019 Lieutenant General Flynn assumed the position of Deputy Chief of Staff G-357 Headquarters Department of the Army. 
+																	DEPARTMENT OF THE ARMY OFFICE OF THE DEPUTY CHIEF OF STAFF G-357 WASHINGTON DC 20310-0400 DEPARTMENT OF THE ARMY OFFICE OF THE DEPUTY CHIEF OF STAFF G-357 400 ARMY PENTAGON WASHINGTON DC. 
+																	Accepting applications Open closing dates 02032021 to 02122021. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/b4/d6/77/b4d677895e79f905b24091087e8a28dc.jpg" data-lightbox="roadtrip" data-title="Gta 31 01 003 Special Forces Detachment Mission Planning Guide January 2020 By Headquarters Department Of The Arm Survival Books Special Forces Planning Guide">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/b4/d6/77/b4d677895e79f905b24091087e8a28dc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWOR4ef2vhN9YIUKJC4RUwAKtokEzVe84CyQ';" alt="Gta 31 01 003 Special Forces Detachment Mission Planning Guide January 2020 By Headquarters Department Of The Arm Survival Books Special Forces Planning Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gta 31 01 003 Special Forces Detachment Mission Planning Guide January 2020 By Headquarters Department Of The Arm Survival Books Special Forces Planning Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6f/62/da/6f62da05400ea34854c9506774dd9c12.jpg" data-lightbox="roadtrip" data-title="Liebherr G Bkf Armoured Rescue Crane Military Vehicles Army Vehicles Armored Truck">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6f/62/da/6f62da05400ea34854c9506774dd9c12.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH_t9lyz1HjBrwJatMDM1adYCNOJBAvvrmfA';" alt="Liebherr G Bkf Armoured Rescue Crane Military Vehicles Army Vehicles Armored Truck">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Liebherr G Bkf Armoured Rescue Crane Military Vehicles Army Vehicles Armored Truck</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a0/07/c6/a007c67b87478cc38555e903b1cf35e4.jpg" data-lightbox="roadtrip" data-title="Pin On Guns">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a0/07/c6/a007c67b87478cc38555e903b1cf35e4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj9xEwHSpnvcDOR8CbMCH2488cWjCD1RSOig';" alt="Pin On Guns">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guns</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/a0/6d/6aa06dd93214b120821e621e9e62ff61.jpg" data-lightbox="roadtrip" data-title="Military Letter Of Recommendation Template Lovely Best S Of Army Letter Introduction Template Military Letters Letter Of Recommendation Lettering">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/a0/6d/6aa06dd93214b120821e621e9e62ff61.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtQeWg7Rji3og8pSleIamMVepBwNuyeUeZlQ';" alt="Military Letter Of Recommendation Template Lovely Best S Of Army Letter Introduction Template Military Letters Letter Of Recommendation Lettering">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Letter Of Recommendation Template Lovely Best S Of Army Letter Introduction Template Military Letters Letter Of Recommendation Lettering</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/7e/3c/517e3c1f9cd1f4a656d875e90f179278.jpg" data-lightbox="roadtrip" data-title="Pin On Wwii Military Vehicles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/7e/3c/517e3c1f9cd1f4a656d875e90f179278.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_rIxNKEODDcdNd8OIzHv6wvbmBstQZCZowg';" alt="Pin On Wwii Military Vehicles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Wwii Military Vehicles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/22/15/65/221565405a24ef879726c6e23083a718.jpg" data-lightbox="roadtrip" data-title="Letter Of Intent To Hire Https Nationalgriefawarenessday Com 40405 Sample Of Letter Of Intent Letter Of Intent Memo Format Lettering">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/22/15/65/221565405a24ef879726c6e23083a718.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5-D5QRRIxqFoBQsj-gWCx1URN41C1gaPIvw';" alt="Letter Of Intent To Hire Https Nationalgriefawarenessday Com 40405 Sample Of Letter Of Intent Letter Of Intent Memo Format Lettering">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Letter Of Intent To Hire Https Nationalgriefawarenessday Com 40405 Sample Of Letter Of Intent Letter Of Intent Memo Format Lettering</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/96/a4/be96a48ad98cde788881cb4a096663ff.jpg" data-lightbox="roadtrip" data-title="Us Army Asked Units To Withdraw Use Of Dji Equipment S Drone Dji Phantom Spark Mavic Company Storage Aerial Photography Drone Memorandum">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/96/a4/be96a48ad98cde788881cb4a096663ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlM-KiNlYl8MEhvVQEwR-j-KvHhV1aRY_C6w';" alt="Us Army Asked Units To Withdraw Use Of Dji Equipment S Drone Dji Phantom Spark Mavic Company Storage Aerial Photography Drone Memorandum">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Asked Units To Withdraw Use Of Dji Equipment S Drone Dji Phantom Spark Mavic Company Storage Aerial Photography Drone Memorandum</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/2d/5a/c42d5aaca4a38c7c06bd17aa05ffe7cb.jpg" data-lightbox="roadtrip" data-title="Pin By Ye Liu On Vehicule Army Vehicles Military Vehicles Armored Vehicles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/2d/5a/c42d5aaca4a38c7c06bd17aa05ffe7cb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz16DYd-3fWFiKSNLTo9bJNQeW4gKZOWpTRA';" alt="Pin By Ye Liu On Vehicule Army Vehicles Military Vehicles Armored Vehicles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Ye Liu On Vehicule Army Vehicles Military Vehicles Armored Vehicles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/bc/68/77/bc6877c9d1638da3f5be5cecae5fb72c.jpg" data-lightbox="roadtrip" data-title="Special Forces Sniper Training And Employment Fm 3 05 222 Tc 31 32 Special Forces Sniper School Formerly Special Op In 2020 Sniper Training Special Forces Sniper">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/bc/68/77/bc6877c9d1638da3f5be5cecae5fb72c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNaJGFi_UDt3ljL6DAzqdMkgAY5Ez02cnCfw';" alt="Special Forces Sniper Training And Employment Fm 3 05 222 Tc 31 32 Special Forces Sniper School Formerly Special Op In 2020 Sniper Training Special Forces Sniper">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Special Forces Sniper Training And Employment Fm 3 05 222 Tc 31 32 Special Forces Sniper School Formerly Special Op In 2020 Sniper Training Special Forces Sniper</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/e5/a9/b4e5a9a2868605ae4d20aa71fda77c17.jpg" data-lightbox="roadtrip" data-title="Pin By Marins Valkovskis On G Wagon Military Australian Defence Force Army Vehicles Vehicles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/e5/a9/b4e5a9a2868605ae4d20aa71fda77c17.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8xWcuuPO50eGGetQIJbQ4fj8mcauxX4U47A';" alt="Pin By Marins Valkovskis On G Wagon Military Australian Defence Force Army Vehicles Vehicles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Marins Valkovskis On G Wagon Military Australian Defence Force Army Vehicles Vehicles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/b4/69/35b469dee17b00bdb8e5bd8b0b30b365.jpg" data-lightbox="roadtrip" data-title="Pin By Sista G T On Us Army Vehicles Military Vehicles Us Army Vehicles Army Vehicles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/b4/69/35b469dee17b00bdb8e5bd8b0b30b365.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHG2KDCrGrNvwU5xo7o_f9qJOGz-_uucZlxQ';" alt="Pin By Sista G T On Us Army Vehicles Military Vehicles Us Army Vehicles Army Vehicles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sista G T On Us Army Vehicles Military Vehicles Us Army Vehicles Army Vehicles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/80/71/4b/80714b323dd2f0b591c8ff9522e7cbd8.jpg" data-lightbox="roadtrip" data-title="Statement Of Service Army Example 23 Of Mortgtage Va Statement Service Template Statement Template Statement Lettering">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/80/71/4b/80714b323dd2f0b591c8ff9522e7cbd8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4LqeXbnomLQsbHezA-1gm81orAj5uQECp7w';" alt="Statement Of Service Army Example 23 Of Mortgtage Va Statement Service Template Statement Template Statement Lettering">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Statement Of Service Army Example 23 Of Mortgtage Va Statement Service Template Statement Template Statement Lettering</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/35/7c/67357c9d9efde7f8f2f6b6fde877a444.jpg" data-lightbox="roadtrip" data-title="Pin On Combat Shirt Pants Suit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/35/7c/67357c9d9efde7f8f2f6b6fde877a444.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuxJ-Pr783GmcOT3GKyo6akNDrx9KZUKzZHA';" alt="Pin On Combat Shirt Pants Suit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Combat Shirt Pants Suit</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/nypd-military-size.html">Nypd Military Size</a></li>
+													<li class="list-group-item"><a href="/new-mexico-military-affairs-department.html">New Mexico Military Affairs Department</a></li>
+													<li class="list-group-item"><a href="/new-army-dog-tags-format.html">New Army Dog Tags Format</a></li>
+													<li class="list-group-item"><a href="/nypd-military-ranking.html">Nypd Military Ranking</a></li>
+													<li class="list-group-item"><a href="/new-york-department-of-military-and-naval-affairs.html">New York Department Of Military And Naval Affairs</a></li>
+													<li class="list-group-item"><a href="/nypd-army-size.html">Nypd Army Size</a></li>
+													<li class="list-group-item"><a href="/norfolk-police-department-military-hwy.html">Norfolk Police Department Military Hwy</a></li>
+													<li class="list-group-item"><a href="/nike-air-force-1-hrvatska.html">Nike Air Force 1 Hrvatska</a></li>
+													<li class="list-group-item"><a href="/number-of-enlisted-soldiers-in-the-us-army.html">Number Of Enlisted Soldiers In The Us Army</a></li>
+													<li class="list-group-item"><a href="/nypd-seventh-largest-army.html">Nypd Seventh Largest Army</a></li>
+													<li class="list-group-item"><a href="/nypd-size-of-army.html">Nypd Size Of Army</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-timeline.html">Ncaa Eligibility Timeline</a></li>
+													<li class="list-group-item"><a href="/new-jersey-department-of-military-and-veterans-affairs-veterans-service-offices.html">New Jersey Department Of Military And Veterans Affairs Veterans Service Offices</a></li>
+													<li class="list-group-item"><a href="/north-carolina-department-of-military-and-veterans-affairs-raleigh-nc.html">North Carolina Department Of Military And Veterans Affairs Raleigh Nc</a></li>
+													<li class="list-group-item"><a href="/number-of-soldiers-in-us-army.html">Number Of Soldiers In Us Army</a></li>
+													<li class="list-group-item"><a href="/north-carolina-military-department-jobs.html">North Carolina Military Department Jobs</a></li>
+													<li class="list-group-item"><a href="/new-jersey-department-of-military-and-veterans-affairs-trenton-nj.html">New Jersey Department Of Military And Veterans Affairs Trenton Nj</a></li>
+													<li class="list-group-item"><a href="/nebraska-department-of-military.html">Nebraska Department Of Military</a></li>
+													<li class="list-group-item"><a href="/nypd-patrol-guide-military-leave.html">Nypd Patrol Guide Military Leave</a></li>
+													<li class="list-group-item"><a href="/nypd-military-equipment.html">Nypd Military Equipment</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

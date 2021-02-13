@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Dod Civilians Overseas Benefits - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Dod Civilians Overseas Benefits",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/474x/d4/fb/44/d4fb443182bafbf26125a49780fd43d4.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=dod+civilians+overseas+benefits",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Dod Civilians Overseas Benefits</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Immigration staff guidance on applications from civilian employees of NATO forces the Australian Department of Defence and firms under contract to NATO forces. Most payments received by US Government civilian employees for working abroad including pay differentials are taxable. Department of the Army Air and Army National Guard and DCMA Employees. <br>				
+			</p>
+										<a class="badge badge-danger" href="/linkedin-premium-military-spouse.html">linkedin premium military spouse</a>
+											<a class="badge badge-success" href="/letterkenny-army-depot-public-affairs-office.html">letterkenny army depot public affairs office</a>
+											<a class="badge badge-light" href="/lackland-afb-finance-phone-number.html">lackland afb finance phone number</a>
+											<a class="badge badge-warning" href="/male-military-names.html">male military names</a>
+											<a class="badge badge-light" href="/male-military-spouse.html">male military spouse</a>
+											<a class="badge badge-light" href="/mango-language-learning-military.html">mango language learning military</a>
+											<a class="badge badge-primary" href="/mainland-bc-military-family-resource-centre.html">mainland bc military family resource centre</a>
+											<a class="badge badge-warning" href="/marc-mitchell-uwm.html">marc mitchell uwm</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you have come to visit the ideal site.  Our website provides you with hints for seeing the maximum quality video and picture content, search and find more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this movie for you to view.  You can also contribute to supporting this website by sharing videos and graphics that you enjoy on this site on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information that you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/c5/65/d9c5654d76ab635053c7145db8f9a5ed.png" data-lightbox="roadtrip" data-title="Expat Military Retiree Profile Living In Vilseck Germany Poppin Smoke Military Retirement Germany Military Move">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/c5/65/d9c5654d76ab635053c7145db8f9a5ed.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwh3s4sNt7r6g09OhI1MD3wI4v8bgc8Wr-uw';" alt="Expat Military Retiree Profile Living In Vilseck Germany Poppin Smoke Military Retirement Germany Military Move">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Expat Military Retiree Profile Living In Vilseck Germany Poppin Smoke Military Retirement Germany Military Move</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/b2/0e/bdb20e70739801c47a51efdd911c6b5e.png" data-lightbox="roadtrip" data-title="Expat Military Retiree Profile Living On Yokota Air Base Fussa Japan Poppin Smoke Retire Overseas Expat Navy Duty Stations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/b2/0e/bdb20e70739801c47a51efdd911c6b5e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSObKSXyWFAbH1S_EbLH4Fhyll2w_17Rgi1g';" alt="Expat Military Retiree Profile Living On Yokota Air Base Fussa Japan Poppin Smoke Retire Overseas Expat Navy Duty Stations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Expat Military Retiree Profile Living On Yokota Air Base Fussa Japan Poppin Smoke Retire Overseas Expat Navy Duty Stations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/05/07/6c0507e64cd7d028179fd39c2ba43b27.jpg" data-lightbox="roadtrip" data-title="Ad At Guantanamo Base Anyone Feeling Pride About This Healthy Life Guantanamo Employment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/05/07/6c0507e64cd7d028179fd39c2ba43b27.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEq8qSoKNNMe9I79jJPbWlQ6frA1NumQdSVQ';" alt="Ad At Guantanamo Base Anyone Feeling Pride About This Healthy Life Guantanamo Employment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ad At Guantanamo Base Anyone Feeling Pride About This Healthy Life Guantanamo Employment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/45/32/2d4532eb2ae7cf5da312a2dcccd97cca.jpg" data-lightbox="roadtrip" data-title="Worldwide Permanent Resident Visa Journey Experiences Shared By Travel Bloggers Travel Blogger Travel Moving Overseas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/45/32/2d4532eb2ae7cf5da312a2dcccd97cca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1qN-29nQ8z98kMrO5dSxvkGQwD1uZJ7dCKw';" alt="Worldwide Permanent Resident Visa Journey Experiences Shared By Travel Bloggers Travel Blogger Travel Moving Overseas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Worldwide Permanent Resident Visa Journey Experiences Shared By Travel Bloggers Travel Blogger Travel Moving Overseas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/b4/c5/51b4c5d1509ac965bc813fcfea280fcb.png" data-lightbox="roadtrip" data-title="Space A Locations What You Need To Know Before You Fly Poppin Smoke Military Discounts Family Adventure Travel Space A Flights">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/b4/c5/51b4c5d1509ac965bc813fcfea280fcb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZie9LSrDeZqg2iK3KFFNlsIQ6TnKi1keO8Q';" alt="Space A Locations What You Need To Know Before You Fly Poppin Smoke Military Discounts Family Adventure Travel Space A Flights">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Space A Locations What You Need To Know Before You Fly Poppin Smoke Military Discounts Family Adventure Travel Space A Flights</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/f5/9b/d8f59bbb064f6734edb0be49d13c00ef.jpg" data-lightbox="roadtrip" data-title="Can You Afford To Leave Money On The Table Contractor Kev Explains How The Cost Of Not Knowing How Much To Ask For Overseas Jobs Work Overseas Contract Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/f5/9b/d8f59bbb064f6734edb0be49d13c00ef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmwrSBofKS4PdH54LIlNLA7_6SIK0o7-MP-Q';" alt="Can You Afford To Leave Money On The Table Contractor Kev Explains How The Cost Of Not Knowing How Much To Ask For Overseas Jobs Work Overseas Contract Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can You Afford To Leave Money On The Table Contractor Kev Explains How The Cost Of Not Knowing How Much To Ask For Overseas Jobs Work Overseas Contract Jobs</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/b9/a1/3a/b9a13af0189924ed503ffe77f5a4cf21.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmwrSBofKS4PdH54LIlNLA7_6SIK0o7-MP-Q';" alt="Can You Afford To Leave Money On The Table Contractor Kev Explains How The Cost Of Not Knowing How Much To Ask For Overseas Jobs Work Overseas Contract Jobs">
+										<div class="card-body">
+						<h3 class="h5"><b>For more information refer to Allowances Differentials and Other Pay.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Dod civilians overseas benefits</strong>. 
+								
+																	A new city to explore new team to work with and a whole household to move. 
+																	Representatives are available from 0700-1700 Monday through Friday with the exception of Federal holidays. 
+																	The Department of Defense Expeditionary Civilian DoD-EC program allows civilians to apply their capability experience and knowledge as a crucial part of helping DoD accomplish its mission abroad. 
+																	Agency Reimbursed By Foreign Country. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Overseas Benefits Pay and allowances for Federal employees assigned overseas are different than the pay received in the states. 
+																	They apply to DOD civilians who deploy or redeploy inside and outside the nation. 
+																	The following websites provide information on the various aspects of overseas pay allowances and benefits. 
+																	Employees may make Open Season enrollments changes or. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This regulation prescribes policy for authorizing overseas allowances such as living quarters allowance LQA temporary quarters subsistence allowance TQSA separate maintenance allowance. 
+																	Department of Defense career opportunities feature competitive salaries and the potential for performance-based increases various workplace flexibilities and work-life programs to achieve and maintain a balanced lifestyle. 
+																	If at any time you have questions or need help with your move reach out to your local personal property office at. 
+																	Nearly 300000 of the 800000 or so DoD civilian workers already. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When moving to a new base or even overseas the task might be met with a mix of excitement and apprehension. 
+																	Not all overseas civilians receive LQA eligibility is based off State Department regulations. 
+																	Secretaries of defense from Rumsfeld to Mattis have wanted to make DOD civilians more expeditionarythat is able to deploy overseas in support of combat operations. 
+																	For additional information on the benefits available please visit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	GAO also reported that DOD had established medical treatment policies for its deployed federal civilians which provide those who require treatment for injuries or diseases sustained during overseas hostilities with care under the DOD military health system. 
+																	Civilians work side-by-side with their military counterparts making huge contributions in service to the nation Rossetti said. 
+																	This reduces dependence on contractors eases stress on military personnel and helps ensure that government employees conduct inherently governmental activities. 
+																	Housing allowances vary but generally range anywhere from 20000 to 50000 depending on. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When the telephone system voices the menu press 2 for Civilian and then 3 for benefits. 
+																	OVERSEAS ALLOWANCES BENEFITS Accepting a civil position overseas and subsequently moving to an overseas area is a significant decision that will affect you as well as your family. 
+																	You are if a Living Quarters Allowance LQA was granted by your employing activity as a recruitment incentive. 
+																	Sign Up for the Opportunity of a Lifetime. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your call will be transferred to a customer service representative. 
+																	There are about 796000 DoD civilians in the US but about 221000 of those employees already have exchange benefits resulting from another beneficiary category such as retiree or military. 
+																	New COVID-19 requirements for civilians who are deploying As personnel start to resume movement the DOD has new force health-protection requirements. 
+																	This benefit is provided in acknowledgement that home is more difficult to get to from overseas. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The military places a high value on self-improvement and thats something you can benefit from. 
+																	They help minimize risk and ensure force health. 
+																	However certain foreign areas allowances cost of living allowances and travel allowances are tax free. 
+																	Not many civilians have access to a free state of the art gym steps from their office. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Commissary and Base Exchange Privileges Generally military bases have grocery stores and shopping areas to meet the needs of the active duty personnel stationed to the base. 
+																	Being stationed in Japan in addition to your base pay you will. 
+																	Is a DoD civilian employee assigned to a foreign area authorized an LQA. 
+																	There are about 796000 DoD civilians in the US but about 221000 of those employees already have exchange benefits resulting from another beneficiary category such as retiree or military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Use Your Needed Skills to Support DOD Operations Overseas by Volunteering for a Civilian Deployment. 
+																	While each experience will be different below we discuss what a typical move could look like. 
+																	Civilian employees may also have access to educational facilities where they can take classes or take proctored exams. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/c0/69/46c069cfa9464de50b72cc081373351f.jpg" data-lightbox="roadtrip" data-title="Guide To Using Military Campgrounds Chickery S Travels Military Campgrounds Camping Locations Go Camping">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/c0/69/46c069cfa9464de50b72cc081373351f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM93GZc1nPfq_2e6JHAA1M2ZE1Bza-sLB47w';" alt="Guide To Using Military Campgrounds Chickery S Travels Military Campgrounds Camping Locations Go Camping">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Guide To Using Military Campgrounds Chickery S Travels Military Campgrounds Camping Locations Go Camping</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Mar/09/2002261126/780/780/0/200309-F-KY598-1001.JPG" data-lightbox="roadtrip" data-title="Wic Overseas Helping Families Lead Healthier Lives Ramstein Air Base Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Mar/09/2002261126/780/780/0/200309-F-KY598-1001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1UF8D7wDL9n5qqUXix6bk0yPgRZtRkMCFLw';" alt="Wic Overseas Helping Families Lead Healthier Lives Ramstein Air Base Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wic Overseas Helping Families Lead Healthier Lives Ramstein Air Base Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1282600135153810" data-lightbox="roadtrip" data-title="Wic Overseas The Department Of Defense United States Army Garrison Japan Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1282600135153810" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuX24eRYySv6QKdtzs3Z7216_h_A0ytjCg3g';" alt="Wic Overseas The Department Of Defense United States Army Garrison Japan Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wic Overseas The Department Of Defense United States Army Garrison Japan Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/3a/48/43/3a48439b927d079c0d936ea7d1ac2e25.jpg" data-lightbox="roadtrip" data-title="Pin On Service Abroad">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/3a/48/43/3a48439b927d079c0d936ea7d1ac2e25.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpOROBeEqOoK2i-xeHqPV6eRf_uOoiJ7MP2g';" alt="Pin On Service Abroad">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Service Abroad</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="CzYcS_gYKXDHFM" data-lightbox="roadtrip" data-title="Http Www Secnav Navy Mil Donhr Jobs Usajobs Overseas 20recruitment 20information 20 20foriegn Pdf">
+											<img class="card-img v-image ads-img " src="CzYcS_gYKXDHFM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCwdZ8tKMYeV46XZ_TokpXEOSUknz3IZNQyQ';" alt="Http Www Secnav Navy Mil Donhr Jobs Usajobs Overseas 20recruitment 20information 20 20foriegn Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Secnav Navy Mil Donhr Jobs Usajobs Overseas 20recruitment 20information 20 20foriegn Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2e/cd/27/2ecd27bd6b156cc36937b29fbdc27dce.png" data-lightbox="roadtrip" data-title="Military Morale Welfare And Recreation Mwr Lodging Resorts Cottages And Campgrounds Poppin Smoke Military Resorts Military Campgrounds Military Lodging">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2e/cd/27/2ecd27bd6b156cc36937b29fbdc27dce.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ38OrqL2Lz1PiezCr2GVpy2MqUWkR_RX_3kw';" alt="Military Morale Welfare And Recreation Mwr Lodging Resorts Cottages And Campgrounds Poppin Smoke Military Resorts Military Campgrounds Military Lodging">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Morale Welfare And Recreation Mwr Lodging Resorts Cottages And Campgrounds Poppin Smoke Military Resorts Military Campgrounds Military Lodging</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/d4/fb/44/d4fb443182bafbf26125a49780fd43d4.jpg" data-lightbox="roadtrip" data-title="35 Freebies For Military Members And Veterans Great Free Stuff Including Food Veteran Military Benefits Veterans Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/d4/fb/44/d4fb443182bafbf26125a49780fd43d4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgoKMfoEx4J_-NbQEwlsT34wpeLxIxYojb3Q';" alt="35 Freebies For Military Members And Veterans Great Free Stuff Including Food Veteran Military Benefits Veterans Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">35 Freebies For Military Members And Veterans Great Free Stuff Including Food Veteran Military Benefits Veterans Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://governmentworkerfi.com/wp-content/uploads/2019/07/Understanding-OCONUS-Employment.jpg" data-lightbox="roadtrip" data-title="Understanding Oconus Employment And Compensation Governmentworkerfi Com">
+											<img class="card-img v-image ads-img " src="https://governmentworkerfi.com/wp-content/uploads/2019/07/Understanding-OCONUS-Employment.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEMIm-vHOfASyKsfrBFPSBb2GHVRyU5oOZRg';" alt="Understanding Oconus Employment And Compensation Governmentworkerfi Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Understanding Oconus Employment And Compensation Governmentworkerfi Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/68/fd/ac68fd576524a3fab478a765df1561be.jpg" data-lightbox="roadtrip" data-title="17 U S Military Recreation Facilities To Try On Your Next Vacation Poppin Smoke In 2020 Outdoor Recreation Activities Military Campgrounds Vacation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/68/fd/ac68fd576524a3fab478a765df1561be.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNaRn7idvq1HjjyxbBoad7dgQZWEitV2na-A';" alt="17 U S Military Recreation Facilities To Try On Your Next Vacation Poppin Smoke In 2020 Outdoor Recreation Activities Military Campgrounds Vacation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">17 U S Military Recreation Facilities To Try On Your Next Vacation Poppin Smoke In 2020 Outdoor Recreation Activities Military Campgrounds Vacation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/a1/3a/b9a13af0189924ed503ffe77f5a4cf21.jpg" data-lightbox="roadtrip" data-title="Pin On Who Dares Wins">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/a1/3a/b9a13af0189924ed503ffe77f5a4cf21.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1F6WKs7MFZnqktUpesIWMeOZ--_O9OP2bSg';" alt="Pin On Who Dares Wins">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Who Dares Wins</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/b4/df/f7b4df781726a5491fd28476b6c8d104.jpg" data-lightbox="roadtrip" data-title="Use Space A To Get You And Your Milfam From A To B Whenever You Need To Travel Family Adventure Travel Travel Travel Dating">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/b4/df/f7b4df781726a5491fd28476b6c8d104.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS13WVP-dGwcpRS15Du7YHuuqjO5U1a7A6hdg';" alt="Use Space A To Get You And Your Milfam From A To B Whenever You Need To Travel Family Adventure Travel Travel Travel Dating">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Use Space A To Get You And Your Milfam From A To B Whenever You Need To Travel Family Adventure Travel Travel Travel Dating</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.stripes.com/polopoly_fs/1.240334.1378856344!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" data-lightbox="roadtrip" data-title="Pentagon Clarifies Definition Of Us Hire Overseas News Stripes">
+											<img class="card-img v-image ads-img " src="https://www.stripes.com/polopoly_fs/1.240334.1378856344!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPRF8yESlNpY21K8w2E2zUYLKKLj9jaQOKlw';" alt="Pentagon Clarifies Definition Of Us Hire Overseas News Stripes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pentagon Clarifies Definition Of Us Hire Overseas News Stripes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/79/ed/ca79ed38bc50481b177045897eca36cb.jpg" data-lightbox="roadtrip" data-title="Escape The Cold To These Military Rv Campgrounds In Florida Arizona And California Military Campgrounds Florida Campgrounds Campground">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/79/ed/ca79ed38bc50481b177045897eca36cb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ2pJxoWSx_KE0X-uJw0vLtYAozs1AaFS87w';" alt="Escape The Cold To These Military Rv Campgrounds In Florida Arizona And California Military Campgrounds Florida Campgrounds Campground">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Escape The Cold To These Military Rv Campgrounds In Florida Arizona And California Military Campgrounds Florida Campgrounds Campground</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-recruiting-center-near-me.html">Military Recruiting Center Near Me</a></li>
+													<li class="list-group-item"><a href="/military-resource-one.html">Military Resource One</a></li>
+													<li class="list-group-item"><a href="/military-programs-jobs.html">Military Programs Jobs</a></li>
+													<li class="list-group-item"><a href="/military-retirement-calculator-comparison.html">Military Retirement Calculator Comparison</a></li>
+													<li class="list-group-item"><a href="/military-records-of-wwii-veterans.html">Military Records Of Wwii Veterans</a></li>
+													<li class="list-group-item"><a href="/military-records-world-war-one.html">Military Records World War One</a></li>
+													<li class="list-group-item"><a href="/military-records-office-glasgow.html">Military Records Office Glasgow</a></li>
+													<li class="list-group-item"><a href="/military-retirement-calculator-after-taxes.html">Military Retirement Calculator After Taxes</a></li>
+													<li class="list-group-item"><a href="/military-retirement-calculator-tsp.html">Military Retirement Calculator Tsp</a></li>
+													<li class="list-group-item"><a href="/military-resources-in-emergency-management-answers.html">Military Resources In Emergency Management Answers</a></li>
+													<li class="list-group-item"><a href="/military-retirement-and-va-compensation-calculator.html">Military Retirement And Va Compensation Calculator</a></li>
+													<li class="list-group-item"><a href="/military-resource-group.html">Military Resource Group</a></li>
+													<li class="list-group-item"><a href="/military-police-station-fort-stewart-ga.html">Military Police Station Fort Stewart Ga</a></li>
+													<li class="list-group-item"><a href="/military-retirement-calculator-air-force.html">Military Retirement Calculator Air Force</a></li>
+													<li class="list-group-item"><a href="/military-records-world-war-2-uk.html">Military Records World War 2 Uk</a></li>
+													<li class="list-group-item"><a href="/military-retirement-calculator-hrc.html">Military Retirement Calculator Hrc</a></li>
+													<li class="list-group-item"><a href="/military-prevod-na-srpski.html">Military Prevod Na Srpski</a></li>
+													<li class="list-group-item"><a href="/military-resources-other-name.html">Military Resources Other Name</a></li>
+													<li class="list-group-item"><a href="/military-police-station-fort-knox-ky.html">Military Police Station Fort Knox Ky</a></li>
+													<li class="list-group-item"><a href="/military-retiree-cola-chart.html">Military Retiree Cola Chart</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

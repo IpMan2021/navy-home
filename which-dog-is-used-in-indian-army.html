@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Which Dog Is Used In Indian Army - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Which Dog Is Used In Indian Army",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/1b/4f/ee/1b4fee8f4a6aa2aadd061a7a0c3b6413.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=which+dog+is+used+in+indian+army",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Which Dog Is Used In Indian Army</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">In the war waged by the Ephesians against Magnesia on the Maeander their horsemen were each accompanied by a war dog and a spear-bearing attendantDogs were released first and broke the enemy ranks followed by an assault of spears then a cavalry charge. As soon as they retire from service they are euthanized. As warfare has progressed their purposes have changed greatly. <br>				
+			</p>
+										<a class="badge badge-success" href="/department-of-veterans-affairs-washington-dc-address.html">department of veterans affairs washington dc address</a>
+											<a class="badge badge-light" href="/department-of-veterans-affairs-year-created.html">department of veterans affairs year created</a>
+											<a class="badge badge-secondary" href="/departments-on-military.html">departments on military</a>
+											<a class="badge badge-warning" href="/department-of-veterans-affairs-washington.html">department of veterans affairs washington</a>
+											<a class="badge badge-primary" href="/department-of-veterans-affairs-waco-tx.html">department of veterans affairs waco tx</a>
+											<a class="badge badge-primary" href="/departments-of-military.html">departments of military</a>
+											<a class="badge badge-danger" href="/department-of-veterans-affairs-pittsburgh-pa.html">department of veterans affairs pittsburgh pa</a>
+											<a class="badge badge-dark" href="/department-of-veterans-affairs-perth.html">department of veterans affairs perth</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to visit the right site.  Our site gives you suggestions for seeing the maximum quality video and picture content, search and find more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, particularly Youtube, so we recommend this video that you view.  It is also possible to contribute to supporting this website by sharing videos and images that you enjoy on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b5/32/bb/b532bbdb7e8260c61e41265a3fd6737f.jpg" data-lightbox="roadtrip" data-title="Indian Army Soldiers Army Dogs Military Dogs Military Working Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b5/32/bb/b532bbdb7e8260c61e41265a3fd6737f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNiT-GkCd1jjuUEUiKMgi1ftocFH4VtAzISw';" alt="Indian Army Soldiers Army Dogs Military Dogs Military Working Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Army Soldiers Army Dogs Military Dogs Military Working Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/8c/02/9b8c0262aec41ec5d776f31f1b1023df.jpg" data-lightbox="roadtrip" data-title="Dogs In The News Military Working Dogs Army Dogs Military Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/8c/02/9b8c0262aec41ec5d776f31f1b1023df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBh1m4DVoIH3rM5jnWW3HnTFgJuZGvssn-Pw';" alt="Dogs In The News Military Working Dogs Army Dogs Military Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dogs In The News Military Working Dogs Army Dogs Military Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/e3/d3/b8e3d3ee13698b11bcb2660cc4065777.jpg" data-lightbox="roadtrip" data-title="10 Things You May Not Know About Indian Army Dogs Army Dogs Dogs Military Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/e3/d3/b8e3d3ee13698b11bcb2660cc4065777.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaOEKtkxWyb7kc8yfONTzDwfig2lkDkJRPZw';" alt="10 Things You May Not Know About Indian Army Dogs Army Dogs Dogs Military Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Things You May Not Know About Indian Army Dogs Army Dogs Dogs Military Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/63/99/4763993aef3259d9740dce01d16f8539.jpg" data-lightbox="roadtrip" data-title="Major General Kharb Indian Army Indian Animal Welfare Board Do Not Kill Army Dogs After They Are Not Being Use Army Dogs Military Working Dogs Military Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/63/99/4763993aef3259d9740dce01d16f8539.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeC5SWEjIui67E2buZPOsPwH5jznoRg2cbzw';" alt="Major General Kharb Indian Army Indian Animal Welfare Board Do Not Kill Army Dogs After They Are Not Being Use Army Dogs Military Working Dogs Military Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Major General Kharb Indian Army Indian Animal Welfare Board Do Not Kill Army Dogs After They Are Not Being Use Army Dogs Military Working Dogs Military Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/27/09/3d/27093dce795ec54982a7e7c0e85c10fb.jpg" data-lightbox="roadtrip" data-title="Dogs In The News Army Dogs Dog Facts Animals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/27/09/3d/27093dce795ec54982a7e7c0e85c10fb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIZXmCG01YOsAVdx-GpDln79Trz8ZuqZ60hg';" alt="Dogs In The News Army Dogs Dog Facts Animals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dogs In The News Army Dogs Dog Facts Animals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/54/a0/5f/54a05ff1526a3851bfa8033c07488bac.jpg" data-lightbox="roadtrip" data-title="Dogs Are The Silent Warriors Of Indian Army Army Dogs Military Service Dogs Service Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/54/a0/5f/54a05ff1526a3851bfa8033c07488bac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpiF3uzSn-TclNMIpi8vGQAf4W2RAqcLGBJw';" alt="Dogs Are The Silent Warriors Of Indian Army Army Dogs Military Service Dogs Service Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dogs Are The Silent Warriors Of Indian Army Army Dogs Military Service Dogs Service Dogs</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/41/ea/15/41ea15c6a4d0eae1421313f7438762f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpiF3uzSn-TclNMIpi8vGQAf4W2RAqcLGBJw';" alt="Dogs Are The Silent Warriors Of Indian Army Army Dogs Military Service Dogs Service Dogs">
+										<div class="card-body">
+						<h3 class="h5"><b>Indian Army has been using foreign breeds like German Shepherds Labradors and Great Swiss Mountain dogs.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Which dog is used in indian army</strong>. 
+								
+																	However in a first an Indian breed is being trained for induction into. 
+																	The best thing about Yoga Day. 
+																	The most preferred army dogs are the German Shepherd and Labradors because of their natural ability to adapt to any training schedule. 
+																	The Indian Army is going to have Belgian Malinois the dog breed that helped the US Navy Seal Indian Army Soon to Have Belgian Malinois Dog Breed That Helped Kill Osama Bin Laden. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Prime Minister Narendra Modi in his Mann Ki Baat programme had urged people to adopt and raise local breeds. 
+																	Highlights He praised the Indian Army dogs Vida - a labrador - and Sophie - a cocker spaniel - who were awarded the Chief of Army Staff Commendation Cards on the 74th Independence Day. 
+																	The Indian Army has used foreign breeds such as German Shepherds Great Swiss Mountain Dogs and Labradors for years now. 
+																	June 21 2019 93428 pm The Army Dog unit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Karnatakas Mudhol Hound an Indian dog breed is being trained to serve in the Indian Army making it the First Indian Dog Breed to be trained for Army Duty. 
+																	Mudhol Houd an Indian Breed from Karnataka is being used by the Indian Army. 
+																	Their service lasts anywhere from 8-10 years ambiguous. 
+																	Retired army dogs for adoption in India Dogs work with Indian Army up to 8 to 9 years of age and then they are given a honorable retirement. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dog units of Indian Army and BSF performing asanas The dog units which are normally used for tasks like patrolling and explosive detection were seen doing asanas with their trainers on the occasion of Yoga Day. 
+																	Lately they are being used by the Indian army as guards along the Kashmir border. 
+																	Trends Desk New Delhi Updated. 
+																	As we celebrate Army Day on January 15 we should not forget the loyal services of dog soldiers of the Indian Army. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Indian Army deploys the canine unit to take up crucial roles of tracking guarding mine detection explosive detection infantry patrolling avalanche rescue operations search and rescue and assault and narcotic detection. 
+																	The canines play a critical role in the operations and many of them have won battle honours such as commendations from the General Officer Commanding GOCs and even the Chief of Army Staff. 
+																	Indian Army s Tracker dog Jaari has achieved a remarkable feat by helping the troops to locate and recover a huge cache of arms ammunition and explosives hidden by insurgent organisation belonging to Songbijit faction of the National Democratic Front of Boroland NDFB at Panbari Reserve Forest in Bodoland Territorial Area Districts BTAD in an operation. 
+																	Dogs trained by the Remount and Veterinary Corps. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Six Mudhol Hounds were trained and used by the Indian Army in Jammu and Kashmir. 
+																	They are easy to train and have the special ability to perform the tasks required by the army. 
+																	The lean and lanky indigenous Mudhol breed of hunting hound is all set to be drafted by the defence forces for guard duty by the end of the yearThe Mu. 
+																	The Print quoting. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dogs have been used in warfare by many civilizations. 
+																	SpokespersonMoD As Yoga Day was observed across the country. 
+																	Another hound from South India the Kombai Combai was bred to hunt boar bison and deer since as early as the 9th Century. 
+																	Combais are an ancient breed which date back to the 9th century when they were used to hunt boar bison and deer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Combai or Kombai breed is native to South India. 
+																	Now the army is all set to induct an Indian canine breed which will be the first time when the Indian Army will do so. 
+																	The Army uses Labradors and German Shepherds in operations and Great Swiss Mountain dogs in snow-bound areas besides Cocker Spaniels in limited numbers. 
+																	Belgian Malinois the dog breed that helped the US Navy Seal team in tracking and killing former Al Qaeda chief Osama Bin Laden is likely to be part of the Indian Army soon. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Indian Army is going to have Belgian Malinois the dog breed that helped the US Navy Seal team in tracking and killing former Al Qaeda chief Osama Bin Laden media reports suggested. 
+																	In April 1985 the breeding base of RVC was expanded from 2700 to 3973 animals to attain self-sufficiency in animal production. 
+																	The Eastern Command of the Indian Army took to its official Twitter handle to share the pictures of Jaari the dog along with the. 
+																	It is a Make In India initiative with some bite. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Indian Combai dog breed Indian dog breeds Combai. 
+																	Jaari an Indian Army tracker dog is being hailed as a hero after he helped defence personnel locate a huge cache of arms ammunition and explosives hidden by insurgent outfit NDFBS at Panbari Reserve Forest in BTAD Bodoland Territorial Area Districts in Assam. 
+																	This Indian native dog breed has more powerful jaw strength than even the prized Rajapalayam and is used for as a hunting and guard dog. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/ea/15/41ea15c6a4d0eae1421313f7438762f1.jpg" data-lightbox="roadtrip" data-title="The Indian Army Just Revealed That Army Dogs Are Put To Sleep As Soon As They Can No Longer Serve Army Dogs Military Dogs War Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/ea/15/41ea15c6a4d0eae1421313f7438762f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkzc_20WdBCDkvYpvAxm2AqlI3arCY0LCe2Q';" alt="The Indian Army Just Revealed That Army Dogs Are Put To Sleep As Soon As They Can No Longer Serve Army Dogs Military Dogs War Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Indian Army Just Revealed That Army Dogs Are Put To Sleep As Soon As They Can No Longer Serve Army Dogs Military Dogs War Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/1f/78/771f78f7906fa8fc3eca5f5e9a8167a0.jpg" data-lightbox="roadtrip" data-title="Goviral Stuff Everything That Goes Viral Nationwide Military Working Dogs Army Dogs Military Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/1f/78/771f78f7906fa8fc3eca5f5e9a8167a0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmiWfPqd0bfD9yau-aGzhDeM_NNRJy1AfDDw';" alt="Goviral Stuff Everything That Goes Viral Nationwide Military Working Dogs Army Dogs Military Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Goviral Stuff Everything That Goes Viral Nationwide Military Working Dogs Army Dogs Military Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/04/5c/9e045cf3b6cdf75f1f544472394f67d7.jpg" data-lightbox="roadtrip" data-title="Indian Army Dog Training Jpg 3444 2583 Army Dogs Dog Training Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/04/5c/9e045cf3b6cdf75f1f544472394f67d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF-ehsCXChI952vrHjEc-aX2OUaI47VSpyGQ';" alt="Indian Army Dog Training Jpg 3444 2583 Army Dogs Dog Training Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Army Dog Training Jpg 3444 2583 Army Dogs Dog Training Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/3d/68/223d68d253b3afc4cd9eb32ea8dda004.jpg" data-lightbox="roadtrip" data-title="Indian Army Dog Indian Army Dogs Four Legged Warriors Indian Army Dog Show In 26 Janurary Army Dogs Dog Parade Dog Show">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/3d/68/223d68d253b3afc4cd9eb32ea8dda004.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt8HuIfw49bS7GiuhIig5_GTcS5Kn8vz_92g';" alt="Indian Army Dog Indian Army Dogs Four Legged Warriors Indian Army Dog Show In 26 Janurary Army Dogs Dog Parade Dog Show">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Army Dog Indian Army Dogs Four Legged Warriors Indian Army Dog Show In 26 Janurary Army Dogs Dog Parade Dog Show</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/7b/05/48/7b054808c2f8660b145ed3b0a53d689f.jpg" data-lightbox="roadtrip" data-title="Pin By Daisy Maan On D Dog Lovers Dog Life Indian Food Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/7b/05/48/7b054808c2f8660b145ed3b0a53d689f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRABECjyERiejBUgUFSdvp-2V7mUMZybYl5OA';" alt="Pin By Daisy Maan On D Dog Lovers Dog Life Indian Food Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Daisy Maan On D Dog Lovers Dog Life Indian Food Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/29/35/f5/2935f5c0dec51aa68c5d8ca3f379b87b.jpg" data-lightbox="roadtrip" data-title="Dog Army Awesome Wallpapers Hd Army Dogs Military Dogs Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/29/35/f5/2935f5c0dec51aa68c5d8ca3f379b87b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMT7XarSC-qly52xzPQdgrNue93hzFMDujnQ';" alt="Dog Army Awesome Wallpapers Hd Army Dogs Military Dogs Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dog Army Awesome Wallpapers Hd Army Dogs Military Dogs Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ce/2c/e5/ce2ce517daa08bf52a10d8764a79902a.jpg" data-lightbox="roadtrip" data-title="Indian Nsg Commandoes With K9 Strapped To The Back 711x711 Indian Army Commando Special Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ce/2c/e5/ce2ce517daa08bf52a10d8764a79902a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxfZoLILcCyOhSuUXlaZBiCTIIdAwamxoKOw';" alt="Indian Nsg Commandoes With K9 Strapped To The Back 711x711 Indian Army Commando Special Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Nsg Commandoes With K9 Strapped To The Back 711x711 Indian Army Commando Special Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/4f/ee/1b4fee8f4a6aa2aadd061a7a0c3b6413.jpg" data-lightbox="roadtrip" data-title="Pin On Indian Dog Breeds">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/4f/ee/1b4fee8f4a6aa2aadd061a7a0c3b6413.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKB1ISW_TE9JVGXt_yLSuVNDTRQhR6FFf-WQ';" alt="Pin On Indian Dog Breeds">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Indian Dog Breeds</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/60/62/ec606212fb6b973fec67256cff4913e7.jpg" data-lightbox="roadtrip" data-title="The Indian Army Just Revealed That Army Dogs Are Put To Sleep As Soon As They Can No Longer Serve Army Dogs Indian Army Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/60/62/ec606212fb6b973fec67256cff4913e7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAso96OGZc8LLd5b9KBRPUUWJg6lLK8Hnq8w';" alt="The Indian Army Just Revealed That Army Dogs Are Put To Sleep As Soon As They Can No Longer Serve Army Dogs Indian Army Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Indian Army Just Revealed That Army Dogs Are Put To Sleep As Soon As They Can No Longer Serve Army Dogs Indian Army Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/1b/dc/c71bdc839e06a43d6f74ee30ed68bbb5.png" data-lightbox="roadtrip" data-title="Pin On All Things Bright Beautiful">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/1b/dc/c71bdc839e06a43d6f74ee30ed68bbb5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHWvlDXfDy2avLXpvOr9PXBCBUU-1qsOj-kQ';" alt="Pin On All Things Bright Beautiful">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On All Things Bright Beautiful</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/90/75/5f9075c607885fdc70664ff738dd2efb.jpg" data-lightbox="roadtrip" data-title="This Dog In The Indian Armyhttps I Redd It Jlvzb8r14m441 Jpg Dog Rates Canine Puppy Eyes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/90/75/5f9075c607885fdc70664ff738dd2efb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZTcb74yozuHneCsIXU-SFCEQUTTD9-Aqffw';" alt="This Dog In The Indian Armyhttps I Redd It Jlvzb8r14m441 Jpg Dog Rates Canine Puppy Eyes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Dog In The Indian Armyhttps I Redd It Jlvzb8r14m441 Jpg Dog Rates Canine Puppy Eyes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/4f/75/e14f75eaacb2fc526cf03a299a9fc5a9.jpg" data-lightbox="roadtrip" data-title="Army Dogs Will Walk The Republic Day Parade For The First Time In 26 Years Army Dogs Service Dogs Dog Training Obedience">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/4f/75/e14f75eaacb2fc526cf03a299a9fc5a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUxWvPHBa6V6uioUYs1WE4enI7NehP8SlEwA';" alt="Army Dogs Will Walk The Republic Day Parade For The First Time In 26 Years Army Dogs Service Dogs Dog Training Obedience">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Dogs Will Walk The Republic Day Parade For The First Time In 26 Years Army Dogs Service Dogs Dog Training Obedience</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/ce/ee/cbceeeb1aa7b7d8781109188b9fd8980.png" data-lightbox="roadtrip" data-title="Vardhaman Empire Is Listed Or Ranked 7 On The List The Top 10 Greatest Empires Of India Indian Army History British History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/ce/ee/cbceeeb1aa7b7d8781109188b9fd8980.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThd7_NQLgPLNlDnhcuCOyxq-k2QRontdTm2g';" alt="Vardhaman Empire Is Listed Or Ranked 7 On The List The Top 10 Greatest Empires Of India Indian Army History British History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vardhaman Empire Is Listed Or Ranked 7 On The List The Top 10 Greatest Empires Of India Indian Army History British History</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/texas-military-department-resources.html">Texas Military Department Resources</a></li>
+													<li class="list-group-item"><a href="/texas-military-department-twitter.html">Texas Military Department Twitter</a></li>
+													<li class="list-group-item"><a href="/toronto-military-family-resource-center.html">Toronto Military Family Resource Center</a></li>
+													<li class="list-group-item"><a href="/texas-military-department-eagle-lake.html">Texas Military Department Eagle Lake</a></li>
+													<li class="list-group-item"><a href="/the-department-of-national-defence-canada.html">The Department Of National Defence Canada</a></li>
+													<li class="list-group-item"><a href="/texas-military-department-procurement.html">Texas Military Department Procurement</a></li>
+													<li class="list-group-item"><a href="/toronto-military-resource-centre.html">Toronto Military Resource Centre</a></li>
+													<li class="list-group-item"><a href="/the-us-army-survival-manual-department-of-the-army-field-manual-21-76.html">The Us Army Survival Manual Department Of The Army Field Manual 21 76</a></li>
+													<li class="list-group-item"><a href="/texas-military-department-staff.html">Texas Military Department Staff</a></li>
+													<li class="list-group-item"><a href="/the-department-of-national-defence-and-the-canadian-armed-forces.html">The Department Of National Defence And The Canadian Armed Forces</a></li>
+													<li class="list-group-item"><a href="/the-worldwide-military-personnel-database.html">The Worldwide Military Personnel Database</a></li>
+													<li class="list-group-item"><a href="/texas-tech-military-department.html">Texas Tech Military Department</a></li>
+													<li class="list-group-item"><a href="/the-navy-wife.html">The Navy Wife</a></li>
+													<li class="list-group-item"><a href="/texas-military-department-weslaco-tx.html">Texas Military Department Weslaco Tx</a></li>
+													<li class="list-group-item"><a href="/toronto-military-family-resource-centre-jobs.html">Toronto Military Family Resource Centre Jobs</a></li>
+													<li class="list-group-item"><a href="/the-medical-department-of-the-united-states-army-in-the-world-war.html">The Medical Department Of The United States Army In The World War</a></li>
+													<li class="list-group-item"><a href="/texas-military-department-public-affairs.html">Texas Military Department Public Affairs</a></li>
+													<li class="list-group-item"><a href="/texas-military-department-website.html">Texas Military Department Website</a></li>
+													<li class="list-group-item"><a href="/the-united-states-army-medical-department-journal.html">The United States Army Medical Department Journal</a></li>
+													<li class="list-group-item"><a href="/tsa-precheck-dod-civilian.html">Tsa Precheck Dod Civilian</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

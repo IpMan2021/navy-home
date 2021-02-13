@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Department Of Defence Terrorism Definition - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Department Of Defence Terrorism Definition",
+  "datePublished": "2021-02-13",
+  "image": "bOcStTF_S6YFiM",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+department+of+defence+terrorism+definition",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Department Of Defence Terrorism Definition</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Intended to coerce or to intimidate governments or societies in the pursuit of goals that are generally political religious or ideological. The calculated use of unlawful violence or threat of unlawful violence to inculcate fear. The United States Department of Defense defines terrorism as. <br>				
+			</p>
+										<a class="badge badge-dark" href="/department-of-military-and-veterans-affairs-trenton-nj.html">department of military and veterans affairs trenton nj</a>
+											<a class="badge badge-warning" href="/department-of-defense-us-history-definition.html">department of defense us history definition</a>
+											<a class="badge badge-dark" href="/department-of-military-affairs-new-mexico.html">department of military affairs new mexico</a>
+											<a class="badge badge-secondary" href="/department-of-military-and-veterans-affairs-fort-indiantown-gap.html">department of military and veterans affairs fort indiantown gap</a>
+											<a class="badge badge-success" href="/department-of-military-affairs-guam-staffing-pattern.html">department of military affairs guam staffing pattern</a>
+											<a class="badge badge-light" href="/department-of-labor-military-spouse.html">department of labor military spouse</a>
+											<a class="badge badge-info" href="/department-of-intelligence-of-the-armed-forces-of-armenia.html">department of intelligence of the armed forces of armenia</a>
+											<a class="badge badge-info" href="/department-of-defense-spending-trends.html">department of defense spending trends</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to pay a visit to the ideal site.  Our website gives you suggestions for viewing the maximum quality video and picture content, search and locate more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, so we recommend this movie that you view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="1xjkC-_NdL-pYM" data-lightbox="roadtrip" data-title="Https Www Jstor Org Stable 41856077">
+											<img class="card-img v-image ads-img " src="1xjkC-_NdL-pYM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5dlOaPU1ZPWs7woOInMr1iE4ENA2a1e5X3g';" alt="Https Www Jstor Org Stable 41856077">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Jstor Org Stable 41856077</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.secbrief.org/img/large.png" data-lightbox="roadtrip" data-title="Secbrief Org Definition Of Terrorism">
+											<img class="card-img v-image ads-img " src="https://www.secbrief.org/img/large.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYvCQVHYwMPlrGKqWQgzhRxBhEsFwQGF8DNA';" alt="Secbrief Org Definition Of Terrorism">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Secbrief Org Definition Of Terrorism</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.britannica.com/22/194322-050-77669080/Prisoners-transport-plane-detention-camp-Cuba-Guantanamo-2002.jpg" data-lightbox="roadtrip" data-title="War On Terrorism Summary Facts Britannica">
+											<img class="card-img v-image ads-img " src="https://cdn.britannica.com/22/194322-050-77669080/Prisoners-transport-plane-detention-camp-Cuba-Guantanamo-2002.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQemW2-JPs66a7r5cQgLb15e8ln0-Zf7IgKFw';" alt="War On Terrorism Summary Facts Britannica">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">War On Terrorism Summary Facts Britannica</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Nov/16/2002535946/825/780/0/201112-A-UG256-0002.JPG" data-lightbox="roadtrip" data-title="Christopher C Miller U S Department Of Defense Biography">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Nov/16/2002535946/825/780/0/201112-A-UG256-0002.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSW3Eoa84hP_PlL_eoy7rthu9ja8oqz3oNPw';" alt="Christopher C Miller U S Department Of Defense Biography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Christopher C Miller U S Department Of Defense Biography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.e-ir.info/wp-content/uploads/fly-images/61450/Image-by-U.S.-Department-of-Defense-Current-Photos-DoD-photo-by-Senior-Airman-Matthew-Bruch-U.S.-Air-ForceReleased-807x455-c.jpg" data-lightbox="roadtrip" data-title="The Fight Against The Islamic State In Syria And The Right To Self Defence">
+											<img class="card-img v-image ads-img " src="https://www.e-ir.info/wp-content/uploads/fly-images/61450/Image-by-U.S.-Department-of-Defense-Current-Photos-DoD-photo-by-Senior-Airman-Matthew-Bruch-U.S.-Air-ForceReleased-807x455-c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9y4D5yuiogi2hAVPcMnTJoyqFLD6b6pzaIQ';" alt="The Fight Against The Islamic State In Syria And The Right To Self Defence">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Fight Against The Islamic State In Syria And The Right To Self Defence</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="sROApk3tjS7wdM" data-lightbox="roadtrip" data-title="Https Www Hsdl Org View Did 439201">
+											<img class="card-img v-image ads-img " src="sROApk3tjS7wdM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSIBS9XzSwMU6O0mmGNd-DUpxQhDSQW0zz9g';" alt="Https Www Hsdl Org View Did 439201">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Hsdl Org View Did 439201</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="LDuy0E0on5xNXM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSIBS9XzSwMU6O0mmGNd-DUpxQhDSQW0zz9g';" alt="Https Www Hsdl Org View Did 439201">
+										<div class="card-body">
+						<h3 class="h5"><b>They are backed.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us department of defence terrorism definition</strong>. 
+								
+																	The unlawful use or threatened use of force or violence instilling fear and terror against individuals or property in an attempt to coerce or intimidate governments or societies or to gain control over a population to achieve political religious or ideological objectives. 
+																	These military and associated terms together with their definitions constitute approved Department of Defense DOD terminology for general use by all DOD components. 
+																	Code for terrorism which means the label is often unevenly applied. 
+																	This Handbook applies to the Office of the Secretary of Defense the Military Departments the Chairman of the Joint Chiefs of Staff the Combatant Commands the Office of Inspector General of the Department of Defense the Defense Agencies DoD Field Activities and all other organizational entities in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The United States Department of Defense defines terrorism as the calculated use of unlawful violence or threat of unlawful violence to inculcate fear. 
+																	The Department of Defense DOD is the executive department in the federal government that is responsible for providing the military forces needed to deter war and to protect the security of the United States. 
+																	According to former director of the National Counterterrorism Center Michael Leiter here are more than 50 definitions in the US. 
+																	The mission of the Department of Defense is to provide a lethal Joint Force to defend the security of our country and sustain. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1182 a 3 Bor terrorism as defined in section 140 d 2 of the Foreign Relations Authorization Act Fiscal Years 1988 and 1989 22 USC. 
+																	2656f d 2 or retain the capability and intent to engage in terrorist activity or terrorism. 
+																	Terrorism and Political Turbulence February 1993 reference b is hereby canceled. 
+																	Code 2656f terrorism is defined as premeditated politically motivated violence perpetrated against noncombatant targets by subnational groups or clandestine agents This is also the definition that is used by USG agencies in order to define acts of terrorism. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In the United States of America terrorism is defined in Title 22 Chapter 38 US. 
+																	Intended to coerce or to intimidate governments or societies in the pursuit of goals that are generally political religious or ideological. 
+																	By the USG definition according to Title 22 Chapter 38 US. 
+																	As required by the National Defense Authorization Act the FBI and Department of Homeland Security in consultation with the Director of National Intelligence have developed standard definitions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Rather it outlines recommendations compiled by the DHS Office for Civil Rights and Civil Liberties CRCL from its discussions with a broad range of Muslim American community leaders and scholars. 
+																	Terrorist threat level. 
+																	Intended to coerce or to intimidate governments or societies in the pursuit of goals that are generally political religious or ideological. 
+																	An intelligence threat assessment of the level of terrorist threat faced by US personnel and interests in a foreign country. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In general terrorism is classified as. 
+																	This memorandum does not state official Department of Homeland Security DHS policy nor does it address legal definitions. 
+																	Department of Defense DoD Definition of Terrorism The calculated use of unlawful violence or threat of unlawful violence to inculcate fear. 
+																	Code 2656f as premeditated politically motivated violence perpetrated against noncombatant targets by subnational groups or clandestine agents. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Definition of the term terrorist threat level per official documentation of the United States Department of Defense. 
+																	The major elements of the military forces under its control are the Army Navy Air Force and Marine Corps consisting of about 15 million men and women on active duty. 
+																	Intended to coerce or to intimidate governments or societies in the pursuit of goals that are generally political religious or ideological. 
+																	It must also be for. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The calculated use of unlawful violence or threat of unlawful violence to inculcate fear. 
+																	Department of State DoS Definition of Terrorism. 
+																	The calculated use of unlawful violence or threat of unlawful violence to inculcate fear. 
+																	Head to the redesigned Defensegov where you can learn all about the Defense Department. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The United States Department of Defense DoD USDOD or DOD is an executive branch department of the federal government charged with coordinating and supervising all agencies and functions of the government directly related to national security and the United States Armed ForcesThe DOD is the largest employer in the world with over 13 million active-duty service members soldiers marines. 
+																	Terms sets forth standard US military and associated terminology to encompass the joint activity of the Armed Forces of the United States. 
+																	Department of Defense Dictionary of Military Termsdefines terrorism as. 
+																	Intended to coerce or to intimidate governments or societies in the pursuit of goals that are generally political religious or ideological. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Explore trending topics experience DOD through interactive pieces engage by testing your wit with quizzes and observe DOD in action via photos and videos. 
+																	The organization must engage in terrorist activity as defined in section 212 a 3 B of the INA 8 USC. 
+																	Terrorism Terrorism is the use or threat of action both in and outside of the UK designed to influence any international government organisation or to intimidate the public. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/b/b0/Global_War_on_Terrorism_Service_Medal.png" data-lightbox="roadtrip" data-title="Global War On Terrorism Service Medal Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Global_War_on_Terrorism_Service_Medal.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmsTqrNd35t3omMUTuU_pOgTLvk3x1Cq19-g';" alt="Global War On Terrorism Service Medal Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Global War On Terrorism Service Medal Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3.amazonaws.com/utep-uploads/wp-content/uploads/eku/2020/08/19122154/Government-Security.jpg" data-lightbox="roadtrip" data-title="5 Threats To National Security And How Government Protects Eku Online">
+											<img class="card-img v-image ads-img " src="https://s3.amazonaws.com/utep-uploads/wp-content/uploads/eku/2020/08/19122154/Government-Security.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF4N5TtfOKP41jf28DHR6blkmXidKZZOlNCw';" alt="5 Threats To National Security And How Government Protects Eku Online">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Threats To National Security And How Government Protects Eku Online</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="bOcStTF_S6YFiM" data-lightbox="roadtrip" data-title="Https Www Jstor Org Stable 26326234">
+											<img class="card-img v-image ads-img " src="bOcStTF_S6YFiM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRirTXV6asFL6_4IgPT74bwRXFNtK3Z5qzt0A';" alt="Https Www Jstor Org Stable 26326234">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Jstor Org Stable 26326234</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="txCXEVHul_bnGM" data-lightbox="roadtrip" data-title="Https Www Hsdl Org View Did 4641">
+											<img class="card-img v-image ads-img " src="txCXEVHul_bnGM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbWv0gHhO8E_rVrK2njKij6k5OjXxv6qtW7Q';" alt="Https Www Hsdl Org View Did 4641">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Hsdl Org View Did 4641</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="kObSOwNiQcQBeM" data-lightbox="roadtrip" data-title="Https Www Jstor Org Stable 24439548">
+											<img class="card-img v-image ads-img " src="kObSOwNiQcQBeM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBnBUt4SHGF8Hab3sk-IK4EztZ1xrlJK0Mxw';" alt="Https Www Jstor Org Stable 24439548">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Jstor Org Stable 24439548</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.rgstatic.net/publication/340647256_Intelligence_Sources_in_the_Process_of_Collection_of_Information_by_the_US_Intelligence_Community/links/5e96e6d1a6fdcca78918e8a5/largepreview.png" data-lightbox="roadtrip" data-title="Pdf Intelligence Sources In The Process Of Collection Of Information By The U S Intelligence Community">
+											<img class="card-img v-image ads-img " src="https://i1.rgstatic.net/publication/340647256_Intelligence_Sources_in_the_Process_of_Collection_of_Information_by_the_US_Intelligence_Community/links/5e96e6d1a6fdcca78918e8a5/largepreview.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPvmCj1zSTORPTxuI3-8_wtY2Zk2vfcaHDSw';" alt="Pdf Intelligence Sources In The Process Of Collection Of Information By The U S Intelligence Community">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pdf Intelligence Sources In The Process Of Collection Of Information By The U S Intelligence Community</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.nap.edu/cover/10655/450" data-lightbox="roadtrip" data-title="1 U S Army Role In Homeland Security Science And Technology For Army Homeland Security Report 1 The National Academies Press">
+											<img class="card-img v-image ads-img " src="https://www.nap.edu/cover/10655/450" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZeMgIJErQpvmZpn9LEitcQjAs-Z_DwwmHYA';" alt="1 U S Army Role In Homeland Security Science And Technology For Army Homeland Security Report 1 The National Academies Press">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1 U S Army Role In Homeland Security Science And Technology For Army Homeland Security Report 1 The National Academies Press</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2018/Nov/08/2002061234/825/780/0/181108-D-BD104-009.JPG" data-lightbox="roadtrip" data-title="Examining Complex Forms Of Conflict Gray Zone And Hybrid Challenges Prism National Defense University News">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2018/Nov/08/2002061234/825/780/0/181108-D-BD104-009.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiouTG4Oc8MObtCv7_Dp2iFzHlZHVYPRRdyg';" alt="Examining Complex Forms Of Conflict Gray Zone And Hybrid Challenges Prism National Defense University News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Examining Complex Forms Of Conflict Gray Zone And Hybrid Challenges Prism National Defense University News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="PTsMZRQwrwmLZM" data-lightbox="roadtrip" data-title="Https Www Hsdl Org View Did 459698">
+											<img class="card-img v-image ads-img " src="PTsMZRQwrwmLZM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVHFgvGyzchf_UUMi2dKpkCSNIulveskVMOw';" alt="Https Www Hsdl Org View Did 459698">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Hsdl Org View Did 459698</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2019/Dec/04/2002220110/825/780/0/191204-D-BD104-003.JPG" data-lightbox="roadtrip" data-title="Mercenaries And War Understanding Private Armies Today National Defense University Press News">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2019/Dec/04/2002220110/825/780/0/191204-D-BD104-003.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwXnshZW-TFT2tW7GN4MvThaX7o8GC0CC4AA';" alt="Mercenaries And War Understanding Private Armies Today National Defense University Press News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mercenaries And War Understanding Private Armies Today National Defense University Press News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.state.gov/wp-content/uploads/2019/04/John-Godfrey-214x300.jpg" data-lightbox="roadtrip" data-title="Bureau Of Counterterrorism United States Department Of State">
+											<img class="card-img v-image ads-img " src="https://www.state.gov/wp-content/uploads/2019/04/John-Godfrey-214x300.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4ZNtf7g8xYSt-xmIam9m8nVI8LYI0it4bbQ';" alt="Bureau Of Counterterrorism United States Department Of State">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bureau Of Counterterrorism United States Department Of State</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.everycrsreport.com/files/20200130_R46217_images_81836d58ae0e2b7d81fd0a199d167a411b302b15.png" data-lightbox="roadtrip" data-title="Indo Pacific Strategies Of U S Allies And Partners Issues For Congress Everycrsreport Com">
+											<img class="card-img v-image ads-img " src="https://www.everycrsreport.com/files/20200130_R46217_images_81836d58ae0e2b7d81fd0a199d167a411b302b15.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0NAGDJhwmzFCtjrmaMZRrQzyW6r-VJl7DUQ';" alt="Indo Pacific Strategies Of U S Allies And Partners Issues For Congress Everycrsreport Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indo Pacific Strategies Of U S Allies And Partners Issues For Congress Everycrsreport Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="LDuy0E0on5xNXM" data-lightbox="roadtrip" data-title="Https Dl Bourse Lu Dl V Zmgoat5gwug4vng I8jvcob 8yas6bg 99dpsswhhbfzsofcctn1mxkwupqeshpajbroydvfjyy4 Z6wtlnwsbp2a6ejpikmdnosrodivn4hvhwqkpbxxyv4biunm7is4 Xadzh6zp7pzefdkj3ft7fr5wshzl Leaw8xui4kgq">
+											<img class="card-img v-image ads-img " src="LDuy0E0on5xNXM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5h0F8PRA4VXt0cNkxqEdsma_htQIKfWNJ2A';" alt="Https Dl Bourse Lu Dl V Zmgoat5gwug4vng I8jvcob 8yas6bg 99dpsswhhbfzsofcctn1mxkwupqeshpajbroydvfjyy4 Z6wtlnwsbp2a6ejpikmdnosrodivn4hvhwqkpbxxyv4biunm7is4 Xadzh6zp7pzefdkj3ft7fr5wshzl Leaw8xui4kgq">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Dl Bourse Lu Dl V Zmgoat5gwug4vng I8jvcob 8yas6bg 99dpsswhhbfzsofcctn1mxkwupqeshpajbroydvfjyy4 Z6wtlnwsbp2a6ejpikmdnosrodivn4hvhwqkpbxxyv4biunm7is4 Xadzh6zp7pzefdkj3ft7fr5wshzl Leaw8xui4kgq</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-apparel.html">Department Of Veterans Affairs Apparel</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-hawaii.html">Department Of Veterans Affairs Hawaii</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-locations.html">Department Of Veterans Affairs Locations</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-lancaster-pa.html">Department Of Veterans Affairs Lancaster Pa</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-id-card.html">Department Of Veterans Affairs Id Card</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-agencies.html">Department Of Veterans Affairs Agencies</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-milwaukee.html">Department Of Veterans Affairs Milwaukee</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-fayetteville-nc.html">Department Of Veterans Affairs Fayetteville Nc</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-dc.html">Department Of Veterans Affairs Dc</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-australia.html">Department Of Veterans Affairs Australia</a></li>
+													<li class="list-group-item"><a href="/department-of-veteran-affairs-queensland.html">Department Of Veteran Affairs Queensland</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-gainesville-fl.html">Department Of Veterans Affairs Gainesville Fl</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-employee-benefits.html">Department Of Veterans Affairs Employee Benefits</a></li>
+													<li class="list-group-item"><a href="/department-of-va-wiki.html">Department Of Va Wiki</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-fresno.html">Department Of Veterans Affairs Fresno</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-disability-rating-for-neuropathy.html">Department Of Veterans Affairs Disability Rating For Neuropathy</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-address.html">Department Of Veterans Affairs Address</a></li>
+													<li class="list-group-item"><a href="/department-of-va-role.html">Department Of Va Role</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-miami.html">Department Of Veterans Affairs Miami</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-denver.html">Department Of Veterans Affairs Denver</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

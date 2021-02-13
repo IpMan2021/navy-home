@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Public Affairs Us Army - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Public Affairs Us Army",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/99/f1/79/99f179aba06d49ecd189c93e47267cea.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=public+affairs+us+army",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Public Affairs Us Army</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Soldiers interested in working in public affairs outside of the military may be eligible for civilian employment by enrolling in the Army PaYS program. See more of Army Public Affairs Center on Facebook. Army Public Affairs is comprised of Soldiers and Officers adept at planning and executing a commanders communication strategy through corporate communication media and stakeholder engagements. <br>				
+			</p>
+										<a class="badge badge-success" href="/department-of-veterans-affairs-careers.html">department of veterans affairs careers</a>
+											<a class="badge badge-warning" href="/department-of-veterans-affairs-facebook.html">department of veterans affairs facebook</a>
+											<a class="badge badge-primary" href="/department-of-veterans-affairs-louisville-ky.html">department of veterans affairs louisville ky</a>
+											<a class="badge badge-light" href="/department-of-veterans-affairs-kansas-city-mo.html">department of veterans affairs kansas city mo</a>
+											<a class="badge badge-danger" href="/department-of-va-washington-dc.html">department of va washington dc</a>
+											<a class="badge badge-success" href="/department-of-veterans-affairs-jobs-colorado-springs.html">department of veterans affairs jobs colorado springs</a>
+											<a class="badge badge-danger" href="/department-of-veterans-affairs-login.html">department of veterans affairs login</a>
+											<a class="badge badge-light" href="/department-of-veterans-affairs-atlanta-ga.html">department of veterans affairs atlanta ga</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you've come to pay a visit to the ideal site.  Our website gives you suggestions for viewing the highest quality video and picture content, search and find more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, especially Youtube, therefore we recommend this movie that you view.  You can also bring about supporting this site by sharing videos and images that you like on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this website.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/ad/bf/c5adbfe063d8ce44fefc41e2be521d9f.jpg" data-lightbox="roadtrip" data-title="Fort Huachuca Public Affairs Fort Huachuca Army Us Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/ad/bf/c5adbfe063d8ce44fefc41e2be521d9f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9OvpUgNosh5FQ2xi5KLXscOVy2tgktbf7XQ';" alt="Fort Huachuca Public Affairs Fort Huachuca Army Us Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fort Huachuca Public Affairs Fort Huachuca Army Us Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/d4/05/24d405a60675da61c292d0694df8c2aa.jpg" data-lightbox="roadtrip" data-title="U S Army Civil Affairs American Soldiers Army Soldier United States Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/d4/05/24d405a60675da61c292d0694df8c2aa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaXYWkTHrGwT7YC7CnfCUts_vbqByYm7GjBg';" alt="U S Army Civil Affairs American Soldiers Army Soldier United States Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Civil Affairs American Soldiers Army Soldier United States Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/69/fe/7d69febce81acc62ad23b9e55355d96c.jpg" data-lightbox="roadtrip" data-title="Join Us As We Say Thank You To All Who Serve And Have Served Our Country 112th Mobile Public Affairs Detac American Soldiers I Love America Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/69/fe/7d69febce81acc62ad23b9e55355d96c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJqYkGUgvGKuZzh7WjmjAirFP-KLokJEKNHg';" alt="Join Us As We Say Thank You To All Who Serve And Have Served Our Country 112th Mobile Public Affairs Detac American Soldiers I Love America Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Join Us As We Say Thank You To All Who Serve And Have Served Our Country 112th Mobile Public Affairs Detac American Soldiers I Love America Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/a2/c0/e6a2c0451775ac283566aede2682054a.jpg" data-lightbox="roadtrip" data-title="Army Public Affairs Detachment Shirt Army Shirts Army Us Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/a2/c0/e6a2c0451775ac283566aede2682054a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5GKUyMOA3OSzDLilgScl-rieAe9ZTbEjyMw';" alt="Army Public Affairs Detachment Shirt Army Shirts Army Us Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Public Affairs Detachment Shirt Army Shirts Army Us Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/0e/d5/440ed594155ff95200d361365a43e520.jpg" data-lightbox="roadtrip" data-title="Convoy Mission Brief Staff Sergeant Special Forces Military Guns">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/0e/d5/440ed594155ff95200d361365a43e520.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0WRTcY__-h8GePfAAKp5zZf9tH96fmRSMVg';" alt="Convoy Mission Brief Staff Sergeant Special Forces Military Guns">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Convoy Mission Brief Staff Sergeant Special Forces Military Guns</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/0f/cd/530fcd39902a4124f3ddbffe082c2bf9.jpg" data-lightbox="roadtrip" data-title="Pin On Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/0f/cd/530fcd39902a4124f3ddbffe082c2bf9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzCWuhO3jZq_EXXAIUf_anXpAvHaHQIukCGw';" alt="Pin On Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/7d/69/fe/7d69febce81acc62ad23b9e55355d96c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzCWuhO3jZq_EXXAIUf_anXpAvHaHQIukCGw';" alt="Pin On Military">
+										<div class="card-body">
+						<h3 class="h5"><b>And to provide an avenue for networking and professional development.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Public affairs us army</strong>. 
+								
+																	The Public Affairs Office supports US. 
+																	USASOC Public Affairs Office Public Affairs Officer. 
+																	Military for more specific limited purposes. 
+																	The PaYS program is a recruitment option that guarantees a job interview with military friendly employers that are looking for experienced and trained Veterans to join their organization. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Public Affairs Program November 6 2019 Army to launch additional housing satisfaction surveys September 12 2019 Army Announces Activation of Second. 
+																	4550 Parade Field Lane 218993 mi Fort George G Meade MD MD 20755. 
+																	Recruiting Facts and Figures. 
+																	In support of a PCH it provides manpower and equipment to establish and operate a media center at theater army TAACOMand corpslevels. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Authorization for covering most tenant units and for information on Army policies must also be coordinated through the Eighth Army Public Affairs Office Command Information The Command Information. 
+																	2929 Desert Storm Drive Fort Bragg NC. 
+																	The Army Public Affairs Program outlined in AR 360-1 is the guide to conducting public communication strategy for information command information leader engagements and community outreach. 
+																	667 people like this. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army announces release of DoD Counter-Small UAS Strategy January 7 2021 Army Statement on Shooting in Rockford Illinois December 27 2020 US. 
+																	The proponent of publication FM 3-61 is the Office of the Chief of Public Affairs. 
+																	Public Affairs is a term for the formal offices of the branches of the United States Department of Defense whose purpose is to deal with the media and community issues. 
+																	The Public Affairs Office provides public affairs counsel to the command of US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Association provides a voice and a community to advance the value of communications. 
+																	The term is also used for numerous media relations offices that are created by the US. 
+																	Army Recruiting Command Public Affairs fulfills the commands obligation to keep the American people and the command personnel informed about recruiting activities. 
+																	Army Public Affairs Association We are dedicated to providing a forum for current and former Public Affairs Soldiers and Civilians from all Army components. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Garrison Japan by communicating on behalf of the installation and its leadership -- providing clear accurate timely information to internal and. 
+																	The preparing agency is the Army Public Affairs Center Office of the Chief of Public Affairs. 
+																	Public Affairs is a term for the formal offices of the branches of the United States Department of Defense whose purpose is to deal with the media and community issues. 
+																	Army Europe and Africa. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The term is also used for numerous media relations offices that are created by the US. 
+																	FM 3-61 applies to Active Army Army National GuardArmy National Guard of the United States and United States Army Reserve unless otherwise stated. 
+																	Military for more specific limited purposes. 
+																	Army Garrison Wiesbaden by communicating on behalf of the installation and its leadership - providing clear accurate timely information to internal and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The USAREC media relations team responds to media queries and coordinates media engagements with Army Recruiting leaders and personnel. 
+																	Get Directions 301 677-7272. 
+																	A mobile public affairs detachment is a modular task organizable unit that normally augments a corps public affairs section or a press camp headquarters PCH. 
+																	Public Affairs operations help to establish the conditions that lead to confidence in Americas Army and its readiness to conduct operations in peacetime conflict and war. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Public Affairs Office supports US. 
+																	757 people follow this. 
+																	Army Hosts the DoD Warrior Games in September 2021. 
+																	Public affairs offices are staffed by a combination of officers enlisted personnel civilian. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See more of Army Public Affairs Center on Facebook. 
+																	Send comments and recommendations on a DA Form 2028 Recommended. 
+																	December 18 2020 US. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/c4/27/14c42791336978839f2cd178eb2f7a45.jpg" data-lightbox="roadtrip" data-title="101st Airborne S 2nd Brigade Combat Team Logistics Advise Assist Enables Iraqi Security Force Clarksville Tn Online Logistics Brigade Combat">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/c4/27/14c42791336978839f2cd178eb2f7a45.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiBjZG4Jmu_gwWqf8_dYD1YgiuopWcE9eQRw';" alt="101st Airborne S 2nd Brigade Combat Team Logistics Advise Assist Enables Iraqi Security Force Clarksville Tn Online Logistics Brigade Combat">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">101st Airborne S 2nd Brigade Combat Team Logistics Advise Assist Enables Iraqi Security Force Clarksville Tn Online Logistics Brigade Combat</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/fa/36/9efa361eafb0d569222a31e4d4be7a3b.png" data-lightbox="roadtrip" data-title="You Can Learn Newsroom Media And Photojournalism Skills In The Guard As Mos 46s Public Affairs Mass Communic Army Couple United States Military Military Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/fa/36/9efa361eafb0d569222a31e4d4be7a3b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOn24Q6oWPzE4pFKrlzNTTPZRiVMAL8gc2XA';" alt="You Can Learn Newsroom Media And Photojournalism Skills In The Guard As Mos 46s Public Affairs Mass Communic Army Couple United States Military Military Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">You Can Learn Newsroom Media And Photojournalism Skills In The Guard As Mos 46s Public Affairs Mass Communic Army Couple United States Military Military Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/79/ac/9679ac3ff7d5a74747f16ae070ac00c2.jpg" data-lightbox="roadtrip" data-title="Usa Patriotism Article Cadets Get Taste Of Pre Ranger Course By Abigail Waldrop Fort Bliss Public Affairs Ranger School Fort Benning Army Rangers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/79/ac/9679ac3ff7d5a74747f16ae070ac00c2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS_6cQtIWTzsmQP2JjIpqxgs1NyyFDdicGuw';" alt="Usa Patriotism Article Cadets Get Taste Of Pre Ranger Course By Abigail Waldrop Fort Bliss Public Affairs Ranger School Fort Benning Army Rangers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usa Patriotism Article Cadets Get Taste Of Pre Ranger Course By Abigail Waldrop Fort Bliss Public Affairs Ranger School Fort Benning Army Rangers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/81/61/e8816113a29705ca8a23bdfb3808d1b1.jpg" data-lightbox="roadtrip" data-title="101st Airborne Division Pfc Ashley Ward 101st Airborne Division Airborne Fort Campbell">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/81/61/e8816113a29705ca8a23bdfb3808d1b1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbylYhL-6eu4OuSpPDbG-2oo5kqvBNveckPw';" alt="101st Airborne Division Pfc Ashley Ward 101st Airborne Division Airborne Fort Campbell">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">101st Airborne Division Pfc Ashley Ward 101st Airborne Division Airborne Fort Campbell</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/ac/5d/39ac5d11ed09418a73ba6d64ef7caf1e.png" data-lightbox="roadtrip" data-title="U S Army To Send 1 500 Troops To Afghanistan In Summer 2017 Troops Army 82nd Airborne Division">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/ac/5d/39ac5d11ed09418a73ba6d64ef7caf1e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoX11vYQe8VzHnhhJvH6HDeTajXz-OLU-zfg';" alt="U S Army To Send 1 500 Troops To Afghanistan In Summer 2017 Troops Army 82nd Airborne Division">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army To Send 1 500 Troops To Afghanistan In Summer 2017 Troops Army 82nd Airborne Division</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/b9/bd/11b9bd780bfc6d0a968facd9203abe47.jpg" data-lightbox="roadtrip" data-title="Pin On U S Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/b9/bd/11b9bd780bfc6d0a968facd9203abe47.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB1-O333FVeY2_PVSG4AyhdclIobvcO_GFRQ';" alt="Pin On U S Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On U S Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/42/82/2842820396ae2f07720b38ec4df3c93f.jpg" data-lightbox="roadtrip" data-title="Pin On U S Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/42/82/2842820396ae2f07720b38ec4df3c93f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqie7Snrw4eENp7DABJ2wa6Kgzt7g0mlqVQQ';" alt="Pin On U S Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On U S Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/11/6a/1a116afbddc5794a9ceb3fdb0203b332.jpg" data-lightbox="roadtrip" data-title="U S Army Special Forces Photo Of The Day Afghan National Army Commandos With The 6th Special Operations Kandak Patrol An Alley In Tagab District Kapisa P">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/11/6a/1a116afbddc5794a9ceb3fdb0203b332.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA0nwC46oqghjsWmyFxNa7mtpnP2rKT-H39A';" alt="U S Army Special Forces Photo Of The Day Afghan National Army Commandos With The 6th Special Operations Kandak Patrol An Alley In Tagab District Kapisa P">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Special Forces Photo Of The Day Afghan National Army Commandos With The 6th Special Operations Kandak Patrol An Alley In Tagab District Kapisa P</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/12/1b/15/121b155d6c02a34c3edb0cf7183f0d15.jpg" data-lightbox="roadtrip" data-title="U S Army Soldiers 3rd Battalion 21st Infantry Regiment 1st Stryker Brigade Combat Team 25th Infantry Division Military Honor Military Heroes Army Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/12/1b/15/121b155d6c02a34c3edb0cf7183f0d15.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ18v9T2_IUngGiRhb_DikZAyRv0wMGfQsIpw';" alt="U S Army Soldiers 3rd Battalion 21st Infantry Regiment 1st Stryker Brigade Combat Team 25th Infantry Division Military Honor Military Heroes Army Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Soldiers 3rd Battalion 21st Infantry Regiment 1st Stryker Brigade Combat Team 25th Infantry Division Military Honor Military Heroes Army Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/f1/79/99f179aba06d49ecd189c93e47267cea.jpg" data-lightbox="roadtrip" data-title="Army Ipad Wallpaper Retina Us Army Soldier Soldier Pictures Of Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/f1/79/99f179aba06d49ecd189c93e47267cea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxvM4Xx8lG9IWD-wt41KAUgQ108CdobA-Urw';" alt="Army Ipad Wallpaper Retina Us Army Soldier Soldier Pictures Of Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Ipad Wallpaper Retina Us Army Soldier Soldier Pictures Of Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/fe/c4/88/fec48826e615b1a61f65b1d689d3d419.jpg" data-lightbox="roadtrip" data-title="Pin On Heros">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/fe/c4/88/fec48826e615b1a61f65b1d689d3d419.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVOVJjIZO6I_1qzts79gSSQqefgZrdgOJmtw';" alt="Pin On Heros">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Heros</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/98/d4/1f98d4fc71280ceab7dc71a26606045e.jpg" data-lightbox="roadtrip" data-title="121119 F Lx370 262 Army Sergeant Sergeant Brigade">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/98/d4/1f98d4fc71280ceab7dc71a26606045e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaifpc8odN7apzAO_3CBQaWKQxv_lPtIf7tg';" alt="121119 F Lx370 262 Army Sergeant Sergeant Brigade">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">121119 F Lx370 262 Army Sergeant Sergeant Brigade</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/0a/43/860a4344c856b08cd95143f424071380.jpg" data-lightbox="roadtrip" data-title="Pin On Pas Rock">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/0a/43/860a4344c856b08cd95143f424071380.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMKDdn4dtQ8H01peaWsS3y-Z7vDC_6n4cxBQ';" alt="Pin On Pas Rock">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Pas Rock</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/us-army-national-museum.html">Us Army National Museum</a></li>
+													<li class="list-group-item"><a href="/us-army-personnel-directory.html">Us Army Personnel Directory</a></li>
+													<li class="list-group-item"><a href="/us-army-national-guard-pay.html">Us Army National Guard Pay</a></li>
+													<li class="list-group-item"><a href="/us-army-personnel-equipment.html">Us Army Personnel Equipment</a></li>
+													<li class="list-group-item"><a href="/us-army-personnel-office.html">Us Army Personnel Office</a></li>
+													<li class="list-group-item"><a href="/us-army-office-decor.html">Us Army Office Decor</a></li>
+													<li class="list-group-item"><a href="/us-army-mp-hat.html">Us Army Mp Hat</a></li>
+													<li class="list-group-item"><a href="/us-army-north-dock-yokohama.html">Us Army North Dock Yokohama</a></li>
+													<li class="list-group-item"><a href="/us-army-mailing-address-for-unemployment.html">Us Army Mailing Address For Unemployment</a></li>
+													<li class="list-group-item"><a href="/us-army-mesh-hat.html">Us Army Mesh Hat</a></li>
+													<li class="list-group-item"><a href="/us-army-memorandum-office-symbol.html">Us Army Memorandum Office Symbol</a></li>
+													<li class="list-group-item"><a href="/us-army-office-of-the-chief-of-public-affairs.html">Us Army Office Of The Chief Of Public Affairs</a></li>
+													<li class="list-group-item"><a href="/us-army-national-guard-address.html">Us Army National Guard Address</a></li>
+													<li class="list-group-item"><a href="/us-army-personnel-accountability-regulation.html">Us Army Personnel Accountability Regulation</a></li>
+													<li class="list-group-item"><a href="/us-army-number-of-soldiers.html">Us Army Number Of Soldiers</a></li>
+													<li class="list-group-item"><a href="/us-army-officer-uniform.html">Us Army Officer Uniform</a></li>
+													<li class="list-group-item"><a href="/us-army-jag-corps-headquarters.html">Us Army Jag Corps Headquarters</a></li>
+													<li class="list-group-item"><a href="/us-army-personnel-records-review.html">Us Army Personnel Records Review</a></li>
+													<li class="list-group-item"><a href="/us-army-personnel-recovery-training.html">Us Army Personnel Recovery Training</a></li>
+													<li class="list-group-item"><a href="/us-army-legal-office.html">Us Army Legal Office</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

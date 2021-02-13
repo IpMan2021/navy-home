@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Dept Of Military Affairs Madison Wi - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Dept Of Military Affairs Madison Wi",
+  "datePublished": "2021-02-13",
+  "image": "https://dma.wi.gov/DMA/images/GRAPHICS/USCG.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=dept+of+military+affairs+madison+wi",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Dept Of Military Affairs Madison Wi</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Department of Veterans Affairs 810 Vermont Avenue NW Washington DC 20420. The Wisconsin Department of Veterans Affairs recognizes the important role that veteran-owned and disabled veteran-owned businesses play in the Wisconsin economy. Apply to Registered Nurse Case Manager Food Service Worker Medical Technician and more. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/italy-defense-budget-2021.html">italy defense budget 2021</a>
+											<a class="badge badge-success" href="/japan-2021-defense-budget.html">japan 2021 defense budget</a>
+											<a class="badge badge-light" href="/is-defense-budget-compared-to-other-countries.html">is defense budget compared to other countries</a>
+											<a class="badge badge-success" href="/is-mango-languages-free.html">is mango languages free</a>
+											<a class="badge badge-secondary" href="/jacek-marchwicki-uwm.html">jacek marchwicki uwm</a>
+											<a class="badge badge-warning" href="/is-navy-part-of-dod.html">is navy part of dod</a>
+											<a class="badge badge-secondary" href="/is-the-2020-dod-budget-approved.html">is the 2020 dod budget approved</a>
+											<a class="badge badge-danger" href="/is-the-department-of-defense-part-of-the-military.html">is the department of defense part of the military</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to pay a visit to the ideal blog.  Our site provides you with suggestions for seeing the highest quality video and picture content, hunt and locate more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this movie for you to see.  It is also possible to bring about supporting this website by sharing videos and images that you enjoy on this site on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information you get on this website.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dma.wi.gov/DMA/images/web-JFHQ-WI_bldg-01-500p.jpg" data-lightbox="roadtrip" data-title="Wisconsin Department Of Military Affairs">
+											<img class="card-img v-image ads-img " src="https://dma.wi.gov/DMA/images/web-JFHQ-WI_bldg-01-500p.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOezKH0UNlAp4e6JwAxuigLRYqqNxl-hDvbMDOrKjyWRDy4JYVG4P7_xRfVvZ_6AFClCxEbg&amp;ec=45771803';" alt="Wisconsin Department Of Military Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wisconsin Department Of Military Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dma.wi.gov/DMA/templates/rt_callisto/custom/images/headers/DMA_ALLBanner_Transparent.png" data-lightbox="roadtrip" data-title="Contact Us">
+											<img class="card-img v-image ads-img " src="https://dma.wi.gov/DMA/templates/rt_callisto/custom/images/headers/DMA_ALLBanner_Transparent.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE6BfRPtK5cChLqgZ5tKJo3N1XEq5LdlMri3wS5gxCOrXXQj7kJnK3sgE18sdyB703iYqK&amp;ec=45771803';" alt="Contact Us">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Contact Us</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dma.wi.gov/DMA/images/GRAPHICS/WI_ARNG.png" data-lightbox="roadtrip" data-title="Department Of Military Affairs Logos">
+											<img class="card-img v-image ads-img " src="https://dma.wi.gov/DMA/images/GRAPHICS/WI_ARNG.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ807P3uUCYMMXCQwh9gnJqwvh-kLXjYoqtzGmWjRGE_ms--nMSResxsrCDmPX2aRvNYranvQ&amp;ec=45771803';" alt="Department Of Military Affairs Logos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Department Of Military Affairs Logos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/48/6f/15486f9b8583695e05c655112a7f0bb0.jpg" data-lightbox="roadtrip" data-title="Wisconsin Veterans Museum Travel Wisconsin Wisconsin Art Wisconsin Travel Culture Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/48/6f/15486f9b8583695e05c655112a7f0bb0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv91rEcJMxtV5Zxj9hVN26X8YUBh4MVtiTnM3ZjpYeTC3bL0HK0fU02fYsqZTgD4G9NkuhDw&amp;ec=45771803';" alt="Wisconsin Veterans Museum Travel Wisconsin Wisconsin Art Wisconsin Travel Culture Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wisconsin Veterans Museum Travel Wisconsin Wisconsin Art Wisconsin Travel Culture Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/af/79/47af79ac07f8c23afb30cef4daa1d92e.jpg" data-lightbox="roadtrip" data-title="Letter Of Appreciation Template Unique Best S Of Army Letter Appreciation Template Lettering Graphic Design Quotes Letter Writing Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/af/79/47af79ac07f8c23afb30cef4daa1d92e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcBE9Q5IpjlVfWUG9HJA287cntRndnfYHi0L8grQmteorW1Ea7FDl6VP0i3nxDTqXHiFkLPA&amp;ec=45771803';" alt="Letter Of Appreciation Template Unique Best S Of Army Letter Appreciation Template Lettering Graphic Design Quotes Letter Writing Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Letter Of Appreciation Template Unique Best S Of Army Letter Appreciation Template Lettering Graphic Design Quotes Letter Writing Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dma.wi.gov/DMA/images/NEWS/2018NEWS/DMA_SealFINAL.png" data-lightbox="roadtrip" data-title="Dark Sky Exercise Slated For May 15 17 At Sites Across State">
+											<img class="card-img v-image ads-img " src="https://dma.wi.gov/DMA/images/NEWS/2018NEWS/DMA_SealFINAL.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0yHTDuu7V2EQ3NEqnbtGbAC-qhTgqFdt5OzlRl0d8e7AvQNOBmg53sbVHWTMYU_hY34qjQg&amp;ec=45771803';" alt="Dark Sky Exercise Slated For May 15 17 At Sites Across State">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dark Sky Exercise Slated For May 15 17 At Sites Across State</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/600x315/7c/6f/69/7c6f692b29392fc7f2b2f2cc2808f1b7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0yHTDuu7V2EQ3NEqnbtGbAC-qhTgqFdt5OzlRl0d8e7AvQNOBmg53sbVHWTMYU_hY34qjQg&amp;ec=45771803';" alt="Dark Sky Exercise Slated For May 15 17 At Sites Across State">
+										<div class="card-body">
+						<h3 class="h5"><b>Order Online Tickets Tickets See Availability.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Dept of military affairs madison wi</strong>. 
+								
+																	These services include veteran benefits assistance services for veterans with disabilities and information about medical. 
+																	James Bond Deputy Secretary James Bond serves as the Deputy Secretary for the Wisconsin Department of Veterans Affairs. 
+																	This web site is the official Web site of the Wisconsin Department of Military Affairs the Wisconsin National Guard Wisconsin Emergency Management and the Wisconsin Office of Emergency Communications provided as a public service by the Wisconsin Department of Military. 
+																	The State of Wisconsin including the Wisconsin Department of Veterans Affairs WDVA continues to monitor the spread of COVID-19 in coordination with the Wisconsin Department of Health Services DHS and other local state and federal partners. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army veteran Gundel Gundy Metz was named its 2019 Woman Veteran of the Year. 
+																	Order Online Tickets. 
+																	The Wisconsin Veterans Home at Union Grove enjoyed a deer hunting event where staff played the part of the deer and let the members shoot them with foam darts. 
+																	Get directions reviews and information for Wisconsin Department Of Military Affairs in Madison WI. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Reviews 608 242-3000 Website. 
+																	He is responsible for day-to-day operations as well as directing and coordinating the Departments strategic planning and program development. 
+																	Menu Reservations Make Reservations. 
+																	Wisconsin Veterans Homes One of our major responsibilities at the Wisconsin Department of Veterans Affairs is providing 24-hour skilled nursing care to our nations heroes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are State Civil Service jobs as well as Federal Civil Service and Federal Military employment. 
+																	Department Of Veterans Affairs 2500 Overlook Ter Madison WI 53705. 
+																	This web site is the official Web site of the Wisconsin Department of Military Affairs the Wisconsin National Guard Wisconsin Emergency Management and the Wisconsin Office of Emergency Communications provided as a public service by the Wisconsin Department of Military. 
+																	Get directions reviews and information for Department Of Veterans Affairs in Madison WI. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MADISON The Wisconsin Department of Veterans Affairs WDVA today announced that decorated US. 
+																	Menu Reservations Make Reservations. 
+																	Wisconsin Department Of Military Affairs 2400 Wright St Madison WI 53704. 
+																	For updates related to the COVID-19 pandemic specific to UW-Madison military-connected students please visit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apply to Registered Nurse - MedicalSurgical Food Service Worker Education Coordinator and more. 
+																	See reviews photos directions phone numbers and more for Department Of Military Affairs locations in Madison WI. 
+																	The Wisconsin Department of Veterans Affairs located in Madison WI provides support for veterans of the US Armed Forces. 
+																	Search Department of Veterans Affairs Search Department of Veterans Affairs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Murals recently installed on the Wisconsin Veterans Museum raise awareness of the contributions of Wisconsin veterans even after their military. 
+																	Reviews 608 256-1901 Website. 
+																	There are multiple ways to work for the State of Wisconsins Department of Military Affairs. 
+																	Directorate of Construction Facilities Management. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Rental of Wisconsin Army National Guard facilities is managed by the Directorate of Construction Facilities Management in Madison and is not a Community Relations activity of the Public Affairs Office. 
+																	The majority of our federal career opportunities require military membership in either the Air or Army National Guard. 
+																	VHA Madison provides health care services to veterans in southcentral Wisconsin and northern portions of Illinois. 
+																	In order to help such businesses identify and promote themselves the WDVA makes available a logo for certified veteran-owned businesses operating in Wisconsin. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veteran Services connects veterans with several government agencies and nonprofit organizations at the federal Wisconsin state and Madison level. 
+																	Get help from Veterans Crisis Line. 
+																	Last updated September 29 2020. 
+																	Apply to Registered Nurse - MedicalSurgical Education Coordinator Laundry Attendant and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Call 1-800-273-8255 Press 1 Text to 838255. 
+																	The WDVA is proud of the three veterans homes we operate Chippewa Falls King and Union Grove - serving nearly 1000 veterans and their spouses. 
+																	If you are in crisis or having thoughts of suicide. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dma.wi.gov/DMA/images/GRAPHICS/USCG.png" data-lightbox="roadtrip" data-title="Employment Wisconsin Department Of Military Affairs">
+											<img class="card-img v-image ads-img " src="https://dma.wi.gov/DMA/images/GRAPHICS/USCG.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa1PVO0CzLY823SteEYRlM7Q5XOpRGDZImEXzfRLkNDpGFcRfEUaScTezNlXlFJ0pKZ345QA&amp;ec=45771803';" alt="Employment Wisconsin Department Of Military Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Employment Wisconsin Department Of Military Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-exp1.licdn.com/dms/image/C560BAQHPNxgvGoKMaw/company-logo_200_200/0/1534786546627?e=2159024400&amp;v=beta&amp;t=HuKRfgL2zCfRdL7jP_QlcY1YH7BZVvmWvEswxpRXTpo" data-lightbox="roadtrip" data-title="Wisconsin Department Of Veterans Affairs Linkedin">
+											<img class="card-img v-image ads-img " src="https://media-exp1.licdn.com/dms/image/C560BAQHPNxgvGoKMaw/company-logo_200_200/0/1534786546627?e=2159024400&amp;v=beta&amp;t=HuKRfgL2zCfRdL7jP_QlcY1YH7BZVvmWvEswxpRXTpo" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsTrRPsmMJ8FkbkdqegwVJAbdpbCUhnkkvMUjzxWsEXB92E2QQWwXQJPwN5DRA7BaLBx93Ow&amp;ec=45771803';" alt="Wisconsin Department Of Veterans Affairs Linkedin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wisconsin Department Of Veterans Affairs Linkedin</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dma.wi.gov/DMA/images/GRAPHICS/Hiring.jpg" data-lightbox="roadtrip" data-title="State Human Resources Wisconsin Department Of Military Affairs">
+											<img class="card-img v-image ads-img " src="https://dma.wi.gov/DMA/images/GRAPHICS/Hiring.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRwmx1QLnwmLqjDftIMiayWhtXN3jWGfAR1moEEiSZC26NJEMeLsoii9snHkqcwUwsxVBsDQ&amp;ec=45771803';" alt="State Human Resources Wisconsin Department Of Military Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">State Human Resources Wisconsin Department Of Military Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/ea/ec/46eaecbe04dde8323a60d9614ece7b59.jpg" data-lightbox="roadtrip" data-title="My Blog Secrets Of Leadership President Elect Trump You Leadership Churchill World History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/ea/ec/46eaecbe04dde8323a60d9614ece7b59.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfM-XNX7uZtqol0ZqlZyXNmPSoeY5d7AgRP3XdLTrgmDJGLu7Da7UW_pZYZiiO5kWQKnJn9A&amp;ec=45771803';" alt="My Blog Secrets Of Leadership President Elect Trump You Leadership Churchill World History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Blog Secrets Of Leadership President Elect Trump You Leadership Churchill World History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/6a/1b/156a1b788cbe123bc0e8869672ad6fc0.jpg" data-lightbox="roadtrip" data-title="Florida Militia Muster Rolls Seminole Indian Wars Seminole Indians Florida Internet Archive">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/6a/1b/156a1b788cbe123bc0e8869672ad6fc0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqLXXioLDVDcO9cToP-T-U3ZlvgXXiR9gyvmzBlIfF1ahoffMkpYIZ8HaJcXpVc6KWIiO6Fg&amp;ec=45771803';" alt="Florida Militia Muster Rolls Seminole Indian Wars Seminole Indians Florida Internet Archive">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Florida Militia Muster Rolls Seminole Indian Wars Seminole Indians Florida Internet Archive</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/a7/2d/73a72d027b61c5edd0e55ed23de6712c.jpg" data-lightbox="roadtrip" data-title="Finnish Soldiers In Winter War Historical Figures Finnish Wwii">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/a7/2d/73a72d027b61c5edd0e55ed23de6712c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUH4o3-fnMSnhjvJNxGHXrHb-3g1FHeAlt4eT6OEpSJFsN--DNAThxpMb-9MADryiMkQte1w&amp;ec=45771803';" alt="Finnish Soldiers In Winter War Historical Figures Finnish Wwii">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Finnish Soldiers In Winter War Historical Figures Finnish Wwii</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/d8/9a/b8d89a57ddf5b035d042888de5ed47b1.jpg" data-lightbox="roadtrip" data-title="Check Out Veterans Statistics On Illinois Learn More At Http Go Usa Gov Cy6pa Economic Statistics Business Ownership Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/d8/9a/b8d89a57ddf5b035d042888de5ed47b1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqd1pPmckqdE2Jag0Oa-taVPb9rgSGVQs0eNE_UsMUvjP5HU-px2iduNQDt1g70viI11pL3w&amp;ec=45771803';" alt="Check Out Veterans Statistics On Illinois Learn More At Http Go Usa Gov Cy6pa Economic Statistics Business Ownership Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Check Out Veterans Statistics On Illinois Learn More At Http Go Usa Gov Cy6pa Economic Statistics Business Ownership Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/e5/19/89e5198878e4e7fe9d8e461afcd3e288.jpg" data-lightbox="roadtrip" data-title="2nd Annual A Day For Heroes Concert Los Angeles Concert Hero">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/e5/19/89e5198878e4e7fe9d8e461afcd3e288.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdo_v0PnFmxjWq7XrlE4HvhgSHKRJwiV7Eo2q2Evof6GJynEAD6tMxpikNfqs3rcrNaKDr_A&amp;ec=45771803';" alt="2nd Annual A Day For Heroes Concert Los Angeles Concert Hero">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2nd Annual A Day For Heroes Concert Los Angeles Concert Hero</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.va.gov/img/design/logo/va-og-image.png" data-lightbox="roadtrip" data-title="Champva Community Care">
+											<img class="card-img v-image ads-img " src="https://www.va.gov/img/design/logo/va-og-image.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuauoNf3djHRe7Gm4-SVvlmNRqI9ZEFRMsMhPtpyRq36YjrjmdBp5aHC1CpL-NjuLO1leMAA&amp;ec=45771803';" alt="Champva Community Care">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Champva Community Care</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/96/23/329623377d23075449a0c36e66fa37b9.jpg" data-lightbox="roadtrip" data-title="Disney Wwii Combat Insignia Stamps Us Army Navy Air Corps Indianapolis News 1942 In 2020 Army Navy Navy Day Us Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/96/23/329623377d23075449a0c36e66fa37b9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR_A0pxFYkAP41mf0M3BQPqitl1NiCV5TlGX_H8mCl9pdXECgmgA-pe1nm1Gbk-BJEXLbhyw&amp;ec=45771803';" alt="Disney Wwii Combat Insignia Stamps Us Army Navy Air Corps Indianapolis News 1942 In 2020 Army Navy Navy Day Us Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Disney Wwii Combat Insignia Stamps Us Army Navy Air Corps Indianapolis News 1942 In 2020 Army Navy Navy Day Us Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dma.wi.gov/DMA/images/PIC/Ch_Hedman.png" data-lightbox="roadtrip" data-title="State Chaplain S Office">
+											<img class="card-img v-image ads-img " src="https://dma.wi.gov/DMA/images/PIC/Ch_Hedman.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOwdlQ2uagaJO_LYmPEsQ7mBjYv7zh2YZvokNhDqsbEq5zMheqPzz_CtVmohAZnoqchxDW8A&amp;ec=45771803';" alt="State Chaplain S Office">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">State Chaplain S Office</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dma.wi.gov/DMA/images/GRAPHICS/DMASubscribeNEW.png" data-lightbox="roadtrip" data-title="F 16 Crashes In Michigan S Upper Peninsula">
+											<img class="card-img v-image ads-img " src="https://dma.wi.gov/DMA/images/GRAPHICS/DMASubscribeNEW.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Q5Nywq-NEFGcWaYnHAnoaMjrg7h8O-AMnnXZAFfsojHXxpuqjPhY4qXijMHieDMqDlpCiw&amp;ec=45771803';" alt="F 16 Crashes In Michigan S Upper Peninsula">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">F 16 Crashes In Michigan S Upper Peninsula</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/7c/6f/69/7c6f692b29392fc7f2b2f2cc2808f1b7.jpg" data-lightbox="roadtrip" data-title="Grants For Military Military Awards For College Va Loan Va Mortgage Loans Va Mortgages">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/7c/6f/69/7c6f692b29392fc7f2b2f2cc2808f1b7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG9ciw32EaRo_mYCIE0GCTZzpQv0sByUC7Y1N5YkCIwa0QYZfrwSm7sZUD42_MAt6x_B1TIA&amp;ec=45771803';" alt="Grants For Military Military Awards For College Va Loan Va Mortgage Loans Va Mortgages">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Grants For Military Military Awards For College Va Loan Va Mortgage Loans Va Mortgages</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/coast-guard-treasury-department.html">Coast Guard Treasury Department</a></li>
+													<li class="list-group-item"><a href="/coast-guard-recruiting-office-florida.html">Coast Guard Recruiting Office Florida</a></li>
+													<li class="list-group-item"><a href="/cool-military-dog-names.html">Cool Military Dog Names</a></li>
+													<li class="list-group-item"><a href="/coast-guard-office-of-work-life.html">Coast Guard Office Of Work Life</a></li>
+													<li class="list-group-item"><a href="/coast-guard-ticket-office.html">Coast Guard Ticket Office</a></li>
+													<li class="list-group-item"><a href="/coast-guard-travel-office.html">Coast Guard Travel Office</a></li>
+													<li class="list-group-item"><a href="/cool-army-dog-names.html">Cool Army Dog Names</a></li>
+													<li class="list-group-item"><a href="/coast-guard-what-department.html">Coast Guard What Department</a></li>
+													<li class="list-group-item"><a href="/criticality-of-hr-information-systems-in-the-army.html">Criticality Of Hr Information Systems In The Army</a></li>
+													<li class="list-group-item"><a href="/college-funding-for-military-dependents.html">College Funding For Military Dependents</a></li>
+													<li class="list-group-item"><a href="/coast-guard-under-homeland-security.html">Coast Guard Under Homeland Security</a></li>
+													<li class="list-group-item"><a href="/coast-guard-office-gandhinagar.html">Coast Guard Office Gandhinagar</a></li>
+													<li class="list-group-item"><a href="/coast-guard-office-seattle.html">Coast Guard Office Seattle</a></li>
+													<li class="list-group-item"><a href="/coast-guard-office-dc.html">Coast Guard Office Dc</a></li>
+													<li class="list-group-item"><a href="/colorado-state-department-of-veterans-affairs.html">Colorado State Department Of Veterans Affairs</a></li>
+													<li class="list-group-item"><a href="/commonwealth-of-virginia-department-of-military-affairs.html">Commonwealth Of Virginia Department Of Military Affairs</a></li>
+													<li class="list-group-item"><a href="/comox-valley-military-family-resource-centre.html">Comox Valley Military Family Resource Centre</a></li>
+													<li class="list-group-item"><a href="/college-grants-for-military-dependents.html">College Grants For Military Dependents</a></li>
+													<li class="list-group-item"><a href="/commonwealth-of-pa-department-of-military-and-veterans-affairs.html">Commonwealth Of Pa Department Of Military And Veterans Affairs</a></li>
+													<li class="list-group-item"><a href="/coast-guard-office-memphis-tn.html">Coast Guard Office Memphis Tn</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

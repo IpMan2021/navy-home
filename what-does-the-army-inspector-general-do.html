@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Does The Army Inspector General Do - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Does The Army Inspector General Do",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/aa/87/22/aa87225c4220b687b71ab435395fc3e5.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+does+the+army+inspector+general+do",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Does The Army Inspector General Do</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Active Army Reserve and National Guard Soldiers. The Inspector General of the United States Army reports to the United States Secretary of the Army SA and the Chief of Staff of the United States Army CSA. Joint Inspector General Duties Joint IGs are officers NCOs and civilians from the Army Navy Air Force Marines and Coast Guard assigned to duty in a joint command activity combatant commands. <br>				
+			</p>
+										<a class="badge badge-dark" href="/dod-civilian-jobs-afghanistan.html">dod civilian jobs afghanistan</a>
+											<a class="badge badge-danger" href="/dod-civilian-monetary-awards.html">dod civilian monetary awards</a>
+											<a class="badge badge-dark" href="/dod-civilian-employee-dress-code.html">dod civilian employee dress code</a>
+											<a class="badge badge-success" href="/dod-civilian-home-leave-policy.html">dod civilian home leave policy</a>
+											<a class="badge badge-warning" href="/dod-civilian-employee-tsa-precheck.html">dod civilian employee tsa precheck</a>
+											<a class="badge badge-dark" href="/dod-civilian-medical-benefits.html">dod civilian medical benefits</a>
+											<a class="badge badge-primary" href="/dod-civilian-medical-leave.html">dod civilian medical leave</a>
+											<a class="badge badge-light" href="/dod-civilian-employee-perks.html">dod civilian employee perks</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to pay a visit to the right site.  Our site provides you with suggestions for viewing the maximum quality video and picture content, hunt and locate more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, especially Youtube, so we recommend this video for you to view.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/fe/d3/62fed37f37977d95db313a7eea7e967d.png" data-lightbox="roadtrip" data-title="Inspector General Us Army Army Branches Military Insignia Army Chaplain">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/fe/d3/62fed37f37977d95db313a7eea7e967d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHWae8YQbTUi-cP0-3XtDfSNXRcUFZ1iSzRw';" alt="Inspector General Us Army Army Branches Military Insignia Army Chaplain">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Inspector General Us Army Army Branches Military Insignia Army Chaplain</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/92/14/1b/92141b7573bf3493d698390b28c95f0f.jpg" data-lightbox="roadtrip" data-title="Inspector General Officer Item 1 5069 Military Insignia Army Branches Branch Of Service">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/92/14/1b/92141b7573bf3493d698390b28c95f0f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJhDhN4L8yQDysp-ASknQ8AmP0BzJpKKxCHA';" alt="Inspector General Officer Item 1 5069 Military Insignia Army Branches Branch Of Service">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Inspector General Officer Item 1 5069 Military Insignia Army Branches Branch Of Service</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/20/0f/2d200f668ae5d5f2cec6183cdeed6262.gif" data-lightbox="roadtrip" data-title="Selected Reading For Today By English Plv Continental Army Chief Of Staff United States Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/20/0f/2d200f668ae5d5f2cec6183cdeed6262.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf-RxC5Pduv91zyXdBt4jg3BUnWWSL9Ny2vA';" alt="Selected Reading For Today By English Plv Continental Army Chief Of Staff United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Selected Reading For Today By English Plv Continental Army Chief Of Staff United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/03/03/1d/03031d6b0901fe50a777e5719d0b6aed.jpg" data-lightbox="roadtrip" data-title="Endsarsnow Inspector General Of Police Finally Scraps Sars See Details In 2020 Police Force Community Policing Police Officer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/03/03/1d/03031d6b0901fe50a777e5719d0b6aed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8A1eaQHC8tqLvgHoiUWvx7fPlc9fmb5j85w';" alt="Endsarsnow Inspector General Of Police Finally Scraps Sars See Details In 2020 Police Force Community Policing Police Officer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Endsarsnow Inspector General Of Police Finally Scraps Sars See Details In 2020 Police Force Community Policing Police Officer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/b0/b8/7fb0b880ca9ed11eea060b6f52390d85.jpg" data-lightbox="roadtrip" data-title="In Oct 2013 Maj Gen Michael Walsh Retired As Deputy Commanding General For Civil And Emergency Operations He Inspirational People Military Women Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/b0/b8/7fb0b880ca9ed11eea060b6f52390d85.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7D7Y5sH8-6KtIU3EoLXLdOOB6y6KQP4Xo9w';" alt="In Oct 2013 Maj Gen Michael Walsh Retired As Deputy Commanding General For Civil And Emergency Operations He Inspirational People Military Women Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">In Oct 2013 Maj Gen Michael Walsh Retired As Deputy Commanding General For Civil And Emergency Operations He Inspirational People Military Women Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/0a/48/e00a48314598eb21cc8f15059aa85533.jpg" data-lightbox="roadtrip" data-title="Pair Of Us Army Inspector General Officers Insignia Nos Ebay In 2020 Us Army Insignia Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/0a/48/e00a48314598eb21cc8f15059aa85533.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROz3RfS4W0jl6bQtAwUW_fMDPXccBKInyI4Q';" alt="Pair Of Us Army Inspector General Officers Insignia Nos Ebay In 2020 Us Army Insignia Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pair Of Us Army Inspector General Officers Insignia Nos Ebay In 2020 Us Army Insignia Army</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/0b/18/0b/0b180b190c1a5eeb93e50f19102ab6ef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROz3RfS4W0jl6bQtAwUW_fMDPXccBKInyI4Q';" alt="Pair Of Us Army Inspector General Officers Insignia Nos Ebay In 2020 Us Army Insignia Army">
+										<div class="card-body">
+						<h3 class="h5"><b>They oversee all inspection functions and analyze related methods and procedures to promote effectiveness of IG programs.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What does the army inspector general do</strong>. 
+								
+																	The IG investigates and reports on the discipline efficiency economy morale training and readiness of the army and acts as the eyes ears voice and conscience of the SA and CSA. 
+																	The following are some examples of sources of IGARs. 
+																	Their primary role is to investigate complaints of waste fraud or abuse that violate Army rules and regulations. 
+																	Special agents of an inspector general are individuals with full law enforcement powers and have the authority to conduct criminal investigations carry weapons make arrests and serve warrants. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Benazir Ahmed and his predecessor was Dr. 
+																	He is from the Bangladesh Civil Service police cadre. 
+																	If the complainant does not wish to do so the IG will accept the Inspector General Action Requests or IGARs. 
+																	The British Army does not simply react to world events. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We are persistently engaged around the world to help shape the environment and prevent conflict in the future. 
+																	More than 400 officers enlisted members and civilian employees work in diverse areas such as personnel administration resource management safety market research and analysis public relations. 
+																	The plural of the term is inspectors general. 
+																	An inspector general is an investigative official in a civil or military organization. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	About Us The US. 
+																	That office has the appellate authority for Army Inspector General initial FOIA determinations. 
+																	The chief of police of Bangladesh is known as the inspector general of police. 
+																	Role of Army IG. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Such offices are attached to many federal executive departments independent federal agencies as well as state and local governments. 
+																	DoD IG combats fraud waste and abuse in the Department of Defense by conducting audits and investigations. 
+																	Inspector General School graduates first virtual class August 12 2020. 
+																	This may be by working with partner nations in Iraq and Afghanistan to deliver world class training and assistance reassuring our allies with soldiers deployed forward in Eastern Europe or supporting the fight against poaching. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They may come from walk-ins call-ins email messages write-ins anonymously or with IGs hearing the IGARs for themselves. 
+																	Fraud Waste and Abuse FWA complaints may be reported to the Army Audit Agency AAA Army Office of Special Investigations AOSI security police or other proper authority. 
+																	If you decide to appeal please address your appeal through this office ATTN. 
+																	It is the intent of the Inspector General System that IG closest to the complaint provides assistance or conduct inquiries into the matters submitted. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They direct train and evaluate personnel and provide policy guidance concerning IG inspection programs. 
+																	In the United States Office of Inspector General OIG is a generic term for the oversight division of a federal or state agency aimed at preventing inefficient or unlawful operations within their parent agency. 
+																	The Army Inspector General and Sergeant Major address IGs September 9 2020. 
+																	Army Central Inspector Generals office enhances the mission accomplishment of US Army Centrals units and organizations by identifying and recommending solutions to performance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The current inspector general of police is Dr. 
+																	SAIG-ZXR The Inspector General 1700 Army Pentagon RM 1 E132 Washington DC 20310-1700 to the Office of the General Counsel Department of the Army. 
+																	Promptly advise the AOSI of suspected criminal misconduct or fraud. 
+																	Provide impartial objective and unbiased advice and oversight to the Army through relevant timely and thorough inspections assistance investigations and training to promote and enable stewardship accountability integrity efficiency good order discipline and enhance total Army readiness. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Please attach your support documents to your completed and signed Department of Army DA form 1559 Inspector General Action Request provided on our Army National Guard Toolbox page or Air Force Form 102 Inspector General Personal and Fraud Waste Abuse Complaint Registration provided on our Air National Guard Toolbox page and mail email or fax to our office please see contact. 
+																	Army releases revised command. 
+																	IGARs can come from anyone and anywhere. 
+																	Acting as something of an internal watchdog the Army inspector general routinely investigates allegations of misconduct by Army officials at the rank of colonel or below. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The inspector general acts as the principal advisor to the secretary of defense in matters of Department fraud waste and abuse. 
+																	Federal inspector general IG is the head of an independent non-partisan organization established within each executive branch agency assigned to audit the agencys operation in order to discover and investigate cases of misconduct waste fraud and other abuse of government procedures occurring within the agency. 
+																	Inspectors General are responsible for directing and managing all Inspector General IG programs. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/64/4d/9d644d266784e1f800f8850a0a0b0ac6.jpg" data-lightbox="roadtrip" data-title="U S Army Inspector General Pin By Findingking 9 99 This Is A New U S Army Inspector General Pin Jewelry Brooch Brooch Pin">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/64/4d/9d644d266784e1f800f8850a0a0b0ac6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEe3uM8B3Dlm5bAYzHSFPrdXO_qipFc2PVbA';" alt="U S Army Inspector General Pin By Findingking 9 99 This Is A New U S Army Inspector General Pin Jewelry Brooch Brooch Pin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Inspector General Pin By Findingking 9 99 This Is A New U S Army Inspector General Pin Jewelry Brooch Brooch Pin</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/f4/d4/1ff4d40dc1dc409a5faf6a65f8438efc.jpg" data-lightbox="roadtrip" data-title="General Rollett Inspector General Of The French Foreign Legion It Could Be Said That He Saved The Legion French Legion Legion Etrangere French Foreign Legion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/f4/d4/1ff4d40dc1dc409a5faf6a65f8438efc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0cO8-nCZ0OowTU6mf6GdQkunuiC5cB3VD4w';" alt="General Rollett Inspector General Of The French Foreign Legion It Could Be Said That He Saved The Legion French Legion Legion Etrangere French Foreign Legion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">General Rollett Inspector General Of The French Foreign Legion It Could Be Said That He Saved The Legion French Legion Legion Etrangere French Foreign Legion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/76/23/3b/76233bb889eca22a653d442e7d1167a5.jpg" data-lightbox="roadtrip" data-title="Brig Gen John Wharton Commanding General Army Sustainment Command And Senior Mission Commander Rock Island Arsenal Ill S Rock Island Arsenal Army Brig">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/76/23/3b/76233bb889eca22a653d442e7d1167a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL2KeUa2psW5g6Dq_MQBjUluoy9CmvcO9TRA';" alt="Brig Gen John Wharton Commanding General Army Sustainment Command And Senior Mission Commander Rock Island Arsenal Ill S Rock Island Arsenal Army Brig">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Brig Gen John Wharton Commanding General Army Sustainment Command And Senior Mission Commander Rock Island Arsenal Ill S Rock Island Arsenal Army Brig</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/53/55/1a5355a7ec4b3e4f5d774cca12ed55ff.jpg" data-lightbox="roadtrip" data-title="Karachi Sindh Inspector General Ig Of Police Dr Syed Kaleem Imam Saidthe Public Should Be Given Awareness About The Basic Services Police Chief Sindh Police">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/53/55/1a5355a7ec4b3e4f5d774cca12ed55ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTw-9aB3moJM2XeoJMSdNAZGjlOt7jgwZmkA';" alt="Karachi Sindh Inspector General Ig Of Police Dr Syed Kaleem Imam Saidthe Public Should Be Given Awareness About The Basic Services Police Chief Sindh Police">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Karachi Sindh Inspector General Ig Of Police Dr Syed Kaleem Imam Saidthe Public Should Be Given Awareness About The Basic Services Police Chief Sindh Police</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/e5/83/6fe583d29fd1b5c1be3ad2df42a6dc83.jpg" data-lightbox="roadtrip" data-title="Crawford And Maj Gen Leslie C Smith Deputy Inspector General Of The Army Spoke At A Why We Serve Ceremonial Swea Army United States Armed Forces Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/e5/83/6fe583d29fd1b5c1be3ad2df42a6dc83.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSyuUTadZTl4Qnc-BnB9Fat9AD4LWei2ZX_A';" alt="Crawford And Maj Gen Leslie C Smith Deputy Inspector General Of The Army Spoke At A Why We Serve Ceremonial Swea Army United States Armed Forces Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Crawford And Maj Gen Leslie C Smith Deputy Inspector General Of The Army Spoke At A Why We Serve Ceremonial Swea Army United States Armed Forces Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/66/8c/b6668ce8f69b31d8707fe73e3c3b29b0.jpg" data-lightbox="roadtrip" data-title="Drill Sergeant Sta Brite Army Badges Sta Brite Army Badge Sergeant Military Decorations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/66/8c/b6668ce8f69b31d8707fe73e3c3b29b0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqHO5H0RORm70K47pj4vFVuuRcDUHs1o079A';" alt="Drill Sergeant Sta Brite Army Badges Sta Brite Army Badge Sergeant Military Decorations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Drill Sergeant Sta Brite Army Badges Sta Brite Army Badge Sergeant Military Decorations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/0a/37/c1/0a37c17e782c3a1fcb58ce78a5f944ed.jpg" data-lightbox="roadtrip" data-title="The Inspector General Of Police Igp Mohammed Adamu Has Reaffirmed His Commitment To The Ongoing Reforms In The Nigeria Police Forc In 2020 Police Force Police Nigeria">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/0a/37/c1/0a37c17e782c3a1fcb58ce78a5f944ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjSauZTIcFJlUErfRs1duWEBE1aFH2sLSKxg';" alt="The Inspector General Of Police Igp Mohammed Adamu Has Reaffirmed His Commitment To The Ongoing Reforms In The Nigeria Police Forc In 2020 Police Force Police Nigeria">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Inspector General Of Police Igp Mohammed Adamu Has Reaffirmed His Commitment To The Ongoing Reforms In The Nigeria Police Forc In 2020 Police Force Police Nigeria</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/c4/e1/65c4e123e52648c3ac02c9c782fe14f9.png" data-lightbox="roadtrip" data-title="Us Army Officers 1913 1 Adjutant General Daily Uniform 2 Signal Corps Parade Uniform 3 Army Chaplain 4 Q Army Mess Dress Army Chaplain Army Uniform">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/c4/e1/65c4e123e52648c3ac02c9c782fe14f9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGSCzPWjgbT-mZa0zVSHJAqOHC-ntvhDFwFw';" alt="Us Army Officers 1913 1 Adjutant General Daily Uniform 2 Signal Corps Parade Uniform 3 Army Chaplain 4 Q Army Mess Dress Army Chaplain Army Uniform">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Officers 1913 1 Adjutant General Daily Uniform 2 Signal Corps Parade Uniform 3 Army Chaplain 4 Q Army Mess Dress Army Chaplain Army Uniform</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/04/98/710498ade1cb8d26a818095baebb9a1b.png" data-lightbox="roadtrip" data-title="Group Ask Inspector General Of Police To Resign Resignation Police Captain Hat">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/04/98/710498ade1cb8d26a818095baebb9a1b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS12m0dM6PXEdAq5249VEZznw_35bjwxfM97w';" alt="Group Ask Inspector General Of Police To Resign Resignation Police Captain Hat">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Group Ask Inspector General Of Police To Resign Resignation Police Captain Hat</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/18/0b/0b180b190c1a5eeb93e50f19102ab6ef.jpg" data-lightbox="roadtrip" data-title="Special Agent Office Of Inspector General Railroad Retirement Board Blackinton Police Badge Fire Badge Special Police">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/18/0b/0b180b190c1a5eeb93e50f19102ab6ef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXvuru9jpnCY1onJv1goShhjo3govs2Qe51w';" alt="Special Agent Office Of Inspector General Railroad Retirement Board Blackinton Police Badge Fire Badge Special Police">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Special Agent Office Of Inspector General Railroad Retirement Board Blackinton Police Badge Fire Badge Special Police</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/6d/4b/52/6d4b52523d3ff82cf4ad114110cee94a.jpg" data-lightbox="roadtrip" data-title="Pin On Milfeed Com Military News And History Posts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/6d/4b/52/6d4b52523d3ff82cf4ad114110cee94a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL_FFC63C192gZvYZCnT0ZcHy9WMJymPf5Bw';" alt="Pin On Milfeed Com Military News And History Posts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Milfeed Com Military News And History Posts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/b6/64/e1/b664e18228be4805b15e591ad7748fe2.jpg" data-lightbox="roadtrip" data-title="Christinmhi Tvonline Lockdown Of Accra Kumasi Tema And Obuasi Have B Kumasi Jobs In Ghana Accra">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/b6/64/e1/b664e18228be4805b15e591ad7748fe2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKedKv_hQ3R4Nhog7ws0kvGyWYNHB7inO6DA';" alt="Christinmhi Tvonline Lockdown Of Accra Kumasi Tema And Obuasi Have B Kumasi Jobs In Ghana Accra">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Christinmhi Tvonline Lockdown Of Accra Kumasi Tema And Obuasi Have B Kumasi Jobs In Ghana Accra</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/87/22/aa87225c4220b687b71ab435395fc3e5.jpg" data-lightbox="roadtrip" data-title="Us Army Branch Insignia Inspector General Army Branches Military Insignia Insignia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/87/22/aa87225c4220b687b71ab435395fc3e5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuJVE79eB_1S7XPcVjFX2Isg-POjt2PAhSOg';" alt="Us Army Branch Insignia Inspector General Army Branches Military Insignia Insignia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Branch Insignia Inspector General Army Branches Military Insignia Insignia</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-dogs-in-india.html">Army Dogs In India</a></li>
+													<li class="list-group-item"><a href="/army-dog-tags-gold-coast.html">Army Dog Tags Gold Coast</a></li>
+													<li class="list-group-item"><a href="/army-dogs-videos.html">Army Dogs Videos</a></li>
+													<li class="list-group-item"><a href="/army-dog-tags-clip-art.html">Army Dog Tags Clip Art</a></li>
+													<li class="list-group-item"><a href="/army-dog-tags-photos.html">Army Dog Tags Photos</a></li>
+													<li class="list-group-item"><a href="/army-dog-vs-police-dog.html">Army Dog Vs Police Dog</a></li>
+													<li class="list-group-item"><a href="/army-dogs-in-sri-lanka.html">Army Dogs In Sri Lanka</a></li>
+													<li class="list-group-item"><a href="/army-dog-vc.html">Army Dog Vc</a></li>
+													<li class="list-group-item"><a href="/army-dog-tag-uk.html">Army Dog Tag Uk</a></li>
+													<li class="list-group-item"><a href="/army-dog-tags-personalized.html">Army Dog Tags Personalized</a></li>
+													<li class="list-group-item"><a href="/army-dog-tags-titanium.html">Army Dog Tags Titanium</a></li>
+													<li class="list-group-item"><a href="/army-dog-wins-medal.html">Army Dog Wins Medal</a></li>
+													<li class="list-group-item"><a href="/army-dogs-goggles.html">Army Dogs Goggles</a></li>
+													<li class="list-group-item"><a href="/army-dog-tag-wearing.html">Army Dog Tag Wearing</a></li>
+													<li class="list-group-item"><a href="/army-dogs-have-rank.html">Army Dogs Have Rank</a></li>
+													<li class="list-group-item"><a href="/army-dog-tags-bible-verse.html">Army Dog Tags Bible Verse</a></li>
+													<li class="list-group-item"><a href="/army-dog-tags-for-dogs.html">Army Dog Tags For Dogs</a></li>
+													<li class="list-group-item"><a href="/army-dogs-breed.html">Army Dogs Breed</a></li>
+													<li class="list-group-item"><a href="/army-dogs-killed-after-retirement.html">Army Dogs Killed After Retirement</a></li>
+													<li class="list-group-item"><a href="/army-dog-training-video.html">Army Dog Training Video</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

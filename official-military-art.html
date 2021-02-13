@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Official Military Art - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Official Military Art",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/11/d4/40/11d44001300af90e10286eb7e47525f7.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=official+military+art",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Official Military Art</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Check out our military paintings selection for the very best in unique or custom handmade pieces from our wall hangings shops. The artists work here is intended to celebrate all branches of service. Buy Artist Original Military Art Paintings and get the best deals at the lowest prices on eBay. <br>				
+			</p>
+										<a class="badge badge-primary" href="/how-to-adopt-a-military-dog.html">how to adopt a military dog</a>
+											<a class="badge badge-primary" href="/how-much-does-the-federal-government-spend-on-defense.html">how much does the federal government spend on defense</a>
+											<a class="badge badge-info" href="/how-much-do-civilian-contractors-make-overseas.html">how much do civilian contractors make overseas</a>
+											<a class="badge badge-dark" href="/how-much-does-a-military-intelligence-officer-make.html">how much does a military intelligence officer make</a>
+											<a class="badge badge-secondary" href="/how-much-is-military-housing-in-hawaii.html">how much is military housing in hawaii</a>
+											<a class="badge badge-dark" href="/how-much-does-a-officer-in-the-coast-guard-make.html">how much does a officer in the coast guard make</a>
+											<a class="badge badge-secondary" href="/how-much-do-army-police-get-paid.html">how much do army police get paid</a>
+											<a class="badge badge-warning" href="/how-much-does-the-united-states-spend-on-defense-compared-to-other-countries.html">how much does the united states spend on defense compared to other countries</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you've come to visit the ideal blog.  Our site gives you hints for seeing the maximum quality video and picture content, hunt and locate more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, so we recommend this movie that you see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/51/c9/5751c94f6724e743acd3aa575c4a8f7e.jpg" data-lightbox="roadtrip" data-title="Hooah This Is Very Touching Official Military Art Called Angel Waiting By Todd Krasovetz Military Art Military Love Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/51/c9/5751c94f6724e743acd3aa575c4a8f7e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx74i8pc3v2wyRBY-yxKfMXZqwflKUGYfQyQ';" alt="Hooah This Is Very Touching Official Military Art Called Angel Waiting By Todd Krasovetz Military Art Military Love Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hooah This Is Very Touching Official Military Art Called Angel Waiting By Todd Krasovetz Military Art Military Love Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/30/df/2b30df1645437d8f4467700d1f16d803.jpg" data-lightbox="roadtrip" data-title="Ready To Take Off By Official Royal Marine War Artist Afghanistan Andrew Miller Combat Art War Art Military Drawings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/30/df/2b30df1645437d8f4467700d1f16d803.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCGst309oSWz4nFsNgucas40bYoVpKKsdcMA';" alt="Ready To Take Off By Official Royal Marine War Artist Afghanistan Andrew Miller Combat Art War Art Military Drawings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ready To Take Off By Official Royal Marine War Artist Afghanistan Andrew Miller Combat Art War Art Military Drawings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/12/ea/32/12ea32d94f749385c4b70cd8f2d1cb3b.jpg" data-lightbox="roadtrip" data-title="Pin By Shannon On A World Not My Own Future Soldier Military Artwork Tom Clancy Ghost Recon">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/12/ea/32/12ea32d94f749385c4b70cd8f2d1cb3b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb4yk8e0xG7sUFUF2Hv-WHRHgnwSlmSAaXFA';" alt="Pin By Shannon On A World Not My Own Future Soldier Military Artwork Tom Clancy Ghost Recon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Shannon On A World Not My Own Future Soldier Military Artwork Tom Clancy Ghost Recon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/36/e1/2436e15245ce379f8eebd10e42de4cb6.jpg" data-lightbox="roadtrip" data-title="Emotion The Effect Of War Is Etched On To The Faces Of Soldiers Who Have Been At War In Afghanistan War Artwork War Art Military Artwork">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/36/e1/2436e15245ce379f8eebd10e42de4cb6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ9R0VnJm-N_PO9JaSEpKcpuRxqpKSM5hZ8A';" alt="Emotion The Effect Of War Is Etched On To The Faces Of Soldiers Who Have Been At War In Afghanistan War Artwork War Art Military Artwork">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Emotion The Effect Of War Is Etched On To The Faces Of Soldiers Who Have Been At War In Afghanistan War Artwork War Art Military Artwork</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/ba/b4/d0bab4f11cae9aea5c8d57ddd3e0d005.jpg" data-lightbox="roadtrip" data-title="Loading War Art Military Drawings Soldier Drawing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/ba/b4/d0bab4f11cae9aea5c8d57ddd3e0d005.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Jm-FSjLEBE6VGB4QxdtlZ1T9Rvh_8sM2LA';" alt="Loading War Art Military Drawings Soldier Drawing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Loading War Art Military Drawings Soldier Drawing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/0a/13/690a132f0948173d252503a9d1ae7a8e.jpg" data-lightbox="roadtrip" data-title="Official Military Art Com Art Military Art Sale Artwork">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/0a/13/690a132f0948173d252503a9d1ae7a8e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLWrxUa6o0tcggmaOOPACvRTDr1IqnjERKSw';" alt="Official Military Art Com Art Military Art Sale Artwork">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Official Military Art Com Art Military Art Sale Artwork</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/20/fb/ba/20fbba6ace4ac075a918a8099f9f7ba4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLWrxUa6o0tcggmaOOPACvRTDr1IqnjERKSw';" alt="Official Military Art Com Art Military Art Sale Artwork">
+										<div class="card-body">
+						<h3 class="h5"><b>Official Military Art Military Art Military Artist Paintings Prints Gifts For Sale Online.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Official military art</strong>. 
+								
+																	War artists explore the visual and sensory dimensions of war often absent in written histories or other accounts of warfare. 
+																	Most of the print editions we purchased cannot be found elsewhere - we hold. 
+																	If you want to commission Todd Krasovetz to paint original art for your command please call 18003181595. 
+																	Buy Original Military Art Drawings and get the best deals at the lowest prices on eBay. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MILITARY HELICOPTER CANVAS PICTURE PRINT WALL ART 6835. 
+																	World renowned aviation artist. 
+																	49-96 of 4811 results. 
+																	Antique print - The Battle of Hastings by Loutherbourg. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A war artist is an artist commissioned by a government or publication or self motivated to document their first hand experience of war in the form of an illustrative record or a depiction of how war shapes lives. 
+																	Click Collect. 
+																	American civil war scene Framed Print US military 16 x 8 inch. 
+																	Great Savings Free Delivery Collection on many items. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	First World War During the First World War two main streams of activity produced official war art. 
+																	Buy Original Military Art Prints and get the best deals at the lowest prices on eBay. 
+																	See more ideas about military art military artwork military. 
+																	Please feel free to browse the gallery showing commissions for Camp Pendleton Naval Hospital and many many others. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military art from the first world war to modern day conflicts including a vast number of different tanks and armoured vehicles. 
+																	The military art here is defined by how art is characterized by its historical accuracy. 
+																	Military art is art with a military subject matter regardless of its style or medium. 
+																	Since 1999 Navy Art Art by artist Todd Krasovetz offers one of the finest fine art collections around. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	British official war artists were a select group of artists who were employed on contract or commissioned to produce specific works during the First World War the Second World War and select military actions in the post-war period. 
+																	Cranston Fine Arts purchased the remaining stock of Nicks published work several years ago. 
+																	The Imperial War Museum established by Act of Parliament in 1917 was given the task of collecting all kinds of material documenting the war including art. 
+																	Since 1999 Marine Corps Art by Military Artist Todd Krasovetz offers one of the finest fine art collections around. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Great Savings Free Delivery Collection on many items. 
+																	ULSTER SIGNAL REGIMENT ROYAL SIGNALS NORTHERN IRELAND. 
+																	Also a number of aviation and naval art prints. 
+																	Discover and save your own Pins on Pinterest. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The battle scene is one of the oldest types of art in developed civilizations as rulers have always been keen to celebrate their victories and intimidate potential opponents. 
+																	Jun 29 2015 - This Pin was discovered by Myra Marr. 
+																	Dedicated to serving the Military for over 20 years Your commitment dedication and continued loyalty is as equally important. 
+																	Please feel free to browse the gallery showing commissions for Camp Pendleton Naval Hospital Walter Reed and many many others. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Original Military Art Prints. 
+																	This website is dedicated to you. 
+																	Mar 25 2013 - Military Art Prints Paintings and Art Gifts by Top Artists. 
+																	Official Military Art the military art found here and military artist Todd Krasovetz understands and respects what you all do each day to keep our nation safe. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Liberation of Bayeux - OFFICIAL Military Gallery Open Edition Print. 
+																	Great Savings Free Delivery Collection on many items. 
+																	Jun 15 2020 - Explore matthew jakinss board MILITARY ART on Pinterest. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/9e/b9/059eb95f0ae2229c2e15fb7493a6abce.jpg" data-lightbox="roadtrip" data-title="Peter Mcintyre The Breakthrough Minqar Qa Im 27 28 June 1942 North African Campaign War Art History War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/9e/b9/059eb95f0ae2229c2e15fb7493a6abce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYY8ostyxeWd2F40ccH6c4_2P4O1GtMNfFGQ';" alt="Peter Mcintyre The Breakthrough Minqar Qa Im 27 28 June 1942 North African Campaign War Art History War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Peter Mcintyre The Breakthrough Minqar Qa Im 27 28 June 1942 North African Campaign War Art History War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/7c/82/307c82779017aa7037bf50ebb098676a.jpg" data-lightbox="roadtrip" data-title="Military Art Posters Art Art Painting Artist Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/7c/82/307c82779017aa7037bf50ebb098676a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTQKuvJgkUFq7osiE30NRb5KLzrzfO66JxDA';" alt="Military Art Posters Art Art Painting Artist Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Art Posters Art Art Painting Artist Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/5a/cc/5d5acc0637a95ba13d0eb21dd37e84c3.jpg" data-lightbox="roadtrip" data-title="Angels Military Art Military Pictures Navy Hospital Corpsman">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/5a/cc/5d5acc0637a95ba13d0eb21dd37e84c3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoMa-ct5hWDzrp4NRRPoI6E7jaZGvIJG9Fkw';" alt="Angels Military Art Military Pictures Navy Hospital Corpsman">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Angels Military Art Military Pictures Navy Hospital Corpsman</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/40/e9/cd40e90d66cbd8470706f9a5d00af54c.jpg" data-lightbox="roadtrip" data-title="Military Art Print Military Drawings Military Art Combat Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/40/e9/cd40e90d66cbd8470706f9a5d00af54c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgVDsAsWOG-ehGM94H1II4cizWArGHo8b2hg';" alt="Military Art Print Military Drawings Military Art Combat Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Art Print Military Drawings Military Art Combat Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/7d/69/e17d699f7f8549aadea16e378f464078.jpg" data-lightbox="roadtrip" data-title="File Reg Rattey Portrait Jpg Military Art Military History War Image">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/7d/69/e17d699f7f8549aadea16e378f464078.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cmo4OZ_0F5B3IRmRq5RNoTKnaQiN_bEO2Q';" alt="File Reg Rattey Portrait Jpg Military Art Military History War Image">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">File Reg Rattey Portrait Jpg Military Art Military History War Image</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/26/65/ae2665a416c386cb81bf6ec019ee1b7a.jpg" data-lightbox="roadtrip" data-title="The Official Mort Kunstler Website Civil War Artwork Civil War Generals Civil War History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/26/65/ae2665a416c386cb81bf6ec019ee1b7a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLjpYWNsoj2i4lb8oQwWIwnTVu-4RD5tn5hQ';" alt="The Official Mort Kunstler Website Civil War Artwork Civil War Generals Civil War History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Official Mort Kunstler Website Civil War Artwork Civil War Generals Civil War History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/d4/40/11d44001300af90e10286eb7e47525f7.jpg" data-lightbox="roadtrip" data-title="14 World War One Paintings And Lithographs By Eric Kennington Made From History War Art World War One British Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/d4/40/11d44001300af90e10286eb7e47525f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-NnKogtVEiC3UE3l7E62NtjQPQ7SLdufHEQ';" alt="14 World War One Paintings And Lithographs By Eric Kennington Made From History War Art World War One British Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">14 World War One Paintings And Lithographs By Eric Kennington Made From History War Art World War One British Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/16/0a/fd160a4b595e8d432d4f353f5abb02d7.jpg" data-lightbox="roadtrip" data-title="Vietnam Combat Art Marine Corps Association Combat Art Military Art Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/16/0a/fd160a4b595e8d432d4f353f5abb02d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhFCdtfXMmyTfCH1GZzjBUYnYHQGghBdZSaw';" alt="Vietnam Combat Art Marine Corps Association Combat Art Military Art Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vietnam Combat Art Marine Corps Association Combat Art Military Art Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/19/b3/9a19b3b6198a55a69dcdad592660f64c.jpg" data-lightbox="roadtrip" data-title="Malvinas Hombres Del Sas Realizando Un Salto De Gran Altitud A 8000mts Con Apertura Del Para A 400mts Para Ins Military Art Military Drawings Military Artwork">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/19/b3/9a19b3b6198a55a69dcdad592660f64c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR9-dkKcDVu-onhfqH_mZgrciw5ssbYUDhBQ';" alt="Malvinas Hombres Del Sas Realizando Un Salto De Gran Altitud A 8000mts Con Apertura Del Para A 400mts Para Ins Military Art Military Drawings Military Artwork">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Malvinas Hombres Del Sas Realizando Un Salto De Gran Altitud A 8000mts Con Apertura Del Para A 400mts Para Ins Military Art Military Drawings Military Artwork</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/46/85/f2/4685f244b47f122f46d0f82d70351163.jpg" data-lightbox="roadtrip" data-title="Captain Price Official Military Art Military Special Forces Military Gear Tactical">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/46/85/f2/4685f244b47f122f46d0f82d70351163.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxjzbRw3DIdMm58vpPDtTzunqRVRcq0uTU2Q';" alt="Captain Price Official Military Art Military Special Forces Military Gear Tactical">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Captain Price Official Military Art Military Special Forces Military Gear Tactical</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/7f/f9/cc7ff949b1debdf0dc96aaee2c309955.jpg" data-lightbox="roadtrip" data-title="Black Powder Red Earth Yemen Smart Phone Wallpaper Combat Art Military Wallpaper Soldier Drawing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/7f/f9/cc7ff949b1debdf0dc96aaee2c309955.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaZ0SVV3_FTOb5trtX6R1fQxVX1M4hJ0jqEw';" alt="Black Powder Red Earth Yemen Smart Phone Wallpaper Combat Art Military Wallpaper Soldier Drawing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Black Powder Red Earth Yemen Smart Phone Wallpaper Combat Art Military Wallpaper Soldier Drawing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/20/fb/ba/20fbba6ace4ac075a918a8099f9f7ba4.jpg" data-lightbox="roadtrip" data-title="Pin On Sketchbooks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/20/fb/ba/20fbba6ace4ac075a918a8099f9f7ba4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCGcFLIZAjdmvoP5Njf_-77HpfWRvOkKNUrQ';" alt="Pin On Sketchbooks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sketchbooks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/75/44/91754463ab05a6e7976b6afd309ed21a.jpg" data-lightbox="roadtrip" data-title="Todd Krasovetz Artwork For Sale San Diego Ca United States Military Art Military Artwork War Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/75/44/91754463ab05a6e7976b6afd309ed21a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkqg2gfpXWgzvedyfntxK7AYhvr9_PW4eD1g';" alt="Todd Krasovetz Artwork For Sale San Diego Ca United States Military Art Military Artwork War Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Todd Krasovetz Artwork For Sale San Diego Ca United States Military Art Military Artwork War Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/uwm-military-and-veterans-resource-center.html">Uwm Military And Veterans Resource Center</a></li>
+													<li class="list-group-item"><a href="/us-military-budget-2020-by-branch.html">Us Military Budget 2020 By Branch</a></li>
+													<li class="list-group-item"><a href="/us-navy-for-woman.html">Us Navy For Woman</a></li>
+													<li class="list-group-item"><a href="/us-military-desert-hat.html">Us Military Desert Hat</a></li>
+													<li class="list-group-item"><a href="/uw-madison-marching-band-roster.html">Uw Madison Marching Band Roster</a></li>
+													<li class="list-group-item"><a href="/us-military-hat-emblems.html">Us Military Hat Emblems</a></li>
+													<li class="list-group-item"><a href="/us-military-vacation-department.html">Us Military Vacation Department</a></li>
+													<li class="list-group-item"><a href="/us-military-officer-hat.html">Us Military Officer Hat</a></li>
+													<li class="list-group-item"><a href="/us-military-ticket-office-locations.html">Us Military Ticket Office Locations</a></li>
+													<li class="list-group-item"><a href="/us-military-personnel-office.html">Us Military Personnel Office</a></li>
+													<li class="list-group-item"><a href="/us-military-hat.html">Us Military Hat</a></li>
+													<li class="list-group-item"><a href="/us-military-welfare-department.html">Us Military Welfare Department</a></li>
+													<li class="list-group-item"><a href="/us-military-budget-percentage-2020.html">Us Military Budget Percentage 2020</a></li>
+													<li class="list-group-item"><a href="/us-military-ticket-office.html">Us Military Ticket Office</a></li>
+													<li class="list-group-item"><a href="/us-military-budget-compared-to-other-countries.html">Us Military Budget Compared To Other Countries</a></li>
+													<li class="list-group-item"><a href="/us-military-personnel-database.html">Us Military Personnel Database</a></li>
+													<li class="list-group-item"><a href="/ust-department-of-military-science.html">Ust Department Of Military Science</a></li>
+													<li class="list-group-item"><a href="/uw-madison-marching-band-rose-bowl.html">Uw Madison Marching Band Rose Bowl</a></li>
+													<li class="list-group-item"><a href="/us-military-department-application-for-emergency-leave.html">Us Military Department Application For Emergency Leave</a></li>
+													<li class="list-group-item"><a href="/us-military-budget-vs-world.html">Us Military Budget Vs World</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

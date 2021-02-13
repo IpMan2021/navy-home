@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Dogs Goggles - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Dogs Goggles",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/f9/b0/e9/f9b0e9f660c8cc3dd59ac0067569a6a0.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+dogs+goggles",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Dogs Goggles</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The US Army is trialing a new technology that could fundamentally change how military canines are deployed in the future a pair of augmented reality goggles for dogs. Army has created augmented reality goggles for dogs. The Department of Defense Rapid Reaction Technology Office has provided funding for the. <br>				
+			</p>
+										<a class="badge badge-dark" href="/military-support-groups-for-families.html">military support groups for families</a>
+											<a class="badge badge-primary" href="/military-wife-quote.html">military wife quote</a>
+											<a class="badge badge-danger" href="/military-wife-businesses.html">military wife businesses</a>
+											<a class="badge badge-primary" href="/military-veterans-crisis-line.html">military veterans crisis line</a>
+											<a class="badge badge-warning" href="/military-tech-department.html">military tech department</a>
+											<a class="badge badge-info" href="/military-time-resource.html">military time resource</a>
+											<a class="badge badge-dark" href="/militaryveteran-employment-resource-center.html">militaryveteran employment resource center</a>
+											<a class="badge badge-light" href="/military-wives-rotten-tomatoes.html">military wives rotten tomatoes</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you have come to visit the right site.  Our site gives you suggestions for seeing the highest quality video and image content, hunt and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, so we recommend this video that you see.  You can also bring about supporting this website by sharing videos and graphics that you enjoy on this blog on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this website.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5b/32/bd/5b32bd26d8cc85b688465e0420711a0c.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5b/32/bd/5b32bd26d8cc85b688465e0420711a0c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPnOzokZq8mdu7g7S36JQ5WoPYQaWi36rd8Q';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/7f/df/357fdf42b0db94f413f812f1a308643b.jpg" data-lightbox="roadtrip" data-title="Pin By Pet Water Bottle On Pet Travel Military Dogs War Dogs Military Working Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/7f/df/357fdf42b0db94f413f812f1a308643b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMqSlv59M1ENczF0pcLtnwC7Nn3dAYNghgUQ';" alt="Pin By Pet Water Bottle On Pet Travel Military Dogs War Dogs Military Working Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Pet Water Bottle On Pet Travel Military Dogs War Dogs Military Working Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/6f/ac/b26fac747f43de57eeb5310d1fc682c9.jpg" data-lightbox="roadtrip" data-title="Dita The Tactical Dog On The Seals Tv Show Military Dogs Military Working Dogs Dog Armor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/6f/ac/b26fac747f43de57eeb5310d1fc682c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaEnBUfmFCk47mI-sTrDJmTTRdVIPkshmDvA';" alt="Dita The Tactical Dog On The Seals Tv Show Military Dogs Military Working Dogs Dog Armor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dita The Tactical Dog On The Seals Tv Show Military Dogs Military Working Dogs Dog Armor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/a8/b8/e5a8b8c1c7399574f2accf9799dc95f7.jpg" data-lightbox="roadtrip" data-title="Tactical Dog Helmets Https Imgur Com Wsnxfu0 Dog Helmet Dog Armor War Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/a8/b8/e5a8b8c1c7399574f2accf9799dc95f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJhVapVuiyy_Yprg-NmvUaq5ZaIbbX5x7KOA';" alt="Tactical Dog Helmets Https Imgur Com Wsnxfu0 Dog Helmet Dog Armor War Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tactical Dog Helmets Https Imgur Com Wsnxfu0 Dog Helmet Dog Armor War Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/83/95/d68395343e7ecac749c77147f1047a85.jpg" data-lightbox="roadtrip" data-title="German Shepard Police Dog Dog Goggles Dog Hero Police Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/83/95/d68395343e7ecac749c77147f1047a85.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPue7LB4BN7eJ18vVsBofRHDyCBbdGjmKK9w';" alt="German Shepard Police Dog Dog Goggles Dog Hero Police Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">German Shepard Police Dog Dog Goggles Dog Hero Police Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/c3/04/eac304fdd6aead86e62ccc19d2cb5ad7.jpg" data-lightbox="roadtrip" data-title="Stealth Dog Black Nite Dog Armor Military Dogs Military Working Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/c3/04/eac304fdd6aead86e62ccc19d2cb5ad7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj4gyOzo2xbztzb21e8ASXicnCNVyxdwUdhw';" alt="Stealth Dog Black Nite Dog Armor Military Dogs Military Working Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stealth Dog Black Nite Dog Armor Military Dogs Military Working Dogs</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/69/5c/2e/695c2e8d3cce35915ac64cf522d1fa6d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj4gyOzo2xbztzb21e8ASXicnCNVyxdwUdhw';" alt="Stealth Dog Black Nite Dog Armor Military Dogs Military Working Dogs">
+										<div class="card-body">
+						<h3 class="h5"><b>Recent advances in such goggles have been critical in enabling the ability to mount the lenses for augmented reality.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army dogs goggles</strong>. 
+								
+																	The technology is being designed to enhance communication between the dog and its human handler allowing for more. 
+																	Dogs can be guided to specific spots within their. 
+																	By leveraging a product dogs are comfortable wearing Peper said it makes the technology adoption easier for both the dogs and the handler. 
+																	The US Army is prepping a pair of augmented reality goggles for dogs that will allow handlers to issue commands from afar as the canines sniff out bombs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Pooches are commonly deployed to sniff out explosives hazardous materials or. 
+																	The technology made by a firm called Command Sight is managed by the US. 
+																	Currently combat dogs can scout ahead for explosives and other hazards but the pooches need instructions. 
+																	The goggles allow trainers to give commands to military working dogs from safety. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sunglass vents can send out vapor to your dogs. 
+																	This is not the first time that AR or. 
+																	Military dogs could soon be relaying live visuals of their area of operation to their handlers sitting afar via Augmented Reality AR goggles. 
+																	Military dogs are used to wearing goggles for protection during bad weather conditions or aerial drops. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The bonkers head gear allows handlers to issue commands from afar. 
+																	In this particular dogs case though the goggles are more than just an accessory. 
+																	Whether youre climbing 14ers ripping down a mountain bike trail stalking a pheasant or at the gun range Rex Specs are the most comfortable and durable eye protection available for your dog. 
+																	This latest development would allow their handlers to direct them from afar while theyre safely out of harms way. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The US Army is testing augmented reality goggles on its service dogs in hopes to allow troops to give orders remotely. 
+																	We still have a way to go from a basic science and development perspective before it will be ready for the wear and tear our military dogs will place on the units Managed by the Army Research Office and funded by the Small Business Innovation Research program the project is still in its. 
+																	THE US Army is testing high-tech goggles that can be worn by military dogs as they sniff out explosives or attack enemy combatants. 
+																	The device has been. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The United States Army is developing augmented reality goggles for military dogs. 
+																	Taking a regular pair of Rex Specs goggles already used for canine eye protection by the military Peper added an optoelectronic component creating a heads-up display where visual cues can be. 
+																	Peper founder of Seattle-based firm Command Sight. 
+																	Lenses are ultraviolet rays resistant. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The system is based on Microsofts Hololens technology and was created by AJ. 
+																	Soft frame of this dog glasses wont hurt the fur on the dogs face and eyes and more comfortable for your dog to wear. 
+																	At the moment soldiers usually direct their animals with. 
+																	The augmented reality system uses goggles military working dogs have already been wearing for protection in inclement conditions and aerial deployments from Rex Specs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Rex Specs are a proven piece of gear to help keep your dog safe from eye trauma UV rays or anything else you might find on the next adventure. 
+																	Namsan dog goggles are made up of a soft TPE frame and two adjustable elastic straps. 
+																	The US Army has shown off augmented reality goggles for combat dogs designed to let them receive orders at a distance. 
+																	His ability to generalize from other training to working through the AR goggles has been incredible. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Theyre an augmented reality device designed specifically for use by canine members of the military. 
+																	Dogs are put to many uses. 
+																	Lee said that the wireless prototypes will be moving into field testing in 12 months with the final format expected a year after that. 
+																	The US army is trialling augmented reality goggles for dogs designed to let them receive orders from a distance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Currently when dogs go in search of. 
+																	The US Army is giving its canine force augmented reality goggles that allows the handler to give specific directional commands while keeping a safe distance from the war zone. 
+																	The goggles are being developed by Command Sight a Seattle-based company with US Army research funding and would allow military dogs to assist in rescue operations and scout potentially. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/cc/78/3bcc78d430526f3d876ee495f32ad7c4.jpg" data-lightbox="roadtrip" data-title="Tactical Goggles War Dogs Military Dogs Military Working Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/cc/78/3bcc78d430526f3d876ee495f32ad7c4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtZDR_rtecvjIHMOif8o4601kUR9iCogYEkw';" alt="Tactical Goggles War Dogs Military Dogs Military Working Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tactical Goggles War Dogs Military Dogs Military Working Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/55/db/e155db59b5d756bacf5a5a325a26b4c5.jpg" data-lightbox="roadtrip" data-title="Rudy A Military Police K 9 Wearing Doggles Goggles And Kevlar Vest For Duty Military Working Dogs Military Dogs Working Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/55/db/e155db59b5d756bacf5a5a325a26b4c5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUFsNM_nAYTlJNkpVPOwqCDHZ7QeCwvdDFYw';" alt="Rudy A Military Police K 9 Wearing Doggles Goggles And Kevlar Vest For Duty Military Working Dogs Military Dogs Working Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rudy A Military Police K 9 Wearing Doggles Goggles And Kevlar Vest For Duty Military Working Dogs Military Dogs Working Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/d8/cf/7ed8cfb6135df8b07ea6d16e9e331108.png" data-lightbox="roadtrip" data-title="The Us Army Is Testing Augmented Reality Goggles For Dogs Military Working Dogs Military Dogs Dog Goggles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/d8/cf/7ed8cfb6135df8b07ea6d16e9e331108.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1jStloAmNbKF64Ys9V5mTCTiA1N8fzY7SOw';" alt="The Us Army Is Testing Augmented Reality Goggles For Dogs Military Working Dogs Military Dogs Dog Goggles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Us Army Is Testing Augmented Reality Goggles For Dogs Military Working Dogs Military Dogs Dog Goggles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/35/a4/2f35a4c51a4714316b3328f8d23ddf3d.jpg" data-lightbox="roadtrip" data-title="Dogs Safe And Cool With Special Snowboard Goggles Lazy Penguins Dog Goggles Dog Safe Protective Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/35/a4/2f35a4c51a4714316b3328f8d23ddf3d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF9GoiNNdZ6in_rG3omIcI1NAo3309SniN_w';" alt="Dogs Safe And Cool With Special Snowboard Goggles Lazy Penguins Dog Goggles Dog Safe Protective Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dogs Safe And Cool With Special Snowboard Goggles Lazy Penguins Dog Goggles Dog Safe Protective Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/2a/f0/0d2af047062931badbcc7e9379df1c83.jpg" data-lightbox="roadtrip" data-title="Military Dog Picture Of The Week Cool Dogs Wear Shades Kevin Hanrahan Military Working Dogs Military Dogs War Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/2a/f0/0d2af047062931badbcc7e9379df1c83.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvk4ZHUpB6F81_RI9LaW7mjw39MnOx6Wposw';" alt="Military Dog Picture Of The Week Cool Dogs Wear Shades Kevin Hanrahan Military Working Dogs Military Dogs War Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Dog Picture Of The Week Cool Dogs Wear Shades Kevin Hanrahan Military Working Dogs Military Dogs War Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/b0/e9/f9b0e9f660c8cc3dd59ac0067569a6a0.png" data-lightbox="roadtrip" data-title="Military War K9 Hero Military Working Dogs Service Dogs Military Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/b0/e9/f9b0e9f660c8cc3dd59ac0067569a6a0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPK0lZeXdUzYojDd2_sKQFsbjCiiH4msr8NQ';" alt="Military War K9 Hero Military Working Dogs Service Dogs Military Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military War K9 Hero Military Working Dogs Service Dogs Military Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/52/92/51/5292515105293b9368e619fa1a0f6d39.jpg" data-lightbox="roadtrip" data-title="K9 Helm Head Protection For Working Dogs Trident Helmets Dog Armor Military Dogs Dog Helmet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/52/92/51/5292515105293b9368e619fa1a0f6d39.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfrsBqnnPNImpLowrkUd9Fr_3881msNg9JJg';" alt="K9 Helm Head Protection For Working Dogs Trident Helmets Dog Armor Military Dogs Dog Helmet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">K9 Helm Head Protection For Working Dogs Trident Helmets Dog Armor Military Dogs Dog Helmet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/69/5c/2e/695c2e8d3cce35915ac64cf522d1fa6d.jpg" data-lightbox="roadtrip" data-title="Sgt Pupper Reporting For Duty Dog Soldiers Military Service Dogs Military Working Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/69/5c/2e/695c2e8d3cce35915ac64cf522d1fa6d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjolJkzH6XR3v_OD17t6UkEx03agzsPsOngg';" alt="Sgt Pupper Reporting For Duty Dog Soldiers Military Service Dogs Military Working Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sgt Pupper Reporting For Duty Dog Soldiers Military Service Dogs Military Working Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/b3/04/3db304f3025506cb315260f6604378b6.jpg" data-lightbox="roadtrip" data-title="Introducing Rex Specs Protective Sunglasses For Dogs Oddity Central Collecting Oddities Dog Goggles Dog Gear Funny Dog Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/b3/04/3db304f3025506cb315260f6604378b6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnRo311eRf4q6nXA4t6kXZwX9vbphposzdRA';" alt="Introducing Rex Specs Protective Sunglasses For Dogs Oddity Central Collecting Oddities Dog Goggles Dog Gear Funny Dog Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Introducing Rex Specs Protective Sunglasses For Dogs Oddity Central Collecting Oddities Dog Goggles Dog Gear Funny Dog Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/17/e8/06/17e806d5dd181b2399b3e65b4a4cae32.jpg" data-lightbox="roadtrip" data-title="Rex Specs Canine Eye Protection Working Dog Dry Goods Scary Dogs Military Dogs Military Working Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/17/e8/06/17e806d5dd181b2399b3e65b4a4cae32.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeKoI6mr_QlbJ7yMRvSYoxMW9A_9hrkN4X_A';" alt="Rex Specs Canine Eye Protection Working Dog Dry Goods Scary Dogs Military Dogs Military Working Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rex Specs Canine Eye Protection Working Dog Dry Goods Scary Dogs Military Dogs Military Working Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/6e/3f/d2/6e3fd28dea2b3fbc36fb73af9bf39cea.jpg" data-lightbox="roadtrip" data-title="Geared Up Military Working Dogs Military Dogs Military Service Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/6e/3f/d2/6e3fd28dea2b3fbc36fb73af9bf39cea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo0e0vqHfsEeuVpz87nW3zUsayDMIk-GyRNA';" alt="Geared Up Military Working Dogs Military Dogs Military Service Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Geared Up Military Working Dogs Military Dogs Military Service Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/30/f0/3030f09f61a32940fee2da73051c764f.jpg" data-lightbox="roadtrip" data-title="Blackout Use Code Instaship At Rexspecs Com For Free Priority Shipping In The Us Rileysshepherds Sporting The Larg Dog Goggles Dogs German Shepherd Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/30/f0/3030f09f61a32940fee2da73051c764f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3C0Bvwvr15J2sICEVBg73Xvyv6vjHzOnmhQ';" alt="Blackout Use Code Instaship At Rexspecs Com For Free Priority Shipping In The Us Rileysshepherds Sporting The Larg Dog Goggles Dogs German Shepherd Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Blackout Use Code Instaship At Rexspecs Com For Free Priority Shipping In The Us Rileysshepherds Sporting The Larg Dog Goggles Dogs German Shepherd Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/93/19/23931994a6bc010248d57d8d188e6c6c.jpg" data-lightbox="roadtrip" data-title="Honoring All Our Human And K9 Soldiers Thank You For Your Service Military Working Dogs Working Dogs Military Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/93/19/23931994a6bc010248d57d8d188e6c6c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCh9r58sHqWMkGYGZdmlkiwtBIlPUEG1cc0w';" alt="Honoring All Our Human And K9 Soldiers Thank You For Your Service Military Working Dogs Working Dogs Military Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Honoring All Our Human And K9 Soldiers Thank You For Your Service Military Working Dogs Working Dogs Military Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-veterans-resource-center-escondido.html">Military Veterans Resource Center Escondido</a></li>
+													<li class="list-group-item"><a href="/military-treasury-department.html">Military Treasury Department</a></li>
+													<li class="list-group-item"><a href="/military-world-records.html">Military World Records</a></li>
+													<li class="list-group-item"><a href="/ministry-of-defence-budget-increase.html">Ministry Of Defence Budget Increase</a></li>
+													<li class="list-group-item"><a href="/military-wife-gift-ideas.html">Military Wife Gift Ideas</a></li>
+													<li class="list-group-item"><a href="/ministry-of-defence-budget-2018-19.html">Ministry Of Defence Budget 2018 19</a></li>
+													<li class="list-group-item"><a href="/military-vacation-department.html">Military Vacation Department</a></li>
+													<li class="list-group-item"><a href="/militaryhtm.html">Militaryhtm</a></li>
+													<li class="list-group-item"><a href="/military-texture-pack.html">Military Texture Pack</a></li>
+													<li class="list-group-item"><a href="/military-w-2-release-date-2020.html">Military W 2 Release Date 2020</a></li>
+													<li class="list-group-item"><a href="/military-support-groups-online.html">Military Support Groups Online</a></li>
+													<li class="list-group-item"><a href="/ministry-of-defence-and-singapore-armed-forces.html">Ministry Of Defence And Singapore Armed Forces</a></li>
+													<li class="list-group-item"><a href="/military-veteran-financial-assistance.html">Military Veteran Financial Assistance</a></li>
+													<li class="list-group-item"><a href="/military-time-hour-calculator.html">Military Time Hour Calculator</a></li>
+													<li class="list-group-item"><a href="/military-vest-for-service-dogs.html">Military Vest For Service Dogs</a></li>
+													<li class="list-group-item"><a href="/military-veteran-resource-network.html">Military Veteran Resource Network</a></li>
+													<li class="list-group-item"><a href="/military-w-2-release-date.html">Military W 2 Release Date</a></li>
+													<li class="list-group-item"><a href="/military-veteran-spouse-benefits.html">Military Veteran Spouse Benefits</a></li>
+													<li class="list-group-item"><a href="/military-wives-guardian-review.html">Military Wives Guardian Review</a></li>
+													<li class="list-group-item"><a href="/military-wives-original-song.html">Military Wives Original Song</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Uwm Marching Band - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Uwm Marching Band",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/72/af/d8/72afd8330aa55bc12e16266da4145084.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=uwm+marching+band",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Uwm Marching Band</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The UW Marching Band performs before a crowd of red-wearing Badger fans filling Union Souths The Plaza during the Badger Bash on Nov. Find Uw Marching Band schedule reviews and photos. Keeping with tradition up to 50000 fans regularly stay after the conclusion of the games to enjoy the famous Fifth Quarter. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/what-is-the-symbol-for-the-army.html">what is the symbol for the army</a>
+											<a class="badge badge-danger" href="/what-is-military-land-and-cantonment-group.html">what is military land and cantonment group</a>
+											<a class="badge badge-success" href="/what-is-military-counterintelligence.html">what is military counterintelligence</a>
+											<a class="badge badge-warning" href="/what-is-the-department-of-defense.html">what is the department of defense</a>
+											<a class="badge badge-warning" href="/what-is-the-army-fraternization-policy.html">what is the army fraternization policy</a>
+											<a class="badge badge-info" href="/what-is-the-salary-of-a-financial-advisor.html">what is the salary of a financial advisor</a>
+											<a class="badge badge-light" href="/what-is-the-defence-budget-of-india-in-2019.html">what is the defence budget of india in 2019</a>
+											<a class="badge badge-info" href="/what-is-voc-rehab-for-veterans.html">what is voc rehab for veterans</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you've come to visit the right blog.  Our website provides you with suggestions for seeing the highest quality video and image content, search and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, especially Youtube, therefore we recommend this movie that you view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/af/d8/72afd8330aa55bc12e16266da4145084.jpg" data-lightbox="roadtrip" data-title="Uw Marching Band Marching Band Uw Madison University Of Wisconsin">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/af/d8/72afd8330aa55bc12e16266da4145084.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS21jiwkIZEaMlBA8Uvky3JjDP5C4dQGVKwvA';" alt="Uw Marching Band Marching Band Uw Madison University Of Wisconsin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uw Marching Band Marching Band Uw Madison University Of Wisconsin</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/f7/00/8bf70014e7d10270ee24f9fbce782bba.jpg" data-lightbox="roadtrip" data-title="Uw Band Trombones University Of Wisconsin Marching Band Homecoming Week University Of Wisconsin Homecoming 2015">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/f7/00/8bf70014e7d10270ee24f9fbce782bba.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVQY-9ZqWAgAbTFv_1cuLOSvbBEoCit-8oBQ';" alt="Uw Band Trombones University Of Wisconsin Marching Band Homecoming Week University Of Wisconsin Homecoming 2015">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uw Band Trombones University Of Wisconsin Marching Band Homecoming Week University Of Wisconsin Homecoming 2015</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/6e/b2/ac6eb20c3516df70c7df34a6b251576f.jpg" data-lightbox="roadtrip" data-title="University Of Wisconsin Marching Band Phantom Of The Opera Halftime Show Phantom Of The Opera Marching Band University Of Wisconsin">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/6e/b2/ac6eb20c3516df70c7df34a6b251576f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKvecvXe6qPJF0jAbznYuGUy45-p3-0iODbQ';" alt="University Of Wisconsin Marching Band Phantom Of The Opera Halftime Show Phantom Of The Opera Marching Band University Of Wisconsin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">University Of Wisconsin Marching Band Phantom Of The Opera Halftime Show Phantom Of The Opera Marching Band University Of Wisconsin</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/68/89/50688948020046bd4a01d0b0020b1aa6.jpg" data-lightbox="roadtrip" data-title="I Can T Even Explain How Excited I Am To Be A Part Of The Uw Marching Band Wisconsin Badgers Football Wisconsin Badgers Badger Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/68/89/50688948020046bd4a01d0b0020b1aa6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGzUVU4fw6BID_kwbLziM8g8cvknRb0qVK6A';" alt="I Can T Even Explain How Excited I Am To Be A Part Of The Uw Marching Band Wisconsin Badgers Football Wisconsin Badgers Badger Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Can T Even Explain How Excited I Am To Be A Part Of The Uw Marching Band Wisconsin Badgers Football Wisconsin Badgers Badger Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/74/77/1974777527d112ace52c8fc11b163359.jpg" data-lightbox="roadtrip" data-title="Uw Madison Marching Band Performs During The 123rd Tournament Of Roses Parade Tournament Of Roses Parade Tournament Of Roses Wisconsin Badgers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/74/77/1974777527d112ace52c8fc11b163359.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6d6KReKbS2uBk5r2PusKEcfLQOxxYKMdF2g';" alt="Uw Madison Marching Band Performs During The 123rd Tournament Of Roses Parade Tournament Of Roses Parade Tournament Of Roses Wisconsin Badgers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uw Madison Marching Band Performs During The 123rd Tournament Of Roses Parade Tournament Of Roses Parade Tournament Of Roses Wisconsin Badgers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/ef/29/33ef29060e5f6841d7398e81dab76575.jpg" data-lightbox="roadtrip" data-title="Pin By Wisconsin Athletics On Badger Football Gameday Badger Football Cities In Wisconsin Drum Major">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/ef/29/33ef29060e5f6841d7398e81dab76575.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_7atyvXx6gZ5-JtAY928PZAs2c4CMUYciiQ';" alt="Pin By Wisconsin Athletics On Badger Football Gameday Badger Football Cities In Wisconsin Drum Major">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Wisconsin Athletics On Badger Football Gameday Badger Football Cities In Wisconsin Drum Major</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/50/68/89/50688948020046bd4a01d0b0020b1aa6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_7atyvXx6gZ5-JtAY928PZAs2c4CMUYciiQ';" alt="Pin By Wisconsin Athletics On Badger Football Gameday Badger Football Cities In Wisconsin Drum Major">
+										<div class="card-body">
+						<h3 class="h5"><b>Harris is a proud graduate of Howard University home of the Showtime Marching Band.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Uwm marching band</strong>. 
+								
+																	It was formed in the fall of 1885 to support the university military battalion. 
+																	Link to post Share on other sites. 
+																	In 1969 he became the director of the marching band at the University of WisconsinMadison. 
+																	When it comes to uniquely extravagant entertainment it doesnt get any better than a live Marching Band. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Auditions are required for some but not all ensembles. 
+																	Find the latest tracks albums and images from UWM- Marching Band. 
+																	Are there any other college bands who have their own logo. 
+																	The University of Wisconsin Marching Band also known as Badger Band and The Wisconsin Band is the marching band for the University of WisconsinMadison. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	UW Marching Band Michael Leckrone UW Marching Band Michael Leckrone - University Of Wisconsin-Madison School Of Music Presents Echoes From Camp Randall LP Album University Of Wisconsin. 
+																	There is no formal audition for membership but previous experience on a woodwind brass or percussion instrument is required. 
+																	Find the latest tracks albums and images from UWM-Marching Band. 
+																	The University of Georgia marching band has bade farewell to Gone with the Wind. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Book one here to play an assortment of songs at your event in the Milwaukee WI area. 
+																	Ive been tapped to design a logo for the UWM marching band. 
+																	And tomorrow shortly after Harris takes the oath of office shell be joined by the bands drum line to kick. 
+																	Haha i just posted in a concept thread that i really like this logo. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	UW Marching Band The Wisconsin Marching Band and Varsity Band play an important role in the excitement of Badger athletics the vitality of the Madison campus and the pride of Wisconsin alumni and fans across the state and throughout the country. 
+																	Milwaukee marching bands Looking to go all out at your next event. 
+																	Listen to music from UWM- Marching Band like On Wisconsin-Finale Dance Little Bird more. 
+																	A trumpet player Eric Meunier proposes to his girlfriend of 7 years Ashley Chalmers at the famed University of Wisconsin-Madison Varsity Band Concert in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Listen to music from UWM-Marching Band like Youve Said it All and WISCONSIN FOWARD FOREVER. 
+																	The pre-football game gathering is the largest and longest running public tailgating event at UW-Madison. 
+																	UWM music ensembles are open to all University students regardless of major. 
+																	With the wide array of ensemble options at UWM you are sure to find a group that supports your interests. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When Leckrone became director of the Wisconsin Marching Band interest in the program was low. 
+																	Ensembles are structured to offer a wide variety of opportunities for performers of various abilities. 
+																	Cajunaggie08 624 cajunaggie08 624 Members. 
+																	The University of Wisconsin Marching Band performs at New London High School New London WI. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The University Community Band UCB is a concert band open to community members ages 18 and students at the University of Wisconsin-Milwaukee. 
+																	This performance A Salute to Our Veterans honors the brave individuals who served our country as well as those who are currently serving this great nation. 
+																	Hard To Be HumbleBadgerCool BandsWisconsinDrumsBassFair Grounds. 
+																	Today it has grown to about 300 members and performs at all home Badger football games. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	He has composed and arranged many pieces and over 200 of his compositions for marching and concert bands have been published. 
+																	The Marching Band Varsity Band Wind Ensemble Concert Band and University Bands give numerous performances at every level from UWMadison athletic events to professional music conferences and tours. 
+																	In Madison the Marching Band performs weekly in Camp Randall Stadium for more than 80000 fans during Badger football games. 
+																	Apparently they want their own mark like the band at UW-Madison. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Redcoat Bands acting director Brett Bawcum told members that going forward their repertoire will no longer. 
+																	By creating a new demanding marching style stop at the. 
+																	Musicians under 18 may be accepted by permission of the instructor. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/66/d4/d766d496a362e617295f9e4c4b8cd730.jpg" data-lightbox="roadtrip" data-title="University Of Wisconsin Uw Badger Marching Band 2013 Pasadena Rose Parade University Of Wisconsin Marching Band Humor Marching Band">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/66/d4/d766d496a362e617295f9e4c4b8cd730.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXnZucPbkcY6gUvAC1ju0UnfyuA0jeuRvJQw';" alt="University Of Wisconsin Uw Badger Marching Band 2013 Pasadena Rose Parade University Of Wisconsin Marching Band Humor Marching Band">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">University Of Wisconsin Uw Badger Marching Band 2013 Pasadena Rose Parade University Of Wisconsin Marching Band Humor Marching Band</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ad/bc/ef/adbcef309453267dda9dc9d9ec1f105b.jpg" data-lightbox="roadtrip" data-title="Uw Marching Band University Of Wisconsin Uw Madison Marching Band">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ad/bc/ef/adbcef309453267dda9dc9d9ec1f105b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7HFKtU9B1eQSe0Q2fyFqjR5CYxsQ-Dv0Z1g';" alt="Uw Marching Band University Of Wisconsin Uw Madison Marching Band">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uw Marching Band University Of Wisconsin Uw Madison Marching Band</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/45/cd/d045cd80465c081caf1f64edd639e9b8.jpg" data-lightbox="roadtrip" data-title="Uw Marching Band A Game Day In The Life Of Madison Wisconsin Marching Band Uw Madison">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/45/cd/d045cd80465c081caf1f64edd639e9b8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr358UHYGUBEv0jyxljZuGpFFcAO3118MGbw';" alt="Uw Marching Band A Game Day In The Life Of Madison Wisconsin Marching Band Uw Madison">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uw Marching Band A Game Day In The Life Of Madison Wisconsin Marching Band Uw Madison</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/b6/58/8cb6580f6ec98a9fbb8e6bb835c31170.jpg" data-lightbox="roadtrip" data-title="The Uw Marching Band One Of The Best Wisconsin Badgers Green Bay Packers Football Bucky Badger">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/b6/58/8cb6580f6ec98a9fbb8e6bb835c31170.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_LzTCP5Zcfw778s_tfospDLnPjxgIqstfAg';" alt="The Uw Marching Band One Of The Best Wisconsin Badgers Green Bay Packers Football Bucky Badger">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Uw Marching Band One Of The Best Wisconsin Badgers Green Bay Packers Football Bucky Badger</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/0b/c9/490bc90799654044b7b8eddd0657ee10.png" data-lightbox="roadtrip" data-title="Activebadger Rachael Stein Uw Marching Band Marching Band Band Get Fit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/0b/c9/490bc90799654044b7b8eddd0657ee10.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLjbDOPGclmvyCNwqYhvb-fSIi-m8yLBb9vw';" alt="Activebadger Rachael Stein Uw Marching Band Marching Band Band Get Fit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Activebadger Rachael Stein Uw Marching Band Marching Band Band Get Fit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/a7/63/06a76389c880b9e2d60c962bfd6e11cd.jpg" data-lightbox="roadtrip" data-title="Uw Marching Band When You Say Wisconsin Wisconsin Marching Band Wisconsin Badgers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/a7/63/06a76389c880b9e2d60c962bfd6e11cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7HVZXkc88h5Vt2DpCF4L6DUOFzNhqPhJK_Q';" alt="Uw Marching Band When You Say Wisconsin Wisconsin Marching Band Wisconsin Badgers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uw Marching Band When You Say Wisconsin Wisconsin Marching Band Wisconsin Badgers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/a9/aa/fca9aaa34b61320edf266daf138ac33c.jpg" data-lightbox="roadtrip" data-title="Uw Marching Band 10 Uw Madison Wisconsin University Of Wisconsin">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/a9/aa/fca9aaa34b61320edf266daf138ac33c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAUlZAtE4-zIgBVGLhXMZv-Bsas7qPv8KRIg';" alt="Uw Marching Band 10 Uw Madison Wisconsin University Of Wisconsin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uw Marching Band 10 Uw Madison Wisconsin University Of Wisconsin</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/ce/d0/f5ced04fbfeb52cb1357ec3e6a2df379.jpg" data-lightbox="roadtrip" data-title="University Of Wisconsin Badger Marching Band Wisconsin Badgers University Of Wisconsin Wisconsin">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/ce/d0/f5ced04fbfeb52cb1357ec3e6a2df379.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbFLhVDnimWE8-Pc0agQdp3XePXlvvkuE-OQ';" alt="University Of Wisconsin Badger Marching Band Wisconsin Badgers University Of Wisconsin Wisconsin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">University Of Wisconsin Badger Marching Band Wisconsin Badgers University Of Wisconsin Wisconsin</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/83/6f/98836f8ab8788903b64b41f178efa731.jpg" data-lightbox="roadtrip" data-title="Uw Madison Photo Library Madison Uw Madison Legally Blonde Musical">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/83/6f/98836f8ab8788903b64b41f178efa731.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB1h20LU2xuQP_5TmAm_CPX2F5WVfAAmPmTQ';" alt="Uw Madison Photo Library Madison Uw Madison Legally Blonde Musical">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uw Madison Photo Library Madison Uw Madison Legally Blonde Musical</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/9a/0d/439a0d0569bd995cc325c7d0b2b15287.jpg" data-lightbox="roadtrip" data-title="Uw Marching Band Eat A Rock Anthem Youtube Rock Anthems Marching Band Band">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/9a/0d/439a0d0569bd995cc325c7d0b2b15287.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNa9Z1v96E8trxkN4uSqR08J_zn90j4FTX0w';" alt="Uw Marching Band Eat A Rock Anthem Youtube Rock Anthems Marching Band Band">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uw Marching Band Eat A Rock Anthem Youtube Rock Anthems Marching Band Band</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/d9/e6/0dd9e6952d30ef5ebbeb45f929bd64e8.jpg" data-lightbox="roadtrip" data-title="People Of Wisconsin Gallery On Capture Wisconsin Gallery Wisconsin Capture">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/d9/e6/0dd9e6952d30ef5ebbeb45f929bd64e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDaOWJyLur6PrSu81wqAKA4PtqP9r1DiuyZQ';" alt="People Of Wisconsin Gallery On Capture Wisconsin Gallery Wisconsin Capture">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">People Of Wisconsin Gallery On Capture Wisconsin Gallery Wisconsin Capture</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/aa/ab/25aaab3a945e49fceb1f9ff883c2005c.jpg" data-lightbox="roadtrip" data-title="The University Of Wisconsin Alumni Association S Bucky Wagon With Cheerleaders And Marching Band At Homecoming Madi Uw Madison Madison University Of Wisconsin">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/aa/ab/25aaab3a945e49fceb1f9ff883c2005c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMknfPXGjuXTDjCi7fmK4RiujvTEqJRtnLlg';" alt="The University Of Wisconsin Alumni Association S Bucky Wagon With Cheerleaders And Marching Band At Homecoming Madi Uw Madison Madison University Of Wisconsin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The University Of Wisconsin Alumni Association S Bucky Wagon With Cheerleaders And Marching Band At Homecoming Madi Uw Madison Madison University Of Wisconsin</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/2d/3b/3b2d3b957158454f480ab972db98b819.jpg" data-lightbox="roadtrip" data-title="Madtown Madison U W Marching Band Best Of The Land University Of Wisconsin Madison University Of Wisconsin Marching Band">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/2d/3b/3b2d3b957158454f480ab972db98b819.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROsFdBM7sL_S7vGSTMPuMzyHl1IXYPqSY9oQ';" alt="Madtown Madison U W Marching Band Best Of The Land University Of Wisconsin Madison University Of Wisconsin Marching Band">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Madtown Madison U W Marching Band Best Of The Land University Of Wisconsin Madison University Of Wisconsin Marching Band</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-is-sipr-and-nipr.html">What Is Sipr And Nipr</a></li>
+													<li class="list-group-item"><a href="/what-is-the-current-us-defense-budget.html">What Is The Current Us Defense Budget</a></li>
+													<li class="list-group-item"><a href="/what-is-the-military-discount-for-verizon-wireless.html">What Is The Military Discount For Verizon Wireless</a></li>
+													<li class="list-group-item"><a href="/what-is-the-korean-defense-service-medal.html">What Is The Korean Defense Service Medal</a></li>
+													<li class="list-group-item"><a href="/what-is-the-veterans-crisis-hotline.html">What Is The Veterans Crisis Hotline</a></li>
+													<li class="list-group-item"><a href="/what-is-the-army-responsible-for.html">What Is The Army Responsible For</a></li>
+													<li class="list-group-item"><a href="/what-is-military-culture.html">What Is Military Culture</a></li>
+													<li class="list-group-item"><a href="/what-is-military-counterintelligence.html">What Is Military Counterintelligence</a></li>
+													<li class="list-group-item"><a href="/what-is-overseas-housing-allowance.html">What Is Overseas Housing Allowance</a></li>
+													<li class="list-group-item"><a href="/what-is-the-us-military-budget-compared-to-other-countries.html">What Is The Us Military Budget Compared To Other Countries</a></li>
+													<li class="list-group-item"><a href="/what-is-the-purpose-of-the-civilian-oath-of-office.html">What Is The Purpose Of The Civilian Oath Of Office</a></li>
+													<li class="list-group-item"><a href="/what-is-the-defence-budget-of-russia.html">What Is The Defence Budget Of Russia</a></li>
+													<li class="list-group-item"><a href="/what-is-paf-in-hr.html">What Is Paf In Hr</a></li>
+													<li class="list-group-item"><a href="/what-is-signals-in-the-army.html">What Is Signals In The Army</a></li>
+													<li class="list-group-item"><a href="/what-is-the-army-pay-rate.html">What Is The Army Pay Rate</a></li>
+													<li class="list-group-item"><a href="/what-is-the-army-base-in-missouri.html">What Is The Army Base In Missouri</a></li>
+													<li class="list-group-item"><a href="/what-is-nigeria-army-salary.html">What Is Nigeria Army Salary</a></li>
+													<li class="list-group-item"><a href="/what-is-the-army-base-in-washington-state.html">What Is The Army Base In Washington State</a></li>
+													<li class="list-group-item"><a href="/what-is-the-symbol-for-the-army.html">What Is The Symbol For The Army</a></li>
+													<li class="list-group-item"><a href="/what-is-whistleblower-hotline.html">What Is Whistleblower Hotline</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

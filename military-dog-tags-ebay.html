@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Dog Tags Ebay - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Dog Tags Ebay",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/ba/ac/de/baacdeac24192e9ed88149a89f1d1bb5.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+dog+tags+ebay",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Dog Tags Ebay</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">This personalisation can include the dogs name the owners contact details for reuniting dog and owner and. Great Savings Free Delivery Collection on many items. 0 users rated. <br>				
+			</p>
+										<a class="badge badge-warning" href="/army-dog-tag-notch.html">army dog tag notch</a>
+											<a class="badge badge-success" href="/army-dog-jacket.html">army dog jacket</a>
+											<a class="badge badge-success" href="/army-dog-kennels.html">army dog kennels</a>
+											<a class="badge badge-danger" href="/army-dog-tag-costume.html">army dog tag costume</a>
+											<a class="badge badge-secondary" href="/army-dog-rescue.html">army dog rescue</a>
+											<a class="badge badge-success" href="/army-dog-movie-true-story.html">army dog movie true story</a>
+											<a class="badge badge-dark" href="/army-dog-jersey.html">army dog jersey</a>
+											<a class="badge badge-success" href="/army-dog-lead.html">army dog lead</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to pay a visit to the ideal site.  Our website provides you with suggestions for seeing the highest quality video and image content, search and locate more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, particularly Youtube, so we recommend this movie that you view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/8a/07/eb8a0779e380cf097613abb2ebac171b.png" data-lightbox="roadtrip" data-title="Military Dog Tags Ebay Jewellery Watches Dog Tags Dog Tags Military Engraved Dog Tags">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/8a/07/eb8a0779e380cf097613abb2ebac171b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGu18KoHHCWX5Fkxv3OMqsB6sTv9ckQ4fLRA';" alt="Military Dog Tags Ebay Jewellery Watches Dog Tags Dog Tags Military Engraved Dog Tags">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Dog Tags Ebay Jewellery Watches Dog Tags Dog Tags Military Engraved Dog Tags</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/fb/90/11fb90a8669b4b848c54a1762737e7e2.jpg" data-lightbox="roadtrip" data-title="Set Of Air Force Metal Military Dog Tags With Chain Christian O Positive Dog Tag Necklace Military Dog Tags Military Dog Tag Necklace">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/fb/90/11fb90a8669b4b848c54a1762737e7e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdgP9yGW0jM1t-g18LZh281w35EZleMGAdnA';" alt="Set Of Air Force Metal Military Dog Tags With Chain Christian O Positive Dog Tag Necklace Military Dog Tags Military Dog Tag Necklace">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Set Of Air Force Metal Military Dog Tags With Chain Christian O Positive Dog Tag Necklace Military Dog Tags Military Dog Tag Necklace</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/97/be/3797be73eef8ffe9440dce82f5272f2a.jpg" data-lightbox="roadtrip" data-title="Vintage Us Military Id Tag Dog Tag Usnr Us Navy Reserve 460596 Us Navy Reserve Navy Reserve Us Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/97/be/3797be73eef8ffe9440dce82f5272f2a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4GtQ1-llPAiA8qmgKOUQcxHCLwwxr2lL50g';" alt="Vintage Us Military Id Tag Dog Tag Usnr Us Navy Reserve 460596 Us Navy Reserve Navy Reserve Us Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vintage Us Military Id Tag Dog Tag Usnr Us Navy Reserve 460596 Us Navy Reserve Navy Reserve Us Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/d1/4a/4ad14aada89e1309b5c2c6ed70ed6593.jpg" data-lightbox="roadtrip" data-title="Men Military Army Bullet Charm Dog Tags Single Embossed Pendant Chain Necklace Gold Chains For Men Chains For Men Mens Necklace Pendant">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/d1/4a/4ad14aada89e1309b5c2c6ed70ed6593.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhfT7hYXse2ygJQX_fRV1teBghUn__4NKo_Q';" alt="Men Military Army Bullet Charm Dog Tags Single Embossed Pendant Chain Necklace Gold Chains For Men Chains For Men Mens Necklace Pendant">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Men Military Army Bullet Charm Dog Tags Single Embossed Pendant Chain Necklace Gold Chains For Men Chains For Men Mens Necklace Pendant</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/fe/bc/2afebc8bd1588297222894087b43d4db.jpg" data-lightbox="roadtrip" data-title="Military Dog Tags Dog Tags Dog Tags Military Custom Dog Tags">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/fe/bc/2afebc8bd1588297222894087b43d4db.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd8-U-XPACCGlbPaXMgraOnqsPRWuR19EYtA';" alt="Military Dog Tags Dog Tags Dog Tags Military Custom Dog Tags">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Dog Tags Dog Tags Dog Tags Military Custom Dog Tags</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1d/5f/5b/1d5f5bf546109ac9d237a70e74f5ed70.jpg" data-lightbox="roadtrip" data-title="Mens Engraving Stainless Steel Army Id 2 Dog Tags Military Pendant Necklace Ebay Giftryapp Dog Tag Necklace Military Dog Tags Military Dog Tags">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1d/5f/5b/1d5f5bf546109ac9d237a70e74f5ed70.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR84AkOaa8vmtrOpfzdG9AFho8tAXqlRgUXwQ';" alt="Mens Engraving Stainless Steel Army Id 2 Dog Tags Military Pendant Necklace Ebay Giftryapp Dog Tag Necklace Military Dog Tags Military Dog Tags">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mens Engraving Stainless Steel Army Id 2 Dog Tags Military Pendant Necklace Ebay Giftryapp Dog Tag Necklace Military Dog Tags Military Dog Tags</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/0a/7e/85/0a7e85adc7772fa21d7a0ba2a7ca02de.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR84AkOaa8vmtrOpfzdG9AFho8tAXqlRgUXwQ';" alt="Mens Engraving Stainless Steel Army Id 2 Dog Tags Military Pendant Necklace Ebay Giftryapp Dog Tag Necklace Military Dog Tags Military Dog Tags">
+										<div class="card-body">
+						<h3 class="h5"><b>Find great deals on eBay for military dog tags.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military dog tags ebay</strong>. 
+								
+																	Top Rated Seller Top Rated Seller. 
+																	Buy ww2 german dog tag and get the best deals at the lowest prices on eBay. 
+																	Free shipping on many items Browse your favorite brands affordable prices. 
+																	Free delivery for many products. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These materials can include stainless steel brass and plastic. 
+																	We have a great online selection at the lowest prices with Fast Free shipping on many items. 
+																	Top Rated Seller Top Rated Seller. 
+																	Will ship via usps mail within one business day of payment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Many dog tags and charms are suitable for personalisation through engraving or other methods. 
+																	Gifts Mum Dad Mom Daughter Father Mother Son Friends Chain Necklace Presents. 
+																	Find great deals on eBay for black military dog tags. 
+																	Large chain length is 60cm. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Manual Steel Dog Tag Embosser ID Card Military Embossing Stamping machine 52D. 
+																	8 users rated this 5 out of 5 stars 8. 
+																	From China C 22570 shipping. 
+																	We have a great online selection at the lowest prices with Fast Free shipping on many items. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	52D Manual Steel Dog Tag Embosser ID Card Military Embossing Stamping machine. 
+																	Free shipping on many items Browse your favorite brands affordable prices. 
+																	Tag-Z Military Dog Tags Pet Tags 427 followers tag-z 21370 tag-zs Feedback score is 21370 998 tag-z has 998 positive Feedback Welcome to the Tag-Z ebay store. 
+																	53 results for ww2 military dog tags Save ww2 military dog tags to get e-mail alerts and updates on your eBay Feed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	0 users rated this 3 out of 5 stars 0. 
+																	Skip to main content. 
+																	Free shipping on many items Browse your favorite brands affordable prices. 
+																	17 17 product ratings - Military ID Stainless Dog Tags Custom US Army Personalised FREE incl. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	66 items found from eBay international sellers. 
+																	8 product ratings. 
+																	Small chain length is 14cm. 
+																	2 x Military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dog tags and charms are available in different sizes shapes and materials. 
+																	Item 2 GENUINE DOG TAGS ID MILITARY US STAINLESS STEEL ARMY DOGTAG PERSONALISED FREE - GENUINE DOG TAGS ID MILITARY US STAINLESS STEEL ARMY DOGTAG PERSONALISED FREE. 
+																	2 x Military Dog Tags in RED with 1 x Chain Army ID Tag Necklace Soldier. 
+																	Types of dog tags and charm. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Stainless Steel18K Gold Plated Customized Dog Tag Necklace Custom Free Engraving Military Dog TagLove Heart Pendant Necklace for Women Men with Gift Box 40 out of 5 stars28 10991099 Get it Tomorrow Jan 9. 
+																	Skip to main content. 
+																	Find many great new used options and get the best deals for Military Identification Dog Tags at the best online prices at eBay. 
+																	Find great deals on eBay for army dog tags. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Unfollow ww2 military dog tags to stop getting updates on your eBay Feed. 
+																	Excellent pre owned condition. 
+																	0 users rated this 4 out of 5 stars 0. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/5e/98/a4/5e98a4ec03ce2867e374d41bad474b85.jpg" data-lightbox="roadtrip" data-title="Set Of Regular Army Military Dog Tags Notch Style T 49 Vintage 1949 With Chain Dog Tags Military Dog Tags Army Dog Tag">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/5e/98/a4/5e98a4ec03ce2867e374d41bad474b85.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh0xwn5pTG7W3uQPFnjwbhib4ZEEvyb9Kd9Q';" alt="Set Of Regular Army Military Dog Tags Notch Style T 49 Vintage 1949 With Chain Dog Tags Military Dog Tags Army Dog Tag">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Set Of Regular Army Military Dog Tags Notch Style T 49 Vintage 1949 With Chain Dog Tags Military Dog Tags Army Dog Tag</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/fe/7a/b6fe7aa5c9fc467db57bfb964c7e7d6f.jpg" data-lightbox="roadtrip" data-title="Military Dog Tags Stainless Steel Embossed Personalised Free 3791941229946 Ebay Dog Tags Military Dog Tags Military Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/fe/7a/b6fe7aa5c9fc467db57bfb964c7e7d6f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLOWKv98ucDSGvTA6ylJQsMNYiH8cMLgs4_w';" alt="Military Dog Tags Stainless Steel Embossed Personalised Free 3791941229946 Ebay Dog Tags Military Dog Tags Military Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Dog Tags Stainless Steel Embossed Personalised Free 3791941229946 Ebay Dog Tags Military Dog Tags Military Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/6a/3c/2c6a3c6385a0b5bb7636ff057a266559.jpg" data-lightbox="roadtrip" data-title="Men Military Army Style 2 Dog Tags Address Pendant Necklace 28 Chain Engravable Dog Tag Necklace Military Dog Tags Military Dog Tags">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/6a/3c/2c6a3c6385a0b5bb7636ff057a266559.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStK6i18W_JkUjtou-Eu8_mS5Ec7c9kRZEZmA';" alt="Men Military Army Style 2 Dog Tags Address Pendant Necklace 28 Chain Engravable Dog Tag Necklace Military Dog Tags Military Dog Tags">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Men Military Army Style 2 Dog Tags Address Pendant Necklace 28 Chain Engravable Dog Tag Necklace Military Dog Tags Military Dog Tags</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/75/9a/7b759a9ccc60fcc6d9e52f38d6196956.jpg" data-lightbox="roadtrip" data-title="6 99 Military Dog Tags Custom Embossed Tag Set U S Coast Guard Tag Set Ebay Collectibles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/75/9a/7b759a9ccc60fcc6d9e52f38d6196956.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRppzsR4xAjfo1boha5cdVY3UY7z69tseHcBw';" alt="6 99 Military Dog Tags Custom Embossed Tag Set U S Coast Guard Tag Set Ebay Collectibles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 99 Military Dog Tags Custom Embossed Tag Set U S Coast Guard Tag Set Ebay Collectibles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/df/79/cddf79914003a7c562889f507a226830.jpg" data-lightbox="roadtrip" data-title="Vintage Wwii Dog Tags 42 N D Highlanders Military Canada Ebay Dog Tags Vintage Ebay">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/df/79/cddf79914003a7c562889f507a226830.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTui7eSpdxKyAYEvLsmBI-Hdi-DislqX-D3Iw';" alt="Vintage Wwii Dog Tags 42 N D Highlanders Military Canada Ebay Dog Tags Vintage Ebay">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vintage Wwii Dog Tags 42 N D Highlanders Military Canada Ebay Dog Tags Vintage Ebay</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/8f/aa/578faa70e41647cea7033ae091a58503.jpg" data-lightbox="roadtrip" data-title="Set Of Us Navy Military Round Metal Dog Tags 1945 Wwii Vintage Navy Military Navy Air Force Army Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/8f/aa/578faa70e41647cea7033ae091a58503.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiNaty7C_AwR3oLhWv1ZKNx86taF-yLPALgQ';" alt="Set Of Us Navy Military Round Metal Dog Tags 1945 Wwii Vintage Navy Military Navy Air Force Army Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Set Of Us Navy Military Round Metal Dog Tags 1945 Wwii Vintage Navy Military Navy Air Force Army Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/ac/de/baacdeac24192e9ed88149a89f1d1bb5.png" data-lightbox="roadtrip" data-title="2x Silver Matte Military Army Blank Pendant Dog Tag With Stainless Steel Chains Chains For Men Stainless Steel Chain Dog Tags">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/ac/de/baacdeac24192e9ed88149a89f1d1bb5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM8GKPAPtWyX7Oatx6qmhg7pzign-Y8X9ilg';" alt="2x Silver Matte Military Army Blank Pendant Dog Tag With Stainless Steel Chains Chains For Men Stainless Steel Chain Dog Tags">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2x Silver Matte Military Army Blank Pendant Dog Tag With Stainless Steel Chains Chains For Men Stainless Steel Chain Dog Tags</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/4b/26/bf/4b26bf7fac20816a0435d81ce9624612.jpg" data-lightbox="roadtrip" data-title="Pin On Military Necklace">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/4b/26/bf/4b26bf7fac20816a0435d81ce9624612.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_uYd8ZDXnLrqxGEetA7OIsWtYwKqCrjIP-w';" alt="Pin On Military Necklace">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Necklace</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/92/ed/d7/92edd7a62e7f441ac8942f4f4187b258.jpg" data-lightbox="roadtrip" data-title="1x Mens Military Army Bullet Charm Rambo Dog Tags Chain Pendant Necklace Jewelry Dog Tags Military Dog Tags Chain Pendants">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/92/ed/d7/92edd7a62e7f441ac8942f4f4187b258.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXod1282W8Mwi3zHTTH1O8u1XN6iYAMoW_ZA';" alt="1x Mens Military Army Bullet Charm Rambo Dog Tags Chain Pendant Necklace Jewelry Dog Tags Military Dog Tags Chain Pendants">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1x Mens Military Army Bullet Charm Rambo Dog Tags Chain Pendant Necklace Jewelry Dog Tags Military Dog Tags Chain Pendants</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/5d/5e/b35d5e6a526e5f067fd67dcf8c6dbf63.jpg" data-lightbox="roadtrip" data-title="Genuine Military Dog Tags Army Navy Usmc Marine Air Force Issue Dog Tags Set Army Dog Tag Dog Tags Military Dog Tags">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/5d/5e/b35d5e6a526e5f067fd67dcf8c6dbf63.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Tdg-1J8ZFkMtFKq3LgJMzS2AXivZ2CEVew';" alt="Genuine Military Dog Tags Army Navy Usmc Marine Air Force Issue Dog Tags Set Army Dog Tag Dog Tags Military Dog Tags">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Genuine Military Dog Tags Army Navy Usmc Marine Air Force Issue Dog Tags Set Army Dog Tag Dog Tags Military Dog Tags</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/5b/87/775b87fa236e50aa097752e935e7c77e.jpg" data-lightbox="roadtrip" data-title="You Are Not Forgotten Never Forgotten Genuine Military Dog Tags Stainless Steel Dog Tags Military Dog Tags Military Tags">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/5b/87/775b87fa236e50aa097752e935e7c77e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdXJ5Z945f7oErXqVDx_iy-0BNP8sIE4EJ4Q';" alt="You Are Not Forgotten Never Forgotten Genuine Military Dog Tags Stainless Steel Dog Tags Military Dog Tags Military Tags">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">You Are Not Forgotten Never Forgotten Genuine Military Dog Tags Stainless Steel Dog Tags Military Dog Tags Military Tags</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/2b/13/8a2b139953683a3eb73d9f6b88e5c96a.jpg" data-lightbox="roadtrip" data-title="Military Dog Tag Chain Idf Israel Army Engraved Paratroopers Jump Wings Metal Dog Tags Military Jump Wings Paratrooper">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/2b/13/8a2b139953683a3eb73d9f6b88e5c96a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJMBZL0hPCF5VmhMfpBCRAg_7DQ1ceZSEOcg';" alt="Military Dog Tag Chain Idf Israel Army Engraved Paratroopers Jump Wings Metal Dog Tags Military Jump Wings Paratrooper">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Dog Tag Chain Idf Israel Army Engraved Paratroopers Jump Wings Metal Dog Tags Military Jump Wings Paratrooper</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/7e/85/0a7e85adc7772fa21d7a0ba2a7ca02de.png" data-lightbox="roadtrip" data-title="Military Army Style Black 2 Dog Tags Chain Mens Pendant Necklace T9a2 Mens Necklace Pendant Mens Dog Tag Necklace Chains For Men">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/7e/85/0a7e85adc7772fa21d7a0ba2a7ca02de.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz33D3PqyFfMJt8vLaM-roFqsJLmP0JYOwFA';" alt="Military Army Style Black 2 Dog Tags Chain Mens Pendant Necklace T9a2 Mens Necklace Pendant Mens Dog Tag Necklace Chains For Men">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Army Style Black 2 Dog Tags Chain Mens Pendant Necklace T9a2 Mens Necklace Pendant Mens Dog Tag Necklace Chains For Men</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-is-military-spouse-preference.html">What Is Military Spouse Preference</a></li>
+													<li class="list-group-item"><a href="/what-is-the-address-of-west-point-military-academy.html">What Is The Address Of West Point Military Academy</a></li>
+													<li class="list-group-item"><a href="/what-is-the-role-of-each-military-branch.html">What Is The Role Of Each Military Branch</a></li>
+													<li class="list-group-item"><a href="/what-is-the-army-logo.html">What Is The Army Logo</a></li>
+													<li class="list-group-item"><a href="/what-is-the-proposed-budget-for-2020.html">What Is The Proposed Budget For 2020</a></li>
+													<li class="list-group-item"><a href="/what-is-the-main-purpose-of-army-public-affairs.html">What Is The Main Purpose Of Army Public Affairs</a></li>
+													<li class="list-group-item"><a href="/what-is-the-service-number-for-military.html">What Is The Service Number For Military</a></li>
+													<li class="list-group-item"><a href="/what-is-the-abbreviation-for-the-army.html">What Is The Abbreviation For The Army</a></li>
+													<li class="list-group-item"><a href="/what-is-spillage-army-cyber-awareness.html">What Is Spillage Army Cyber Awareness</a></li>
+													<li class="list-group-item"><a href="/what-is-the-veterans-crisis-hotline.html">What Is The Veterans Crisis Hotline</a></li>
+													<li class="list-group-item"><a href="/what-jobs-are-in-the-military.html">What Jobs Are In The Military</a></li>
+													<li class="list-group-item"><a href="/what-is-the-army-security-agency.html">What Is The Army Security Agency</a></li>
+													<li class="list-group-item"><a href="/what-is-sbp-costs-on-military-retirement.html">What Is Sbp Costs On Military Retirement</a></li>
+													<li class="list-group-item"><a href="/what-military-branch-is-at-west-point.html">What Military Branch Is At West Point</a></li>
+													<li class="list-group-item"><a href="/what-is-the-space-force-in-the-military.html">What Is The Space Force In The Military</a></li>
+													<li class="list-group-item"><a href="/what-is-ntc-training-in-the-army.html">What Is Ntc Training In The Army</a></li>
+													<li class="list-group-item"><a href="/what-is-military-logistic-department.html">What Is Military Logistic Department</a></li>
+													<li class="list-group-item"><a href="/what-is-signals-in-the-army.html">What Is Signals In The Army</a></li>
+													<li class="list-group-item"><a href="/what-is-sipr-and-nipr.html">What Is Sipr And Nipr</a></li>
+													<li class="list-group-item"><a href="/what-is-the-national-defense-service-medal-for.html">What Is The National Defense Service Medal For</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

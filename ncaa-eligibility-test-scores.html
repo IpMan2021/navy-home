@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ncaa Eligibility Test Scores - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ncaa Eligibility Test Scores",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/474x/8e/01/d8/8e01d896120889993a4acc9cc8ecbdcb.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ncaa+eligibility+test+scores",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ncaa Eligibility Test Scores</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Eastern time Monday through Friday Fax number. Send SAT Scores to NCAA Before the Test When you register to take the SAT you have the option of sending up to 4 free score reports to the colleges or scholarship programs of your choice. Students certified based solely on international credentials are exempt from the 107 core-course. <br>				
+			</p>
+										<a class="badge badge-danger" href="/army-dpw-hawaii.html">army dpw hawaii</a>
+											<a class="badge badge-light" href="/army-foia-form.html">army foia form</a>
+											<a class="badge badge-secondary" href="/army-heroes-mod-apk.html">army heroes mod apk</a>
+											<a class="badge badge-light" href="/army-hr-contact-number.html">army hr contact number</a>
+											<a class="badge badge-info" href="/army-helpline-1904.html">army helpline 1904</a>
+											<a class="badge badge-success" href="/army-hr-company.html">army hr company</a>
+											<a class="badge badge-warning" href="/army-dots-file-transfer.html">army dots file transfer</a>
+											<a class="badge badge-light" href="/army-hair-regulations-male-2021.html">army hair regulations male 2021</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to pay a visit to the right site.  Our website provides you with suggestions for seeing the highest quality video and image content, search and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie that you view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/76/0f/ed/760fedc563872dd4c509143fe5022454.jpg" data-lightbox="roadtrip" data-title="Pin On Athletics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/76/0f/ed/760fedc563872dd4c509143fe5022454.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeBA1NVmohlz3Bnr7PaT8eaV5gw2Kdd6i8CQ';" alt="Pin On Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/26/fc/8126fcbdf21c3531b4d134bf1c3e5d3b.png" data-lightbox="roadtrip" data-title="Ncaa Eligibility Center Checklist College Education Sports College Recruiting Online Education College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/26/fc/8126fcbdf21c3531b4d134bf1c3e5d3b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRufCsx8k2wIuBwVBbHCHA3eFF03kL2iUe1OA';" alt="Ncaa Eligibility Center Checklist College Education Sports College Recruiting Online Education College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Eligibility Center Checklist College Education Sports College Recruiting Online Education College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/74/c0/0874c0f02b40482f80d4afaa15d70dd2.png" data-lightbox="roadtrip" data-title="Ncaa Eligibility What You Need To Know So You Don T End Up On The Bench Student Athlete Connections Life Hacks For School College Recruiting High School Counseling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/74/c0/0874c0f02b40482f80d4afaa15d70dd2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbTmnKqIYleo3w5VAfrnsE2kwSFax-KvoM5A';" alt="Ncaa Eligibility What You Need To Know So You Don T End Up On The Bench Student Athlete Connections Life Hacks For School College Recruiting High School Counseling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Eligibility What You Need To Know So You Don T End Up On The Bench Student Athlete Connections Life Hacks For School College Recruiting High School Counseling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/a3/1a/8ea31a2518ac0fa0c02b1449740eb3e1.jpg" data-lightbox="roadtrip" data-title="Pin On Standardized Tests">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/a3/1a/8ea31a2518ac0fa0c02b1449740eb3e1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST4hJHLhZXFPuhuYvFM_B9b9gFII9ToDwnAA';" alt="Pin On Standardized Tests">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Standardized Tests</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/46/c5/2346c55fbeb89305768bbbb8cc31a8d3.png" data-lightbox="roadtrip" data-title="Psat Act Comparison Table High School Counseling Sat Tips School Counseling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/46/c5/2346c55fbeb89305768bbbb8cc31a8d3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDh24gv5Qop_IUsiuHj_Pfa6H8ftGksCUxfA';" alt="Psat Act Comparison Table High School Counseling Sat Tips School Counseling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Psat Act Comparison Table High School Counseling Sat Tips School Counseling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/97/c7/dd97c78147805584b9c7a2d3385bd9dd.jpg" data-lightbox="roadtrip" data-title="Ncaa And Naia Eligibility Centers Student Conversation Student Athlete Student Ncaa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/97/c7/dd97c78147805584b9c7a2d3385bd9dd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGLEXBBeI_ZlD7bcxKvtXDm8sJkkV7M2paSQ';" alt="Ncaa And Naia Eligibility Centers Student Conversation Student Athlete Student Ncaa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa And Naia Eligibility Centers Student Conversation Student Athlete Student Ncaa</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/23/46/c5/2346c55fbeb89305768bbbb8cc31a8d3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGLEXBBeI_ZlD7bcxKvtXDm8sJkkV7M2paSQ';" alt="Ncaa And Naia Eligibility Centers Student Conversation Student Athlete Student Ncaa">
+										<div class="card-body">
+						<h3 class="h5"><b>A combined SAT score is calculated by adding reading and math subscores.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ncaa eligibility test scores</strong>. 
+								
+																	Rather than taking the test Division I athletes enrolling during the 2021-22 academic year will be asked to maintain a 23 GPA throughout the 2021-22 academic year in 16 NCAA-approved courses. 
+																	Division I GPA required to be eligible for competition on or after August 1 2016 is 2300 corresponding test-score requirements are listed on Sliding Scale B on Page No. 
+																	2 of this sheet. 
+																	There are two ways to send your score reports to the NCAA Eligibility Center. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Testing requirements vary according to your GPA. 
+																	To send your scores directly to the NCAA Eligibility Centre use the code number 9999 If you do not send your scores directly at the time of testing then there is an 1125USD fee to have the scores sent from the College Board later on. 
+																	2020 mens college basketball calendar. 
+																	The sliding scale is designed so that if you have a higher. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	317-968-5100 Toll-free phone number US. 
+																	The NCAA Eligibility Center is waiving the standardized test score requirement for incoming freshman student-athletes in both Division I and Division II for the 2020-21 academic year because of the. 
+																	NCAA Eligibility Center Certification Processing 1802 Alonzo Watford Sr. 
+																	The NCAA Eligibility Center is waiving the standardized test score requirement for incoming freshman student-athletes in both Division I and Division II for the 2020-21 academic year because of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Box 7136 Indianapolis IN 46207 OvernightExpress Mailing Address. 
+																	Test Scores When you register for the SAT or ACT use the NCAA Eligibility Center code of 9999 so your scores are sent directly to the Eligibility Center from the testing agency. 
+																	The NCAA Eligibility Center is waiving the standardized test score requirement for incoming freshman student-athletes in both Division I and Division II for the 2020-21 academic year because of the coronavirus pandemic the governing body announced Friday. 
+																	Questions about initial eligibility can be directed to the NCAA Eligibility Center at 877-262-1492. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The lower your GPA the higher youll need to score on your ACT. 
+																	Test scores on transcripts will not be used in your academic certification. 
+																	NCAA college football scores All Conferences Top 25 AAC ACC Big 12 Big South Big Ten C-USA FBS Independent FCS Independent MAC Mountain West MVFC OVC Pac-12 SEC SoCon Southland Sun Belt Weeks. 
+																	After submitting the request your official test scores will be sent to the NCAA Eligibility Center and the test score and status report sections of your account will be updated. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In addition to taking a full load of core courses Division I athletes need to achieve a 23 GPA on a 40 score and meet standardized testing requirements. 
+																	The NCAA only accepts official SAT scores straight from College Board. 
+																	Remember the NCAA GPA is calculated using NCAA core courses only. 
+																	Callers and Canada except Quebec. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Academic eligibility is determined using a combination of their SATACT test scores high school course work and their GPA as calculated using what are called the NCAA Corse Courses. 
+																	When you are trying to determine the GPA or SATACT test scores you need to be NCAA eligible you must reference the NCAA sliding scale. 
+																	The NCAA determines scholar-athletes eligibility based on their academic preparedness and amateurism status. 
+																	Schedule latest COVID-19 news for the 2020-21 season. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can send your scores to the NCAA for free up to nine days after the test date. 
+																	Schedule first games NCAA tournament dates. 
+																	The code is 9999 to select the NCAA Eligibility Center as a score recipient either during exam registration or after exam registration. 
+																	Be advised this will cost 12 but there are fee waivers available. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However if its been more than nine days you will need to go to the college board website to have test scores sent. 
+																	Standardized test scores are excluded from these criteria. 
+																	NCAA eligibility requirements are most stringent for Division I athletes. 
+																	The NCAA Eligibility Center is waiving the standardized test score requirement for incoming freshman student-athletes in both Division I and Division II for the 2020-21 academic year because of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Division II core GPA requirement is a minimum of 2000. 
+																	NCAA Eligibility Center Certification Processing PO. 
+																	Drive Indianapolis IN 46202 Customer Service Hours. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/b8/77/99/b87799cba400d4c7a81601b9d40a5675.jpg" data-lightbox="roadtrip" data-title="Comparing The Ncaa And Naia Student Athlete Career Readiness Student">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/b8/77/99/b87799cba400d4c7a81601b9d40a5675.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLPE_qyD81_uH0TlZnWFQQMwakchqMW26wRg';" alt="Comparing The Ncaa And Naia Student Athlete Career Readiness Student">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Comparing The Ncaa And Naia Student Athlete Career Readiness Student</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/5c/5c/c15c5c48e6394675d8cd2239b07de193.jpg" data-lightbox="roadtrip" data-title="Graphic High School Athletes Per Ncaa Scholarship Scholarships Athletic Scholarships Rowing Workout">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/5c/5c/c15c5c48e6394675d8cd2239b07de193.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsLERpUSwPOC6qorDfeAAux6r_EXJoj4rzVA';" alt="Graphic High School Athletes Per Ncaa Scholarship Scholarships Athletic Scholarships Rowing Workout">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Graphic High School Athletes Per Ncaa Scholarship Scholarships Athletic Scholarships Rowing Workout</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/fa/2a/7d/fa2a7da4c5f9f35a59df06bd3583a8f0.jpg" data-lightbox="roadtrip" data-title="Sat Vs Act High School Help School Study Tips Scholarships For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/fa/2a/7d/fa2a7da4c5f9f35a59df06bd3583a8f0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRijeqfz9WEnS9ip5bQLw41HBCVw0Ol8BUTFg';" alt="Sat Vs Act High School Help School Study Tips Scholarships For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sat Vs Act High School Help School Study Tips Scholarships For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/19/3d/9a193da3eeceebc1cf5ae66c41f3d412.jpg" data-lightbox="roadtrip" data-title="Understanding Standardized Testing High School Counseling College Counseling High School Reading">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/19/3d/9a193da3eeceebc1cf5ae66c41f3d412.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxhUnl9AgfXJNJ5SGs3f6O_O_YNkaDBVAINw';" alt="Understanding Standardized Testing High School Counseling College Counseling High School Reading">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Understanding Standardized Testing High School Counseling College Counseling High School Reading</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/dd/96/9ddd9612d016882d1a4cbc1d3f17fce5.png" data-lightbox="roadtrip" data-title="Ncaa Gpa Requirements Academics College Recruiting Gpa College Recruiting High School Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/dd/96/9ddd9612d016882d1a4cbc1d3f17fce5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxotcZC_5eQuLYvlOK0_Dw1uctMBkrHiTPRA';" alt="Ncaa Gpa Requirements Academics College Recruiting Gpa College Recruiting High School Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Gpa Requirements Academics College Recruiting Gpa College Recruiting High School Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/64/ee/bb64eea0cdd58313334afb397134badc.png" data-lightbox="roadtrip" data-title="College Credit Opportunities In 2020 College Credit High School Programs High School Counseling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/64/ee/bb64eea0cdd58313334afb397134badc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYF3c5HHEc4htJ_6MBgUPC3_mugFA2BXWv7Q';" alt="College Credit Opportunities In 2020 College Credit High School Programs High School Counseling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Credit Opportunities In 2020 College Credit High School Programs High School Counseling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/7d/46/357d460a2297e6b6899a4aeba85c72ea.png" data-lightbox="roadtrip" data-title="Do You Need An Ncaa Eligibility Center Profile Or Certification Account Recruiting Education College Recruiting School Softball High School Softball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/7d/46/357d460a2297e6b6899a4aeba85c72ea.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1rQfOyTjxYzSM3OVeaF4Nma3Qd0GqhEfFZw';" alt="Do You Need An Ncaa Eligibility Center Profile Or Certification Account Recruiting Education College Recruiting School Softball High School Softball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Do You Need An Ncaa Eligibility Center Profile Or Certification Account Recruiting Education College Recruiting School Softball High School Softball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/59/33/ea/5933ea41f200599ee742f691421c9e14.jpg" data-lightbox="roadtrip" data-title="Division 2 Baseball Colleges And Conferences College Rankings University Of Montevallo Tuskegee University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/59/33/ea/5933ea41f200599ee742f691421c9e14.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3eardHHX5gURDwZbbcSOrgjfUf6jWKOtn-g';" alt="Division 2 Baseball Colleges And Conferences College Rankings University Of Montevallo Tuskegee University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Division 2 Baseball Colleges And Conferences College Rankings University Of Montevallo Tuskegee University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/8e/01/d8/8e01d896120889993a4acc9cc8ecbdcb.jpg" data-lightbox="roadtrip" data-title="Faith Quotes Early Childhood Education Beauty Quotes Teacher Resumes Educational Technology H In 2020 College Admission High School Counseling Scholarships For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/8e/01/d8/8e01d896120889993a4acc9cc8ecbdcb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3SrDFATxaTyETUnDm0u_m31VgpUZNm1NRdw';" alt="Faith Quotes Early Childhood Education Beauty Quotes Teacher Resumes Educational Technology H In 2020 College Admission High School Counseling Scholarships For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Faith Quotes Early Childhood Education Beauty Quotes Teacher Resumes Educational Technology H In 2020 College Admission High School Counseling Scholarships For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/90/2f/80902fae98d44a6e00da582232d7376b.png" data-lightbox="roadtrip" data-title="How To Get Recruited If You Re From A Small High School Recruiting Education High School Recruitment College Recruiting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/90/2f/80902fae98d44a6e00da582232d7376b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ2ScVu589cV6ZRgGjfcg8D7ddvudBdqedUg';" alt="How To Get Recruited If You Re From A Small High School Recruiting Education High School Recruitment College Recruiting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Get Recruited If You Re From A Small High School Recruiting Education High School Recruitment College Recruiting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/9f/bd/d29fbd63b6861b1485657f4b893ec092.jpg" data-lightbox="roadtrip" data-title="Pin On Free Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/9f/bd/d29fbd63b6861b1485657f4b893ec092.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTplNP342y9Sow2NiBDzcz5xR-FbqSKsdLefw';" alt="Pin On Free Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Free Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/4a/f0/674af0990fa6cea1812491a451c391c2.jpg" data-lightbox="roadtrip" data-title="Emailing Coaches Infographic Coach Communications Best Practices For Contacting Coaches College Recruiting Coaching College Football Recruiting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/4a/f0/674af0990fa6cea1812491a451c391c2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8byqgQacA7oCQdn1WPFyGkTO1Y4CnHriR8g';" alt="Emailing Coaches Infographic Coach Communications Best Practices For Contacting Coaches College Recruiting Coaching College Football Recruiting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Emailing Coaches Infographic Coach Communications Best Practices For Contacting Coaches College Recruiting Coaching College Football Recruiting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/39/5e/24395e7bdbe2f9ab61ef55e1c7873eb2.jpg" data-lightbox="roadtrip" data-title="Virginia Tech College Football Recruiting Football Program College Football Teams">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/39/5e/24395e7bdbe2f9ab61ef55e1c7873eb2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTujvTgYmCIOZ5nn41XeoC3RCxfUzA1N0Y6Ow';" alt="Virginia Tech College Football Recruiting Football Program College Football Teams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Tech College Football Recruiting Football Program College Football Teams</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-of-dogs.html">Army Of Dogs</a></li>
+													<li class="list-group-item"><a href="/army-oct-ncoer-bullets.html">Army Oct Ncoer Bullets</a></li>
+													<li class="list-group-item"><a href="/army-post-office-chennai.html">Army Post Office Chennai</a></li>
+													<li class="list-group-item"><a href="/army-pay-office-ashton-under-lyne.html">Army Pay Office Ashton Under Lyne</a></li>
+													<li class="list-group-item"><a href="/army-post-office-salary.html">Army Post Office Salary</a></li>
+													<li class="list-group-item"><a href="/army-post-office-stuttgart.html">Army Post Office Stuttgart</a></li>
+													<li class="list-group-item"><a href="/army-postal-officer.html">Army Postal Officer</a></li>
+													<li class="list-group-item"><a href="/army-post-office-images.html">Army Post Office Images</a></li>
+													<li class="list-group-item"><a href="/army-post-office-agra-uttar-pradesh.html">Army Post Office Agra Uttar Pradesh</a></li>
+													<li class="list-group-item"><a href="/army-navy-dog-collars.html">Army Navy Dog Collars</a></li>
+													<li class="list-group-item"><a href="/army-post-office-ne-demek.html">Army Post Office Ne Demek</a></li>
+													<li class="list-group-item"><a href="/army-navy-delivery-hotline-bgc.html">Army Navy Delivery Hotline Bgc</a></li>
+													<li class="list-group-item"><a href="/army-policy-on-dogs.html">Army Policy On Dogs</a></li>
+													<li class="list-group-item"><a href="/army-pension-helpline.html">Army Pension Helpline</a></li>
+													<li class="list-group-item"><a href="/army-post-office-list.html">Army Post Office List</a></li>
+													<li class="list-group-item"><a href="/army-post-office-kolkata.html">Army Post Office Kolkata</a></li>
+													<li class="list-group-item"><a href="/army-post-office-jodhpur.html">Army Post Office Jodhpur</a></li>
+													<li class="list-group-item"><a href="/army-post-office-in-delhi.html">Army Post Office In Delhi</a></li>
+													<li class="list-group-item"><a href="/army-navy-lipa-delivery-hotline.html">Army Navy Lipa Delivery Hotline</a></li>
+													<li class="list-group-item"><a href="/army-post-office-belgaum.html">Army Post Office Belgaum</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

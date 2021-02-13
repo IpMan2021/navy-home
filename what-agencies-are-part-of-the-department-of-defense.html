@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Agencies Are Part Of The Department Of Defense - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Agencies Are Part Of The Department Of Defense",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/29/ed/1b/29ed1b998dc5c6a461cbdea6b98f3a68.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+agencies+are+part+of+the+department+of+defense",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Agencies Are Part Of The Department Of Defense</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Defense Security Cooperation Agency DSCA formerly Defense Security Assistance Agency Defense Security Service DSS formerly Defense Investigative Service Defense Technical Information Center DTIC Defense Threat Reduction Agency DTRA. Intradepartmental transactions occur when trading partners within the same department engage in business activitiessuch as the Department of the Army as a seller and the Department of the Navy as a buyer within DOD. Other Defense agencies include the Defense Advanced Research Projects Agency DARPA the Strategic Capabilities Office SCO the Defense Logistics Agency DLA the Missile Defense Agency MDA the Defense Health Agency DHA Defense Threat Reduction Agency DTRA the Defense Counterintelligence and Security Agency formerly the DSS and the Pentagon Force Protection Agency PFPA all of which are subordinate to the secretary of defense. <br>				
+			</p>
+										<a class="badge badge-warning" href="/dod-civilian-jobs-abroad.html">dod civilian jobs abroad</a>
+											<a class="badge badge-info" href="/dod-civilian-job-codes.html">dod civilian job codes</a>
+											<a class="badge badge-light" href="/dod-civilian-dress-code.html">dod civilian dress code</a>
+											<a class="badge badge-light" href="/dod-civilian-job-benefits.html">dod civilian job benefits</a>
+											<a class="badge badge-dark" href="/dod-civilian-education-benefits.html">dod civilian education benefits</a>
+											<a class="badge badge-secondary" href="/dod-civilian-holiday-calendar.html">dod civilian holiday calendar</a>
+											<a class="badge badge-dark" href="/dod-civilian-honorary-awards.html">dod civilian honorary awards</a>
+											<a class="badge badge-dark" href="/dod-civilian-humanitarian-award.html">dod civilian humanitarian award</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to pay a visit to the ideal blog.  Our site gives you suggestions for viewing the highest quality video and image content, search and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, particularly Youtube, so we recommend this video that you view.  You can also bring about supporting this website by sharing videos and graphics that you like on this blog on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this website.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/d6/95/3ad695fedf1514d92ff3c3828fb28ab0.gif" data-lightbox="roadtrip" data-title="Us Intelligence Community Members Intelligence Agency Army Intelligence Central Intelligence Agency">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/d6/95/3ad695fedf1514d92ff3c3828fb28ab0.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHmcukE9snsK84Dv2YBjkthG5BpaM4nSxuag';" alt="Us Intelligence Community Members Intelligence Agency Army Intelligence Central Intelligence Agency">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Intelligence Community Members Intelligence Agency Army Intelligence Central Intelligence Agency</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/83/93/52/8393524033b32d4d65db5ff148811703.jpg" data-lightbox="roadtrip" data-title="Department Of Defense Congressional Inquiry Defense Inquiry Department">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/83/93/52/8393524033b32d4d65db5ff148811703.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLRiWFL9IqhwQDjUTLik7N5bPv5vdkXzOhKQ';" alt="Department Of Defense Congressional Inquiry Defense Inquiry Department">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Department Of Defense Congressional Inquiry Defense Inquiry Department</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/b5/c6/59b5c68bbb797bc50fd7cc29afe3f7b2.jpg" data-lightbox="roadtrip" data-title="United States Department Of Defense How To Plan Business Plan Template Business Plan Template Free">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/b5/c6/59b5c68bbb797bc50fd7cc29afe3f7b2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_yhjyxaDMDgTiJUWbLD1XYjfKIiwL71QgfA';" alt="United States Department Of Defense How To Plan Business Plan Template Business Plan Template Free">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United States Department Of Defense How To Plan Business Plan Template Business Plan Template Free</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0d/b7/f5/0db7f5c455240f51515b78b0f3b5f66b--website.jpg" data-lightbox="roadtrip" data-title="U S Department Of Defense Defense Agency System">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0d/b7/f5/0db7f5c455240f51515b78b0f3b5f66b--website.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA-EDKalm3AmNuqI3zoTXLvWXjSVdEjskumg';" alt="U S Department Of Defense Defense Agency System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Department Of Defense Defense Agency System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/66/92/1c/66921cdf7eed8d13635f1d185d20c4f5.jpg" data-lightbox="roadtrip" data-title="Organization Of The United States Department Of Defense Dod Wikipedia How To Plan Business Plan Template Business Plan Template Free">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/66/92/1c/66921cdf7eed8d13635f1d185d20c4f5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSBzQZU7Di7QgeVvr8-L3pvWi67phA0-rGiA';" alt="Organization Of The United States Department Of Defense Dod Wikipedia How To Plan Business Plan Template Business Plan Template Free">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Organization Of The United States Department Of Defense Dod Wikipedia How To Plan Business Plan Template Business Plan Template Free</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/62/23/626223423ebbb9ca4d8993b3d5407fe1.jpg" data-lightbox="roadtrip" data-title="Defense Information System Agency Seal Plaque Agency Military Artwork Defense">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/62/23/626223423ebbb9ca4d8993b3d5407fe1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQ47zhe91H0WhzPFEGADib1aYh_h-Wg4qTw';" alt="Defense Information System Agency Seal Plaque Agency Military Artwork Defense">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Defense Information System Agency Seal Plaque Agency Military Artwork Defense</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/3a/d6/95/3ad695fedf1514d92ff3c3828fb28ab0.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQ47zhe91H0WhzPFEGADib1aYh_h-Wg4qTw';" alt="Defense Information System Agency Seal Plaque Agency Military Artwork Defense">
+										<div class="card-body">
+						<h3 class="h5"><b>Follow on MOD social media Follow on.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What agencies are part of the department of defense</strong>. 
+								
+																	Past 30 days 6 Past 90 days 6 Past 365 days 6 Type. 
+																	Department of Defense. 
+																	DOD is the nations largest employer. 
+																	DODs fiscal 1993 budget was 2591 billion. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The mission of the Department of Defense is to provide a lethal Joint Force to defend the security of our country and sustain. 
+																	19 million people serve on active duty in the Army Navy Air Force and Marine Corps. 
+																	As part of the standard process of preparing department-wide. 
+																	Departments agencies and public bodies Search for a department agency or public body. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Department of Defense provides the military forces needed to deter war and to protect the security of the United States. 
+																	The Department of Defense DOD has a long-standing material weakness related to intradepartmental transactions. 
+																	There are 23 Ministerial departments. 
+																	There were about 224000 combined personnel overseas in over 170 countries. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Department employs 1 million civilians and an additional 18 million citizens participate in the National Guard and Reserves. 
+																	The Department of Defense has many components aside from the service branches. 
+																	The list also includes more than two dozen defense agencies including the Defense Logistics Agency Defense Finance and Accounting Service Defense Contract Management Agency Defense Advanced. 
+																	This is a list of Agencies under the United States Department of Defense DoD which was formerly and shortly known as the National Military EstablishmentIts main responsibilities are to control the Armed Forces of the United States. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	WHS is the essential services provider for the Office of the Secretary of Defense OSD Department of Defense DoD agencies and offices in the national capital region. 
+																	Prime Ministers Office 10 Downing Street. 
+																	MOD is a ministerial department supported by 24 agencies and public bodies. 
+																	This is a list of Agencies under the United States Department of Defense DoD which was formerly and shortly known as the National Military EstablishmentIts main responsibilities are to control the Armed Forces of the United States. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Defense is the nations largest employerIt had about 136 million active duty personnel and 801000 reservists as of June 2020. 
+																	Explore trending topics experience DOD through interactive pieces engage by testing your wit with quizzes and observe DOD in action via photos and videos. 
+																	14 documents from 14 agencies 7 Notices 1 Proposed Rule 6 Rules Regular Filing. 
+																	Head to the redesigned Defensegov where you can learn all about the Defense Department. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Title Part Mentioning Locations Near. 
+																	Contact the Department of Defense public inquiries Local Offices. 
+																	World 5 Science Technology 3 Money 2 Comment Close Date. 
+																	The Department was established in 1947 and is currently divided into three major Departments - the Department of the Army Navy and Air Force- and has. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Read more about what we do Follow us. 
+																	Find some of the most requested links below or see a full list by category. 
+																	The Department was established in 1947 and is currently divided into three major Departmentsthe Department of the Army Navy and Air Forceand has a. 
+																	It also employed about 761000 civilians. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	From 02082021 to. 
+																	The reach of the new deputy national security adviser could also be enhanced by putting appointees in key agencies such as the Department of Defense the Office of Management and Budget and the Office of Science and Technology Policy who would be responsible for leading and coordinating innovation policy across the government. 
+																	Located in 48 states and 28 countries DLA provides supplies to the military services and supports their acquisition of weapons repair parts and other materiel. 
+																	That amount was about 18 percent of the total 1993 federal budget down from. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Updated on 845 AM on Friday February 5 2021. 
+																	The Defense Logistics Agency DLA is an agency in the United States Department of Defense with more than 26000 civilian and military personnel throughout the world. 
+																	Branches of the Department of Defense and the State Department were among the agencies hacked as part of a massive espionage attack aimed at the federal government by a nation state that came to. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2e/34/1d/2e341dd8fa8f469227b2bbc52033b68f.png" data-lightbox="roadtrip" data-title="Pin By Daniel Lopez On Team Stepps Effective Communication Communication Patient Safety">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2e/34/1d/2e341dd8fa8f469227b2bbc52033b68f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ72KXAgIodTMUPEwTtz_iW3YgZj4mc5dZFpQ';" alt="Pin By Daniel Lopez On Team Stepps Effective Communication Communication Patient Safety">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Daniel Lopez On Team Stepps Effective Communication Communication Patient Safety</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/29/ed/1b/29ed1b998dc5c6a461cbdea6b98f3a68.jpg" data-lightbox="roadtrip" data-title="Department Of Defense Pentagon Bronze Coin Mil Mall Com">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/29/ed/1b/29ed1b998dc5c6a461cbdea6b98f3a68.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSshk5XM1YHhuP-AjyEoI8BZhNA_qeCeHxmWw';" alt="Department Of Defense Pentagon Bronze Coin Mil Mall Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Department Of Defense Pentagon Bronze Coin Mil Mall Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/d0/46/40d0463ca4aa5abd8da41b2096ae0da5.jpg" data-lightbox="roadtrip" data-title="Dep Of Def Organization How To Plan Business Plan Template Business Plan Template Free">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/d0/46/40d0463ca4aa5abd8da41b2096ae0da5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiWUVKxbBMycHlX_SEY62N9cnT2kCqzSYvUA';" alt="Dep Of Def Organization How To Plan Business Plan Template Business Plan Template Free">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dep Of Def Organization How To Plan Business Plan Template Business Plan Template Free</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/20/84/912084b5d4d3de5c72a9e0defce141ed.jpg" data-lightbox="roadtrip" data-title="Department Of Defense Pentagon Force Protection Agency Pfpa Challenge Coin Ebay Challenge Coins Agency Coin Collecting Books">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/20/84/912084b5d4d3de5c72a9e0defce141ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ8E4L4YbXW9JVd4aheGbIedd1eiX_kKyXWQ';" alt="Department Of Defense Pentagon Force Protection Agency Pfpa Challenge Coin Ebay Challenge Coins Agency Coin Collecting Books">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Department Of Defense Pentagon Force Protection Agency Pfpa Challenge Coin Ebay Challenge Coins Agency Coin Collecting Books</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/89/44/9a894448bea5a451c76ec68c03ca6b00.jpg" data-lightbox="roadtrip" data-title="Dod Geocoin Department Of Defense Defense Department Geocaching">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/89/44/9a894448bea5a451c76ec68c03ca6b00.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSODfzSDQUFtOTwT0wI_CXjplEItdEHXtggFQ';" alt="Dod Geocoin Department Of Defense Defense Department Geocaching">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dod Geocoin Department Of Defense Defense Department Geocaching</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9c/34/2a/9c342ab631f3415eccbce6aacc9f5ffb.jpg" data-lightbox="roadtrip" data-title="Pin By Danielle Wehner On Medusa S Tale Stickers Custom Custom Stickers Round Stickers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9c/34/2a/9c342ab631f3415eccbce6aacc9f5ffb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRCT8fO2Z6ysAHLCpdKFE6cqdPz8GSEN_JIw';" alt="Pin By Danielle Wehner On Medusa S Tale Stickers Custom Custom Stickers Round Stickers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Danielle Wehner On Medusa S Tale Stickers Custom Custom Stickers Round Stickers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/26/cc/6a26cc197782d87213d60322bdf4b24a.jpg" data-lightbox="roadtrip" data-title="Department Of Defense Police Police Patches Police Police Badge">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/26/cc/6a26cc197782d87213d60322bdf4b24a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw1-sF_eZdKeRpje9T9Ccpg7_1twBcp90IPA';" alt="Department Of Defense Police Police Patches Police Police Badge">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Department Of Defense Police Police Patches Police Police Badge</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/0c/4c/b40c4c44c22b534b8a8062e6053d40c2.png" data-lightbox="roadtrip" data-title="Department Of Defense Insignia Of Unified Combatant Commands">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/0c/4c/b40c4c44c22b534b8a8062e6053d40c2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbiFfG9-DsNuzYWDE91h9H7CeqGeWgps8c6Q';" alt="Department Of Defense Insignia Of Unified Combatant Commands">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Department Of Defense Insignia Of Unified Combatant Commands</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/61/88/d26188f9247b7501868e90426dd57c7a.jpg" data-lightbox="roadtrip" data-title="Special Agent Department Of Defense Police Badge Fire Badge Military Insignia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/61/88/d26188f9247b7501868e90426dd57c7a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1CDHnab6_uRAgyBHuFpETBcTSUEjnxgS15A';" alt="Special Agent Department Of Defense Police Badge Fire Badge Military Insignia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Special Agent Department Of Defense Police Badge Fire Badge Military Insignia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/c5/22/56c522af174ca0589b02d37e0da9ecf6.png" data-lightbox="roadtrip" data-title="Dod It Spending Key Focus Areas And Benefits In 2020 Reviews Features Pricing Comparison Pat Research B2b Reviews Buying Guides Best Practices New Technology Business Intelligence Energy Technology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/c5/22/56c522af174ca0589b02d37e0da9ecf6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrddwZVNS2Kg0hP7O7Qjo_Qvb5KVrp4sknJA';" alt="Dod It Spending Key Focus Areas And Benefits In 2020 Reviews Features Pricing Comparison Pat Research B2b Reviews Buying Guides Best Practices New Technology Business Intelligence Energy Technology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dod It Spending Key Focus Areas And Benefits In 2020 Reviews Features Pricing Comparison Pat Research B2b Reviews Buying Guides Best Practices New Technology Business Intelligence Energy Technology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3c/c4/7a/3cc47ab933462599ab21d59ed5e86281.jpg" data-lightbox="roadtrip" data-title="Elements Of The Us Department Of Defense Dod Will Conduct A Communications Interoperability Training Exercise November 4 6 Once Agai Defense Plaque Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3c/c4/7a/3cc47ab933462599ab21d59ed5e86281.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0iaKjEJqReNBKeEgKhYXG5PNRSZWKmFnjyQ';" alt="Elements Of The Us Department Of Defense Dod Will Conduct A Communications Interoperability Training Exercise November 4 6 Once Agai Defense Plaque Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Elements Of The Us Department Of Defense Dod Will Conduct A Communications Interoperability Training Exercise November 4 6 Once Agai Defense Plaque Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5a/f6/ee/5af6ee3cfdca259b19ce15d74e105620.jpg" data-lightbox="roadtrip" data-title="V31101 Carved 3d Wall Plaque Of The Seal Of The Us Department Of Defense Version 2 Carved Wood Plaque Carving Sign Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5a/f6/ee/5af6ee3cfdca259b19ce15d74e105620.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwGlxOeXrWe2Y9v_cSuAGCcQLzhIDF565zhw';" alt="V31101 Carved 3d Wall Plaque Of The Seal Of The Us Department Of Defense Version 2 Carved Wood Plaque Carving Sign Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">V31101 Carved 3d Wall Plaque Of The Seal Of The Us Department Of Defense Version 2 Carved Wood Plaque Carving Sign Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/fc/73/1f/fc731ffc4b1aa5cd0b42e325b36c5471.jpg" data-lightbox="roadtrip" data-title="Collector S Badge Dept Of Defense Defense Intelligence Agency Special Agent Listing In The Enamel Badges Pinbacks Badges Pinback Enamel Badges Badge Europe">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/fc/73/1f/fc731ffc4b1aa5cd0b42e325b36c5471.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Ip-vTsH9djzEwh_cgjl4Q0Lv0csTnMFWaw';" alt="Collector S Badge Dept Of Defense Defense Intelligence Agency Special Agent Listing In The Enamel Badges Pinbacks Badges Pinback Enamel Badges Badge Europe">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Collector S Badge Dept Of Defense Defense Intelligence Agency Special Agent Listing In The Enamel Badges Pinbacks Badges Pinback Enamel Badges Badge Europe</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/dod-civilian-employee-fitness-program.html">Dod Civilian Employee Fitness Program</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-jobs-korea.html">Dod Civilian Jobs Korea</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-jobs-in-texas.html">Dod Civilian Jobs In Texas</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-employees-who-violate-the-standards.html">Dod Civilian Employees Who Violate The Standards</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-jobs-san-diego.html">Dod Civilian Jobs San Diego</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-flexible-work-schedule.html">Dod Civilian Flexible Work Schedule</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-employee-retirement.html">Dod Civilian Employee Retirement</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-employee-education-benefits.html">Dod Civilian Employee Education Benefits</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-divorce-overseas.html">Dod Civilian Divorce Overseas</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-leave-donation-program.html">Dod Civilian Leave Donation Program</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-leave.html">Dod Civilian Leave</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-free-tsa-precheck.html">Dod Civilian Free Tsa Precheck</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-jobs-overseas.html">Dod Civilian Jobs Overseas</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-employee-discounts.html">Dod Civilian Employee Discounts</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-employees-covid-vaccine.html">Dod Civilian Employees Covid Vaccine</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-housing-allowance-hawaii.html">Dod Civilian Housing Allowance Hawaii</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-leave-of-absence.html">Dod Civilian Leave Of Absence</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-firefighter-jobs.html">Dod Civilian Firefighter Jobs</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-gs-pay-scale.html">Dod Civilian Gs Pay Scale</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-jobs-in-florida.html">Dod Civilian Jobs In Florida</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

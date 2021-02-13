@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Home Depot Military Discount Dependents - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Home Depot Military Discount Dependents",
+  "datePublished": "2021-02-13",
+  "image": "https://www.operationmilitarykids.org/wp-content/images/omk-sound-cloud.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=home+depot+military+discount+dependents",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Home Depot Military Discount Dependents</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">10 discount to ALL military personnel during many national. I always was allowed to use the discount by showing my USAF DOD Green Active Duty or my Pink Active Reserve ID Card. Home Depots 10 discount is applicable to purchases with a 500 maximum discount. <br>				
+			</p>
+										<a class="badge badge-warning" href="/us-army-campaign-hat.html">us army campaign hat</a>
+											<a class="badge badge-warning" href="/us-army-boonie-hat-regulations.html">us army boonie hat regulations</a>
+											<a class="badge badge-danger" href="/us-army-cecom-address.html">us army cecom address</a>
+											<a class="badge badge-success" href="/united-states-army-corporate-address.html">united states army corporate address</a>
+											<a class="badge badge-info" href="/us-army-black-knights-hat.html">us army black knights hat</a>
+											<a class="badge badge-dark" href="/us-army-alaska-public-affairs.html">us army alaska public affairs</a>
+											<a class="badge badge-secondary" href="/us-air-force-headquarters-staff.html">us air force headquarters staff</a>
+											<a class="badge badge-dark" href="/us-army-address-mail.html">us army address mail</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to pay a visit to the right site.  Our website provides you with suggestions for viewing the maximum quality video and picture content, search and locate more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, particularly Youtube, so we recommend this video that you view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://themilitarywallet.com/wp-content/uploads/2013/03/home-depot-lowes-military-discounts-getstencil-580x387.jpg" data-lightbox="roadtrip" data-title="Home Depot And Lowe S 10 Military Discount Policy Year Round">
+											<img class="card-img v-image ads-img " src="https://themilitarywallet.com/wp-content/uploads/2013/03/home-depot-lowes-military-discounts-getstencil-580x387.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZrShnvdGHkCp3InxjCzOcUg0FVR5gD8Ddyg';" alt="Home Depot And Lowe S 10 Military Discount Policy Year Round">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Depot And Lowe S 10 Military Discount Policy Year Round</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/0f/de/4e0fdeb7d0c5638fda4d7c22f48f4319.png" data-lightbox="roadtrip" data-title="Pinned November 9th Military Id 25 Off Everything At Bed Bath Beyond Thecouponsapp Shopping Coupons Bath And Beyond Coupon Bed Bath And Beyond">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/0f/de/4e0fdeb7d0c5638fda4d7c22f48f4319.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRODR-RPsb3JpXP-w8zWLkU_z9rppRFeXI9yw';" alt="Pinned November 9th Military Id 25 Off Everything At Bed Bath Beyond Thecouponsapp Shopping Coupons Bath And Beyond Coupon Bed Bath And Beyond">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pinned November 9th Military Id 25 Off Everything At Bed Bath Beyond Thecouponsapp Shopping Coupons Bath And Beyond Coupon Bed Bath And Beyond</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/8a/91/cb8a918fb0686c85145be85e0cc7048e.jpg" data-lightbox="roadtrip" data-title="Finish Line Has A 20 Military Discount For Active Duty And Military Families Our Local Store Confirmed That T Military Discounts Finish Line Retired Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/8a/91/cb8a918fb0686c85145be85e0cc7048e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvOY0yGjoY-MThK3dRoW6SmhjEUswDUmxWhA';" alt="Finish Line Has A 20 Military Discount For Active Duty And Military Families Our Local Store Confirmed That T Military Discounts Finish Line Retired Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Finish Line Has A 20 Military Discount For Active Duty And Military Families Our Local Store Confirmed That T Military Discounts Finish Line Retired Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/03/3f/34033f74e6495cea1ef15a46a164b957.jpg" data-lightbox="roadtrip" data-title="Military Careers At The Home Depot Civilian Jobs Home Depot Military Career Search Military Careers Career Search Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/03/3f/34033f74e6495cea1ef15a46a164b957.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFpEv-IZZriRxJzxT8G4yL_0TsREA3ZttrlA';" alt="Military Careers At The Home Depot Civilian Jobs Home Depot Military Career Search Military Careers Career Search Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Careers At The Home Depot Civilian Jobs Home Depot Military Career Search Military Careers Career Search Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/bb/e5/1bbbe5cc1271b5eefac548d28919ff9a.png" data-lightbox="roadtrip" data-title="Pin On Veteran S">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/bb/e5/1bbbe5cc1271b5eefac548d28919ff9a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHCucZc8SSGnbO_ayg6_zcFrutJqDxfAR-EA';" alt="Pin On Veteran S">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Veteran S</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.rather-be-shopping.com/wp-content/uploads/2019/08/home-depot-military-discount.jpg" data-lightbox="roadtrip" data-title="Home Depot Military Discount We Cut Through The Crap To Help You Save">
+											<img class="card-img v-image ads-img " src="https://www.rather-be-shopping.com/wp-content/uploads/2019/08/home-depot-military-discount.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnVO57C_8MkKickyWpIBEzY-qzckU6aceEcA';" alt="Home Depot Military Discount We Cut Through The Crap To Help You Save">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Depot Military Discount We Cut Through The Crap To Help You Save</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://themilitarywallet.com/wp-content/uploads/2013/03/home-depot-lowes-military-discounts-getstencil-580x387.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnVO57C_8MkKickyWpIBEzY-qzckU6aceEcA';" alt="Home Depot Military Discount We Cut Through The Crap To Help You Save">
+										<div class="card-body">
+						<h3 class="h5"><b>The discount is not available for online purchases.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Home depot military discount dependents</strong>. 
+								
+																	According to their website Home Depot offers a 10 off military discount on regularly priced items for in-store purchases for active duty retired military National Guard and Reserve at participating locations with government military ID card. 
+																	These companies offer military discounts everyday however they have changed the eligibility a few times so the military discounts may only be available to a segment of the milita. 
+																	10 Off Home Depot Military Discount November 2020. 
+																	Make sure to check back next year for more discounts. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Home Depot Military Discount Veterans Advantage 2 days ago The Home Depot does not post an official military discount policy online or in their stores and it may be unevenly handled at checkout. 
+																	Customers are required to show a valid government-issued military ID card to redeem this offer. 
+																	10 off 2 days ago 10 Off Home Depot Military Discount is launched by Home Depot for military personel with a long historyGennerally this offer can be combined with other discounts it means there is an extra discount for military personelThe latest December 2020 10 Off Home Depot Military Discount coupons are collected for your try. 
+																	10 off 2 days ago 10 Off Home Depot Military Discount is launched by Home Depot for military personel with a long historyGennerally this offer can be combined with other discounts it means there is an extra discount for military personelThe latest November 2020 10 Off Home Depot Military Discount coupons are collected for your try. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	One of the biggest complains we have heard is about Home Depot and Lowes discounts. 
+																	Military discount The Home Depot Community. 
+																	This discount is available every day to. 
+																	A military ID must be shown at check-out. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Home Depot Military Discounts Unlike Lowes the Home Depot does not have an official military discount printed anywhere on their website. 
+																	Home Depot offers Veterans a special discount every year at Veterans Day. 
+																	Here is what we understand to be the general restrictions on the Home Depot 10 OFF military discount. 
+																	Military dependents anyone with a DoD issued military or dependent ID Veterans proof of service may or may not be required. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	10 discount for all active-duty reserve retiree and disabled service members and their dependents from the six US. 
+																	2 days ago Home Depot - 10 OFF Home Depot offers a 10 OFF military discount on regularly priced merchandise for in-store purchases for active duty retired military and reservists at participating locations. 
+																	Those days include the following. 
+																	Military Discount Eligibility My understanding was that Home Depot offered a 10 military discount to Veterans and Retired Veterans as well as ReserveNational Guard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Air Force Army Coast Guard Marine Corps National Guard Air and Army and Navy Holiday Match Policy. 
+																	CODES 23 days ago Every Day Match Policy. 
+																	This has created a lot of confusion as vets and active military try to figure out what if any military discount exists. 
+																	Veterans can get an extra 10 off any regularly priced items in-store only. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Home Depot does offer a discount for those in the military. 
+																	Confirm your eligibility by simply completing the form below for this special military offer. 
+																	Status Status Active Duty VeteranRetiree ReserveNational Guard Registered Dependent First Name Last Name Email Address Mailing Address AptSuiteOther City State Zip Code Birth Date BIRTH_DATEmonth BIRTH_DATEday BIRTH. 
+																	Every Day Match Policy. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All fields marked with an asterisk are required. 
+																	Air Force Army Coast Guard Marine Corps National Guard Air and Army and Navy Holiday Match Policy. 
+																	Redemption Type In store Available to Active duty Retiree Dependent The Home Depot offers a 10 military discount on in-store purchases on select items. 
+																	There are some exclusions including installation products or services Gift Cards special buy appliances and some commodities such as building materials. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	10 Off Home Depot Military Discount December 2020. 
+																	Home Depot - 10 OFF Home Depot offers a 10 OFF military discount on regularly priced merchandise for in-store purchases for active duty retired military and reservists at participating locations. 
+																	Customers are required to show a valid government-issued military ID card to redeem this offer. 
+																	Thats why spouses love the 10 year-round military discounts offered at both Home Depot and Lowes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	10 discount to ALL military personnel during many national holidays such as July 4th Memorial Day and Veterans Day as a. 
+																	If your house needs it Home Depot and Lowes will have it. 
+																	10 discount for all active-duty reserve retiree and disabled service members and their dependents from the six US. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/db/5d/bbdb5de68a2a791b26f59c576ec8f065.jpg" data-lightbox="roadtrip" data-title="Old Time Pottery Has A 10 Military And Veteran Discount For Active Duty Veterans And Retired Military Old Time Pottery Veterans Discounts Military Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/db/5d/bbdb5de68a2a791b26f59c576ec8f065.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPrYXM0Cn5bOGdL1h7vBWql3ICGhpnlsQQZg';" alt="Old Time Pottery Has A 10 Military And Veteran Discount For Active Duty Veterans And Retired Military Old Time Pottery Veterans Discounts Military Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Old Time Pottery Has A 10 Military And Veteran Discount For Active Duty Veterans And Retired Military Old Time Pottery Veterans Discounts Military Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/7f/63/ef7f638ed3c833c4931266ffac05aa72.jpg" data-lightbox="roadtrip" data-title="Thank You To Home Depot For Helping Veterans In Need Today Teamdepot Assisted Two Veterans With New Ramps In The C Outdoor Decor Outdoor Home Depot">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/7f/63/ef7f638ed3c833c4931266ffac05aa72.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZauna1ulzP8DiK1dr9jUWu-eQKTclQPJYow';" alt="Thank You To Home Depot For Helping Veterans In Need Today Teamdepot Assisted Two Veterans With New Ramps In The C Outdoor Decor Outdoor Home Depot">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thank You To Home Depot For Helping Veterans In Need Today Teamdepot Assisted Two Veterans With New Ramps In The C Outdoor Decor Outdoor Home Depot</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.operationmilitarykids.org/wp-content/images/omk-sound-cloud.png" data-lightbox="roadtrip" data-title="Home Depot Military Discount Updated 2020 Veterans Day">
+											<img class="card-img v-image ads-img " src="https://www.operationmilitarykids.org/wp-content/images/omk-sound-cloud.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReILwCR86v4cEg6PFFv27qKbiMDooNyovQsw';" alt="Home Depot Military Discount Updated 2020 Veterans Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Depot Military Discount Updated 2020 Veterans Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/38/1d/36381d97b5755ce4a02423acd52a133c.jpg" data-lightbox="roadtrip" data-title="Introducing The Spring 17 Modern Icons Featuring Luke Rockhold Devon Windsor Shop The Campaign Link In Bio Fr The Frye Company Frye Leather Boots Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/38/1d/36381d97b5755ce4a02423acd52a133c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe3nl97WEAM9QEpeu8_3eTM2AUW0o7aL7xnA';" alt="Introducing The Spring 17 Modern Icons Featuring Luke Rockhold Devon Windsor Shop The Campaign Link In Bio Fr The Frye Company Frye Leather Boots Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Introducing The Spring 17 Modern Icons Featuring Luke Rockhold Devon Windsor Shop The Campaign Link In Bio Fr The Frye Company Frye Leather Boots Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/a9/b4/91a9b4d6f8ef129a444e4a6c13d7936b.jpg" data-lightbox="roadtrip" data-title="Veterans Resources A Community For Military Veterans American Flag Background American Flag Etiquette American Flag">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/a9/b4/91a9b4d6f8ef129a444e4a6c13d7936b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRWGXys-lkSWPhxcra4VmSnM8ZWH0fqxX7WQ';" alt="Veterans Resources A Community For Military Veterans American Flag Background American Flag Etiquette American Flag">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Resources A Community For Military Veterans American Flag Background American Flag Etiquette American Flag</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/33/97/303397d6a3f4ea47d11d6cf117681f53.jpg" data-lightbox="roadtrip" data-title="Thunderbolt One Of My Favorites Kennywood Park Pittsburgh Pa Amusement Park Rides Roller Coaster Park">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/33/97/303397d6a3f4ea47d11d6cf117681f53.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyUnZykxIlln_wiKKi9mJepdm8xRnB9GyArw';" alt="Thunderbolt One Of My Favorites Kennywood Park Pittsburgh Pa Amusement Park Rides Roller Coaster Park">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thunderbolt One Of My Favorites Kennywood Park Pittsburgh Pa Amusement Park Rides Roller Coaster Park</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://hip2save.com/wp-content/uploads/2018/11/Target-military-member-discount.jpg?resize=1024%2C538&amp;strip=all" data-lightbox="roadtrip" data-title="100 Best Military Discounts Freebies Deals Official Hip2save">
+											<img class="card-img v-image ads-img " src="https://hip2save.com/wp-content/uploads/2018/11/Target-military-member-discount.jpg?resize=1024%2C538&amp;strip=all" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCIvPl52wigTl73rGuLb8qNPr83OGyCPJPig';" alt="100 Best Military Discounts Freebies Deals Official Hip2save">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">100 Best Military Discounts Freebies Deals Official Hip2save</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://idme-marketplace.s3.amazonaws.com/variants/LSdpBf8peyh83MgfHDa4aSLF/4b25b3050b09afc59f0b4ca74280f54997be8488e7984a5e1d3989b832fd8d5a" data-lightbox="roadtrip" data-title="Home Depot Military Discounts Id Me">
+											<img class="card-img v-image ads-img " src="https://idme-marketplace.s3.amazonaws.com/variants/LSdpBf8peyh83MgfHDa4aSLF/4b25b3050b09afc59f0b4ca74280f54997be8488e7984a5e1d3989b832fd8d5a" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyfblCkc-hEW1EmnzLqjlGoC5LKx-BWdhYbg';" alt="Home Depot Military Discounts Id Me">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Depot Military Discounts Id Me</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/b0/1d/89b01daa03eb10b062d94d60806f9c1f.jpg" data-lightbox="roadtrip" data-title="New Game We Have Some Trivial Questions For You How Smart Are You Put Your Answer In The Comments In 2020 This Or That Questions News Games Trivial">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/b0/1d/89b01daa03eb10b062d94d60806f9c1f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo1OGWeMmHzPmXhKhirnL_xWzG0Ya5QE2tGg';" alt="New Game We Have Some Trivial Questions For You How Smart Are You Put Your Answer In The Comments In 2020 This Or That Questions News Games Trivial">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Game We Have Some Trivial Questions For You How Smart Are You Put Your Answer In The Comments In 2020 This Or That Questions News Games Trivial</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/2b/ec/ae2becba51f968dbd4297e7d27a877a6.jpg" data-lightbox="roadtrip" data-title="Uss General J C Breckenridge Google Search Pictures Images Military Veterans Breckenridge">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/2b/ec/ae2becba51f968dbd4297e7d27a877a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSA-NICYD8jreN4qZn-5Ga8YNvtT9DLjpLiA';" alt="Uss General J C Breckenridge Google Search Pictures Images Military Veterans Breckenridge">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uss General J C Breckenridge Google Search Pictures Images Military Veterans Breckenridge</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="zEZcKUuPC3DRkM" data-lightbox="roadtrip" data-title="Http Www Ci Milpitas Ca Gov Pdfs Commissions Vc Militarydiscounts Pdf">
+											<img class="card-img v-image ads-img " src="zEZcKUuPC3DRkM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYpF7Tn0p2chBJlv2DcfWqzLpbSnuZpZCQXA';" alt="Http Www Ci Milpitas Ca Gov Pdfs Commissions Vc Militarydiscounts Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Ci Milpitas Ca Gov Pdfs Commissions Vc Militarydiscounts Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://themilitarywallet.com/wp-content/uploads/2018/09/att-military-discount-580x387.jpg" data-lightbox="roadtrip" data-title="At T Military And Veterans Discount 25 Off The Unlimited More Plan">
+											<img class="card-img v-image ads-img " src="https://themilitarywallet.com/wp-content/uploads/2018/09/att-military-discount-580x387.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjil8lElotxFAlTV1wLPCTsrDksjQKRUGRAw';" alt="At T Military And Veterans Discount 25 Off The Unlimited More Plan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">At T Military And Veterans Discount 25 Off The Unlimited More Plan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://themilitarywallet.com/wp-content/uploads/2018/09/verizon-military-discount-580x387.jpg" data-lightbox="roadtrip" data-title="Verizon Military Discount Savings On Verizon Wireless And Verizon Fios">
+											<img class="card-img v-image ads-img " src="https://themilitarywallet.com/wp-content/uploads/2018/09/verizon-military-discount-580x387.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT-npLhTSFxwTK1EvnlWYQQER8ODdNNhJIKA';" alt="Verizon Military Discount Savings On Verizon Wireless And Verizon Fios">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Verizon Military Discount Savings On Verizon Wireless And Verizon Fios</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/dod-enlistment-medical-standards.html">Dod Enlistment Medical Standards</a></li>
+													<li class="list-group-item"><a href="/dod-health-care-under-international-agreements.html">Dod Health Care Under International Agreements</a></li>
+													<li class="list-group-item"><a href="/dod-medical-device-requirements.html">Dod Medical Device Requirements</a></li>
+													<li class="list-group-item"><a href="/dod-medical-command.html">Dod Medical Command</a></li>
+													<li class="list-group-item"><a href="/dod-medical-exam-form.html">Dod Medical Exam Form</a></li>
+													<li class="list-group-item"><a href="/dod-gs-pay-raise-2020.html">Dod Gs Pay Raise 2020</a></li>
+													<li class="list-group-item"><a href="/dod-medical-contractor-jobs.html">Dod Medical Contractor Jobs</a></li>
+													<li class="list-group-item"><a href="/dod-covid-statistics.html">Dod Covid Statistics</a></li>
+													<li class="list-group-item"><a href="/dod-instruction-medical-standards.html">Dod Instruction Medical Standards</a></li>
+													<li class="list-group-item"><a href="/dod-civilians-overseas-benefits.html">Dod Civilians Overseas Benefits</a></li>
+													<li class="list-group-item"><a href="/dod-combat-zone-tax-exclusion-locations.html">Dod Combat Zone Tax Exclusion Locations</a></li>
+													<li class="list-group-item"><a href="/dod-fiscal-year-2020-budget-proposal.html">Dod Fiscal Year 2020 Budget Proposal</a></li>
+													<li class="list-group-item"><a href="/dod-civilians-killed-in-afghanistan.html">Dod Civilians Killed In Afghanistan</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-verizon-discount.html">Dod Civilian Verizon Discount</a></li>
+													<li class="list-group-item"><a href="/dod-gs-pay-raise-2021.html">Dod Gs Pay Raise 2021</a></li>
+													<li class="list-group-item"><a href="/dod-civilians-patriot-express.html">Dod Civilians Patriot Express</a></li>
+													<li class="list-group-item"><a href="/dod-medical-grants.html">Dod Medical Grants</a></li>
+													<li class="list-group-item"><a href="/dod-demographics-2019.html">Dod Demographics 2019</a></li>
+													<li class="list-group-item"><a href="/dod-medical-ethics-center.html">Dod Medical Ethics Center</a></li>
+													<li class="list-group-item"><a href="/dod-fy-2020-budget-approval.html">Dod Fy 2020 Budget Approval</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

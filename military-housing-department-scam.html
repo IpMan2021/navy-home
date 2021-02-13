@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Housing Department Scam - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Housing Department Scam",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/59/c9/fd/59c9fdcaa4bdd7a2c5643963be636448.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+housing+department+scam",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Housing Department Scam</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">See BBB rating reviews complaints more. Beware of these frauds and scams when buying or foreclosing on a home. The Marine Corps is calling individuals to ask if. <br>				
+			</p>
+										<a class="badge badge-warning" href="/texas-military-department-letterhead.html">texas military department letterhead</a>
+											<a class="badge badge-dark" href="/the-british-army-salary.html">the british army salary</a>
+											<a class="badge badge-danger" href="/the-united-states-army-medical-department-journal.html">the united states army medical department journal</a>
+											<a class="badge badge-primary" href="/the-us-coast-guard-became-part-of-the-department-of-homeland-security-in-what-year.html">the us coast guard became part of the department of homeland security in what year</a>
+											<a class="badge badge-dark" href="/texas-military-department-website.html">texas military department website</a>
+											<a class="badge badge-secondary" href="/uk-army-dog-tag-format.html">uk army dog tag format</a>
+											<a class="badge badge-danger" href="/thunder-bay-military-family-resource-centre.html">thunder bay military family resource centre</a>
+											<a class="badge badge-dark" href="/the-salvation-army-press-office.html">the salvation army press office</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to visit the ideal blog.  Our site provides you with hints for viewing the maximum quality video and image content, search and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this video that you see.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.gao.gov/extracts/e517bb049767f6e6f83e59b8830bf0c7/rId15_image5.png" data-lightbox="roadtrip" data-title="U S Gao Military Housing Dod Needs To Strengthen Oversight And Clarify Its Role In The Management Of Privatized Housing">
+											<img class="card-img v-image ads-img " src="https://www.gao.gov/extracts/e517bb049767f6e6f83e59b8830bf0c7/rId15_image5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNLNcFFsaUt-U8vWUJbCGvDhzUxm5fMe2kfw';" alt="U S Gao Military Housing Dod Needs To Strengthen Oversight And Clarify Its Role In The Management Of Privatized Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Gao Military Housing Dod Needs To Strengthen Oversight And Clarify Its Role In The Management Of Privatized Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/b2/ea/e0b2ea7748238f55e55256ffa30fc137.jpg" data-lightbox="roadtrip" data-title="Accompanied Junior Enlisted Soldiers Get On Base Housing Priority In Europe Base Housing Military Housing Wiesbaden">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/b2/ea/e0b2ea7748238f55e55256ffa30fc137.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU7kCPemlC32uiVXSG-1Jj6sWdtudEevMqKw';" alt="Accompanied Junior Enlisted Soldiers Get On Base Housing Priority In Europe Base Housing Military Housing Wiesbaden">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Accompanied Junior Enlisted Soldiers Get On Base Housing Priority In Europe Base Housing Military Housing Wiesbaden</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/17308385/origin.png" data-lightbox="roadtrip" data-title="Ncis Investigating Camp Pendleton Base Housing Eviction Notices Amid Scandal We Are The Mighty">
+											<img class="card-img v-image ads-img " src="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/17308385/origin.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7zPSORmMXkgR5l0nv8txZKHEqN-CVC1z1uQ';" alt="Ncis Investigating Camp Pendleton Base Housing Eviction Notices Amid Scandal We Are The Mighty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncis Investigating Camp Pendleton Base Housing Eviction Notices Amid Scandal We Are The Mighty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/cf/07/58cf075248738dd1579240841721b110.jpg" data-lightbox="roadtrip" data-title="Nas Lemoore Stone Park Lincoln Military Housing E1 O4 Base Housing Military Housing Lincoln Military Housing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/cf/07/58cf075248738dd1579240841721b110.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT39B-Afhlkd3HMsH3czgLpDS6yq_TuvHjkNw';" alt="Nas Lemoore Stone Park Lincoln Military Housing E1 O4 Base Housing Military Housing Lincoln Military Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nas Lemoore Stone Park Lincoln Military Housing E1 O4 Base Housing Military Housing Lincoln Military Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/f8/37/40f837cda4af9aca388d883ace2fd2bf.jpg" data-lightbox="roadtrip" data-title="Nas Lemoore Reagan Park Lincoln Military Housing E1 O6 Base Housing Military Housing Lincoln Military Housing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/f8/37/40f837cda4af9aca388d883ace2fd2bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVPYlZ4RkAzvVIst3c3X8xmZ8jb21nlZZ3yw';" alt="Nas Lemoore Reagan Park Lincoln Military Housing E1 O6 Base Housing Military Housing Lincoln Military Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nas Lemoore Reagan Park Lincoln Military Housing E1 O6 Base Housing Military Housing Lincoln Military Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.housing.af.mil/portals/79/images/AFD-130424-091.jpg" data-lightbox="roadtrip" data-title="Joint Base San Antonio">
+											<img class="card-img v-image ads-img " src="https://www.housing.af.mil/portals/79/images/AFD-130424-091.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiX0k894r5E-0fW0eL1Lziep2Bv2tp0ClTwA';" alt="Joint Base San Antonio">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Joint Base San Antonio</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://bloximages.chicago2.vip.townnews.com/dcmilitary.com/content/tncms/assets/v3/editorial/9/e5/9e5b699a-ed19-55e4-b7b6-d7672fb63373/5cd32c9763b8b.image.jpg?resize=1396%2C922" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiX0k894r5E-0fW0eL1Lziep2Bv2tp0ClTwA';" alt="Joint Base San Antonio">
+										<div class="card-body">
+						<h3 class="h5"><b>Housing rental scams are increasing nationwide.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military housing department scam</strong>. 
+								
+																	Military families are a popular target in this long-running scheme that preys on loving grandparents. 
+																	Uncensored ad-free subscription-based entertainment created by veterans for veterans. 
+																	Stream now on Roku Xbox Google Play or Apple for only 499 monthly or 5499 annually. 
+																	Scammers pretend to be real estate agents and post fake ads for rental properties on websites sometimes promising military discounts and other incentives. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Learn how to spot moving fraud before. 
+																	Most moving companies are reputable businesses that do quality work. 
+																	Military Resource Referral Program. 
+																	The person is saying they are on base and the military logistics department are the ones who will be shipping out the car in about 2-3 days. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	After A Litany Of Hazards To Human Health Were Unearthed In Privatized Military Housing This Months Report Shows Corporate Housing Partners May Have Been Creating Fraudulent Maintenance Docs Ripping Off The Department Of Defense And Worse Our Heroes. 
+																	In an emotionally-charged congressional hearing centered on military families living conditions Sen. 
+																	Rental Property Scams These scams target military personnel looking for housing near a base. 
+																	These rewards are available for any government contract fraud and are not limited to military housing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you work for a construction company or other business involved in military housing and have knowledge of fraud contact us immediately. 
+																	And you have 5 days to decide if you want the car. 
+																	Please be aware that there are numerous scams involving. 
+																	WASHINGTON A panel of military leaders said Thursday that they are addressing mounting concerns of dilapidated housing across the country and subsequent health concerns with a series of new. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See BBB rating reviews complaints more. 
+																	The unapologetic laugh-out-loud original military streaming service. 
+																	Browse Forums Search SUBMIT BLOG SHOP Subscribe Sign in Subscribe Sign In MHAF Military Housing Assistance Fund Scam. 
+																	Richard Blumenthal D-Conn suggested there are clear indications of fraud in the program that administers payment to the contractors that provide housing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This organization is not BBB accredited. 
+																	And if so you will have to send payment thru ebay and if you decide not to take the car for any reason that your money will be. 
+																	0345 111 0000 office hours or 0845 0500 900 out of hours Market Drayton Donnington Wood Telford. 
+																	Scammers will often take a photo from the Internet to create a fake rental listing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This organization is not BBB accredited. 
+																	Grant Scholarship and Financial Aid Finder Service in Denver CO. 
+																	Well it a scam that is going around when trying to buy a car on craigslist. 
+																	Army Navy and Air Force officials currently are conducting inspections of 100 percent of their military housing stock in response to the scandal. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We may also be able to get you a cash reward. 
+																	There are some clues to help you determine if the person you are corresponding with is actually a member of the US. 
+																	With your help we can help stop these shady business practices and improve housing for our service members. 
+																	Marketing Programs in Nashville TN. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Officials Now Looking for Evidence of Fraud in Military Housing Scandal Virginias two senators Tim Kaine right and Mark Warner both spoke to the Hampton Roads Chamber during a breakfast at The. 
+																	PFI housing Telephone Regions covered. 
+																	CN Finding she lacks jurisdiction over financial firms and advisers accused of bilking military housing projects out of hundreds of millions of dollars a federal judge decidedThursday to transfer the case to New York instead of dismissing it for lack of jurisdiction. 
+																	Military members who have less than perfect credit are becoming victims of flashy offers that typically promise up to 40 of your monthly take home pay same day cash no. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But some moving companies use fraudulent practices to steal your money. 
+																	Scammers get word of deployed soldiers from local newspaper stories and posing as the grandchild or relative they claim a problem while on RR such as arrest or hospitalization to get quick cash from worried elders. 
+																	How to Hire Movers and Avoid Moving Fraud Foreclosure Scams Rental Scams How to Hire Movers and Avoid Moving Fraud. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/c9/fd/59c9fdcaa4bdd7a2c5643963be636448.jpg" data-lightbox="roadtrip" data-title="Military Housing Deluz Family Housing At Camp Pendleton Marine Corp Base Photo Gallery Camp Pendleton Housing Camp Pendleton California Camp Pendleton">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/c9/fd/59c9fdcaa4bdd7a2c5643963be636448.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNI9dgWAP_8K3_12Z10_WO0Hyecre9HhMSPw';" alt="Military Housing Deluz Family Housing At Camp Pendleton Marine Corp Base Photo Gallery Camp Pendleton Housing Camp Pendleton California Camp Pendleton">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Housing Deluz Family Housing At Camp Pendleton Marine Corp Base Photo Gallery Camp Pendleton Housing Camp Pendleton California Camp Pendleton</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/ee/1c/c7ee1ce1430bc59210ed2dabd4645b56.jpg" data-lightbox="roadtrip" data-title="These Group Of People Are Near And Dear To My Heart Our Veterans Did You Know That Only Around 26 Of Our Veterans Own A Home T In 2020 Military Housing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/ee/1c/c7ee1ce1430bc59210ed2dabd4645b56.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8KZsYLc4Enpny6HhCJTfN0e-q0DxE2uAUwQ';" alt="These Group Of People Are Near And Dear To My Heart Our Veterans Did You Know That Only Around 26 Of Our Veterans Own A Home T In 2020 Military Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">These Group Of People Are Near And Dear To My Heart Our Veterans Did You Know That Only Around 26 Of Our Veterans Own A Home T In 2020 Military Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/62/69/ac62699b7472fe252f945ec95976460a.jpg" data-lightbox="roadtrip" data-title="Nas Lemoore Coral Sea Park Neighborhood 2 4 Bedroom Duplex Style Homes Available For E1 E6 Service Me Base Housing Military Housing Lincoln Military Housing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/62/69/ac62699b7472fe252f945ec95976460a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuACricS4mzF9urWeJdQaFIFRcQ52_7qGRhQ';" alt="Nas Lemoore Coral Sea Park Neighborhood 2 4 Bedroom Duplex Style Homes Available For E1 E6 Service Me Base Housing Military Housing Lincoln Military Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nas Lemoore Coral Sea Park Neighborhood 2 4 Bedroom Duplex Style Homes Available For E1 E6 Service Me Base Housing Military Housing Lincoln Military Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bloximages.chicago2.vip.townnews.com/dcmilitary.com/content/tncms/assets/v3/editorial/9/e5/9e5b699a-ed19-55e4-b7b6-d7672fb63373/5cd32c9763b8b.image.jpg?resize=1396%2C922" data-lightbox="roadtrip" data-title="Pax Leadership Continues Communicating With Military Housing Residents Local Dcmilitary Com">
+											<img class="card-img v-image ads-img " src="https://bloximages.chicago2.vip.townnews.com/dcmilitary.com/content/tncms/assets/v3/editorial/9/e5/9e5b699a-ed19-55e4-b7b6-d7672fb63373/5cd32c9763b8b.image.jpg?resize=1396%2C922" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPk1EFYnmTjbsiWaDO73r6kPL39dJzrgnJiw';" alt="Pax Leadership Continues Communicating With Military Housing Residents Local Dcmilitary Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pax Leadership Continues Communicating With Military Housing Residents Local Dcmilitary Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/1d/02/7f1d02d7db3d5c7c45761cdf0534e769.jpg" data-lightbox="roadtrip" data-title="Pin By Sharon Canoles Lagrone On Places To Be Or Have Been Time In Germany Ulm Germany Germany Europe">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/1d/02/7f1d02d7db3d5c7c45761cdf0534e769.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPPGkYYqY7Pm-vuZfdPRrYG4891h-RRwfF2Q';" alt="Pin By Sharon Canoles Lagrone On Places To Be Or Have Been Time In Germany Ulm Germany Germany Europe">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sharon Canoles Lagrone On Places To Be Or Have Been Time In Germany Ulm Germany Germany Europe</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/40/71/5140718f7e8d4d42192bc6d7809f0858.jpg" data-lightbox="roadtrip" data-title="Pin By Navy Housing On Guam In 2021 Base Housing Guam Gorgeous View">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/40/71/5140718f7e8d4d42192bc6d7809f0858.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkenlftfq5PGVdUdIZ_xyAP7v5vYrZqFzzLA';" alt="Pin By Navy Housing On Guam In 2021 Base Housing Guam Gorgeous View">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Navy Housing On Guam In 2021 Base Housing Guam Gorgeous View</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.reviews.io/meta-image/www.militaryhousingdepartment.com" data-lightbox="roadtrip" data-title="Military Trusted Partners Reviews Read Reviews On Militaryhousingdepartment Com Before You Buy Www Militaryhousingdepartment Com">
+											<img class="card-img v-image ads-img " src="https://www.reviews.io/meta-image/www.militaryhousingdepartment.com" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxjbEosCO0LS8ZH-L-h9aKgy7ZRkLsW1psjA';" alt="Military Trusted Partners Reviews Read Reviews On Militaryhousingdepartment Com Before You Buy Www Militaryhousingdepartment Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Trusted Partners Reviews Read Reviews On Militaryhousingdepartment Com Before You Buy Www Militaryhousingdepartment Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.guim.co.uk/img/media/e93d82fdd3f1b5f1893b7d8be226d7b7fefca240/0_0_5333_3200/master/5333.jpg?width=460&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=4081ed3573194919d766af446c2f692b" data-lightbox="roadtrip" data-title="Mod Lost Up To 4 2bn Through Sale Of Military Homes Says Audit Office Ministry Of Defence The Guardian">
+											<img class="card-img v-image ads-img " src="https://i.guim.co.uk/img/media/e93d82fdd3f1b5f1893b7d8be226d7b7fefca240/0_0_5333_3200/master/5333.jpg?width=460&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=4081ed3573194919d766af446c2f692b" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKiOhMBy_BKd5RxMcFLN5wk0Udw1q5OaZvJg';" alt="Mod Lost Up To 4 2bn Through Sale Of Military Homes Says Audit Office Ministry Of Defence The Guardian">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mod Lost Up To 4 2bn Through Sale Of Military Homes Says Audit Office Ministry Of Defence The Guardian</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/a1/30/faa1308b5bb81f69a94e84de0344da6b.jpg" data-lightbox="roadtrip" data-title="Naval Base Guam Floor Plan For Flag Circle Home P1 Floor Plans Base Housing Guam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/a1/30/faa1308b5bb81f69a94e84de0344da6b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_saGPmUWjywBr46ztkSLv9D6qENfwpkCfEw';" alt="Naval Base Guam Floor Plan For Flag Circle Home P1 Floor Plans Base Housing Guam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Naval Base Guam Floor Plan For Flag Circle Home P1 Floor Plans Base Housing Guam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.moaa.org/uploadedfiles/content/publications_and_media/news_articles/2019_news_articles/air-force-housing-h.png" data-lightbox="roadtrip" data-title="Moaa Air Force Secretary Proposes Tenant Bill Of Rights For Military Families">
+											<img class="card-img v-image ads-img " src="https://www.moaa.org/uploadedfiles/content/publications_and_media/news_articles/2019_news_articles/air-force-housing-h.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgxxw7rZ6CbvzyL6mR52m-AtCM9wOPL9aNHg';" alt="Moaa Air Force Secretary Proposes Tenant Bill Of Rights For Military Families">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Moaa Air Force Secretary Proposes Tenant Bill Of Rights For Military Families</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/29/f5/2d29f581521e668188a8907d1ad42f2f.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/29/f5/2d29f581521e668188a8907d1ad42f2f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZM_FFrPqygOwToZ09vHq4g0gmZAeVTmX9zg';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0f/39/0a/0f390af0cad55b083886e73590876efd.jpg" data-lightbox="roadtrip" data-title="حیات آباد سے گرفتار دہشت گرد کا پی ٹی آئی وزرا پر حملے کی منصوبہ بندی کا انکشاف Pakistan Urdu Urdu News Pakistan News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0f/39/0a/0f390af0cad55b083886e73590876efd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9y6YjcnhLGC9jgJ97GZiNAhhOD7rBJylzHg';" alt="حیات آباد سے گرفتار دہشت گرد کا پی ٹی آئی وزرا پر حملے کی منصوبہ بندی کا انکشاف Pakistan Urdu Urdu News Pakistan News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">حیات آباد سے گرفتار دہشت گرد کا پی ٹی آئی وزرا پر حملے کی منصوبہ بندی کا انکشاف Pakistan Urdu Urdu News Pakistan News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/87/70/4f/87704f6bb2329339a7473e533e0d641b.jpg" data-lightbox="roadtrip" data-title="Pin By Military Benefits On Military Benefits In 2021 Group Life Insurance Military Benefits Military Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/87/70/4f/87704f6bb2329339a7473e533e0d641b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQik9EhItnnO_NJoybK6fu4b0nQxTXNgUk8kg';" alt="Pin By Military Benefits On Military Benefits In 2021 Group Life Insurance Military Benefits Military Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Military Benefits On Military Benefits In 2021 Group Life Insurance Military Benefits Military Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/petawawa-military-family-resource-centre-jobs.html">Petawawa Military Family Resource Centre Jobs</a></li>
+													<li class="list-group-item"><a href="/pembroke-dock-army-barracks.html">Pembroke Dock Army Barracks</a></li>
+													<li class="list-group-item"><a href="/pa-department-of-military-veterans-affairs.html">Pa Department Of Military Veterans Affairs</a></li>
+													<li class="list-group-item"><a href="/office-of-economic-adjustment-defense-spending-by-state.html">Office Of Economic Adjustment Defense Spending By State</a></li>
+													<li class="list-group-item"><a href="/nypd-vs-military-size.html">Nypd Vs Military Size</a></li>
+													<li class="list-group-item"><a href="/office-of-history-us-army-corps-of-engineers.html">Office Of History Us Army Corps Of Engineers</a></li>
+													<li class="list-group-item"><a href="/pentagon-budget-cut-vote.html">Pentagon Budget Cut Vote</a></li>
+													<li class="list-group-item"><a href="/oregon-military-department-budget.html">Oregon Military Department Budget</a></li>
+													<li class="list-group-item"><a href="/oregon-military-department-phone-number.html">Oregon Military Department Phone Number</a></li>
+													<li class="list-group-item"><a href="/oregon-military-department-mission-statement.html">Oregon Military Department Mission Statement</a></li>
+													<li class="list-group-item"><a href="/pakistan-military-accounts-department-jobs-2019-application-form.html">Pakistan Military Accounts Department Jobs 2019 Application Form</a></li>
+													<li class="list-group-item"><a href="/pakistan-military-accounts-department-karachi.html">Pakistan Military Accounts Department Karachi</a></li>
+													<li class="list-group-item"><a href="/oaa-us-army-headquarters-services.html">Oaa Us Army Headquarters Services</a></li>
+													<li class="list-group-item"><a href="/philippine-military-budget-2021.html">Philippine Military Budget 2021</a></li>
+													<li class="list-group-item"><a href="/pell-grants-for-military-dependents.html">Pell Grants For Military Dependents</a></li>
+													<li class="list-group-item"><a href="/organization-of-the-department-of-the-army.html">Organization Of The Department Of The Army</a></li>
+													<li class="list-group-item"><a href="/oklahoma-military-department-records.html">Oklahoma Military Department Records</a></li>
+													<li class="list-group-item"><a href="/oklahoma-department-of-military-affairs.html">Oklahoma Department Of Military Affairs</a></li>
+													<li class="list-group-item"><a href="/police-department-gets-military-vehicle.html">Police Department Gets Military Vehicle</a></li>
+													<li class="list-group-item"><a href="/pei-military-family-resource-centre.html">Pei Military Family Resource Centre</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

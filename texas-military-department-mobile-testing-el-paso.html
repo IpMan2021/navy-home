@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Texas Military Department Mobile Testing El Paso - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Texas Military Department Mobile Testing El Paso",
+  "datePublished": "2021-02-13",
+  "image": "https://tmd.texas.gov/Data/Sites/1/media/news/ngair/2020/november/19-november/6424509.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=texas+military+department+mobile+testing+el+paso",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Texas Military Department Mobile Testing El Paso</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Texas Military Department Mobile Testing Team TMD-MTT will continue testing through July 13th at four drive-thru sites one hybrid drivewalk-up site and various rural drive-thru sites within El Paso County. At the ongoing request of El Paso Mayor Dee Margo and the Office of Emergency Management the Office of the Governor and the. On Monday the Texas Department Military Department Mobile Testing Team will be closing its testing locations including the only hybrid testing site in the city that doesnt require an appointment. <br>				
+			</p>
+										<a class="badge badge-danger" href="/us-army-corp-of-engineers-chicago.html">us army corp of engineers chicago</a>
+											<a class="badge badge-warning" href="/us-army-cid-headquarters.html">us army cid headquarters</a>
+											<a class="badge badge-info" href="/us-army-corp-of-engineers-federal-dam-mn.html">us army corp of engineers federal dam mn</a>
+											<a class="badge badge-light" href="/us-army-corp-of-engineers-missouri-river.html">us army corp of engineers missouri river</a>
+											<a class="badge badge-warning" href="/us-army-corps-of-engineers-employee-handbook.html">us army corps of engineers employee handbook</a>
+											<a class="badge badge-danger" href="/us-army-corp-of-engineers-new-york.html">us army corp of engineers new york</a>
+											<a class="badge badge-success" href="/us-army-civilian-human-resources-agency-address.html">us army civilian human resources agency address</a>
+											<a class="badge badge-light" href="/us-army-corp-of-engineers-careers.html">us army corp of engineers careers</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you've come to pay a visit to the right blog.  Our website provides you with hints for viewing the highest quality video and picture content, search and locate more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, especially Youtube, so we recommend this video for you to see.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://elpasoheraldpost.com/wp-content/uploads/2020/07/tmd-covid-test-generic.jpg" data-lightbox="roadtrip" data-title="Texas Military Department Mobile Testing Team Tmd Mtt El Paso Herald Post">
+											<img class="card-img v-image ads-img " src="https://elpasoheraldpost.com/wp-content/uploads/2020/07/tmd-covid-test-generic.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-lBZGqlfN2AZX2becIEOOc0lWKir3MnBQ4w&amp;ec=45771800';" alt="Texas Military Department Mobile Testing Team Tmd Mtt El Paso Herald Post">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Texas Military Department Mobile Testing Team Tmd Mtt El Paso Herald Post</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cbs4local.com/resources/media2/16x9/full/1015/center/80/1acd4c94-c244-407c-ac47-17af67be0b8e-large16x9_testing2.jpg" data-lightbox="roadtrip" data-title="Texas Military Department Mobile Testing Sites To Close In El Paso Kdbc">
+											<img class="card-img v-image ads-img " src="https://cbs4local.com/resources/media2/16x9/full/1015/center/80/1acd4c94-c244-407c-ac47-17af67be0b8e-large16x9_testing2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStqiwAyLTEN2K_zCESz-CgWsPMgIdBancv9g&amp;ec=45771800';" alt="Texas Military Department Mobile Testing Sites To Close In El Paso Kdbc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Texas Military Department Mobile Testing Sites To Close In El Paso Kdbc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/EbOHq0FWAAYD27L.jpg" data-lightbox="roadtrip" data-title="City Of El Paso On Twitter Take Advantage Of Free Covid 19 Testing Through July 2 By The Texas Military Department Mobile Testing Team Testing Is Open To Symptomatic And Asymptomatic Residents To">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/EbOHq0FWAAYD27L.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCfRmKCIIUr1u8ByeX0sQHoN2X-RN-JEJ79g&amp;ec=45771800';" alt="City Of El Paso On Twitter Take Advantage Of Free Covid 19 Testing Through July 2 By The Texas Military Department Mobile Testing Team Testing Is Open To Symptomatic And Asymptomatic Residents To">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">City Of El Paso On Twitter Take Advantage Of Free Covid 19 Testing Through July 2 By The Texas Military Department Mobile Testing Team Testing Is Open To Symptomatic And Asymptomatic Residents To</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://tmd.texas.gov/Data/Sites/1/media/tmd-missions/2020/covid19/bryan,tx.jpg" data-lightbox="roadtrip" data-title="Tmd Covid19 Response Texas Military Department">
+											<img class="card-img v-image ads-img " src="https://tmd.texas.gov/Data/Sites/1/media/tmd-missions/2020/covid19/bryan,tx.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2tRFpJAjYcqCrTZFiw5B_PwwS_Xs6jp5JsQ&amp;ec=45771800';" alt="Tmd Covid19 Response Texas Military Department">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tmd Covid19 Response Texas Military Department</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kfoxtv.com/resources/media/9035d196-fb11-4bed-9533-1e393d02fb76-large16x9_GettyImages1224728475.jpg?1596851909139" data-lightbox="roadtrip" data-title="Additional Covid 19 Testing Sites Included At County Locations Kfox">
+											<img class="card-img v-image ads-img " src="https://kfoxtv.com/resources/media/9035d196-fb11-4bed-9533-1e393d02fb76-large16x9_GettyImages1224728475.jpg?1596851909139" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUXtUWeuY_UYtbtt3hX56-cLBRJlmkcXKDDg&amp;ec=45771800';" alt="Additional Covid 19 Testing Sites Included At County Locations Kfox">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Additional Covid 19 Testing Sites Included At County Locations Kfox</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.borderreport.com/wp-content/uploads/sites/28/2020/04/MOBILE.jpg?w=1280" data-lightbox="roadtrip" data-title="Governor Texas National Guard Announce Covid 19 Mobile Testing Sites">
+											<img class="card-img v-image ads-img " src="https://www.borderreport.com/wp-content/uploads/sites/28/2020/04/MOBILE.jpg?w=1280" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpkuEOypoM-iiYYtGfmrKYU2YY9pm6_JhiLA&amp;ec=45771800';" alt="Governor Texas National Guard Announce Covid 19 Mobile Testing Sites">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Governor Texas National Guard Announce Covid 19 Mobile Testing Sites</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://media.defense.gov/2020/Jul/17/2002458569/780/780/0/200616-Z-PG680-0027.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpkuEOypoM-iiYYtGfmrKYU2YY9pm6_JhiLA&amp;ec=45771800';" alt="Governor Texas National Guard Announce Covid 19 Mobile Testing Sites">
+										<div class="card-body">
+						<h3 class="h5"><b>The Texas Military Department Mobile Testing Team TMD-MTT will continue COVID-19 testing in El Paso through June 12 at one of the four mobile testing sites and various rural community sites.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Texas military department mobile testing el paso</strong>. 
+								
+																	These branches are the Texas Army. 
+																	COVID-19 testing sites and appointments are filling up fast across El Paso making it more difficult for people to get tested for the coronavirus. 
+																	Texas Military Testing Sites Testing is free and available for anyone 5 years or older with or without symptoms. 
+																	Governor Abbott extends statewide COVID-19 disaster declaration Top Stories. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	TX Covid-19 Test Collection Sites. 
+																	At the request of local and state officials testing will be extended through July 2nd at four drive-thru sites one walk-up site and multiple rural drive-thru sites. 
+																	The Texas Military Department Mobile Testing Team TMD-MTT is conducting additional testing in the El Paso Countys rural communities. 
+																	Army Guard Always Ready Always There. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	EL PASO Texas CBS4 COVID-19 testing sites and appointments are filling up fast across El Paso making it more difficult for people to get tested for the coronavirus. 
+																	El Paso 85 Sponsored By. 
+																	COVID-19 testing El Paso will ramp up as the Texas Military Department Mobile Testing teams transition their testing sites to a new contractor. 
+																	Telework Information and Guides. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Air Guard Decisive First Responders. 
+																	At the ongoing request of El Paso Mayor Dee Margo and the Office of Emergency Management the Office of the Governor and the Texas Department of Emergency Management once again. 
+																	Symptoms of COVID-19 include fever chills cough fatigue body aches muscle or joint pain shortness of breath sore throat headaches nausea vomiting diarrhea nasal congestion and loss of taste andor smell. 
+																	COVID-19 testing sites and appointments are filling up fast across El Paso making it more difficult for people to get tested for the coronavirus. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Texas Military Department is composed of the three branches of the military in the state of Texas. 
+																	The Texas Military Department Mobile Testing Team will continue COVID-19 testing through July 13 at four drive-thru sites one hybrid drivewalk-up site and various rural drive-thru sites within. 
+																	As the El Paso region saw a cluster of cases begin to grow the Texas Army National Guard set up a mobile testing site just outside her district boundary in one of the most rural and lowest-income. 
+																	State Guard Equal To The Task. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At the ongoing request of El Paso Mayor Dee Margo and the Office of Emergency Management the Office of the Governor and the Texas Department of Emergency Management once again agreed to the additional testing. 
+																	EL PASO Texas KTSM The City of El Paso has announced that testing for COVID-19 has been extended in El Paso County. 
+																	Local El Paso News Weather and Sports. 
+																	On Monday the Texas Department Military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	About TMD Texas Military Department. 
+																	For more information or to schedule an appointment visit T-X-Covid-Test-dot-org. 
+																	Texas Military Department offers last day of mobile testing in El Paso. 
+																	Whether symptomatic or asymptomatic no symptoms the community is encouraged to get tested if they have been or suspect to have been exposed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Texas Military Department Mobile Testing Team will continue COVID-19 testing in El Paso through June 2 at one of the four mobile testing sites and various rural community sites. 
+																	Go Guard Join The Guard Today. 
+																	On Monday the Texas Department Military. 
+																	The Texas Military Department Mobile Testing Team TMD-MTT will continue COVID-19 testing through July 2 at four drive-thru sites one walk-up site and various rural drive-thru sites within the El Paso City-County. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Texas Military Department Mobile Testing Team will continue to operate mobile test sites in El Paso County. 
+																	Fire scorches 17000 acres 11 homes east of San Diego Video. 
+																	The Texas Military Department Mobile Testing Team TMD-MTT will continue COVID-19 testing through July 2 at four drive-thru sites one walk-up site and various rural drive-thru sites within the El Paso City-County. 
+																	At the ongoing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Texas Military Department Mobile Testing Team will continue COVID-19 testing through July 2 at four drive-thru sites one walk-up site and various rural drive-thru sites within the El Paso. 
+																	El Paso COVID-19 Testing Locations. 
+																	The Texas Military Department Mobile Testing Team will continue COVID-19 testing in El Paso through June 2 at one of the four mobile testing sites and various rural community sites. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cbs4local.com/resources/media2/16x9/full/1015/center/80/c191fcdd-10c0-42ef-8ee3-69d924cc4c18-large16x9_testing2.jpg" data-lightbox="roadtrip" data-title="Some El Pasoans Say There S Delay In Covid 19 Test Results Kdbc">
+											<img class="card-img v-image ads-img " src="https://cbs4local.com/resources/media2/16x9/full/1015/center/80/c191fcdd-10c0-42ef-8ee3-69d924cc4c18-large16x9_testing2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiWhr34HJ9jAI0ARTIIAOlPhN9oENCNz3G1Q&amp;ec=45771800';" alt="Some El Pasoans Say There S Delay In Covid 19 Test Results Kdbc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Some El Pasoans Say There S Delay In Covid 19 Test Results Kdbc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.duncanville.com/wp-content/uploads/2020/04/1.jpg" data-lightbox="roadtrip" data-title="Covid 19 Testing Archives City Of Duncanville Texas Usa">
+											<img class="card-img v-image ads-img " src="https://www.duncanville.com/wp-content/uploads/2020/04/1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsESM1YHJFjxfwWm6MvQGoGqWTEqQwGoKkew&amp;ec=45771800';" alt="Covid 19 Testing Archives City Of Duncanville Texas Usa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Covid 19 Testing Archives City Of Duncanville Texas Usa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.gannett-cdn.com/presto/2020/10/29/PTX1/35b674d2-3516-44ad-a7f7-b1856c8edae1-UTEP_State_Covid_Site_001.jpg?crop=2699,1519,x0,y134&amp;width=660&amp;height=372&amp;format=pjpg&amp;auto=webp" data-lightbox="roadtrip" data-title="El Paso Covid Update Testing Deaths And Coronavirus Cases">
+											<img class="card-img v-image ads-img " src="https://www.gannett-cdn.com/presto/2020/10/29/PTX1/35b674d2-3516-44ad-a7f7-b1856c8edae1-UTEP_State_Covid_Site_001.jpg?crop=2699,1519,x0,y134&amp;width=660&amp;height=372&amp;format=pjpg&amp;auto=webp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN_oPEslCSjrMrd2cfZ2Tw7PDRhlny7lc3gA&amp;ec=45771800';" alt="El Paso Covid Update Testing Deaths And Coronavirus Cases">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">El Paso Covid Update Testing Deaths And Coronavirus Cases</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kvia.b-cdn.net/2020/06/Texas-Covid-Testing-TT.jpg" data-lightbox="roadtrip" data-title="Appointments No Longer Needed At El Paso Virus Testing Sites But Expect Wait Lines Kvia">
+											<img class="card-img v-image ads-img " src="https://kvia.b-cdn.net/2020/06/Texas-Covid-Testing-TT.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4bDzJFDeNDUR3f6ubzSRX1fdyKVXy2toRzw&amp;ec=45771800';" alt="Appointments No Longer Needed At El Paso Virus Testing Sites But Expect Wait Lines Kvia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Appointments No Longer Needed At El Paso Virus Testing Sites But Expect Wait Lines Kvia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ktsm.com/wp-content/uploads/sites/38/2020/04/1d97e2436f4245d398a7f7857921a6db.jpg?w=2560&amp;h=1440&amp;crop=1" data-lightbox="roadtrip" data-title="El Paso S Mobile Covid 19 Test Dates And Locations Ktsm 9 News">
+											<img class="card-img v-image ads-img " src="https://www.ktsm.com/wp-content/uploads/sites/38/2020/04/1d97e2436f4245d398a7f7857921a6db.jpg?w=2560&amp;h=1440&amp;crop=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1aLP4McwBxVCmS4wfLtF9knCln29WeYnGVg&amp;ec=45771800';" alt="El Paso S Mobile Covid 19 Test Dates And Locations Ktsm 9 News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">El Paso S Mobile Covid 19 Test Dates And Locations Ktsm 9 News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Jul/17/2002458569/780/780/0/200616-Z-PG680-0027.JPG" data-lightbox="roadtrip" data-title="Letter To Our Citizen Airmen Status On Covid 19 Mission 136th Airlift Wing Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Jul/17/2002458569/780/780/0/200616-Z-PG680-0027.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqe-lQn3Y1km3O-lSC5rM4FPqBkipMfCs9vw&amp;ec=45771800';" alt="Letter To Our Citizen Airmen Status On Covid 19 Mission 136th Airlift Wing Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Letter To Our Citizen Airmen Status On Covid 19 Mission 136th Airlift Wing Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kfoxtv.com/resources/media2/16x9/full/1015/center/80/ea85fcac-673f-4b63-92f9-3e326fcced0c-large16x9_testing2.jpg" data-lightbox="roadtrip" data-title="El Paso Department Of Health Reports 7 New Deaths Related To Covid 19 Kfox">
+											<img class="card-img v-image ads-img " src="https://kfoxtv.com/resources/media2/16x9/full/1015/center/80/ea85fcac-673f-4b63-92f9-3e326fcced0c-large16x9_testing2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfB0i6o0FC4EeWhGZnN2KORNEDk-4S6AxsDg&amp;ec=45771800';" alt="El Paso Department Of Health Reports 7 New Deaths Related To Covid 19 Kfox">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">El Paso Department Of Health Reports 7 New Deaths Related To Covid 19 Kfox</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.clintweb.net/cms/lib/TX02216513/Centricity/Domain/4/Texas%20Military%20Heroes%20Day.jpg" data-lightbox="roadtrip" data-title="Rhsbsyufbu3lwm">
+											<img class="card-img v-image ads-img " src="https://www.clintweb.net/cms/lib/TX02216513/Centricity/Domain/4/Texas%20Military%20Heroes%20Day.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-MBdSKyJxhwZl6k1QxRkvu7akeD7x6H2jCg&amp;ec=45771800';" alt="Rhsbsyufbu3lwm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rhsbsyufbu3lwm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://armymedicine.health.mil/-/media/Images/MHS/Photos/COVID-Innovations_BAMC.ashx" data-lightbox="roadtrip" data-title="Covid 19 Leads To Innovation In Military Health Care Practices Health Mil">
+											<img class="card-img v-image ads-img " src="http://armymedicine.health.mil/-/media/Images/MHS/Photos/COVID-Innovations_BAMC.ashx" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtaPODYB9jPXyJpWZDnzCny70P_OfMp_flNg&amp;ec=45771800';" alt="Covid 19 Leads To Innovation In Military Health Care Practices Health Mil">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Covid 19 Leads To Innovation In Military Health Care Practices Health Mil</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://tmd.texas.gov/Data/Sites/1/media/news/ngair/2020/november/19-november/6424509.png" data-lightbox="roadtrip" data-title="News Texas Military Department">
+											<img class="card-img v-image ads-img " src="https://tmd.texas.gov/Data/Sites/1/media/news/ngair/2020/november/19-november/6424509.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfvjUYIxxyLGlH7AdKF0_LNehfQyH11puolA&amp;ec=45771800';" alt="News Texas Military Department">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">News Texas Military Department</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kfoxtv.com/resources/media2/16x9/full/1015/center/80/4caccaa2-f7c6-4301-9640-b216b4b449de-large16x9_testing3.jpg" data-lightbox="roadtrip" data-title="More Opportunities For El Pasoans To Get Tested For Covid 19 For Free Kfox">
+											<img class="card-img v-image ads-img " src="https://kfoxtv.com/resources/media2/16x9/full/1015/center/80/4caccaa2-f7c6-4301-9640-b216b4b449de-large16x9_testing3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEVQbUrCPl-roeXkCbjvSTVGSKtOAkFrsydA&amp;ec=45771800';" alt="More Opportunities For El Pasoans To Get Tested For Covid 19 For Free Kfox">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">More Opportunities For El Pasoans To Get Tested For Covid 19 For Free Kfox</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://texvet.org/sites/default/files/2018-01/active_duy_placeholder_banner.jpg" data-lightbox="roadtrip" data-title="Texvet">
+											<img class="card-img v-image ads-img " src="http://texvet.org/sites/default/files/2018-01/active_duy_placeholder_banner.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxxVmhhNVPy7bV4W-QU5zGZUohaV1_DN7G6A&amp;ec=45771800';" alt="Texvet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Texvet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.dvidshub.net/media/thumbs/frames/video/2006/757639/300w_q95.jpg" data-lightbox="roadtrip" data-title="National Guard Covid 19 Response">
+											<img class="card-img v-image ads-img " src="https://cdn.dvidshub.net/media/thumbs/frames/video/2006/757639/300w_q95.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgtDLEmboz0_8By8-GnkduoQaDhaL-kZwSfQ&amp;ec=45771800';" alt="National Guard Covid 19 Response">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Covid 19 Response</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/veterans-crisis-line-locations.html">Veterans Crisis Line Locations</a></li>
+													<li class="list-group-item"><a href="/veterans-archivescom.html">Veterans Archivescom</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-gun-lock.html">Veterans Crisis Line Gun Lock</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-logo.html">Veterans Crisis Line Logo</a></li>
+													<li class="list-group-item"><a href="/war-heroes-by-jimi-hendrix.html">War Heroes By Jimi Hendrix</a></li>
+													<li class="list-group-item"><a href="/veterans-records-archives.html">Veterans Records Archives</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-facebook.html">Veterans Crisis Line Facebook</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-call-centers.html">Veterans Crisis Line Call Centers</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-handout.html">Veterans Crisis Line Handout</a></li>
+													<li class="list-group-item"><a href="/vintage-army-dog-tags.html">Vintage Army Dog Tags</a></li>
+													<li class="list-group-item"><a href="/veterans-archivesgov.html">Veterans Archivesgov</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-donate.html">Veterans Crisis Line Donate</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-military-affairs-jobs.html">Virginia Department Of Military Affairs Jobs</a></li>
+													<li class="list-group-item"><a href="/veterans-records-archives-st-louis.html">Veterans Records Archives St Louis</a></li>
+													<li class="list-group-item"><a href="/vfw-scholarships-for-dependents.html">Vfw Scholarships For Dependents</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-hotline-book.html">Veterans Crisis Hotline Book</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-800.html">Veterans Crisis Line 800</a></li>
+													<li class="list-group-item"><a href="/war-heroes-deck.html">War Heroes Deck</a></li>
+													<li class="list-group-item"><a href="/veterans-job-training-programs.html">Veterans Job Training Programs</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-director.html">Veterans Crisis Line Director</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Department Of Veterans Affairs Reading Pa - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Department Of Veterans Affairs Reading Pa",
+  "datePublished": "2021-02-13",
+  "image": "https://www.nap.edu/openbook/24915/xhtml/images/img-121.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=department+of+veterans+affairs+reading+pa",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Department Of Veterans Affairs Reading Pa</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Please note that there is not a VA national cemetery in every state. Download a PDF version of this form. Leverage your professional network and get hired. <br>				
+			</p>
+										<a class="badge badge-warning" href="/us-army-hq-address.html">us army hq address</a>
+											<a class="badge badge-danger" href="/us-army-hrc-phone-number.html">us army hrc phone number</a>
+											<a class="badge badge-secondary" href="/us-army-heroes.html">us army heroes</a>
+											<a class="badge badge-primary" href="/us-army-human-resources-command-fort-knox-ky.html">us army human resources command fort knox ky</a>
+											<a class="badge badge-light" href="/us-army-hrc-my-record-portal.html">us army hrc my record portal</a>
+											<a class="badge badge-success" href="/us-army-human-resources-command-reserve-component-retirement-branch.html">us army human resources command reserve component retirement branch</a>
+											<a class="badge badge-danger" href="/us-army-hrc-tools-and-applications.html">us army hrc tools and applications</a>
+											<a class="badge badge-dark" href="/us-army-hrob.html">us army hrob</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you've come to visit the ideal site.  Our website gives you hints for seeing the highest quality video and picture content, hunt and find more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this video for you to see.  You can also contribute to supporting this site by sharing videos and graphics that you enjoy on this blog on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information you get on this website.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.dmva.pa.gov/PublishingImages/DMVA_Keystone-01.svg" data-lightbox="roadtrip" data-title="Southwestern Veterans Center">
+											<img class="card-img v-image ads-img " src="https://www.dmva.pa.gov/PublishingImages/DMVA_Keystone-01.svg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROoOv2__laSsCcZcUDpu1V-n2s6BNTLK2g9g';" alt="Southwestern Veterans Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Southwestern Veterans Center</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.nap.edu/cover/24915/450" data-lightbox="roadtrip" data-title="2 The Veterans Health Administration Evaluation Of The Department Of Veterans Affairs Mental Health Services The National Academies Press">
+											<img class="card-img v-image ads-img " src="https://www.nap.edu/cover/24915/450" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSy9UcOr15ZZo2ikXU-rYpEvxYQmgnTFyFPg';" alt="2 The Veterans Health Administration Evaluation Of The Department Of Veterans Affairs Mental Health Services The National Academies Press">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2 The Veterans Health Administration Evaluation Of The Department Of Veterans Affairs Mental Health Services The National Academies Press</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="KYqfhIbqdj1H2M" data-lightbox="roadtrip" data-title="Https Www Va Gov Vapubs Viewpublication Asp Pub Id 1017 Ftype 2">
+											<img class="card-img v-image ads-img " src="KYqfhIbqdj1H2M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT70CRhFyyt-Djklshg64S2EYWCfFbH5NcVZw';" alt="Https Www Va Gov Vapubs Viewpublication Asp Pub Id 1017 Ftype 2">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Va Gov Vapubs Viewpublication Asp Pub Id 1017 Ftype 2</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.glassdoor.com/companyupdate/w600/41429/us-department-of-veterans-affairs-companyupdate-1609337929554.jpg" data-lightbox="roadtrip" data-title="Us Department Of Veterans Affairs Registered Nurse Reviews Glassdoor">
+											<img class="card-img v-image ads-img " src="https://media.glassdoor.com/companyupdate/w600/41429/us-department-of-veterans-affairs-companyupdate-1609337929554.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh1u5fpt6uiKBov0s6PAo4G6Yvj7RIMyZqDA';" alt="Us Department Of Veterans Affairs Registered Nurse Reviews Glassdoor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Department Of Veterans Affairs Registered Nurse Reviews Glassdoor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="Nq2YbU9SqRhJiM" data-lightbox="roadtrip" data-title="Https Www Va Gov Oig Pubs Vaoig 20 03076 217 Pdf">
+											<img class="card-img v-image ads-img " src="Nq2YbU9SqRhJiM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0jXzZ5nT2EYQBY9ARRQ-Ii8pPxr34kfe2LA';" alt="Https Www Va Gov Oig Pubs Vaoig 20 03076 217 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Va Gov Oig Pubs Vaoig 20 03076 217 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="ugH-bGGRRv9iAM" data-lightbox="roadtrip" data-title="Https Www Va Gov Budget Docs Summary Fy2021vabudgetvolumeiiibenefitsburialprogramsanddeptmentaladministration Pdf">
+											<img class="card-img v-image ads-img " src="ugH-bGGRRv9iAM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNF4yY-L4gLr-8FVj4KIB3SmbZ_Y1-i7FTjg';" alt="Https Www Va Gov Budget Docs Summary Fy2021vabudgetvolumeiiibenefitsburialprogramsanddeptmentaladministration Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Va Gov Budget Docs Summary Fy2021vabudgetvolumeiiibenefitsburialprogramsanddeptmentaladministration Pdf</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="xGI4NJOcF4J5SM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNF4yY-L4gLr-8FVj4KIB3SmbZ_Y1-i7FTjg';" alt="Https Www Va Gov Budget Docs Summary Fy2021vabudgetvolumeiiibenefitsburialprogramsanddeptmentaladministration Pdf">
+										<div class="card-body">
+						<h3 class="h5"><b>In an attempt to better serve our Veterans in the areas in which they live we have established VA Clinics in Berks Cumberland Lancaster Schuylkill and York Counties in addition to the primary care clinics located on our main campus in Lebanon.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Department of veterans affairs reading pa</strong>. 
+								
+																	2 salaries for 2 jobs at US Department of Veterans Affairs in Reading PA Area. 
+																	The VAs FOIA Electronic Reading Room. 
+																	PA Department of Veterans Affairs Deputy Adjutant General 800-547-2838 Berks Countys Services for Veterans United States Benefit Programs- Our primary mission is to provide a claimant with the most expeditious and accountable help in developing claims for consideration at the US Department of Veterans Affairs. 
+																	See reviews photos directions phone numbers and more for Veterans Affairs Office locations in Reading PA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Last updated October 12 2018. 
+																	You may also want to check the listing of State veterans cemeteries. 
+																	Cemetery Address Contact Burial Space. 
+																	Please take a moment to register below. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Etchberger USAF Veterans Center of Berks County to honor the valor and personal sacrifice of Medal of Honor recipient Etchberger formerly of Hamburg during the Vietnam War. 
+																	The Berks County Veterans Affairs Office located in Reading PA provides support for veterans of the US Armed Forces. 
+																	Additional 1000 PA National Guard Activated to Support Washington. 
+																	We hope the following. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are a new patient you may call 1 -800-409-8771 extension 6000 for information on scheduling appointments in these clinics. 
+																	If you are. 
+																	The mission of our local Berks County Department of Veterans Affairs is to administer a comprehensive array of benefit programs and provide assistance services pertaining to claims to the veterans of Berks County and their dependent widowswidowers and orphans in the most expeditious and accountable manner we can. 
+																	The property tax exemption is a benefit for veterans who have a 100 Total and Permanent status compensation rating reside in Pennsylvania. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apply to Registered Nurse Medical Technician Systems Integration Specialist and more. 
+																	The following change has been made. 
+																	New Department Of Veterans Affairs jobs added daily. 
+																	The Affairs Military Veterans located in Reading PA provides support for veterans of the US Armed Forces. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Department of Veterans Affairs VA National Cemetery Administration maintains 153 national cemeteries in 42 states and Puerto Rico as well as 34 soldiers lots and monument sites. 
+																	The site for the Berks County Department of Veterans Affairs was named by the Berks County Board of Commissioners on July 30th as the Chief Master Sergeant Richard L. 
+																	The Department of Military and Veterans Affairs of Pennsylvania DMVPA has updated the criteria for the Veterans Property Tax Exemption Program. 
+																	New Law Updates CDL Requirements for PA Veterans Service Members. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Veterans Affairs 810 Vermont Avenue NW Washington DC 20420. 
+																	If you are seeking copies of military records including personnel and military medical records or VA health records please note that the VA OIG is not the appropriate office to make that request of. 
+																	Harrisburg PA - Governor Tom Wolf announced today that. 
+																	Veteran Services connects veterans with several government agencies and nonprofit organizations at the federal Pennsylvania state and Reading level. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The PA VETERANS REGISTRY is DMVAs first step in a long-term strategy to achieve a higher level of communication with our veterans as well as our partners who support them. 
+																	Todays top 16 Department Of Veterans Affairs jobs in Reading Pennsylvania United States. 
+																	Veteran Services connects veterans with several government agencies and nonprofit organizations at the federal Pennsylvania state and Reading level. 
+																	Apply to Nurses Aide Medical Support Assistant Production Operator and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The maximum income threshold has been increased from 92594 to 95279. 
+																	The Office for Veterans Affairs mission is to provide advice and assistance to Pennsylvanias nearly 800000 veterans and their families and to provide quality care to aging veterans. 
+																	US Department of Veterans Affairs Salaries trends. 
+																	202 495-5867 Department of Veterans Affairs Electronic Reading Room. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See reviews photos directions phone numbers and more for Department Of Veterans Affairs locations in Reading PA. 
+																	Salaries posted anonymously by US Department of Veterans Affairs employees in Reading PA Area. 
+																	Harrisburg PA - The Pennsylvania Department of Transportation PennDOT and the Pennsylvania Department of Military and Veterans Affairs DMVA a. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.glassdoor.com/companyupdate/w300/41429/us-department-of-veterans-affairs-companyupdate-1612467668786.jpg" data-lightbox="roadtrip" data-title="X5miw Mxdhtllm">
+											<img class="card-img v-image ads-img " src="https://media.glassdoor.com/companyupdate/w300/41429/us-department-of-veterans-affairs-companyupdate-1612467668786.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3rXDbirawlXlAWi_-x9AypObSPu5uybHBaw';" alt="X5miw Mxdhtllm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">X5miw Mxdhtllm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.wsj.net/im-271276?width=620&amp;size=1.5" data-lightbox="roadtrip" data-title="Biden Chooses Ex Obama Official To Lead Department Of Veterans Affairs Wsj">
+											<img class="card-img v-image ads-img " src="https://images.wsj.net/im-271276?width=620&amp;size=1.5" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB-55Pk9n1F1xRppxtokCry1Olhg2GL84zsQ';" alt="Biden Chooses Ex Obama Official To Lead Department Of Veterans Affairs Wsj">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Biden Chooses Ex Obama Official To Lead Department Of Veterans Affairs Wsj</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.dmva.pa.gov/paveteranshomes/HollidaysburgVeteransHome/PublishingImages/FourthImageHVH.jpg" data-lightbox="roadtrip" data-title="Hollidaysburg Veterans Home">
+											<img class="card-img v-image ads-img " src="https://www.dmva.pa.gov/paveteranshomes/HollidaysburgVeteransHome/PublishingImages/FourthImageHVH.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYt_60d2ZXd-bLAXgrK_Cb2zUjhRQGERFrWg';" alt="Hollidaysburg Veterans Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hollidaysburg Veterans Home</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="uKCBhdVlYR-MXM" data-lightbox="roadtrip" data-title="Https Www Epilepsy Va Gov Docs Fy19annualreport Vhaepilepsycentersofexcellence Pdf">
+											<img class="card-img v-image ads-img " src="uKCBhdVlYR-MXM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmKA7ZKnZg8pEL-2fLNhMpQor33yXCQbNM_w';" alt="Https Www Epilepsy Va Gov Docs Fy19annualreport Vhaepilepsycentersofexcellence Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Epilepsy Va Gov Docs Fy19annualreport Vhaepilepsycentersofexcellence Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="YPBOo60xS0fJJM" data-lightbox="roadtrip" data-title="Https Www Va Gov Vapubs Viewpublication Asp Pub Id 475 Ftype 2">
+											<img class="card-img v-image ads-img " src="YPBOo60xS0fJJM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwft5vWB_zuIwgpBYWWiCijR8LKZoc-3NV9w';" alt="Https Www Va Gov Vapubs Viewpublication Asp Pub Id 475 Ftype 2">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Va Gov Vapubs Viewpublication Asp Pub Id 475 Ftype 2</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncbi.nlm.nih.gov/corehtml/pmc/pmcgifs/bookshelf/thumbs/th-vabriefvideoteleh-lrg.png" data-lightbox="roadtrip" data-title="Evidence Brief Video Telehealth For Primary Care And Mental Health Services Ncbi Bookshelf">
+											<img class="card-img v-image ads-img " src="https://www.ncbi.nlm.nih.gov/corehtml/pmc/pmcgifs/bookshelf/thumbs/th-vabriefvideoteleh-lrg.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNPqfKshNwxLnli0YNNVYrSlUEhzk2oOU72g';" alt="Evidence Brief Video Telehealth For Primary Care And Mental Health Services Ncbi Bookshelf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Evidence Brief Video Telehealth For Primary Care And Mental Health Services Ncbi Bookshelf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.va.gov/img/design/logo/va-og-image.png" data-lightbox="roadtrip" data-title="Berks County Va Clinic Lebanon Va Medical Center">
+											<img class="card-img v-image ads-img " src="https://www.va.gov/img/design/logo/va-og-image.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP1PwtEsS7NGkBYMR2M2_BZqjuYa5bhi1Vng';" alt="Berks County Va Clinic Lebanon Va Medical Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Berks County Va Clinic Lebanon Va Medical Center</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.glassdoor.com/lst/48/65/16/56/physician-with-patient.jpg" data-lightbox="roadtrip" data-title="Us Department Of Veterans Affairs Social Worker Salaries Glassdoor">
+											<img class="card-img v-image ads-img " src="https://media.glassdoor.com/lst/48/65/16/56/physician-with-patient.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0ouoJIZtpNR5uL8ZqfSgNwLLJdLcDWcbmeA';" alt="Us Department Of Veterans Affairs Social Worker Salaries Glassdoor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Department Of Veterans Affairs Social Worker Salaries Glassdoor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://news.usni.org/wp-content/uploads/2018/03/Rear-Adm.-R.-Jackson.jpg" data-lightbox="roadtrip" data-title="Trump Nominates Current White House Physician Navy Admiral As Next Veterans Affairs Secretary Usni News">
+											<img class="card-img v-image ads-img " src="https://news.usni.org/wp-content/uploads/2018/03/Rear-Adm.-R.-Jackson.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Isw8Pqt9hrYTFO51iN2S8j_6ZINw09aWiQ';" alt="Trump Nominates Current White House Physician Navy Admiral As Next Veterans Affairs Secretary Usni News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trump Nominates Current White House Physician Navy Admiral As Next Veterans Affairs Secretary Usni News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="xGI4NJOcF4J5SM" data-lightbox="roadtrip" data-title="Https Www Va Gov Vapubs Viewpublication Asp Pub Id 22">
+											<img class="card-img v-image ads-img " src="xGI4NJOcF4J5SM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH7cWuACztvVo2Pw9qW4ENZUq7gtfEQvZEcw';" alt="Https Www Va Gov Vapubs Viewpublication Asp Pub Id 22">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Va Gov Vapubs Viewpublication Asp Pub Id 22</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.thenation.com/wp-content/uploads/2018/05/pittsburgh-va-union_img.jpg" data-lightbox="roadtrip" data-title="At The Va A Law Meant To Discipline Executives Is Being Used To Fire Low Level Workers The Nation">
+											<img class="card-img v-image ads-img " src="https://www.thenation.com/wp-content/uploads/2018/05/pittsburgh-va-union_img.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROIU7C-F6fWnSTENI2M97mo3dpoZxZV4yX6g';" alt="At The Va A Law Meant To Discipline Executives Is Being Used To Fire Low Level Workers The Nation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">At The Va A Law Meant To Discipline Executives Is Being Used To Fire Low Level Workers The Nation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.nap.edu/openbook/24915/xhtml/images/img-121.jpg" data-lightbox="roadtrip" data-title="5 Methodology Evaluation Of The Department Of Veterans Affairs Mental Health Services The National Academies Press">
+											<img class="card-img v-image ads-img " src="https://www.nap.edu/openbook/24915/xhtml/images/img-121.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQxc6CMWit2NHQXYbAhQktOr9dxFMF9oq7WQ';" alt="5 Methodology Evaluation Of The Department Of Veterans Affairs Mental Health Services The National Academies Press">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Methodology Evaluation Of The Department Of Veterans Affairs Mental Health Services The National Academies Press</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="IOdlo3r_mVSn7M" data-lightbox="roadtrip" data-title="Https Floridavets Org Wp Content Uploads 2012 08 2020 Fdva Training Manual Pdf">
+											<img class="card-img v-image ads-img " src="IOdlo3r_mVSn7M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB5znQ0yPClqvzAny0lq8Lg_obTynacnGGIw';" alt="Https Floridavets Org Wp Content Uploads 2012 08 2020 Fdva Training Manual Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Floridavets Org Wp Content Uploads 2012 08 2020 Fdva Training Manual Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/unf-military-veterans-resource-center.html">Unf Military Veterans Resource Center</a></li>
+													<li class="list-group-item"><a href="/united-states-air-force-hr.html">United States Air Force Hr</a></li>
+													<li class="list-group-item"><a href="/us-air-force-headquarters-staff.html">Us Air Force Headquarters Staff</a></li>
+													<li class="list-group-item"><a href="/united-states-army-employer-address.html">United States Army Employer Address</a></li>
+													<li class="list-group-item"><a href="/us-army-address-in-washington-dc.html">Us Army Address In Washington Dc</a></li>
+													<li class="list-group-item"><a href="/united-states-military-academy-department-of-history-maps.html">United States Military Academy Department Of History Maps</a></li>
+													<li class="list-group-item"><a href="/united-states-air-force-academy-visiting-hours.html">United States Air Force Academy Visiting Hours</a></li>
+													<li class="list-group-item"><a href="/united-states-assistant-secretary-of-the-army-for-acquisition-logistics-and-technology.html">United States Assistant Secretary Of The Army For Acquisition Logistics And Technology</a></li>
+													<li class="list-group-item"><a href="/unf-military-resource-center.html">Unf Military Resource Center</a></li>
+													<li class="list-group-item"><a href="/us-army-cadet-command-headquarters.html">Us Army Cadet Command Headquarters</a></li>
+													<li class="list-group-item"><a href="/united-states-army-address-and-phone-number.html">United States Army Address And Phone Number</a></li>
+													<li class="list-group-item"><a href="/united-states-coast-guard-and-homeland-security-guide-to-navigation-bridge-lighting.html">United States Coast Guard And Homeland Security Guide To Navigation Bridge Lighting</a></li>
+													<li class="list-group-item"><a href="/uk-ministry-of-defence-budget-2019.html">Uk Ministry Of Defence Budget 2019</a></li>
+													<li class="list-group-item"><a href="/united-states-army-headquarters-address.html">United States Army Headquarters Address</a></li>
+													<li class="list-group-item"><a href="/us-army-alaska-public-affairs.html">Us Army Alaska Public Affairs</a></li>
+													<li class="list-group-item"><a href="/unique-military-service-residing-within-the-department-of-homeland-security.html">Unique Military Service Residing Within The Department Of Homeland Security</a></li>
+													<li class="list-group-item"><a href="/united-states-military-budget-history.html">United States Military Budget History</a></li>
+													<li class="list-group-item"><a href="/united-states-army-email-address.html">United States Army Email Address</a></li>
+													<li class="list-group-item"><a href="/united-states-army-number-of-troops.html">United States Army Number Of Troops</a></li>
+													<li class="list-group-item"><a href="/us-army-airborne-hat.html">Us Army Airborne Hat</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

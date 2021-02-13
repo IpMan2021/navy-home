@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Department Of Defense Covid Map - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Department Of Defense Covid Map",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/24/be/52/24be5233e64406ee166bc70f22cf094a.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=department+of+defense+covid+map",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Department Of Defense Covid Map</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Defense Department is working closely with the Department of Health and Human Services and State Department to provide support in dealing with the coronavirus outbreak. Learn more about. Army video by Pfc. <br>				
+			</p>
+										<a class="badge badge-primary" href="/home-depot-military-discount-sign-up.html">home depot military discount sign up</a>
+											<a class="badge badge-warning" href="/home-depot-military-discount-reddit.html">home depot military discount reddit</a>
+											<a class="badge badge-danger" href="/home-depot-military-discount-by-phone.html">home depot military discount by phone</a>
+											<a class="badge badge-light" href="/home-depot-military-discount-dd214.html">home depot military discount dd214</a>
+											<a class="badge badge-light" href="/hire-vets-medallion-program-application.html">hire vets medallion program application</a>
+											<a class="badge badge-info" href="/home-depot-military-discount-traeger.html">home depot military discount traeger</a>
+											<a class="badge badge-info" href="/home-depot-special-buy-military-discount.html">home depot special buy military discount</a>
+											<a class="badge badge-danger" href="/heart-air-force.html">heart air force</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you've come to visit the ideal site.  Our website provides you with suggestions for viewing the highest quality video and picture content, hunt and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, especially Youtube, therefore we recommend this video for you to view.  It is also possible to contribute to supporting this website by sharing videos and images that you like on this site on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/be/52/24be5233e64406ee166bc70f22cf094a.png" data-lightbox="roadtrip" data-title="Pin On Weapons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/be/52/24be5233e64406ee166bc70f22cf094a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhHSinqOk29u3lzBhnpEZcS3vsP7K88jYeLQ&amp;ec=45771800';" alt="Pin On Weapons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Weapons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/85/58/778558c6fa41e454c4b7bf1d4c925589.png" data-lightbox="roadtrip" data-title="Pin On Homeland">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/85/58/778558c6fa41e454c4b7bf1d4c925589.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQISvGtxw98R1HYbPh8B9IRLLq1yefby6KFCQ&amp;ec=45771800';" alt="Pin On Homeland">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Homeland</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/3e/b3/0c3eb35887d1759a4318fed33ccd3fed.jpg" data-lightbox="roadtrip" data-title="Pentagon Releases Map Disputing Claim Us Drone Violated Iranian Airspace Iran S Version Is Very Different">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/3e/b3/0c3eb35887d1759a4318fed33ccd3fed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv4l5kpQtxSrkQHcaA7YlzgCcTtEdIUzCpww&amp;ec=45771800';" alt="Pentagon Releases Map Disputing Claim Us Drone Violated Iranian Airspace Iran S Version Is Very Different">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pentagon Releases Map Disputing Claim Us Drone Violated Iranian Airspace Iran S Version Is Very Different</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/e3/da/d1e3daa0192eec5d7a9cdd1b53a0e891.jpg" data-lightbox="roadtrip" data-title="Highlights Of Biosafety And Biosecurity Month Bbm At The Aimst University And Perspectives On Brm Research And Development Education Domain Global Safety">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/e3/da/d1e3daa0192eec5d7a9cdd1b53a0e891.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd2qNoQraI9i0buX-JF_S_k45oNsFrsVfzzg&amp;ec=45771800';" alt="Highlights Of Biosafety And Biosecurity Month Bbm At The Aimst University And Perspectives On Brm Research And Development Education Domain Global Safety">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Highlights Of Biosafety And Biosecurity Month Bbm At The Aimst University And Perspectives On Brm Research And Development Education Domain Global Safety</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/88/8d/fb888d22f7537414ca9eed85478b709d.jpg" data-lightbox="roadtrip" data-title="Track The Storm In 2020 Storm Tracker Storm New World">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/88/8d/fb888d22f7537414ca9eed85478b709d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7twKZ8zCOquXUoxRVMH1i2-5jseRvFCTaZA&amp;ec=45771800';" alt="Track The Storm In 2020 Storm Tracker Storm New World">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Track The Storm In 2020 Storm Tracker Storm New World</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1d/f3/31/1df331c3ded444453d7b5c69ec8132bd.jpg" data-lightbox="roadtrip" data-title="Pin On Top News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1d/f3/31/1df331c3ded444453d7b5c69ec8132bd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6hhzP9yvqkAtZO5tdOaUrlWNnqZX9FQ2yVQ&amp;ec=45771800';" alt="Pin On Top News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Top News</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://media.defense.gov/2021/Jan/27/2002571652/1310/736/0/210127-F-HI919-1001.PNG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6hhzP9yvqkAtZO5tdOaUrlWNnqZX9FQ2yVQ&amp;ec=45771800';" alt="Pin On Top News">
+										<div class="card-body">
+						<h3 class="h5"><b>28 2021 at the fitness center at Travis Air Force Base California.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Department of defense covid map</strong>. 
+								
+																	The Defense Department is contributing expertise and equipment to the fight against the new coronavirus at home and around the world. 
+																	Check back for the latest information on COVID-19. 
+																	Information on travel restrictions as well as up-to-the-minute news related to the Department of Defenses response to COVID-19. 
+																	The Michigan Air National Guard assisted with free drive-thru COVID-19 testing for residents of Sturgis Michigan as part of a statewide effort to slow the spread of the virus. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Department of Health and Human Services and the Department of Defense are expected to hold a briefing on Operation Warp Speed and the distribution of the COVID-19 vaccine. 
+																	The multipronged approach also calls for COVID-19 surveillance contact tracing and restriction of movement. 
+																	The camp houses about 40 prisoners including high-value detainees. 
+																	Northern Command through US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Defense personnel receive the second dose of the COVID-19 vaccine Jan. 
+																	The Department of Defense on Saturday paused a plan to give the COVID-19 vaccine to detainees in the Guantanamo Bay prison camp. 
+																	The vaccine requires two doses per person separated by about four weeks between doses. 
+																	Department of Defense Guidance for Movement and Medical Treatment of COVID-19 Patients Symptomatic Persons Under Investigation or Potentially Exposed COVID-19 Persons April 7 2020 Force Health. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	News Defense News Video. 
+																	Vaccine Availability The Department of Defense has announced its deliberate and phased plan to distribute and administer the COVID-19 vaccine to DOD personnel. 
+																	Department of Defense DOD has deployed 80 military medical personnel from the US. 
+																	Military Health System - Coronavirus The Military Health System MHS is one of Americas largest and most complex health care institutions and the worlds preeminent military health care delivery operation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Today the Department of Defense announced its deliberate and phased plan to distribute and administer initial and subsequent allocations of the COVID-19 vaccine. 
+																	The Department of Defense continues to deliver on the Acting Secretary of Defenses priorities during the COVID-19 pandemic to protect our people maintain readiness and support the national. 
+																	The Defense Department and the State Department will work closely and in tandem to better represent to the world the power of American values and ideals President Joseph R. 
+																	The department maintains its readiness to respond to the needs of the people in the event of disasters either. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	View up-to-date information about programs services and resources. 
+																	Governor Greg Abbott today announced that the US. 
+																	The vaccine requires two doses per person separated by about four weeks between doses. 
+																	Defense officials announced restrictions on domestic travel for service members Defense Department employees and family members in response to the new coronavirus or COVID-19. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Defense personnel receive the second dose of the COVID-19 vaccine Jan. 
+																	The military medical personnel include nurses respiratory therapists and medical doctors and will. 
+																	We will be updating this page regularly. 
+																	Coronavirus Information for Our Military Community COVID-19 information for the military community. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	28 2021 at the fitness center at Travis Air Force Base California. 
+																	The Department of Defense will begin testing some asymptomatic service members as part of the next phase of its strategy to break the chain of coronavirus disease 2019 transmission and to protect the health of the force. 
+																	Department of State to provide support in dealing with the coronavirus disease outbreak. 
+																	The Department of Defense is working closely with the Centers for Disease Control and Prevention and the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The mission of the State of Hawaii Department of Defense which includes the Hawaii National Guard HING Hawaii Emergency Management Agency and State Office of Homeland Security is to assist authorities in providing for the safety welfare and defense of the people of Hawaii. 
+																	Army North remains committed to providing flexible Department of Defense support to the whole-of-government COVID-19 response. 
+																	It is designed to protect personnel against the coronavirus and officials are encouraging all. 
+																	DOD Government Officials Discuss COVID-19 Vaccine Rollout for Service Members Families Feb. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is designed to protect personnel against the coronavirus and officials are encouraging all personnel to take the vaccine as it becomes available. 
+																	GSA COVID-19 Travel Policy Frequently Asked Questions Under the Policy section review answers to questions on mandatory use of available city. 
+																	Air Force to assist in the COVID-19 response in Abilene Lufkin and Eagle Pass. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.sortiraparis.com/images/80/69688/616874-carte-de-france-covid-le-5-janvier-le-taux-d-occupation-lits-de-reanimation-par-.jpg" data-lightbox="roadtrip" data-title="France Covid Map January 20 Icu Bed Occupancy Rate Per Region Sortiraparis Com">
+											<img class="card-img v-image ads-img " src="https://www.sortiraparis.com/images/80/69688/616874-carte-de-france-covid-le-5-janvier-le-taux-d-occupation-lits-de-reanimation-par-.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7cBfrP7Hn1zlZf4umhNbTEoE2fs30jCYqUw&amp;ec=45771800';" alt="France Covid Map January 20 Icu Bed Occupancy Rate Per Region Sortiraparis Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">France Covid Map January 20 Icu Bed Occupancy Rate Per Region Sortiraparis Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.google.com/maps/d/thumbnail?mid=14tpAm7prOD11of0cW8WkvcykzAU&amp;hl=en" data-lightbox="roadtrip" data-title="Abu Dhabi Google My Maps">
+											<img class="card-img v-image ads-img " src="https://www.google.com/maps/d/thumbnail?mid=14tpAm7prOD11of0cW8WkvcykzAU&amp;hl=en" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0cHQSxym3JvHRC3thc4wDK5gmQ6ql6lP_cg&amp;ec=45771800';" alt="Abu Dhabi Google My Maps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Abu Dhabi Google My Maps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/fc/d2/13fcd26ef50402547ac5af750ef6097f.jpg" data-lightbox="roadtrip" data-title="3d Terrain Wooden Map Of The United States Wooden Map Wall Maps Usa Map">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/fc/d2/13fcd26ef50402547ac5af750ef6097f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxrg7VHR6-U5oYmZVofapWCz67VXCVIqOGqQ&amp;ec=45771800';" alt="3d Terrain Wooden Map Of The United States Wooden Map Wall Maps Usa Map">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">3d Terrain Wooden Map Of The United States Wooden Map Wall Maps Usa Map</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2021/Jan/27/2002571652/1310/736/0/210127-F-HI919-1001.PNG" data-lightbox="roadtrip" data-title="Home Page Of Tinker Air Force Base">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2021/Jan/27/2002571652/1310/736/0/210127-F-HI919-1001.PNG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcQNiuHwCuYeYEW7ewWGaruRHyZ03EQOSLSQ&amp;ec=45771800';" alt="Home Page Of Tinker Air Force Base">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Page Of Tinker Air Force Base</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/f6/33/5ef6333bdcfda504b695203623b8d745.jpg" data-lightbox="roadtrip" data-title="Infographic Key Numbers Behind The War In Afghanistan Afghanistan War Infographic Afghanistan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/f6/33/5ef6333bdcfda504b695203623b8d745.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLWYnM-CkXvQfnbTOJSRsZEdsHbrTA-MgTJQ&amp;ec=45771800';" alt="Infographic Key Numbers Behind The War In Afghanistan Afghanistan War Infographic Afghanistan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infographic Key Numbers Behind The War In Afghanistan Afghanistan War Infographic Afghanistan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/a3/93/75a3932063671acefdbdb0dd30ed889c.jpg" data-lightbox="roadtrip" data-title="Mike Quindazzi On Twitter Revenue Map Company">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/a3/93/75a3932063671acefdbdb0dd30ed889c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5_9hMLrPLa7YILBrsuhm9kIdBsq3GqiWQjw&amp;ec=45771800';" alt="Mike Quindazzi On Twitter Revenue Map Company">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mike Quindazzi On Twitter Revenue Map Company</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/b7/db/edb7db011e98f66e2653ec731a56e315.png" data-lightbox="roadtrip" data-title="A Surprising Number Of Nasa Astronauts Come From Ohio The Birthplace Of Aviation Here Are All The Us Cities That Produce The Most Astronauts Nasa Astronauts Nasa Missions Nasa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/b7/db/edb7db011e98f66e2653ec731a56e315.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC_uAk2DdqSxkLncY4AHo03WZ-4TLyfNpWmA&amp;ec=45771800';" alt="A Surprising Number Of Nasa Astronauts Come From Ohio The Birthplace Of Aviation Here Are All The Us Cities That Produce The Most Astronauts Nasa Astronauts Nasa Missions Nasa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Surprising Number Of Nasa Astronauts Come From Ohio The Birthplace Of Aviation Here Are All The Us Cities That Produce The Most Astronauts Nasa Astronauts Nasa Missions Nasa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/07/42/9a0742d80106b0232cb2d0d7a159b8f6.jpg" data-lightbox="roadtrip" data-title="What Is America S Biggest Trading Partner Investing What Is America Partners">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/07/42/9a0742d80106b0232cb2d0d7a159b8f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTifEjoBdgFlSMcvz-i5WPQt8LxsWTLTk17Q&amp;ec=45771800';" alt="What Is America S Biggest Trading Partner Investing What Is America Partners">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is America S Biggest Trading Partner Investing What Is America Partners</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4d/92/be/4d92be15045c3f54baee32fe27a45985.png" data-lightbox="roadtrip" data-title="Here S What Is Forecast To Happen After Sally Makes Landfall In 2020 National Hurricane Center Lake Pontchartrain Storm Surge">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4d/92/be/4d92be15045c3f54baee32fe27a45985.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUiFLk-xsKOoPobmq_OK29Nj1qRNvpqwH8tQ&amp;ec=45771800';" alt="Here S What Is Forecast To Happen After Sally Makes Landfall In 2020 National Hurricane Center Lake Pontchartrain Storm Surge">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here S What Is Forecast To Happen After Sally Makes Landfall In 2020 National Hurricane Center Lake Pontchartrain Storm Surge</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://d.newsweek.com/en/full/1580578/defense-department-base-data-updated-color.jpg" data-lightbox="roadtrip" data-title="Exclusive Comprehensive Map Shows The Numbers And Locations Of U S Military Bases With Coronavirus Cases">
+											<img class="card-img v-image ads-img " src="https://d.newsweek.com/en/full/1580578/defense-department-base-data-updated-color.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkUoz4zWZqFik-Ahfg6NIkU46AKVy6W0ROMg&amp;ec=45771800';" alt="Exclusive Comprehensive Map Shows The Numbers And Locations Of U S Military Bases With Coronavirus Cases">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Exclusive Comprehensive Map Shows The Numbers And Locations Of U S Military Bases With Coronavirus Cases</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/61/05/3d610599800f92e2c81994c9e86b560d.jpg" data-lightbox="roadtrip" data-title="Strategic Goals For Electromagnetic Spectrum Superiority Electromagnetic Spectrum Strategic Goals Strategies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/61/05/3d610599800f92e2c81994c9e86b560d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsyvAludryyN-ZU5_GOJiyzkVTjiH1ANz3Ww&amp;ec=45771800';" alt="Strategic Goals For Electromagnetic Spectrum Superiority Electromagnetic Spectrum Strategic Goals Strategies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Strategic Goals For Electromagnetic Spectrum Superiority Electromagnetic Spectrum Strategic Goals Strategies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://appassets.mvtdev.com/index/public-transit-maps/8/line/3824/428108/1492070/DARB_Dalma_Mall_Main_Entrance.jpg" data-lightbox="roadtrip" data-title="101 Route Time Schedules Stops Maps Dalma Mall Main Entrance">
+											<img class="card-img v-image ads-img " src="https://appassets.mvtdev.com/index/public-transit-maps/8/line/3824/428108/1492070/DARB_Dalma_Mall_Main_Entrance.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT4AmDKcK7-fyz6AJkiOrGzHG25mVMBQM_8A&amp;ec=45771800';" alt="101 Route Time Schedules Stops Maps Dalma Mall Main Entrance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">101 Route Time Schedules Stops Maps Dalma Mall Main Entrance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://appassets.mvtdev.com/index/public-transit-maps/8/line/3824/428246/1492365/RTA_Qusais_Bus_Station.jpg" data-lightbox="roadtrip" data-title="32c Route Time Schedules Stops Maps Qusais Bus Station">
+											<img class="card-img v-image ads-img " src="https://appassets.mvtdev.com/index/public-transit-maps/8/line/3824/428246/1492365/RTA_Qusais_Bus_Station.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSSn8pRbWyN95nGWS_rk46_kQxEKwYRW1lKQ&amp;ec=45771800';" alt="32c Route Time Schedules Stops Maps Qusais Bus Station">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">32c Route Time Schedules Stops Maps Qusais Bus Station</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/is-military-pay-scale-per-month.html">Is Military Pay Scale Per Month</a></li>
+													<li class="list-group-item"><a href="/is-the-army-part-of-the-dod.html">Is The Army Part Of The Dod</a></li>
+													<li class="list-group-item"><a href="/is-there-a-secretary-of-the-coast-guard.html">Is There A Secretary Of The Coast Guard</a></li>
+													<li class="list-group-item"><a href="/is-homeland-security-considered-military.html">Is Homeland Security Considered Military</a></li>
+													<li class="list-group-item"><a href="/is-the-army-a-federal-job.html">Is The Army A Federal Job</a></li>
+													<li class="list-group-item"><a href="/is-mango-languages-free.html">Is Mango Languages Free</a></li>
+													<li class="list-group-item"><a href="/is-the-national-guard-part-of-the-dod.html">Is The National Guard Part Of The Dod</a></li>
+													<li class="list-group-item"><a href="/is-there-any-financial-help-for-seniors-due-to-covid-19.html">Is There Any Financial Help For Seniors Due To Covid 19</a></li>
+													<li class="list-group-item"><a href="/jcpenney-military-circle.html">Jcpenney Military Circle</a></li>
+													<li class="list-group-item"><a href="/irish-army-fire-service.html">Irish Army Fire Service</a></li>
+													<li class="list-group-item"><a href="/indian-military-accounts-department.html">Indian Military Accounts Department</a></li>
+													<li class="list-group-item"><a href="/is-the-navy-under-the-department-of-defense.html">Is The Navy Under The Department Of Defense</a></li>
+													<li class="list-group-item"><a href="/is-military-survivor-benefit-plan-worth-it.html">Is Military Survivor Benefit Plan Worth It</a></li>
+													<li class="list-group-item"><a href="/jcpenneycom-military-discount.html">Jcpenneycom Military Discount</a></li>
+													<li class="list-group-item"><a href="/interior-design-mycaa.html">Interior Design Mycaa</a></li>
+													<li class="list-group-item"><a href="/is-the-military-pay-scale-monthly.html">Is The Military Pay Scale Monthly</a></li>
+													<li class="list-group-item"><a href="/indonesia-defense-budget-2021.html">Indonesia Defense Budget 2021</a></li>
+													<li class="list-group-item"><a href="/is-the-department-of-defense-part-of-the-military.html">Is The Department Of Defense Part Of The Military</a></li>
+													<li class="list-group-item"><a href="/is-there-a-bullying-hotline.html">Is There A Bullying Hotline</a></li>
+													<li class="list-group-item"><a href="/is-the-coast-guard-under-homeland-security.html">Is The Coast Guard Under Homeland Security</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Mycarinfo - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Mycarinfo",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/600x315/52/60/4b/52604ba147a6157bb81659fabe5aee4f.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=mycarinfo",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Mycarinfo</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">This is a work in progress. When you use secure areas of the site we use Secure Sockets Layer SSL protocol with 128-bit encryption. Enter the vehicle registration number get all the details like vehicle registration state its respective RTO office details including address and contact information. <br>				
+			</p>
+										<a class="badge badge-light" href="/department-of-veterans-affairs-pension.html">department of veterans affairs pension</a>
+											<a class="badge badge-light" href="/department-of-veterans-affairs-twitter.html">department of veterans affairs twitter</a>
+											<a class="badge badge-primary" href="/department-stores-that-offer-military-discount.html">department stores that offer military discount</a>
+											<a class="badge badge-success" href="/departments-in-the-us-military.html">departments in the us military</a>
+											<a class="badge badge-info" href="/department-of-veterans-evidence-intake-center.html">department of veterans evidence intake center</a>
+											<a class="badge badge-success" href="/deployment-benefits-for-spouses.html">deployment benefits for spouses</a>
+											<a class="badge badge-secondary" href="/department-of-veterans-services-marietta-ga.html">department of veterans services marietta ga</a>
+											<a class="badge badge-light" href="/dept-military-affairs.html">dept military affairs</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you have come to visit the right site.  Our website gives you hints for viewing the highest quality video and picture content, search and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, especially Youtube, therefore we recommend this video that you view.  You can also contribute to supporting this website by sharing videos and graphics that you enjoy on this blog on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/2d/f7/b02df708088a8212f6a869cf51083404.png" data-lightbox="roadtrip" data-title="What Is My Vehicle Market Value Commercial Vehicle Marketing Market Value">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/2d/f7/b02df708088a8212f6a869cf51083404.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8OIcsit-latcf3Ui2WJuf8bfyNh9FUOOzCQ';" alt="What Is My Vehicle Market Value Commercial Vehicle Marketing Market Value">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is My Vehicle Market Value Commercial Vehicle Marketing Market Value</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/52/60/4b/52604ba147a6157bb81659fabe5aee4f.png" data-lightbox="roadtrip" data-title="What Is Vehicle Check In 2020 How To Plan Letters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/52/60/4b/52604ba147a6157bb81659fabe5aee4f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCvUmC7mgq3SQebM95H7qTyZ6Wgi88vjw-ew';" alt="What Is Vehicle Check In 2020 How To Plan Letters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Vehicle Check In 2020 How To Plan Letters</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f1/9a/5d/f19a5d63a8e6165708dd78ac4d61ab74.jpg" data-lightbox="roadtrip" data-title="What Is I Search In 2020 How To Find Out How To Plan Informative">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f1/9a/5d/f19a5d63a8e6165708dd78ac4d61ab74.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRRFICrzvQ_A-9kjcfJ2VYj23J7NMNqBrmcg';" alt="What Is I Search In 2020 How To Find Out How To Plan Informative">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is I Search In 2020 How To Find Out How To Plan Informative</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/d1/cd/44/d1cd444ed5b583eb5e44013dd09d784a.jpg" data-lightbox="roadtrip" data-title="Mycarinfo Information That Matters Car Insurance Fintech Sports Car">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/d1/cd/44/d1cd444ed5b583eb5e44013dd09d784a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7xr6H2ht_PTqC-kqXwGMcJx-5dd_ZIkhUmQ';" alt="Mycarinfo Information That Matters Car Insurance Fintech Sports Car">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mycarinfo Information That Matters Car Insurance Fintech Sports Car</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/a3/2f/dba32fd778d74fa21cd330a9f8dd4e17.jpg" data-lightbox="roadtrip" data-title="Pin On Mobile Ui Examples">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/a3/2f/dba32fd778d74fa21cd330a9f8dd4e17.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyWKfFa7_SQh6hfmmF-zX7NZnpotg5wz9VFQ';" alt="Pin On Mobile Ui Examples">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mobile Ui Examples</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/2c/8d/e92c8d7688491c2890d0ad13573a3ae4.jpg" data-lightbox="roadtrip" data-title="What Is No Claim Discount Ncd Commercial Vehicle Types Of Vehicle Market Value">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/2c/8d/e92c8d7688491c2890d0ad13573a3ae4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsUKnpMr8-EPcFDr0vBrh7_4J1qoQW1Fb1Uw';" alt="What Is No Claim Discount Ncd Commercial Vehicle Types Of Vehicle Market Value">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is No Claim Discount Ncd Commercial Vehicle Types Of Vehicle Market Value</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/db/a3/2f/dba32fd778d74fa21cd330a9f8dd4e17.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsUKnpMr8-EPcFDr0vBrh7_4J1qoQW1Fb1Uw';" alt="What Is No Claim Discount Ncd Commercial Vehicle Types Of Vehicle Market Value">
+										<div class="card-body">
+						<h3 class="h5"><b>MyCardInfo is a free account management tool provided by your Financial Institution.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Mycarinfo</strong>. 
+								
+																	This is a blog website related to car informationhere you will find blog related to new upcoming car and their featurespecification and also. 
+																	Cardholder Service Collabria PO Box 82029 RPO Connaught Calgary AB T2R 0X1. 
+																	Mycarinfolets know about your dream car. 
+																	We are an independent well established family run business and have a vast wealth of knowledge and experience within the global motor industry. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If there are any errors please do not hesitate to contact us. 
+																	Were dedicated to giving you the very true information with a focus on feature and specification of the new car. 
+																	Soon you will be able to compete for various spot awards. 
+																	This means that all the information sent between your computer and our secure computer environment is encrypted or scrambled so that no one can read it in transit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Its time to upgrade your dealer management software. 
+																	Check vehicle insurance information. 
+																	Filing an NFOC means your car insurance will pay for car repair without affecting your NCD because you are innocent. 
+																	It is a domain having com extension. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Join Carinfo and upload your car photos to share them to other car enthusiasts. 
+																	This website is estimated worth of 895 and have a daily income of around 015. 
+																	You can get all the vehicle details including RC registration owner information insurance details challan and more. 
+																	Our information is updated regularly. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Carinfo is all about creating a powerful website for you who are looking for or interested in cars. 
+																	This native mobile application gather all informations about your car and offers service reminders. 
+																	Posted on January 13 2016 July 22 2016 by MyCarInfo. 
+																	Use the search function to locate your FIs MyCardInfo site. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Now its easy to get details of any vehicles registered in India. 
+																	Unless you keep your car until its completely taken over by rust the residual. 
+																	Why is a vehicles resale value an essential aspect when selecting a car. 
+																	Welcome to mycarinfo your number one source for new cars information. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Brilliant and easy to use software takes care of so many irritating tasks - Marston Motors Birmingham Were saving hours of time on admin and that means more time sellingA38 Motor Company Warwickshire. 
+																	And more with MyCarInfo. 
+																	Sell Your Used Car. 
+																	SellMyCarinfo specialise in buying cars and vans off the general public. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MasterCard Payment Address Collabria MasterCard CP 6300 SUCC Centre Ville. 
+																	Get all the INFORMATION THAT MATTERS with our tools services and extensive database. 
+																	Purchasing a new car especially in Malaysia is a big investment for most. 
+																	Here you will also find comparison of new upcoming cars with other cars. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This site only provides information on your credit card. 
+																	CarInfo CarInfo is Indias leading RTO vehicle information mobile application. 
+																	If a claim is made against your policy current NCD that you have accumulated will be forfeited and reverts to 0. 
+																	Depreciation is considered to be the biggest cost to a vehicle owner it even trumps maintenance and gas. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To access information on all of your Farm Bureau Bank Accounts click HERE. 
+																	This will impact next years insurance renewal price as you will no longer enjoy significant insurance saving. 
+																	Lets know about your dream car. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/4b/3d/c0/4b3dc09aeb7973d4d0528039bc96a6ea.jpg" data-lightbox="roadtrip" data-title="Vehicle Market Value Commercial Vehicle Vehicles Four Wheel Drive">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/4b/3d/c0/4b3dc09aeb7973d4d0528039bc96a6ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMNIYbPcZIivBq9OxJgquvSiKcE-iTl7QmnA';" alt="Vehicle Market Value Commercial Vehicle Vehicles Four Wheel Drive">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vehicle Market Value Commercial Vehicle Vehicles Four Wheel Drive</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/150x150/b0/2d/f7/b02df708088a8212f6a869cf51083404.jpg" data-lightbox="roadtrip" data-title="What Is Vehicle Check In 2020 How To Plan Letters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/150x150/b0/2d/f7/b02df708088a8212f6a869cf51083404.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpPRbosF_A7okkmpf8L8_nJjINWFFJSCws0A';" alt="What Is Vehicle Check In 2020 How To Plan Letters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Vehicle Check In 2020 How To Plan Letters</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/videos/thumbnails/originals/05/0c/7e/050c7eae7a30a655bc0e9be913c7cc06.0000001.jpg" data-lightbox="roadtrip" data-title="What Is Vehicle Check In 2020 How To Plan Letters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/videos/thumbnails/originals/05/0c/7e/050c7eae7a30a655bc0e9be913c7cc06.0000001.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLlq8sRX975TP9zQZC7VmyLQGLBj6-fqG2tA';" alt="What Is Vehicle Check In 2020 How To Plan Letters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Vehicle Check In 2020 How To Plan Letters</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/52/60/4b/52604ba147a6157bb81659fabe5aee4f.jpg" data-lightbox="roadtrip" data-title="What Is Vehicle Check In 2020 How To Plan Letters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/52/60/4b/52604ba147a6157bb81659fabe5aee4f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyUmyZOR_zmdjlt2sZ91V416CqVQOuhJ9djw';" alt="What Is Vehicle Check In 2020 How To Plan Letters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Vehicle Check In 2020 How To Plan Letters</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/4a/6e/b04a6e03cb9ea6b01ba5512189db52a0.png" data-lightbox="roadtrip" data-title="Pin On Cars Motorcycles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/4a/6e/b04a6e03cb9ea6b01ba5512189db52a0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRyCPYgwhzNSjqTMHv-F34vE2M1Vb2FqCnoQ';" alt="Pin On Cars Motorcycles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Cars Motorcycles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/b4/35/57b4355b17b39de12f3b5694a36114b7.jpg" data-lightbox="roadtrip" data-title="Pin On My Car Info News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/b4/35/57b4355b17b39de12f3b5694a36114b7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfQnAugFfyTXMdg3M8qTWLxUKm0jmexdp-4Q';" alt="Pin On My Car Info News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Car Info News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/d3/49/48d349c83cf5a4590f972a55a4738929.jpg" data-lightbox="roadtrip" data-title="Pin Oleh Arif Tirtana Di My Car Info News Bugatti Veyron Luxury Sports Cars Bugatti">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/d3/49/48d349c83cf5a4590f972a55a4738929.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaapBvkJcfKNE9_fvDwnMFRPh0aksopBFCFA';" alt="Pin Oleh Arif Tirtana Di My Car Info News Bugatti Veyron Luxury Sports Cars Bugatti">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Oleh Arif Tirtana Di My Car Info News Bugatti Veyron Luxury Sports Cars Bugatti</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/31/37/2b3137984bb80127b62fe992b1287e2f.jpg" data-lightbox="roadtrip" data-title="New Mercedes Benz S Class 2014 With Complete Security System Compare Car Insurance New Car Picture Car Insurance Comparison">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/31/37/2b3137984bb80127b62fe992b1287e2f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-FiT6pCnpGNIIts3JBmvh3O9dw0vMWAXKUg';" alt="New Mercedes Benz S Class 2014 With Complete Security System Compare Car Insurance New Car Picture Car Insurance Comparison">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Mercedes Benz S Class 2014 With Complete Security System Compare Car Insurance New Car Picture Car Insurance Comparison</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/ba/32/0cba320492795057c5ebf1be24191254.jpg" data-lightbox="roadtrip" data-title="Pin On My Car Info News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/ba/32/0cba320492795057c5ebf1be24191254.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-c4ni3K5ZKoTGbBF98vGpcuqrL46fSEv56w';" alt="Pin On My Car Info News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Car Info News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/0c/13/1a0c13cb2bebb79d2547ce94b1c06670.jpg" data-lightbox="roadtrip" data-title="Pin On My Car Info News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/0c/13/1a0c13cb2bebb79d2547ce94b1c06670.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAkLTics6LS5OzR6oVN9bNVljeTx7GsMPjKQ';" alt="Pin On My Car Info News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Car Info News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/favicons/4ca96efb0be813892b6a23451800aba35b3b836de5d440035a4ec6f4.JPG?e2512c5d7c92ef427221575bf6755d75" data-lightbox="roadtrip" data-title="What Is Vehicle Check In 2020 How To Plan Letters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/favicons/4ca96efb0be813892b6a23451800aba35b3b836de5d440035a4ec6f4.JPG?e2512c5d7c92ef427221575bf6755d75" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlW0E3DpNCXPwJ1SEwz2SQAEUi1FhvccGX9w';" alt="What Is Vehicle Check In 2020 How To Plan Letters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Vehicle Check In 2020 How To Plan Letters</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/71/44/5e7144b244d35481837020401a0b668b.jpg" data-lightbox="roadtrip" data-title="Pin On My Car Info">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/71/44/5e7144b244d35481837020401a0b668b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCwUSs9M5xnaAEAv_9QFjU6TGlOA6fdGlYYQ';" alt="Pin On My Car Info">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Car Info</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/6c/12/8c6c1208e2c2f887b0130b9a6d9615ee.jpg" data-lightbox="roadtrip" data-title="Pin On My Car Info">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/6c/12/8c6c1208e2c2f887b0130b9a6d9615ee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtNC7XnlVEH8CCk11KD_ux9tCkyxzONEg-TA';" alt="Pin On My Car Info">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Car Info</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/dod-civilian-retirement-ceremony-checklist.html">Dod Civilian Retirement Ceremony Checklist</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-overseas-return-rights.html">Dod Civilian Overseas Return Rights</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-retirement.html">Dod Civilian Retirement</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-pcs-handbook.html">Dod Civilian Pcs Handbook</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-oath-of-office.html">Dod Civilian Oath Of Office</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-moving-to-germany.html">Dod Civilian Moving To Germany</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-retiree-id-card.html">Dod Civilian Retiree Id Card</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-uniform.html">Dod Civilian Uniform</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-security-groups.html">Dod Civilian Security Groups</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-retirement-application.html">Dod Civilian Retirement Application</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-retirement-pay-calculator.html">Dod Civilian Retirement Pay Calculator</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-pay-raise-2019.html">Dod Civilian Pay Raise 2019</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-pay-scale-2021.html">Dod Civilian Pay Scale 2021</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-retirement-checklist.html">Dod Civilian Retirement Checklist</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-sick-leave-policy.html">Dod Civilian Sick Leave Policy</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-retirement-age.html">Dod Civilian Retirement Age</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-overseas-pay-calculator.html">Dod Civilian Overseas Pay Calculator</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-retirement-calculator.html">Dod Civilian Retirement Calculator</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-retirement-eligibility.html">Dod Civilian Retirement Eligibility</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-overseas-leave-policy.html">Dod Civilian Overseas Leave Policy</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

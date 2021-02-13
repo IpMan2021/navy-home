@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Dept Of Va Employment Verification - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Dept Of Va Employment Verification",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/474x/d4/12/46/d41246c5ba836f8af0e368dab5fb63f6.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=dept+of+va+employment+verification",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Dept Of Va Employment Verification</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Companies requesting employment verification are charged a fee for the service. For questions and information regarding ADA requirements for offenders contact Barry Marano ADA Coordinator. Find employment services such as Find a job Payline Retirement plans Workers compensation and more Employment Virginiagov The Official Site of The Commonwealth of Virginia. <br>				
+			</p>
+										<a class="badge badge-primary" href="/us-army-soldiers-vietnam.html">us army soldiers vietnam</a>
+											<a class="badge badge-light" href="/us-army-soldier-for-life-transition-assistance-program.html">us army soldier for life transition assistance program</a>
+											<a class="badge badge-light" href="/us-army-soldier-weapons.html">us army soldier weapons</a>
+											<a class="badge badge-danger" href="/us-army-soldier-pay.html">us army soldier pay</a>
+											<a class="badge badge-success" href="/us-army-soldiers-names.html">us army soldiers names</a>
+											<a class="badge badge-success" href="/us-army-soldier-contract.html">us army soldier contract</a>
+											<a class="badge badge-warning" href="/us-army-soldier-information.html">us army soldier information</a>
+											<a class="badge badge-light" href="/us-army-soldiers-killed-in-africa.html">us army soldiers killed in africa</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you've come to visit the right blog.  Our site provides you with hints for seeing the highest quality video and picture content, hunt and locate more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this movie that you view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/fe/92/22fe92d3c13e7f5f76bd107e527e892e.jpg" data-lightbox="roadtrip" data-title="Letter Confirming Employment Free Letter Of Employment Employment Letter Sample Employment Form">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/fe/92/22fe92d3c13e7f5f76bd107e527e892e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRyP5GeLn_Ln9JolHVs9sb6rfY-ZykOBXg1Q';" alt="Letter Confirming Employment Free Letter Of Employment Employment Letter Sample Employment Form">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Letter Confirming Employment Free Letter Of Employment Employment Letter Sample Employment Form</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e8/d4/08/e8d40889fde708a454b3b867f30212f2.jpg" data-lightbox="roadtrip" data-title="Employment Verification Request Form Unique 5 Employment Verification Form Templates To Hire Best Employee Employment Form Employment Letter Templates Free">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e8/d4/08/e8d40889fde708a454b3b867f30212f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2yZq99Yb13GWZl_JSVZnkSql6coEu9LV1yQ';" alt="Employment Verification Request Form Unique 5 Employment Verification Form Templates To Hire Best Employee Employment Form Employment Letter Templates Free">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Employment Verification Request Form Unique 5 Employment Verification Form Templates To Hire Best Employee Employment Form Employment Letter Templates Free</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/af/d5/c4afd560b7963bca9684c7ae7878c4e4.jpg" data-lightbox="roadtrip" data-title="Fresh Employment Verification Letter For You Https Letterbuis Com Fresh Employment Verification Let Letter Of Employment Confirmation Letter Letter Templates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/af/d5/c4afd560b7963bca9684c7ae7878c4e4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ3POSykpQdCC7WCJ99NWaAgUpxaOb8Eeo_A';" alt="Fresh Employment Verification Letter For You Https Letterbuis Com Fresh Employment Verification Let Letter Of Employment Confirmation Letter Letter Templates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fresh Employment Verification Letter For You Https Letterbuis Com Fresh Employment Verification Let Letter Of Employment Confirmation Letter Letter Templates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/73/61/45/736145e998a9763ff765efd26b04a482.jpg" data-lightbox="roadtrip" data-title="10 Employment Verification Forms Word Excel Pdf Templates Templates Employment Cash Flow Statement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/73/61/45/736145e998a9763ff765efd26b04a482.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVW__WnB94mdwM9MC37xWIitLary7WTOg6PA';" alt="10 Employment Verification Forms Word Excel Pdf Templates Templates Employment Cash Flow Statement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Employment Verification Forms Word Excel Pdf Templates Templates Employment Cash Flow Statement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0b/d5/3d/0bd53d8cd11a707eb15f85b4a4c5ad0d.jpg" data-lightbox="roadtrip" data-title="Employment Verification Letter For Immigration Inspirational Employment Verification Letter 14 Download Lettering Business Letter Template Letter Of Employment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0b/d5/3d/0bd53d8cd11a707eb15f85b4a4c5ad0d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSByTFb2xqqgVrTZt6yB74-ssX5aQJA6gHsTg';" alt="Employment Verification Letter For Immigration Inspirational Employment Verification Letter 14 Download Lettering Business Letter Template Letter Of Employment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Employment Verification Letter For Immigration Inspirational Employment Verification Letter 14 Download Lettering Business Letter Template Letter Of Employment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ce/1a/c8/ce1ac8be4b12b2fbe4274e430c1394ff.jpg" data-lightbox="roadtrip" data-title="Sample Employment Verification Letter For Visa Fresh Sample Proof Of Employment Letter 9 Download Fr Cover Letter Template Free Cover Letter Template Lettering">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ce/1a/c8/ce1ac8be4b12b2fbe4274e430c1394ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcZFsyAfUA_lHSDkbTuarfKStKuN9Ssg4a9A';" alt="Sample Employment Verification Letter For Visa Fresh Sample Proof Of Employment Letter 9 Download Fr Cover Letter Template Free Cover Letter Template Lettering">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sample Employment Verification Letter For Visa Fresh Sample Proof Of Employment Letter 9 Download Fr Cover Letter Template Free Cover Letter Template Lettering</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/53/52/12/5352121d2137debd8d5bbf281ff6fba2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcZFsyAfUA_lHSDkbTuarfKStKuN9Ssg4a9A';" alt="Sample Employment Verification Letter For Visa Fresh Sample Proof Of Employment Letter 9 Download Fr Cover Letter Template Free Cover Letter Template Lettering">
+										<div class="card-body">
+						<h3 class="h5"><b>Use our look-up to view your form online.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Dept of va employment verification</strong>. 
+								
+																	Learn more VA-wide workforce data In accordance with Public Law 115-182 the VA Mission Act of 2018 Section 505. 
+																	Use The Work Number for immediate accurate and secure automated employment and income verification. 
+																	What You Need to Know Form 1099-G1099-INTs are now available. 
+																	We will review the concern with. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Veterans Affairs Employees Truework allows you to complete employee employment and income verifications faster. 
+																	For questions regarding health and medical concerns at VADOC facilities not local jails. 
+																	The administration of VA programs and delivery of VA benefits verification of identity and status and personnel administration as identified in the VA system of records 58VA212228 Compensation Pension Education and Vocational Rehabilitation and Employment Records - VA published in the Federal. 
+																	Web Automated Verification of Enrollment WAVE Registration Required. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Employment Verifications DOCVerifications vadocvirginiagov Americans with Disabilities Act. 
+																	Begin your job search Register or Login with the VAWC to gain full access to its services. 
+																	E-Verify employers verify the identity and employment eligibility of newly hired employees by electronically matching information provided by employees on the Form I-9 Employment Eligibility Verification against records available to the Social Security Administration SSA and the Department of Homeland Security DHS. 
+																	Employment Verification is now available through My Biz for current DoDEA employees. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	BarryMarano vadocvirginiagov Health Medical. 
+																	Pathways Program - For Students Recent. 
+																	Guidelines will vary by lender and borrowers should be aware that some employment scenarios can disrupt the VA loan process. 
+																	The process is simple and automated and most employees are verified within 24 hours. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VA sends veterans an official IRS taxable income form such as a W-2 form. 
+																	Service members may be able to receive disability compensation benefits sooner if you apply prior to your discharge from service through the Benefits Delivery at Discharge BDD or Quick Start pre. 
+																	To verify employment fax requests to the Virginia Department of Transportation Human Resources office at 804-371-6536 or call 804-786-5953. 
+																	The VECs Virginia Workforce Connection VAWC is your online source to connect with potential employers search for jobs find training opportunities and research wage data along with industry and occupational trends. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Disabled veterans can also have employment outside the VA. 
+																	The new My Biz Employment Verification tool allows technicians to submit employment information to an external organization business bank etc directly from the Defense Civilian Personnel Data. 
+																	It is available 24 hours a day seven days a week at no cost to UVA employees. 
+																	The Department of Veterans Affairs is committed to hiring Veterans to carry on the tradition of employing and caring for those who have served. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Use your annual tax data to verify VA income as you would any nonmilitary job. 
+																	The Virginia Employment Commission VEC administers the unemployment compensation program that provides temporary financial assistance to individuals who become unemployed through no fault of their own. 
+																	Alternatively you may print and mail-in VA Form 21-526EZ Application for Disability Compensation and Related Compensation Benefits or call VA at 1-800-827-1000 to have the form mailed to you. 
+																	The gov means its official. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Employment Verification is a Self Service My Biz tool allowing employees to email employment andor salary information to an external organizations business bank credit union directly from the Defense Civilian Personnel Data System DCPDS via secure internet. 
+																	If you use a. 
+																	Federal government websites often end in gov or mil. 
+																	The Internal Revenue Service requires income verification from all employers each year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Before sharing sensitive information make sure youre on a federal government site. 
+																	The process is simple and automated and most employees are verified within 24 hours. 
+																	Code of Federal Regulations 1576 for routine uses ie information verifying an applicants employment may be disclosed to a prospective mortgagee proposing to make a guaranteed loan on the veteran applicants behalf as identified in the VA system of records 55VA26 Loan Guaranty Home Condominium and Manufactured Home. 
+																	For free help in completing this form call VA toll-free at 1-800-827-1000. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Verification of Employment VOE is essential for VA lenders to see that you have a reliable source of income and can make your mortgage payments. 
+																	Verify Virginia Department of Transportation Employees Truework allows you to complete employee employment and income verifications faster. 
+																	Benefits are paid through taxes on employers covered under the Virginia Unemployment Compensation Act. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f3/20/07/f320079eba677b311d03632f29b03d03.jpg" data-lightbox="roadtrip" data-title="Letter Confirming Unemployment Unique Letter Of Employment Verification Template Letter Of Employment Employment Letter Sample Lettering">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f3/20/07/f320079eba677b311d03632f29b03d03.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6fJjPE2YGuwCClv1xIsE2gEyrzlTNafCCHA';" alt="Letter Confirming Unemployment Unique Letter Of Employment Verification Template Letter Of Employment Employment Letter Sample Lettering">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Letter Confirming Unemployment Unique Letter Of Employment Verification Template Letter Of Employment Employment Letter Sample Lettering</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9e/8d/40/9e8d40ce3c4a251693505cffeddc8f95.jpg" data-lightbox="roadtrip" data-title="Employment Verification Request Form New Sample Employment Verification Request Letters Replies Letter Templates Music Business Cards Employment Form">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9e/8d/40/9e8d40ce3c4a251693505cffeddc8f95.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0s6z35qjHOBXOek3tLI5k0r4jNZln1m_BDQ';" alt="Employment Verification Request Form New Sample Employment Verification Request Letters Replies Letter Templates Music Business Cards Employment Form">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Employment Verification Request Form New Sample Employment Verification Request Letters Replies Letter Templates Music Business Cards Employment Form</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/d4/12/46/d41246c5ba836f8af0e368dab5fb63f6.jpg" data-lightbox="roadtrip" data-title="Knox County Schools Employment Knoxville Tn Employment 13 Year Olds Employment Development Department Concord Ca Employment A Templates Employment Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/d4/12/46/d41246c5ba836f8af0e368dab5fb63f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEC5e_4JhldzIwut37RJpwbT6ZUuttFDN-3Q';" alt="Knox County Schools Employment Knoxville Tn Employment 13 Year Olds Employment Development Department Concord Ca Employment A Templates Employment Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Knox County Schools Employment Knoxville Tn Employment 13 Year Olds Employment Development Department Concord Ca Employment A Templates Employment Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e9/49/84/e949841ee8c4f49c6805a96d8fdb1d3b.jpg" data-lightbox="roadtrip" data-title="State Of Oregon Employment Department At T Employment Verification Virginia Employment Commission Galax Va Resume Skills Resume Examples Report Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e9/49/84/e949841ee8c4f49c6805a96d8fdb1d3b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzA-ETaJHyCCgyL3MVbkVEaT5t7AmTO148Ag';" alt="State Of Oregon Employment Department At T Employment Verification Virginia Employment Commission Galax Va Resume Skills Resume Examples Report Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">State Of Oregon Employment Department At T Employment Verification Virginia Employment Commission Galax Va Resume Skills Resume Examples Report Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c5/c9/ec/c5c9ec1a50a38740cb1df5994c5ecaab.jpg" data-lightbox="roadtrip" data-title="Employment Advice Production And Employment 10th Class Virginia Employment Commission Richmond Va Em In 2020 Age Discrimination Employment Law Uk Employment Law">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c5/c9/ec/c5c9ec1a50a38740cb1df5994c5ecaab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNenfWSmiFms-VCyqeY-B4EdwFh46DweAScw';" alt="Employment Advice Production And Employment 10th Class Virginia Employment Commission Richmond Va Em In 2020 Age Discrimination Employment Law Uk Employment Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Employment Advice Production And Employment 10th Class Virginia Employment Commission Richmond Va Em In 2020 Age Discrimination Employment Law Uk Employment Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/22/3c/7c/223c7ce365772cfc439bf3577ed084f7.jpg" data-lightbox="roadtrip" data-title="10 Employment Verification Forms Word Excel Pdf Templates Employment Form Good Essay Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/22/3c/7c/223c7ce365772cfc439bf3577ed084f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQzgWl4eMeKzr4KxxgazUfe6aJWuTgr7rPwQ';" alt="10 Employment Verification Forms Word Excel Pdf Templates Employment Form Good Essay Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Employment Verification Forms Word Excel Pdf Templates Employment Form Good Essay Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/92/6f/98/926f989e8795eb7aac9472c1c36a7ba5.jpg" data-lightbox="roadtrip" data-title="Request For Verification Of Employment Cover Letter For Internship Cover Letter For Resume Cover Letter Example">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/92/6f/98/926f989e8795eb7aac9472c1c36a7ba5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcy-JOoaxBEcSbiHG-VZMZ1aoTJbJX4g9PAA';" alt="Request For Verification Of Employment Cover Letter For Internship Cover Letter For Resume Cover Letter Example">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Request For Verification Of Employment Cover Letter For Internship Cover Letter For Resume Cover Letter Example</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/01/e7/c001e7e3b1a4d4ebd882b310489d0d42.jpg" data-lightbox="roadtrip" data-title="Unemployment Verification Letter Luxury Unemployment Verification Letter Filename Example Lettering Letter Templates Flyer Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/01/e7/c001e7e3b1a4d4ebd882b310489d0d42.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1ihdJ8QyDVFQnJ2vNBkNI936mNa_rrJi90A';" alt="Unemployment Verification Letter Luxury Unemployment Verification Letter Filename Example Lettering Letter Templates Flyer Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Verification Letter Luxury Unemployment Verification Letter Filename Example Lettering Letter Templates Flyer Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/53/52/12/5352121d2137debd8d5bbf281ff6fba2.jpg" data-lightbox="roadtrip" data-title="Sample Letter Confirming Unemployment Unique 12 13 Sample Letter Seeking Employment Lettering Letter Example Birth Certificate Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/53/52/12/5352121d2137debd8d5bbf281ff6fba2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwDq_jzE9rIBROOWJfiqBb1lfQ7g3Oeh6Lsw';" alt="Sample Letter Confirming Unemployment Unique 12 13 Sample Letter Seeking Employment Lettering Letter Example Birth Certificate Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sample Letter Confirming Unemployment Unique 12 13 Sample Letter Seeking Employment Lettering Letter Example Birth Certificate Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/48/de/c2/48dec2622db89966db2c2e323c528ca7.jpg" data-lightbox="roadtrip" data-title="Employment Application Form Template In 2020 With Images Job Application Template Employment Application Job Application Form">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/48/de/c2/48dec2622db89966db2c2e323c528ca7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv9RRKMunNmCWUzLOKQhHLf7pIyIk-v6eX-g';" alt="Employment Application Form Template In 2020 With Images Job Application Template Employment Application Job Application Form">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Employment Application Form Template In 2020 With Images Job Application Template Employment Application Job Application Form</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/58/2f/7a582f7dc8e08658a879f9deb1085d7f.jpg" data-lightbox="roadtrip" data-title="Social Workers Resume Samples Beautiful 9 10 Masters Of Social Work Resume">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/58/2f/7a582f7dc8e08658a879f9deb1085d7f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3F-8kvjNoUPjH_ciyvjAtBmn_eisnanKHGw';" alt="Social Workers Resume Samples Beautiful 9 10 Masters Of Social Work Resume">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Social Workers Resume Samples Beautiful 9 10 Masters Of Social Work Resume</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/2b/78/a22b781472a3b780c7dd073739572405.png" data-lightbox="roadtrip" data-title="Employee Written Warning Template Awesome Verbal Warning Notice Inside Verbal Warning Form Templates Marshall County Form">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/2b/78/a22b781472a3b780c7dd073739572405.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXKRwDDMorbMTgSmP_XzznE4JWomFw0wMq6A';" alt="Employee Written Warning Template Awesome Verbal Warning Notice Inside Verbal Warning Form Templates Marshall County Form">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Employee Written Warning Template Awesome Verbal Warning Notice Inside Verbal Warning Form Templates Marshall County Form</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/fd/88/d0fd88ee2fcea14a797837a1a3833695.jpg" data-lightbox="roadtrip" data-title="Sample Verification Of Employment Letter Templates For Employees Employment Discrimination Business Letter Format Employment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/fd/88/d0fd88ee2fcea14a797837a1a3833695.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1e6MEZEZikntXS99dCVpsuPQGq-5W9P_2Gg';" alt="Sample Verification Of Employment Letter Templates For Employees Employment Discrimination Business Letter Format Employment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sample Verification Of Employment Letter Templates For Employees Employment Discrimination Business Letter Format Employment</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/department-of-military-lands-and-cantonments-bd.html">Department Of Military Lands And Cantonments Bd</a></li>
+													<li class="list-group-item"><a href="/department-of-military-affairs-tenders.html">Department Of Military Affairs Tenders</a></li>
+													<li class="list-group-item"><a href="/department-of-finance-and-accounting-military.html">Department Of Finance And Accounting Military</a></li>
+													<li class="list-group-item"><a href="/department-of-military-lands-and-cantonments-exam-result.html">Department Of Military Lands And Cantonments Exam Result</a></li>
+													<li class="list-group-item"><a href="/department-of-military-affairs-montana.html">Department Of Military Affairs Montana</a></li>
+													<li class="list-group-item"><a href="/department-of-military-affairs-illinois.html">Department Of Military Affairs Illinois</a></li>
+													<li class="list-group-item"><a href="/department-of-defense-spending-bill.html">Department Of Defense Spending Bill</a></li>
+													<li class="list-group-item"><a href="/department-of-defense-spending-trends.html">Department Of Defense Spending Trends</a></li>
+													<li class="list-group-item"><a href="/department-of-military-affairs-madison-wi.html">Department Of Military Affairs Madison Wi</a></li>
+													<li class="list-group-item"><a href="/department-of-military-affairs-ministry-of-defence.html">Department Of Military Affairs Ministry Of Defence</a></li>
+													<li class="list-group-item"><a href="/department-of-military-affairs-michigan.html">Department Of Military Affairs Michigan</a></li>
+													<li class="list-group-item"><a href="/department-of-military-affairs-current-affairs.html">Department Of Military Affairs Current Affairs</a></li>
+													<li class="list-group-item"><a href="/department-of-military-california.html">Department Of Military California</a></li>
+													<li class="list-group-item"><a href="/department-of-defense-terrorism-definition.html">Department Of Defense Terrorism Definition</a></li>
+													<li class="list-group-item"><a href="/department-of-military-affairs-guam.html">Department Of Military Affairs Guam</a></li>
+													<li class="list-group-item"><a href="/department-of-military-instruction.html">Department Of Military Instruction</a></li>
+													<li class="list-group-item"><a href="/department-of-military-affairs-lexington-ky.html">Department Of Military Affairs Lexington Ky</a></li>
+													<li class="list-group-item"><a href="/department-of-military-and-veterans-affairs-north-carolina.html">Department Of Military And Veterans Affairs North Carolina</a></li>
+													<li class="list-group-item"><a href="/department-of-disabled-veterans.html">Department Of Disabled Veterans</a></li>
+													<li class="list-group-item"><a href="/department-of-military-affairs-gazette-notification.html">Department Of Military Affairs Gazette Notification</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

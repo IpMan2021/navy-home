@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Does Counterintelligence Do In The Army - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Does Counterintelligence Do In The Army",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/564x/be/95/62/be956235dba8ca25e7a783ada22528b6.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+does+counterintelligence+do+in+the+army",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Does Counterintelligence Do In The Army</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Counterintelligence agents work for the Central Intelligence Agency CIA Federal Bureau of Investigation FBI Department of Defense all branches of the US. By developing measures to mitigate the threat whether by technical means or revised operating procedures or by ensuring that the security measures taken by the. It includes gathering information and conducting activities to prevent espionage sabotage assassinations or other intelligence activities conducted for or on behalf of foreign powers organizations or persons. <br>				
+			</p>
+										<a class="badge badge-danger" href="/dod-civilian-pay-scale.html">dod civilian pay scale</a>
+											<a class="badge badge-primary" href="/dod-civilian-ucmj.html">dod civilian ucmj</a>
+											<a class="badge badge-info" href="/dod-civilian-retirement-seminars.html">dod civilian retirement seminars</a>
+											<a class="badge badge-light" href="/dod-civilian-retirement-application.html">dod civilian retirement application</a>
+											<a class="badge badge-danger" href="/dod-civilian-overseas-locality-pay.html">dod civilian overseas locality pay</a>
+											<a class="badge badge-light" href="/dod-civilian-overseas-travel.html">dod civilian overseas travel</a>
+											<a class="badge badge-light" href="/dod-civilian-retirement-information.html">dod civilian retirement information</a>
+											<a class="badge badge-dark" href="/dod-civilian-overseas-pay.html">dod civilian overseas pay</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you have come to pay a visit to the ideal site.  Our site provides you with suggestions for seeing the maximum quality video and picture content, hunt and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, especially Youtube, so we recommend this movie for you to view.  It is also possible to contribute to supporting this site by sharing videos and images that you like on this site on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this site.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/98/d0/a898d0911fe5d25b9052b6c0cecc5f38.png" data-lightbox="roadtrip" data-title="Being A Counterintelligence Agent In The Army Airman To Mom In 2020 Military Spouse Joining The Military Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/98/d0/a898d0911fe5d25b9052b6c0cecc5f38.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTt66EWLDmRHcVhvx8AIctG2DUoli_9Ge35gILRIW_6qEox3tdJsQd_Vl7yZFqOHPBtsT04A&amp;ec=45771803';" alt="Being A Counterintelligence Agent In The Army Airman To Mom In 2020 Military Spouse Joining The Military Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Being A Counterintelligence Agent In The Army Airman To Mom In 2020 Military Spouse Joining The Military Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/9a/b1/cd9ab1b7d11086d6be989742a66ec706.jpg" data-lightbox="roadtrip" data-title="U S Department Of The Army Counterintelligence Ci Custom Made Etsy Custom Badges Wood Badge Wood Plaques">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/9a/b1/cd9ab1b7d11086d6be989742a66ec706.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeP_HDw1qEbFuKszIuaLbdRM79Q85D4abfZHNeFs83bnh1Hw8Hpx9Z_I1J3ZFEyF1_-HHIdQ&amp;ec=45771803';" alt="U S Department Of The Army Counterintelligence Ci Custom Made Etsy Custom Badges Wood Badge Wood Plaques">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Department Of The Army Counterintelligence Ci Custom Made Etsy Custom Badges Wood Badge Wood Plaques</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/86/f9/b286f9c852444b7779006490bade6c96.jpg" data-lightbox="roadtrip" data-title="File Us Army Ci Badge Jpg Wikipedia The Free Encyclopedia Badge Naval Intelligence Uniformed Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/86/f9/b286f9c852444b7779006490bade6c96.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCUoOpcZd3YGzSjvAH3cswCM4DOX3dzDw16NH9dVzuwDphYqzgT75O_y9sDJnMEnq05HrFNA&amp;ec=45771803';" alt="File Us Army Ci Badge Jpg Wikipedia The Free Encyclopedia Badge Naval Intelligence Uniformed Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">File Us Army Ci Badge Jpg Wikipedia The Free Encyclopedia Badge Naval Intelligence Uniformed Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/33/17/8c33172567561164da11ef387f3a57bb.jpg" data-lightbox="roadtrip" data-title="U S Army Counterintelligence Special Agent United States Army Counterintelligence Is The Component Of United States Army Intelligence Insignias Policia Heroe">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/33/17/8c33172567561164da11ef387f3a57bb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo87SKYXhx0k_w0f3ePDvXfdQt2jtbUqguc75el3-Q0t5gTpbXNZNAshqQ8HIKjYs7xw6T5g&amp;ec=45771803';" alt="U S Army Counterintelligence Special Agent United States Army Counterintelligence Is The Component Of United States Army Intelligence Insignias Policia Heroe">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Counterintelligence Special Agent United States Army Counterintelligence Is The Component Of United States Army Intelligence Insignias Policia Heroe</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/2a/bb/392abb6e7fb22efc50d521fb1fd7c479.jpg" data-lightbox="roadtrip" data-title="The Art Of Blending In 5 Tips From A Counterintelligence Special Agent There Are Many Occasions Where You May Need Survival Prepping Survival Special Agent">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/2a/bb/392abb6e7fb22efc50d521fb1fd7c479.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS5ZtwgeRUrionzz1NNAeDZfbRlOtMjHhJDhzFFOEopbMWjznSZOidbZpNlzMFKgQ8CYKGsQ&amp;ec=45771803';" alt="The Art Of Blending In 5 Tips From A Counterintelligence Special Agent There Are Many Occasions Where You May Need Survival Prepping Survival Special Agent">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Art Of Blending In 5 Tips From A Counterintelligence Special Agent There Are Many Occasions Where You May Need Survival Prepping Survival Special Agent</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/f7/fe/d9f7fe20ac3ce3482298aacc7dc5b44e.jpg" data-lightbox="roadtrip" data-title="The Counter Intelligence Investigations Course Army Intelligence Investigations Intelligence">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/f7/fe/d9f7fe20ac3ce3482298aacc7dc5b44e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNOMiWiVGF0NCh6yimRr2lC_SX5XahFvK_OjyU-lMrJnmKRD8K50HxFPeQVF0ucLmOuDTsqA&amp;ec=45771803';" alt="The Counter Intelligence Investigations Course Army Intelligence Investigations Intelligence">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Counter Intelligence Investigations Course Army Intelligence Investigations Intelligence</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/d9/f7/fe/d9f7fe20ac3ce3482298aacc7dc5b44e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNOMiWiVGF0NCh6yimRr2lC_SX5XahFvK_OjyU-lMrJnmKRD8K50HxFPeQVF0ucLmOuDTsqA&amp;ec=45771803';" alt="The Counter Intelligence Investigations Course Army Intelligence Investigations Intelligence">
+										<div class="card-body">
+						<h3 class="h5"><b>Can someone tell me what 35Ls do.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What does counterintelligence do in the army</strong>. 
+								
+																	OnceIf you do join - youll be able to talk to your S2 about IKN. 
+																	Counterintelligence is an activity aimed at protecting an agencys intelligence program from an oppositions intelligence service. 
+																	Investigative activity is essential to countering the adversary intelligence threat to Army interests. 
+																	The counterintelligencehuman intelligence senior sergeant supervises the collection processing development and dissemination or counterintelligence counter-signals intelligence and human intelligence information. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military and other related. 
+																	A military intelligence unit like the 205th MI or the 902nd MI both active duty will do military intelligence functions at the strategic level think espionage investigations intelligence analysis on foreign militaries while a regular unit like military police will likely have you processing security clearances for everyone in the unit who needs them administrative paperwork called an SF-86 or now e-QIP. 
+																	As a Counterintelligence Special Agent youll conduct investigations collect and process forensic and physical evidence to identify and detect foreign intelligence and international terrorist threats and plan the appropriate countermeasures to neutralize them. 
+																	They operate under the Joint Task Force organization and can operate in a joint operational environment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You cant come directly into the Army as an agent. 
+																	An Army Counterintelligence Agent completes investigations and collects evidence that keeps US. 
+																	You must be an E-5 first. 
+																	Definition of counterintelligence. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Thats also the way it is in the army. 
+																	Managing Operations Security and assisting with Force Protection is one of the most important because it can literally be the d. 
+																	What do Counterintelligence Intelligence Agents in the Army 35L do. 
+																	Military Intelligence Operators may be required to counter the cyber threat to the Army and the wider military environment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	United States Army Counterintelligence ACI is the component of United States Army Military Intelligence which conducts counterintelligence activities to detect identify assess counter exploit andor neutralize adversarial foreign intelligence services international terrorist organizations and insider threats to the United States Army and US. 
+																	Department of Defense DoD. 
+																	Basic Job Description for Army Counterintelligence Agent The Counterintelligence Agent 35L conducts counterintelligence surveys and investigations to assess and counter foreign threats. 
+																	CounterintelligenceHuman source intelligence officers lead and conduct CI and HUMINT collection operations in support of the tactical commanders combat operation and force protection requirements. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	An 18-year veteran of Army counterintelligence Turner said the daily grind can be a bit of a crap shoot though agents frequently interact with FBI and CIA officials as well as fellow soldiers. 
+																	These specialists must be able to blend in as a civilian in order to stay undercover. 
+																	Army Counterintelligence Office The Benelux Field Office is an element of the 66th Military Intelligence Brigade the US. 
+																	Counterintelligence CI refers to information gathered and activities conducted to protect against espionage other intelligence activities sabotage or assassinations conducted for or on behalf of foreign powers organizations or persons or international terrorist activities but not including personnel physical document or communications security programs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Coordinates operating requirements of subordinate. 
+																	CI places emphasis on investigative activity to support force infrastructure and technology. 
+																	Organized activity of an intelligence service designed to block an enemys sources of information to deceive the enemy to prevent sabotage and to gather political and military information Examples of counterintelligence in a Sentence. 
+																	The other posters are correct to an extent. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army unit responsible for carrying out Counterintelligence CI activities. 
+																	The 35L also will exploit and neutralize enemy Foreign Intelligence Service and terrorist threats to national security. 
+																	There you can look up the actual packet and. 
+																	Principle assignments are as HUMINT Exploitation Team HET OIC and Assistant CIHUMINT Platoon Commander. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Citizens property and information safe. 
+																	Counterintelligence Sergeants and Warrant Officers have a number of functions which have varying levels of importance. 
+																	Youre going to have to join and do another similar job until youre at least the rank of E4 with the ability to be boarded for promotion. 
+																	1 decade ago. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Supervises the multidiscipline counterintelligence activities at group corps Army or comparable and higher headquarters. 
+																	Whats the chance of combat and what are some advanced schools available. 
+																	This may be by identifying the source of potential and actual threats as part of a counter-intelligence team. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/20/8b/9b/208b9be907245d5110259228e9959c4a.png" data-lightbox="roadtrip" data-title="Pin On Places I Ve Lived">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/20/8b/9b/208b9be907245d5110259228e9959c4a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQObHpAOGPmtA0nISKD1oUaJwTITaQGYKWSQfiGbhk8WrlH2Sm5Qx911M7ffQx828KLuJfqNQ&amp;ec=45771803';" alt="Pin On Places I Ve Lived">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Places I Ve Lived</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/96/de/fd96deb1fa877a4136a4f71a09ebfb58.png" data-lightbox="roadtrip" data-title="Russian Fsk Members Federal Counterintelligence Service The Successor To The Kgb And Predecessor Of The Fsb Take Cold War Military Military History Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/96/de/fd96deb1fa877a4136a4f71a09ebfb58.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpglh4v2hmPFxoJg5WpMQXy8I3OdoMZwkYbRyrMH0uGJH07vpl6zcwY7EE7W5suesP4E9RjA&amp;ec=45771803';" alt="Russian Fsk Members Federal Counterintelligence Service The Successor To The Kgb And Predecessor Of The Fsb Take Cold War Military Military History Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Russian Fsk Members Federal Counterintelligence Service The Successor To The Kgb And Predecessor Of The Fsb Take Cold War Military Military History Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/25/33/962533b4767d2654ed59ebc28d34d270.jpg" data-lightbox="roadtrip" data-title="U S Department Of The Army Counterintelligence Wood Badge Etsy Wood Badge Custom Badges Personalized Wood Signs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/25/33/962533b4767d2654ed59ebc28d34d270.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0A17cJhS1OsTKekjCb8q0eLbSadnLz-PIMPRgrJKfGcQHYCPOsZRD0bHqJxds12DdSZD4kA&amp;ec=45771803';" alt="U S Department Of The Army Counterintelligence Wood Badge Etsy Wood Badge Custom Badges Personalized Wood Signs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Department Of The Army Counterintelligence Wood Badge Etsy Wood Badge Custom Badges Personalized Wood Signs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/6a/5e/e76a5eb18edc3d9561dfc29237e8269d.gif" data-lightbox="roadtrip" data-title="Interesting Stories From The Cold War What Are You Reading Cold War Cold War Books War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/6a/5e/e76a5eb18edc3d9561dfc29237e8269d.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB8t6G3nRwmR1EkHC6mZbcQ5G04mNl1QUDrTazDIPZbRjlrrTzcU-7CGxn2KSvbayoxUJRpw&amp;ec=45771803';" alt="Interesting Stories From The Cold War What Are You Reading Cold War Cold War Books War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Interesting Stories From The Cold War What Are You Reading Cold War Cold War Books War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/1c/19/ca1c1930d57a82f8817e4846def34d4b.jpg" data-lightbox="roadtrip" data-title="Support Military Muscle Shares Sgt Alston 35l Counterintelligence Agent Us Army Military Muscle Health Plus Health Fitness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/1c/19/ca1c1930d57a82f8817e4846def34d4b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScQATgZnqmSa_hmrm8FHA-mDKerUmfzLW-a85i8BZQURt7zp0-sntMB-S5lkItE8YbWhGXRw&amp;ec=45771803';" alt="Support Military Muscle Shares Sgt Alston 35l Counterintelligence Agent Us Army Military Muscle Health Plus Health Fitness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Support Military Muscle Shares Sgt Alston 35l Counterintelligence Agent Us Army Military Muscle Health Plus Health Fitness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/be/95/62/be956235dba8ca25e7a783ada22528b6.jpg" data-lightbox="roadtrip" data-title="Mos 35l Counterintelligence Ci Special Agent Special Agent Special Agents">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/be/95/62/be956235dba8ca25e7a783ada22528b6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSqTwhplqHP6q6A4YcsZyGIFYQDyl8q1s8payjEjfKxliAvTVz4SMbJCOi7n-ycUBNdwK4OA&amp;ec=45771803';" alt="Mos 35l Counterintelligence Ci Special Agent Special Agent Special Agents">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mos 35l Counterintelligence Ci Special Agent Special Agent Special Agents</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/19/21/d7/1921d7d81f56e491a85b4aa0ac0ebccb.jpg" data-lightbox="roadtrip" data-title="Read Book Us Army Counterintelligence Handbook Us Army Survival Download Pdf Free Epub Mobi Ebooks In 2020 Self Defense Tips Army Ebook">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/19/21/d7/1921d7d81f56e491a85b4aa0ac0ebccb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0g4I3-hmD_JskCxbUEFhr0CduFRnn0DhxTAKg-RTQ_dteYWNR7O-yXZ0LXsubsSyoh8iNOQ&amp;ec=45771803';" alt="Read Book Us Army Counterintelligence Handbook Us Army Survival Download Pdf Free Epub Mobi Ebooks In 2020 Self Defense Tips Army Ebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Read Book Us Army Counterintelligence Handbook Us Army Survival Download Pdf Free Epub Mobi Ebooks In 2020 Self Defense Tips Army Ebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e2/10/9a/e2109a8058d8b91e011e7b8554f62ccb.jpg" data-lightbox="roadtrip" data-title="U S Department Of The Army Counterintelligence Ci Custom Made Wood Plaque Badge Gifts For Him Her Retiree Pcs Gift Custom Badges Custom Badges Wood Plaques Gifts For Him">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e2/10/9a/e2109a8058d8b91e011e7b8554f62ccb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDjn2iTbESovap7alaQSAr7pQbHAFVcsBSVSjlOlxexBD6VkcPyz7Mx67VHVcEC6AWV4sNiA&amp;ec=45771803';" alt="U S Department Of The Army Counterintelligence Ci Custom Made Wood Plaque Badge Gifts For Him Her Retiree Pcs Gift Custom Badges Custom Badges Wood Plaques Gifts For Him">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Department Of The Army Counterintelligence Ci Custom Made Wood Plaque Badge Gifts For Him Her Retiree Pcs Gift Custom Badges Custom Badges Wood Plaques Gifts For Him</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/c0/c4/93c0c43681fee682f9d3ab472cd00158.jpg" data-lightbox="roadtrip" data-title="Boss Hogg Sorrell Booke Was A Counter Intelligence Agent In The Korean War Sorrell Booke The Dukes Of Hazzard Dukes Of Hazard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/c0/c4/93c0c43681fee682f9d3ab472cd00158.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj_B2fLe2d2jFzUWfCvpymohxXvrXfpn-AFObeWDJAn5sofgrpaADNr9bv4asqFw0HOwRVZw&amp;ec=45771803';" alt="Boss Hogg Sorrell Booke Was A Counter Intelligence Agent In The Korean War Sorrell Booke The Dukes Of Hazzard Dukes Of Hazard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Boss Hogg Sorrell Booke Was A Counter Intelligence Agent In The Korean War Sorrell Booke The Dukes Of Hazzard Dukes Of Hazard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/f8/32/98f832794098fc37359af63623666458.jpg" data-lightbox="roadtrip" data-title="U S Army Counterintelligence Handbook Us Army Survival Paperback In 2020 Army Us Army Paperbacks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/f8/32/98f832794098fc37359af63623666458.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBjeEWQG3f7h6CNGKuOWzJIdh9Wfr8l684GkJPfFHPv3yufLVlvmXZX1XSEA3glZXtvasHNQ&amp;ec=45771803';" alt="U S Army Counterintelligence Handbook Us Army Survival Paperback In 2020 Army Us Army Paperbacks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Counterintelligence Handbook Us Army Survival Paperback In 2020 Army Us Army Paperbacks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/6b/7c/3e6b7c4d51f9e1e64b9c3a6976dd5c22.jpg" data-lightbox="roadtrip" data-title="Pin On Celebrity Famous Veterans In Uniform">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/6b/7c/3e6b7c4d51f9e1e64b9c3a6976dd5c22.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiCzFiIZpMO3wTRl313Kim8OCEcDAt1dPCIuIYffmKzYdSZGfBR-3m9tgfriKYwqZrNEIGOA&amp;ec=45771803';" alt="Pin On Celebrity Famous Veterans In Uniform">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Celebrity Famous Veterans In Uniform</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/3a/aa/a33aaa57facd4dc1cb61180e451b60e9.jpg" data-lightbox="roadtrip" data-title="Reflections Of Honor The Untold Story Of A Nisei Spy Curriculum Research Development Group Curriculum Japanese American Development">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/3a/aa/a33aaa57facd4dc1cb61180e451b60e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7uxBffg-njqJVPxnoJebBbKbOKXPDdzFaDHw_b0ixwqxwHWsCTM0OmmrGNlO9YKuxE99qEA&amp;ec=45771803';" alt="Reflections Of Honor The Untold Story Of A Nisei Spy Curriculum Research Development Group Curriculum Japanese American Development">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reflections Of Honor The Untold Story Of A Nisei Spy Curriculum Research Development Group Curriculum Japanese American Development</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/e5/8f/d9/e58fd93d973f501bb9c261b37a4ec733.jpg" data-lightbox="roadtrip" data-title="Bag Full Of Guns Special Forces Israel Defence Forces Best Special Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/e5/8f/d9/e58fd93d973f501bb9c261b37a4ec733.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhsiqeq6BHaRYXzI90ZgWZDLptAsDjTKqAnRb8H7qTKR6P0GbBMSOnIwwQ0oQJQ_EPdQjHDQ&amp;ec=45771803';" alt="Bag Full Of Guns Special Forces Israel Defence Forces Best Special Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bag Full Of Guns Special Forces Israel Defence Forces Best Special Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/veteran-medical-records-request.html">Veteran Medical Records Request</a></li>
+													<li class="list-group-item"><a href="/va-dependent-education-assistance.html">Va Dependent Education Assistance</a></li>
+													<li class="list-group-item"><a href="/veteran-records-archives.html">Veteran Records Archives</a></li>
+													<li class="list-group-item"><a href="/veteran-job-training-programs.html">Veteran Job Training Programs</a></li>
+													<li class="list-group-item"><a href="/vet-career-programs.html">Vet Career Programs</a></li>
+													<li class="list-group-item"><a href="/veteran-records-research.html">Veteran Records Research</a></li>
+													<li class="list-group-item"><a href="/veteran-war-records.html">Veteran War Records</a></li>
+													<li class="list-group-item"><a href="/veteran-shot-records.html">Veteran Shot Records</a></li>
+													<li class="list-group-item"><a href="/veteran-marathon-record.html">Veteran Marathon Record</a></li>
+													<li class="list-group-item"><a href="/veteran-hiring-programs.html">Veteran Hiring Programs</a></li>
+													<li class="list-group-item"><a href="/va-work-study-program-phone-number.html">Va Work Study Program Phone Number</a></li>
+													<li class="list-group-item"><a href="/veteran-crisis-hotline-number.html">Veteran Crisis Hotline Number</a></li>
+													<li class="list-group-item"><a href="/veteran-career-transition-program.html">Veteran Career Transition Program</a></li>
+													<li class="list-group-item"><a href="/verizon-wireless-dod-civilian-discount.html">Verizon Wireless Dod Civilian Discount</a></li>
+													<li class="list-group-item"><a href="/veteran-work-study-program.html">Veteran Work Study Program</a></li>
+													<li class="list-group-item"><a href="/va-crisis-line-telephone-number.html">Va Crisis Line Telephone Number</a></li>
+													<li class="list-group-item"><a href="/veteran-records-online.html">Veteran Records Online</a></li>
+													<li class="list-group-item"><a href="/veterans-24-hour-crisis-line.html">Veterans 24 Hour Crisis Line</a></li>
+													<li class="list-group-item"><a href="/veteran-crisis-line-volunteer.html">Veteran Crisis Line Volunteer</a></li>
+													<li class="list-group-item"><a href="/vadod-medical-sharing-office.html">Vadod Medical Sharing Office</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How Large Is Indias Military - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How Large Is Indias Military",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/736x/2e/0e/97/2e0e97b8e577a556f21a4a6ac5c16811.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+large+is+indias+military",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How Large Is Indias Military</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">INDIA VS CHINA Military Power Comparison 2020China and India today are two of the most powerful countries in Asia. It holds a PwrIndx rating of 01207 00000 considered perfect. India has not released any official statements about the size of its nuclear arsenal. <br>				
+			</p>
+										<a class="badge badge-warning" href="/does-shoe-dept-offer-military-discount.html">does shoe dept offer military discount</a>
+											<a class="badge badge-success" href="/financial-aid-for-dependents-of-veterans.html">financial aid for dependents of veterans</a>
+											<a class="badge badge-info" href="/dpw-anniston-army-depot.html">dpw anniston army depot</a>
+											<a class="badge badge-info" href="/dpw-us-army.html">dpw us army</a>
+											<a class="badge badge-dark" href="/dog-movie-in-the-army.html">dog movie in the army</a>
+											<a class="badge badge-primary" href="/dog-army-vest-amazon.html">dog army vest amazon</a>
+											<a class="badge badge-warning" href="/emergency-financial-assistance-for-veterans-in-california.html">emergency financial assistance for veterans in california</a>
+											<a class="badge badge-danger" href="/federal-civilian-retirement-age.html">federal civilian retirement age</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to visit the ideal site.  Our website gives you suggestions for viewing the highest quality video and image content, search and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie for you to view.  It is also possible to contribute to supporting this website by sharing videos and images that you enjoy on this blog on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information that you get on this site.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/08/49/b8084974410b97ca3aa62a94329f9ae1.jpg" data-lightbox="roadtrip" data-title="These 17 Facts About Indian Army S 240 Year Old Rajputana Rifles Will Make You Proud Indian Army Army Day Indian Army Wallpapers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/08/49/b8084974410b97ca3aa62a94329f9ae1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa6nvBIddE8ya0Irq7LOt3zoi6goiJ3OBJRg';" alt="These 17 Facts About Indian Army S 240 Year Old Rajputana Rifles Will Make You Proud Indian Army Army Day Indian Army Wallpapers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">These 17 Facts About Indian Army S 240 Year Old Rajputana Rifles Will Make You Proud Indian Army Army Day Indian Army Wallpapers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://static.theprint.in/wp-content/uploads/2020/02/Indian-Army-3-696x392.jpg" data-lightbox="roadtrip" data-title="Indian Army Now World S Largest Ground Force As China Halves Strength On Modernisation Push">
+											<img class="card-img v-image ads-img " src="https://static.theprint.in/wp-content/uploads/2020/02/Indian-Army-3-696x392.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuYkpw9617twTmZCYNWWlA1531iIyaBxmZVA';" alt="Indian Army Now World S Largest Ground Force As China Halves Strength On Modernisation Push">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Army Now World S Largest Ground Force As China Halves Strength On Modernisation Push</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/ab/20/faab2090c1ef97b83471cad67d101be9.jpg" data-lightbox="roadtrip" data-title="Indian Military Deployment Indian History Facts India World Map Geography Map">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/ab/20/faab2090c1ef97b83471cad67d101be9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3BXC9Qz1AQzcLdzZe7oYKmv5ythgv7T98Ow';" alt="Indian Military Deployment Indian History Facts India World Map Geography Map">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Military Deployment Indian History Facts India World Map Geography Map</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/ce/a3/53cea326dfda1af3a481139ee7519748.jpg" data-lightbox="roadtrip" data-title="Indian Army Special Forces Para Commandos Marching Indian Army Special Forces Military Special Forces Indian Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/ce/a3/53cea326dfda1af3a481139ee7519748.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuiusjP-Pnvi8BUQD0TX7Iuudv6uofg-s_UQ';" alt="Indian Army Special Forces Para Commandos Marching Indian Army Special Forces Military Special Forces Indian Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Army Special Forces Para Commandos Marching Indian Army Special Forces Military Special Forces Indian Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/62/6d/a9626d0023826d5638677748570f23dc.png" data-lightbox="roadtrip" data-title="Pin On Indian Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/62/6d/a9626d0023826d5638677748570f23dc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTbwDHtjcU6tWdU4yWNYPb03nNd1ilkZ0Syw';" alt="Pin On Indian Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Indian Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/c1/15/60c1153c1309ce3654faf028f8351aca.jpg" data-lightbox="roadtrip" data-title="Indian Special Forces Indian Army Special Forces Indian Army Army Images">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/c1/15/60c1153c1309ce3654faf028f8351aca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQom6V8EW8tjJ0WGWXEKM-sSA0aRYZZv-sT2Q';" alt="Indian Special Forces Indian Army Special Forces Indian Army Army Images">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Special Forces Indian Army Special Forces Indian Army Army Images</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/7e/73/ba/7e73ba62f76b0e69ffdb70d458f6f7a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQom6V8EW8tjJ0WGWXEKM-sSA0aRYZZv-sT2Q';" alt="Indian Special Forces Indian Army Special Forces Indian Army Army Images">
+										<div class="card-body">
+						<h3 class="h5"><b>India Military Strength 2021 For 2021 India is ranked 4 of 139 out of the countries considered for the annual GFP review.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How large is indias military</strong>. 
+								
+																	In 1914 the Indian Army was one of the two largest volunteer armies in the world. 
+																	The total budget sanctioned for the Indian military for the financial year 2019 is 431011 crore 609 billion. 
+																	Belfer estimates there are about 225000 Indian ground forces in the region as well as 200000 to 230000 Chinese. 
+																	Since resources like aircraft personnel helicopters etc are spread across the three services Army Air Force and Navy we take a look at air power ground strength and naval power. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How big is Indias army. 
+																	610 billion 559 billion Percent of GDP. 
+																	But here are a few facts which will increase your respect for the Indian military ten-fold. 
+																	Some values are estimated when official numbers are not available. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With a strength of over 144 lakh 144 million active personnel it is the worlds largest military force. 
+																	According to Globalfirepower the Indian military has a combined 4207250 active and reserve personnel in service. 
+																	The latest estimates about the size of this army at 2035000 personnel. 
+																	Amidst its ongoing military stand-off with China in eastern Ladakh India will conduct a large-scale joint military drill called Exercise Kavach involving assets of the Indian Army Indian. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	India military forces description. 
+																	Snehesh Alex Philip 1 January 2019 1257 pm IST. 
+																	The 10 big defence inductions by Indian military in 2019. 
+																	Many of us would know about their triumphs and stellar contributions to civilian life. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	India the United States North Korea and Russia rounded out the top. 
+																	Indian Border Security Force soldiers guard a highway leading towards Leh. 
+																	From a stealth ship an out-and-out attack helicopter to the controversial Rafale jets the Indian military is set for some high-profile. 
+																	Each nation is assessed on individual and collective values processed through an in-house formula to generate a PwrIndx score. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	ThePrint reviews some of the big additions to Indias military this year ThePrintin. 
+																	As of January 2020 India was estimated to have around 150 warheads. 
+																	China is considered as an emerging superp. 
+																	India military forces description. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In 2020 China had the largest armed forces in the world by active duty military personnel with about 218 active soldiers. 
+																	Map of military expenditures as a percentage of GDP by country 2017. 
+																	India has the worlds largest volunteer military of over 51 lakh 51 million personnel. 
+																	The Indian armed forces have been engaged in a number of major military operations including. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It had a total strength of 240000 men while the British Army had a strength of 247433 regular volunteers at the outbreak of the war. 
+																	India has one of the largest populations of any country in the world with an estimated 13 billion people as of 2018. 
+																	The Indo-Pakistani wars of 1947 1965 and 1971 the Portuguese-Indian War the Sino-Indian War the 1967 Chola incident the 1987 Sino-Indian skirmish the Kargil War and the Siachen conflict among others. 
+																	Most of the personnel of this army are aged between 18 and 49 years. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By November 1918 the Indian Army contained 548311 men being considered the Imperial Strategic Reserve. 
+																	But how strong is the Indian military. 
+																	This first list is a list of countries by military expenditure share of GDPmore specifically a list of. 
+																	India has fought numerous wars to protect its border and has built one of the worlds most trained and powerful armies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	205 Military spending by GDP. 
+																	By law military service is compulsory in China although the country has never enforced conscription due to a large number of volunteers from its population. 
+																	228 billion 559 billion Percent of GDP. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/cf/57/86cf5723dd44880698b84ace170c7ea2.jpg" data-lightbox="roadtrip" data-title="What A Attractive Personality In Olive Green Indian Army Uniform Indian Army Army Times Army Uniform">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/cf/57/86cf5723dd44880698b84ace170c7ea2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA3cZRcey0w3Km8m761QwKL2wKwbDH-6nl6g';" alt="What A Attractive Personality In Olive Green Indian Army Uniform Indian Army Army Times Army Uniform">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What A Attractive Personality In Olive Green Indian Army Uniform Indian Army Army Times Army Uniform</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/be/7f/53be7f0afe454e5e746a3823b9cc5244.jpg" data-lightbox="roadtrip" data-title="Jai Hind Follow For More Indianarmy Official Indian Army Indianarmy Indianairforce Indiannavy Arme Indian Army Wallpapers Army Images Indian Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/be/7f/53be7f0afe454e5e746a3823b9cc5244.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgv1YtA0IE7fXFZ9z8jPfBDgYhb_QTJKb4sw';" alt="Jai Hind Follow For More Indianarmy Official Indian Army Indianarmy Indianairforce Indiannavy Arme Indian Army Wallpapers Army Images Indian Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jai Hind Follow For More Indianarmy Official Indian Army Indianarmy Indianairforce Indiannavy Arme Indian Army Wallpapers Army Images Indian Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fd/f1/4c/fdf14ca7d582bdd0278c95d6b6eed523.jpg" data-lightbox="roadtrip" data-title="Future Indian Infantry Soldier Indian Army Military Special Forces Army Images">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fd/f1/4c/fdf14ca7d582bdd0278c95d6b6eed523.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmbfVDiFIaGiYf7mZ8bnxCQl4NmpSwKmZcjg';" alt="Future Indian Infantry Soldier Indian Army Military Special Forces Army Images">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Future Indian Infantry Soldier Indian Army Military Special Forces Army Images</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/44/9c/40449c068160dfbc15732e699f5b5224.jpg" data-lightbox="roadtrip" data-title="Pakistan Special Force Indian Army Special Forces Indian Army Special Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/44/9c/40449c068160dfbc15732e699f5b5224.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ5B-l1SE2ox3quiTC2lEukMWKpQwwCsoJZw';" alt="Pakistan Special Force Indian Army Special Forces Indian Army Special Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pakistan Special Force Indian Army Special Forces Indian Army Special Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/01/cc/6501cc772fc25c137cd2a6c17b274d95.jpg" data-lightbox="roadtrip" data-title="Para Commando Complete Recruitment Procedure Step By Step Indian Army Special Forces Indian Army Army Images">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/01/cc/6501cc772fc25c137cd2a6c17b274d95.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeYmW6TRSIEDV8rdye4mb88IdO8XS7bEEn9g';" alt="Para Commando Complete Recruitment Procedure Step By Step Indian Army Special Forces Indian Army Army Images">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Para Commando Complete Recruitment Procedure Step By Step Indian Army Special Forces Indian Army Army Images</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2e/0e/97/2e0e97b8e577a556f21a4a6ac5c16811.jpg" data-lightbox="roadtrip" data-title="Pin By Neel On Kk Indian Army Pakistan Army Army Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2e/0e/97/2e0e97b8e577a556f21a4a6ac5c16811.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiiXtT_4hcmrFkmn4eRShUwvv7Zxj5I10z_Q';" alt="Pin By Neel On Kk Indian Army Pakistan Army Army Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Neel On Kk Indian Army Pakistan Army Army Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/51/c6/cd51c607ea0201c74e5992e33ca00b7f.jpg" data-lightbox="roadtrip" data-title="As Per Latest Figures Provided By Ministry Of Defence Government Of India Minister Manohar Parrikar In Parliament The Air Force Women Indian Navy Army Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/51/c6/cd51c607ea0201c74e5992e33ca00b7f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-E2AWXZV4uZNl0HGOkDdtptnosfxP7Ggcnw';" alt="As Per Latest Figures Provided By Ministry Of Defence Government Of India Minister Manohar Parrikar In Parliament The Air Force Women Indian Navy Army Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">As Per Latest Figures Provided By Ministry Of Defence Government Of India Minister Manohar Parrikar In Parliament The Air Force Women Indian Navy Army Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/3a/9f/453a9f504f07e0e09dd7ebffd30424fc.png" data-lightbox="roadtrip" data-title="Operation Pawan Was India S Vietnam Indian Army S Unplanned Mission In Sri Lanka Killed More Than Thousand Soldiers Sri Lanka Indian Army Historical Figures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/3a/9f/453a9f504f07e0e09dd7ebffd30424fc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI58Vac3mQU4G__u-fmpOaMUFVXMMX_Et13Q';" alt="Operation Pawan Was India S Vietnam Indian Army S Unplanned Mission In Sri Lanka Killed More Than Thousand Soldiers Sri Lanka Indian Army Historical Figures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Operation Pawan Was India S Vietnam Indian Army S Unplanned Mission In Sri Lanka Killed More Than Thousand Soldiers Sri Lanka Indian Army Historical Figures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/fa/ed/43faed24bf077d7abd525e957af86408.jpg" data-lightbox="roadtrip" data-title="Para Special Forces Para Commando Indian Army Wallpaper In Hd Hd Wallpapers Wallpapers Download High Resolution Wallpapers Indian Army Wallpapers Indian Army Special Forces Army Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/fa/ed/43faed24bf077d7abd525e957af86408.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzpKbHCKRU-ZnoHTsaK0krt3WAlcGo-iwfsg';" alt="Para Special Forces Para Commando Indian Army Wallpaper In Hd Hd Wallpapers Wallpapers Download High Resolution Wallpapers Indian Army Wallpapers Indian Army Special Forces Army Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Para Special Forces Para Commando Indian Army Wallpaper In Hd Hd Wallpapers Wallpapers Download High Resolution Wallpapers Indian Army Wallpapers Indian Army Special Forces Army Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/21/ae/80/21ae8002e456fd44b1bd96f0ee76cdc4.jpg" data-lightbox="roadtrip" data-title="Indian Army Holding Indian National Flag Indian Flag Wallpaper Indian Army Wallpapers Indian Flag Images">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/21/ae/80/21ae8002e456fd44b1bd96f0ee76cdc4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1sUnEA5AjY9hSW9b84O8a09EOespx71joBw';" alt="Indian Army Holding Indian National Flag Indian Flag Wallpaper Indian Army Wallpapers Indian Flag Images">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Army Holding Indian National Flag Indian Flag Wallpaper Indian Army Wallpapers Indian Flag Images</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/dd/f7/efddf7421e4c8bd73331632eab7ae529.jpg" data-lightbox="roadtrip" data-title="People Photos Republic Day Republic Day Photos Indian Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/dd/f7/efddf7421e4c8bd73331632eab7ae529.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfmnUmTH8Kz43GqceQImsEm7a0qQntYoDeBg';" alt="People Photos Republic Day Republic Day Photos Indian Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">People Photos Republic Day Republic Day Photos Indian Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/fd/fa/c9fdfa3c732bb11c88243c09211d31b4.jpg" data-lightbox="roadtrip" data-title="Pin On Indian Armed Forces Special Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/fd/fa/c9fdfa3c732bb11c88243c09211d31b4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIokGaDN5NT6Gd5jJwhqX8oZ13zWInBEPthg';" alt="Pin On Indian Armed Forces Special Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Indian Armed Forces Special Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7e/73/ba/7e73ba62f76b0e69ffdb70d458f6f7a8.jpg" data-lightbox="roadtrip" data-title="Indian Army Indian Army Indian Army Wallpapers Indian Army Recruitment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7e/73/ba/7e73ba62f76b0e69ffdb70d458f6f7a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJdh8PQ1JdVVrd7ar5RnDT0jGsEOm1F3zdfA';" alt="Indian Army Indian Army Indian Army Wallpapers Indian Army Recruitment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Army Indian Army Indian Army Wallpapers Indian Army Recruitment</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-is-survivor-benefits-calculated.html">How Is Survivor Benefits Calculated</a></li>
+													<li class="list-group-item"><a href="/how-big-is-the-nypd.html">How Big Is The Nypd</a></li>
+													<li class="list-group-item"><a href="/how-do-i-get-my-immunization-records-from-the-military.html">How Do I Get My Immunization Records From The Military</a></li>
+													<li class="list-group-item"><a href="/hour-military-name.html">Hour Military Name</a></li>
+													<li class="list-group-item"><a href="/how-much-are-military-retirement-points-worth.html">How Much Are Military Retirement Points Worth</a></li>
+													<li class="list-group-item"><a href="/how-do-i-contact-army-hrc.html">How Do I Contact Army Hrc</a></li>
+													<li class="list-group-item"><a href="/how-many-divisions-did-britain-have-in-ww2.html">How Many Divisions Did Britain Have In Ww2</a></li>
+													<li class="list-group-item"><a href="/how-many-dod-civilians-are-there.html">How Many Dod Civilians Are There</a></li>
+													<li class="list-group-item"><a href="/how-many-divisions-in-ww2.html">How Many Divisions In Ww2</a></li>
+													<li class="list-group-item"><a href="/how-many-divisions-are-currently-in-the-us-army.html">How Many Divisions Are Currently In The Us Army</a></li>
+													<li class="list-group-item"><a href="/how-do-i-find-out-my-dodaac.html">How Do I Find Out My Dodaac</a></li>
+													<li class="list-group-item"><a href="/how-do-i-look-up-military-records.html">How Do I Look Up Military Records</a></li>
+													<li class="list-group-item"><a href="/how-do-i-change-my-tsp-contribution-civilian.html">How Do I Change My Tsp Contribution Civilian</a></li>
+													<li class="list-group-item"><a href="/how-do-i-find-my-dodaac.html">How Do I Find My Dodaac</a></li>
+													<li class="list-group-item"><a href="/how-do-i-check-the-status-of-my-security-clearance-army.html">How Do I Check The Status Of My Security Clearance Army</a></li>
+													<li class="list-group-item"><a href="/how-many-divisions-in-british-army.html">How Many Divisions In British Army</a></li>
+													<li class="list-group-item"><a href="/how-do-i-find-where-a-veteran-is-buried.html">How Do I Find Where A Veteran Is Buried</a></li>
+													<li class="list-group-item"><a href="/how-do-i-get-military-discount-at-home-depot.html">How Do I Get Military Discount At Home Depot</a></li>
+													<li class="list-group-item"><a href="/how-do-i-contact-dfas-about-my-retirement-pay.html">How Do I Contact Dfas About My Retirement Pay</a></li>
+													<li class="list-group-item"><a href="/how-long-is-ait-for-42a.html">How Long Is Ait For 42a</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Army Corps Of Engineers Youtube - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Army Corps Of Engineers Youtube",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/47/a8/7d/47a87d7333024ec4c1c9cd7d42f0d0dc.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+army+corps+of+engineers+youtube",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Army Corps Of Engineers Youtube</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">This video was produced by Tec-Masters Inc. Army Corps of Engineers to fully evaluate the potential environmental risks associated with a proposed waste facility in. 2 minute video overview of the History and Overall Mission of the Corps approved for use on interpretive displays at Corps of Engineers sites nationwide. <br>				
+			</p>
+										<a class="badge badge-dark" href="/how-to-get-a-free-legal-advice.html">how to get a free legal advice</a>
+											<a class="badge badge-danger" href="/how-to-get-my-immunization-records-from-the-military.html">how to get my immunization records from the military</a>
+											<a class="badge badge-dark" href="/how-to-file-for-military-retirement.html">how to file for military retirement</a>
+											<a class="badge badge-secondary" href="/how-to-look-up-someones-dod-id-number-army.html">how to look up someones dod id number army</a>
+											<a class="badge badge-light" href="/how-to-look-up-military-personnel.html">how to look up military personnel</a>
+											<a class="badge badge-light" href="/how-to-correct-military-records.html">how to correct military records</a>
+											<a class="badge badge-success" href="/how-to-look-up-us-army-service-records.html">how to look up us army service records</a>
+											<a class="badge badge-secondary" href="/how-to-get-a-divorce-overseas-military.html">how to get a divorce overseas military</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you have come to visit the ideal blog.  Our website gives you hints for viewing the maximum quality video and image content, search and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, so we recommend this video that you see.  It is also possible to contribute to supporting this website by sharing videos and images that you enjoy on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/42/a8/c842a85787a2057cc4d520abb64ea4df.jpg" data-lightbox="roadtrip" data-title="Youtube Army American Soldiers Army Strong">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/42/a8/c842a85787a2057cc4d520abb64ea4df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRw_OsJfeQ316HcsTArVk_i_1zsB6vn2kM6w';" alt="Youtube Army American Soldiers Army Strong">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Youtube Army American Soldiers Army Strong</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/a8/7d/47a87d7333024ec4c1c9cd7d42f0d0dc.jpg" data-lightbox="roadtrip" data-title="Irish Army Defence Force Exercises Defence Force Defence Army Corps Of Engineers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/a8/7d/47a87d7333024ec4c1c9cd7d42f0d0dc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7aX4_uTp2uk40fW-xtcZtd8O-ylwQ43GeKQ';" alt="Irish Army Defence Force Exercises Defence Force Defence Army Corps Of Engineers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Irish Army Defence Force Exercises Defence Force Defence Army Corps Of Engineers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/28/1b/4b281b5d534a19259fef54bfeb2fc0b2.jpg" data-lightbox="roadtrip" data-title="Deca Holiday Message Holiday Messages Youtube Sergeant">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/28/1b/4b281b5d534a19259fef54bfeb2fc0b2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbppNrUny7zqFaCQZdu5JJNA24PrGizjlDNA';" alt="Deca Holiday Message Holiday Messages Youtube Sergeant">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Deca Holiday Message Holiday Messages Youtube Sergeant</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/07/0a/96070a0f03f31110789f95fb24ebe45e.jpg" data-lightbox="roadtrip" data-title="Corps Of Engineers In Vietnam They Clear The Way 1968 Us Army Vietnam Us Army Engineering">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/07/0a/96070a0f03f31110789f95fb24ebe45e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSYUgBGofXDkp5TUjgQ_9JXa1-_Yh_FDu6vg';" alt="Corps Of Engineers In Vietnam They Clear The Way 1968 Us Army Vietnam Us Army Engineering">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Corps Of Engineers In Vietnam They Clear The Way 1968 Us Army Vietnam Us Army Engineering</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/de/33/4d/de334d2a1fca727064c61667171169ee.jpg" data-lightbox="roadtrip" data-title="Navfac Safety Training Module 5 Personal Protective Equipment Youtube Safety Training Us Army Corps Of Engineers Personal Protective Equipment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/de/33/4d/de334d2a1fca727064c61667171169ee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKueL078Bw7TBVkuXyUYsOPgnajo7rpA7nMA';" alt="Navfac Safety Training Module 5 Personal Protective Equipment Youtube Safety Training Us Army Corps Of Engineers Personal Protective Equipment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navfac Safety Training Module 5 Personal Protective Equipment Youtube Safety Training Us Army Corps Of Engineers Personal Protective Equipment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/4a/ec/d0/4aecd011d6addb36acaa4f34b7e77b18.jpg" data-lightbox="roadtrip" data-title="Pin On Hector">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/4a/ec/d0/4aecd011d6addb36acaa4f34b7e77b18.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMt7m_LPQwAX9PCI8nArWPwee2UOzVJxxfBg';" alt="Pin On Hector">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Hector</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/564x/2a/6c/ed/2a6ced7d84dca44251fbbe4c5564318f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMt7m_LPQwAX9PCI8nArWPwee2UOzVJxxfBg';" alt="Pin On Hector">
+										<div class="card-body">
+						<h3 class="h5"><b>Army Corps of Engineers has approximately 37000 dedicated Civilians and Soldiers delivering engineering services to customers in more than 130 countries worldwide.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us army corps of engineers youtube</strong>. 
+								
+																	Just keep swimming swimming swimming Isnt that what Dory kept telling us. 
+																	Scott Spellmon in a short virtual ceremony September 10In brief. 
+																	Army Corps of Engineers video provides a summary of the organizations missions. 
+																	National Water Safety Program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Senators Charles Schumer and Kirsten Gillibrand are calling on the US. 
+																	Welcome to the official YouTube page of the US. 
+																	Army Corps of Engineers Project Manager of the Year June 30 2020 South Pacific Division From Army Corps to Peace Corps and back August 7 2020. 
+																	If you find yourself stuck in water only swim to safety when you can reach it quickly know your swimming ability. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	BUT in the case of cool water immersion we want to handle things just a little differently. 
+																	Heat Escape Lessening Position. 
+																	VOA News 2684 views. 
+																	Sacramento District 1165 views. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If self-rescue isnt possible remember HELP. 
+																	Engineer regiment military construction and civil works. 
+																	Forgot intro and text on this video The United States Army Corps of Engineers is a US. 
+																	And Canadian coast guard ice breaking. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If alone keep your. 
+																	Exciting Careers in Natural Resources Management - US Army Corps of Engineers. 
+																	Army Corps of Engineers is providing technical advice for US. 
+																	With environmental sustainability as a guiding principle our disciplined Corps team is working diligently to strengthen our Nations security by building and maintaining Americas infrastructure and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Federal agency under the Department of Defense and a major Army c. 
+																	US Army Corps of Engineers Works to Avert Crisis on Mississippi River - Duration. 
+																	The day-to-day activities of the three mission areas are administered by a lieutenant general known as the commanding generalchief of engineers. 
+																	The United States Army Corps of Engineers USACE is an engineer formation of the United States Army that has three primary mission areas. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Corps of Engineers Chicago District. 
+																	This update allows for the use and public dissemination of inundation maps in emergency action plans EAP and the 1252021 Read More. 
+																	USACE provides vital public engineering services in peace and war to s. 
+																	Army Corps of Engineers published Engineer Circular 1110-2-6075 Inundation Maps and Emergency Action Plans and Incident Management for Dams and Levee Systems in October. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The United States Army Corps of Engineers appears to be on the verge of greenlighting a plan to dredge and deepen the Carquinez Strait which is the route that oil tankers take from Californias. 
+																	Civil Works and Planning Process -- Moderator Mike Giari Tom Kendall- USACE planning programs 6 Steps Documentation Briefing NEPA CEQA Resource Agency Consultation Dave Doak. 
+																	Welcome to the official US Army Corps of Engineers YouTube presence Corps Connection. 
+																	Semonite Commander of the US Army Corps of Engineers USACE relinquished command to Lt. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Produced in September 2015 by Headquarters USACE and Sacramento Distric. 
+																	Sample of the video titled. 
+																	Fort Worth District employee honored as US. 
+																	I AM THE CORPS - Duration. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The chief of engineers commands the engineer. 
+																	Get YouTube Premium Get YouTube TV Best of YouTube Music Sports Gaming Movies Shows News Live Fashion Learning Spotlight 360 Video. 
+																	DETROIT - Using strategically placed water monitoring equipment and a field team the US. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/0b/68/440b68c1ce8811297210e6b51efce2cd.jpg" data-lightbox="roadtrip" data-title="U S Army Corps Of Engineers Army Corps Of Engineers Army Corps Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/0b/68/440b68c1ce8811297210e6b51efce2cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSozUmMCvYvJAtkE3Hx2_bL4RSvOBgVUMyAQQ';" alt="U S Army Corps Of Engineers Army Corps Of Engineers Army Corps Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Corps Of Engineers Army Corps Of Engineers Army Corps Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/73/1d/c5731dc0789970ab74c66d43d1f0743f.jpg" data-lightbox="roadtrip" data-title="Remember Me Sgt Mackenzie Peter Jennison Youtube Army Life Soldier Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/73/1d/c5731dc0789970ab74c66d43d1f0743f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAGU8ShT7E26ZAUNNwq_6cM8Jvd-ML2caspg';" alt="Remember Me Sgt Mackenzie Peter Jennison Youtube Army Life Soldier Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Remember Me Sgt Mackenzie Peter Jennison Youtube Army Life Soldier Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/6c/ac/d16cac25cb9b8f604e4214efc93a66e7.jpg" data-lightbox="roadtrip" data-title="Military Engineering Documentary Youtube Military Engineering Military Military Videos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/6c/ac/d16cac25cb9b8f604e4214efc93a66e7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTQjYnC88JoLfD1wLU0qkeOGUKepUKVAkqfA';" alt="Military Engineering Documentary Youtube Military Engineering Military Military Videos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Engineering Documentary Youtube Military Engineering Military Military Videos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/15/01/f9/1501f954703044f4f4bf0cd1222d031d.jpg" data-lightbox="roadtrip" data-title="Account Suspended Marine Corps Marine Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/15/01/f9/1501f954703044f4f4bf0cd1222d031d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnRfrKjlWdssTyEW5YVCg1mNF97f0g3OG9Xg';" alt="Account Suspended Marine Corps Marine Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Account Suspended Marine Corps Marine Marines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/11/04/cc/1104cc280d7c24a8bee4eaa616f54e54.jpg" data-lightbox="roadtrip" data-title="Civil Engineering Basic Knowledge For Site Useful Notes For Civil Engineers Youtube Civil Engineering Engineering City">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/11/04/cc/1104cc280d7c24a8bee4eaa616f54e54.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmrSzi3QUM8tVw3l69fvp1z78LxR4jlrRpSw';" alt="Civil Engineering Basic Knowledge For Site Useful Notes For Civil Engineers Youtube Civil Engineering Engineering City">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Civil Engineering Basic Knowledge For Site Useful Notes For Civil Engineers Youtube Civil Engineering Engineering City</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/08/2c/e6082cf005895c08adc40fa9e6e82d07.jpg" data-lightbox="roadtrip" data-title="Youtube Military Memes Military Love Patriotic Posters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/08/2c/e6082cf005895c08adc40fa9e6e82d07.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBlYnx8jd3kJcYG7PUAHsbfkEXDUWr751CCQ';" alt="Youtube Military Memes Military Love Patriotic Posters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Youtube Military Memes Military Love Patriotic Posters</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/2a/c0/62/2ac0628c79f06cba59ab8e918873cd77.jpg" data-lightbox="roadtrip" data-title="Show Us Your Steak Youtube Cool Gifs Show Us Cool Things To Make">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/2a/c0/62/2ac0628c79f06cba59ab8e918873cd77.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBvyhSqydk2-NRPtKzvCWiP3P65Ky-nr2biA';" alt="Show Us Your Steak Youtube Cool Gifs Show Us Cool Things To Make">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Show Us Your Steak Youtube Cool Gifs Show Us Cool Things To Make</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/2b/b1/f0/2bb1f0ad4aeb753d887ae61c798dfa19.jpg" data-lightbox="roadtrip" data-title="The Warfighters Full Episode Charlie Platoon And The Story Of Marc Lee S1 E1 History Youtube Platoon History Youtube Special Operations Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/2b/b1/f0/2bb1f0ad4aeb753d887ae61c798dfa19.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWf6hJL3pswxI1F1qtQyC0NJxN39HaJCM2-Q';" alt="The Warfighters Full Episode Charlie Platoon And The Story Of Marc Lee S1 E1 History Youtube Platoon History Youtube Special Operations Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Warfighters Full Episode Charlie Platoon And The Story Of Marc Lee S1 E1 History Youtube Platoon History Youtube Special Operations Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/e0/cf/34/e0cf34b45cbbd386e73dc8c2dc475465.jpg" data-lightbox="roadtrip" data-title="Every Once In Awhile We Need A Little Something To Remind Us Of The Sheer Awesomeness Of Our Nation Our Men And Women Marine Corps Humor Marine Corps Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/e0/cf/34/e0cf34b45cbbd386e73dc8c2dc475465.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKqsDJAhAdgFl_-vQnL5t1VLzYyf8HkhkoiA';" alt="Every Once In Awhile We Need A Little Something To Remind Us Of The Sheer Awesomeness Of Our Nation Our Men And Women Marine Corps Humor Marine Corps Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Every Once In Awhile We Need A Little Something To Remind Us Of The Sheer Awesomeness Of Our Nation Our Men And Women Marine Corps Humor Marine Corps Marines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/2a/6c/ed/2a6ced7d84dca44251fbbe4c5564318f.jpg" data-lightbox="roadtrip" data-title="Youtube Youtube Natural Landmarks Mount Rushmore">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/2a/6c/ed/2a6ced7d84dca44251fbbe4c5564318f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNGwyNIfHzT_SSaJhAXImz2ONyIC_LS6iWOw';" alt="Youtube Youtube Natural Landmarks Mount Rushmore">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Youtube Youtube Natural Landmarks Mount Rushmore</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/6b/36/d86b362dfa652089e71941e740bf20f3.jpg" data-lightbox="roadtrip" data-title="Us Army Cadence Hail Oh Infantry Hd Infantry Fort Irwin Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/6b/36/d86b362dfa652089e71941e740bf20f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBOkTnTjvm_0YjJTypKIZEojtCiGb3FZ7mVA';" alt="Us Army Cadence Hail Oh Infantry Hd Infantry Fort Irwin Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Cadence Hail Oh Infantry Hd Infantry Fort Irwin Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/52/4e/2c/524e2c117519e57b9e53ecfeb20aed41.jpg" data-lightbox="roadtrip" data-title="Buxbaum Us Army Corps Of Engineers Buffalo District Will Name The Latest Addition To Its Hi Us Army Corps Of Engineers Army Corps Of Engineers Erie County">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/52/4e/2c/524e2c117519e57b9e53ecfeb20aed41.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb_PihHYZRIiwk_cCAYCoJqAKXRMzIdH-stQ';" alt="Buxbaum Us Army Corps Of Engineers Buffalo District Will Name The Latest Addition To Its Hi Us Army Corps Of Engineers Army Corps Of Engineers Erie County">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Buxbaum Us Army Corps Of Engineers Buffalo District Will Name The Latest Addition To Its Hi Us Army Corps Of Engineers Army Corps Of Engineers Erie County</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/c4/a0/c2c4a081825287458c2f157bf6221f6e.png" data-lightbox="roadtrip" data-title="International Hall Of Fame Induction Gen Ahmad Hasbullah Chief Of Malaysian Army Youtube In 2020 Hall Of Fame Army Fame">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/c4/a0/c2c4a081825287458c2f157bf6221f6e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvu16a9sAzqpnug3d1XXM3PjZJc_19Fu_HBQ';" alt="International Hall Of Fame Induction Gen Ahmad Hasbullah Chief Of Malaysian Army Youtube In 2020 Hall Of Fame Army Fame">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">International Hall Of Fame Induction Gen Ahmad Hasbullah Chief Of Malaysian Army Youtube In 2020 Hall Of Fame Army Fame</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-dod-cyber-awareness-challenge-2019.html">Army Dod Cyber Awareness Challenge 2019</a></li>
+													<li class="list-group-item"><a href="/army-dog-animated-movie.html">Army Dog Animated Movie</a></li>
+													<li class="list-group-item"><a href="/army-dodge-viper.html">Army Dodge Viper</a></li>
+													<li class="list-group-item"><a href="/army-dog-face.html">Army Dog Face</a></li>
+													<li class="list-group-item"><a href="/army-dad-baby-bag.html">Army Dad Baby Bag</a></li>
+													<li class="list-group-item"><a href="/army-dog-harness-with-name.html">Army Dog Harness With Name</a></li>
+													<li class="list-group-item"><a href="/army-dog-award.html">Army Dog Award</a></li>
+													<li class="list-group-item"><a href="/army-dog-film-netflix.html">Army Dog Film Netflix</a></li>
+													<li class="list-group-item"><a href="/army-civilian-employee-assistance-program.html">Army Civilian Employee Assistance Program</a></li>
+													<li class="list-group-item"><a href="/army-dodi-medical.html">Army Dodi Medical</a></li>
+													<li class="list-group-item"><a href="/army-dog-for-sale.html">Army Dog For Sale</a></li>
+													<li class="list-group-item"><a href="/army-dog-biscuits.html">Army Dog Biscuits</a></li>
+													<li class="list-group-item"><a href="/army-cadet-force-lesson-plan-template.html">Army Cadet Force Lesson Plan Template</a></li>
+													<li class="list-group-item"><a href="/army-dog-bed.html">Army Dog Bed</a></li>
+													<li class="list-group-item"><a href="/army-dog-after-retirement.html">Army Dog After Retirement</a></li>
+													<li class="list-group-item"><a href="/army-civilian-payroll-office.html">Army Civilian Payroll Office</a></li>
+													<li class="list-group-item"><a href="/army-civilian-housing-allowance-germany.html">Army Civilian Housing Allowance Germany</a></li>
+													<li class="list-group-item"><a href="/army-dog-german-shepherd.html">Army Dog German Shepherd</a></li>
+													<li class="list-group-item"><a href="/army-dog-games.html">Army Dog Games</a></li>
+													<li class="list-group-item"><a href="/army-chaplain-hotline.html">Army Chaplain Hotline</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

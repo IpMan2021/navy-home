@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Hr Information Systems - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Hr Information Systems",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/dc/36/a8/dc36a85c3f83c1e4b32c0adbe965d471.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+hr+information+systems",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Hr Information Systems</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The new system gives access to. Army is scheduled to release in December 2021 a centralized human resources information system that will contain military records of reserve and active-duty soldiers. In military domain HRIS is particularly crucial as the organisation comprises a huge number of personnel who not only possess various skill sets but also are physically scattered at remote locations. <br>				
+			</p>
+										<a class="badge badge-success" href="/army-institute-of-heraldry-unit-awards.html">army institute of heraldry unit awards</a>
+											<a class="badge badge-light" href="/army-mothers-support-group.html">army mothers support group</a>
+											<a class="badge badge-info" href="/army-hrc-portal.html">army hrc portal</a>
+											<a class="badge badge-secondary" href="/army-human-resource-management-system.html">army human resource management system</a>
+											<a class="badge badge-success" href="/army-legal-docket.html">army legal docket</a>
+											<a class="badge badge-light" href="/army-lesson-plan-outline.html">army lesson plan outline</a>
+											<a class="badge badge-warning" href="/army-hrc-ncoer.html">army hrc ncoer</a>
+											<a class="badge badge-warning" href="/army-human-resources-command-address.html">army human resources command address</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to pay a visit to the right site.  Our site provides you with hints for viewing the maximum quality video and picture content, search and locate more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, particularly Youtube, so we recommend this video that you view.  You can also contribute to supporting this site by sharing videos and graphics that you enjoy on this blog on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information that you get on this website.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/db/a3/01dba3914ac61c6c4ac3a32d8f82c86f.png" data-lightbox="roadtrip" data-title="All About Human Resource Management Smartsheet Human Resource Management Human Resource Management System Human Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/db/a3/01dba3914ac61c6c4ac3a32d8f82c86f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRURDiXNXpHO8cBOh7_FoeGQY1pjrF9zt7tGw';" alt="All About Human Resource Management Smartsheet Human Resource Management Human Resource Management System Human Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">All About Human Resource Management Smartsheet Human Resource Management Human Resource Management System Human Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/9a/81/499a817defc4091f1ab0a274f7668c39.png" data-lightbox="roadtrip" data-title="Human Resource Management Hrm Human Resource Management Human Resource Management System Human Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/9a/81/499a817defc4091f1ab0a274f7668c39.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpTOVY2jVYp9vyPA6V3-TWX6lDZ29MQrIn6g';" alt="Human Resource Management Hrm Human Resource Management Human Resource Management System Human Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Human Resource Management Hrm Human Resource Management Human Resource Management System Human Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/67/de/b167dee72c307cd07895a9330622bd67.jpg" data-lightbox="roadtrip" data-title="Human Resources Venn Diagram Venn Diagram Human Resources Diagram">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/67/de/b167dee72c307cd07895a9330622bd67.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvyWh8XT95WH_lyZQxZgXHJX9_9ipi3s7eJA';" alt="Human Resources Venn Diagram Venn Diagram Human Resources Diagram">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Human Resources Venn Diagram Venn Diagram Human Resources Diagram</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/c1/1a/98c11a8733b59d0ed6ba69e8b43b803b.jpg" data-lightbox="roadtrip" data-title="Ads Unveils Army Camouflage Finalist Patterns Soldier Systems Daily Tactical Gear Tactical Gear Survival Combat Gear">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/c1/1a/98c11a8733b59d0ed6ba69e8b43b803b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_hWr9a5z5w9r-7-UhYRn4VgVdabyaD8vstQ';" alt="Ads Unveils Army Camouflage Finalist Patterns Soldier Systems Daily Tactical Gear Tactical Gear Survival Combat Gear">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ads Unveils Army Camouflage Finalist Patterns Soldier Systems Daily Tactical Gear Tactical Gear Survival Combat Gear</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c6/c3/4e/c6c34ebfbe30a5e04a9a773d5394d5d3.jpg" data-lightbox="roadtrip" data-title="Military Veteran Resume Examples Army Resume Example Military Veteran This Is Builder To Civilian Templ Resume Examples Human Resources Resume Recruiter Resume">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c6/c3/4e/c6c34ebfbe30a5e04a9a773d5394d5d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL7L1MRlwi4Yae4_5bWWhr2rPLrINdKVQfwA';" alt="Military Veteran Resume Examples Army Resume Example Military Veteran This Is Builder To Civilian Templ Resume Examples Human Resources Resume Recruiter Resume">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Veteran Resume Examples Army Resume Example Military Veteran This Is Builder To Civilian Templ Resume Examples Human Resources Resume Recruiter Resume</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/4b/81/c44b8109f17e62ece50784ade0c0a9d7.jpg" data-lightbox="roadtrip" data-title="Hris Advantages And Disadvantages Hr Daily Advisor Digital Marketing Web Design Company Digital Marketing Company">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/4b/81/c44b8109f17e62ece50784ade0c0a9d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmKIrINS554zaHkmomwvptW71KPCJeQmiPKQ';" alt="Hris Advantages And Disadvantages Hr Daily Advisor Digital Marketing Web Design Company Digital Marketing Company">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hris Advantages And Disadvantages Hr Daily Advisor Digital Marketing Web Design Company Digital Marketing Company</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/a9/2a/bf/a92abf4d86f8b38f2492f45a79a5ac28.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmKIrINS554zaHkmomwvptW71KPCJeQmiPKQ';" alt="Hris Advantages And Disadvantages Hr Daily Advisor Digital Marketing Web Design Company Digital Marketing Company">
+										<div class="card-body">
+						<h3 class="h5"><b>Later in your career you can take recognised qualifications in Business Management and HR.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army hr information systems</strong>. 
+								
+																	Youre trained to use our information systems and will also get your Category B Driving licence car. 
+																	In military domain HRIS is particularly crucial as the organisation. 
+																	The Defense Integrated Military Human Resources System DIMHRS will revolutionize the way the Department of Defense DoD manages all military personnel around the globe. 
+																	HR information systems support activities such as identifying potential employees maintaining complete records on existing employees and creating programs to develop employees talents and skills. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Do not process store or transmit any Personally Identifiable Information PII UNCLASSIFIEDFOUO or CLASSIFIED information on this system. 
+																	United States Army Human Resources Command Soldiers First Site Map. 
+																	As a HR Officer - Detachment Commander you are given significant responsibility from day 1. 
+																	Develops major command position papers on critical integration issues within the Military Human Resources and Personnel Systems. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The security accreditation level of this site is UNCLASSIFIED and below. 
+																	Youll command lead and manage 18 highly motivated and bright soldiers in the delivery of personnel administration. 
+																	Military operations in essence require the selection of. 
+																	Human resource management HRM is a system of systems manpower system resource system and personnel system that performs specific functions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	HRC Soldiers First US. 
+																	Do not process store or transmit any Personally Identifiable Information PII UNCLASSIFIEDFOUO or CLASSIFIED information on this system. 
+																	HR Specialists Commanders and others will have access to Soldiers personnel and pay information as needed to support their decisions and responsibilities across the Army. 
+																	Winner of the Army Film and Photographic Competition 2020 creates competition history. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	16 years 6 months - 35 years 6 months Qualifications. 
+																	The Human Resources Information System Management Specialist operates and manages the information systems for field personnel as well as trains and assists all system users. 
+																	The Defense Integrated Military Human Resources System was an enterprise program of the Business Transformation Agency s Defense Business Systems Acquisition Executive within the United States Department of Defense DoD. 
+																	They allow each organization to effectively manage personnel. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The security accreditation level of this site is UNCLASSIFIED and below. 
+																	These include apprenticeships and degrees. 
+																	Army Human Resources Command Soldiers First United States Army Human Resources Command Soldiers First Site Map. 
+																	Applies HR principles concepts methods and practices to plan and deliver large scale Human Resources Information Systems HRIS utilized Army wide. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Although there are a lot of similarities between the corporate and the military human resources management there are also some important differences. 
+																	The purpose of the position is to serve as the senior Human Resources Specialist Information Systems in planning operating and administering the operation of the DOD Enterprise-Wide Automated. 
+																	Human resources management is one of the departments that mostly use management information systems. 
+																	Human Resources Information Systems HRIS plays an important role for any organisation to effectively manage its human assets. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Human Resources Information Systems HRIS plays an important role for any organisation to effectively manage its human assets. 
+																	GCSE Grade AD9-3 in at least English Language and Maths. 
+																	Analyzes and provides solutions to customer requirements applications and interactive functions on behalf of TRADOC. 
+																	Staff and Personnel Support SPS Branch exists to deliver THE personnel administrative capability in support of the wider Army. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Human Resource Systems AHRS provides installation and field commanders worldwide with essential state-of-the-art cost-effective and standardized knowledge-based automation tools. 
+																	Over the next 12 months the Army campaign will celebrate strength in diversity and challenge pre-existing misconceptions about Diversity and Inclusion in the workplace. 
+																	IPPS-A is the Armys new comprehensive human resources system that has subsumed the Standard Installation and Division Personnel Reporting System SIDPERS. 
+																	Army Human Resources Command Soldiers First United. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	HR systems play an important role for the Army. 
+																	The duties of the Human Resources Information System Management Specialist include. 
+																	Liverpool soldier becomes the first to scoop the title of British Army Photographer of the Year with a video entry. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/7d/ec/4e7dec93b9f39be84cb243e69ae91292.jpg" data-lightbox="roadtrip" data-title="Mark Ii To Be A World Winner Drdo Page 2 Tanks Military Army Vehicles Battle Tank">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/7d/ec/4e7dec93b9f39be84cb243e69ae91292.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK8vXCYKhXrYNUdjveFTa30rBrH0f8IxJYGw';" alt="Mark Ii To Be A World Winner Drdo Page 2 Tanks Military Army Vehicles Battle Tank">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mark Ii To Be A World Winner Drdo Page 2 Tanks Military Army Vehicles Battle Tank</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/6e/aa/93/6eaa93d304ce1120a0057af442e3fc99.jpg" data-lightbox="roadtrip" data-title="Human Resource Management A Contemporary Approach 8th Edition Pdf Version Human Resources Human Resource Management Management Information Systems">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/6e/aa/93/6eaa93d304ce1120a0057af442e3fc99.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGzySyzXQfx5l-l98dEiE9dkr7YUIjG4AIZg';" alt="Human Resource Management A Contemporary Approach 8th Edition Pdf Version Human Resources Human Resource Management Management Information Systems">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Human Resource Management A Contemporary Approach 8th Edition Pdf Version Human Resources Human Resource Management Management Information Systems</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/65/c0/8965c0f929e1938afb39b0c01c6202c2.jpg" data-lightbox="roadtrip" data-title="Lse Hr Conference 2013 Pushes Hr Analytics Agenda Marketing Skills Human Resources Quotes Knowledge Management">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/65/c0/8965c0f929e1938afb39b0c01c6202c2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEk14xZZ1DhpYvlRhXpieDTFIinIk0Hg1wvw';" alt="Lse Hr Conference 2013 Pushes Hr Analytics Agenda Marketing Skills Human Resources Quotes Knowledge Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lse Hr Conference 2013 Pushes Hr Analytics Agenda Marketing Skills Human Resources Quotes Knowledge Management</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/36/a8/dc36a85c3f83c1e4b32c0adbe965d471.jpg" data-lightbox="roadtrip" data-title="Pin On Militarian">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/36/a8/dc36a85c3f83c1e4b32c0adbe965d471.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReOxFFAzpWkrXq4u0Bu9n0acYN3wpMYOqQ1A';" alt="Pin On Militarian">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Militarian</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/c8/5d/8fc85d1d6c832568d7a374f92ad0db40.jpg" data-lightbox="roadtrip" data-title="Pin By Napat Bhisarnsiddhiwat On Army Ranger Special Forces Army Rangers Military Wallpaper">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/c8/5d/8fc85d1d6c832568d7a374f92ad0db40.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRryum6okyVFwtwLZiHOUdmHU484Relvcjc5g';" alt="Pin By Napat Bhisarnsiddhiwat On Army Ranger Special Forces Army Rangers Military Wallpaper">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Napat Bhisarnsiddhiwat On Army Ranger Special Forces Army Rangers Military Wallpaper</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/06/f1/0606f137c2770f691aa2c7a1d4476836.jpg" data-lightbox="roadtrip" data-title="Pin On Croatian Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/06/f1/0606f137c2770f691aa2c7a1d4476836.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgGZMuUoKw9XE9qPAkKMQSbH4XBRbuBiCyRg';" alt="Pin On Croatian Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Croatian Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/bf/67/04/bf67046e9997cbeee6f020d64a659a32.jpg" data-lightbox="roadtrip" data-title="Pockethrms Is The Online Attendance System That Simplifies The Attendance Tracking It Is Flexible And Efficient Attendance Softwa Management System Attendance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/bf/67/04/bf67046e9997cbeee6f020d64a659a32.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtbk6WDkaGi9gpMzmD8JZPzoDfKzub36Wr8w';" alt="Pockethrms Is The Online Attendance System That Simplifies The Attendance Tracking It Is Flexible And Efficient Attendance Softwa Management System Attendance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pockethrms Is The Online Attendance System That Simplifies The Attendance Tracking It Is Flexible And Efficient Attendance Softwa Management System Attendance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/2a/bf/a92abf4d86f8b38f2492f45a79a5ac28.png" data-lightbox="roadtrip" data-title="Turnover Fishbone Diagram Change Management Work Status Human Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/2a/bf/a92abf4d86f8b38f2492f45a79a5ac28.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwDk_0ExFoZShydfjeEcBA-sgTr9yp0N07Aw';" alt="Turnover Fishbone Diagram Change Management Work Status Human Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Turnover Fishbone Diagram Change Management Work Status Human Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/40/da/7240da31830cb34b6637cb446e81af83.png" data-lightbox="roadtrip" data-title="One Detail Every Military Family Should Know About Their Own Family Jjheartblog Quantum Computer Military Family Manufacturing Infographic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/40/da/7240da31830cb34b6637cb446e81af83.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsSjZbEKTsA89W1m5c9bw_lYdVDGB9W7TBYg';" alt="One Detail Every Military Family Should Know About Their Own Family Jjheartblog Quantum Computer Military Family Manufacturing Infographic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">One Detail Every Military Family Should Know About Their Own Family Jjheartblog Quantum Computer Military Family Manufacturing Infographic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/a4/29/68a4297badb6fbebbdcb584288935f86.gif" data-lightbox="roadtrip" data-title="The Article Is About Virtual Hr And The Role It Plays In The Field Of Human Resources The Article Defines Shared Services Business Process Outsourcing Virtual">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/a4/29/68a4297badb6fbebbdcb584288935f86.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6FwJ4Rd9FAF3UrNQCZTv7iGByIs5GY9zvzg';" alt="The Article Is About Virtual Hr And The Role It Plays In The Field Of Human Resources The Article Defines Shared Services Business Process Outsourcing Virtual">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Article Is About Virtual Hr And The Role It Plays In The Field Of Human Resources The Article Defines Shared Services Business Process Outsourcing Virtual</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/35/60/c5/3560c5a5494a3860f343a74f561d6598.jpg" data-lightbox="roadtrip" data-title="Human Resource Management 14th Edition Global Ebook Cst Human Resource Management Human Resources Human Resource Management System">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/35/60/c5/3560c5a5494a3860f343a74f561d6598.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoVpVklUFPH_g8dzOC5MwlOYL1qZmIl0kn3w';" alt="Human Resource Management 14th Edition Global Ebook Cst Human Resource Management Human Resources Human Resource Management System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Human Resource Management 14th Edition Global Ebook Cst Human Resource Management Human Resources Human Resource Management System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0e/54/2c/0e542cfa7e6502ac5ef9fe99775d4f0f.jpg" data-lightbox="roadtrip" data-title="Pakistan Civil Aviation Authority Requires Services Of Qualified Individuals To Fill The Fol Human Resources Management Information Systems Resource Management">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0e/54/2c/0e542cfa7e6502ac5ef9fe99775d4f0f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmFtb3hqwDa6sd8-W9e4dC-FUlxHx6hIe1Pg';" alt="Pakistan Civil Aviation Authority Requires Services Of Qualified Individuals To Fill The Fol Human Resources Management Information Systems Resource Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pakistan Civil Aviation Authority Requires Services Of Qualified Individuals To Fill The Fol Human Resources Management Information Systems Resource Management</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/af/be/c3/afbec34fb95023c4a7473a8e455be971.jpg" data-lightbox="roadtrip" data-title="Km In Practice Archives Knowledgemanagementdepot Com Knowledge Management Knowledge Management">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/af/be/c3/afbec34fb95023c4a7473a8e455be971.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9tGPqO5U6rQVO8llHTWFjMOYEL2ITRMSahQ';" alt="Km In Practice Archives Knowledgemanagementdepot Com Knowledge Management Knowledge Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Km In Practice Archives Knowledgemanagementdepot Com Knowledge Management Knowledge Management</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/us-army-field-hat.html">Us Army Field Hat</a></li>
+													<li class="list-group-item"><a href="/us-army-corps-of-engineers-maine-project-office.html">Us Army Corps Of Engineers Maine Project Office</a></li>
+													<li class="list-group-item"><a href="/us-army-corps-of-engineers-ww2.html">Us Army Corps Of Engineers Ww2</a></li>
+													<li class="list-group-item"><a href="/us-army-dept-of-records.html">Us Army Dept Of Records</a></li>
+													<li class="list-group-item"><a href="/us-army-dodge-power-wagon.html">Us Army Dodge Power Wagon</a></li>
+													<li class="list-group-item"><a href="/us-army-division-headquarters-structure.html">Us Army Division Headquarters Structure</a></li>
+													<li class="list-group-item"><a href="/us-army-division-hq.html">Us Army Division Hq</a></li>
+													<li class="list-group-item"><a href="/us-army-corps-of-engineers-safety-and-health-requirements-manual.html">Us Army Corps Of Engineers Safety And Health Requirements Manual</a></li>
+													<li class="list-group-item"><a href="/us-army-ein-number-and-address.html">Us Army Ein Number And Address</a></li>
+													<li class="list-group-item"><a href="/us-army-dots.html">Us Army Dots</a></li>
+													<li class="list-group-item"><a href="/us-army-corps-of-engineers-office-locations.html">Us Army Corps Of Engineers Office Locations</a></li>
+													<li class="list-group-item"><a href="/us-army-corps-of-engineers-headquarters-washington-dc.html">Us Army Corps Of Engineers Headquarters Washington Dc</a></li>
+													<li class="list-group-item"><a href="/us-army-dog-tags-format.html">Us Army Dog Tags Format</a></li>
+													<li class="list-group-item"><a href="/us-army-corps-of-engineers-resource-management-office.html">Us Army Corps Of Engineers Resource Management Office</a></li>
+													<li class="list-group-item"><a href="/us-army-cutoff-scores-hrc.html">Us Army Cutoff Scores Hrc</a></li>
+													<li class="list-group-item"><a href="/us-army-corps-of-engineers-hec-hms.html">Us Army Corps Of Engineers Hec Hms</a></li>
+													<li class="list-group-item"><a href="/us-army-corps-of-engineers-usar-fog.html">Us Army Corps Of Engineers Usar Fog</a></li>
+													<li class="list-group-item"><a href="/us-army-corps-of-engineers-hq-address.html">Us Army Corps Of Engineers Hq Address</a></li>
+													<li class="list-group-item"><a href="/us-army-corps-of-engineers-yankton-sd.html">Us Army Corps Of Engineers Yankton Sd</a></li>
+													<li class="list-group-item"><a href="/us-army-corps-of-engineers-quality-control-training.html">Us Army Corps Of Engineers Quality Control Training</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

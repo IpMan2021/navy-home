@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Dod Space Budget 2020 - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Dod Space Budget 2020",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/a7/af/b7/a7afb7a5d40849e7dbeff5240f47adf9.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=dod+space+budget+2020",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Dod Space Budget 2020</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Military finally has its budget for fiscal 2020. Now NASA is farming out missions to private companies and other countries. Trump sent Congress a proposed Fiscal Year FY 2020 Budget request of 750 billion for national security 7183 billion of which is for the Department of. <br>				
+			</p>
+										<a class="badge badge-info" href="/dod-medical-standards-2020.html">dod medical standards 2020</a>
+											<a class="badge badge-info" href="/dod-sharp-statistics.html">dod sharp statistics</a>
+											<a class="badge badge-success" href="/dod-medical-separation-pay.html">dod medical separation pay</a>
+											<a class="badge badge-danger" href="/dod-medical-telework.html">dod medical telework</a>
+											<a class="badge badge-dark" href="/dod-medical-requirements.html">dod medical requirements</a>
+											<a class="badge badge-info" href="/dod-releases-fiscal-year-2021-budget-proposal.html">dod releases fiscal year 2021 budget proposal</a>
+											<a class="badge badge-warning" href="/dod-medical-review-board.html">dod medical review board</a>
+											<a class="badge badge-success" href="/dod-medical-travel.html">dod medical travel</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to pay a visit to the ideal blog.  Our website provides you with suggestions for seeing the maximum quality video and picture content, hunt and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, so we recommend this movie that you view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/af/b7/a7afb7a5d40849e7dbeff5240f47adf9.png" data-lightbox="roadtrip" data-title="Every Dod Contractor Large Or Small Required To Be Cmmc Certified In 2020 Contractors Veterans Home Outdoor Pavilion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/af/b7/a7afb7a5d40849e7dbeff5240f47adf9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpYMXrdru360AqwmBOo2KJc0BgK1KEwgMGlg';" alt="Every Dod Contractor Large Or Small Required To Be Cmmc Certified In 2020 Contractors Veterans Home Outdoor Pavilion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Every Dod Contractor Large Or Small Required To Be Cmmc Certified In 2020 Contractors Veterans Home Outdoor Pavilion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/43/92/1a439260873786840938ddf087b3fc9b.png" data-lightbox="roadtrip" data-title="The Army S 2021 Budget Request Trims The Troubled Next Generation Combat Vehicle Program 11 Percent While Raising Spending In 2020 Army Reconnaissance Aircraft Big Six">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/43/92/1a439260873786840938ddf087b3fc9b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYkBHMtyNkMZrZs4ysLuXArmayBCEKcMxDYw';" alt="The Army S 2021 Budget Request Trims The Troubled Next Generation Combat Vehicle Program 11 Percent While Raising Spending In 2020 Army Reconnaissance Aircraft Big Six">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Army S 2021 Budget Request Trims The Troubled Next Generation Combat Vehicle Program 11 Percent While Raising Spending In 2020 Army Reconnaissance Aircraft Big Six</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/35/70/893570a38b03e0a0af7a1c561ed8b4e6.jpg" data-lightbox="roadtrip" data-title="H R 2500 116th Congress 2019 2020 National Defense Authorization Act For Fiscal Year 2020 Fiscal Year Fiscal Acting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/35/70/893570a38b03e0a0af7a1c561ed8b4e6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKIJoDRb3a_DvZxL8NIPdyV6cEIuRTnU2s5g';" alt="H R 2500 116th Congress 2019 2020 National Defense Authorization Act For Fiscal Year 2020 Fiscal Year Fiscal Acting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">H R 2500 116th Congress 2019 2020 National Defense Authorization Act For Fiscal Year 2020 Fiscal Year Fiscal Acting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ee/c8/27/eec827d4be2f6584ff123644b2ebe828.png" data-lightbox="roadtrip" data-title="This Is A Fundamental Roles And Missions Question And Dod Needs To Clearly Designate A Lead Service And Compel Th In 2020 This Or That Questions Missions Army Images">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ee/c8/27/eec827d4be2f6584ff123644b2ebe828.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKdgIqAH_kumfGtFklJGioChVwmoGXmkvDuA';" alt="This Is A Fundamental Roles And Missions Question And Dod Needs To Clearly Designate A Lead Service And Compel Th In 2020 This Or That Questions Missions Army Images">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is A Fundamental Roles And Missions Question And Dod Needs To Clearly Designate A Lead Service And Compel Th In 2020 This Or That Questions Missions Army Images</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/3d/d0/053dd05f642dac2ae830025e3813e0bf.jpg" data-lightbox="roadtrip" data-title="Set Of 6 Cash Budget Envelopes Laminated And Hole Punched Cash Planner Envelopes Budget Envelopes Wallet Inserts Budget Organizer In 2020 Cash Budget Envelopes Cash Budget Budget Organization">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/3d/d0/053dd05f642dac2ae830025e3813e0bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6NjP0NuVKRkpK1ONZCkMr6bl26xzf6r2WLA';" alt="Set Of 6 Cash Budget Envelopes Laminated And Hole Punched Cash Planner Envelopes Budget Envelopes Wallet Inserts Budget Organizer In 2020 Cash Budget Envelopes Cash Budget Budget Organization">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Set Of 6 Cash Budget Envelopes Laminated And Hole Punched Cash Planner Envelopes Budget Envelopes Wallet Inserts Budget Organizer In 2020 Cash Budget Envelopes Cash Budget Budget Organization</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/65/da/2665da11fb7e699936979bbc9a879784.jpg" data-lightbox="roadtrip" data-title="I Ve Told You About The First Time I Read About A Spending Freeze On A Blog I Rolled My Eyes So No Spend Challenge Debt Relief Companies Debt Relief Programs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/65/da/2665da11fb7e699936979bbc9a879784.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLBlAVCHG5sU3Ma7SWTPuGdtdoCbuyWxL9oQ';" alt="I Ve Told You About The First Time I Read About A Spending Freeze On A Blog I Rolled My Eyes So No Spend Challenge Debt Relief Companies Debt Relief Programs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Ve Told You About The First Time I Read About A Spending Freeze On A Blog I Rolled My Eyes So No Spend Challenge Debt Relief Companies Debt Relief Programs</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/a8/b9/31/a8b931f2b5c41e29b5e3cf47a64def62.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLBlAVCHG5sU3Ma7SWTPuGdtdoCbuyWxL9oQ';" alt="I Ve Told You About The First Time I Read About A Spending Freeze On A Blog I Rolled My Eyes So No Spend Challenge Debt Relief Companies Debt Relief Programs">
+										<div class="card-body">
+						<h3 class="h5"><b>With the federal deficit expected to balloon to over 4 trillion in fiscal 2020 due to spending to pump the economy in the face of the COVID-19 coronavirus pandemic downward pressure.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Dod space budget 2020</strong>. 
+								
+																	Congress on Thursday sent President Donald Trump the final version of the 2020 defense appropriations bill. 
+																	Space Force Despite losing reelection President Trump is plowing ahead with plans to release this month a detailed Pentagon budget for the next fiscal year plumping up proposed 2022 funding for. 
+																	UNCLASSIFIED THIS PAGE INTENTIONALLY LEFT BLANK UNCLASSIFIED. 
+																	29 2020 at Cape Canaveral Air Force Station Fla. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The presidents 750 billion national defense budget request for fiscal year 2020 includes 141 billion for space programs. 
+																	3 DfTs CDEL budget in 2020-21 includes a net reduction due to business rates retention pilots. 
+																	The British version will be less ambitious with. 
+																	4 BEIS and other government departments CDEL budgets increased in 2020-21 to account for the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Defense Fiscal Year FY 2020 Budget Estimates March 2019 Space Development Agency Defense-Wide Justification Book Volume 5 of 5 Research Development Test Evaluation Defense-Wide. 
+																	Defend the homeland Remain the preeminent military power in the world Ensure the balances of power in key regions remain in our favor Advance an international order that is most conducive. 
+																	In 2020 - 2021 the UK Defense Ministry already had a budget of almost 415bn. 
+																	The first space race was a competition between the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	National Defense Strategy 1 NDS Our Guidepost for Resource Decisions Guides DoD to support the National Security Strategy in order to. 
+																	The total DOD funding for the space domain in the 2021 budget request is 180 billion. 
+																	Media caption Boris Johnson. 
+																	The Falcon 9 Starlink rocket successfully lifted off of Pad 40 on Jan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The lions share of that is going to the Space Force of course but 337 million is allocated for another. 
+																	The high frontier is seen by many as an increasingly important theater of military operations hence the formation of the US. 
+																	Air Force WASHINGTON The Space Force. 
+																	FISCAL YEAR 2021 BUDGET REQUEST. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Johnson told lawmakers Thursday that the government needed to prioritize the armed forces. 
+																	Dan Sabbagh and Patrick Butler. 
+																	UNCLASSIFIED Space Development Agency Budget Estimates FY 2020 RDTE Program UNCLASSIFIED Table of Volumes Defense Advanced. 
+																	In addition to the Air Forces 138 billion portfolio are 306 million. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Defence spending a boost for safety of the British people A once-in-a. 
+																	How UK defence budget could be spent. 
+																	Last modified on Thu 19 Nov 2020 0847 EST. 
+																	The next-generation overhead persistent infrared satellite system designed to track nuclear missiles is in the Space Force RDTE budget at 23 billion a large increase over the 14 billion enacted in 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On March 11 2019 President Donald J. 
+																	Airman 1st Class Zoe ThackerUS. 
+																	Congress may choose to approve reject or modify the FY2020 Presidents budget request for National Security Space NSS which includes 141 billion for space launches satellites and other activities. 
+																	And the Soviet Union for national pride and military advantage. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	WASHINGTON Three months late the US. 
+																	Hackers HQ and Space Command. 
+																	Wed 18 Nov 2020 1730 EST. 
+																	Space Force is working on a strategy and 2022 funding to implement its new Enterprise SATCOM Vision for integrating the various military and commercial satellites now used by DoD. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 2020 budget seeks 31 million for technical assessments of the production of vehicles 3 through 10 and their preparation for launch. 
+																	The budget also has 329 million in RDTE funds for GPS user. 
+																	Boris Johnson has. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/3b/87/143b87d19f0f972e2ebcea6904951bf9.jpg" data-lightbox="roadtrip" data-title="Op Ed To Discourage Assaults On Satellites U S Needs A Way To Ascertain Contaminated Acto In 2020 Cyber Warfare Space News Satellites">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/3b/87/143b87d19f0f972e2ebcea6904951bf9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt_o4pRbuTm7dAR-_U814kIsFZTrEx2WLfPg';" alt="Op Ed To Discourage Assaults On Satellites U S Needs A Way To Ascertain Contaminated Acto In 2020 Cyber Warfare Space News Satellites">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Op Ed To Discourage Assaults On Satellites U S Needs A Way To Ascertain Contaminated Acto In 2020 Cyber Warfare Space News Satellites</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a8/b9/31/a8b931f2b5c41e29b5e3cf47a64def62.jpg" data-lightbox="roadtrip" data-title="European Lodging And Transportation Tips For Space A Travelers In 2020 Travel Travel Benefits Family Friendly Vacation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a8/b9/31/a8b931f2b5c41e29b5e3cf47a64def62.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaPdYdhIDM90MbWxSswbyYyDkzg-MfmP7RpA';" alt="European Lodging And Transportation Tips For Space A Travelers In 2020 Travel Travel Benefits Family Friendly Vacation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">European Lodging And Transportation Tips For Space A Travelers In 2020 Travel Travel Benefits Family Friendly Vacation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/f0/05/4cf0058d68bdbc3874c5f759264c4241.jpg" data-lightbox="roadtrip" data-title="Milconnect Benefits And Records For Dod Affiliates Health Care Coverage Records Benefit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/f0/05/4cf0058d68bdbc3874c5f759264c4241.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVFnZxvUbrXx3uN6W1J8s9xo2N-_UpHku1Ag';" alt="Milconnect Benefits And Records For Dod Affiliates Health Care Coverage Records Benefit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Milconnect Benefits And Records For Dod Affiliates Health Care Coverage Records Benefit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/1d/b5/af1db54826f8c78502848a95c2638c9e.png" data-lightbox="roadtrip" data-title="Free Printable Goal Planner For 2021 Sfb Collective Goal Planner Printable Goal Planner Free Free Goal Printables">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/1d/b5/af1db54826f8c78502848a95c2638c9e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRbeSTOb0dRyow1BlPgwST8hdmr0oSJ6xnLA';" alt="Free Printable Goal Planner For 2021 Sfb Collective Goal Planner Printable Goal Planner Free Free Goal Printables">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Printable Goal Planner For 2021 Sfb Collective Goal Planner Printable Goal Planner Free Free Goal Printables</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0e/72/51/0e725148a438d5be638359cf1c9f0417.jpg" data-lightbox="roadtrip" data-title="Pin On Home Decoration">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0e/72/51/0e725148a438d5be638359cf1c9f0417.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPsWsnsXxWauxgi5QYY8GXWfVyBnm2eLIuPA';" alt="Pin On Home Decoration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Home Decoration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/b1/51/fab151bf5be0dbb3ed64047cb5d20628.png" data-lightbox="roadtrip" data-title="2019 Mcafee Antivirus Free For Dod Members The Millionaire Soldier Mcafee Antivirus Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/b1/51/fab151bf5be0dbb3ed64047cb5d20628.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1haCs_AgntSFI_nOsFdsl32hnfZBdjTQUgA';" alt="2019 Mcafee Antivirus Free For Dod Members The Millionaire Soldier Mcafee Antivirus Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2019 Mcafee Antivirus Free For Dod Members The Millionaire Soldier Mcafee Antivirus Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/45/bf/a845bfeeee02c5f10ae0cd87c0e76610.jpg" data-lightbox="roadtrip" data-title="Apartment Decorating Rental On A Budget For Inspiration 330 Gardendecor Living In 2020 Apartment Decorating Rental Apartment Decor Studio Apartment Decorating">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/45/bf/a845bfeeee02c5f10ae0cd87c0e76610.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeMOws9e2d9xzhwy6JVSt4XsFuSW_BOMdO_Q';" alt="Apartment Decorating Rental On A Budget For Inspiration 330 Gardendecor Living In 2020 Apartment Decorating Rental Apartment Decor Studio Apartment Decorating">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Apartment Decorating Rental On A Budget For Inspiration 330 Gardendecor Living In 2020 Apartment Decorating Rental Apartment Decor Studio Apartment Decorating</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/12/88/741288ac2f441db1fb311dc26c03406a.jpg" data-lightbox="roadtrip" data-title="Battery Fuel Gauge Evaluation Kit For Wearables And Portable Devices Evaluation Fitness Monitor Devices">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/12/88/741288ac2f441db1fb311dc26c03406a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTui994IezTd6z43z-bMxaM3ioycYL9D4E28A';" alt="Battery Fuel Gauge Evaluation Kit For Wearables And Portable Devices Evaluation Fitness Monitor Devices">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Battery Fuel Gauge Evaluation Kit For Wearables And Portable Devices Evaluation Fitness Monitor Devices</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/63/e7/3263e729bfe517ceb93e7a6b4f17b425.jpg" data-lightbox="roadtrip" data-title="Pcs Binder Printable Military Move Binder 8 5x11 60 Pages Etsy In 2020 Pcs Binder Printable Pcs Binder Moving Binder">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/63/e7/3263e729bfe517ceb93e7a6b4f17b425.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThSDO4aqLXOj1O9SvfF30SkZLSW_8_6g14hA';" alt="Pcs Binder Printable Military Move Binder 8 5x11 60 Pages Etsy In 2020 Pcs Binder Printable Pcs Binder Moving Binder">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pcs Binder Printable Military Move Binder 8 5x11 60 Pages Etsy In 2020 Pcs Binder Printable Pcs Binder Moving Binder</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/05/05/af0505972cce85d34ce1a9219938e4a4.jpg" data-lightbox="roadtrip" data-title="Dod Af Punt On New Space Acquisition Exec Breaking Defense In 2020 Space Program Black Space News Space">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/05/05/af0505972cce85d34ce1a9219938e4a4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsyORLoO99pCwGFPNl1XT-lh1gr-SmSxqEyQ';" alt="Dod Af Punt On New Space Acquisition Exec Breaking Defense In 2020 Space Program Black Space News Space">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dod Af Punt On New Space Acquisition Exec Breaking Defense In 2020 Space Program Black Space News Space</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e7/8a/aa/e78aaa3b61ae348ce97239b698afce4a.jpg" data-lightbox="roadtrip" data-title="Personalized Babysitter Notes Printable Tengo Una Amiga Prometo Cual Absolutely No Scented In 2020 Babysitter Notes Wedding Checklist Printable Wedding Checklist">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e7/8a/aa/e78aaa3b61ae348ce97239b698afce4a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7KgBc0miOgGQoNt9_IWTcatP7dmI6XWrlzw';" alt="Personalized Babysitter Notes Printable Tengo Una Amiga Prometo Cual Absolutely No Scented In 2020 Babysitter Notes Wedding Checklist Printable Wedding Checklist">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Personalized Babysitter Notes Printable Tengo Una Amiga Prometo Cual Absolutely No Scented In 2020 Babysitter Notes Wedding Checklist Printable Wedding Checklist</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/b5/3d/90b53d1442c01ec30ced99c6cfec7cc3.jpg" data-lightbox="roadtrip" data-title="Pin By Lanine Bradley On Life In 2020 Songs Clean Water Drinking Water">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/b5/3d/90b53d1442c01ec30ced99c6cfec7cc3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVk39WC4q2JbX-5X3UChwUYTu0utqXl7UXhg';" alt="Pin By Lanine Bradley On Life In 2020 Songs Clean Water Drinking Water">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Lanine Bradley On Life In 2020 Songs Clean Water Drinking Water</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/2e/3e/c82e3e7ebd15c343a69c221add29f047.png" data-lightbox="roadtrip" data-title="Flying Space A On The Patriot Express 11 Things To Know Poppin Smoke Family Adventure Travel Military Spouse Military Flights">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/2e/3e/c82e3e7ebd15c343a69c221add29f047.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-lvHGbta_CZ8JVOI8GYG9ZA4N9oTcqRnbCg';" alt="Flying Space A On The Patriot Express 11 Things To Know Poppin Smoke Family Adventure Travel Military Spouse Military Flights">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Flying Space A On The Patriot Express 11 Things To Know Poppin Smoke Family Adventure Travel Military Spouse Military Flights</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-veteran-financial-hardship.html">Military Veteran Financial Hardship</a></li>
+													<li class="list-group-item"><a href="/military-wife-rights.html">Military Wife Rights</a></li>
+													<li class="list-group-item"><a href="/ministry-of-armed-forces-of-france.html">Ministry Of Armed Forces Of France</a></li>
+													<li class="list-group-item"><a href="/military-vocational-rehab-program.html">Military Vocational Rehab Program</a></li>
+													<li class="list-group-item"><a href="/military-training-unit-crossword.html">Military Training Unit Crossword</a></li>
+													<li class="list-group-item"><a href="/military-widows-benefits.html">Military Widows Benefits</a></li>
+													<li class="list-group-item"><a href="/military-survey-department-uae.html">Military Survey Department Uae</a></li>
+													<li class="list-group-item"><a href="/military-training-lesson-plans.html">Military Training Lesson Plans</a></li>
+													<li class="list-group-item"><a href="/military-w-2-form-release-date.html">Military W 2 Form Release Date</a></li>
+													<li class="list-group-item"><a href="/military-wife.html">Military Wife</a></li>
+													<li class="list-group-item"><a href="/military-wife-vows-i-should-have-said.html">Military Wife Vows I Should Have Said</a></li>
+													<li class="list-group-item"><a href="/ministry-of-defence-armed-force-muscat.html">Ministry Of Defence Armed Force Muscat</a></li>
+													<li class="list-group-item"><a href="/military-veterans-services-center-bellevue-university.html">Military Veterans Services Center Bellevue University</a></li>
+													<li class="list-group-item"><a href="/military-troop-divisions.html">Military Troop Divisions</a></li>
+													<li class="list-group-item"><a href="/military-time-resource.html">Military Time Resource</a></li>
+													<li class="list-group-item"><a href="/military-wives-meaning.html">Military Wives Meaning</a></li>
+													<li class="list-group-item"><a href="/military-training-unit-names.html">Military Training Unit Names</a></li>
+													<li class="list-group-item"><a href="/military-times-fallen.html">Military Times Fallen</a></li>
+													<li class="list-group-item"><a href="/ministry-of-defence-budget-2020-kenya.html">Ministry Of Defence Budget 2020 Kenya</a></li>
+													<li class="list-group-item"><a href="/military-wives-near-me.html">Military Wives Near Me</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

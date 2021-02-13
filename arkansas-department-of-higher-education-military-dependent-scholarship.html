@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Arkansas Department Of Higher Education Military Dependent Scholarship - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Arkansas Department Of Higher Education Military Dependent Scholarship",
+  "datePublished": "2021-02-13",
+  "image": "https://campusdata.uark.edu/resources/images/articles/2021-01-29_01-31-20-PMGilmanMcCain.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=arkansas+department+of+higher+education+military+dependent+scholarship",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Arkansas Department Of Higher Education Military Dependent Scholarship</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Veterans andor their dependents. The availability of these programs will vary widely from state to state. To qualify you must be a spouse or dependent child of a resident Arkansas military member who was. <br>				
+			</p>
+										<a class="badge badge-dark" href="/department-of-defense-demographics-report-2018.html">department of defense demographics report 2018</a>
+											<a class="badge badge-warning" href="/department-of-defense-mountain-view-ca.html">department of defense mountain view ca</a>
+											<a class="badge badge-primary" href="/department-of-defense-history-definition.html">department of defense history definition</a>
+											<a class="badge badge-danger" href="/department-of-defense-meaning-hindi.html">department of defense meaning hindi</a>
+											<a class="badge badge-light" href="/department-of-defense-definition-of-resilience.html">department of defense definition of resilience</a>
+											<a class="badge badge-primary" href="/department-of-defense-civilian-health-insurance.html">department of defense civilian health insurance</a>
+											<a class="badge badge-light" href="/department-of-defense-direct-ground-combat-definition-and-assignment-rule.html">department of defense direct ground combat definition and assignment rule</a>
+											<a class="badge badge-success" href="/department-of-defense-civilian-meritorious-service-medal.html">department of defense civilian meritorious service medal</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you've come to visit the right blog.  Our site provides you with suggestions for viewing the maximum quality video and image content, hunt and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this video for you to view.  You can also bring about supporting this site by sharing videos and images that you enjoy on this site on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information that you get on this site.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://campusdata.uark.edu/resources/images/articles/2021-01-29_01-31-20-PMGilmanMcCain.png" data-lightbox="roadtrip" data-title="Uhzv5yapggw4cm">
+											<img class="card-img v-image ads-img " src="https://campusdata.uark.edu/resources/images/articles/2021-01-29_01-31-20-PMGilmanMcCain.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5c8Mr8mxjjF5lSJ4pU3chqpF-mOEVFaSMDA';" alt="Uhzv5yapggw4cm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uhzv5yapggw4cm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/9f/c5/3a9fc55aab914f971111c24941874651.png" data-lightbox="roadtrip" data-title="College Financial Aid Benedictine Military School Educational Infographic Scholarships For College Grants For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/9f/c5/3a9fc55aab914f971111c24941874651.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGsP8bAKOKoRBh9AFhAkzi9b7TWbi_D0uZDg';" alt="College Financial Aid Benedictine Military School Educational Infographic Scholarships For College Grants For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Financial Aid Benedictine Military School Educational Infographic Scholarships For College Grants For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/04/5c/c7045c5452c66fadc27fd960db0c8ea0.png" data-lightbox="roadtrip" data-title="How To Fill Out The Fafsa Fafsa Financial Aid Scholarships For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/04/5c/c7045c5452c66fadc27fd960db0c8ea0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8DU8s8q3wrgAOVjEdMVHf7hwRgQVwaUZofg';" alt="How To Fill Out The Fafsa Fafsa Financial Aid Scholarships For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Fill Out The Fafsa Fafsa Financial Aid Scholarships For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ade.arkansas.gov/Images/ADE-logo-with-title-white-ver2.png" data-lightbox="roadtrip" data-title="Arkansas Department Of Education">
+											<img class="card-img v-image ads-img " src="https://ade.arkansas.gov/Images/ADE-logo-with-title-white-ver2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlPyRh0vE0KddxF5GdzI-Swa-hmEXtrWgCkg';" alt="Arkansas Department Of Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Arkansas Department Of Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="uCnGQV18B8gl3M" data-lightbox="roadtrip" data-title="Https Static Ark Org Eeuploads Adhe 02 Fa 2017 Pdf">
+											<img class="card-img v-image ads-img " src="uCnGQV18B8gl3M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRQgVZZ2I60noGDQOlTzuJ4AHsNcA6NOmPvA';" alt="Https Static Ark Org Eeuploads Adhe 02 Fa 2017 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Static Ark Org Eeuploads Adhe 02 Fa 2017 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="TBbYGADupHAxkM" data-lightbox="roadtrip" data-title="Https Static Ark Org Eeuploads Adhe 04 Rules Pdf">
+											<img class="card-img v-image ads-img " src="TBbYGADupHAxkM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-RylRTwGfoD0yRd2x19ysu-fRTTW9F1D0-g';" alt="Https Static Ark Org Eeuploads Adhe 04 Rules Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Static Ark Org Eeuploads Adhe 04 Rules Pdf</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="rQvxL5_ErhRs9M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-RylRTwGfoD0yRd2x19ysu-fRTTW9F1D0-g';" alt="Https Static Ark Org Eeuploads Adhe 04 Rules Pdf">
+										<div class="card-body">
+						<h3 class="h5"><b>Funded in large part by the Arkansas Scholarship Lottery the Academic Challenge Scholarship is available to students regardless of their academic status whether just graduating from high school currently enrolled in college enrolling in college for the first time or re-enrolling after a period of time out of college.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Arkansas department of higher education military dependent scholarship</strong>. 
+								
+																	Scholarships Available for Military Dependants to Study Abroad Feb. 
+																	All formal communications shall be addressed to or signed by the Director of the Arkansas Department of Higher Education or hisher designee. 
+																	Scholarship Funds are administered at the local level. 
+																	The MIAKIA Dependents Scholarship Program created by Act 188 of 1973 was amended by Act 2127 of 2005 and subsequent legislation to include the dependents of disabled veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military Dependents Scholarship Sponsored by. 
+																	Provide required documentation as determined by the Arkansas Department of Higher Education in order to determine eligibility. 
+																	The Arkansas Department of Higher Education shall administer the Military Dependents Scholarship Program within the policies set by the Arkansas Higher Education Coordinating Board. 
+																	Many state governments offer valuable scholarships and grants for military personnel and their families. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Office of Academic Scholarships - 114 Silas H. 
+																	Department of States Gilman-McCain Scholarship provides awards of 5000 for undergraduate child dependents of active-duty service members to study abroad or intern abroad on credit-bearing programs. 
+																	This program awards approximately 10 one-year scholarships valued up to 1500 each. 
+																	State Supported Scholarships for Military Dependents. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Must complete a minimum of 24 semester hours per academic year. 
+																	Students from all academic majors and disciplines are encouraged to apply. 
+																	My daughter is all ready enrolled in college and will start classes this. 
+																	Full-time and part-time scholarships are available. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Funding is applied after DEA or Chapter 35 benefits are deducted. 
+																	The Arkansas Department of Higher Education shall administer the Military Dependents Scholarship Program within the policies set by the Arkansas Higher Education Coordinating Board. 
+																	Providing scholarships to dependents of military who either died while serving or are 100 disabled. 
+																	Military Dependent Scholarship This program is administered by the Academic Scholarship Office. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All formal communications shall be addressed to or signed by the Director of the Arkansas Department of Higher Education or hisher designee. 
+																	The Arkansas Dependents Scholarship Program MDS provides financial aid for qualifying military spouses or dependents who want to earn their bachelors degree or certificate of completion from an Arkansas public college university or technical school. 
+																	These programs are usually administered through the states Department of Higher Education and the Office of Veterans Affairs. 
+																	The Arkansas Department of Higher Education shall administer the Military Dependents Scholarship Program within the policies set by the Arkansas Higher Education Coordinating Board. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Arkansas Single Parent Scholarships ASPSF offers scholarships to low-income single parents who are pursuing post-secondary education that leads to skilled employment. 
+																	Hunt Hall 479 575-4464 Providing scholarship opportunities including military dependent scholarships. 
+																	The Military Dependents Scholarship Program MDS provides financial aid for undergraduate students seeking a bachelor. 
+																	Students from all academic majors and disciplines are encouraged to apply. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Scholarships are awarded to both incoming and currently enrolled students at the University of Arkansas. 
+																	03 2021 The US. 
+																	Renewable waiver of tuition fees room and board undergraduate students seeking a bachelors degree or certificate of completion at any public college university or technical school in Arkansas who qualify as a spouse or dependent child of an Arkansas resident who has been declared to be missing in action killed in action a POW or killed on ordnance delivery or a veteran who has been. 
+																	Arkansas Department of Higher Education - 501-371-2050 finaidadheedu. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Awards for the Military Dependents scholarship Program as for all financial aid programs administered by the Arkansas Department of Higher Education ADHE are dependent on the availability of funds Its my understanding that the funds come from the state of Arkansas. 
+																	Military Dependents Scholarship Similarly the Arkansas Department of Higher Education grants the Military Dependents Scholarship MDS for filling any unpaid gaps in full-time undergraduate tuition and fees. 
+																	Continuing Eligibility Must maintain a minimum GPA of 20 on a 40 scale. 
+																	Scholarships are awarded to both incoming and currently enrolled students at the University of Arkansas. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Classified as missing in. 
+																	The Arkansas Department of Higher Educations YOUniversal scholarship application opened October 1 2020 for the 2021-22 academic year. 
+																	Arkansas Department of Higher Education Applicant must be a full-time undergraduategraduate student who is a dependent or the spouse of any resident of Arkansas who was killed missing in action a prisoner of war or who are totally and permanently disabled. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="rQvxL5_ErhRs9M" data-lightbox="roadtrip" data-title="Https Static Ark Org Eeuploads Adhe Financial Mia Rules Final June09 Pdf">
+											<img class="card-img v-image ads-img " src="rQvxL5_ErhRs9M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO-i0q9vPqXf3omzl4PW3jsoQ2p7kFrygrBQ';" alt="Https Static Ark Org Eeuploads Adhe Financial Mia Rules Final June09 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Static Ark Org Eeuploads Adhe Financial Mia Rules Final June09 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="6pGzs5zGr-1rCM" data-lightbox="roadtrip" data-title="Https Static Ark Org Eeuploads Adhe Financial Aid Pdf">
+											<img class="card-img v-image ads-img " src="6pGzs5zGr-1rCM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsfF3TouCngntFMbM4I8p-cxTGjRCA3JpYZQ';" alt="Https Static Ark Org Eeuploads Adhe Financial Aid Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Static Ark Org Eeuploads Adhe Financial Aid Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="3HnP5Ca9AYw1rM" data-lightbox="roadtrip" data-title="Https Static Ark Org Eeuploads Adhe 01 Arkansas Challenge Scholarship Rules Pdf">
+											<img class="card-img v-image ads-img " src="3HnP5Ca9AYw1rM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRVj-xb8tM8KyUE_PdOwVQr2frBmJKfO6iJg';" alt="Https Static Ark Org Eeuploads Adhe 01 Arkansas Challenge Scholarship Rules Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Static Ark Org Eeuploads Adhe 01 Arkansas Challenge Scholarship Rules Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.collegegrant.net/wp-content/uploads/illustration-that-shows-scholarship-being-received-1024x670.png" data-lightbox="roadtrip" data-title="College Grants In Ar Arkansas Grants For Education">
+											<img class="card-img v-image ads-img " src="https://www.collegegrant.net/wp-content/uploads/illustration-that-shows-scholarship-being-received-1024x670.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcGD-SyRWRiZat0zXlCW63Bo96OySJjr_1hA';" alt="College Grants In Ar Arkansas Grants For Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Grants In Ar Arkansas Grants For Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Arkansas_Department_of_Education.svg/1200px-Arkansas_Department_of_Education.svg.png" data-lightbox="roadtrip" data-title="Arkansas Department Of Education Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Arkansas_Department_of_Education.svg/1200px-Arkansas_Department_of_Education.svg.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgpRz0Zo_3S_AX_I5yTzSon42YPk6Wx5LvYA';" alt="Arkansas Department Of Education Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Arkansas Department Of Education Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/4b/97/6b4b973281128c6485eaf37bae694bbc.jpg" data-lightbox="roadtrip" data-title="Friends Come And Go But Brothers Last Forever Military Photos American Soldiers Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/4b/97/6b4b973281128c6485eaf37bae694bbc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvSu-uRTEwM3wlGAE2IoaDwb1hBxFb80OCrA';" alt="Friends Come And Go But Brothers Last Forever Military Photos American Soldiers Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Friends Come And Go But Brothers Last Forever Military Photos American Soldiers Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="nFz8rG1cUB9csM" data-lightbox="roadtrip" data-title="Https Static Ark Org Eeuploads Adhe Agenda Book January 26 2c 2018 2817 29 Pdf">
+											<img class="card-img v-image ads-img " src="nFz8rG1cUB9csM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE5LtlJ6ta361Xk-F0kys5g-gF2rMlYeVOpA';" alt="Https Static Ark Org Eeuploads Adhe Agenda Book January 26 2c 2018 2817 29 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Static Ark Org Eeuploads Adhe Agenda Book January 26 2c 2018 2817 29 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="6beIFsQApMkAaM" data-lightbox="roadtrip" data-title="Https Static Ark Org Eeuploads Adhe 12 Quicksurveys Legrequests Cahear Complete Pdf">
+											<img class="card-img v-image ads-img " src="6beIFsQApMkAaM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi0bLbAQnA56X-8KHMzES3_KVz4BaLpOlD-w';" alt="Https Static Ark Org Eeuploads Adhe 12 Quicksurveys Legrequests Cahear Complete Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Static Ark Org Eeuploads Adhe 12 Quicksurveys Legrequests Cahear Complete Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="FyJ-_7WmsOltkM" data-lightbox="roadtrip" data-title="Http Www Arkleg State Ar Us Education Highered Academicchallenge Academic 20challenge 20scholarship Rules Pdf">
+											<img class="card-img v-image ads-img " src="FyJ-_7WmsOltkM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaGPs1fGRcMCaaUT73csmCMcjAShp4sVNgkA';" alt="Http Www Arkleg State Ar Us Education Highered Academicchallenge Academic 20challenge 20scholarship Rules Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Arkleg State Ar Us Education Highered Academicchallenge Academic 20challenge 20scholarship Rules Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="9ElXWa92W2tWDM" data-lightbox="roadtrip" data-title="Https Static Ark Org Eeuploads Adhe A Book Vol 1 V1 Pdf">
+											<img class="card-img v-image ads-img " src="9ElXWa92W2tWDM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIKqgCsruEw0UQ-rWp2SYDJpE4-y6ynXxhKw';" alt="Https Static Ark Org Eeuploads Adhe A Book Vol 1 V1 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Static Ark Org Eeuploads Adhe A Book Vol 1 V1 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="Nb5U8teMbQzazM" data-lightbox="roadtrip" data-title="Https Static Ark Org Eeuploads Adhe Agenda Book October 31 2c 2014 Pdf">
+											<img class="card-img v-image ads-img " src="Nb5U8teMbQzazM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2eHnW98FvRgUOZTTmi09wkEeCDP1QIMD3tw';" alt="Https Static Ark Org Eeuploads Adhe Agenda Book October 31 2c 2014 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Static Ark Org Eeuploads Adhe Agenda Book October 31 2c 2014 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="Wmb0XzmSpVUz_M" data-lightbox="roadtrip" data-title="Http Www Arklegaudit Gov Pdf Aspx Id Pspe01603">
+											<img class="card-img v-image ads-img " src="Wmb0XzmSpVUz_M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRVF9J_P07jVjTeypGDce1hLSZjMTZKK3Pew';" alt="Http Www Arklegaudit Gov Pdf Aspx Id Pspe01603">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Arklegaudit Gov Pdf Aspx Id Pspe01603</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.collegescholarships.org/images/arkansas-college-funding.jpg" data-lightbox="roadtrip" data-title="College Funding From Arkansas Ar Through Scholarships And Grants">
+											<img class="card-img v-image ads-img " src="http://www.collegescholarships.org/images/arkansas-college-funding.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxPnY8oLeRHmiK-Hs-MuPDtX7aBm26hNR_oQ';" alt="College Funding From Arkansas Ar Through Scholarships And Grants">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Funding From Arkansas Ar Through Scholarships And Grants</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/jcpenney-on-military.html">Jcpenney On Military</a></li>
+													<li class="list-group-item"><a href="/is-the-navy-under-the-department-of-defense.html">Is The Navy Under The Department Of Defense</a></li>
+													<li class="list-group-item"><a href="/is-the-army-a-dod-agency.html">Is The Army A Dod Agency</a></li>
+													<li class="list-group-item"><a href="/iranian-ministry-of-defense-and-armed-forces-logistics.html">Iranian Ministry Of Defense And Armed Forces Logistics</a></li>
+													<li class="list-group-item"><a href="/is-military-survivor-benefit-plan-worth-it.html">Is Military Survivor Benefit Plan Worth It</a></li>
+													<li class="list-group-item"><a href="/is-hrcarmymil-down.html">Is Hrcarmymil Down</a></li>
+													<li class="list-group-item"><a href="/is-army-part-of-dod.html">Is Army Part Of Dod</a></li>
+													<li class="list-group-item"><a href="/is-usaa-open-to-dod-civilians.html">Is Usaa Open To Dod Civilians</a></li>
+													<li class="list-group-item"><a href="/is-the-coast-guard-part-of-the-department-of-homeland-security.html">Is The Coast Guard Part Of The Department Of Homeland Security</a></li>
+													<li class="list-group-item"><a href="/is-there-a-travel-ban-due-to-covid.html">Is There A Travel Ban Due To Covid</a></li>
+													<li class="list-group-item"><a href="/jcpenney-military-discount-online.html">Jcpenney Military Discount Online</a></li>
+													<li class="list-group-item"><a href="/italy-defense-budget-2021.html">Italy Defense Budget 2021</a></li>
+													<li class="list-group-item"><a href="/jcpenney-military-coupon.html">Jcpenney Military Coupon</a></li>
+													<li class="list-group-item"><a href="/is-the-army-under-the-department-of-defense.html">Is The Army Under The Department Of Defense</a></li>
+													<li class="list-group-item"><a href="/is-coast-guard-part-of-department-of-defense.html">Is Coast Guard Part Of Department Of Defense</a></li>
+													<li class="list-group-item"><a href="/is-there-free-counseling-near-me.html">Is There Free Counseling Near Me</a></li>
+													<li class="list-group-item"><a href="/is-coast-guard-under-homeland-security.html">Is Coast Guard Under Homeland Security</a></li>
+													<li class="list-group-item"><a href="/jcpenney-military-jacket.html">Jcpenney Military Jacket</a></li>
+													<li class="list-group-item"><a href="/is-hrc-army-down.html">Is Hrc Army Down</a></li>
+													<li class="list-group-item"><a href="/is-it-illegal-to-wear-military-rank-insignia.html">Is It Illegal To Wear Military Rank Insignia</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

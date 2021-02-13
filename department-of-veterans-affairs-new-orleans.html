@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Department Of Veterans Affairs New Orleans - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Department Of Veterans Affairs New Orleans",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/736x/1d/10/31/1d1031339f6a27b57e0dd7fcea52a2d3.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=department+of+veterans+affairs+new+orleans",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Department Of Veterans Affairs New Orleans</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">NATIONAL FEDERATION OF FEDERAL EMPLOYEES LOCAL 1904. Posted on Friday September 13 2019 900 am September 11 2019 Posted in Health VA Medical Centers by VAntage Point. NPI list of 1 department of veterans affairs va pharmacy registered providers with a business address in New Orleans LA all registered as organizations. <br>				
+			</p>
+										<a class="badge badge-info" href="/military-dog-full-movie-sub-indo.html">military dog full movie sub indo</a>
+											<a class="badge badge-success" href="/military-department-logos.html">military department logos</a>
+											<a class="badge badge-success" href="/military-department-of-transportation.html">military department of transportation</a>
+											<a class="badge badge-secondary" href="/military-crisis-line.html">military crisis line</a>
+											<a class="badge badge-primary" href="/military-dependent-scholarships-2020.html">military dependent scholarships 2020</a>
+											<a class="badge badge-dark" href="/military-department-oregon.html">military department oregon</a>
+											<a class="badge badge-secondary" href="/military-divisions-roman.html">military divisions roman</a>
+											<a class="badge badge-info" href="/military-department-in-india.html">military department in india</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to visit the ideal blog.  Our website provides you with suggestions for viewing the maximum quality video and image content, search and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, especially Youtube, so we recommend this video that you see.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/0c/57/000c576a26fe56dce4a553d245c42d43.jpg" data-lightbox="roadtrip" data-title="State Va Leader Questions Chief Of Staff Hire At New Orleans Hospital Veterans Affairs Hospital New Hospital">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/0c/57/000c576a26fe56dce4a553d245c42d43.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhXxZthDEZfbpz_8KsxJgxF2ev5f5l9qyjcw';" alt="State Va Leader Questions Chief Of Staff Hire At New Orleans Hospital Veterans Affairs Hospital New Hospital">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">State Va Leader Questions Chief Of Staff Hire At New Orleans Hospital Veterans Affairs Hospital New Hospital</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/53/6b/f8536b388c74a6caf18d7332c53ffdfe.jpg" data-lightbox="roadtrip" data-title="New Orleans Hospitals Adapt And Overcome Healthcare Design Hospital Hospital Room">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/53/6b/f8536b388c74a6caf18d7332c53ffdfe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXdYuyNDB3GNnzc8gbu8dx2UtospKcdFh7Mw';" alt="New Orleans Hospitals Adapt And Overcome Healthcare Design Hospital Hospital Room">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Orleans Hospitals Adapt And Overcome Healthcare Design Hospital Hospital Room</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/df/4d/cbdf4d1b4cd85f8f219d1ecdf523da9f.jpg" data-lightbox="roadtrip" data-title="New Orleans Hospitals Adapt And Overcome Hospital Design Architecture Hospital Hospital Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/df/4d/cbdf4d1b4cd85f8f219d1ecdf523da9f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4m97zd7S8RSvtiBZlTMz2hta2mrYfByKE6g';" alt="New Orleans Hospitals Adapt And Overcome Hospital Design Architecture Hospital Hospital Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Orleans Hospitals Adapt And Overcome Hospital Design Architecture Hospital Hospital Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/7c/eb/1f7ceb3182b180435c27388b3fc54305.jpg" data-lightbox="roadtrip" data-title="Pin On Say It Loud">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/7c/eb/1f7ceb3182b180435c27388b3fc54305.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4hWpjmEOTIMv2DeSuy6vpRV2eLHAaXC8MhQ';" alt="Pin On Say It Loud">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Say It Loud</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/27/03/2a/27032a52830d2f5521b8cd024555aac4.jpg" data-lightbox="roadtrip" data-title="Department Of Veteran Affairs Terrazzo Design Terrazzo House Painting Cost House Paint Interior Decoration Website">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/27/03/2a/27032a52830d2f5521b8cd024555aac4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPX48Nvk9ze-SBYoQ9XLDpnLrxdTfJgpNLOw';" alt="Department Of Veteran Affairs Terrazzo Design Terrazzo House Painting Cost House Paint Interior Decoration Website">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Department Of Veteran Affairs Terrazzo Design Terrazzo House Painting Cost House Paint Interior Decoration Website</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/00/ba/aa00ba09cf9240cb88975265fa1d9766.jpg" data-lightbox="roadtrip" data-title="Complete Implosion New Whistleblower Retaliation Allegations Surface At Department Of Veterans Affai In 2020 Department Of Veterans Affairs Veterans Affairs Gi Bill">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/00/ba/aa00ba09cf9240cb88975265fa1d9766.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMOttnDucF4EWRwApsPj6Jeik6-wMCNc7m2Q';" alt="Complete Implosion New Whistleblower Retaliation Allegations Surface At Department Of Veterans Affai In 2020 Department Of Veterans Affairs Veterans Affairs Gi Bill">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Complete Implosion New Whistleblower Retaliation Allegations Surface At Department Of Veterans Affai In 2020 Department Of Veterans Affairs Veterans Affairs Gi Bill</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/f0/63/35/f06335247c2668e4a8bbb4385fa797e3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMOttnDucF4EWRwApsPj6Jeik6-wMCNc7m2Q';" alt="Complete Implosion New Whistleblower Retaliation Allegations Surface At Department Of Veterans Affai In 2020 Department Of Veterans Affairs Veterans Affairs Gi Bill">
+										<div class="card-body">
+						<h3 class="h5"><b>Bologna was appointed Director of the New Orleans Regional Office RO on Sept.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Department of veterans affairs new orleans</strong>. 
+								
+																	Get the right department of veterans affairs job with company ratings salaries. 
+																	It was created to honor the sacrifice that Louisiana veterans have made by recognizing businesses owned by a veteran active-duty or reserve military or Gold Star spouse. 
+																	Department of Veterans Affairs VA Pharmacy means any place under VA jurisdiction where drugs are dispensed and Pharmaceutical Care is provided to enrolled Veterans by licensed pharmacists. 
+																	Search job openings see if they fit - company salaries reviews and more posted by US Department of Veterans Affairs employees. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Veterans Affairs New Orleans LA US 9 months ago Be among the first 25 applicants. 
+																	Veteran Services connects veterans with several government agencies and nonprofit organizations at the federal Louisiana state and New Orleans level. 
+																	WASHINGTON The US. 
+																	UNITED STATES OF AMERICA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	14 open jobs for department of veterans affairs. 
+																	Apply to Program Analyst Medical Technician Training Instructor and more. 
+																	The Disabled American Veterans located in New Orleans LA provides support for veterans of the US Armed Forces. 
+																	This announcement have. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The future is in sight at the New Orleans VA. 
+																	DEPARTMENT OF VETERANS AFFAIRS. 
+																	Connect with Southeast Louisiana Veterans Health Care System. 
+																	See reviews photos directions phone numbers and more for New Orleans Regional Office U S Department Of Veterans Affairs locations in Harahan LA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Official Blog of the US. 
+																	DEPARTMENT OF VETERANS AFFAIRS MEDICAL CENTER NEW ORLEANS LOUISIANA and NATIONAL FEDERATION OF FEDERAL EMPLOYEES LOCAL 1904. 
+																	Department of Veterans Affairs VA announced today the New Orleans and Bedford Massachusetts VA Medical Centers are the first two department facilities to begin administration of COVID-19 vaccinations to frontline health care employees and Veterans residing in long-term care Community Living and Spinal Cord Injury and Disorder centers. 
+																	He administers benefits and services to 305000 Veterans Servicemembers their families and survivors in Louisiana including payment of approximately 640 million in annual benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jody Simon performed the first corneal collagen crosslinking CXL procedure ever completed at a VA medical center. 
+																	The United States Department of Veterans Affairs VA is a federal Cabinet-level agency that provides integrated life-long healthcare services to eligible military veterans at the 1700 VA medical centers and outpatient clinics located throughout the country. 
+																	FEDERAL LABOR RELATIONS AUTHORITY. 
+																	See reviews photos directions phone numbers and more for Department Of Veterans Affairs locations in New Orleans LA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Subscribe to Receive Email Updates. 
+																	New Orleans VAs Dr. 
+																	Apply to Psychologist Medical Technologist Licensed Practical Nurse and more. 
+																	32 US Department of Veterans Affairs jobs in Louisiana. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Prior to his current appointment Mr. 
+																	Office of Administrative Law Judges. 
+																	Search department of veterans affairs jobs in New Orleans LA. 
+																	Non-healthcare benefits include disability compensation vocational rehabilitation education assistance home loans and life insurance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Louisiana Veterans First Business Initiative was championed by Governor John Bel Edwards during the 2019 legislative session. 
+																	Bologna was Executive Director for the Veterans Benefits Management System. 
+																	Department of Veterans Affairs. 
+																	The Director and VSO are Accredited by the Department of Veterans Affairs Through the American Legion and Veterans of Foreign Wars and as a Department of Veterans Affair Affiliate such is authorized to present claims for further development institute appeals from Department of Veterans Affairs decisions and follow through to final disposition with representation at the Court of Veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	New Orleans LA 70119 800-935-8387 Directions. 
+																	NEW ORLEANS WVUE - The Southeast Louisiana Veterans Health Care System in New Orleans is one of five Veterans Affairs centers across the country preparing to receive the COVID vaccine. 
+																	Apply on company website. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ee/60/6c/ee606c7f32c30d4f752e3427b1e7b853.jpg" data-lightbox="roadtrip" data-title="Michael E Debakey Va Medical Center Houston Texas Home Medical Center Texas Medical Center Va Hospital">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ee/60/6c/ee606c7f32c30d4f752e3427b1e7b853.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZlJ2dfQzOpfQDJKA6js6vBR3-uW-BbX5n7g';" alt="Michael E Debakey Va Medical Center Houston Texas Home Medical Center Texas Medical Center Va Hospital">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Michael E Debakey Va Medical Center Houston Texas Home Medical Center Texas Medical Center Va Hospital</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1d/10/31/1d1031339f6a27b57e0dd7fcea52a2d3.jpg" data-lightbox="roadtrip" data-title="Tell It Like It Is Talk Show Man Found Dead In Stairwell At Va Hospital Campus In 2020 Va Hospital Veteran Hospital Hospital">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1d/10/31/1d1031339f6a27b57e0dd7fcea52a2d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1vFR1WYxYTmMyn0wsi075uH5ep8hHCz4HHg';" alt="Tell It Like It Is Talk Show Man Found Dead In Stairwell At Va Hospital Campus In 2020 Va Hospital Veteran Hospital Hospital">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tell It Like It Is Talk Show Man Found Dead In Stairwell At Va Hospital Campus In 2020 Va Hospital Veteran Hospital Hospital</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/8c/dc/eb8cdcecb7af85a80e3556bda14bd697.jpg" data-lightbox="roadtrip" data-title="We Salute All Who Have Served To Defend Our Country And Our Freedom Veteransday Veteran Veterans Day Quotes Happy Veterans Day Quotes Veterans Day Thank You">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/8c/dc/eb8cdcecb7af85a80e3556bda14bd697.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQREHdf5_gzeHEgBOPsT-NYwCSHF72K3jywlA';" alt="We Salute All Who Have Served To Defend Our Country And Our Freedom Veteransday Veteran Veterans Day Quotes Happy Veterans Day Quotes Veterans Day Thank You">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Salute All Who Have Served To Defend Our Country And Our Freedom Veteransday Veteran Veterans Day Quotes Happy Veterans Day Quotes Veterans Day Thank You</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/a2/8d/fca28d68cce857d7505196bf8566ceb2.jpg" data-lightbox="roadtrip" data-title="Va Loma Linda Healthcare System Healthcare System Loma Linda Loma">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/a2/8d/fca28d68cce857d7505196bf8566ceb2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuBt3hT2OQVzDIf9t37tIbPhZoF_IXLaOtFw';" alt="Va Loma Linda Healthcare System Healthcare System Loma Linda Loma">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Loma Linda Healthcare System Healthcare System Loma Linda Loma</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5a/d1/bd/5ad1bd26e5e578c096e987d2a52a8378.jpg" data-lightbox="roadtrip" data-title="Waitingarea1 Bmp 643 527 Home Decor Room Conference Room">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5a/d1/bd/5ad1bd26e5e578c096e987d2a52a8378.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROrewWC4yzxL5ikOzmUGrs00wuB3DMxOKjFQ';" alt="Waitingarea1 Bmp 643 527 Home Decor Room Conference Room">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Waitingarea1 Bmp 643 527 Home Decor Room Conference Room</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/dc/3b/46/dc3b46597b463ea03c690d484bfe114e.jpg" data-lightbox="roadtrip" data-title="Pin On Steel Penny">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/dc/3b/46/dc3b46597b463ea03c690d484bfe114e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6F8C8nN3EC2ruBxpUaFPmq2p6MCsG3-BRoA';" alt="Pin On Steel Penny">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Steel Penny</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/81/8e/f1818ebc2743064a05f6768d179c3bf3.jpg" data-lightbox="roadtrip" data-title="Pin On Chris">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/81/8e/f1818ebc2743064a05f6768d179c3bf3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHQ5G3SNAjNJZ4vIpV9V2j-xu4H_gkkzaM0A';" alt="Pin On Chris">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Chris</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/88/86/7888863288a1e5ff808351fc002edfcc.png" data-lightbox="roadtrip" data-title="Fnr Summer Program Tuskegee University Tuskegee University Tuskegee Hotel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/88/86/7888863288a1e5ff808351fc002edfcc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx1AvIvNkEBTpaRn6cBRwDi4zlQZY7yA37yA';" alt="Fnr Summer Program Tuskegee University Tuskegee University Tuskegee Hotel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fnr Summer Program Tuskegee University Tuskegee University Tuskegee Hotel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/04/ea/b404ea489ef82d0bb608ffe6cd9a1274.png" data-lightbox="roadtrip" data-title="Real Authentic Voodoo Love Spells Voodoo Dolls New Orleans Witchcraft Hoodoo Hexes Curse Removal In 2020 Veteran Owned Business Inner Tubes Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/04/ea/b404ea489ef82d0bb608ffe6cd9a1274.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHUY7zsbyEcApFJm-ZpjtOolzcfj4fgRm9Tg';" alt="Real Authentic Voodoo Love Spells Voodoo Dolls New Orleans Witchcraft Hoodoo Hexes Curse Removal In 2020 Veteran Owned Business Inner Tubes Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Real Authentic Voodoo Love Spells Voodoo Dolls New Orleans Witchcraft Hoodoo Hexes Curse Removal In 2020 Veteran Owned Business Inner Tubes Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/2c/12/c02c12ba2e6c0c88b1361a719e930e8a.png" data-lightbox="roadtrip" data-title="Pin On Artstuffs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/2c/12/c02c12ba2e6c0c88b1361a719e930e8a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRqLHsoyIS5Z8RMwPv9IVmTSob3BxGhSkuww';" alt="Pin On Artstuffs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Artstuffs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/0e/89/8e0e892a40b5677d665d2efbefad9920.jpg" data-lightbox="roadtrip" data-title="Chicago Memorial Day Parade Saturday 24 Memorial Day Memories Parades">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/0e/89/8e0e892a40b5677d665d2efbefad9920.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVXRbVyi6IPx-hh2v2ZwxfdQSduOsBtsqgeQ';" alt="Chicago Memorial Day Parade Saturday 24 Memorial Day Memories Parades">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chicago Memorial Day Parade Saturday 24 Memorial Day Memories Parades</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/34/75/54/3475545829f39054019d72f33bbe007e--tuskegee-university-department-of-veterans-affairs.jpg" data-lightbox="roadtrip" data-title="Tuskegee University To Regain Property From Va Department Of Veterans Affairs To Return 65 Acres Donated By School 90 Years Ago Tuskegee University Tuskegee Department Of Veterans Affairs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/34/75/54/3475545829f39054019d72f33bbe007e--tuskegee-university-department-of-veterans-affairs.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZWDYmslvOZ2mwstZxTeJXebnLyZJvkszPIg';" alt="Tuskegee University To Regain Property From Va Department Of Veterans Affairs To Return 65 Acres Donated By School 90 Years Ago Tuskegee University Tuskegee Department Of Veterans Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tuskegee University To Regain Property From Va Department Of Veterans Affairs To Return 65 Acres Donated By School 90 Years Ago Tuskegee University Tuskegee Department Of Veterans Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/63/35/f06335247c2668e4a8bbb4385fa797e3.jpg" data-lightbox="roadtrip" data-title="Home Make It Right Home Free City New Orleans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/63/35/f06335247c2668e4a8bbb4385fa797e3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe0PJsdqenB154GDLP3-cX7jLnm_KXn6k-jg';" alt="Home Make It Right Home Free City New Orleans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Make It Right Home Free City New Orleans</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/wechat-jelly-bean.html">Wechat Jelly Bean</a></li>
+													<li class="list-group-item"><a href="/wechat-qq-id.html">Wechat Qq Id</a></li>
+													<li class="list-group-item"><a href="/wechat-international.html">Wechat International</a></li>
+													<li class="list-group-item"><a href="/wechat-pokemon-go.html">Wechat Pokemon Go</a></li>
+													<li class="list-group-item"><a href="/war-heroes-mobile-game.html">War Heroes Mobile Game</a></li>
+													<li class="list-group-item"><a href="/wechat-emoticon.html">Wechat Emoticon</a></li>
+													<li class="list-group-item"><a href="/war-world-heroes-pc.html">War World Heroes Pc</a></li>
+													<li class="list-group-item"><a href="/war-heroes-of-vietnam.html">War Heroes Of Vietnam</a></li>
+													<li class="list-group-item"><a href="/wechat-china-apk.html">Wechat China Apk</a></li>
+													<li class="list-group-item"><a href="/war-heroes-strategy.html">War Heroes Strategy</a></li>
+													<li class="list-group-item"><a href="/wechat-quick-pay.html">Wechat Quick Pay</a></li>
+													<li class="list-group-item"><a href="/washington-military-department-emergency-management-division.html">Washington Military Department Emergency Management Division</a></li>
+													<li class="list-group-item"><a href="/war-heroescom.html">War Heroescom</a></li>
+													<li class="list-group-item"><a href="/wechat-oppo.html">Wechat Oppo</a></li>
+													<li class="list-group-item"><a href="/wechat-mod-2020.html">Wechat Mod 2020</a></li>
+													<li class="list-group-item"><a href="/wechat-online-pc.html">Wechat Online Pc</a></li>
+													<li class="list-group-item"><a href="/wayne-county-pa-department-of-veterans-affairs.html">Wayne County Pa Department Of Veterans Affairs</a></li>
+													<li class="list-group-item"><a href="/wechat-group-malaysia-18-2018.html">Wechat Group Malaysia 18 2018</a></li>
+													<li class="list-group-item"><a href="/wechat-is.html">Wechat Is</a></li>
+													<li class="list-group-item"><a href="/war-heroes-of-kargil.html">War Heroes Of Kargil</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

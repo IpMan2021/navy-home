@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Family Support Center Pearl Harbor - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Family Support Center Pearl Harbor",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/a6/80/14/a68014d7c30ea86f967e8626e1702946.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+family+support+center+pearl+harbor",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Family Support Center Pearl Harbor</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">COMM phone number for Joint Base Pearl Harbor - Hickam Military and Family Support Center Pearl Harbor - Air Force. Have a great New Years Eve JBPHH. Every year approximately 200000 men and women leave US. <br>				
+			</p>
+										<a class="badge badge-primary" href="/air-force-flying-hour-cost.html">air force flying hour cost</a>
+											<a class="badge badge-light" href="/air-force-headquarters-in-delhi.html">air force headquarters in delhi</a>
+											<a class="badge badge-info" href="/air-force-hacking-jobs.html">air force hacking jobs</a>
+											<a class="badge badge-info" href="/air-force-jacket.html">air force jacket</a>
+											<a class="badge badge-dark" href="/6-year-ncaa-eligibility.html">6 year ncaa eligibility</a>
+											<a class="badge badge-light" href="/airforce-wife.html">airforce wife</a>
+											<a class="badge badge-success" href="/air-force-hr.html">air force hr</a>
+											<a class="badge badge-info" href="/airforce-hrw0415.html">airforce hrw0415</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to pay a visit to the right blog.  Our website gives you suggestions for viewing the maximum quality video and picture content, hunt and find more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, particularly Youtube, therefore we recommend this video that you view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e4/53/c9/e453c9d71e421e9e13fb4319dad6d0e9--support-center-family-support.jpg" data-lightbox="roadtrip" data-title="Don T Let A Transition Stress You Out Visit Your Fleet And Family Support Center Or Call Military Onesou Emotional Wellbeing Emotional Wellness Family Support">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e4/53/c9/e453c9d71e421e9e13fb4319dad6d0e9--support-center-family-support.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT79H-0RHT63GmlvOX1ZXo1SNmmzhRz7PSchg';" alt="Don T Let A Transition Stress You Out Visit Your Fleet And Family Support Center Or Call Military Onesou Emotional Wellbeing Emotional Wellness Family Support">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Don T Let A Transition Stress You Out Visit Your Fleet And Family Support Center Or Call Military Onesou Emotional Wellbeing Emotional Wellness Family Support</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/c5/60/32c5606d8242f066b709af13eb2d5ed9.png" data-lightbox="roadtrip" data-title="Pin On Artskills Events">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/c5/60/32c5606d8242f066b709af13eb2d5ed9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_A54De_CsRPOCE1s6Qg5GQsIIK1RfECIPsw';" alt="Pin On Artskills Events">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Artskills Events</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/8e/93/f28e9333acb655e8bfa4bc303c0067a0.png" data-lightbox="roadtrip" data-title="Through February 14th Your Purchase Helps Our Wounded Warriors And Their Families Military Militaryfamilies Woundedw Family Support Military Family Warrior">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/8e/93/f28e9333acb655e8bfa4bc303c0067a0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Xia-S9_51cKzZYkNfUppVBEn2ilvy-_d5A';" alt="Through February 14th Your Purchase Helps Our Wounded Warriors And Their Families Military Militaryfamilies Woundedw Family Support Military Family Warrior">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Through February 14th Your Purchase Helps Our Wounded Warriors And Their Families Military Militaryfamilies Woundedw Family Support Military Family Warrior</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/d6/fc/31d6fcc5283a49ee71c7c5536b07711b.png" data-lightbox="roadtrip" data-title="Pin By Lena Simone On Military Life Pearl Harbor Moving To Hawaii Hawaii Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/d6/fc/31d6fcc5283a49ee71c7c5536b07711b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHobqnq5JUr7Xlm4LcHO4Y93uqqL3Wn93UJw';" alt="Pin By Lena Simone On Military Life Pearl Harbor Moving To Hawaii Hawaii Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Lena Simone On Military Life Pearl Harbor Moving To Hawaii Hawaii Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/da/ad/a6daad8699f5fcb47beb8ac6411def63.jpg" data-lightbox="roadtrip" data-title="Pin On Support Our Troops">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/da/ad/a6daad8699f5fcb47beb8ac6411def63.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwiyA9XGsev4dGeiOYPyKg-R98NbAWe2GrOA';" alt="Pin On Support Our Troops">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Support Our Troops</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/e3/f6/c3e3f6fa732efe67970749f2790f7f12.jpg" data-lightbox="roadtrip" data-title="Military Service Members Speak To A Sponsor At The Newcomers Luncheon And Sign Up For A Giveaway Photo Courtesy Of Mwr Marketing Pearl Harbor Newcomer Joint">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/e3/f6/c3e3f6fa732efe67970749f2790f7f12.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQghdLW2UIXy7MS5HTzqpfQH8SF8JkOqI2DEA';" alt="Military Service Members Speak To A Sponsor At The Newcomers Luncheon And Sign Up For A Giveaway Photo Courtesy Of Mwr Marketing Pearl Harbor Newcomer Joint">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Service Members Speak To A Sponsor At The Newcomers Luncheon And Sign Up For A Giveaway Photo Courtesy Of Mwr Marketing Pearl Harbor Newcomer Joint</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/30/43/9d/30439d769edd3079007b2c5d4c18c042.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQghdLW2UIXy7MS5HTzqpfQH8SF8JkOqI2DEA';" alt="Military Service Members Speak To A Sponsor At The Newcomers Luncheon And Sign Up For A Giveaway Photo Courtesy Of Mwr Marketing Pearl Harbor Newcomer Joint">
+										<div class="card-body">
+						<h3 class="h5"><b>Joint Base Pearl Harbor - Hickam.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military family support center pearl harbor</strong>. 
+								
+																	The Department of Defense DoD Transition Assistance Program TAP provides information tools and training to ensure service members and their families are prepared for the next step in civilian life. 
+																	Join us today as we remember those heroes and families affected by the attacks on Pearl Harbor. 
+																	Naval Station Pearl Harbor. 
+																	9290 likes 83 talking about this 859 were here. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Oahu Hawaii Military Bases. 
+																	The military families of Pearl Harbor faced a harsh reality of freedom taken while they looked war in the face. 
+																	The Air Force Casualty Assistance Services office is located at 655 Vickers Avenue Building 1105 MFSC-Airman Family Support Center Hickam Field HI and can be reached at 808 449-0310. 
+																	166 views December 30 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hickam Air Force Base Military. 
+																	Hickam Air Force Base. 
+																	Joint Base Pearl Harbor-Hickam Military and Family Support Center. 
+																	Military and Family Support Center MFSC Joint Base Pearl Harbor Hickam Naval Base Pearl Harbor is located at 4827 Bougainville Drive at Moanalua Navy Services Center Building on the second floor and MFSC Hickam is located at 655 Vickers Avenue Building 1105 on Hickam Field. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	348 views December 31 2020. 
+																	Joint Base Pearl Harbor-Hickam Military and Family Support Center. 
+																	Naval Station Pearl Harbor Fleet and Family Support Center. 
+																	The Military and Family Support Center combines the old Pearl Harbor Fleet Family Support and Hickam Airman Family Readiness Centers into one organized center. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Joint Base Pearl Harbor-Hickam Military and Family Support Center The Military and Family Support Center MFSC offers a variety of free programs to help patrons develop skills improve relationships and handle the military way of life. 
+																	Every member of Team Pearl Harbor-Hickam knows they are valued and appreciated and that they contribute to making Joint Base Pearl Harbor-Hickam the best place to work on Oahu. 
+																	Effective 1 Jul 09 Texting and the use of Handheld cell phone is illegal in Hawaii while driving. 
+																	Focus on German UniformSS UniformWaffen SsNazi UniformWehrmacht-Military harbor provide products of uniform helmet insignia badge boots for reenactors. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military service and return to life as civilians a process known as the military-to-civilian transition. 
+																	Team Pearl Harbor-Hickam provides service with aloha to the commands and families of Joint Base Pearl Harbor-Hickam at a level recognized as the benchmark among all military installations. 
+																	Joint Base Pearl Harbor - Hickam. 
+																	Hickam Air Force Base Military Family Support Center. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Joint Base Pearl Harbor-Hickam Military and Family Support Center Honolulu HI. 
+																	Our hours of operation for our loan closet at MFSC Hickam Field are Tuesday Wednesday and Friday 800 am. 
+																	The Military and Family Center provides family support services informationreferral and support to the Ombudsman program on JBPHH. 
+																	The Ombudsman Program is an official Navy family readiness program designed to enhance mission readiness and resiliency and establish a sense of community. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Last sunrise of 2020. 
+																	Oahu Hawaii Military Bases. 
+																	Military and Family Support Center Joint Base Pearl Harbor-Hickam Relocation Assistance Program Cell phone use including hands-free devices are not authorized while operating a motor vehicle on JBPHH. 
+																	While much has changed in the 76 years since that infamous day much remains the same. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you or someone you know needs help here are some resources for you. 
+																	Naval Station Pearl Harbor Fleet and Family. 
+																	The Military and Family Support Center MFSC offers a variety of. 
+																	Joint Base Pearl Harbor-Hickam Military and Family Support Center January 12. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Individually and collectively. 
+																	OMBUDSMAN CODE OF ETHICS. 
+																	Joint Base Pearl Harbor-Hickam Military and Family Support Center October 2 at 307 PM Suicide Prevention and Awareness Month is over but the effort to raise awareness isnt. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/b5/f1/40b5f13e64931e120afe4fcb0f97a145.jpg" data-lightbox="roadtrip" data-title="Be Part Of History Submit Correspondence For Military Tribute To Be Displayed On Capital Mall Submissions Mus Family Tribute Military Letters Military Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/b5/f1/40b5f13e64931e120afe4fcb0f97a145.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTit8gDidLQtcuVIYpnR7smUq8t5cSaTA1vtg';" alt="Be Part Of History Submit Correspondence For Military Tribute To Be Displayed On Capital Mall Submissions Mus Family Tribute Military Letters Military Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Be Part Of History Submit Correspondence For Military Tribute To Be Displayed On Capital Mall Submissions Mus Family Tribute Military Letters Military Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/ef/7f/efef7f86ef52a8b6afa3c4d5da094616.jpg" data-lightbox="roadtrip" data-title="Rendering Military Funeral Honors For Wwii Fallen Sailor Pearl Harbor Attack Military Funeral Honors Seaman">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/ef/7f/efef7f86ef52a8b6afa3c4d5da094616.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuUHtPDALZBsC3SmS_nTC2SoznVzmnM7KUgQ';" alt="Rendering Military Funeral Honors For Wwii Fallen Sailor Pearl Harbor Attack Military Funeral Honors Seaman">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rendering Military Funeral Honors For Wwii Fallen Sailor Pearl Harbor Attack Military Funeral Honors Seaman</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/89/8a/8e/898a8e0addd8f0750583a64cb10401a9--military-discounts-navy-life.jpg" data-lightbox="roadtrip" data-title="Jb Pearl Harbor Hickam Hawaii Base And Community Information Local Military Discounts And Much M Military Discounts Marine Corps Base Hawaii Military Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/89/8a/8e/898a8e0addd8f0750583a64cb10401a9--military-discounts-navy-life.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvjCAItphRcAied8mIZAoZO4FfnINNXzaavg';" alt="Jb Pearl Harbor Hickam Hawaii Base And Community Information Local Military Discounts And Much M Military Discounts Marine Corps Base Hawaii Military Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jb Pearl Harbor Hickam Hawaii Base And Community Information Local Military Discounts And Much M Military Discounts Marine Corps Base Hawaii Military Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/79/76/f4797649958e3a308d34cb8847a0d3a3.jpg" data-lightbox="roadtrip" data-title="The Attack On Pearlharbor Was A Surprise Preemptive Military Strike By The Imperial Japanese Navy Air Service Uss Missouri Merchant Marine Pearl Harbor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/79/76/f4797649958e3a308d34cb8847a0d3a3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV34xSIYEDUloskFpfOhewZuUqAoaR0B-ecw';" alt="The Attack On Pearlharbor Was A Surprise Preemptive Military Strike By The Imperial Japanese Navy Air Service Uss Missouri Merchant Marine Pearl Harbor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Attack On Pearlharbor Was A Surprise Preemptive Military Strike By The Imperial Japanese Navy Air Service Uss Missouri Merchant Marine Pearl Harbor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/fe/75/cefe759ea8d1527d51ef69d930256f60.jpg" data-lightbox="roadtrip" data-title="Dec 7 20012 Pearl Harbor Remembrance Dinner Pearl Harbor Activities Postgraduate">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/fe/75/cefe759ea8d1527d51ef69d930256f60.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_aEAhIMdnI3EfnpBJC0UTmr3hJ7nh79rijg';" alt="Dec 7 20012 Pearl Harbor Remembrance Dinner Pearl Harbor Activities Postgraduate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dec 7 20012 Pearl Harbor Remembrance Dinner Pearl Harbor Activities Postgraduate</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/71/e4/1c71e482090473ab6a4ccac38baa33a8.jpg" data-lightbox="roadtrip" data-title="130520 N Wf272 008 Leadership Models Military Spouse Airman">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/71/e4/1c71e482090473ab6a4ccac38baa33a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTONKuMvBJE9V3zGGHRXTc6aTPL2h4ofxkSNg';" alt="130520 N Wf272 008 Leadership Models Military Spouse Airman">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">130520 N Wf272 008 Leadership Models Military Spouse Airman</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/09/a0/8a/09a08a0360d028a2fb36d21fb37b512a.jpg" data-lightbox="roadtrip" data-title="Pin By Personal Seo Tammy Emineth On Hawaii Uss Arizona Memorial Pearl Harbor Uss Missouri">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/09/a0/8a/09a08a0360d028a2fb36d21fb37b512a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnPXrBuLcYEqiVD7yq-KlHww3P_I1QHgHGrQ';" alt="Pin By Personal Seo Tammy Emineth On Hawaii Uss Arizona Memorial Pearl Harbor Uss Missouri">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Personal Seo Tammy Emineth On Hawaii Uss Arizona Memorial Pearl Harbor Uss Missouri</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/52/1f/b3/521fb3a37170ad71f541a5f79360fab9.jpg" data-lightbox="roadtrip" data-title="130515 N Wf272 079 Health Fair Fire Trucks Fitness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/52/1f/b3/521fb3a37170ad71f541a5f79360fab9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiHYZ7Q_7G6r28e0Hl6g4U88KuTxe4yRs96A';" alt="130515 N Wf272 079 Health Fair Fire Trucks Fitness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">130515 N Wf272 079 Health Fair Fire Trucks Fitness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/cd/1c/4ccd1c75533f734f1e7b887355dd0b94.jpg" data-lightbox="roadtrip" data-title="Military Family Appreciation Month Branch Of Service Shopping Military Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/cd/1c/4ccd1c75533f734f1e7b887355dd0b94.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHtx4DKJgje-U5LAblj8_QXg2tshRtCZuKUg';" alt="Military Family Appreciation Month Branch Of Service Shopping Military Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Family Appreciation Month Branch Of Service Shopping Military Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/80/14/a68014d7c30ea86f967e8626e1702946.jpg" data-lightbox="roadtrip" data-title="Jamie Wadazinski And Je Garius Jay Horton Family Members Of Military Parents Stationed In Hawaii Serve As Student Fa Military Kids Military Parents Student">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/80/14/a68014d7c30ea86f967e8626e1702946.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCNSB3DRDwOC3LyLivYzpsRVRALf5dThJXiA';" alt="Jamie Wadazinski And Je Garius Jay Horton Family Members Of Military Parents Stationed In Hawaii Serve As Student Fa Military Kids Military Parents Student">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jamie Wadazinski And Je Garius Jay Horton Family Members Of Military Parents Stationed In Hawaii Serve As Student Fa Military Kids Military Parents Student</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/c2/24/b7c224d4f23a886ffe21ed4c37671337.jpg" data-lightbox="roadtrip" data-title="Jb Pearl Harbor Hickam Radford Terrace Hunt Military Communities E1 E6 Navy Housing Military Family Housing Military Community">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/c2/24/b7c224d4f23a886ffe21ed4c37671337.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_UZSVK2zxHTVfJkY8AMmbpiY6x59F6ZFpzg';" alt="Jb Pearl Harbor Hickam Radford Terrace Hunt Military Communities E1 E6 Navy Housing Military Family Housing Military Community">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jb Pearl Harbor Hickam Radford Terrace Hunt Military Communities E1 E6 Navy Housing Military Family Housing Military Community</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/43/9d/30439d769edd3079007b2c5d4c18c042.jpg" data-lightbox="roadtrip" data-title="Pearl Harbor Hickam Field Pearl Harbor Attack Pearl Harbor Pearl Harbor Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/43/9d/30439d769edd3079007b2c5d4c18c042.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmp8DaepSKdAEYRLB8HWm6PJFvvmifch3U8A';" alt="Pearl Harbor Hickam Field Pearl Harbor Attack Pearl Harbor Pearl Harbor Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pearl Harbor Hickam Field Pearl Harbor Attack Pearl Harbor Pearl Harbor Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/e2/ae/f3e2ae4ea8c010db29b228394cbf6daa.jpg" data-lightbox="roadtrip" data-title="Schofield Barracks Military Loans Schofield Barracks Schofield Barracks Hawaii Hawaii Vacation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/e2/ae/f3e2ae4ea8c010db29b228394cbf6daa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-1gBgK0W3Xpa2sJbxgTUDmXic_YWPfhp2gw';" alt="Schofield Barracks Military Loans Schofield Barracks Schofield Barracks Hawaii Hawaii Vacation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Schofield Barracks Military Loans Schofield Barracks Schofield Barracks Hawaii Hawaii Vacation</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/mycah-kakashi.html">Mycah Kakashi</a></li>
+													<li class="list-group-item"><a href="/montana-army-national-guard-public-affairs.html">Montana Army National Guard Public Affairs</a></li>
+													<li class="list-group-item"><a href="/mycah-mcdonald.html">Mycah Mcdonald</a></li>
+													<li class="list-group-item"><a href="/mississippi-military-department-jackson-ms.html">Mississippi Military Department Jackson Ms</a></li>
+													<li class="list-group-item"><a href="/ministry-of-defence-military-lands-and-cantonments-department.html">Ministry Of Defence Military Lands And Cantonments Department</a></li>
+													<li class="list-group-item"><a href="/ministry-of-defence-navy-tender.html">Ministry Of Defence Navy Tender</a></li>
+													<li class="list-group-item"><a href="/my-spouse-gained-weight.html">My Spouse Gained Weight</a></li>
+													<li class="list-group-item"><a href="/mycah-origin.html">Mycah Origin</a></li>
+													<li class="list-group-item"><a href="/moving-to-germany-as-a-dod-civilian.html">Moving To Germany As A Dod Civilian</a></li>
+													<li class="list-group-item"><a href="/my-biz-dod-army.html">My Biz Dod Army</a></li>
+													<li class="list-group-item"><a href="/mycah-the-butchers-boy-death.html">Mycah The Butchers Boy Death</a></li>
+													<li class="list-group-item"><a href="/my-seco-career-coach.html">My Seco Career Coach</a></li>
+													<li class="list-group-item"><a href="/ministry-of-defence-cairo-egypt.html">Ministry Of Defence Cairo Egypt</a></li>
+													<li class="list-group-item"><a href="/mycaa-milspouse.html">Mycaa Milspouse</a></li>
+													<li class="list-group-item"><a href="/mycampus-umsida.html">Mycampus Umsida</a></li>
+													<li class="list-group-item"><a href="/my-spouse-brings-me-down.html">My Spouse Brings Me Down</a></li>
+													<li class="list-group-item"><a href="/mycah-gordon.html">Mycah Gordon</a></li>
+													<li class="list-group-item"><a href="/mycam-windows-7.html">Mycam Windows 7</a></li>
+													<li class="list-group-item"><a href="/ministry-of-defence-egypt-logo.html">Ministry Of Defence Egypt Logo</a></li>
+													<li class="list-group-item"><a href="/movie-on-army-dog.html">Movie On Army Dog</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

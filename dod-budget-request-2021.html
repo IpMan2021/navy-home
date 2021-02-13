@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Dod Budget Request 2021 - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Dod Budget Request 2021",
+  "datePublished": "2021-02-13",
+  "image": "https://csis-website-prod.s3.amazonaws.com/s3fs-public/Cancian_Overview_Graphics_Chart%204.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=dod+budget+request+2021",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Dod Budget Request 2021</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">For fiscal 2021 DOD is asking for 289 billion to fund modernization of the nuclear defense program covering all three legs of the nuclear triad. FY 2021 Budget Themes 4 Compete Deter Win Institutionalize alignment of resources to the NDS to strengthen our competitive focus for long- term security Reform and innovate to align efforts to highest NDS priorities. However it does not keep pace with inflation so its actually a 2 decrease he noted. <br>				
+			</p>
+										<a class="badge badge-info" href="/department-of-the-army-black-book-manager.html">department of the army black book manager</a>
+											<a class="badge badge-light" href="/department-of-national-defence-wiki.html">department of national defence wiki</a>
+											<a class="badge badge-dark" href="/department-of-national-defence-victoria-bc-address.html">department of national defence victoria bc address</a>
+											<a class="badge badge-primary" href="/department-of-the-army-acronym.html">department of the army acronym</a>
+											<a class="badge badge-danger" href="/department-of-national-defence-vancouver.html">department of national defence vancouver</a>
+											<a class="badge badge-primary" href="/department-of-national-defence-pension-plan.html">department of national defence pension plan</a>
+											<a class="badge badge-danger" href="/department-of-national-defense-budget-2021-philippines.html">department of national defense budget 2021 philippines</a>
+											<a class="badge badge-danger" href="/department-of-the-army-announces-upcoming-deployments.html">department of the army announces upcoming deployments</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you have come to visit the ideal blog.  Our website provides you with hints for viewing the highest quality video and picture content, search and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie for you to see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/5b/74/115b7410a01f4bbd879aaba8c9f20e08.png" data-lightbox="roadtrip" data-title="Here Are The Proposed 2021 Military Pay Charts Based On The Dod Fiscal Year 2021 Budget Proposal In 2020 Military Pay Chart Military Pay Chart">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/5b/74/115b7410a01f4bbd879aaba8c9f20e08.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGXgWQ4ZaGVT5WcUnQZq_XczjchDsz1sgC_A';" alt="Here Are The Proposed 2021 Military Pay Charts Based On The Dod Fiscal Year 2021 Budget Proposal In 2020 Military Pay Chart Military Pay Chart">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here Are The Proposed 2021 Military Pay Charts Based On The Dod Fiscal Year 2021 Budget Proposal In 2020 Military Pay Chart Military Pay Chart</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/43/92/1a439260873786840938ddf087b3fc9b.png" data-lightbox="roadtrip" data-title="The Army S 2021 Budget Request Trims The Troubled Next Generation Combat Vehicle Program 11 Percent While Raising Spending In 2020 Army Reconnaissance Aircraft Big Six">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/43/92/1a439260873786840938ddf087b3fc9b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYkBHMtyNkMZrZs4ysLuXArmayBCEKcMxDYw';" alt="The Army S 2021 Budget Request Trims The Troubled Next Generation Combat Vehicle Program 11 Percent While Raising Spending In 2020 Army Reconnaissance Aircraft Big Six">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Army S 2021 Budget Request Trims The Troubled Next Generation Combat Vehicle Program 11 Percent While Raising Spending In 2020 Army Reconnaissance Aircraft Big Six</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://michelliassociates.com/wp-content/uploads/2020/06/Fiscal-Year-2021-Defense-Budget-Request.png" data-lightbox="roadtrip" data-title="Defense Budget Overview Fiscal Year 2021 Budget Request">
+											<img class="card-img v-image ads-img " src="http://michelliassociates.com/wp-content/uploads/2020/06/Fiscal-Year-2021-Defense-Budget-Request.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzUe5A_YUX6QeEivOsgsfoRRLdxH_MA99jrA';" alt="Defense Budget Overview Fiscal Year 2021 Budget Request">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Defense Budget Overview Fiscal Year 2021 Budget Request</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3.amazonaws.com/resources.govwin.com/blog/Image/Defense%20Funding%20Scenarios%20Graphic.JPG" data-lightbox="roadtrip" data-title="Fy 2021 Department Of Defense Budget Scenarios Govwin Iq">
+											<img class="card-img v-image ads-img " src="https://s3.amazonaws.com/resources.govwin.com/blog/Image/Defense%20Funding%20Scenarios%20Graphic.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2i7XMIb1eckfxpjNibUKyGTcoC8lRENRHlA';" alt="Fy 2021 Department Of Defense Budget Scenarios Govwin Iq">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fy 2021 Department Of Defense Budget Scenarios Govwin Iq</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.airforcemag.com/app/uploads/2020/02/2021-Budget-chart.v4-copy-1024x932.png" data-lightbox="roadtrip" data-title="Usaf Budget Request Flat In 2021 Air Force Magazine">
+											<img class="card-img v-image ads-img " src="https://www.airforcemag.com/app/uploads/2020/02/2021-Budget-chart.v4-copy-1024x932.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2jWV7buJJBqXY8K_HdffuEiRps-IZ27JFhA';" alt="Usaf Budget Request Flat In 2021 Air Force Magazine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usaf Budget Request Flat In 2021 Air Force Magazine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/63/a3/37/63a33789cafb41d3e4462c38657103e0.jpg" data-lightbox="roadtrip" data-title="2021 Military Pay Charts Proposed Military Pay Chart Military Pay Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/63/a3/37/63a33789cafb41d3e4462c38657103e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGBfsiJ_cm3wWGAUq532qhwOD19jqNdQIrYQ';" alt="2021 Military Pay Charts Proposed Military Pay Chart Military Pay Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2021 Military Pay Charts Proposed Military Pay Chart Military Pay Military</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.cbo.gov/sites/default/files/images/full-reports/2020/56526-fig2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGBfsiJ_cm3wWGAUq532qhwOD19jqNdQIrYQ';" alt="2021 Military Pay Charts Proposed Military Pay Chart Military Pay Military">
+										<div class="card-body">
+						<h3 class="h5"><b>DoD emphasis is on development of emerging technologies and the high end fight through ACE investments including hypersonics microelectronics autonomy and Artificial Intelligence.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Dod budget request 2021</strong>. 
+								
+																	The Overview is one part of an. 
+																	UNITED STATES DEPARTMENT OF DEFENSE FISCAL YEAR 2021 BUDGET REQUEST Program Acquisition Cost By Weapon System Irreversible Implementation of the National Defense Strategy The estimated cost of this report or study for the Department of Defense is approximately 27000 for the 2020 Fiscal Year. 
+																	I Preface The Overview Book has been published as part of the Presidents Annual Defense Budget for the past few years. 
+																	In DoDs budget request for 2021 243 billion or about one-third of its budget request was for acquisition. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The fiscal year FY 2021 budget requests a total of 716 billion for the Department of Defense DoD including 108 billion in mandatory funding and 69 billion in Overseas Contingency Operations OCO funding. 
+																	The Defense Department wants to put more than 106 billion into research and development efforts according to its 2021 budget request. 
+																	Generated on 2020Jan30 RefID. 
+																	President Donald Trumps defense budget request for fiscal 2021 includes major investments in research and development portfolios as well as crucial technologies as part of what. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 705 billion budget request released Feb. 
+																	DoD Releases Fiscal Year 2021 Budget Proposal On February 10 2020 President Donald J. 
+																	Acquisition costs under the 2021 FYDP would remain fairly steady averaging. 
+																	FY 2021 DOD budget request seeks 3 pay raise for service members. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	FY 2021 Defense Budget. 
+																	From FY 1969 to FY 2005 OSD published the Annual Defense Report ADR to meet 10 USC section 113 requirements. 
+																	The 7054 billion request represents a minor increase from last years 7046 billion request. 
+																	Todd Lopez Defensegov February 11 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Land sea and air. 
+																	The Presidents Budget request for the Department of Defense sustains the Presidents commitment to invest in Americas security and prepare for the threats and challenges of a new age by funding a high state. 
+																	2021 budget request is the next step in implementing the National Defense Strategy and focuses on all domain operations. 
+																	Trump sent Congress a proposed Fiscal Year FY 2021 budget request of 7405 billion for national security 7054 billion of which is for the Department. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	137 billion for procurement and 107 billion for RDTE. 
+																	Subsequently the Overview began to fill this role. 
+																	The presidents fiscal year 2021 budget request enables irreversible implementation of the National Defense Strategy. 
+																	FY 2021 DoD budget request is relatively flat with no real growth compared to FY 2020 enacted appropriation without emergency disaster relief 6364 160. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Presidents defense budget request for FY2021 does have some important virtues. 
+																	Now this budget is a little different because the top line is flat. 
+																	On February 10 2020 President Donald J. 
+																	The FY 2021 defense budget request on balance favors improving current readiness levels supporting the current force structure and investing in research and development over increasing the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Trump sent Congress a proposed Fiscal Year FY 2021 budget request of 7405 billion for national security. 
+																	This includes 7600 in expenses and 20000 in DoD labor. 
+																	Around 7 billion is targeted. 
+																	2020 -- With 1066 billion set aside for research and development US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It does contain a wide variety of important initiatives to improve the readiness and effectiveness of important elements pertaining to each military service invest in force modernization and support military personnel. 
+																	Department of Defense DOD officials claim their fiscal year 2021 budget request which was released Feb. 
+																	The amount requested in the budget for acquisition in 2021 is 5 percent less than the amount appropriated for 2020 after adjusting for inflation. 
+																	The 2021 budget request includes the largest RDTE request in history at 1066 billion. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	DOD leaders in their fiscal 2021 budget request to Congress which was released on Monday are asking for 7054 billion which is down about 1 percent from this years level of 7126 billion. 
+																	UNITED STATES DEPARTMENT OF DEFENSE FISCAL YEAR 2021 BUDGET REQUEST. 
+																	2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncmbc.us/wp-content/uploads/image-37.png" data-lightbox="roadtrip" data-title="Deftech Overview Dod Fy2021 Budget Request North Carolina Military Business Center">
+											<img class="card-img v-image ads-img " src="https://www.ncmbc.us/wp-content/uploads/image-37.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQmD-_Fi-v24ryPBk4A-T0jgQk9UdW6aoeew';" alt="Deftech Overview Dod Fy2021 Budget Request North Carolina Military Business Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Deftech Overview Dod Fy2021 Budget Request North Carolina Military Business Center</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/20/be/21/20be2103a957cc6e619b60a77da16c1d.jpg" data-lightbox="roadtrip" data-title="Military Spending Military Spending Military Military Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/20/be/21/20be2103a957cc6e619b60a77da16c1d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjen_XzyIPZZXkoE12Wv0_5-02i9dPSKOuQw';" alt="Military Spending Military Spending Military Military Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spending Military Spending Military Military Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i2.wp.com/dsm.forecastinternational.com/wordpress/wp-content/uploads/2020/06/Blog-Promo-1.png?resize=735%2C441&amp;ssl=1" data-lightbox="roadtrip" data-title="Navigating The Dod Acquisition Budget During Uncertain Times Defense Security Monitor">
+											<img class="card-img v-image ads-img " src="https://i2.wp.com/dsm.forecastinternational.com/wordpress/wp-content/uploads/2020/06/Blog-Promo-1.png?resize=735%2C441&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ27gnMxdmCVApk_2CwF_o6AogLcQ52d_7VJw';" alt="Navigating The Dod Acquisition Budget During Uncertain Times Defense Security Monitor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navigating The Dod Acquisition Budget During Uncertain Times Defense Security Monitor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.pgpf.org/sites/default/files/defense-spending-explainer-chart-2.jpg" data-lightbox="roadtrip" data-title="Budget Basics National Defense">
+											<img class="card-img v-image ads-img " src="https://www.pgpf.org/sites/default/files/defense-spending-explainer-chart-2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3hjZ4N_EwvDqcsGTBuxA54YzG1VJt68VSrA';" alt="Budget Basics National Defense">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Budget Basics National Defense</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3.amazonaws.com/resources.govwin.com/blog/Image/DOD%20Big%20Data%20Chart%2001-1wBK.JPG" data-lightbox="roadtrip" data-title="Big Data In Dod S Fy 2021 Procurement And Rdt E Budget Programs Govwin Iq">
+											<img class="card-img v-image ads-img " src="https://s3.amazonaws.com/resources.govwin.com/blog/Image/DOD%20Big%20Data%20Chart%2001-1wBK.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxBK4izdFfiG_YynPw0YREDmqjbxAfKLW3rQ';" alt="Big Data In Dod S Fy 2021 Procurement And Rdt E Budget Programs Govwin Iq">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Big Data In Dod S Fy 2021 Procurement And Rdt E Budget Programs Govwin Iq</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.dvidshub.net/media/thumbs/frames/video/2002/738736/1000w_q75.jpg" data-lightbox="roadtrip" data-title="Dvids Video Dod Officials Brief On Fiscal Year 2021 Defense Budget Request">
+											<img class="card-img v-image ads-img " src="https://cdn.dvidshub.net/media/thumbs/frames/video/2002/738736/1000w_q75.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5uvK7S0iYEWy1Wz2MSx-I-7Au-9yiKVnLoA';" alt="Dvids Video Dod Officials Brief On Fiscal Year 2021 Defense Budget Request">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dvids Video Dod Officials Brief On Fiscal Year 2021 Defense Budget Request</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://csis-website-prod.s3.amazonaws.com/s3fs-public/Cancian_Overview_Graphics_Chart%204.jpg" data-lightbox="roadtrip" data-title="Military Forces In Fy 2021 The Budget And Strategy Overview Four Challenges And A Wild Card Center For Strategic And International Studies">
+											<img class="card-img v-image ads-img " src="https://csis-website-prod.s3.amazonaws.com/s3fs-public/Cancian_Overview_Graphics_Chart%204.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr4w0_VM7NHae5O2alpcvS7CmZq1BX89zrSQ';" alt="Military Forces In Fy 2021 The Budget And Strategy Overview Four Challenges And A Wild Card Center For Strategic And International Studies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Forces In Fy 2021 The Budget And Strategy Overview Four Challenges And A Wild Card Center For Strategic And International Studies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3.amazonaws.com/uploads.thirdway.org/products/thematic-brief-the-department-of-defense-budget-and-oversight/8.%20DoD%20Budget%20Graph-3-01.png" data-lightbox="roadtrip" data-title="Thematic Brief The Department Of Defense Budget And Oversight Third Way">
+											<img class="card-img v-image ads-img " src="https://s3.amazonaws.com/uploads.thirdway.org/products/thematic-brief-the-department-of-defense-budget-and-oversight/8.%20DoD%20Budget%20Graph-3-01.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLMFw5Cc6dC4QKNZkUFbqCODfYXrj1EiR04w';" alt="Thematic Brief The Department Of Defense Budget And Oversight Third Way">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thematic Brief The Department Of Defense Budget And Oversight Third Way</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/02/2021-Defense-Budget_MilitaryBenefits.jpg" data-lightbox="roadtrip" data-title="2021 Defense Budget Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/02/2021-Defense-Budget_MilitaryBenefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX7Ch5fXp4XrvkTsV6rbL7YhpuKw4s3Sv6Qg';" alt="2021 Defense Budget Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2021 Defense Budget Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cbo.gov/sites/default/files/images/full-reports/2020/56526-fig2.png" data-lightbox="roadtrip" data-title="Long Term Implications Of The 2021 Future Years Defense Program Congressional Budget Office">
+											<img class="card-img v-image ads-img " src="https://www.cbo.gov/sites/default/files/images/full-reports/2020/56526-fig2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-_Cq_9a62Vasg844kDaiTmNdGjqFzBTdI3g';" alt="Long Term Implications Of The 2021 Future Years Defense Program Congressional Budget Office">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Long Term Implications Of The 2021 Future Years Defense Program Congressional Budget Office</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://plsadaptive.s3.amazonaws.com/eco/images/event_content/9T6DUQ7sb8zTpj9ux6yrt0L33FCjBV4jK0l74xkh.png" data-lightbox="roadtrip" data-title="New Infographic Robotics Autonomous Systems In The Fy20 Dod Budget">
+											<img class="card-img v-image ads-img " src="https://plsadaptive.s3.amazonaws.com/eco/images/event_content/9T6DUQ7sb8zTpj9ux6yrt0L33FCjBV4jK0l74xkh.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdjAEvBpZE6vsKL6Zv9X4QrSppF98edgEAeA';" alt="New Infographic Robotics Autonomous Systems In The Fy20 Dod Budget">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Infographic Robotics Autonomous Systems In The Fy20 Dod Budget</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.nationalpriorities.org/uploads/president&#039;s_budget_2021_-_discretionary_pie_-_military_vs._nonmilitary.png" data-lightbox="roadtrip" data-title="President Trump S 2021 Budget Prioritizes The Pentagon">
+											<img class="card-img v-image ads-img " src="https://media.nationalpriorities.org/uploads/president&#039;s_budget_2021_-_discretionary_pie_-_military_vs._nonmilitary.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv45_VDYoWtIKnmg-efdBXpr-R36OrC3HezA';" alt="President Trump S 2021 Budget Prioritizes The Pentagon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">President Trump S 2021 Budget Prioritizes The Pentagon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2019/03/2020_Defense_Budget.jpg" data-lightbox="roadtrip" data-title="2020 Defense Budget Final Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2019/03/2020_Defense_Budget.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd3e1CKBrQC2sgTAfWLNYtl3MgLllSzgSX2A';" alt="2020 Defense Budget Final Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2020 Defense Budget Final Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/veteran-swimming-records.html">Veteran Swimming Records</a></li>
+													<li class="list-group-item"><a href="/valcartier-military-family-resource-centre.html">Valcartier Military Family Resource Centre</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-archives-st-louis.html">Veterans Affairs Archives St Louis</a></li>
+													<li class="list-group-item"><a href="/veteran-medical-records-st-louis.html">Veteran Medical Records St Louis</a></li>
+													<li class="list-group-item"><a href="/veteran-medical-records.html">Veteran Medical Records</a></li>
+													<li class="list-group-item"><a href="/veteran-archives.html">Veteran Archives</a></li>
+													<li class="list-group-item"><a href="/veteran-student-work-study-program.html">Veteran Student Work Study Program</a></li>
+													<li class="list-group-item"><a href="/veteran-spouse-benefits-after-death.html">Veteran Spouse Benefits After Death</a></li>
+													<li class="list-group-item"><a href="/veteran-running-records.html">Veteran Running Records</a></li>
+													<li class="list-group-item"><a href="/veteran-records-ww2.html">Veteran Records Ww2</a></li>
+													<li class="list-group-item"><a href="/veteran-social-work-programs.html">Veteran Social Work Programs</a></li>
+													<li class="list-group-item"><a href="/va-career-pathways-program.html">Va Career Pathways Program</a></li>
+													<li class="list-group-item"><a href="/va-vocational-rehabilitation-program-chapter-31.html">Va Vocational Rehabilitation Program Chapter 31</a></li>
+													<li class="list-group-item"><a href="/va-work-study-program-application.html">Va Work Study Program Application</a></li>
+													<li class="list-group-item"><a href="/verizon-wireless-discount-for-dod-civilian.html">Verizon Wireless Discount For Dod Civilian</a></li>
+													<li class="list-group-item"><a href="/veteran-employment-program-manager.html">Veteran Employment Program Manager</a></li>
+													<li class="list-group-item"><a href="/veterans-administration-work-study-program.html">Veterans Administration Work Study Program</a></li>
+													<li class="list-group-item"><a href="/va-voc-rehab-independent-living-program.html">Va Voc Rehab Independent Living Program</a></li>
+													<li class="list-group-item"><a href="/veteran-employment-programs-houston-tx.html">Veteran Employment Programs Houston Tx</a></li>
+													<li class="list-group-item"><a href="/veteran-crisis-line-phone-number.html">Veteran Crisis Line Phone Number</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

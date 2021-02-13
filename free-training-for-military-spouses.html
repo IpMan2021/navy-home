@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Free Training For Military Spouses - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Free Training For Military Spouses",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/b9/f3/b8/b9f3b8a9c797bcc06d66ce2e2e0939a7.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=free+training+for+military+spouses",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Free Training For Military Spouses</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Training guidelines vary slightly between different branches but the Army Navy Marine Corps and Coast Guard all offer some type of class for new CO or XO spouses. Once approved for the program your coursework is accessible at any time and from any location. There are a plethora of free resources available to help military spouses with the technical aspects of obtaining employment such as career coaching and professional resume assistance. <br>				
+			</p>
+										<a class="badge badge-warning" href="/education-grants-for-dependents-of-veterans.html">education grants for dependents of veterans</a>
+											<a class="badge badge-success" href="/ebony-military-resource.html">ebony military resource</a>
+											<a class="badge badge-secondary" href="/dubai-military-hr-committee.html">dubai military hr committee</a>
+											<a class="badge badge-light" href="/does-the-va-have-my-military-medical-records.html">does the va have my military medical records</a>
+											<a class="badge badge-dark" href="/federal-civilian-service-retirement.html">federal civilian service retirement</a>
+											<a class="badge badge-success" href="/does-verizon-have-discounts-for-government-employees.html">does verizon have discounts for government employees</a>
+											<a class="badge badge-dark" href="/failarmy-dog-videos.html">failarmy dog videos</a>
+											<a class="badge badge-light" href="/financial-advice-for-military.html">financial advice for military</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you've come to visit the right site.  Our site provides you with hints for seeing the highest quality video and image content, hunt and locate more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, therefore we recommend this movie that you view.  It is also possible to contribute to supporting this site by sharing videos and graphics that you enjoy on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information you get on this site.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/ae/0d/3dae0dab060ed3009f28d67f1ab91bed.jpg" data-lightbox="roadtrip" data-title="Free Video Training Series For Military Spouses Military Spouse Career Military Spouse Military Spouse Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/ae/0d/3dae0dab060ed3009f28d67f1ab91bed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlPhEfQ5Vdk-Ed5W03j7_6kdaWyFy8xFgShA';" alt="Free Video Training Series For Military Spouses Military Spouse Career Military Spouse Military Spouse Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Video Training Series For Military Spouses Military Spouse Career Military Spouse Military Spouse Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/d7/7b/ead77b96955b36f6f615af9e46e52a8d.jpg" data-lightbox="roadtrip" data-title="4 Free Career Programs For Military Spouses Military Spouse Jobs Military Spouse Military Spouse Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/d7/7b/ead77b96955b36f6f615af9e46e52a8d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqX8-GEZselGc0IXwzn7D9j5QDy6_hCNR7qg';" alt="4 Free Career Programs For Military Spouses Military Spouse Jobs Military Spouse Military Spouse Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 Free Career Programs For Military Spouses Military Spouse Jobs Military Spouse Military Spouse Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/6e/03/106e03538e8ab63a5e5a7dc8ccc518b8.png" data-lightbox="roadtrip" data-title="Free Training By Stay At Home Profit Work From Home Tips Free Training Virtual Assistant">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/6e/03/106e03538e8ab63a5e5a7dc8ccc518b8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDOwMbh6VpXfUhio1fl4pH3bDh5AD5QeBwzw';" alt="Free Training By Stay At Home Profit Work From Home Tips Free Training Virtual Assistant">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Training By Stay At Home Profit Work From Home Tips Free Training Virtual Assistant</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/27/6b/ab276bd8fa1a0773b7af093d8b7499f1.png" data-lightbox="roadtrip" data-title="Get Started With A Remote Career Free Training Virtual Assistant Training Free Training Virtual Assistant">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/27/6b/ab276bd8fa1a0773b7af093d8b7499f1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNvNQyMuo3BZ-VjeEnxXUaOD7MDN_ZI9QfxQ';" alt="Get Started With A Remote Career Free Training Virtual Assistant Training Free Training Virtual Assistant">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get Started With A Remote Career Free Training Virtual Assistant Training Free Training Virtual Assistant</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/e5/52/b8e552db0d29f1bc825b329086bb3ae5.jpg" data-lightbox="roadtrip" data-title="Free Video Training Series For Military Spouses How To Start Your Own Business The Navy Mom Military Spouse Training Series Starting Your Own Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/e5/52/b8e552db0d29f1bc825b329086bb3ae5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScqCvanDbLZDira0yMaPrOLTLLLizg3Olg0w';" alt="Free Video Training Series For Military Spouses How To Start Your Own Business The Navy Mom Military Spouse Training Series Starting Your Own Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Video Training Series For Military Spouses How To Start Your Own Business The Navy Mom Military Spouse Training Series Starting Your Own Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6e/b5/74/6eb574816c79fdb4ef9037016425d8ea.png" data-lightbox="roadtrip" data-title="Military Spouse Career Training Military Spouse Career Career Exploration Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6e/b5/74/6eb574816c79fdb4ef9037016425d8ea.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbLlHO5NmH_4eyucYUR-1uvKLEPPOdSuKYeg';" alt="Military Spouse Career Training Military Spouse Career Career Exploration Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Career Training Military Spouse Career Career Exploration Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/b9/f3/b8/b9f3b8a9c797bcc06d66ce2e2e0939a7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbLlHO5NmH_4eyucYUR-1uvKLEPPOdSuKYeg';" alt="Military Spouse Career Training Military Spouse Career Career Exploration Military Spouse">
+										<div class="card-body">
+						<h3 class="h5"><b>BFBS is launching the UKs first free online social media training programme for military spouses and partners.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Free training for military spouses</strong>. 
+								
+																	Fortunately the military provides education and job assistance resources training and opportunities to our nations resilient military spouses who sacrifice so much to support their service members. 
+																	Each of the courses listed offer either discounted or free training to military spouses partners and family members. 
+																	Here are seven free business training resources for military spouse entrepreneurs. 
+																	Free training for military spouses AFF along with the other families federations received a generous donation of 20 Microsoft Applications courses for spouses worth 6400 as well as access to subsidised training ideal for spouses looking to boost their tech skills. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Free social media training for military spouses partners Thanks to generous support from The Armed Forces Covenant Fund Trust British Forces Broadcasting Service BFBS is giving military spouses and partners the chance to upskill in social media marketing techniques absolutely free. 
+																	BFBS launches first free social media training programme for military spouses and partners. 
+																	Going back to school as a military spouse is an investment in yourself your career and your familys future. 
+																	The program operated by the Institute for Veterans and Military Families at Syracuse University is for spouses of all active-duty service members and eligible veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Major Group offers scholarships and free MyCAA-approved online career training for military spouses. 
+																	Im very impressed by the offerings. 
+																	Joanne Holbrook Patton Military Spouse Scholarship Program. 
+																	Get in-demand career training in 6 short months. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sponsored by the National Military Family Association this program grants scholarships ranging from 500 to 1000 to spouses of active duty retired and reserveGuard members to pursue post-secondary or graduate degrees and professional training programs. 
+																	The training is usually offered simultaneously with the service members Command Leadership Course. 
+																	Military OneSource provides useful tips as you take your first steps toward your educational goals or reinvigorating your career. 
+																	Spouse Education Benefits Military service members are eligible to designate some of their Post 911 GI. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are three tracks to choose from. 
+																	Several days of classes allow incoming CO spouses to learn about leadership public speaking Family Readiness programs. 
+																	Military spouses are the foundation of the nations military support system. 
+																	18th March 2019 at 900am Thanks to generous support from The Armed Forces Covenant Fund Trust BFBS is giving military spouses and partners the chance to upskill in social media marketing techniques absolutely free. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The course is funded by the Armed Forces Covenant Fund Trust and applications open in May. 
+																	My vision is that these new resources empower military spouses to build meaningful careers regardless of their location or balance of responsibilities. 
+																	Military Spouse Technology Academy The Microsoft Military Spouse Technology Academy provides an intensive training program designed to empower military spouses with in-demand digital skills that can lead to well-paying and meaningful careers. 
+																	02 FREE social media course for spousespartners BFBS is giving military spouses and partners the chance to up-skill in social media marketing techniques absolutely free. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Today BFBS announces Social Media Spouses the UKs first free online social media training programme for military spouses and partners. 
+																	Youll find practical information so you can put your best foot forward and prepare for your quest whether its identifying your career goals or. 
+																	Military Spouse Employment Partnership MSEP falls under the umbrella of Military One Source. 
+																	It is online and it is free for post-911 separated or retired vets military service members transitioning to the civilian workforce in 18 months and spouses whose military members are active duty or eligible vets. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The following lists includes some of those available resources. 
+																	Applications open in May 19. 
+																	Professional Skills Tech and Independent Study. 
+																	Military Spouse Employment Partnership. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Blue Star Families will share our career preparation training with at least 10000 spouses across its nationwide network of military families. 
+																	Unlike traditional career preparation programs the Military Spouse Foundation training is personal tech-driven gap-free and community focused which enables military spouses to spark their dream of career success. 
+																	For military spouses there are multiple business training options available at no cost. 
+																	With funding from the Armed Forces Covenant fund they will deliver the course through a combination of online learning video meetings and social media over 12 weeks. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Due to the COVID-19 pandemic the accessibility of the listed programs may have be adapted to remote access. 
+																	If so why not have a look at the training opportunities that Forces Families Jobs have listed on our site. 
+																	Military spouses are an integral supporting force for members of our military. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/0b/63/f20b63679a0d05070442c053b81a09ab.png" data-lightbox="roadtrip" data-title="15 Ways To Monetize Your Brilliance Military Spouse Quotes Military Spouse Career Military Spouse Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/0b/63/f20b63679a0d05070442c053b81a09ab.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv8b6UhSc9GU6B05M5NO1YvecoRt1uSukoeQ';" alt="15 Ways To Monetize Your Brilliance Military Spouse Quotes Military Spouse Career Military Spouse Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">15 Ways To Monetize Your Brilliance Military Spouse Quotes Military Spouse Career Military Spouse Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/f3/b8/b9f3b8a9c797bcc06d66ce2e2e0939a7.jpg" data-lightbox="roadtrip" data-title="About Mycaa And Who Is Eligible For Free Career Training Career Training Military Spouse Mycaa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/f3/b8/b9f3b8a9c797bcc06d66ce2e2e0939a7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmaOCIAuPQjeMv7pnaeS-cUMJnlxVzpAygpw';" alt="About Mycaa And Who Is Eligible For Free Career Training Career Training Military Spouse Mycaa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">About Mycaa And Who Is Eligible For Free Career Training Career Training Military Spouse Mycaa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/1d/76/061d768c2432630309eb7cf63d1465e4.jpg" data-lightbox="roadtrip" data-title="Free Computer Training For Military Spouses At The Raf Lakenheath Airman Family Readiness Center Help Boost T Career Readiness Computer Knowledge Lakenheath">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/1d/76/061d768c2432630309eb7cf63d1465e4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWCq0Bxdg1UfOrMyVJB0nM1oPLkNNr44GelA';" alt="Free Computer Training For Military Spouses At The Raf Lakenheath Airman Family Readiness Center Help Boost T Career Readiness Computer Knowledge Lakenheath">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Computer Training For Military Spouses At The Raf Lakenheath Airman Family Readiness Center Help Boost T Career Readiness Computer Knowledge Lakenheath</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/04/bf/5104bf505844d8bc9402ba44126da66f.png" data-lightbox="roadtrip" data-title="Military Love Letters To Help Build Your Relationship While Deployed Military Love Letters Letter For Him Military Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/04/bf/5104bf505844d8bc9402ba44126da66f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrPjM8n6FccsGoTyq1Ltj6mX-Jih98jZjPmA';" alt="Military Love Letters To Help Build Your Relationship While Deployed Military Love Letters Letter For Him Military Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Love Letters To Help Build Your Relationship While Deployed Military Love Letters Letter For Him Military Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/5e/43/695e43ef1dda5a163407ba92ea74fe98.jpg" data-lightbox="roadtrip" data-title="To Find Free Training Tools And Events To Help You Grow Your Skills Career Or Business Visit Google Com Grow Veteran Jobs Grow Business Free Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/5e/43/695e43ef1dda5a163407ba92ea74fe98.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4dm7-O4Ops7RjUyAO5QAxOj3u-YbovROGaw';" alt="To Find Free Training Tools And Events To Help You Grow Your Skills Career Or Business Visit Google Com Grow Veteran Jobs Grow Business Free Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">To Find Free Training Tools And Events To Help You Grow Your Skills Career Or Business Visit Google Com Grow Veteran Jobs Grow Business Free Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5d/af/fd/5daffd7a2c3bce8161ec873263cf4878.jpg" data-lightbox="roadtrip" data-title="Follow Your Passion Find The Right Job With The Right Education Stop Worrying About Time Cost Take A Military Spouse Career Training Finding The Right Job">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5d/af/fd/5daffd7a2c3bce8161ec873263cf4878.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsZCv1S0ohJdldD-rzmPz03OuSiz7qg6I4Og';" alt="Follow Your Passion Find The Right Job With The Right Education Stop Worrying About Time Cost Take A Military Spouse Career Training Finding The Right Job">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Follow Your Passion Find The Right Job With The Right Education Stop Worrying About Time Cost Take A Military Spouse Career Training Finding The Right Job</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/20/0d/bb/200dbb709351b224533b7233b8710c8d.jpg" data-lightbox="roadtrip" data-title="Attention All Military Spouses This Is A Great Opportunity To Get Funding For A Career Courses Are Full Education And Training Mycaa Programs Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/20/0d/bb/200dbb709351b224533b7233b8710c8d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFflMkMHllXS8RS8dg9gQH6rcA6J4Q_NMkxA';" alt="Attention All Military Spouses This Is A Great Opportunity To Get Funding For A Career Courses Are Full Education And Training Mycaa Programs Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Attention All Military Spouses This Is A Great Opportunity To Get Funding For A Career Courses Are Full Education And Training Mycaa Programs Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/01/22/1b/01221be4a7232ef58e642f25e0bea5bb.jpg" data-lightbox="roadtrip" data-title="Basic Training Communication What Spouses And Family Can Expect Basic Training Letters Army Basic Training Military Care Package">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/01/22/1b/01221be4a7232ef58e642f25e0bea5bb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqFcSetzwp_W7mSnvDI9heyL6u4xSbygd3yA';" alt="Basic Training Communication What Spouses And Family Can Expect Basic Training Letters Army Basic Training Military Care Package">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Basic Training Communication What Spouses And Family Can Expect Basic Training Letters Army Basic Training Military Care Package</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/03/5b/11035b872f92e279b51527eb911765f6.jpg" data-lightbox="roadtrip" data-title="No Cost Skills Training For Military Spouses Skill Training Military Spouse Skills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/03/5b/11035b872f92e279b51527eb911765f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlBexbF0GPBTz0NugcNTi0FsSif7MYr3bLSQ';" alt="No Cost Skills Training For Military Spouses Skill Training Military Spouse Skills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">No Cost Skills Training For Military Spouses Skill Training Military Spouse Skills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/83/7a/dc837a4f453d43fba045d81d4f69b1f2.png" data-lightbox="roadtrip" data-title="What S It Like When Your Husband Leaves For Ranger School And You Re Eight Weeks Pregnant Military Spouse Nora Shares Her St Ranger School Army Rangers Ranger">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/83/7a/dc837a4f453d43fba045d81d4f69b1f2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZNr3BKPXNoO4WsBbzAuS6E1zQ_cB1cxAIUA';" alt="What S It Like When Your Husband Leaves For Ranger School And You Re Eight Weeks Pregnant Military Spouse Nora Shares Her St Ranger School Army Rangers Ranger">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What S It Like When Your Husband Leaves For Ranger School And You Re Eight Weeks Pregnant Military Spouse Nora Shares Her St Ranger School Army Rangers Ranger</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/cc/8c/05cc8c11966482058548a8e97c575b7b.jpg" data-lightbox="roadtrip" data-title="Attention All Military Spouses Looking For A New Career Check Out Www Academyofme Medical Laboratory Science Student Military Life Medical Laboratory Science">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/cc/8c/05cc8c11966482058548a8e97c575b7b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSugEwMnZrd3DC02_ZR_5U7LHIuGtO7Exj23Q';" alt="Attention All Military Spouses Looking For A New Career Check Out Www Academyofme Medical Laboratory Science Student Military Life Medical Laboratory Science">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Attention All Military Spouses Looking For A New Career Check Out Www Academyofme Medical Laboratory Science Student Military Life Medical Laboratory Science</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/8f/94/028f9433112a69ae1dc49d03f4a7c081.jpg" data-lightbox="roadtrip" data-title="Military Spouse Resume Infographic Best Practices Resume Tips Resume Advice Best Resume Format">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/8f/94/028f9433112a69ae1dc49d03f4a7c081.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnFnuCkCKX-VdXkGR7l9BuVS5XgVTeRA0LsQ';" alt="Military Spouse Resume Infographic Best Practices Resume Tips Resume Advice Best Resume Format">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Resume Infographic Best Practices Resume Tips Resume Advice Best Resume Format</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/32/b0/5932b0adb68060713c79975a68a38e17.png" data-lightbox="roadtrip" data-title="Work From Anywhere As A Virtual Assistant In 2020 Virtual Assistant Work From Home Jobs Advertising Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/32/b0/5932b0adb68060713c79975a68a38e17.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLqX2cICgKo7Y-hmGz2XzZ6sUZLeFI5ugDJA';" alt="Work From Anywhere As A Virtual Assistant In 2020 Virtual Assistant Work From Home Jobs Advertising Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Work From Anywhere As A Virtual Assistant In 2020 Virtual Assistant Work From Home Jobs Advertising Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/ncaa-eligibility-lacrosse.html">Ncaa Eligibility Lacrosse</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-login.html">Ncaa Eligibility Login</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-meeting.html">Ncaa Eligibility Meeting</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-act-score.html">Ncaa Eligibility Act Score</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-gap-year.html">Ncaa Eligibility Gap Year</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-rules.html">Ncaa Eligibility Rules</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-eligibility-center.html">Ncaa Eligibility Eligibility Center</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-learning-disability.html">Ncaa Eligibility Learning Disability</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-junior-year.html">Ncaa Eligibility Junior Year</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-for-canadian-students.html">Ncaa Eligibility For Canadian Students</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-dual-enrollment.html">Ncaa Eligibility Dual Enrollment</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-gpa-sat-scale.html">Ncaa Eligibility Gpa Sat Scale</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-issues.html">Ncaa Eligibility Issues</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-misdemeanor.html">Ncaa Eligibility Misdemeanor</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-freeze.html">Ncaa Eligibility Freeze</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-quality-points.html">Ncaa Eligibility Quality Points</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-list.html">Ncaa Eligibility List</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-gpa.html">Ncaa Eligibility Gpa</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-masters.html">Ncaa Eligibility Masters</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-center-email.html">Ncaa Eligibility Center Email</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How To Help Suicidal Veterans - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How To Help Suicidal Veterans",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/0e/07/62/0e0762226536fbda2f1a42dc4ec46ee7.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+to+help+suicidal+veterans",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How To Help Suicidal Veterans</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">To help with this health practitioners are counseled to take the time to ask their patients if theyre veterans and if they are to sensitively ask if theyve contemplated suicide. Let your loved one know that he or she is not alone and that you care. EARLY INTERVENTION KEY Fortunately for the vast majority of veterans their resilience adaptability innovativeness and determination carry them through. <br>				
+			</p>
+										<a class="badge badge-dark" href="/defense-budget-fy-2021.html">defense budget fy 2021</a>
+											<a class="badge badge-success" href="/defense-spending-bill-2021-veto.html">defense spending bill 2021 veto</a>
+											<a class="badge badge-secondary" href="/department-of-defence-navy-australia.html">department of defence navy australia</a>
+											<a class="badge badge-danger" href="/department-military-affairs.html">department military affairs</a>
+											<a class="badge badge-danger" href="/defense-budget-2021-signed.html">defense budget 2021 signed</a>
+											<a class="badge badge-dark" href="/department-in-the-us-army.html">department in the us army</a>
+											<a class="badge badge-danger" href="/cute-army-dog-names.html">cute army dog names</a>
+											<a class="badge badge-secondary" href="/current-defense-budget-of-india.html">current defense budget of india</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to pay a visit to the ideal site.  Our site gives you suggestions for seeing the maximum quality video and picture content, search and locate more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, so we recommend this video that you see.  You can also bring about supporting this site by sharing videos and images that you like on this site on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/97/d4/a5/97d4a5dd1698d491ef1c4c381ecc1c4c.jpg" data-lightbox="roadtrip" data-title="Pin On God Bless Our Troops">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/97/d4/a5/97d4a5dd1698d491ef1c4c381ecc1c4c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmzToj5cuB_1OBzhNWF61s8I0CNUCAHLbO7g';" alt="Pin On God Bless Our Troops">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On God Bless Our Troops</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/56/b2/8e56b20ae0ef40132d3356d4fef3dbaf.jpg" data-lightbox="roadtrip" data-title="Hire Heroes Usa Veteran Jobs 10 Interview Questions Usa Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/56/b2/8e56b20ae0ef40132d3356d4fef3dbaf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1YZxnhBO7QB0LWFx6zdayNmnH4W0tBPg14Q';" alt="Hire Heroes Usa Veteran Jobs 10 Interview Questions Usa Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hire Heroes Usa Veteran Jobs 10 Interview Questions Usa Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/a0/d1/e0a0d196a83c8f9b77cb095fa74401f0.jpg" data-lightbox="roadtrip" data-title="Grunt Style Stop The 22 A Day This We Ll Defend Grunt Style Vietnam Vets Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/a0/d1/e0a0d196a83c8f9b77cb095fa74401f0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3zvpCccfrwdkiDDKyIXKRa3AnUzS9TvvcrA';" alt="Grunt Style Stop The 22 A Day This We Ll Defend Grunt Style Vietnam Vets Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Grunt Style Stop The 22 A Day This We Ll Defend Grunt Style Vietnam Vets Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/09/d0/e609d0fb7cb8cc7e894fa0f4f4e88aed.jpg" data-lightbox="roadtrip" data-title="Armed Forces Day Gift Ideas Veteran Business Person Disabled Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/09/d0/e609d0fb7cb8cc7e894fa0f4f4e88aed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYvJWO45js_IfQnM79itwkwh7NQwO1_HWAKA';" alt="Armed Forces Day Gift Ideas Veteran Business Person Disabled Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Armed Forces Day Gift Ideas Veteran Business Person Disabled Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/07/62/0e0762226536fbda2f1a42dc4ec46ee7.jpg" data-lightbox="roadtrip" data-title="Dav Disabled American Veterans Dav Is The Official Voice Of The Nation S Wounded Warriors And Their Families We Provide American Veterans Army Veteran Dav">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/07/62/0e0762226536fbda2f1a42dc4ec46ee7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcdeh5fNJNrestBGHxpWPkU2RapWUKrFWZnQ';" alt="Dav Disabled American Veterans Dav Is The Official Voice Of The Nation S Wounded Warriors And Their Families We Provide American Veterans Army Veteran Dav">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dav Disabled American Veterans Dav Is The Official Voice Of The Nation S Wounded Warriors And Their Families We Provide American Veterans Army Veteran Dav</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/52/04/3952044340de5085de4f10d02424e19e.jpg" data-lightbox="roadtrip" data-title="First To Clarify Service Dogs Are Different Than Emotional Support Animals Which Are Different Than Therapy Dog Service Dogs Psychiatric Service Dog Dog Help">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/52/04/3952044340de5085de4f10d02424e19e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN_f_sl26RF8PNW_vcq0sikY8Y7sMqwHDbDw';" alt="First To Clarify Service Dogs Are Different Than Emotional Support Animals Which Are Different Than Therapy Dog Service Dogs Psychiatric Service Dog Dog Help">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">First To Clarify Service Dogs Are Different Than Emotional Support Animals Which Are Different Than Therapy Dog Service Dogs Psychiatric Service Dog Dog Help</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ea/33/0e/ea330e0ae04b2648a6dd69061af5a6d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN_f_sl26RF8PNW_vcq0sikY8Y7sMqwHDbDw';" alt="First To Clarify Service Dogs Are Different Than Emotional Support Animals Which Are Different Than Therapy Dog Service Dogs Psychiatric Service Dog Dog Help">
+										<div class="card-body">
+						<h3 class="h5"><b>Suicide risk among female veterans is 25x higher than among female civilians.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How to help suicidal veterans</strong>. 
+								
+																	For immediate help if you are in a crisis call the toll-free National Suicide Prevention Lifeline at 1-800-273-TALK 8255 which is available 24 hours a day 7 days a week. 
+																	The Veteran Training online self-help portal for overcoming everyday challenges includes modules on managing anger developing parenting and problem-solving skills and more. 
+																	Rates of suicide. 
+																	Free confidential help is available 247 through the Military Crisis Line also known as the Veterans Crisis Line and National Suicide Prevention Lifeline at 800-273-8255 military members and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Defense aimed to find out whether a simple phone call could help veterans suffering from suicidal thoughts take that first critical step in seeking treatment. 
+																	The interpersonal theory of suicide can help us understand at least some significant portion of the suicide attempts occurring among veterans. 
+																	The overwhelming number of suicidal military members and the neglect they face. 
+																	Record investment reinforced through additional funding for veterans mental health in the Budget yesterday. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mental health apps for Veterans cover a variety of topics ranging from PTSD to anger. 
+																	She and a team of researchers called a thousand veterans who volunteered to participate in the study. 
+																	Craig Bryan PsyD ABPP is a board-certified clinical psychologist with expertise in cognitive-behavioral treatments for individuals experiencing suicidal thoughts and post-traumatic stress. 
+																	Outreach to all veterans is a critical component of what we do and an important part of helping to prevent suicide. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All calls are. 
+																	Dont take responsibility however for making your loved one well. 
+																	Not all people who attempt or complete suicide will show any or all of the common. 
+																	Many of those seeking help have mental. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For some their military experience and its aftermath have produced a perfect storm. 
+																	If they are agreeable help them seek a counselor or therapist or even a support group that includes other veterans. 
+																	Offer Help and Support If a friend or family member is suicidal the best way to help is by offering an empathetic listening ear. 
+																	About 67 of veteran suicide deaths involve firearms. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Suicide Prevention Tip 3. 
+																	Experts claim the amount of money the Ministry of Defence spends on mental healthcare for veterans is not enough. 
+																	The role of mental health disorders and substance abuse in suicide among military veterans. 
+																	Steckers study funded by the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In 2014 veterans who were 18-29 years old had the highest rate of suicides. 
+																	Approximately 65 of veterans who died due to suicide in 2014 were 50 or older. 
+																	The risk of suicide among male veterans is 19 higher compared to adult male civilians. 
+																	Support groups have been inundated with calls from suicidal veterans and current troops struggling to cope with isolation caused by the Covid-19 crisis. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Where to go for help if you are concerned about yourself or a loved one. 
+																	The Departments of Veterans Affairs and Defense have both put greater emphasis on suicide prevention training in the last few years incorporating new training and awareness campaigns. 
+																	If you or a veteran you know is in crisis you can call the Veterans Crisis Line call 1-800-273-8255 and Press 1 chat online or send a text message to 838255 to receive confidential support 24. 
+																	Get information about suicide prevention and the support we offer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find these and other resources near you You can also find information and support on our websites. 
+																	Report released earlier this year noted that in 2016 veterans accounted for 14 percent of suicides nationwide even though they only represent about 8 percent of the US. 
+																	Ways to help can differ greatly depending on the person so its important to sit down and talk to your loved one openly about what they need. 
+																	Veterans of all ages and eras have sought help for suicidal thoughts and behavior and are living better lives today. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Our Veterans Benefits Administration offices can help you access benefits for disability compensation monthly payments job training home loans and more. 
+																	A strategic shift from reliance on the third sector to the State finally realising her. 
+																	If you or a loved one are contemplating suicide call 1-800-273-8255 and press 1 for the veterans crisis line. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/98/11/c6981114dbc4e8a14bfc22afc0914e03.jpg" data-lightbox="roadtrip" data-title="1 800 273 Talk 8255 Press 1 For Military Veterans Someone Available 24 7 American Soldiers Soldier Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/98/11/c6981114dbc4e8a14bfc22afc0914e03.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD-e1Yuz-4fJGx0IuhDzi_VIJ54eFonp0N2g';" alt="1 800 273 Talk 8255 Press 1 For Military Veterans Someone Available 24 7 American Soldiers Soldier Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1 800 273 Talk 8255 Press 1 For Military Veterans Someone Available 24 7 American Soldiers Soldier Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/20/b9/78/20b978d869f5097cdb89ff02103d76e0.jpg" data-lightbox="roadtrip" data-title="Pin On Mental Health">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/20/b9/78/20b978d869f5097cdb89ff02103d76e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR-YN4kHiJHUk7UrYmZYnfNOGMjrLXoqBl1g';" alt="Pin On Mental Health">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mental Health</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/3b/e5/b13be597c40c30a761c3276d6d284071.jpg" data-lightbox="roadtrip" data-title="Veterans Armyveterans Soldier Veteransday Soldier4life What Is A Veteran Veteran Quotes Military Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/3b/e5/b13be597c40c30a761c3276d6d284071.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGBjVq_Wxd7Dx29oHKh9kRpSD44F-ZRzpz6A';" alt="Veterans Armyveterans Soldier Veteransday Soldier4life What Is A Veteran Veteran Quotes Military Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Armyveterans Soldier Veteransday Soldier4life What Is A Veteran Veteran Quotes Military Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3e/94/7c/3e947c160964531e65db24816b783780.jpg" data-lightbox="roadtrip" data-title="Pin On Nursing Books">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3e/94/7c/3e947c160964531e65db24816b783780.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzPuZ_83m-bPVdUCqzhT6txdut0EO3YKOkEg';" alt="Pin On Nursing Books">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Nursing Books</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/33/0e/ea330e0ae04b2648a6dd69061af5a6d5.jpg" data-lightbox="roadtrip" data-title="Duty To Your Constitution True Faith Constitution American Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/33/0e/ea330e0ae04b2648a6dd69061af5a6d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjbqBFWUSOqXfKYmDMnFhTrYEG5pmIpB5DxQ';" alt="Duty To Your Constitution True Faith Constitution American Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Duty To Your Constitution True Faith Constitution American Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/1e/5d/b31e5d129801dae2c947f3b4077691e6.jpg" data-lightbox="roadtrip" data-title="Pin On Seeking Help">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/1e/5d/b31e5d129801dae2c947f3b4077691e6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj_lWI3CAyEb10kLim2esIVuaVWT1CGdhliA';" alt="Pin On Seeking Help">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Seeking Help</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/44/e8/5744e81150c8e9438688f1687648b10c.jpg" data-lightbox="roadtrip" data-title="Pin On Working Animals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/44/e8/5744e81150c8e9438688f1687648b10c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEpc5RorfpEtZBknvUfSyHciGmnJsFU9htYQ';" alt="Pin On Working Animals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Working Animals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/7e/07/f37e07729b0494c434c7fd619e46fb1e.png" data-lightbox="roadtrip" data-title="Timeline Of Va And Psychology Historical Events And Key Va Psychology Leadership Appointments 1965 1977 Psychology History Of Psychology Counseling Psychology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/7e/07/f37e07729b0494c434c7fd619e46fb1e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqIdsDhZorEA6DrOyjxaYWEjnjHY_jdWWflQ';" alt="Timeline Of Va And Psychology Historical Events And Key Va Psychology Leadership Appointments 1965 1977 Psychology History Of Psychology Counseling Psychology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Timeline Of Va And Psychology Historical Events And Key Va Psychology Leadership Appointments 1965 1977 Psychology History Of Psychology Counseling Psychology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/39/90/c53990c383d7e572f272f2281de79f88.jpg" data-lightbox="roadtrip" data-title="Pin By Grace Irwin On Ra Life Tech Company Logos Warning Signs Text">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/39/90/c53990c383d7e572f272f2281de79f88.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx3hQUHbLaFld1jkpIKhrZbFXHpYT7CW4Mzg';" alt="Pin By Grace Irwin On Ra Life Tech Company Logos Warning Signs Text">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Grace Irwin On Ra Life Tech Company Logos Warning Signs Text</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/ac/94/e8ac940d5f14d3503f111b5a039bd4df.jpg" data-lightbox="roadtrip" data-title="Pin On Ptsd Post Traumatic Stress Disorder">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/ac/94/e8ac940d5f14d3503f111b5a039bd4df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvufMIKNmqFoZGxiLnMVq_SgbKVKKhi22G9Q';" alt="Pin On Ptsd Post Traumatic Stress Disorder">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ptsd Post Traumatic Stress Disorder</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c2/f6/0c/c2f60c6380de0fbfcc873c6d2c4da2c0.jpg" data-lightbox="roadtrip" data-title="Krewe Of Veterans Ball In 2020 Veteran Middle School Literacy Seventh Grade">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c2/f6/0c/c2f60c6380de0fbfcc873c6d2c4da2c0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaY4ybYDHtYMRkJMRauwNU6StSMbM5_8vpnQ';" alt="Krewe Of Veterans Ball In 2020 Veteran Middle School Literacy Seventh Grade">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Krewe Of Veterans Ball In 2020 Veteran Middle School Literacy Seventh Grade</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/f0/29/e1f029338368ebfc9dd4e09995d6a70d.jpg" data-lightbox="roadtrip" data-title="Vet Quotes Yahoo Image Search Results Veterans Day Quotes Military Quotes Veterans Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/f0/29/e1f029338368ebfc9dd4e09995d6a70d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkzWgRYVAijI6Dq5cefmBjHtlbP4P7t0rltg';" alt="Vet Quotes Yahoo Image Search Results Veterans Day Quotes Military Quotes Veterans Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vet Quotes Yahoo Image Search Results Veterans Day Quotes Military Quotes Veterans Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/69/58/0b/69580b631c3078af25b3f87a724e048b.jpg" data-lightbox="roadtrip" data-title="This Video Has A Great Message To A Veteran Becuase While Deployed In Combat We Knew We Couldnt Complete A Mission Teaser Post Traumatic Stress Movie Trailers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/69/58/0b/69580b631c3078af25b3f87a724e048b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyTc6GgtApwWBbTmkjvag-JgFzKcnsa3C3kA';" alt="This Video Has A Great Message To A Veteran Becuase While Deployed In Combat We Knew We Couldnt Complete A Mission Teaser Post Traumatic Stress Movie Trailers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Video Has A Great Message To A Veteran Becuase While Deployed In Combat We Knew We Couldnt Complete A Mission Teaser Post Traumatic Stress Movie Trailers</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/departments-of-us-military.html">Departments Of Us Military</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-waco-tx.html">Department Of Veterans Affairs Waco Tx</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-new-mexico.html">Department Of Veterans New Mexico</a></li>
+													<li class="list-group-item"><a href="/dept-military-veterans-affairs.html">Dept Military Veterans Affairs</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-yuma-az.html">Department Of Veterans Affairs Yuma Az</a></li>
+													<li class="list-group-item"><a href="/departments-in-the-us-military.html">Departments In The Us Military</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-reno-nv.html">Department Of Veterans Affairs Reno Nv</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-st-louis-mo.html">Department Of Veterans Affairs St Louis Mo</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-youngstown-ohio.html">Department Of Veterans Affairs Youngstown Ohio</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-quizlet.html">Department Of Veterans Affairs Quizlet</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-vocational-rehabilitation-program.html">Department Of Veterans Affairs Vocational Rehabilitation Program</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-request-for-service.html">Department Of Veterans Affairs Request For Service</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-phone-number.html">Department Of Veterans Phone Number</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-home-loans.html">Department Of Veterans Home Loans</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-hospital.html">Department Of Veterans Hospital</a></li>
+													<li class="list-group-item"><a href="/deployment-medical-requirements-for-dod-civilian-personnel.html">Deployment Medical Requirements For Dod Civilian Personnel</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-reading-pa.html">Department Of Veterans Affairs Reading Pa</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-san-antonio.html">Department Of Veterans Affairs San Antonio</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-vector-logo.html">Department Of Veterans Affairs Vector Logo</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-orlando.html">Department Of Veterans Affairs Orlando</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

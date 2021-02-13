@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Dept Of Veterans Affairs Disability Compensation - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Dept Of Veterans Affairs Disability Compensation",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/28/01/7f/28017ffbb8563c9343551484db0dadf0.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=dept+of+veterans+affairs+disability+compensation",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Dept Of Veterans Affairs Disability Compensation</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">You can receive a monthly payment from the VA Disability Compensation program if you are eligible for. VA disability pay is a tax-free monthly payment from the Department of Veterans Affairs to veterans who obtained an illness or injury during military service. About VA DIC for spouses dependents and parents If youre the surviving spouse child or parent of a service member who died in the line of duty or the survivor of a Veteran who died from a service-related injury or illness you may be able to get a tax-free monetary benefit called VA Dependency and Indemnity Compensation VA DIC. <br>				
+			</p>
+										<a class="badge badge-success" href="/what-happens-when-you-call-a-mental-health-crisis-line.html">what happens when you call a mental health crisis line</a>
+											<a class="badge badge-success" href="/what-is-a-veterans-badge.html">what is a veterans badge</a>
+											<a class="badge badge-dark" href="/what-does-the-office-of-inspector-general-do.html">what does the office of inspector general do</a>
+											<a class="badge badge-danger" href="/what-is-dts-in-the-army.html">what is dts in the army</a>
+											<a class="badge badge-secondary" href="/what-does-the-army-do.html">what does the army do</a>
+											<a class="badge badge-dark" href="/what-does-a-press-officer-do.html">what does a press officer do</a>
+											<a class="badge badge-secondary" href="/what-is-a-federal-agent-for-homeland-security.html">what is a federal agent for homeland security</a>
+											<a class="badge badge-danger" href="/what-is-fy-2021.html">what is fy 2021</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to pay a visit to the right blog.  Our website provides you with hints for seeing the highest quality video and picture content, hunt and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, therefore we recommend this video that you view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/1c/9e/ac1c9e3bc8fbd50f69cc2d4055ee3f15.jpg" data-lightbox="roadtrip" data-title="Individual Unemployability Allows Va To Pay Certain Veterans At The 100 Disability Rate Understanding Individuality Letter Sample">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/1c/9e/ac1c9e3bc8fbd50f69cc2d4055ee3f15.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjm4AOy8MSTHXNJtm6zuFKu7fK9QNZqUq6zw&amp;ec=45771800';" alt="Individual Unemployability Allows Va To Pay Certain Veterans At The 100 Disability Rate Understanding Individuality Letter Sample">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Individual Unemployability Allows Va To Pay Certain Veterans At The 100 Disability Rate Understanding Individuality Letter Sample</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/ee/a0/59/eea059df04a041f99420a243155db408.jpg" data-lightbox="roadtrip" data-title="Va Fully Developed Disability Claims Military Salute Military Retirement Parties Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/ee/a0/59/eea059df04a041f99420a243155db408.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVpR3IriVLGlXPsuQU76GCLPgtzIeJcBoVGw&amp;ec=45771800';" alt="Va Fully Developed Disability Claims Military Salute Military Retirement Parties Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Fully Developed Disability Claims Military Salute Military Retirement Parties Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/75/8a/b3758af305b10c9dd17e57ade7260f60.jpg" data-lightbox="roadtrip" data-title="Dav Links Oklahoma Disabled American Veterans Dav Veteran Affairs Oklahoma Veteran Affairs Military Handbooks American Veterans Veteran Veterans Affairs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/75/8a/b3758af305b10c9dd17e57ade7260f60.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVOCZKtoKD6m5KCKnIqxfuMMRo-BR-PPVvgw&amp;ec=45771800';" alt="Dav Links Oklahoma Disabled American Veterans Dav Veteran Affairs Oklahoma Veteran Affairs Military Handbooks American Veterans Veteran Veterans Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dav Links Oklahoma Disabled American Veterans Dav Veteran Affairs Oklahoma Veteran Affairs Military Handbooks American Veterans Veteran Veterans Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/01/7f/28017ffbb8563c9343551484db0dadf0.png" data-lightbox="roadtrip" data-title="Military Tuition Assistance Va Education Benefits Tuition Assistance Tuition College Costs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/01/7f/28017ffbb8563c9343551484db0dadf0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKaDVTaYO7BjRnpMQeKqJD_kwSTSHSNf_sTQ&amp;ec=45771800';" alt="Military Tuition Assistance Va Education Benefits Tuition Assistance Tuition College Costs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Tuition Assistance Va Education Benefits Tuition Assistance Tuition College Costs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://themilitarywallet.com/wp-content/uploads/2019/12/va-disability-compensation-rates-relaythat-580x387.jpg" data-lightbox="roadtrip" data-title="2021 Va Service Connected Disability Compensation Rate Charts">
+											<img class="card-img v-image ads-img " src="https://themilitarywallet.com/wp-content/uploads/2019/12/va-disability-compensation-rates-relaythat-580x387.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQJmZcvqp9k-iIUZIPFAm8tQ4YtYxJnKKCQA&amp;ec=45771800';" alt="2021 Va Service Connected Disability Compensation Rate Charts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2021 Va Service Connected Disability Compensation Rate Charts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/04/va-disability-pay-dates-mb.jpg" data-lightbox="roadtrip" data-title="2021 Va Disability Pay Dates Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/04/va-disability-pay-dates-mb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUVnUPtnmCFKVB7rFEFXn0JXbfqGRa_9nPhg&amp;ec=45771800';" alt="2021 Va Disability Pay Dates Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2021 Va Disability Pay Dates Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ac/1c/9e/ac1c9e3bc8fbd50f69cc2d4055ee3f15.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUVnUPtnmCFKVB7rFEFXn0JXbfqGRa_9nPhg&amp;ec=45771800';" alt="2021 Va Disability Pay Dates Military Benefits">
+										<div class="card-body">
+						<h3 class="h5"><b>Manage your policy online file claims for benefits and access helpful resources.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Dept of veterans affairs disability compensation</strong>. 
+								
+																	How to file a VA disability claim Find out how to file a claim for disability compensation or increased disability compensation. 
+																	We pay our respects to Elders past and present. 
+																	The service of the veteran must have been terminated through separation or discharge under conditions that were other than dishonorable. 
+																	Compensation rates for Veterans with a 10 to 20 disability rating Effective December 1 2020 Note. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Disability Compensation is a tax free monetary benefit paid to Veterans with disabilities that are the result of a disease or injury incurred or aggravated during active military service. 
+																	We provide free support for veterans and their families including a helpline Veterans Welfare Service and injurybereavement compensation scheme payments. 
+																	10 20 30 etc. 
+																	Review VA disability benefits eligibility criteria to find out if you can get disability compensation for an illness or injury that was caused byor got worse because ofyour active military service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apply for monthly payments for wartime Veterans and survivors with limited or no income who meet certain age and disability requirements. 
+																	File your claim by mail using an Application for Disability Compensation and Related Compensation Benefits VA Form 21-526EZ. 
+																	We recognise and celebrate Aboriginal and Torres Strait Islander people as the First Peoples of Australia and their continuing spiritual and cultural connection to land sea and community. 
+																	Download VA Form 21-526EZ PDF Print the form fill it out and send it to this address. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you have a 10 to 20 disability rating you wont receive a higher rate even if you have a dependent spouse child or parent. 
+																	The Department of Veterans Affairs acknowledges the Traditional Custodians of Country throughout Australia. 
+																	Department of Veterans Affairs VA provides monthly financial payments to qualified service members who became sick or injured during military service or whose condition worsened. 
+																	VA rates disability from 0 to 100 in 10 increments eg. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Download VA Form 21-526EZ PDF Print the form fill it out and send it to this address. 
+																	What Benefits Are Available. 
+																	The SRDP is offset by any MRCA and Safety Rehabilitation and Compensation Defence-related Claims Act 1988 DRCA permanent impairment compensation Veterans Entitlements Act 1986 VEA disability pension andor the employer-funded portion of any Commonwealth superannuation you may be receiving. 
+																	VA disability compensation pay offers a monthly tax-free payment to Veterans who got sick or injured while serving in the military and to Veterans whose service made an existing condition worse. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Compensation rates for Veterans with a 30 to 100 disability rating. 
+																	How periodic compensation payments affect disability pension The VEA requires that the amount of disability pension payable in a fortnight must be reduced or offset to take account of any other periodic eg. 
+																	File your claim by mail using an Application for Disability Compensation and Related Compensation Benefits VA Form 21-526EZ. 
+																	Veterans should mail or fax correspondence pertaining to compensation claims to the below location. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans with existing conditions that were worsened by service may also receive compensation. 
+																	The Department of Veterans Affairs made use of undercover agents and covert surveillance strategies against one veteran with multiple sclerosis in a malingering sting. 
+																	VA makes a determination about the severity of your disability based on the evidence you submit as part of your claim or that VA obtains from your military records. 
+																	Apply for and manage your GI Bill and other education. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Weekly or fortnightly compensation payment that is made in the same period for the same incapacity. 
+																	Learn more about VA Disability Compensation on the federal website here. 
+																	Disability Compensation Service Connection Disability compensation is a monetary benefit paid to veterans who are disabled by injury or disease incurred or aggravated during active military service. 
+																	Explore VA life insurance options for Veterans service members and families. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA disability compensation pay offers a monthly tax-free payment to Veterans who got sick or injured while serving in the military and to Veterans whose service made an existing condition worse. 
+																	Veterans UK is part of the Ministry of. 
+																	The veteran was convicted of. 
+																	Department of Veterans Affairs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The amount of basic benefit paid ranges depending on how disabled you are. 
+																	Mailing Address for Disability Compensation Claims The Department of Veterans Affairs has implemented centralized mail processing CM for compensation claims to reduce incoming paper handling and shipping requirements. 
+																	Department of Veterans Affairs. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/06/va-disability-ratings-and-rules.jpg" data-lightbox="roadtrip" data-title="Va Disability Ratings And Va Rules Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/06/va-disability-ratings-and-rules.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwqNveO64mB9n5XNDecgmuThoxIDiytLcW2w&amp;ec=45771800';" alt="Va Disability Ratings And Va Rules Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Ratings And Va Rules Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/04/va-disability-calculator-mb.jpg" data-lightbox="roadtrip" data-title="2021 Va Disability Calculator Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/04/va-disability-calculator-mb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvdNoK-KEuwhGy1FOfpPBV7r16SshZa37QIQ&amp;ec=45771800';" alt="2021 Va Disability Calculator Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2021 Va Disability Calculator Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/a0/9e/5ea09e675b47efe667744f7a04578393.jpg" data-lightbox="roadtrip" data-title="The Advocacy Project Agent Orange Campaign Agent Orange Vietnam War Orange">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/a0/9e/5ea09e675b47efe667744f7a04578393.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeM-VZuroPGMbUS60_TrCG0qlCGJMa-pO-qA&amp;ec=45771800';" alt="The Advocacy Project Agent Orange Campaign Agent Orange Vietnam War Orange">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Advocacy Project Agent Orange Campaign Agent Orange Vietnam War Orange</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/CCKInfographic-How-VA-Rates-Sleep-Apnea-2.png" data-lightbox="roadtrip" data-title="Sleep Apnea Va Disability Ratings And Benefits Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/CCKInfographic-How-VA-Rates-Sleep-Apnea-2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRm8H5WrrjAdlVBy2PU2iIA0J72YJnei_8fA&amp;ec=45771800';" alt="Sleep Apnea Va Disability Ratings And Benefits Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sleep Apnea Va Disability Ratings And Benefits Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://veteransdisabilityinfo.com/veterans-disability-info_og.jpg" data-lightbox="roadtrip" data-title="Download Va Forms Veterans Disability Info">
+											<img class="card-img v-image ads-img " src="https://veteransdisabilityinfo.com/veterans-disability-info_og.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb5DTcaP9zkae4ndjfvpy0usJZ3IJd_-fCMg&amp;ec=45771800';" alt="Download Va Forms Veterans Disability Info">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download Va Forms Veterans Disability Info</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/75/04/57750453a87c5a47fee29297c70dd73e.png" data-lightbox="roadtrip" data-title="Complementary And Alternative Medicine Yoga Acupuncture And More Vantage Point Alternative Medicine Acupuncture Benefits Acupuncture">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/75/04/57750453a87c5a47fee29297c70dd73e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSojTteuvB4J9Ae14T14cFwYBVn_hQxWNFtyA&amp;ec=45771800';" alt="Complementary And Alternative Medicine Yoga Acupuncture And More Vantage Point Alternative Medicine Acupuncture Benefits Acupuncture">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Complementary And Alternative Medicine Yoga Acupuncture And More Vantage Point Alternative Medicine Acupuncture Benefits Acupuncture</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/9b/6e/249b6ec00081f02d7406b5a936d152e4.png" data-lightbox="roadtrip" data-title="Pin By Veteran Owned On Veterans Events Veteran Owned Business Courage Meaning Of Community">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/9b/6e/249b6ec00081f02d7406b5a936d152e4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmNe3ycLhBMWhoxo5yYMA0k898fME5u8beog&amp;ec=45771800';" alt="Pin By Veteran Owned On Veterans Events Veteran Owned Business Courage Meaning Of Community">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Veteran Owned On Veterans Events Veteran Owned Business Courage Meaning Of Community</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/73/f3/37/73f3370edfc344c26f7bf8cdaca365e5.jpg" data-lightbox="roadtrip" data-title="Map Of Aerial Herbicide Spray Missions In Southern Vietnam Agent Orange Vietnam Veterans Vietnam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/73/f3/37/73f3370edfc344c26f7bf8cdaca365e5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL-ei8Lib9P8ii9-b6uhKriD0ChMpjSMazLQ&amp;ec=45771800';" alt="Map Of Aerial Herbicide Spray Missions In Southern Vietnam Agent Orange Vietnam Veterans Vietnam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Map Of Aerial Herbicide Spray Missions In Southern Vietnam Agent Orange Vietnam Veterans Vietnam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/11/va-pay-chart-infographic-2021-scaled.jpg" data-lightbox="roadtrip" data-title="2021 Va Disability Pay Chart And Rates Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/11/va-pay-chart-infographic-2021-scaled.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK_ynurvbiK5HsRZ956QQNdDhcvEP59sP3ug&amp;ec=45771800';" alt="2021 Va Disability Pay Chart And Rates Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2021 Va Disability Pay Chart And Rates Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f3/9c/36/f39c36e91861d254ba88ae21a0994786.jpg" data-lightbox="roadtrip" data-title="Photos Bikers Assemble For Veterans Day Parade Veterans Day Veterans Day Parades Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f3/9c/36/f39c36e91861d254ba88ae21a0994786.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBAS0Rjsn5L1GTk1oxsfauDEsfBKMdRH4nyw&amp;ec=45771800';" alt="Photos Bikers Assemble For Veterans Day Parade Veterans Day Veterans Day Parades Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photos Bikers Assemble For Veterans Day Parade Veterans Day Veterans Day Parades Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/cf/a2/a5cfa2fd958a4ce2ec027fd9a8f1b3c8.jpg" data-lightbox="roadtrip" data-title="Another Piece Of The Va Scandal Agent Orange Agent Orange Orange Vietnam Vets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/cf/a2/a5cfa2fd958a4ce2ec027fd9a8f1b3c8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkIX158IZKde09ho2GBm3dV3I8HAX7NCjEWQ&amp;ec=45771800';" alt="Another Piece Of The Va Scandal Agent Orange Agent Orange Orange Vietnam Vets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Another Piece Of The Va Scandal Agent Orange Agent Orange Orange Vietnam Vets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/11/6f/4e116fb6f4504b4f4037aa12211a2fff.jpg" data-lightbox="roadtrip" data-title="Special Adaptive Housing Infographic Disability Veteran Affordable House Plans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/11/6f/4e116fb6f4504b4f4037aa12211a2fff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnd8Qdt0gxMcrbmsfs8ARZhVCZYRV3mHvOAg&amp;ec=45771800';" alt="Special Adaptive Housing Infographic Disability Veteran Affordable House Plans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Special Adaptive Housing Infographic Disability Veteran Affordable House Plans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vaclaimsinsider.com/wp-content/uploads/2019/06/8-Step-VA-Claim-Process-scaled.jpg" data-lightbox="roadtrip" data-title="8 Step Va Claim Process Explained Learn What Happens After You File Your Claim The Insider S Guide Va Claims Insider">
+											<img class="card-img v-image ads-img " src="https://vaclaimsinsider.com/wp-content/uploads/2019/06/8-Step-VA-Claim-Process-scaled.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiIZ_snVtyNSF5lCAqAS8gvLzjQPPVpsz1AA&amp;ec=45771800';" alt="8 Step Va Claim Process Explained Learn What Happens After You File Your Claim The Insider S Guide Va Claims Insider">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">8 Step Va Claim Process Explained Learn What Happens After You File Your Claim The Insider S Guide Va Claims Insider</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/spouse-in-army.html">Spouse In Army</a></li>
+													<li class="list-group-item"><a href="/state-military-department-montgomery-alabama.html">State Military Department Montgomery Alabama</a></li>
+													<li class="list-group-item"><a href="/state-department-military-passport.html">State Department Military Passport</a></li>
+													<li class="list-group-item"><a href="/state-department-military-leave.html">State Department Military Leave</a></li>
+													<li class="list-group-item"><a href="/state-department-foreign-military-financing.html">State Department Foreign Military Financing</a></li>
+													<li class="list-group-item"><a href="/texas-military-department-austin-tx-united-states.html">Texas Military Department Austin Tx United States</a></li>
+													<li class="list-group-item"><a href="/swiss-military-service-center-in-bangalore.html">Swiss Military Service Center In Bangalore</a></li>
+													<li class="list-group-item"><a href="/swiss-military-service-center-near-me.html">Swiss Military Service Center Near Me</a></li>
+													<li class="list-group-item"><a href="/state-of-wyoming-military-department.html">State Of Wyoming Military Department</a></li>
+													<li class="list-group-item"><a href="/soldier-support-center-va-office.html">Soldier Support Center Va Office</a></li>
+													<li class="list-group-item"><a href="/texas-department-of-motor-vehicles-military-plates.html">Texas Department Of Motor Vehicles Military Plates</a></li>
+													<li class="list-group-item"><a href="/state-department-chinese-military.html">State Department Chinese Military</a></li>
+													<li class="list-group-item"><a href="/state-of-nevada-military-department.html">State Of Nevada Military Department</a></li>
+													<li class="list-group-item"><a href="/spouse-education-benefits.html">Spouse Education Benefits</a></li>
+													<li class="list-group-item"><a href="/stickman-us-army-stickman-rope-hero-counter-apk.html">Stickman Us Army Stickman Rope Hero Counter Apk</a></li>
+													<li class="list-group-item"><a href="/taiwan-military-budget-2021.html">Taiwan Military Budget 2021</a></li>
+													<li class="list-group-item"><a href="/texas-military-department-capps.html">Texas Military Department Capps</a></li>
+													<li class="list-group-item"><a href="/tennessee-state-department-of-military.html">Tennessee State Department Of Military</a></li>
+													<li class="list-group-item"><a href="/space-force-dod-civilian-jobs.html">Space Force Dod Civilian Jobs</a></li>
+													<li class="list-group-item"><a href="/spending-bill-2020-details.html">Spending Bill 2020 Details</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

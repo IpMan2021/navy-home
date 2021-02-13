@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Directorate Of Military Intelligence United Kingdom - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Directorate Of Military Intelligence United Kingdom",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/8f/c8/e0/8fc8e00693a2e8a61b8ffa26774411c7.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=directorate+of+military+intelligence+united+kingdom",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Directorate Of Military Intelligence United Kingdom</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Over its lifetime the Directorate underwent a number of organisational changes absorbing and shedding sections over time. Directorate of Military Intelligence United Kingdom The Directorate of Military Intelligence DMI was a department of the British War Office. Air Ministry Arthur Shortt. <br>				
+			</p>
+										<a class="badge badge-danger" href="/mycah-kakashi.html">mycah kakashi</a>
+											<a class="badge badge-danger" href="/monica-harvey-air-force.html">monica harvey air force</a>
+											<a class="badge badge-primary" href="/ministry-of-defence-egypt-tenders.html">ministry of defence egypt tenders</a>
+											<a class="badge badge-warning" href="/mycaa-student-portal.html">mycaa student portal</a>
+											<a class="badge badge-secondary" href="/mycah-clay-track.html">mycah clay track</a>
+											<a class="badge badge-danger" href="/ministry-of-defense-armed-forces-logistics-modafl.html">ministry of defense armed forces logistics modafl</a>
+											<a class="badge badge-info" href="/ministry-of-defence-india-budget.html">ministry of defence india budget</a>
+											<a class="badge badge-secondary" href="/my-biz-dod-army.html">my biz dod army</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to pay a visit to the ideal site.  Our website gives you hints for seeing the highest quality video and image content, hunt and locate more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, so we recommend this movie for you to view.  You can also bring about supporting this website by sharing videos and graphics that you like on this blog on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this website.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/68/80/d36880e3771400e7df12342e46193587.png" data-lightbox="roadtrip" data-title="Directorate Of Military Intelligence United Kingdom Wikipedia The Directorate Of Military Intelligence Dmi Was A Departmen Coat Of Arms Heraldry Arms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/68/80/d36880e3771400e7df12342e46193587.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl_YOvxtGPQRZokqOBujyihRzq6t1LpU8aBA';" alt="Directorate Of Military Intelligence United Kingdom Wikipedia The Directorate Of Military Intelligence Dmi Was A Departmen Coat Of Arms Heraldry Arms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Directorate Of Military Intelligence United Kingdom Wikipedia The Directorate Of Military Intelligence Dmi Was A Departmen Coat Of Arms Heraldry Arms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/31/57/e9315733fa9bea151c52709094f447d3.jpg" data-lightbox="roadtrip" data-title="Pin On Infantry Regiments">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/31/57/e9315733fa9bea151c52709094f447d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS7M7wLMsdZApX9SCPYJH4-Uj4PiUsxbRyHw';" alt="Pin On Infantry Regiments">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Infantry Regiments</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/f4/97/fcf497ff981d23764569976f33d58223.png" data-lightbox="roadtrip" data-title="Pin Op Cobra Products">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/f4/97/fcf497ff981d23764569976f33d58223.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFg7HotJvAgM5OK5Pc_JVqoeowdyOg-FYjWg';" alt="Pin Op Cobra Products">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Op Cobra Products</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/ab/1f/4aab1fe13a224aa6a6c00629c7b396d2.jpg" data-lightbox="roadtrip" data-title="Soviet Army Paratrooper Special Badge The Badge Is New Given To Spetsnaz Paratroopers Who Made 10 Battle Jumps Military Insignia Military Memorabilia Badge">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/ab/1f/4aab1fe13a224aa6a6c00629c7b396d2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSscCyV1LmLB0hxiHM9FBvOa_zObNLusYwnXA';" alt="Soviet Army Paratrooper Special Badge The Badge Is New Given To Spetsnaz Paratroopers Who Made 10 Battle Jumps Military Insignia Military Memorabilia Badge">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soviet Army Paratrooper Special Badge The Badge Is New Given To Spetsnaz Paratroopers Who Made 10 Battle Jumps Military Insignia Military Memorabilia Badge</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/24/b4/9824b457c6d3f43f0f8b6b4db186ee02.png" data-lightbox="roadtrip" data-title="248 00 Watch Now Http Alitu5 Worldwells Pw Go Php T 32777902293 1 6 Scale Military Figure Britis Military Figures Military Action Figures British Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/24/b4/9824b457c6d3f43f0f8b6b4db186ee02.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-8bP2TPxMOfcQZNc83JfKfAKAQq1gXjzjSA';" alt="248 00 Watch Now Http Alitu5 Worldwells Pw Go Php T 32777902293 1 6 Scale Military Figure Britis Military Figures Military Action Figures British Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">248 00 Watch Now Http Alitu5 Worldwells Pw Go Php T 32777902293 1 6 Scale Military Figure Britis Military Figures Military Action Figures British Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/d3/18/4fd3186ad29b3cf38ec76fe62fd85035.jpg" data-lightbox="roadtrip" data-title="Challenger 2 Tank Hd Wallpaper Tanks Military Army Tanks Army Vehicles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/d3/18/4fd3186ad29b3cf38ec76fe62fd85035.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSexRW-V6NjTkO-PJfj4ft6v4s3cVfXuu7B-Q';" alt="Challenger 2 Tank Hd Wallpaper Tanks Military Army Tanks Army Vehicles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Challenger 2 Tank Hd Wallpaper Tanks Military Army Tanks Army Vehicles</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/bd/aa/b0/bdaab052e3d9ecabf41e987b184b6b4d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSexRW-V6NjTkO-PJfj4ft6v4s3cVfXuu7B-Q';" alt="Challenger 2 Tank Hd Wallpaper Tanks Military Army Tanks Army Vehicles">
+										<div class="card-body">
+						<h3 class="h5"><b>HQ Company London 31 MI Company London 32 MI Company London 33 MI Company London 34 MI Company London 35 MI Company 4 Military Intelligence Battalion Defense Intelligence Agency DIA is an intelligence agency of the United States federal government specializing in defense and military intelligence A component providing military intelligence to policymakers war - fighters and defense planners.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Directorate of military intelligence united kingdom</strong>. 
+								
+																	Defence Intelligence Part of Strategic Command Defence Intelligence DI empowers decision makers in the Ministry of Defence MOD and UK government by providing intelligence products and. 
+																	The National Security Secretariat provides coordination on security and intelligence issues of strategic importance across government. 
+																	Would you like Wikipedia to always look as. 
+																	DIRECTORATE OF has 2 jobs listed on their profile. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Directorate of Military Intelligence DMI was a department of the British War Office. 
+																	The government department responsible for the command of the Royal Navy first in the Kingdom of England later in the Kingdom of Great Britain and from 1801 to 1964 the United Kingdom and former British Empire. 
+																	Quite the same Wikipedia. 
+																	Faster access than browser. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In 1873 the Intelligence Branch was created within the Quartermaster Generals Department with an initial staff of seven officers. 
+																	Over its lifetime the Directorate underwent a number of organisational changes absorbing and shedding sections over time. 
+																	The Directorate of Military Intelligence DMI was a department of the British War Office. 
+																	To install click the Add extension button. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Originally exercised by a single person the Lord High Admiral 13851628 the Admiralty was from the early 18th century onwards almost invariably put in commission and. 
+																	British intelligence agencies and Directorate of Military Intelligence United Kingdom are connected through MI1 Defence Intelligence GCHQ and more. 
+																	1 Over its lifetime the Directorate underwent a number of organisational changes absorbing and shedding sections over time. 
+																	The source code for the WIKI 2 extension is being checked by specialists of the Mozilla Foundation Google and Apple. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1 Over its lifetime the Directorate underwent a number of organisational changes absorbing and shedding sections over time. 
+																	Download Unionpedia on your Android device. 
+																	The Directorate of Military Intelligence DMI was a department of the Brit ish War Office. 
+																	The Directorate of Military Intelligence DMI was a department of the British War Office. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Directorate of Military Intelligence DMI was a department of the British War Office. 
+																	The first instance of an organisation which would later become the DMI was the Department of Topography Statistics formed by Major Thomas Best Jervis late of the Bombay Engineer Corps in 1854 in the early stages of the Crimean War. 
+																	Over its lifetime the Directorate underwent a number of organisational changes absorbing and shedding sections over time. 
+																	Their intelligence assessments contribute to the conduct of the foreign relations of the United Kingdom maintaining the national security of the United Kingdom military planning and law enforcement in the United Kingdom. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Directorate of Military Intelligence DMI was a department of the British War Office. 
+																	Organised intelligence collection and planning for the government of the United Kingdom and the British Empire was established during the 19th century. 
+																	The Directorate of Military Intelligence DMI was a department of the British War Office. 
+																	The main organisations are the Secret Intelligence Service the Security Service MI5 the Government Communications Headquarters GCHQ and Defence Intelligence DI. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	View DIRECTORATE OF MILITARY INTELLIGENCES profile on LinkedIn the worlds largest professional community. 
+																	The War Office responsible for the administration of the British Army formed the Intelligence Branch in 1873 which became the Directorate of Military Intelligence. 
+																	Directorate of Military Intelligence United Kingdom. 
+																	Over its lifetime the Directorate underwent a number of organisational changes absorbing and shedding sections over time. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You could also do it yourself at any point in time. 
+																	How to transfigure the Wikipedia. 
+																	See the complete profile on LinkedIn and discover DIRECTORATE OFS connections and jobs at similar companies. 
+																	The Directorate of Military Intelligence DMI was a department of the Brit ish War Office. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ed The first instance of an organisation which would later become the DMI was the Department of Topography Statistics formed by Major Thomas Best Jervis late of the Bombay. 
+																	Separately the Joint Intelligence Organisation produces. 
+																	Over its lifetime the Directorate underwent a number of organisational changes absorbing and shedding sections over time. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/aa/99/70aa997383b1315cbb0ff47015b7b39b.jpg" data-lightbox="roadtrip" data-title="Spetsnaz Russian Military Embroidered Patch Airsoft Militair Kogelvrije Vesten">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/aa/99/70aa997383b1315cbb0ff47015b7b39b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLp8UbLjC3PZnEEO8H5fx6ccBNLc_5ECX5A';" alt="Spetsnaz Russian Military Embroidered Patch Airsoft Militair Kogelvrije Vesten">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Spetsnaz Russian Military Embroidered Patch Airsoft Militair Kogelvrije Vesten</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/38/fc/a538fcf320163c16c6bfd18fadb550ca.jpg" data-lightbox="roadtrip" data-title="Ghost Soldier Rustung">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/38/fc/a538fcf320163c16c6bfd18fadb550ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEYzmiOsjaUmbcDmBXlVWCcWdo91_CZjhVFw';" alt="Ghost Soldier Rustung">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ghost Soldier Rustung</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/2c/56/512c5621a8f17c027bb9bc5fc6536fd3.jpg" data-lightbox="roadtrip" data-title="14 95 Original Gemini 4 James Mcdivitt Edward White Nasa Space Mission Patch Ebay Collectibles Nasa Space Missions Project Gemini Patches">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/2c/56/512c5621a8f17c027bb9bc5fc6536fd3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBNvlnune8y4hGZvG-67yBZuqANyeM1KlSw';" alt="14 95 Original Gemini 4 James Mcdivitt Edward White Nasa Space Mission Patch Ebay Collectibles Nasa Space Missions Project Gemini Patches">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">14 95 Original Gemini 4 James Mcdivitt Edward White Nasa Space Mission Patch Ebay Collectibles Nasa Space Missions Project Gemini Patches</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/7e/8a/937e8aced71c18902c4c28dc53cc561c.png" data-lightbox="roadtrip" data-title="Tactical Squad Special Forces Military Special Forces Special Forces Gear">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/7e/8a/937e8aced71c18902c4c28dc53cc561c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbulnGIxxo1NHdbADMAfCW9PBgAaQJRSlQMw';" alt="Tactical Squad Special Forces Military Special Forces Special Forces Gear">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tactical Squad Special Forces Military Special Forces Special Forces Gear</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/bc/49/bfbc49bc1f5d57c0aa42651536728ac7.jpg" data-lightbox="roadtrip" data-title="Israel S Eitan 8x8 Apc To Be Fielded By The End Of 2021 Defense Update Army Vehicles Military Vehicles Armored Fighting Vehicle">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/bc/49/bfbc49bc1f5d57c0aa42651536728ac7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaOtTjxrdeYebxQOUYw5rhM5I2mA5pvNItdQ';" alt="Israel S Eitan 8x8 Apc To Be Fielded By The End Of 2021 Defense Update Army Vehicles Military Vehicles Armored Fighting Vehicle">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Israel S Eitan 8x8 Apc To Be Fielded By The End Of 2021 Defense Update Army Vehicles Military Vehicles Armored Fighting Vehicle</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/9c/c1/0d9cc1c1685f77fc8953e97d90455a3f.jpg" data-lightbox="roadtrip" data-title="Special Forces Called To Law Firm As Armed Man Takes Two People Hostage Special Forces Military Special Forces Military Guns">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/9c/c1/0d9cc1c1685f77fc8953e97d90455a3f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxAQuaKFCSDBkCIkKvGLngjUB0Q1NQvO46vw';" alt="Special Forces Called To Law Firm As Armed Man Takes Two People Hostage Special Forces Military Special Forces Military Guns">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Special Forces Called To Law Firm As Armed Man Takes Two People Hostage Special Forces Military Special Forces Military Guns</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/7a/89/7b7a892f371bda3b85f23deda3676acc.jpg" data-lightbox="roadtrip" data-title="Pin On Tactical Gear">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/7a/89/7b7a892f371bda3b85f23deda3676acc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDgmFO8PuoIG5rUxGAjdtwouLfHdn4pqMYlw';" alt="Pin On Tactical Gear">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Tactical Gear</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/9f/da/0e9fda70642edf65d455ca252d0118c1.png" data-lightbox="roadtrip" data-title="Pin Em Arma">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/9f/da/0e9fda70642edf65d455ca252d0118c1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS21tP7x3GMzYhJtqgND05vWnjG9DRwx2Ghlg';" alt="Pin Em Arma">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Em Arma</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/aa/b0/bdaab052e3d9ecabf41e987b184b6b4d.png" data-lightbox="roadtrip" data-title="Royal Arms Of Henry Viii King Of England Coat Of Arms Heraldry Arms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/aa/b0/bdaab052e3d9ecabf41e987b184b6b4d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo0SnBnRPY79XTqz34CA6s8I36tj4rDIDMOg';" alt="Royal Arms Of Henry Viii King Of England Coat Of Arms Heraldry Arms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Royal Arms Of Henry Viii King Of England Coat Of Arms Heraldry Arms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/da/1d/48/da1d4818e33962722b902dfe28b82ac5.jpg" data-lightbox="roadtrip" data-title="Military Laptop With Antenna Google Search Laptop Toshiba Computer Equipment Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/da/1d/48/da1d4818e33962722b902dfe28b82ac5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6R5LALVbYum1NlgC7aMRYjG0MmRMRK9XuDg';" alt="Military Laptop With Antenna Google Search Laptop Toshiba Computer Equipment Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Laptop With Antenna Google Search Laptop Toshiba Computer Equipment Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/bf/b1/eabfb13a271dcd979cd6f2aeb6959f97.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/bf/b1/eabfb13a271dcd979cd6f2aeb6959f97.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcRP2LqZD16S_mwgxSdISSXwpcEFMY3Hdoxg';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/ba/ea/cbbaeac88ccbbade639eca922caad014.jpg" data-lightbox="roadtrip" data-title="Pin On All Things Firearms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/ba/ea/cbbaeac88ccbbade639eca922caad014.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXh4SBUWSiGnFFPDxcAAsmJD2eZS8oI-CEQA';" alt="Pin On All Things Firearms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On All Things Firearms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/c8/e0/8fc8e00693a2e8a61b8ffa26774411c7.jpg" data-lightbox="roadtrip" data-title="Dsei 2015 Photo Report I Military Technology Tanks Military Weapon Systems">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/c8/e0/8fc8e00693a2e8a61b8ffa26774411c7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ6U5ZcO-4IfBQjvL5RJgf0OY0K471m3GbLQ';" alt="Dsei 2015 Photo Report I Military Technology Tanks Military Weapon Systems">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dsei 2015 Photo Report I Military Technology Tanks Military Weapon Systems</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-green-dodge-challenger-for-sale.html">Army Green Dodge Challenger For Sale</a></li>
+													<li class="list-group-item"><a href="/army-hotline-number.html">Army Hotline Number</a></li>
+													<li class="list-group-item"><a href="/army-green-dodge-durango.html">Army Green Dodge Durango</a></li>
+													<li class="list-group-item"><a href="/army-eod-dogs.html">Army Eod Dogs</a></li>
+													<li class="list-group-item"><a href="/army-hat-among-us.html">Army Hat Among Us</a></li>
+													<li class="list-group-item"><a href="/army-helpline-opening-times.html">Army Helpline Opening Times</a></li>
+													<li class="list-group-item"><a href="/army-hr-credentialing.html">Army Hr Credentialing</a></li>
+													<li class="list-group-item"><a href="/army-dogs-with-goggles.html">Army Dogs With Goggles</a></li>
+													<li class="list-group-item"><a href="/army-hair-regulations-for-black-females.html">Army Hair Regulations For Black Females</a></li>
+													<li class="list-group-item"><a href="/army-hr-company.html">Army Hr Company</a></li>
+													<li class="list-group-item"><a href="/army-foia-program.html">Army Foia Program</a></li>
+													<li class="list-group-item"><a href="/army-equal-opportunity-hotline.html">Army Equal Opportunity Hotline</a></li>
+													<li class="list-group-item"><a href="/army-green-dodge-demon.html">Army Green Dodge Demon</a></li>
+													<li class="list-group-item"><a href="/army-dot-com.html">Army Dot Com</a></li>
+													<li class="list-group-item"><a href="/army-enlisted-pay-chart-2012.html">Army Enlisted Pay Chart 2012</a></li>
+													<li class="list-group-item"><a href="/army-hair-regulations-change.html">Army Hair Regulations Change</a></li>
+													<li class="list-group-item"><a href="/army-fire-department-regulation.html">Army Fire Department Regulation</a></li>
+													<li class="list-group-item"><a href="/army-dots-dodiis.html">Army Dots Dodiis</a></li>
+													<li class="list-group-item"><a href="/army-expeditionary-civilian-workforce-request-for-deployment.html">Army Expeditionary Civilian Workforce Request For Deployment</a></li>
+													<li class="list-group-item"><a href="/army-haircut-high-and-tight.html">Army Haircut High And Tight</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

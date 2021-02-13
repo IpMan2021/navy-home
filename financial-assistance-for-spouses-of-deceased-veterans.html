@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Financial Assistance For Spouses Of Deceased Veterans - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Financial Assistance For Spouses Of Deceased Veterans",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/736x/13/bc/74/13bc7403d2dd503dfa0642d05043af2e.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=financial+assistance+for+spouses+of+deceased+veterans",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Financial Assistance For Spouses Of Deceased Veterans</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">USA Cares provides financial and advocacy assistance to post 911 active duty US military service personnel veterans and their families. A VA pension is a monetary monthly benefit for qualified veterans and their spouses. Aside from the governmental benefits provided to spouses each state provides a different set of benefits for veterans and their spouses. <br>				
+			</p>
+										<a class="badge badge-warning" href="/military-helmet.html">military helmet</a>
+											<a class="badge badge-secondary" href="/military-haircut-man.html">military haircut man</a>
+											<a class="badge badge-secondary" href="/military-hard-quotes.html">military hard quotes</a>
+											<a class="badge badge-warning" href="/military-haircut-do-it-yourself.html">military haircut do it yourself</a>
+											<a class="badge badge-success" href="/military-hd500.html">military hd500</a>
+											<a class="badge badge-primary" href="/military-house-rentals.html">military house rentals</a>
+											<a class="badge badge-danger" href="/military-hour-to-hours.html">military hour to hours</a>
+											<a class="badge badge-light" href="/military-haircut-mens.html">military haircut mens</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you have come to pay a visit to the right blog.  Our website provides you with hints for viewing the maximum quality video and image content, search and locate more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, therefore we recommend this movie that you see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/13/bc/74/13bc7403d2dd503dfa0642d05043af2e.jpg" data-lightbox="roadtrip" data-title="Financial Help For Widows Of Veterans Of Foreign Wars In 2020 Supplemental Security Income Financial Help Financial">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/13/bc/74/13bc7403d2dd503dfa0642d05043af2e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSERQBxgpX-BXy43y4Mw-D7FCE8ftP_tslbDA';" alt="Financial Help For Widows Of Veterans Of Foreign Wars In 2020 Supplemental Security Income Financial Help Financial">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Financial Help For Widows Of Veterans Of Foreign Wars In 2020 Supplemental Security Income Financial Help Financial</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/f2/ba/f9f2badddcef933d22ae535d19c8d29f.png" data-lightbox="roadtrip" data-title="10 Tips To Help With Caregiver Life Veteran Disabled Veterans 10 Things">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/f2/ba/f9f2badddcef933d22ae535d19c8d29f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjDK77KuW2GbsOOwAe29eGy02BzZ-tEeTMGQ';" alt="10 Tips To Help With Caregiver Life Veteran Disabled Veterans 10 Things">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Tips To Help With Caregiver Life Veteran Disabled Veterans 10 Things</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/09/11/f309111180f7250bae18084ae07f6e24.jpg" data-lightbox="roadtrip" data-title="Attention Veterans Access The Benefits You Ve Earned Through Military Service Elder Care Senior Seniors Va Benefits Military Benefits Veterans Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/09/11/f309111180f7250bae18084ae07f6e24.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp9-9hkQYlrHLEsdLHCgNAah73L_MWPp6v8g';" alt="Attention Veterans Access The Benefits You Ve Earned Through Military Service Elder Care Senior Seniors Va Benefits Military Benefits Veterans Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Attention Veterans Access The Benefits You Ve Earned Through Military Service Elder Care Senior Seniors Va Benefits Military Benefits Veterans Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5d/74/cd/5d74cdeef83df5efeb5307492ec9ea35.jpg" data-lightbox="roadtrip" data-title="Pin On Quality Hospice And Palliative Care">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5d/74/cd/5d74cdeef83df5efeb5307492ec9ea35.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD0h5nQl9ignTM9rtMMpR60yfM0Ay8zBm0OQ';" alt="Pin On Quality Hospice And Palliative Care">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Quality Hospice And Palliative Care</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/92/82/ec92822486fd01ec42e3367618a20d76.png" data-lightbox="roadtrip" data-title="Military Service Impacts The Entire Family And As The Saying Goes You Don T Just Marry The Servicemember You Marry Widows Benefits Veteran Funeral Planning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/92/82/ec92822486fd01ec42e3367618a20d76.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaPU_B4XosXyDTosS9hK3Zup3iJM-_d-Ro6A';" alt="Military Service Impacts The Entire Family And As The Saying Goes You Don T Just Marry The Servicemember You Marry Widows Benefits Veteran Funeral Planning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Service Impacts The Entire Family And As The Saying Goes You Don T Just Marry The Servicemember You Marry Widows Benefits Veteran Funeral Planning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d2/42/05/d242051a330f21204a7a2204e484d8ba.jpg" data-lightbox="roadtrip" data-title="Are There Benefits For Me If My Husband Is A 70 Disabled Veteran In 2020 Veteran Disability Payments Department Of Veterans Affairs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d2/42/05/d242051a330f21204a7a2204e484d8ba.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_IC5QI4Jv2G7wkH__KdMGyc_xmY06Kl4Wxg';" alt="Are There Benefits For Me If My Husband Is A 70 Disabled Veteran In 2020 Veteran Disability Payments Department Of Veterans Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are There Benefits For Me If My Husband Is A 70 Disabled Veteran In 2020 Veteran Disability Payments Department Of Veterans Affairs</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/d2/42/05/d242051a330f21204a7a2204e484d8ba.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_IC5QI4Jv2G7wkH__KdMGyc_xmY06Kl4Wxg';" alt="Are There Benefits For Me If My Husband Is A 70 Disabled Veteran In 2020 Veteran Disability Payments Department Of Veterans Affairs">
+										<div class="card-body">
+						<h3 class="h5"><b>It is a reimbursement for long-term care.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Financial assistance for spouses of deceased veterans</strong>. 
+								
+																	If a surviving spouse is already receiving some other type of VA compensation like Dependency and Indemnity Compensation DIC the VA will pay the higher of the two benefit amounts. 
+																	The Office of Survivors Assistance was established by Public Law 110-389 Title II Section 222 in October 2008 to serve as a resource regarding all benefits and services furnished by the Department to Survivors and Dependents of deceased Veterans and members of the Armed Forces. 
+																	A base amount of 37720. 
+																	The program provides lifetime benefits ranging from about 1280 a month to 2940 a month to eligible surviving spouses depending on the deceased veterans pay grade. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The benefit is called Aid and Attendance. 
+																	Section 295015 Florida Statutes State Board of Education Rule 6A-20019 The Scholarships for Children and Spouses of Deceased or Disabled Veterans CSDDV provides an award to dependent children or unremarried spouses of qualified Florida veterans. 
+																	For example Wyoming provides free tuition and fees to state colleges for the spouse of a deceased veteran whose death was connected to service in the United States military. 
+																	As youll see the answer is yes From education and monetary assistance to health insurance and help covering the costs of assisted living some veterans spouses are eligible for assistance through the VA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Scholarships for Children and Spouses of Deceased or Disabled Veterans CSDDV provides an award to dependent children or unremarried spouses of qualified Florida veterans. 
+																	For veterans and the surviving spouses of veterans who need in-home care or are in a nursing home help may be available. 
+																	Yes the spouse and dependents of an eligible veteran can receive a free burial in a VA cemetery even if they die before the veteran. 
+																	Additional payments are available for dependent children. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VA also provides free counseling to spouses and children of deceased and disabled veterans. 
+																	If the assets of the deceased and the financial resources of the estate are insufficient to cover funeral and burial costs a total or partial coverage of the cost is possible. 
+																	The maximum benefit amount for a qualified veterans widow is 1228 per month tax-free. 
+																	Students who attend an eligible public postsecondary institution will receive funds to cover their tuition and registration fees. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Veterans Administration VA has an underused pension benefit called Aid and Attendance that provides money to those who need assistance performing everyday tasks. 
+																	The family house and vehicle. 
+																	Financial Assistance for Widows of Veterans When military personnel die as a result of their service their spouses are entitled to a death gratuity which currently is 100000. 
+																	If the Veteran is buried in a VA national cemetery some or all of the cost of transporting the deceased may be reimbursed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Welcome to the Office of Survivors Assistance. 
+																	Are military funerals free. 
+																	It is free from federal and state income taxes for any service member who dies while on active duty or while performing authorized travel to or from active duty. 
+																	VA Pension Benefits for Widows of Wartime Veterans Widows of wartime veterans or surviving spouses of deceased wartime veterans may be eligible for a benefit from the Department of Veterans Affairs VA known as Survivors Pension with Aid and Attendance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	700 per dependent child. 
+																	It will include perpetual care their names and birth dates are inscribed on the veterans headstone. 
+																	In the case of a Veteran with a spouse or dependent children the combined assets of the couple are considered excluding. 
+																	Submit a completed error- free Florida Financial Aid Application. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We assist all branches of service all ranks and components and treat all with privacy and dignity in appreciation for their service and sacrifice. 
+																	Some parents of deceased veterans also may get benefits if their income is low. 
+																	Unfortunately many women are unaware that they are eligible for this benefit. 
+																	Survivors and Dependents Educational Assistance Program DEA Of particular interest is the Survivors and Dependents Educational Assistance Program DEA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It provides up to 45 months of education and training opportunities to eligible dependents of certain veterans. 
+																	VA benefits for spouses dependents survivors and family caregivers As the spouse or dependent child of a Veteran or service member you may qualify for certain benefits like health care life insurance or money to help pay for school or training. 
+																	Spouses of veterans who had Servicemembers Group Life Insurance or Veterans Group Life Insurance are eligible for free financial counseling through the Beneficiary Financial Counseling Services. 
+																	Veterans widows may be eligible for VA benefits that can help pay for assisted living. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Available to dependent children or unremarried spouses of qualified Florida veterans who died as a result of service-connected injuries diseases or disabilities sustained while on active duty or who have been certified by the Florida Department of Veterans Affairs as having service-connected 100 permanent and total disabilities. 
+																	To search for VA facilities by location please visit this link. 
+																	VA will pay up to 2000 toward burial expenses for deaths on or after September 11 2001 or up to 1500 for deaths prior to September 11 2001. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/93/0b/02/930b029f4c63bb522c692408bd9052ff.jpg" data-lightbox="roadtrip" data-title="Va Chapter 35 Benefits In 2020 Financial Help Money Offshore Bank">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/93/0b/02/930b029f4c63bb522c692408bd9052ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGF0ExcJQL56YrLUSEIO8voYtcmo1eBzEFTA';" alt="Va Chapter 35 Benefits In 2020 Financial Help Money Offshore Bank">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Chapter 35 Benefits In 2020 Financial Help Money Offshore Bank</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/97/5d/32975d599982aa164409341fb41c9d47.png" data-lightbox="roadtrip" data-title="Va Claims Disabled Veterans Benefits Compensation Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/97/5d/32975d599982aa164409341fb41c9d47.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThAyf4PQxBoXyZ-8tqB-3EFtUefiPXhU1tIg';" alt="Va Claims Disabled Veterans Benefits Compensation Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Claims Disabled Veterans Benefits Compensation Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/a8/ef/19a8ef0e9f9c9564d76d6f8e57fe10df.jpg" data-lightbox="roadtrip" data-title="God Bless Our Military Patriotic Pictures God Bless America Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/a8/ef/19a8ef0e9f9c9564d76d6f8e57fe10df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2lk8miarpmBInIzIEt5elx-h1Lb9BnzOamg';" alt="God Bless Our Military Patriotic Pictures God Bless America Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">God Bless Our Military Patriotic Pictures God Bless America Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/51/e9/fc51e9f85f648365c72cc4f380fbb9cb.jpg" data-lightbox="roadtrip" data-title="Pin On Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/51/e9/fc51e9f85f648365c72cc4f380fbb9cb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwRYCy254eCwj842hLGY21nYtbMJNBMOSkCQ';" alt="Pin On Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/e8/40/a5e840c223f62a67946e9963eaa87373.png" data-lightbox="roadtrip" data-title="The Guide To Military And Va Education Benefits To Pay For College Financial Aid For College Grants For College Scholarships For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/e8/40/a5e840c223f62a67946e9963eaa87373.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdINLWaGEcRo1qrV_MT1svRfYBuBgVr6fhDQ';" alt="The Guide To Military And Va Education Benefits To Pay For College Financial Aid For College Grants For College Scholarships For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Guide To Military And Va Education Benefits To Pay For College Financial Aid For College Grants For College Scholarships For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/85/9b/9c/859b9ccccfad5edec61caf72195a8bc1.jpg" data-lightbox="roadtrip" data-title="Little Known Va Benefit In 2020 Caregiver Disabled Veterans Benefits Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/85/9b/9c/859b9ccccfad5edec61caf72195a8bc1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz7hqvnIC0eyvCtKuqtpXOEffqxy6JhzL2Pg';" alt="Little Known Va Benefit In 2020 Caregiver Disabled Veterans Benefits Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Little Known Va Benefit In 2020 Caregiver Disabled Veterans Benefits Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/06/8e/da068ea03c6b4e8c415ade3726d8e079.jpg" data-lightbox="roadtrip" data-title="Are You Eligible For The Military S Unemployment Program Military Benefits Marine Wife Life Help For Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/06/8e/da068ea03c6b4e8c415ade3726d8e079.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqd6lYEnggrc0Ixh6YY3T0UqM1GOi0YGNIaA';" alt="Are You Eligible For The Military S Unemployment Program Military Benefits Marine Wife Life Help For Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are You Eligible For The Military S Unemployment Program Military Benefits Marine Wife Life Help For Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/ee/bb/81eebb7b9b438bd3d4f0b0621e57e926.png" data-lightbox="roadtrip" data-title="How Veterans With Breathing Problems Get Disability Benefits Disability Benefit Disabled Veterans Benefits Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/ee/bb/81eebb7b9b438bd3d4f0b0621e57e926.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcr3_GaG-kerJuYie0OIPEmWD7tcSrhIhRoQ';" alt="How Veterans With Breathing Problems Get Disability Benefits Disability Benefit Disabled Veterans Benefits Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Veterans With Breathing Problems Get Disability Benefits Disability Benefit Disabled Veterans Benefits Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/c5/cd/bec5cd0776979f1143766b5da3df0cd2.png" data-lightbox="roadtrip" data-title="What You Should Know About Disability Survivor Benefits Social Security Disability Social Security Benefits How To Apply">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/c5/cd/bec5cd0776979f1143766b5da3df0cd2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwoVPlfTp2ibtU3dsjaUK3YbEZAb8anKnJZA';" alt="What You Should Know About Disability Survivor Benefits Social Security Disability Social Security Benefits How To Apply">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What You Should Know About Disability Survivor Benefits Social Security Disability Social Security Benefits How To Apply</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/3e/6b/be3e6b0512f1ef41ed2622426fd3245b.png" data-lightbox="roadtrip" data-title="Pin On Alzheimer S Dementia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/3e/6b/be3e6b0512f1ef41ed2622426fd3245b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjuyrgZED_jpI44n_neiGXjuJMl8CeCOt3Wg';" alt="Pin On Alzheimer S Dementia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Alzheimer S Dementia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/12/9e/4d/129e4dd7ece37b26958a7bbd93781c14.jpg" data-lightbox="roadtrip" data-title="Pin On Personal Money Management">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/12/9e/4d/129e4dd7ece37b26958a7bbd93781c14.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROhDeU8iNbBDtBfKfdrmavJatzYbROEV7aiw';" alt="Pin On Personal Money Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Personal Money Management</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ab/f0/38/abf0384f8d59fdf53437e019a4725ec3.jpg" data-lightbox="roadtrip" data-title="Navy Widow Benefits In 2020 Widow Veterans Administration Group Life Insurance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ab/f0/38/abf0384f8d59fdf53437e019a4725ec3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs1CumvjtctsGZ0vPaEQhp34jBIVWS5t6DHg';" alt="Navy Widow Benefits In 2020 Widow Veterans Administration Group Life Insurance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Widow Benefits In 2020 Widow Veterans Administration Group Life Insurance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/c1/94/b8c19492e5dd5ca0a2f2529ebea84f04.png" data-lightbox="roadtrip" data-title="Military Retirement Military Retirement Tuition Assistance Moving">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/c1/94/b8c19492e5dd5ca0a2f2529ebea84f04.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZes6WBD5OJI2SUAvuk22-dk52t9TPhY557g';" alt="Military Retirement Military Retirement Tuition Assistance Moving">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Retirement Military Retirement Tuition Assistance Moving</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/dept-of-the-army-human-resources-command.html">Dept Of The Army Human Resources Command</a></li>
+													<li class="list-group-item"><a href="/dept-of-the-army-security-guard.html">Dept Of The Army Security Guard</a></li>
+													<li class="list-group-item"><a href="/dept-of-va-tms.html">Dept Of Va Tms</a></li>
+													<li class="list-group-item"><a href="/dept-of-the-army-logo.html">Dept Of The Army Logo</a></li>
+													<li class="list-group-item"><a href="/dept-of-va-housing.html">Dept Of Va Housing</a></li>
+													<li class="list-group-item"><a href="/dept-of-military-affairs-wisconsin.html">Dept Of Military Affairs Wisconsin</a></li>
+													<li class="list-group-item"><a href="/dept-of-vagov.html">Dept Of Vagov</a></li>
+													<li class="list-group-item"><a href="/dept-of-va-provider-portal.html">Dept Of Va Provider Portal</a></li>
+													<li class="list-group-item"><a href="/dept-of-va-website.html">Dept Of Va Website</a></li>
+													<li class="list-group-item"><a href="/dept-of-va-community-care.html">Dept Of Va Community Care</a></li>
+													<li class="list-group-item"><a href="/dept-of-military-affairs-madison-wi.html">Dept Of Military Affairs Madison Wi</a></li>
+													<li class="list-group-item"><a href="/dept-of-military-affairs-india.html">Dept Of Military Affairs India</a></li>
+													<li class="list-group-item"><a href="/dept-of-va-holidays.html">Dept Of Va Holidays</a></li>
+													<li class="list-group-item"><a href="/dept-of-the-army-civilian-police.html">Dept Of The Army Civilian Police</a></li>
+													<li class="list-group-item"><a href="/dept-of-va-education-benefits.html">Dept Of Va Education Benefits</a></li>
+													<li class="list-group-item"><a href="/dept-of-va-fee-schedule.html">Dept Of Va Fee Schedule</a></li>
+													<li class="list-group-item"><a href="/dept-of-defense-va.html">Dept Of Defense Va</a></li>
+													<li class="list-group-item"><a href="/dept-of-nursing-va.html">Dept Of Nursing Va</a></li>
+													<li class="list-group-item"><a href="/dept-of-the-army-civilian-awards.html">Dept Of The Army Civilian Awards</a></li>
+													<li class="list-group-item"><a href="/dept-of-va-claims-intake-center.html">Dept Of Va Claims Intake Center</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

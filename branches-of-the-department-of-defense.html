@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Branches Of The Department Of Defense - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Branches Of The Department Of Defense",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/56/c5/24/56c524fd80f9ecc3cfd282163776359f.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=branches+of+the+department+of+defense",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Branches Of The Department Of Defense</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">113 to lead the Department and all of its component. The secretary of defense SecDef is the leader and chief executive officer of the United States Department of Defense the executive department of the US. Explore trending topics experience DOD through interactive pieces engage by testing your wit with quizzes and observe DOD in action via photos and videos. <br>				
+			</p>
+										<a class="badge badge-warning" href="/dod-civilian-jobs-afghanistan.html">dod civilian jobs afghanistan</a>
+											<a class="badge badge-danger" href="/dod-civilian-employee-travel.html">dod civilian employee travel</a>
+											<a class="badge badge-danger" href="/dod-civilian-flight-discounts.html">dod civilian flight discounts</a>
+											<a class="badge badge-light" href="/dod-civilian-housing-allowance-japan.html">dod civilian housing allowance japan</a>
+											<a class="badge badge-dark" href="/dod-civilian-employment-verification.html">dod civilian employment verification</a>
+											<a class="badge badge-light" href="/dod-civilian-housing-in-hawaii.html">dod civilian housing in hawaii</a>
+											<a class="badge badge-info" href="/dod-civilian-masters-program.html">dod civilian masters program</a>
+											<a class="badge badge-dark" href="/dod-civilian-jobs-near-me.html">dod civilian jobs near me</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you've come to visit the right blog.  Our website provides you with suggestions for viewing the maximum quality video and picture content, hunt and find more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, particularly Youtube, so we recommend this movie for you to view.  It is also possible to contribute to supporting this site by sharing videos and images that you like on this blog on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/b9/03/a6b903fe6a0a31a74c84604a4ac6e0f2.jpg" data-lightbox="roadtrip" data-title="Department Of Defense The Branches Of The Service We All Bleed Red Defense The Unit Branch">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/b9/03/a6b903fe6a0a31a74c84604a4ac6e0f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlnhqRzQVtQSZNwUyejptJzidrMHVq2lY6wQ';" alt="Department Of Defense The Branches Of The Service We All Bleed Red Defense The Unit Branch">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Department Of Defense The Branches Of The Service We All Bleed Red Defense The Unit Branch</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/16/48/0216483b1be28b018727aa3ec7378056.jpg" data-lightbox="roadtrip" data-title="Thank You Support Our Troops Military Branches Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/16/48/0216483b1be28b018727aa3ec7378056.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdNtw7V3OunersNrzNu-_Zckk5JDNAV6I_wg';" alt="Thank You Support Our Troops Military Branches Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thank You Support Our Troops Military Branches Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/7d/ff/6b7dff542304878df5bab6751b5839c9.gif" data-lightbox="roadtrip" data-title="The Department Of Defense Dod Voluntary Education Program Offers Eligible Service Members Opportunities T Continuing Education Branch Of Service Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/7d/ff/6b7dff542304878df5bab6751b5839c9.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYUfc3h3FqFChI7SigPmi1arGPdwqRcENd8g';" alt="The Department Of Defense Dod Voluntary Education Program Offers Eligible Service Members Opportunities T Continuing Education Branch Of Service Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Department Of Defense Dod Voluntary Education Program Offers Eligible Service Members Opportunities T Continuing Education Branch Of Service Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/80/8e/f9/808ef9126e8ba1b74286bf4d69a74672.jpg" data-lightbox="roadtrip" data-title="Gk Knowledge In English Full Form Of All Type Of Defense Govt Departments In India And Worldwide Gk Knowledge Gernal Knowledge General Knowledge Facts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/80/8e/f9/808ef9126e8ba1b74286bf4d69a74672.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsU2cvnfDMwoxoVXyLJhjeg9-2JBVV74Z4Xg';" alt="Gk Knowledge In English Full Form Of All Type Of Defense Govt Departments In India And Worldwide Gk Knowledge Gernal Knowledge General Knowledge Facts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gk Knowledge In English Full Form Of All Type Of Defense Govt Departments In India And Worldwide Gk Knowledge Gernal Knowledge General Knowledge Facts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/bc/7c/7bbc7cb68f743fab1e3cc4bb5fabab58.jpg" data-lightbox="roadtrip" data-title="Department Of Defense United States Of America Challenge Coins Military Poster Military Coins">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/bc/7c/7bbc7cb68f743fab1e3cc4bb5fabab58.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_T7olVmY9Cx4vExLZS8MrhdyLgYWHnRoOlA';" alt="Department Of Defense United States Of America Challenge Coins Military Poster Military Coins">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Department Of Defense United States Of America Challenge Coins Military Poster Military Coins</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/76/c6/4076c6a754f1bac6217dc267535de885.png" data-lightbox="roadtrip" data-title="The Department Of Defense Dod Arose From A Restructuring Of The Us Military In 1949 A Response To United States Armed Forces Us Military Bases Armed Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/76/c6/4076c6a754f1bac6217dc267535de885.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLlVrQM7paOEFDTL7m_VJf3ymbO5lSGwbdmA';" alt="The Department Of Defense Dod Arose From A Restructuring Of The Us Military In 1949 A Response To United States Armed Forces Us Military Bases Armed Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Department Of Defense Dod Arose From A Restructuring Of The Us Military In 1949 A Response To United States Armed Forces Us Military Bases Armed Forces</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/02/16/48/0216483b1be28b018727aa3ec7378056.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLlVrQM7paOEFDTL7m_VJf3ymbO5lSGwbdmA';" alt="The Department Of Defense Dod Arose From A Restructuring Of The Us Military In 1949 A Response To United States Armed Forces Us Military Bases Armed Forces">
+										<div class="card-body">
+						<h3 class="h5"><b>Davis for appointment to the rank of brigadier general.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Branches of the department of defense</strong>. 
+								
+																	Abraham Lincoln once said A house divided against itself cannot stand Perhaps the branches of the armed forces were never divided against each other but in the beginning they lacked a common leader and a common goal making it hard to sufficiently protect our country. 
+																	Official website for US. 
+																	During a declared state of war however the President or Congress may direct that the Coast Guard operate as part of the Department of the Navy. 
+																	There were about 224000 combined personnel overseas in over 170 countries. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Defense Forms. 
+																	Head to the redesigned Defensegov where you can learn all about the Defense Department. 
+																	The virus interference phenomenon goes against the basic assumption of the test-negative vaccine effectiveness study that vaccination does not change the risk of. 
+																	Receiving influenza vaccination may increase the risk of other respiratory viruses a phenomenon known as virus interference. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	United States Department of Defense Police or DoD Police are the uniformed civilian police officers of the United States Department of Defense various branches of the United States Armed Forces such as the Department of the Navy or specific DoD activities Defense Logistics Agency PoliceThe DoD Police are responsible for law enforcement and security services on DoD owned and leased. 
+																	It also employed about 761000 civilians. 
+																	We will protect our people territories values and interests at home and overseas through strong armed forces. 
+																	The secretary of defenses position of command and authority over the military is second only to that of the president of the United States who is the commander-in-chiefThis position corresponds to what is generally known. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Army Marine Corps Navy Air Force Space Force and Coast Guard are the armed forces of the United States. 
+																	Find some of the most requested links below or see a. 
+																	The Army National Guard and the Air National Guard are reserve. 
+																	The President of the United States is according to the Constitution the Commander-in-Chief of the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	202786 US Marine Corps. 
+																	Popular Services from US. 
+																	This is a list of Agencies under the United States Department of Defense DoD which was formerly and shortly known as the National Military Establishment. 
+																	Test-negative study designs are often utilized to calculate influenza vaccine effectiveness. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	White House Related Agency. 
+																	We work for a secure and prosperous United Kingdom with global reach and influence. 
+																	Department of Defense is the nations largest employerIt had about 136 million active duty personnel and 801000 reservists as of June 2020. 
+																	Holds all the USMA divisions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The United States Department of Defense DoD USDOD or DOD is an executive branch department of the federal government charged with coordinating and supervising all agencies and functions of the government directly related to national security and the United States Armed ForcesThe DOD is the largest employer in the world with over 13 million active-duty service members soldiers marines. 
+																	Department of Defense Branch is a group on Roblox owned by alldayboss with 6 members. 
+																	Skip to main content Press Enter. 
+																	Armed Forces and Chief Executive of the Federal Government. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Cunningham is currently serving as the chief Cyberspace Operations Branch Joint Staff Pentagon Washington DC. 
+																	The Secretary of Defense is the Principal Assistant to the President in all matters relating to the Department of Defense and is vested with statutory authority 10 USC. 
+																	The Department was established in 1947 and is currently divided into three major Departmentsthe Department of the Army Navy and Air Force and has a military staff of 1418542 553044 US Army. 
+																	Department of Defense Protecting America Since 1775. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Its main responsibilities are to control the Armed Forces of the United States. 
+																	Fleet Forces Command Defense Acquisition University. 
+																	Official website for US. 
+																	Title 14 states that the Coast Guard is part of the armed forces at all times making it the only branch of the military outside the Department of Defense. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	DEPARTMENT OF DEFENSE Army Marine Corps Navy and Air Force - an interactive look at how each service branch is organized. 
+																	333408 US Air. 
+																	The Department of Defense has many components aside from the service branches. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/a7/b5/25a7b57e8c1d416c97ad7e5f4331f07c.png" data-lightbox="roadtrip" data-title="Org Chart Best Practices For Effective Organizational Charts Org Chart Organizational Chart Organization Chart">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/a7/b5/25a7b57e8c1d416c97ad7e5f4331f07c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb0SYA05MnXKGiFiFYhzeJmve1WmFAozapMA';" alt="Org Chart Best Practices For Effective Organizational Charts Org Chart Organizational Chart Organization Chart">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Org Chart Best Practices For Effective Organizational Charts Org Chart Organizational Chart Organization Chart</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/63/2e/45632e25f91054e9c44f406a05385b3a.png" data-lightbox="roadtrip" data-title="U S Department Of Defense Military Dictionary Letter Group S Military Terms Military Alphabet List">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/63/2e/45632e25f91054e9c44f406a05385b3a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiijVxENeLxizMKa7lRMOjUFTDX19-9hjvBQ';" alt="U S Department Of Defense Military Dictionary Letter Group S Military Terms Military Alphabet List">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Department Of Defense Military Dictionary Letter Group S Military Terms Military Alphabet List</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/47/4f/7e474f25ed9fb108204444204e6ff91c.png" data-lightbox="roadtrip" data-title="Veteransdayvocabularybranchposters Veterans Day Activities Military Poster Thematic Units">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/47/4f/7e474f25ed9fb108204444204e6ff91c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxIs8LTQm1lcdCo2GXgGy1cKdeComzgwr-_w';" alt="Veteransdayvocabularybranchposters Veterans Day Activities Military Poster Thematic Units">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteransdayvocabularybranchposters Veterans Day Activities Military Poster Thematic Units</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/8f/21/288f21821bc9b1db273fde382555c7fd.jpg" data-lightbox="roadtrip" data-title="Pin On Instagram Favorites">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/8f/21/288f21821bc9b1db273fde382555c7fd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXZqN20sJ4bRQJCjrco_p39GmZxVPD5Fs6ig';" alt="Pin On Instagram Favorites">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Instagram Favorites</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/d9/b5/9fd9b54fb8716eec0b50729686388990.png" data-lightbox="roadtrip" data-title="United States Air Force United States Air Force Air Force Us Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/d9/b5/9fd9b54fb8716eec0b50729686388990.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSstQTKwpe04XBuq8cvaAJQC5XbvVhW9hNWEw';" alt="United States Air Force United States Air Force Air Force Us Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United States Air Force United States Air Force Air Force Us Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/c5/24/56c524fd80f9ecc3cfd282163776359f.jpg" data-lightbox="roadtrip" data-title="The Top 10 Career Tips For Veterans Military Resources Military Transition Military Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/c5/24/56c524fd80f9ecc3cfd282163776359f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEJDLgKcUyQsaS9M_AF7NmqZeUlI4SkNUznQ';" alt="The Top 10 Career Tips For Veterans Military Resources Military Transition Military Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Top 10 Career Tips For Veterans Military Resources Military Transition Military Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/21/06/0f2106ffb85a4517ff1456f2dc57d235.jpg" data-lightbox="roadtrip" data-title="Pin By Curtis Tanner On Department Of Defense Branches Challenge Coins Military Poster Military Coins Navy Chief">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/21/06/0f2106ffb85a4517ff1456f2dc57d235.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXJQQ9VHIeykI716Auqc-6xeeze_2N0Oz5wA';" alt="Pin By Curtis Tanner On Department Of Defense Branches Challenge Coins Military Poster Military Coins Navy Chief">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Curtis Tanner On Department Of Defense Branches Challenge Coins Military Poster Military Coins Navy Chief</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/fb/9a/a6fb9acbaea8a827c61f6e04275d09e7.png" data-lightbox="roadtrip" data-title="Happy 71st Anniversary To The Dod In 1949 The Military Branches Were Unified Under The Department O In 2020 Happy 71st Anniversary 71st Anniversary Military Branches">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/fb/9a/a6fb9acbaea8a827c61f6e04275d09e7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQRckjp20oj8xXwMjvmYgp0uTI-3x-THnzUw';" alt="Happy 71st Anniversary To The Dod In 1949 The Military Branches Were Unified Under The Department O In 2020 Happy 71st Anniversary 71st Anniversary Military Branches">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Happy 71st Anniversary To The Dod In 1949 The Military Branches Were Unified Under The Department O In 2020 Happy 71st Anniversary 71st Anniversary Military Branches</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/52/f4/b352f4da75ca1a0a1e557f66804593ff.jpg" data-lightbox="roadtrip" data-title="Pin By Curtis Tanner On Department Of Defense Branches Challenge Coins Military Poster Challenge Coins Military Coins">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/52/f4/b352f4da75ca1a0a1e557f66804593ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDh3J8XeLlCcS2oJWjchgn2awGQIXVoExJ9g';" alt="Pin By Curtis Tanner On Department Of Defense Branches Challenge Coins Military Poster Challenge Coins Military Coins">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Curtis Tanner On Department Of Defense Branches Challenge Coins Military Poster Challenge Coins Military Coins</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/2a/a6/0a2aa644167afa756b568ad97bc0b457.png" data-lightbox="roadtrip" data-title="Pin On Signs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/2a/a6/0a2aa644167afa756b568ad97bc0b457.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOwmflMtsDAgB8NF8QicOLR60MdYxE16E1TA';" alt="Pin On Signs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Signs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/7c/d8/6b7cd8380c24e812e278953ecdcdc3d9.png" data-lightbox="roadtrip" data-title="The United States Army Usa Is The Main Branch Of The United States Armed Forces Responsible For Land Based Military Op Army Strong 4th Infantry Division Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/7c/d8/6b7cd8380c24e812e278953ecdcdc3d9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfGR8sTYtBaWXeSWy--ak0JW1Zvt3bQ4ctFA';" alt="The United States Army Usa Is The Main Branch Of The United States Armed Forces Responsible For Land Based Military Op Army Strong 4th Infantry Division Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The United States Army Usa Is The Main Branch Of The United States Armed Forces Responsible For Land Based Military Op Army Strong 4th Infantry Division Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5b/73/b0/5b73b0e67372d088984f2b17b4ac1e73.jpg" data-lightbox="roadtrip" data-title="Pin On Alice S Favorites">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5b/73/b0/5b73b0e67372d088984f2b17b4ac1e73.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfuRX9FrDc41aZwM9Pts9zxhivqGu9ZvLiYA';" alt="Pin On Alice S Favorites">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Alice S Favorites</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/57/45/715745dcf2a72476306a1c0ee541d505.jpg" data-lightbox="roadtrip" data-title="Pentagon Defence Challenge Coin Pentagon Challenge Coins Army Challenge Coins">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/57/45/715745dcf2a72476306a1c0ee541d505.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjZlxMGSFMqX6hjtcHII8oP6UNuAvKfqf0tQ';" alt="Pentagon Defence Challenge Coin Pentagon Challenge Coins Army Challenge Coins">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pentagon Defence Challenge Coin Pentagon Challenge Coins Army Challenge Coins</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/us-army-soldier-of-the-future.html">Us Army Soldier Of The Future</a></li>
+													<li class="list-group-item"><a href="/us-army-soldier-found-dead.html">Us Army Soldier Found Dead</a></li>
+													<li class="list-group-item"><a href="/us-army-soldier-charged.html">Us Army Soldier Charged</a></li>
+													<li class="list-group-item"><a href="/us-army-soldier-workout.html">Us Army Soldier Workout</a></li>
+													<li class="list-group-item"><a href="/us-army-soldiers-chorus.html">Us Army Soldiers Chorus</a></li>
+													<li class="list-group-item"><a href="/us-army-soldier-hair.html">Us Army Soldier Hair</a></li>
+													<li class="list-group-item"><a href="/us-army-tanks-current.html">Us Army Tanks Current</a></li>
+													<li class="list-group-item"><a href="/us-army-soldier-search.html">Us Army Soldier Search</a></li>
+													<li class="list-group-item"><a href="/us-army-soldier-uniform.html">Us Army Soldier Uniform</a></li>
+													<li class="list-group-item"><a href="/us-army-soldier-plate-carrier-system.html">Us Army Soldier Plate Carrier System</a></li>
+													<li class="list-group-item"><a href="/us-army-soldiers-photos.html">Us Army Soldiers Photos</a></li>
+													<li class="list-group-item"><a href="/us-army-soldier-creed.html">Us Army Soldier Creed</a></li>
+													<li class="list-group-item"><a href="/us-army-soldiers-prayer.html">Us Army Soldiers Prayer</a></li>
+													<li class="list-group-item"><a href="/us-army-soldier-vine.html">Us Army Soldier Vine</a></li>
+													<li class="list-group-item"><a href="/us-army-soldiers-dancing.html">Us Army Soldiers Dancing</a></li>
+													<li class="list-group-item"><a href="/us-army-soldier-obituaries.html">Us Army Soldier Obituaries</a></li>
+													<li class="list-group-item"><a href="/us-army-south-hq.html">Us Army South Hq</a></li>
+													<li class="list-group-item"><a href="/us-army-stickman-rope-hero-mafia-crime.html">Us Army Stickman Rope Hero Mafia Crime</a></li>
+													<li class="list-group-item"><a href="/us-army-soldier-minecraft-skin.html">Us Army Soldier Minecraft Skin</a></li>
+													<li class="list-group-item"><a href="/us-army-soldier-duties.html">Us Army Soldier Duties</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

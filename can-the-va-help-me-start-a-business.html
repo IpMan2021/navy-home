@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Can The Va Help Me Start A Business - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Can The Va Help Me Start A Business",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/736x/79/6b/04/796b04ebdd6e3d04bce24916486b8ac8.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=can+the+va+help+me+start+a+business",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Can The Va Help Me Start A Business</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">A small business loan provides access to capital for veterans who are looking to start small businesses obtain financing for ongoing business concerns and obtain financing for expansion. Lets say you own a construction company and the VA office in your city needs repairs made. Hopefully you can see that hiring a VA is not as risky as you initially thought however if you are still unsure your VA will be happy to talk through any concerns you may have. <br>				
+			</p>
+										<a class="badge badge-success" href="/us-army-soldier-borne-sensor-program.html">us army soldier borne sensor program</a>
+											<a class="badge badge-success" href="/us-army-recruiting-office-miami-kendall-kendall-fl-33183.html">us army recruiting office miami kendall kendall fl 33183</a>
+											<a class="badge badge-dark" href="/us-army-recruiting-office-madison-heights.html">us army recruiting office madison heights</a>
+											<a class="badge badge-light" href="/us-army-recruiting-command-headquarters.html">us army recruiting command headquarters</a>
+											<a class="badge badge-dark" href="/us-army-recruiting-office-westchester-square.html">us army recruiting office westchester square</a>
+											<a class="badge badge-secondary" href="/us-army-public-affairs-officer.html">us army public affairs officer</a>
+											<a class="badge badge-danger" href="/us-army-recruiting-email-address.html">us army recruiting email address</a>
+											<a class="badge badge-primary" href="/us-army-personnel-weapons.html">us army personnel weapons</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you have come to pay a visit to the right site.  Our site provides you with suggestions for viewing the highest quality video and picture content, hunt and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, therefore we recommend this movie that you see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/63/95/b263953cc0b3946404c83a25a3838859.jpg" data-lightbox="roadtrip" data-title="Want To Start A Va Business But Stuck On What To Offer This System Helped Me A Ton Espe Online Business Opportunities Work From Home Moms Home Based Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/63/95/b263953cc0b3946404c83a25a3838859.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYqOPUUohyouZw3_o53PMZuYlqjcFhPTC7qQ';" alt="Want To Start A Va Business But Stuck On What To Offer This System Helped Me A Ton Espe Online Business Opportunities Work From Home Moms Home Based Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Want To Start A Va Business But Stuck On What To Offer This System Helped Me A Ton Espe Online Business Opportunities Work From Home Moms Home Based Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/95/db/53/95db53430ebab659ae6e2a52ce931731.jpg" data-lightbox="roadtrip" data-title="How To Run Before You Walk In Your Va Business Elevate Virtual Virtual Assistant Virtual Assistant Business Virtual">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/95/db/53/95db53430ebab659ae6e2a52ce931731.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFC2Y_0C8BMrc68XNF3FFV3aZeCvN-nmFN7w';" alt="How To Run Before You Walk In Your Va Business Elevate Virtual Virtual Assistant Virtual Assistant Business Virtual">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Run Before You Walk In Your Va Business Elevate Virtual Virtual Assistant Virtual Assistant Business Virtual</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/35/4b/55/354b55f98eaab96d601d35063330d2e3.jpg" data-lightbox="roadtrip" data-title="The Mindset You Need As An Entrepreneur Va Marketing Coach Online Business Things To Know Small Business Advice">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/35/4b/55/354b55f98eaab96d601d35063330d2e3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa1bMGSJZWcX7MPiC1qlMqSuAsq0uAngvf-A';" alt="The Mindset You Need As An Entrepreneur Va Marketing Coach Online Business Things To Know Small Business Advice">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Mindset You Need As An Entrepreneur Va Marketing Coach Online Business Things To Know Small Business Advice</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/79/08/01/790801fb77807de9b2cdf51cb0ce5e04.jpg" data-lightbox="roadtrip" data-title="The Blake Collective How To Start A Va Business And Work From Home Virtual Assistant Business Virtual Assistant Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/79/08/01/790801fb77807de9b2cdf51cb0ce5e04.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLvYKL-SpHdWCwIkeU5XWXY9AgqTsZ0wn8nQ';" alt="The Blake Collective How To Start A Va Business And Work From Home Virtual Assistant Business Virtual Assistant Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Blake Collective How To Start A Va Business And Work From Home Virtual Assistant Business Virtual Assistant Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/2b/15/7c2b15381528810da6394855ca75ebca.png" data-lightbox="roadtrip" data-title="What Does It Mean To Join The Va School Let Me Tell You I Know What It Feels Like When You Re Just Virtual Assistant Business Virtual Assistant Job Board">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/2b/15/7c2b15381528810da6394855ca75ebca.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPkcrEWTpoTbqZgpxs2pCZp4P-ADJtCR2sOg';" alt="What Does It Mean To Join The Va School Let Me Tell You I Know What It Feels Like When You Re Just Virtual Assistant Business Virtual Assistant Job Board">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Does It Mean To Join The Va School Let Me Tell You I Know What It Feels Like When You Re Just Virtual Assistant Business Virtual Assistant Job Board</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9e/36/84/9e36845b9bd2517f0adfe77f3eb21cde.jpg" data-lightbox="roadtrip" data-title="The 5 Steps To Become A Virtual Assistant Virtual Assistant Virtual Assistant Business How To Become">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9e/36/84/9e36845b9bd2517f0adfe77f3eb21cde.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPG1GcR94gaOxJARPww3jcLp3FnTJCET2oWw';" alt="The 5 Steps To Become A Virtual Assistant Virtual Assistant Virtual Assistant Business How To Become">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 5 Steps To Become A Virtual Assistant Virtual Assistant Virtual Assistant Business How To Become</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/79/6b/04/796b04ebdd6e3d04bce24916486b8ac8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPG1GcR94gaOxJARPww3jcLp3FnTJCET2oWw';" alt="The 5 Steps To Become A Virtual Assistant Virtual Assistant Virtual Assistant Business How To Become">
+										<div class="card-body">
+						<h3 class="h5"><b>Their business skills enable them to provide first-hand knowledge and experience and support to your company.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Can the va help me start a business</strong>. 
+								
+																	Its fast and affordable to start especially if you already have the skills equipment and software to do the work. 
+																	Navigate through relevant topics to access information on starting a business. 
+																	Another way the VA attempts to help vets is by hiring veterans who own small businesses through the Office of Small Disadvantaged Business Utilization OSDBU. 
+																	Identify financing resources to support the start-up development or growth of your small business. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Admin research and general management VA services are the easiest to break into but you can offer whatever skills youre already best at. 
+																	While you should have skills and experience in the services you provide you dont need any specific licenses or education to get started. 
+																	WASHINGTON As the nation marks Veterans Day 2012 the US. 
+																	Take a look at the different points mentioned in this section to help you determine if a veteran small business loan is right for you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your VA business can focus on the skills you already possess. 
+																	A competent VA is so much more than someone who just assists you in the day to day running of a business. 
+																	Outsourcing a VA can really help your business to grow not to mention relieve some of the daily stresses and pressure that running a business cause. 
+																	Offers a number of links that can teach veterans and civilians alike how to for example start an importing andor exporting business start a nonprofit business taxes and incentives loans and funding contracting and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans who qualify for this loan also will qualify for some great perks like zero upfront fees making it easier to get started. 
+																	There are so many different types of VAs and no VA offers the exact same services. 
+																	As a Veteran-Owned Small Business VOSB you may qualify for advantages when bidding for government contracts compared to non-vet-owned. 
+																	There is a great entrepreneurial spirit among our Armed Forces veterans and the Government is keen to help them develop and grow their business expertise. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Small Business Administration continues to build on its successful programs for Americas military veterans helping tens of thousands. 
+																	In this section of our page were going to take a look at why a veteran small business loan might be able to help your business. 
+																	They have the perfect attributes with. 
+																	Explore dedicated subjects with valuable information and resources to help you grow. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If youre a service member or Veteran with a service-connected disability and employment barrier who has the strong desire skills and drive to run a successful business you may be interested in the Self-Employment track. 
+																	Find out how to successfully expand your small business. 
+																	USAgovs Small Business site. 
+																	The Small Business Administration SBA has a special loan program for Veterans called Patriot Express We recommend that owners work with the Small Business Development Center to ensure they have the documents necessary to apply for the program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA Small and Veteran Business Programs implement the requirements to aid counsel assist and protect the interests of small and Veteran business concerns. 
+																	They are skilled organisers focused on bringing the best out in your business. 
+																	Help for Military Veteran and Minority-Owned Businesses Government programs and services can help you start or grow your veteran or minority-owned business. 
+																	This program is run by the Office of Small Disadvantaged Business Utilization OSDBU. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get tips for launching your business winning government contracts and more. 
+																	A veteran small business loan can help you bypass certain restrictions and attain the capital you need to start your business. 
+																	SBAs Express Loan program extends loans up to 350000 to small business owners and while the program isnt specifically for veterans the SBA does extend a special offer for those who served in our military. 
+																	If you have the right mix of skills and a can-do attitude you can build a successful VA business thats 100 yours run the way you want working the hours you choose. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get support for your Veteran-Owned Small Business If you have a Veteran-Owned Small Business you may qualify for advantages when bidding on government contractsalong with access to other resources and supportthrough the Vets First Verification Program. 
+																	There are many benefits to starting a virtual assistant business including. 
+																	Get support There are many programs out there specifically made for helping veterans make a move into the business world from providing education on how to start a company from the ground up to helping secure financing. 
+																	They often have lower fees preferential interest rates and better terms in general than loans made to non-veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find out if Veteran Readiness and Employment VRE can help you start your own business. 
+																	No VA does not provide loans for businesses. 
+																	Our great Value complete VA business programmes. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/94/62/02/9462025c0805bb930a2a43cdbff21448.jpg" data-lightbox="roadtrip" data-title="If You Re Struggling To Make Pinterest Work For You Hiring A Pinterest Va Will Help You Get More Pinterest For Business Business Tutorial Pinterest Marketing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/94/62/02/9462025c0805bb930a2a43cdbff21448.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvBOt6lsabXpcYfOrlLrRQRI3k1viL3X03Yg';" alt="If You Re Struggling To Make Pinterest Work For You Hiring A Pinterest Va Will Help You Get More Pinterest For Business Business Tutorial Pinterest Marketing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Re Struggling To Make Pinterest Work For You Hiring A Pinterest Va Will Help You Get More Pinterest For Business Business Tutorial Pinterest Marketing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ba/c8/7a/bac87a538973e1fc0ef2299c5bf7c743.jpg" data-lightbox="roadtrip" data-title="Va Success Story Amber Went From Employee To Entrepreneur Success Stories Virtual Assistant Online Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ba/c8/7a/bac87a538973e1fc0ef2299c5bf7c743.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwOhCHVf2nRyNYm1nliOzHhMntsJOUq8f6Lw';" alt="Va Success Story Amber Went From Employee To Entrepreneur Success Stories Virtual Assistant Online Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Success Story Amber Went From Employee To Entrepreneur Success Stories Virtual Assistant Online Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5d/f3/ce/5df3cecb24bc5cc4c91cc8e5972765b9.jpg" data-lightbox="roadtrip" data-title="How To Start A Virtual Assistant Business In 2020 Kelly Kemp Virtual Assistance Virtual Assistant Business Virtual Assistant Virtual Assistant Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5d/f3/ce/5df3cecb24bc5cc4c91cc8e5972765b9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4HuTi8NsscU5NJ0xhOVN7wZ7BUQx1vk5diA';" alt="How To Start A Virtual Assistant Business In 2020 Kelly Kemp Virtual Assistance Virtual Assistant Business Virtual Assistant Virtual Assistant Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Start A Virtual Assistant Business In 2020 Kelly Kemp Virtual Assistance Virtual Assistant Business Virtual Assistant Virtual Assistant Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/0f/f0/d20ff031c55e7ac122f38415e625d7e5.png" data-lightbox="roadtrip" data-title="Ways A Virtual Assistant Can Keep You Organized In 2020 Virtual Assistant Virtual Assistant Services Virtual Assistant Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/0f/f0/d20ff031c55e7ac122f38415e625d7e5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYG09id9j7aw4qQjlxImoWACc_MKBkB5NOOA';" alt="Ways A Virtual Assistant Can Keep You Organized In 2020 Virtual Assistant Virtual Assistant Services Virtual Assistant Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ways A Virtual Assistant Can Keep You Organized In 2020 Virtual Assistant Virtual Assistant Services Virtual Assistant Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/20/d3/5120d344c671b060e55a75fd4cd552e5.png" data-lightbox="roadtrip" data-title="Discover How To Launch Grow Your Pinterest Va Business Today In 2020 Creating A Business Plan Virtual Assistant Business Freelancing Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/20/d3/5120d344c671b060e55a75fd4cd552e5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThbw-GoSkI5IkNkKoAR8xwDqN24SifkLisNw';" alt="Discover How To Launch Grow Your Pinterest Va Business Today In 2020 Creating A Business Plan Virtual Assistant Business Freelancing Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Discover How To Launch Grow Your Pinterest Va Business Today In 2020 Creating A Business Plan Virtual Assistant Business Freelancing Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/9d/f8/ce9df8dd282cfcb4372a7541a164f401.png" data-lightbox="roadtrip" data-title="Pin On Elevate Virtual Blog Posts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/9d/f8/ce9df8dd282cfcb4372a7541a164f401.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8P4IkQ_vAh7GXzvYR45oQpM4G7EcgYLbMbQ';" alt="Pin On Elevate Virtual Blog Posts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Elevate Virtual Blog Posts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/13/f1/f513f1911db42712fec6a04e8dcae69b.png" data-lightbox="roadtrip" data-title="Mini Portfolio Get Your Va Biz Started Today Virtual Assistant Business Virtual Assistant Templates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/13/f1/f513f1911db42712fec6a04e8dcae69b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7IJPiI9Y4HKH6-21Eku15XG5xXSghmg56qQ';" alt="Mini Portfolio Get Your Va Biz Started Today Virtual Assistant Business Virtual Assistant Templates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mini Portfolio Get Your Va Biz Started Today Virtual Assistant Business Virtual Assistant Templates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/34/fd/e134fd7ae7bf3178524c1277c2da9184.jpg" data-lightbox="roadtrip" data-title="Why I Decided To Start A Virtual Assistant Business Virtual Assistant Virtual Assistant Business Virtual Assistant Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/34/fd/e134fd7ae7bf3178524c1277c2da9184.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-CIRRo71i7AlJTLrPh8srfxq5ec2i1FRiSg';" alt="Why I Decided To Start A Virtual Assistant Business Virtual Assistant Virtual Assistant Business Virtual Assistant Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why I Decided To Start A Virtual Assistant Business Virtual Assistant Virtual Assistant Business Virtual Assistant Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7c/94/b3/7c94b31f3b36162a000972cf6d3ad76d.jpg" data-lightbox="roadtrip" data-title="If You Want To Land More High Quality Clients In Your Virtual Assistant Business You Ll Need Stron Virtual Assistant Business Virtual Assistant Blogging Guide">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7c/94/b3/7c94b31f3b36162a000972cf6d3ad76d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQixgQcBos37c-TFXkxJV71IlJSrxlY55qWsg';" alt="If You Want To Land More High Quality Clients In Your Virtual Assistant Business You Ll Need Stron Virtual Assistant Business Virtual Assistant Blogging Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Want To Land More High Quality Clients In Your Virtual Assistant Business You Ll Need Stron Virtual Assistant Business Virtual Assistant Blogging Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a9/98/3b/a9983bfd6ecae9aae2d4f075169603c5.jpg" data-lightbox="roadtrip" data-title="Hire Me Help For New Bloggers Virtual Assistant Pinterest For Business Earn Money Blogging">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a9/98/3b/a9983bfd6ecae9aae2d4f075169603c5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKP6M2cIuF-J7U05QA1NAmZf5rJOAQIi1o8Q';" alt="Hire Me Help For New Bloggers Virtual Assistant Pinterest For Business Earn Money Blogging">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hire Me Help For New Bloggers Virtual Assistant Pinterest For Business Earn Money Blogging</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/a5/9d/79a59ddd61a7db2175575ce2d0b3ea4c.jpg" data-lightbox="roadtrip" data-title="3 Step Method For Identifying Who To Hire Growing Your Team Small Business Consulting Small Business Success Virtual Reality Technology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/a5/9d/79a59ddd61a7db2175575ce2d0b3ea4c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHGQmPHnKjEVNB2DhxLcUgte9g8qFJ3pza-Q';" alt="3 Step Method For Identifying Who To Hire Growing Your Team Small Business Consulting Small Business Success Virtual Reality Technology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">3 Step Method For Identifying Who To Hire Growing Your Team Small Business Consulting Small Business Success Virtual Reality Technology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/b3/78/a6b37816f7aa500375662567e1949b97.png" data-lightbox="roadtrip" data-title="Pinterest Manager Mastery Pinterest Va Course In 2020 Virtual Assistant Business Pinterest For Business Virtual Assistant">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/b3/78/a6b37816f7aa500375662567e1949b97.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT88CPrIiBhgA1quYaVinnQ_8kJJdFTBcZSlA';" alt="Pinterest Manager Mastery Pinterest Va Course In 2020 Virtual Assistant Business Pinterest For Business Virtual Assistant">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pinterest Manager Mastery Pinterest Va Course In 2020 Virtual Assistant Business Pinterest For Business Virtual Assistant</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/79/6b/04/796b04ebdd6e3d04bce24916486b8ac8.jpg" data-lightbox="roadtrip" data-title="How To Boost Your Business By Hiring A Virtual Assistant Karrie Marie Consulting Virtual Assistant Hiring Business Entrepreneur">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/79/6b/04/796b04ebdd6e3d04bce24916486b8ac8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYOTSc28CayxoRnGO93K8KaHgNREJpIlTgbA';" alt="How To Boost Your Business By Hiring A Virtual Assistant Karrie Marie Consulting Virtual Assistant Hiring Business Entrepreneur">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Boost Your Business By Hiring A Virtual Assistant Karrie Marie Consulting Virtual Assistant Hiring Business Entrepreneur</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/canadian-armed-forces-base-meaford-ontario.html">Canadian Armed Forces Base Meaford Ontario</a></li>
+													<li class="list-group-item"><a href="/can-i-get-military-discount-online-at-home-depot.html">Can I Get Military Discount Online At Home Depot</a></li>
+													<li class="list-group-item"><a href="/can-you-foia-military-records.html">Can You Foia Military Records</a></li>
+													<li class="list-group-item"><a href="/can-dod-contractors-use-tsa-precheck.html">Can Dod Contractors Use Tsa Precheck</a></li>
+													<li class="list-group-item"><a href="/can-military-police-officers-carry-off-duty.html">Can Military Police Officers Carry Off Duty</a></li>
+													<li class="list-group-item"><a href="/canadian-armed-forces-living-on-base.html">Canadian Armed Forces Living On Base</a></li>
+													<li class="list-group-item"><a href="/can-dod-civilians-use-usaa.html">Can Dod Civilians Use Usaa</a></li>
+													<li class="list-group-item"><a href="/canadian-armed-forces-operating-room-technician.html">Canadian Armed Forces Operating Room Technician</a></li>
+													<li class="list-group-item"><a href="/canadian-armed-forces-operation-reassurance.html">Canadian Armed Forces Operation Reassurance</a></li>
+													<li class="list-group-item"><a href="/canadian-armed-forces-current-operations.html">Canadian Armed Forces Current Operations</a></li>
+													<li class="list-group-item"><a href="/can-military-police-be-deployed.html">Can Military Police Be Deployed</a></li>
+													<li class="list-group-item"><a href="/canadian-armed-forces-operation-impact.html">Canadian Armed Forces Operation Impact</a></li>
+													<li class="list-group-item"><a href="/canadian-armed-forces-base-quebec.html">Canadian Armed Forces Base Quebec</a></li>
+													<li class="list-group-item"><a href="/canadian-armed-forces-bases-in-quebec.html">Canadian Armed Forces Bases In Quebec</a></li>
+													<li class="list-group-item"><a href="/can-independent-students-get-pell-grants.html">Can Independent Students Get Pell Grants</a></li>
+													<li class="list-group-item"><a href="/can-veterans-get-help-with-childcare.html">Can Veterans Get Help With Childcare</a></li>
+													<li class="list-group-item"><a href="/canadian-armed-forces-intelligence-officer-salary.html">Canadian Armed Forces Intelligence Officer Salary</a></li>
+													<li class="list-group-item"><a href="/can-you-look-up-military-records.html">Can You Look Up Military Records</a></li>
+													<li class="list-group-item"><a href="/canadian-armed-forces-base-edmonton.html">Canadian Armed Forces Base Edmonton</a></li>
+													<li class="list-group-item"><a href="/canadian-armed-forces-base-halifax.html">Canadian Armed Forces Base Halifax</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

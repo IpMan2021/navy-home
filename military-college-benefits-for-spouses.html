@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military College Benefits For Spouses - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military College Benefits For Spouses",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/736x/ae/10/8a/ae108af86edea736cb3984f0294570f7.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+college+benefits+for+spouses",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military College Benefits For Spouses</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Spouses may begin to use benefits immediately and can use benefits while their military spouse is on active duty or after separation. The Minnesota Department of Veterans Affairs will also pay 750 per fiscal year for fees bookssupplies and room and board. Military spouses are eligible for several benefits that offer aid in pursuing a postsecondary degree and advancing career goals. <br>				
+			</p>
+										<a class="badge badge-danger" href="/dod-diversity-statistics.html">dod diversity statistics</a>
+											<a class="badge badge-warning" href="/dod-medical-disability-calculator.html">dod medical disability calculator</a>
+											<a class="badge badge-light" href="/dod-healthcare-facilities.html">dod healthcare facilities</a>
+											<a class="badge badge-info" href="/dod-civilian-working-overseas.html">dod civilian working overseas</a>
+											<a class="badge badge-danger" href="/dod-civilians-patriot-express.html">dod civilians patriot express</a>
+											<a class="badge badge-dark" href="/dod-civilians-killed-in-afghanistan.html">dod civilians killed in afghanistan</a>
+											<a class="badge badge-danger" href="/dod-civilians-in-germany.html">dod civilians in germany</a>
+											<a class="badge badge-warning" href="/dod-gs-pay-raise-2021.html">dod gs pay raise 2021</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to pay a visit to the ideal blog.  Our site provides you with suggestions for viewing the maximum quality video and picture content, search and locate more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, especially Youtube, therefore we recommend this movie that you see.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/88/75/01/887501acde5bf4144b7f06cb22e0acea.jpg" data-lightbox="roadtrip" data-title="Online Colleges That Accept Mycaa Benefits Mycaa Mycaa Programs Army Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/88/75/01/887501acde5bf4144b7f06cb22e0acea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTW6g7sr74WR1t0tHTb4LlDMVu1ydmwdu1zw';" alt="Online Colleges That Accept Mycaa Benefits Mycaa Mycaa Programs Army Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Online Colleges That Accept Mycaa Benefits Mycaa Mycaa Programs Army Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/63/d6/3a63d6ac422aa31e744cdf189902022b.jpg" data-lightbox="roadtrip" data-title="Infographic Education Funding Military Spouse Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/63/d6/3a63d6ac422aa31e744cdf189902022b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTybL48muAXi_QLIINSYBeBLynxNo-4AKO1gQ';" alt="Infographic Education Funding Military Spouse Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infographic Education Funding Military Spouse Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/db/35/e4db35e7bff8b010048838ea0a5d33c8.jpg" data-lightbox="roadtrip" data-title="If You Are A Military Spouse Who Wants To Get A Better Education To Advance In Your Career Or Start A Ne Military Spouse Career Scholarships Career Advancement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/db/35/e4db35e7bff8b010048838ea0a5d33c8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXPrhKzsmi-eTa43IRvpH8Sob01tS-5PJA2A';" alt="If You Are A Military Spouse Who Wants To Get A Better Education To Advance In Your Career Or Start A Ne Military Spouse Career Scholarships Career Advancement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Are A Military Spouse Who Wants To Get A Better Education To Advance In Your Career Or Start A Ne Military Spouse Career Scholarships Career Advancement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/d5/f4/51d5f456e64307f3df61b0f3b72be6ad.jpg" data-lightbox="roadtrip" data-title="Pin On Tips For Those Who Ve Served Veterans The College Process">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/d5/f4/51d5f456e64307f3df61b0f3b72be6ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHfntCY5z11Dp5hvj2IMTGSRf6MqSootwRYA';" alt="Pin On Tips For Those Who Ve Served Veterans The College Process">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Tips For Those Who Ve Served Veterans The College Process</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/ab/34/0dab3413c3cadba268d9f23dd39d4a1d.png" data-lightbox="roadtrip" data-title="Our Guide To Military Scholarships For Veterans Dependents And Spouses The Scholarship System Military Scholarships Scholarships For College Grants For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/ab/34/0dab3413c3cadba268d9f23dd39d4a1d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2ewK8xkXgpDqhfP0uUyzRjwFzHpq4bwT03w';" alt="Our Guide To Military Scholarships For Veterans Dependents And Spouses The Scholarship System Military Scholarships Scholarships For College Grants For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Our Guide To Military Scholarships For Veterans Dependents And Spouses The Scholarship System Military Scholarships Scholarships For College Grants For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/01/7f/28017ffbb8563c9343551484db0dadf0.png" data-lightbox="roadtrip" data-title="Military Tuition Assistance Va Education Benefits Tuition Assistance Tuition College Costs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/01/7f/28017ffbb8563c9343551484db0dadf0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKaDVTaYO7BjRnpMQeKqJD_kwSTSHSNf_sTQ';" alt="Military Tuition Assistance Va Education Benefits Tuition Assistance Tuition College Costs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Tuition Assistance Va Education Benefits Tuition Assistance Tuition College Costs</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/51/d5/f4/51d5f456e64307f3df61b0f3b72be6ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKaDVTaYO7BjRnpMQeKqJD_kwSTSHSNf_sTQ';" alt="Military Tuition Assistance Va Education Benefits Tuition Assistance Tuition College Costs">
+										<div class="card-body">
+						<h3 class="h5"><b>Spouse and dependent coverage cant exceed the service members coverage and children are restricted to 10000.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military college benefits for spouses</strong>. 
+								
+																	Note however that this benefit is only available to people married to a service member on active duty and at certain pay grades. 
+																	Military Spouse Career Advancement Accounts MyCAA as we discussed briefly above provides up to 4000 for the higher education of military spouses. 
+																	The Scholarship program provides funding for undergraduate college expenses to Army Spouses and children. 
+																	The programs grants and scholarships listed below will help pay for a college degree or a vocational training certificate of your choice. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The CGMA program is designed for coast guard spouses that are seeking a college degree technical training certificate or a vocational degree. 
+																	The GI Bill covers up to 36 months of benefits including. 
+																	Generally this covers 45 months of education but it can be combined with other programs like the Survivors and Dependents Educational Assistance Program and the GI Bill which extends the benefit to up to 81 months. 
+																	For more information about the GI Bill eligibility and transferring it over to a spouse you can visit the Veterans Affairs website. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military spouses can sometimes take advantage of their spouses GI Bill benefits. 
+																	VA Comprehensive Assistance Family Caregiver Program. 
+																	MyCAA Military Spouse Career Advancement Accounts Member. 
+																	Military spouses can receive up to 100000 in life insurance coverage. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military services education assistance programs. 
+																	You may be required to submit one or more of the following documents. 
+																	The remaining 70 of their compensation package comes in the form of allowances in-kind benefits andin. 
+																	Extending Education Benefits to Military Family Members If you are a military spouse or dependent you are eligible for a tuition discount toward your bachelors or masters degree at Franklin University. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The former spouse retains an ID card and all benefits that go along with it including Tricare medical access to military installations the commissary etc. 
+																	Surviving spouses who remarry typically lose these home financing benefits. 
+																	Proof of Camp Lejeune residency may require submission of one or more of the following. 
+																	This Tuition Assistance program provides up to 4000 over 2 years of Financial Assistance for military spouses who are pursuing a license certification or Associates degree in a portable career field and occupation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Once enrolled and approved a military spouse can receive up to 36 months of benefits that can be used for housing tuition and books or supplies. 
+																	The My Career Advancement Account Scholarship is a workforce development program that provides eligible military spouses with up to 4000 in financial assistance for licenses certifications or associate degrees to pursue an occupation or career field. 
+																	In case you dont already know MyCAA is a government funded program that offers up to 4000 to eligible military spouses to advance their careers and educations. 
+																	Contact your Military Personnel Office for enrollment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Surviving SpouseDependent Education Benefit provides spouses and dependents including adopted and stepchildren free tuition until they earn a bachelors degree. 
+																	To qualify the couple must have been married for at least 20 years overlapping the members military career. 
+																	Its just one way that we show our commitment to serving the needs of our military students and their families. 
+																	Salute to Spouses There are a few scholarship opportunities available here including the Bryant Stratton College Online scholarship of up to 6000 for a military spouse to apply toward an online degree. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Spouses are not eligible for the monthly housing allowance while their military spouse is on active duty. 
+																	Offering 4000 for an associates degree vocational training or professional licensing MyCAA is a good resource for spouses of service members in ranks E1-E5 W1-W2 or O1-O2. 
+																	Page 1 of 2. 
+																	Department of Veterans Affairs Educational Benefits This is for both spouses and survivors. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Army Emergency Relief AER Scholarship program was established in 1976 as a secondary mission when the Army Relief Society disbanded. 
+																	Service members can enroll their family members in FSGLI for 10000 to 100000 in coverage. 
+																	The assistance programs offer financial assistance by reimbursing spouses rather than paying upfront for their education. 
+																	Service members also have the option of transferring all or part of their Post-911 GI Bill benefits to their spouse andor children. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Military Spouse Career Advancement Accounts MyCAA program provides up to 4000 of Financial Assistance for military spouses who are pursuing degree programs licenses or credentials leading. 
+																	Lets move on and go over some scholarship programs that are designed specifically for helping military spouse education. 
+																	Spouses can use their benefits for up to 15 years after their military spouse has left active duty. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fc/10/81/fc1081a1f2ccfad631a7ce4e5eb693fd.jpg" data-lightbox="roadtrip" data-title="Today S Military Branches Know The Value Of Education And As A Result Have Taken Steps To Assist With Getting Online College Values Education College Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fc/10/81/fc1081a1f2ccfad631a7ce4e5eb693fd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjB0eDH9XqUJ4A01qgX1jCFJLLWfkhHAisQg';" alt="Today S Military Branches Know The Value Of Education And As A Result Have Taken Steps To Assist With Getting Online College Values Education College Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Today S Military Branches Know The Value Of Education And As A Result Have Taken Steps To Assist With Getting Online College Values Education College Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ae/10/8a/ae108af86edea736cb3984f0294570f7.jpg" data-lightbox="roadtrip" data-title="How To Transfer Gi Bill Benefits To Your Spouse Dependents Gi Bill College Resources Bills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ae/10/8a/ae108af86edea736cb3984f0294570f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIrY0QH8f6EDbMwb9fV5BoB19zCEcSQeFrqw';" alt="How To Transfer Gi Bill Benefits To Your Spouse Dependents Gi Bill College Resources Bills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Transfer Gi Bill Benefits To Your Spouse Dependents Gi Bill College Resources Bills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/ea/d6/28ead60c92ccf516ea4385c774d842c9.jpg" data-lightbox="roadtrip" data-title="Pin On Classof2017">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/ea/d6/28ead60c92ccf516ea4385c774d842c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFp-m8cxZa-bgKqBnWeupQ7gy3BGZEbp5MxA';" alt="Pin On Classof2017">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Classof2017</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/d6/b0/36d6b0d677520ad58764b979b3b4dc9f.jpg" data-lightbox="roadtrip" data-title="Curious About The Benefits Of Military Onesource Find Out All The Ways We Can Help You Live Your Best Millife Military Life Military Benefits Badass Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/d6/b0/36d6b0d677520ad58764b979b3b4dc9f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoPTowYIVQ9yR4vIcewV_bmKtfu081IiYdpg';" alt="Curious About The Benefits Of Military Onesource Find Out All The Ways We Can Help You Live Your Best Millife Military Life Military Benefits Badass Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Curious About The Benefits Of Military Onesource Find Out All The Ways We Can Help You Live Your Best Millife Military Life Military Benefits Badass Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/ca/50/11ca500d6aadcd110725113ebe11f1f2.jpg" data-lightbox="roadtrip" data-title="The Importance Of Education For Military Service Members Educational Infographic Importance Of Education Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/ca/50/11ca500d6aadcd110725113ebe11f1f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzYI0nKTxgrx987AXnm34rq1V8GWts18F-uA';" alt="The Importance Of Education For Military Service Members Educational Infographic Importance Of Education Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Importance Of Education For Military Service Members Educational Infographic Importance Of Education Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/28/af/7828afe9482390eeeff19f6f364f738c.png" data-lightbox="roadtrip" data-title="Pin On Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/28/af/7828afe9482390eeeff19f6f364f738c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSQrZijValsb8mGMemdC8byiyUVovOmkkBPA';" alt="Pin On Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/63/8f/8a/638f8a7d066316ceaf07d4a40159b9a9.jpg" data-lightbox="roadtrip" data-title="Men S Propper Uniform Poly Cotton Ripstop Bdu Pants Military Scholarships Military Education Tuition Assistance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/63/8f/8a/638f8a7d066316ceaf07d4a40159b9a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAnxCkhc2fH03bNCQs3KPviWMIpxd9althvw';" alt="Men S Propper Uniform Poly Cotton Ripstop Bdu Pants Military Scholarships Military Education Tuition Assistance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Men S Propper Uniform Poly Cotton Ripstop Bdu Pants Military Scholarships Military Education Tuition Assistance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/7d/bd/587dbdea4c387e181e23c0c00ab36e8f.jpg" data-lightbox="roadtrip" data-title="If You Are A Veteran Looking For Higher Education Then Visit Militaryconnection Com And Learn About Veteran School College Tuition Tuition Assistance Tuition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/7d/bd/587dbdea4c387e181e23c0c00ab36e8f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Db0TNNtQM9NsYflu7FwwtJ1gs5YMY2n1oQ';" alt="If You Are A Veteran Looking For Higher Education Then Visit Militaryconnection Com And Learn About Veteran School College Tuition Tuition Assistance Tuition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Are A Veteran Looking For Higher Education Then Visit Militaryconnection Com And Learn About Veteran School College Tuition Tuition Assistance Tuition</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/dc/5a/c6dc5a27d8e76d2c3b7f89a5655758ad.jpg" data-lightbox="roadtrip" data-title="Skilled Assets The Career Management Experts Military Spouse Career Management Military Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/dc/5a/c6dc5a27d8e76d2c3b7f89a5655758ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ5ZRUAkUqkzJ-gGLNdK_nuWJowOI2pG-rUQ';" alt="Skilled Assets The Career Management Experts Military Spouse Career Management Military Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Skilled Assets The Career Management Experts Military Spouse Career Management Military Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/5d/5d/ed5d5da2a53518266dafa89f40885e3d.jpg" data-lightbox="roadtrip" data-title="Catch Us This Wednesday For Another Military Support Services Wednesday Websession This Week We In 2020 Support Services College Advice Military Spouse Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/5d/5d/ed5d5da2a53518266dafa89f40885e3d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdFAFlvMxLzSEEcsbY0d0PVAeqKoSh0MVSKQ';" alt="Catch Us This Wednesday For Another Military Support Services Wednesday Websession This Week We In 2020 Support Services College Advice Military Spouse Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Catch Us This Wednesday For Another Military Support Services Wednesday Websession This Week We In 2020 Support Services College Advice Military Spouse Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/41/84/a9/4184a97c529eac8df54bbec6a5c1eade.jpg" data-lightbox="roadtrip" data-title="The Virtual Classroom Is A Great Option For Active Service Members Veterans And Their Dependents Since Online Progr Online College Veteran Military Personnel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/41/84/a9/4184a97c529eac8df54bbec6a5c1eade.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnWDdQoSpoe5RIhxifpEukNbANZnG8QTHJ1g';" alt="The Virtual Classroom Is A Great Option For Active Service Members Veterans And Their Dependents Since Online Progr Online College Veteran Military Personnel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Virtual Classroom Is A Great Option For Active Service Members Veterans And Their Dependents Since Online Progr Online College Veteran Military Personnel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/ad/48/5dad48f39b2c899debecf55f9190b527.jpg" data-lightbox="roadtrip" data-title="Download Pdf Jobseeker S Guide Ten Steps To A Federal Job For Military Personnel And Spouses By Kathryn K Tro Books To Read Online Military Personnel Ebook">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/ad/48/5dad48f39b2c899debecf55f9190b527.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwBW5YwfLTjzhg-S2hEnamYumhkIOHZZSrwA';" alt="Download Pdf Jobseeker S Guide Ten Steps To A Federal Job For Military Personnel And Spouses By Kathryn K Tro Books To Read Online Military Personnel Ebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download Pdf Jobseeker S Guide Ten Steps To A Federal Job For Military Personnel And Spouses By Kathryn K Tro Books To Read Online Military Personnel Ebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/90/b3/0090b3e6a23f5f2cf7861a6c87d8b7fa.png" data-lightbox="roadtrip" data-title="Military Education Benefits Army College Military Education Tuition Assistance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/90/b3/0090b3e6a23f5f2cf7861a6c87d8b7fa.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4_YHkyM3_03Ib_Zvuxxjm46_34p26iLXF3A';" alt="Military Education Benefits Army College Military Education Tuition Assistance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Education Benefits Army College Military Education Tuition Assistance</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/dod-civilian-medals.html">Dod Civilian Medals</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-leave-carry-over.html">Dod Civilian Leave Carry Over</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-gs-pay-scale.html">Dod Civilian Gs Pay Scale</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-home-buying-program.html">Dod Civilian Home Buying Program</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-interview-questions.html">Dod Civilian Interview Questions</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-jobs-san-diego.html">Dod Civilian Jobs San Diego</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-living-quarters-allowance.html">Dod Civilian Living Quarters Allowance</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-flight-discounts.html">Dod Civilian Flight Discounts</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-jobs-san-antonio.html">Dod Civilian Jobs San Antonio</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-free-tsa-precheck.html">Dod Civilian Free Tsa Precheck</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-holiday-calendar.html">Dod Civilian Holiday Calendar</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-jobs-in-iraq.html">Dod Civilian Jobs In Iraq</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-emergency-visitation-travel.html">Dod Civilian Emergency Visitation Travel</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-employee-tuition-assistance.html">Dod Civilian Employee Tuition Assistance</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-hiring-process.html">Dod Civilian Hiring Process</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-dress-code.html">Dod Civilian Dress Code</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-jobs-in-kuwait.html">Dod Civilian Jobs In Kuwait</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-fers-retirement.html">Dod Civilian Fers Retirement</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-known-traveler-number.html">Dod Civilian Known Traveler Number</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-family-medical-leave-act.html">Dod Civilian Family Medical Leave Act</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Resources - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Resources",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/f6/84/4f/f6844f993c585d89e9fe7622e11ac8b7.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+resources",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Resources</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Dictionary of Military and Associated Terms. US Department of Defense 2005. The site provides an interactive searchable database of programs for military and civilian families regarding health and wellness obesity prevention and proper nutrition. <br>				
+			</p>
+										<a class="badge badge-light" href="/is-42a-a-good-mos.html">is 42a a good mos</a>
+											<a class="badge badge-dark" href="/is-the-dod-id-number-pii.html">is the dod id number pii</a>
+											<a class="badge badge-info" href="/is-the-military-part-of-the-dod.html">is the military part of the dod</a>
+											<a class="badge badge-light" href="/intelligence-officer-for-canadian-armed-forces.html">intelligence officer for canadian armed forces</a>
+											<a class="badge badge-info" href="/is-a-military-career-worth-it.html">is a military career worth it</a>
+											<a class="badge badge-secondary" href="/is-csrs-better-than-fers.html">is csrs better than fers</a>
+											<a class="badge badge-success" href="/is-army-part-of-dod.html">is army part of dod</a>
+											<a class="badge badge-success" href="/inspector-general-of-the-military.html">inspector general of the military</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to visit the right site.  Our website provides you with hints for seeing the maximum quality video and image content, hunt and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie that you view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5a/39/85/5a3985b2209c1a175a343c8b1b58d600.jpg" data-lightbox="roadtrip" data-title="Free Military Resources Military Resources Military Wife Life Family Support Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5a/39/85/5a3985b2209c1a175a343c8b1b58d600.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1-Hy0yaIRsZsnJJTDDr5OEAUTciRZ76fARQ';" alt="Free Military Resources Military Resources Military Wife Life Family Support Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Military Resources Military Resources Military Wife Life Family Support Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/8c/77/048c77c981d09941f218addd62c3b4fd.png" data-lightbox="roadtrip" data-title="4 Military Family Money Saving Resources The Motivated Millennial Family Money Saving Family Money Military Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/8c/77/048c77c981d09941f218addd62c3b4fd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz_-JmMtMtT016DtljNIsRdhtR8nAnOZHMYg';" alt="4 Military Family Money Saving Resources The Motivated Millennial Family Money Saving Family Money Military Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 Military Family Money Saving Resources The Motivated Millennial Family Money Saving Family Money Military Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/c7/d0/0dc7d0f4a9af59a7c79c0b63a907b110.jpg" data-lightbox="roadtrip" data-title="Military Space A And Other Travel Resources Every Military Veteran Family Should Be Aware Of Family Adventure Travel Military Campgrounds Military Flights">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/c7/d0/0dc7d0f4a9af59a7c79c0b63a907b110.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDMkDRlPFIYeh9u68pl_v-kACFZj1yGec26A';" alt="Military Space A And Other Travel Resources Every Military Veteran Family Should Be Aware Of Family Adventure Travel Military Campgrounds Military Flights">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Space A And Other Travel Resources Every Military Veteran Family Should Be Aware Of Family Adventure Travel Military Campgrounds Military Flights</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/99/51/d999513474fef77f40f6f66ae7872b2d.png" data-lightbox="roadtrip" data-title="Army Ranks And Pay In 2019 Army Ranks Army Military Spouse Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/99/51/d999513474fef77f40f6f66ae7872b2d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC-nVTlibh7oxeN44SrH1jBQ91QzB1-x9A5A';" alt="Army Ranks And Pay In 2019 Army Ranks Army Military Spouse Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Ranks And Pay In 2019 Army Ranks Army Military Spouse Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/44/51/d44451022909298ba6a92ee6f409fd1c.jpg" data-lightbox="roadtrip" data-title="A Hierarchy Of Military Unit The Most Basic And The Precious Resources Of The Military Are The Soldiers To Prevent Or Rescue Military Units Military Hierarchy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/44/51/d44451022909298ba6a92ee6f409fd1c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvxc5OC2-YohJ3XTTw2WT45fQjeJgJMqinw';" alt="A Hierarchy Of Military Unit The Most Basic And The Precious Resources Of The Military Are The Soldiers To Prevent Or Rescue Military Units Military Hierarchy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Hierarchy Of Military Unit The Most Basic And The Precious Resources Of The Military Are The Soldiers To Prevent Or Rescue Military Units Military Hierarchy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9f/20/eb/9f20eb3813d253fd9931e9280c5c6385.jpg" data-lightbox="roadtrip" data-title="Pin On Military Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9f/20/eb/9f20eb3813d253fd9931e9280c5c6385.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrrlfG_I2oZOzZSSdKQGpBbyzDucxydJSxMg';" alt="Pin On Military Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Resources</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/474x/5f/bc/a1/5fbca191e21166846ca031362259e51f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrrlfG_I2oZOzZSSdKQGpBbyzDucxydJSxMg';" alt="Pin On Military Resources">
+										<div class="card-body">
+						<h3 class="h5"><b>It is the nations largest wartime veterans service organization committed to mentoring youth and sponsorship of wholesome programs in our communities.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military resources</strong>. 
+								
+																	Military Veterans Resource Centers mission is to help veterans develop self-reliance and independence by providing access to the resources they need to successfully manage life transitions. 
+																	Military OneSource is dedicated to providing timely resources information and answers to address the impact of COVID-19 on our military community. 
+																	Soldiers Angels Military Resources. 
+																	Offers links to services supporting veterans and military families in the areas of jobs health substance abuse and mental health rural health and children and families. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Soldiers Angels help military families deployed troops and veterans with support. 
+																	Army Emergency Relief is a private nonprofit. 
+																	7 Counseling Options for Service Members and Their Families. 
+																	Go to our Coronavirus Information Center for the latest information. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The below list of sources is taken from my Subject Tracer Information Blog. 
+																	Military OneSource provides free online resources to service members and their families via the MWR Digital Library. 
+																	Taya and Chris Kyle Foundation video. 
+																	At Military OneSource we have one mission to connect you to your best MilLife. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Synonyms for military resources include defense army military armaments arms defence weapons navy air force and military measures. 
+																	Related resources Listen to our podcast on military-connected families Learn more about early help otherwise known as early intervention here Read a report by the Naval Families Federation on the experience of parental absence in Royal Navy and Royal Marines Families PDF Download the evaluation report. 
+																	The Clearinghouse for Military Family Readiness web page provides resources to help military families stay strong. 
+																	Military resources Military and civilian personnel facilities equipment and supplies under the control of a Department of Defense component. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military OneSource connects you to programs services and products developed to help you navigate military life. 
+																	Evaluation of services at. 
+																	A website designed to enhance the lives of military families and friends of the military community in just one click. 
+																	Download Early support for military-connected families. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Health and Human Services. 
+																	War of the Airwaves European monitor post High Frequency. 
+																	Click here to access this valuable information. 
+																	Military Resources 2021. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Additional government resources for veterans and military families. 
+																	Military Resources 2021 is a comprehensive listing of military resources and sites on the Internet. 
+																	Check it often it will be updated frequently-. 
+																	Military Resources Links to military reference material military history and research and to specific topics. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Youll find e-books and audiobooks on virtually every topic as well as education resources online tutoring for your kids and more all accessible from your home. 
+																	The website offers a free eBook videos and a comprehensive list of military resources. 
+																	Were here to help with information and resources vetted by the Department of Defense. 
+																	Military resources are available families for a variety of needs including care giving mental health disaster preparation and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military scanner resources category is a curation of 10 web resources on Monitoring Iraq. 
+																	Whereby OEM support programs rely more and more on skills from the civilian environment to fulfil maintenance and training obligations Resource Group are uniquely experienced and positioned in supporting military operations and activity. 
+																	Resources listed under Military Resources category belongs to Radio Scanning main collection and get reviewed and rated by amateur radio operators. 
+																	Resource list of Military Charities Organizations and Government Contacts Advocacy American Legion The American Legion was chartered and incorporated by Congress in 1919 as a patriotic veterans organization devoted to mutual helpfulness. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The site helps connect you with the latest news job opportunities deals and tons of additional resources. 
+																	The Taya and Chris Kyle Foundation help military and first responder marriages stay strong. 
+																	Executive Director Virtual Private Library. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ca/2e/ff/ca2effee438dd36f2bd7bd76eecf7d77.jpg" data-lightbox="roadtrip" data-title="9 Free Educational Resources And Programs For Military Kids Military Kids Military Resources Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ca/2e/ff/ca2effee438dd36f2bd7bd76eecf7d77.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAnpgspA9NtU41T0ZEJcF6giR7douV8-AG8Q';" alt="9 Free Educational Resources And Programs For Military Kids Military Kids Military Resources Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">9 Free Educational Resources And Programs For Military Kids Military Kids Military Resources Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a4/a1/ae/a4a1ae1f3be7dff8843a88c1ccaeec63.jpg" data-lightbox="roadtrip" data-title="Military Separation Codes Military Benefits Coding Military Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a4/a1/ae/a4a1ae1f3be7dff8843a88c1ccaeec63.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5PAcOU03UQCKqQkBNTkEAnWSMsZTwLEVW-Q';" alt="Military Separation Codes Military Benefits Coding Military Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Separation Codes Military Benefits Coding Military Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/60/35/a6603561e2eb1c6ddcb043bca263e876.jpg" data-lightbox="roadtrip" data-title="Many Companies Offer Free Products And Services That Help Military Families During Deployments And Pcsing Every Military Wife Life Military Life Military Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/60/35/a6603561e2eb1c6ddcb043bca263e876.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQznVVV5uQ9WQ1HE1QmvTwjuwaTXNGO8h4FPg';" alt="Many Companies Offer Free Products And Services That Help Military Families During Deployments And Pcsing Every Military Wife Life Military Life Military Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Many Companies Offer Free Products And Services That Help Military Families During Deployments And Pcsing Every Military Wife Life Military Life Military Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/63/6d/e9636d96d0192aaa9b2d69f1902d8043.png" data-lightbox="roadtrip" data-title="Pin By Usmc Life On Military Resources Military Kids Scholarships Military Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/63/6d/e9636d96d0192aaa9b2d69f1902d8043.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3aJ1BtkJQXXrddGNfEPk0OYV8eJZFMG0xXQ';" alt="Pin By Usmc Life On Military Resources Military Kids Scholarships Military Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Usmc Life On Military Resources Military Kids Scholarships Military Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/64/6e/11646ef4aed055b6f5f3c8eb818143fa.png" data-lightbox="roadtrip" data-title="Free Resources Usmc Life Military Dependent Scholarships Military Resources Legal Help">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/64/6e/11646ef4aed055b6f5f3c8eb818143fa.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Hol1D9LdmlmvUAmG8V2Dutb57j9DW5vt1w';" alt="Free Resources Usmc Life Military Dependent Scholarships Military Resources Legal Help">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Resources Usmc Life Military Dependent Scholarships Military Resources Legal Help</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/58/12/135812d1fe6f40e5d9b13465fd6c3237.jpg" data-lightbox="roadtrip" data-title="Pin On Military Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/58/12/135812d1fe6f40e5d9b13465fd6c3237.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfZX36gHoBtg3u-99EjxQFvcIjuLLpATmopw';" alt="Pin On Military Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/5f/bc/a1/5fbca191e21166846ca031362259e51f.jpg" data-lightbox="roadtrip" data-title="Pin On Tsp Military Finance And Military Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/5f/bc/a1/5fbca191e21166846ca031362259e51f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXWtrUZhuPdONNbSLeX1vfpQh1tKpz-7ptYA';" alt="Pin On Tsp Military Finance And Military Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Tsp Military Finance And Military Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/99/5a/1c/995a1cc3f4bfa0a00f94a1f8989bf0e0.jpg" data-lightbox="roadtrip" data-title="Pin On Military Love And Support">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/99/5a/1c/995a1cc3f4bfa0a00f94a1f8989bf0e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgsfKVK-UTyiYYn-AHt9_YgnHPIFIoEcXMQw';" alt="Pin On Military Love And Support">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Love And Support</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/63/7a/82637ae76279b7e04009f2647dc22bce.jpg" data-lightbox="roadtrip" data-title="The Mwr Digital Library Gives Military Families Free Access To Resources Beyond Books Find Out What You Digital Library Military Resources Air Force Families">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/63/7a/82637ae76279b7e04009f2647dc22bce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxyjXkcURckZ7I-mieYG8OR8ctK73nswULog';" alt="The Mwr Digital Library Gives Military Families Free Access To Resources Beyond Books Find Out What You Digital Library Military Resources Air Force Families">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Mwr Digital Library Gives Military Families Free Access To Resources Beyond Books Find Out What You Digital Library Military Resources Air Force Families</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/30/2d/2b302d4c37493fe3f830e1015081a0a5.jpg" data-lightbox="roadtrip" data-title="Best Military Family Resources Everyone Should Know Words Inspirational Quotes Inspirational Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/30/2d/2b302d4c37493fe3f830e1015081a0a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSET-gcxygjHyOPRjoJiW5kJNaajb6TFHbGaQ';" alt="Best Military Family Resources Everyone Should Know Words Inspirational Quotes Inspirational Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Military Family Resources Everyone Should Know Words Inspirational Quotes Inspirational Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/84/4f/f6844f993c585d89e9fe7622e11ac8b7.jpg" data-lightbox="roadtrip" data-title="Books Resources For Parents Of Military Personnel Military Parents Military Mom Military Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/84/4f/f6844f993c585d89e9fe7622e11ac8b7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYKR0eacjSTH-FvDFuGSbnfAwz1fzxHaizFQ';" alt="Books Resources For Parents Of Military Personnel Military Parents Military Mom Military Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Books Resources For Parents Of Military Personnel Military Parents Military Mom Military Kids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/6c/33/f36c33c73b84e22ad8ed3f922d59cc30.png" data-lightbox="roadtrip" data-title="Natural Disaster Military Resources Natural Disasters Financial Stress Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/6c/33/f36c33c73b84e22ad8ed3f922d59cc30.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzCuqeUgHuHdTIOn07JpK6Uy3mdyzGKWBi7Q';" alt="Natural Disaster Military Resources Natural Disasters Financial Stress Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Natural Disaster Military Resources Natural Disasters Financial Stress Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/47/9e/98479e5ee8d07bd5bd8142945f9a0402.png" data-lightbox="roadtrip" data-title="Military Tests The Mwr Can Help You Prep For 1 Astb E 2 Officer Candidate Tests 3 Military Flight Aptitu In 2020 Digital Library Learning Express Online Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/47/9e/98479e5ee8d07bd5bd8142945f9a0402.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlyJRCtSDkdSgfPrDDOEFtq5_r2gyj4GCIog';" alt="Military Tests The Mwr Can Help You Prep For 1 Astb E 2 Officer Candidate Tests 3 Military Flight Aptitu In 2020 Digital Library Learning Express Online Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Tests The Mwr Can Help You Prep For 1 Astb E 2 Officer Candidate Tests 3 Military Flight Aptitu In 2020 Digital Library Learning Express Online Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/support-groups-for-ex-military-wives.html">Support Groups For Ex Military Wives</a></li>
+													<li class="list-group-item"><a href="/space-force-dod-civilian-jobs.html">Space Force Dod Civilian Jobs</a></li>
+													<li class="list-group-item"><a href="/soldier-support-center-va-office.html">Soldier Support Center Va Office</a></li>
+													<li class="list-group-item"><a href="/state-of-wisconsin-department-of-military-affairs.html">State Of Wisconsin Department Of Military Affairs</a></li>
+													<li class="list-group-item"><a href="/state-military-department-arkansas.html">State Military Department Arkansas</a></li>
+													<li class="list-group-item"><a href="/texas-military-department-app.html">Texas Military Department App</a></li>
+													<li class="list-group-item"><a href="/texas-military-department-austin-tx-united-states.html">Texas Military Department Austin Tx United States</a></li>
+													<li class="list-group-item"><a href="/stuttgart-army-post-office-hours.html">Stuttgart Army Post Office Hours</a></li>
+													<li class="list-group-item"><a href="/state-department-military-travel-restrictions.html">State Department Military Travel Restrictions</a></li>
+													<li class="list-group-item"><a href="/support-group-for-military-moms.html">Support Group For Military Moms</a></li>
+													<li class="list-group-item"><a href="/spouse-va-benefits-for-assisted-living.html">Spouse Va Benefits For Assisted Living</a></li>
+													<li class="list-group-item"><a href="/texas-military-department-awards.html">Texas Military Department Awards</a></li>
+													<li class="list-group-item"><a href="/tennessee-military-retirement-divorce-calculator.html">Tennessee Military Retirement Divorce Calculator</a></li>
+													<li class="list-group-item"><a href="/spouse-tuition-assistance.html">Spouse Tuition Assistance</a></li>
+													<li class="list-group-item"><a href="/soldier-support-center-passport-office.html">Soldier Support Center Passport Office</a></li>
+													<li class="list-group-item"><a href="/state-dept-political-military-affairs.html">State Dept Political Military Affairs</a></li>
+													<li class="list-group-item"><a href="/steve-harrington-air-force-1.html">Steve Harrington Air Force 1</a></li>
+													<li class="list-group-item"><a href="/stickman-us-army-stickman-rope-hero-counter.html">Stickman Us Army Stickman Rope Hero Counter</a></li>
+													<li class="list-group-item"><a href="/sscn-bkn.html">Sscn Bkn</a></li>
+													<li class="list-group-item"><a href="/state-department-military-leave.html">State Department Military Leave</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

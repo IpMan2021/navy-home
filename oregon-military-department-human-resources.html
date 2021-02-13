@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Oregon Military Department Human Resources - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Oregon Military Department Human Resources",
+  "datePublished": "2021-02-13",
+  "image": "https://hr.uoregon.edu/sites/hr2.uoregon.edu/files/veterans_preference_training_slides_8-8-19.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=oregon+military+department+human+resources",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Oregon Military Department Human Resources</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">OREGON MILITARY DEPARTMENT JOINT FORCE HEADQUARTERS OREGON NATIONAL GUARD HUMAN RESOURCE OFFICE 230 GEER DRIVE SE PO. Oregon Military Department 1776 Militia Way SEPO Box 14350 Salem OR 97309-5047. The Regulatory Analyst I will be responsible for updating filing monitoring and. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/marine-spouse.html">marine spouse</a>
+											<a class="badge badge-primary" href="/little-rock-air-force-base-hr.html">little rock air force base hr</a>
+											<a class="badge badge-dark" href="/mango-languages-for-military.html">mango languages for military</a>
+											<a class="badge badge-danger" href="/lincoln-military-housing-office-san-onofre.html">lincoln military housing office san onofre</a>
+											<a class="badge badge-light" href="/mango-languages-free-library-of-philadelphia.html">mango languages free library of philadelphia</a>
+											<a class="badge badge-warning" href="/john-harvey-air-force.html">john harvey air force</a>
+											<a class="badge badge-success" href="/list-of-canadian-armed-forces-bases.html">list of canadian armed forces bases</a>
+											<a class="badge badge-info" href="/loan-grants-for-military-veterans.html">loan grants for military veterans</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to pay a visit to the ideal site.  Our site provides you with hints for seeing the maximum quality video and image content, search and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, therefore we recommend this movie for you to view.  You can also bring about supporting this website by sharing videos and images that you like on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information that you get on this site.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.oregon.gov/omd/PublishingImages/ONG-2.JPG" data-lightbox="roadtrip" data-title="Oregon Military Department Welcome Page State Of Oregon">
+											<img class="card-img v-image ads-img " src="https://www.oregon.gov/omd/PublishingImages/ONG-2.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQteWjidxoNMAnoKt1LIMzL3-kBmFYDJzQ3Dg';" alt="Oregon Military Department Welcome Page State Of Oregon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oregon Military Department Welcome Page State Of Oregon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.oregon.gov/omd/ONG/PublishingImages/smfs_logo_new.png" data-lightbox="roadtrip" data-title="Oregon Military Department Service Member And Family Support Oregon National Guard State Of Oregon">
+											<img class="card-img v-image ads-img " src="https://www.oregon.gov/omd/ONG/PublishingImages/smfs_logo_new.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe8yzvSL_7sUX5Rkin62jtXlzxAzGXuMbwkw';" alt="Oregon Military Department Service Member And Family Support Oregon National Guard State Of Oregon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oregon Military Department Service Member And Family Support Oregon National Guard State Of Oregon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=10158490966655818" data-lightbox="roadtrip" data-title="Oregon National Guard Oregon Military Department Posts Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=10158490966655818" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm7Adir43M_QViK4yUHXWvXHerXTvxClCW9A';" alt="Oregon National Guard Oregon Military Department Posts Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oregon National Guard Oregon Military Department Posts Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2011/Nov/01/2000204079/780/780/0/111031-F-CH000-0338.JPG" data-lightbox="roadtrip" data-title="Oregon Airmen Bid Farewell To The Bdu 142nd Wing Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2011/Nov/01/2000204079/780/780/0/111031-F-CH000-0338.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFQJdYer-h_BqzauKhoiEYiQV1QhQxxXC45Q';" alt="Oregon Airmen Bid Farewell To The Bdu 142nd Wing Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oregon Airmen Bid Farewell To The Bdu 142nd Wing Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://hr.uoregon.edu/sites/hr2.uoregon.edu/files/veterans_preference_training_slides_8-8-19.jpg" data-lightbox="roadtrip" data-title="Oregon Veterans Preference In Employment Human Resources">
+											<img class="card-img v-image ads-img " src="https://hr.uoregon.edu/sites/hr2.uoregon.edu/files/veterans_preference_training_slides_8-8-19.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSizKeJlWCyngZQiQaN5Ix8VkQF-9qKzZQzbg';" alt="Oregon Veterans Preference In Employment Human Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oregon Veterans Preference In Employment Human Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.seradesign.com/wp-content/uploads/oregon-military-dept-joint-forces-headquarters_homepage-980x490.jpg" data-lightbox="roadtrip" data-title="Major General George White Headquarters Oregon Military Department Sera Architects">
+											<img class="card-img v-image ads-img " src="https://www.seradesign.com/wp-content/uploads/oregon-military-dept-joint-forces-headquarters_homepage-980x490.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT44UtFMnBq7qJb3mCuSqTclfWB7U6HvxUM-A';" alt="Major General George White Headquarters Oregon Military Department Sera Architects">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Major General George White Headquarters Oregon Military Department Sera Architects</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.oregon.gov/omd/PublishingImages/ONG-2.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT44UtFMnBq7qJb3mCuSqTclfWB7U6HvxUM-A';" alt="Major General George White Headquarters Oregon Military Department Sera Architects">
+										<div class="card-body">
+						<h3 class="h5"><b>Oregon State Archives 800 Summer Street NE Salem OR 97310 Phone.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Oregon military department human resources</strong>. 
+								
+																	It is under state jurisdiction and its members are employed only within the State of Oregon. 
+																	DUE TO COVID-19 the Enlisted Military Schools Branch MSB is currently minimally staffed at Human Resources Command HRC in an effort to protect the Soldiers and Civilians from continuous spread of COVID-19. 
+																	For verbal Employment verification please contact Derek Stuart Payroll Specialist at 541-323-8559. 
+																	Regulatory Analyst I Vacancy In Moda Health. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Oregon Department of Human Services ODHSChild Welfares central office is hiring Hiring Organization Company. 
+																	DUE TO COVID-19 the Enlisted Military Schools Branch MSB is currently minimally staffed at Human Resources Command HRC in an effort to protect the Soldiers and Civilians from continuous spread of COVID-19. 
+																	Written verification should be submitted to payrollbendoregongov. 
+																	Child care providers can now receive a free order of PPE supplies by applying at Supply Connector. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Oregon Military Department 1776 Militia Way SEPO Box 14350 Salem OR 97309-5047. 
+																	It is not subject to any federal orders. 
+																	This meets the criteria for advertisements per the Office of Personnel Management and Department of Defense. 
+																	503-584-3980 Address Oregon Military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Human Resources Generalist Oregon Military Department. 
+																	In the USA Staffing-Hiring Manager Portal supervisors access certificates review applicant materials upload documents make hiring decisions and return complete section packets to the Human Resources Office. 
+																	Deputy Director of Human Resources Oregon National Guard Portland Oregon Area 244 connections. 
+																	COVID-19 resources for families from the Oregon Early Learning Division. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A comprehensive hub site for resources for veterans military service members and their families Oregon Military Helpline. 
+																	Jul 2012 Present 7 years 10 months. 
+																	OSHA 300 log experience and I advise supervisors and staff on all aspects of employee. 
+																	NE E-62 Salem OR 97301 503-945-5687 Active Duty Service Members Facing Deadlines from State Agency Hearings or Contested Case Notices Active duty service members may have a right to delay these proceedings. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	State Director for Oregon. 
+																	3225 State St PO Box 14350. 
+																	Connect with caring qualified responders with the Department of Veterans Affairs. 
+																	Find child care assistance including local resources and help paying for child care through the Oregon Department of Human Services Employment Related Day Care program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I _____ have read and understand the limits for my maximum daily rate of pay as allowed under FFCRA based. 
+																	Veterans Resources or call the Oregon department of Veterans Affairs at. 
+																	OREGON DEPARTMENT OF HUMAN SERVICES DHS Michael Mickey Serice MS LPC and LMFT Texas Director Legislative and Client Relations Office Department of Human Services 500 Summer St. 
+																	As a Joint Force Headquarters Oregon Directorate J1 the Human Resources Office HRO function assists the leadership of the Oregon National Guard to attain a high state of mission readiness by providing human resource advice guidance and services for the Adjutant General. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Report this profile Activity Liked by Dale. 
+																	Free and confidential crisis intervention and sensitivity to military-specific issues VA Crisis Line. 
+																	Return to Top Footer Contact Phone. 
+																	The ORSDF is an all-volunteer militia force under the Oregon Military Department that provides reserve personnel to both the Oregon Army National Guard and the Oregon Air National Guard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	About Us The purpose of the Adjutant General Personnel Office AGP is to provide direction and services to promote a stable and qualified workforce in the Oregon Military Department while reflecting the states values of accountability equity excellence and integrity. 
+																	Join to Connect Oregon Military Department. 
+																	The department also assists to administer various employee benefit programs such as medical and dental health benefit programs and coordinates voluntary benefit programs like deferred compensation and other insurances. 
+																	Statement of Understanding for Payment of Leave from the Family. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	BOX 14350 SALEM OREGON 97301-5047 MEMORANDUM FOR. 
+																	First Coronavirus Response Act FFCRA 1. 
+																	Department Of Human Services Job Location. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.isu.pub/200116205117-478c63151da8109c42e9ba4c512ed88e/jpg/page_1_thumb_large.jpg" data-lightbox="roadtrip" data-title="Washington Military Department 2019 2020 Annual Report By Washington Military Department Issuu">
+											<img class="card-img v-image ads-img " src="https://image.isu.pub/200116205117-478c63151da8109c42e9ba4c512ed88e/jpg/page_1_thumb_large.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcToxmSttu3ROHccu8HRcLIqcO7OwP1Q781w';" alt="Washington Military Department 2019 2020 Annual Report By Washington Military Department Issuu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Washington Military Department 2019 2020 Annual Report By Washington Military Department Issuu</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://employeesearch.dasapp.oregon.gov/images/dasit_logo.png" data-lightbox="roadtrip" data-title="Home Page Employeesearch">
+											<img class="card-img v-image ads-img " src="https://employeesearch.dasapp.oregon.gov/images/dasit_logo.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSINJOINujRVlaH6ghY_Av4D-ZW6UMUoG4TKw';" alt="Home Page Employeesearch">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Page Employeesearch</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.imd.idaho.gov/wp-content/uploads/sites/76/2021/01/DSC_7074-1024x683.jpg" data-lightbox="roadtrip" data-title="Idaho National Guard Sends Personnel To Washington D C To Assist 59th Presidential Inauguration Military Division">
+											<img class="card-img v-image ads-img " src="https://www.imd.idaho.gov/wp-content/uploads/sites/76/2021/01/DSC_7074-1024x683.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu5s75FdII8b2i0SlYNY3wjXPAAcX6bLyPnA';" alt="Idaho National Guard Sends Personnel To Washington D C To Assist 59th Presidential Inauguration Military Division">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Idaho National Guard Sends Personnel To Washington D C To Assist 59th Presidential Inauguration Military Division</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.imd.idaho.gov/wp-content/uploads/sites/76/2020/03/size0.jpg" data-lightbox="roadtrip" data-title="Idarng Medical Detachment Military Division">
+											<img class="card-img v-image ads-img " src="https://www.imd.idaho.gov/wp-content/uploads/sites/76/2020/03/size0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlFsD6Ni9s386nMRT5F1UKFEosP53E5OzbZw';" alt="Idarng Medical Detachment Military Division">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Idarng Medical Detachment Military Division</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="C5NILzKG2YSpvM" data-lightbox="roadtrip" data-title="Https Www Oregon Gov Oem Documents Or Eop Basic Plan Pdf">
+											<img class="card-img v-image ads-img " src="C5NILzKG2YSpvM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHm5r7MCZUsWtQIk8gfVKVTgyBVDEMxrjJHw';" alt="Https Www Oregon Gov Oem Documents Or Eop Basic Plan Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Oregon Gov Oem Documents Or Eop Basic Plan Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.imd.idaho.gov/wp-content/uploads/sites/76/2020/06/DSC_6946-1024x665.jpg" data-lightbox="roadtrip" data-title="Idaho National Guard Sends 400 Soldiers To Washington D C Military Division">
+											<img class="card-img v-image ads-img " src="https://www.imd.idaho.gov/wp-content/uploads/sites/76/2020/06/DSC_6946-1024x665.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZXaMnLD67ht5Gq-quieZu4LFMGFaVZBdTwA';" alt="Idaho National Guard Sends 400 Soldiers To Washington D C Military Division">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Idaho National Guard Sends 400 Soldiers To Washington D C Military Division</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://c8.alamy.com/comp/W12TWK/army-soldiers-take-part-in-the-rappelling-portion-of-air-assault-school-at-camp-rilea-warrenton-oregon-june-27-2019-national-guard-photo-by-john-hughel-oregon-military-department-public-affairs-W12TWK.jpg" data-lightbox="roadtrip" data-title="Air Assault Badge High Resolution Stock Photography And Images Alamy">
+											<img class="card-img v-image ads-img " src="https://c8.alamy.com/comp/W12TWK/army-soldiers-take-part-in-the-rappelling-portion-of-air-assault-school-at-camp-rilea-warrenton-oregon-june-27-2019-national-guard-photo-by-john-hughel-oregon-military-department-public-affairs-W12TWK.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOBMkR5tWXWX2v_Xw9lhFz02tqt3Ht4sj3dA';" alt="Air Assault Badge High Resolution Stock Photography And Images Alamy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Assault Badge High Resolution Stock Photography And Images Alamy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://myarmybenefits.us.army.mil/Images/Oregon/Oregon%20National%20Guard.jpg" data-lightbox="roadtrip" data-title="Oregon The Official Army Benefits Website">
+											<img class="card-img v-image ads-img " src="https://myarmybenefits.us.army.mil/Images/Oregon/Oregon%20National%20Guard.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRULv7VSGDmONV4aH0YtawQRNcUI1UHQycgGA';" alt="Oregon The Official Army Benefits Website">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oregon The Official Army Benefits Website</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2017/12/oregon-flag-min.png" data-lightbox="roadtrip" data-title="2021 Oregon Bah Basic Allowance Housing Rates Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2017/12/oregon-flag-min.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrVHHdPARJ6RXDEpR0zfGGVZ_YBMa5a9VvVQ';" alt="2021 Oregon Bah Basic Allowance Housing Rates Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2021 Oregon Bah Basic Allowance Housing Rates Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="5PLOwzhDr-q8mM" data-lightbox="roadtrip" data-title="Https Www Oregon Gov Das Hr Documents Hr 20reference 20guide Pdf">
+											<img class="card-img v-image ads-img " src="5PLOwzhDr-q8mM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG6yN4loeLW9R3xyoWHkW11LDa-Gxjzifjcg';" alt="Https Www Oregon Gov Das Hr Documents Hr 20reference 20guide Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Oregon Gov Das Hr Documents Hr 20reference 20guide Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/16/9f/b4169f11844e66826d791985ef6d4b48.jpg" data-lightbox="roadtrip" data-title="Medical Experience Certificate Template Certificate Templates Certificate Design Template Word Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/16/9f/b4169f11844e66826d791985ef6d4b48.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIHHYx6DIkNnH7fHnBpojz2oA0pbK4kLprWw';" alt="Medical Experience Certificate Template Certificate Templates Certificate Design Template Word Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Medical Experience Certificate Template Certificate Templates Certificate Design Template Word Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.imd.idaho.gov/wp-content/uploads/sites/76/2019/01/IMD-social-image.jpg" data-lightbox="roadtrip" data-title="Idaho Army National Guard Military Division">
+											<img class="card-img v-image ads-img " src="https://www.imd.idaho.gov/wp-content/uploads/sites/76/2019/01/IMD-social-image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbsqCByM0ZUa8u6Ityv9ucd4J0ttLzTkSq-A';" alt="Idaho Army National Guard Military Division">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Idaho Army National Guard Military Division</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-exp1.licdn.com/dms/image/sync/C5627AQGLjgNb2bbs0A/articleshare-shrink_800/0/1611145809747?e=1611417600&amp;v=beta&amp;t=Be3ldiuDKu4H3J9-PegokLdoFnWMhi50NzNVOpqNAH4" data-lightbox="roadtrip" data-title="Buffy Rider Chief Human Resource Administrator Oregon Department Of Corrections Linkedin">
+											<img class="card-img v-image ads-img " src="https://media-exp1.licdn.com/dms/image/sync/C5627AQGLjgNb2bbs0A/articleshare-shrink_800/0/1611145809747?e=1611417600&amp;v=beta&amp;t=Be3ldiuDKu4H3J9-PegokLdoFnWMhi50NzNVOpqNAH4" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzukKweD26ECZl-P9fdulOLpT6SrfKUTaF8g';" alt="Buffy Rider Chief Human Resource Administrator Oregon Department Of Corrections Linkedin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Buffy Rider Chief Human Resource Administrator Oregon Department Of Corrections Linkedin</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/linkedin-premium-military-spouse.html">Linkedin Premium Military Spouse</a></li>
+													<li class="list-group-item"><a href="/lesson-plan-british-army.html">Lesson Plan British Army</a></li>
+													<li class="list-group-item"><a href="/lincoln-military-housing-office-number.html">Lincoln Military Housing Office Number</a></li>
+													<li class="list-group-item"><a href="/map-of-department-of-defense-hospitals.html">Map Of Department Of Defense Hospitals</a></li>
+													<li class="list-group-item"><a href="/list-of-benefits-for-military-veterans.html">List Of Benefits For Military Veterans</a></li>
+													<li class="list-group-item"><a href="/khaki-military-hat.html">Khaki Military Hat</a></li>
+													<li class="list-group-item"><a href="/jp-1-02-department-of-defense-dictionary.html">Jp 1 02 Department Of Defense Dictionary</a></li>
+													<li class="list-group-item"><a href="/list-of-canadian-armed-forces-bases.html">List Of Canadian Armed Forces Bases</a></li>
+													<li class="list-group-item"><a href="/joint-and-national-intelligence-support-to-military-operations.html">Joint And National Intelligence Support To Military Operations</a></li>
+													<li class="list-group-item"><a href="/kentucky-department-military-affairs.html">Kentucky Department Military Affairs</a></li>
+													<li class="list-group-item"><a href="/lackland-afb-finance-customer-service.html">Lackland Afb Finance Customer Service</a></li>
+													<li class="list-group-item"><a href="/male-military-names.html">Male Military Names</a></li>
+													<li class="list-group-item"><a href="/kentucky-department-of-military-affairs-jobs.html">Kentucky Department Of Military Affairs Jobs</a></li>
+													<li class="list-group-item"><a href="/kentucky-military-department.html">Kentucky Military Department</a></li>
+													<li class="list-group-item"><a href="/jobs-in-pakistan-military-accounts-department-2019.html">Jobs In Pakistan Military Accounts Department 2019</a></li>
+													<li class="list-group-item"><a href="/masters-athletics-records.html">Masters Athletics Records</a></li>
+													<li class="list-group-item"><a href="/mango-languages-free-trial.html">Mango Languages Free Trial</a></li>
+													<li class="list-group-item"><a href="/maryland-military-department-emergency-service-medal.html">Maryland Military Department Emergency Service Medal</a></li>
+													<li class="list-group-item"><a href="/main-directorate-for-political-military-affairs-of-the-russian-armed-forces.html">Main Directorate For Political Military Affairs Of The Russian Armed Forces</a></li>
+													<li class="list-group-item"><a href="/largest-canadian-armed-forces-base.html">Largest Canadian Armed Forces Base</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

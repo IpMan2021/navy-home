@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Archives Military Records - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Archives Military Records",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/f1/95/fd/f195fd08244bd67ae9b8aef1f5519696.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+archives+military+records",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Archives Military Records</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Records of Military Agencies Relating to African Americans from the Post-World War I Period to the Korean War Reference Information Paper Casualty Lists and Missing Missing Air Crew Reports MACRs World War II Honor List of Dead and Missing Army and Army Air Forces Personnel. Library and Archives Canada holds an extensive collection of records of the Canadian men and women who have served their country in the military and in the early years of the North West Mounted Police. The fire destroyed 80 of the records held for Veterans discharged from the Army during this time period. <br>				
+			</p>
+										<a class="badge badge-success" href="/north-korean-military-hat-for-sale.html">north korean military hat for sale</a>
+											<a class="badge badge-success" href="/nypd-army-service-bar.html">nypd army service bar</a>
+											<a class="badge badge-dark" href="/nypd-military-budget.html">nypd military budget</a>
+											<a class="badge badge-light" href="/nike-air-force-black-harga.html">nike air force black harga</a>
+											<a class="badge badge-success" href="/nike-air-force-1-07-hrvatska.html">nike air force 1 07 hrvatska</a>
+											<a class="badge badge-light" href="/nypd-pizza-military-trail-boynton.html">nypd pizza military trail boynton</a>
+											<a class="badge badge-info" href="/nh-department-of-military-affairs-and-veterans-services.html">nh department of military affairs and veterans services</a>
+											<a class="badge badge-info" href="/ncaa-extension-of-eligibility.html">ncaa extension of eligibility</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you have come to visit the right blog.  Our website provides you with hints for seeing the highest quality video and picture content, hunt and locate more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, especially Youtube, therefore we recommend this video that you see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/60/ec/0860ec9dd59e1c70d6eaa72f83a892ee.jpg" data-lightbox="roadtrip" data-title="Searching Amreican Military Records Military Records Records Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/60/ec/0860ec9dd59e1c70d6eaa72f83a892ee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW4kHpWl4iRM1IyLX9-uZIosPYSisZ1G3PeA';" alt="Searching Amreican Military Records Military Records Records Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Searching Amreican Military Records Military Records Records Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/82/17/1582176b3704e2586cdc184ceef8a4bf.jpg" data-lightbox="roadtrip" data-title="Genealogy Introduction Military Research At The National Archives Regular Service Via Nara Genealogy History Family Tree Genealogy Genealogy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/82/17/1582176b3704e2586cdc184ceef8a4bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKMcnpgw4yr7o8FfzhYAevC6zFInDV44qOyA';" alt="Genealogy Introduction Military Research At The National Archives Regular Service Via Nara Genealogy History Family Tree Genealogy Genealogy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Genealogy Introduction Military Research At The National Archives Regular Service Via Nara Genealogy History Family Tree Genealogy Genealogy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/e5/6e/73e56e3d9911da76a9cab39fa8a53ff9.jpg" data-lightbox="roadtrip" data-title="About Military Service Records And Official Military Personnel Files Ompfs Dd Form 214 With Images Military Service Military Personnel Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/e5/6e/73e56e3d9911da76a9cab39fa8a53ff9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLV8YYQMXBeL19tsqfy_VDWYQvpmP8dwu5Lg';" alt="About Military Service Records And Official Military Personnel Files Ompfs Dd Form 214 With Images Military Service Military Personnel Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">About Military Service Records And Official Military Personnel Files Ompfs Dd Form 214 With Images Military Service Military Personnel Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/ed/73/fb/ed73fbb80dc43a07bc620d925ee4fb89.jpg" data-lightbox="roadtrip" data-title="How To Find Your Ancestor S Us Military Records Free Ebook Military Records Find Your Ancestors Family History Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/ed/73/fb/ed73fbb80dc43a07bc620d925ee4fb89.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXY5q0IjZC_5dtoLdNnR4ZQyXRgyyk8600lg';" alt="How To Find Your Ancestor S Us Military Records Free Ebook Military Records Find Your Ancestors Family History Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Find Your Ancestor S Us Military Records Free Ebook Military Records Find Your Ancestors Family History Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/fc/bf/05fcbf8a62b4317ba037a20493135820.jpg" data-lightbox="roadtrip" data-title="Requesting Copies Of Older Military Service Records Military Records Military Service Ancestry Hints">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/fc/bf/05fcbf8a62b4317ba037a20493135820.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9cqjUz9qO8JN31KuOzOyCexDZIJ6riLWnyw';" alt="Requesting Copies Of Older Military Service Records Military Records Military Service Ancestry Hints">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Requesting Copies Of Older Military Service Records Military Records Military Service Ancestry Hints</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/43/e4/9d43e410c7262aa7db2cb89f40370fc7.jpg" data-lightbox="roadtrip" data-title="Pin On Genealogy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/43/e4/9d43e410c7262aa7db2cb89f40370fc7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrS_ydsYoFHgHOSmk8psz-XibAEFPQoIWo6A';" alt="Pin On Genealogy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Genealogy</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/15/82/17/1582176b3704e2586cdc184ceef8a4bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrS_ydsYoFHgHOSmk8psz-XibAEFPQoIWo6A';" alt="Pin On Genealogy">
+										<div class="card-body">
+						<h3 class="h5"><b>Military records from WWI - present are held in the National Military Personnel Records Center NPRC in St.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va archives military records</strong>. 
+								
+																	The National Archives Building in Washington DC Archives I houses textual and microfilm records relating to genealogy American Indians pre-World War II military and naval-maritime matters the New Deal the District of Columbia the Federal courts and Congress. 
+																	Military Records The VA Records Center and Vault frequently receives calls and e-mails from Veterans seeking military andor medical records. 
+																	Air Force Army Marine Corps Navy and Coast Guard and other government agencies. 
+																	VA Records Center and Vault. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The fire didnt involve records for retirees and Reservists who were alive on July 12 1973. 
+																	From your signed-in homepage click or tap on Correspondence Documentation. 
+																	Records prior to WWI are in Washington DC. 
+																	While modern military service records are maintained electronically most requests submitted to NPRC involve veterans who separated from the military many years ago and records that are available only in paper or microfilm formats which require on-site access. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military and Veterans Research and Resources at The National Archives Military and Veterans Records at the National Archives Military records can be valuable resources in personal and genealogical research. 
+																	Choose the Personnel File tab. 
+																	Biographical Dictionaries US Bibliographies and Indexes US Guides and Manuals US Histories Records and Genealogies US Colonial. 
+																	See details of holdings. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are more than 15 million WWI and WWII service records in our collection. 
+																	Defence and war service records The National Archives extraordinary collection of records about Australias defence and war efforts will help you learn more about your familys war history support your academic research or commemorate ex-service members. 
+																	Louis which is part of the National Archives and Records Administration NARA. 
+																	Service records of Virginia soldiers in the colonial wars 16221763 offer more historical than genealogical information and usually provide only the name of the soldier and the unit in which he served. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your records may have been destroyed in the fire if you were discharged from either. 
+																	Follow the steps below to submit a military records request. 
+																	The Army between November 1 1912 and January 1 1960. 
+																	Obtaining Military Records and Medals For information about obtaining military records please visit the Military Personnel Records Center in St. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As the official repository of military personnel records the National Archives allows researchers to view documents and records related to the military both. 
+																	Get your VA medical records called VA Blue Button Set up your personal health record and download medical records reports and images to share with your VA and non-VA doctors. 
+																	Unfortunately we are unable to assist because the records requested are usually not at our Center. 
+																	In honor of Veterans Day todays post comes from Sarah Basilion an intern in the National Archives History Office. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Then select Defense Personnel Records Information DPRIS from the drop-down menu. 
+																	Louis Missouri See details of holdings. 
+																	Get military service records for the army Royal Navy Royal Marines or RAF from 1920 - who can apply how long it takes cost how to apply. 
+																	We are the official repository for records of the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To calculate this take the current year and subtract 62 Records of any veteran who separated from the military 62 or more years ago can be ordered by anyone for a copying fee detailed below under cost. 
+																	Information and advice from NARA is as follows. 
+																	Request your military records DD214 View and print documents from your official military personnel file including your DD214. 
+																	There are records relating to Loyalists the War of 1812 the Rebellions the South African War the First World War and the Second World War many of which are featured in databases research. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military Personnel Records The National Personnel Records Center Military Personnel Records NPRC-MPR is the repository of millions of military personnel health and medical records of discharged and deceased veterans of all services during the 20th century. 
+																	The National Archives is one of the best places to research US. 
+																	Post at Fredericksburg -- Textual records of this fort 1866-1869 including registers reports and correspondence are in the National Archives and are described in Records of United States Army Continental Commands 1821-1920 under the section entitled Records of Posts 1820-1940 Record Group 3937. 
+																	The National Archives holds Federal military service records from the Revolutionary War to 1912 in the National Archives Building in Washington DC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Vital Records Virginia United States Research. 
+																	Military Records Virginia General Military Indexes Virginia Colonial and Revolutionary War Virginia War of 1812 Virginia Civil War 1861-1865 Virginia Virginia Maps and Geographic Information. 
+																	Military personnel records are open to the public 62 years after they leave the military. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/ee/63/bfee63b692f54f3a6bcb15c67037b6ad.jpg" data-lightbox="roadtrip" data-title="Pin On World War Ii Writing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/ee/63/bfee63b692f54f3a6bcb15c67037b6ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZTRwiZjt48Ktqork9A-Isy1t4ZUA9BS7gBw';" alt="Pin On World War Ii Writing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On World War Ii Writing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/fa/3b/effa3bf5670cec854d6cd663214e0f57.jpg" data-lightbox="roadtrip" data-title="Family History Documents Australia History World War One History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/fa/3b/effa3bf5670cec854d6cd663214e0f57.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk5xes5smbVZkzGG85j8b7Xpuv7S5aeDU-zA';" alt="Family History Documents Australia History World War One History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Family History Documents Australia History World War One History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/74/bf/4074bfe4dff474846622535cf84b9044.png" data-lightbox="roadtrip" data-title="Request Military Service Records Records Medical Records Military Service">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/74/bf/4074bfe4dff474846622535cf84b9044.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdrlAOtFVPOTBwvoUJxr-eX54pJkfD8ir5Cg';" alt="Request Military Service Records Records Medical Records Military Service">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Request Military Service Records Records Medical Records Military Service</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/59/f3/cc59f3cdf7491a24df04f45d66990221.png" data-lightbox="roadtrip" data-title="Nara E Vetrecs Nara Military Records Va Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/59/f3/cc59f3cdf7491a24df04f45d66990221.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5gclq38elBF4IF4jDi8Rwr1J359KABkEhuw';" alt="Nara E Vetrecs Nara Military Records Va Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nara E Vetrecs Nara Military Records Va Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/62/1a/f3621ae319893b760f9d900b67966265.png" data-lightbox="roadtrip" data-title="The Library Of Virginia Workshops With Images African American Genealogy Virginia Governor Workshop">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/62/1a/f3621ae319893b760f9d900b67966265.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuFe_grEO77nfKxsV0r1ewnNUrwxrrogOCNA';" alt="The Library Of Virginia Workshops With Images African American Genealogy Virginia Governor Workshop">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Library Of Virginia Workshops With Images African American Genealogy Virginia Governor Workshop</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/95/fd/f195fd08244bd67ae9b8aef1f5519696.png" data-lightbox="roadtrip" data-title="About Military Service Records And Official Military Personnel Files Ompfs Dd Form 214 Military Service Military Personnel Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/95/fd/f195fd08244bd67ae9b8aef1f5519696.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW7P9pLd-B7EFJhzVNtdPQD-o-NYEVUWOQgw';" alt="About Military Service Records And Official Military Personnel Files Ompfs Dd Form 214 Military Service Military Personnel Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">About Military Service Records And Official Military Personnel Files Ompfs Dd Form 214 Military Service Military Personnel Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/03/b7/4303b7f485eec0747c8d79e9c1c61814.jpg" data-lightbox="roadtrip" data-title="Veterans Personnel Records At The National Archives St Louis National Archives Family History Resources Military Records">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/03/b7/4303b7f485eec0747c8d79e9c1c61814.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGkM-7jzqS3_bIJYEZTQLkKHQAuYiXW_gaiw';" alt="Veterans Personnel Records At The National Archives St Louis National Archives Family History Resources Military Records">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Personnel Records At The National Archives St Louis National Archives Family History Resources Military Records</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/66/91/c466919c706471250c0915ec03aa3d4e.jpg" data-lightbox="roadtrip" data-title="Wwll Registration Card Robert Henning Webb Charlottesville Virginia Born Feb 21 1882 Historical Documents Free Family Tree Genealogy Records">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/66/91/c466919c706471250c0915ec03aa3d4e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNj58OuwHoJO3CD5vLzyo56d4c5ln3U8Aljw';" alt="Wwll Registration Card Robert Henning Webb Charlottesville Virginia Born Feb 21 1882 Historical Documents Free Family Tree Genealogy Records">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wwll Registration Card Robert Henning Webb Charlottesville Virginia Born Feb 21 1882 Historical Documents Free Family Tree Genealogy Records</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/68/4d/29/684d2970fc5b775fb63c13231d4b6edf.jpg" data-lightbox="roadtrip" data-title="How To Find Compiled Military Service Records Military Service Military Cards Family Genealogy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/68/4d/29/684d2970fc5b775fb63c13231d4b6edf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv6IvE_hpzNV1Lr8lX10l2Z55JOTFSA2JDFA';" alt="How To Find Compiled Military Service Records Military Service Military Cards Family Genealogy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Find Compiled Military Service Records Military Service Military Cards Family Genealogy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9b/1f/16/9b1f16c9a58c59f3b3f314a472a8c794.jpg" data-lightbox="roadtrip" data-title="Family Tree Friday War Of 1812 Certificates Of Discharge In 2020 Family Genealogy Family Tree Genealogy Genealogy History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9b/1f/16/9b1f16c9a58c59f3b3f314a472a8c794.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh2MhnoiC_tWnImjZhfkFaTVuJVjHLRV3aHg';" alt="Family Tree Friday War Of 1812 Certificates Of Discharge In 2020 Family Genealogy Family Tree Genealogy Genealogy History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Family Tree Friday War Of 1812 Certificates Of Discharge In 2020 Family Genealogy Family Tree Genealogy Genealogy History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/79/d7/23/79d723e7126cd693f099713fbe8ebaf4.jpg" data-lightbox="roadtrip" data-title="Military Records Pensions Applications Heirs At Law And Civil War Military Records From The Fauquier County Virginia Court Minute Books 1840 1904 Civil War Military Records Civil War Marvel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/79/d7/23/79d723e7126cd693f099713fbe8ebaf4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZixa9uoBEO7ed6xWumol506GWW89TvLwyEA';" alt="Military Records Pensions Applications Heirs At Law And Civil War Military Records From The Fauquier County Virginia Court Minute Books 1840 1904 Civil War Military Records Civil War Marvel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Records Pensions Applications Heirs At Law And Civil War Military Records From The Fauquier County Virginia Court Minute Books 1840 1904 Civil War Military Records Civil War Marvel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/2d/b5/6a2db56c4c1c76fb37a833ae705c1e2d.jpg" data-lightbox="roadtrip" data-title="Civil War Army Of West Virginia Timeline Of West Virginia Civil War And Statehood West Virginia Virginia Timeline">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/2d/b5/6a2db56c4c1c76fb37a833ae705c1e2d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiJAytDr73-6jTlXFBiH6Ba-CQEnKAy6AKOA';" alt="Civil War Army Of West Virginia Timeline Of West Virginia Civil War And Statehood West Virginia Virginia Timeline">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Civil War Army Of West Virginia Timeline Of West Virginia Civil War And Statehood West Virginia Virginia Timeline</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/8c/0a/be8c0add3db1bfc1ef02417196545191.png" data-lightbox="roadtrip" data-title="What Does A Dd214 Look Like And Why Is It So Important Dd214direct Com Military Education Military Records Education And Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/8c/0a/be8c0add3db1bfc1ef02417196545191.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9aGoNdOTHWfQYZ21f-d8aEyRlrgwp_hy-iw';" alt="What Does A Dd214 Look Like And Why Is It So Important Dd214direct Com Military Education Military Records Education And Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Does A Dd214 Look Like And Why Is It So Important Dd214direct Com Military Education Military Records Education And Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/nellis-air-force-hours.html">Nellis Air Force Hours</a></li>
+													<li class="list-group-item"><a href="/nypd-army-size.html">Nypd Army Size</a></li>
+													<li class="list-group-item"><a href="/nebraska-department-of-military.html">Nebraska Department Of Military</a></li>
+													<li class="list-group-item"><a href="/new-mexico-military-affairs-department.html">New Mexico Military Affairs Department</a></li>
+													<li class="list-group-item"><a href="/norfolk-police-department-military-hwy.html">Norfolk Police Department Military Hwy</a></li>
+													<li class="list-group-item"><a href="/nypd-military-budget.html">Nypd Military Budget</a></li>
+													<li class="list-group-item"><a href="/nypd-patrol-guide-military-leave.html">Nypd Patrol Guide Military Leave</a></li>
+													<li class="list-group-item"><a href="/ncaa-volleyball-eligibility.html">Ncaa Volleyball Eligibility</a></li>
+													<li class="list-group-item"><a href="/number-of-personnel-in-us-army.html">Number Of Personnel In Us Army</a></li>
+													<li class="list-group-item"><a href="/nypd-military-extended-leave-desk.html">Nypd Military Extended Leave Desk</a></li>
+													<li class="list-group-item"><a href="/new-york-department-of-military-and-veterans-affairs.html">New York Department Of Military And Veterans Affairs</a></li>
+													<li class="list-group-item"><a href="/ncaa-junior-college-eligibility-rules.html">Ncaa Junior College Eligibility Rules</a></li>
+													<li class="list-group-item"><a href="/norway-defense-budget-2021.html">Norway Defense Budget 2021</a></li>
+													<li class="list-group-item"><a href="/number-of-dod-civilian-employees.html">Number Of Dod Civilian Employees</a></li>
+													<li class="list-group-item"><a href="/nypd-budget-compared-to-military.html">Nypd Budget Compared To Military</a></li>
+													<li class="list-group-item"><a href="/nypd-after-military.html">Nypd After Military</a></li>
+													<li class="list-group-item"><a href="/nypd-military-equipment.html">Nypd Military Equipment</a></li>
+													<li class="list-group-item"><a href="/nypd-military-leave.html">Nypd Military Leave</a></li>
+													<li class="list-group-item"><a href="/nh-department-of-military-affairs-and-veterans-services.html">Nh Department Of Military Affairs And Veterans Services</a></li>
+													<li class="list-group-item"><a href="/new-zealand-army-dog-tags.html">New Zealand Army Dog Tags</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

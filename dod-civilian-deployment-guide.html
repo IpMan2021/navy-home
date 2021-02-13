@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Dod Civilian Deployment Guide - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Dod Civilian Deployment Guide",
+  "datePublished": "2021-02-13",
+  "image": "https://cdn.dvidshub.net/media/thumbs/frames/video/2010/769020/486x274_q75.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=dod+civilian+deployment+guide",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Dod Civilian Deployment Guide</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Citizen Employees and AR 690-11. However many civilians do deploy citing a variety of reasons and some deploy for long periods of time and serve multiple tours. DA PAM 690-47 DA CIVILIAN EMPLOYEE DEPLOYMENT GUIDE. <br>				
+			</p>
+										<a class="badge badge-warning" href="/who-qualifies-for-military-funeral-honors.html">who qualifies for military funeral honors</a>
+											<a class="badge badge-light" href="/where-can-i-get-counseling-for-free.html">where can i get counseling for free</a>
+											<a class="badge badge-light" href="/who-is-the-primary-civilian-leader-within-the-department-of-defense.html">who is the primary civilian leader within the department of defense</a>
+											<a class="badge badge-warning" href="/when-did-coast-guard-become-homeland-security.html">when did coast guard become homeland security</a>
+											<a class="badge badge-secondary" href="/where-to-get-financial-help-during-covid.html">where to get financial help during covid</a>
+											<a class="badge badge-dark" href="/what-military-movies-are-on-netflix.html">what military movies are on netflix</a>
+											<a class="badge badge-success" href="/which-military-department-is-concerned-with-the-supply-of-arms.html">which military department is concerned with the supply of arms</a>
+											<a class="badge badge-warning" href="/what-military-resource-is-involved-in-many-of-the-public-works.html">what military resource is involved in many of the public works</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to visit the ideal blog.  Our site gives you suggestions for viewing the maximum quality video and picture content, search and locate more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, especially Youtube, therefore we recommend this movie that you view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2019/Oct/08/2002192203/1280/1280/0/130429-O-ZZ999-001A.JPG" data-lightbox="roadtrip" data-title="Dod Civilians Deploy To Support Warfighters U S Department Of Defense Defense Department News">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2019/Oct/08/2002192203/1280/1280/0/130429-O-ZZ999-001A.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7dWmiVOL0dI9jTmvoa2FK5f862_nOBIVOUQ';" alt="Dod Civilians Deploy To Support Warfighters U S Department Of Defense Defense Department News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dod Civilians Deploy To Support Warfighters U S Department Of Defense Defense Department News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/73/73/b3/7373b32687ae5884246799cbe7c6abbc.jpg" data-lightbox="roadtrip" data-title="The Government Travel Charge Card Program Provides Dod Civilians And Military Personnel With A Safe Effective Co Government Military Spouse Support Milspouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/73/73/b3/7373b32687ae5884246799cbe7c6abbc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUtE2p1xhwS2baICdfLdKlV7obfY1NNXburQ';" alt="The Government Travel Charge Card Program Provides Dod Civilians And Military Personnel With A Safe Effective Co Government Military Spouse Support Milspouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Government Travel Charge Card Program Provides Dod Civilians And Military Personnel With A Safe Effective Co Government Military Spouse Support Milspouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/9e/4f/8d9e4f514989a56ad7362aaa0c87d42b.jpg" data-lightbox="roadtrip" data-title="Stationed In Germany With Us Army Air Force Or Navy In Germany As A Dod Civilian Armybeatz Is The Blog Created For Military Life Germany Military Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/9e/4f/8d9e4f514989a56ad7362aaa0c87d42b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3VM6T7elGVY8sA8OH4InKVAusnAauomrUHA';" alt="Stationed In Germany With Us Army Air Force Or Navy In Germany As A Dod Civilian Armybeatz Is The Blog Created For Military Life Germany Military Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stationed In Germany With Us Army Air Force Or Navy In Germany As A Dod Civilian Armybeatz Is The Blog Created For Military Life Germany Military Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2014/Oct/23/2000949337/600/400/0/180210-A-YG824-052.JPG" data-lightbox="roadtrip" data-title="Indiana Guard Prepares Dod Civilians For Overseas Deployment National Guard Article View">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2014/Oct/23/2000949337/600/400/0/180210-A-YG824-052.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0eTSDow_rB7Jza4RXYVIepT5z3ehsdDvs7w';" alt="Indiana Guard Prepares Dod Civilians For Overseas Deployment National Guard Article View">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indiana Guard Prepares Dod Civilians For Overseas Deployment National Guard Article View</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="koDQKGUn9NbSWM" data-lightbox="roadtrip" data-title="Https Www Afcent Af Mil Portals 82 Documents Afcent 2036 2903 Usafcenti 2036 2903 2012 20dec 2018 Pdf Ver 2018 12 11 092516 370">
+											<img class="card-img v-image ads-img " src="koDQKGUn9NbSWM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQippMTKf57eCn3gfdxpf_hYUazhdvrQibJXw';" alt="Https Www Afcent Af Mil Portals 82 Documents Afcent 2036 2903 Usafcenti 2036 2903 2012 20dec 2018 Pdf Ver 2018 12 11 092516 370">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Afcent Af Mil Portals 82 Documents Afcent 2036 2903 Usafcenti 2036 2903 2012 20dec 2018 Pdf Ver 2018 12 11 092516 370</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="ezQI26TmYqS0rM" data-lightbox="roadtrip" data-title="Https Capl Army Mil Repository Brochures Army Civilian Acculturation Handbook Pdf">
+											<img class="card-img v-image ads-img " src="ezQI26TmYqS0rM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoSJKAlUCqznYmTv2zUD76qCQ_3VJJAyXT3w';" alt="Https Capl Army Mil Repository Brochures Army Civilian Acculturation Handbook Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Capl Army Mil Repository Brochures Army Civilian Acculturation Handbook Pdf</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/a2/22/d4/a222d4560d5ab9b0a939c022a85e92a3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoSJKAlUCqznYmTv2zUD76qCQ_3VJJAyXT3w';" alt="Https Capl Army Mil Repository Brochures Army Civilian Acculturation Handbook Pdf">
+										<div class="card-body">
+						<h3 class="h5"><b>This Pre-Deployment Instruction Guide provides you with a comprehensive description of the required activities forms and training you must complete in order to deploy.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Dod civilian deployment guide</strong>. 
+								
+																	Todd Lopez The Joint Artificial Intelligence Center stood up just last year has plans to hire an ethicist to. 
+																	This Department of the Army Pamphlet-o Includes information mandated by Department of Defense Directive 140410 Emergency Essential EE DOD US. 
+																	Click on the document link to upload the PDF file. 
+																	3 2019 BY C. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	3 Department of Defense Directive 140031 DOD Civilian Work Force Contingency and Emergency Planning and Execution. 
+																	But before their one-year deployment begins they first must undergo rigorous training on Muscatatuck Urban Training Center and Camp. 
+																	Through this practical training computer-based learning elements and medical and fitness assessments civilians who. 
+																	Civilian employees who require treatment for disease or injury sustained during deployment will be provided care at no cost to the employee under the DoD Military Health Services System AR 40-3. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	SUMMARY of CHANGE. 
+																	All redeploying service members and DOD civilian employees will complete a Post-Deployment Health Assessment DD Form 2796 and Post-Deployment Health Reassessment DD Form 2900 in accordance with DODI 649003 Deployment Health The requirement applies to all service members including Active Component and Reserve Component personnel on applicable Title 10 or Title 32 orders. 
+																	5 Army Regulation 690-11 Use and Management of Civilian Personnel in Support of Military Contingency Operations. 
+																	Deployment is not a fact of life for the majority of Department of Defense civilian workers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Defense Department has dropped a plan to expand military exchange shopping privileges to its civilian employees. 
+																	DOD Seeks Ethicist to Guide Artificial Intelligence Deployment Sept. 
+																	DA CIVILIAN EMPLOYEE DEPLOYMENT GUIDE Headquarters Department of the Army Washington DC 1 November 1995 Unclassified DODD0A-008957. 
+																	Volunteering to deploy gives civilian employees an extraordinary opportunity to broaden skills and expertise while directly supporting operations of national interest. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2 days ago Needed Positions DoD has relied on its civilian workforce to deploy in support of expeditionary requirements for as long as contingency operations have existed. 
+																	DoD personnel with existing medical conditions may deploy based upon a medical assessment as described in Enclosure 2 and subparagraph E4A111. 
+																	Of Reference l which for civilian employees shall be consistent with subparagraph 4g3c of DoDD 140410 Reference m and the requirements of The Rehabilitation Act of 1973 as amended when such civilian employees are covered by that Act if all of these conditions are met. 
+																	S2O mandates that all civilian deployees undergo Pre-Deployment Training PDT. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Air Force AF requires medical and physical deployment standards for deploying AF civilians to ensure successful mission accomplishment with the total footprint of active duty Guard Reserve and civilian components. 
+																	Policy and Guidance DOD policy memorandum and guidance documents that shape the civilian deployment experience are listed below. 
+																	4 Department of Defense Instruction 140032 DOD Civilian Work Force Contingency and Emergency Planning Guidelines and Procedures. 
+																	DoD Instruction DoDI 649003 Deployment Health September 30 2011 DoDI 649007 Deployment-Limiting Medical Conditions for Service Members and DoD Civilian Employees February 10 2010 DoD Instruction DoDI 140410 DoD Civilian Expeditionary Workforce January 23 2009 DoD Directive DoDD 649002E. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Department of Defense Expeditionary Civilian DoD-EC program allows civilians to apply their capability experience and knowledge as a crucial part of helping DoD accomplish its mission abroad. 
+																	For more DOD policy memorandum and guidance information please click on the sign to the right. 
+																	DoD civilians are a critical part of the Total Force and essential to ensuring the readiness capability capacity and lethality of our military forces. 
+																	BAGRAM AIR FIELD Afghanistan June 9 2015 Deployment is a fact of life for those wearing the uniform. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	An official with the DoDs Office of Morale Welfare and Recreation and Non. 
+																	Deployment medical clearance is mandatory for Service members and DoD Civilians assigned to Air Force installations and agencies All DoD Civilians entering theater for more than 30 days must report to Public HealthForce Health Management PHFHM at the MTF within. 
+																	Thousands of civilians with in-demand expertise volunteer each year to support wartime missions in Afghanistan and Iraq. 
+																	Use Your Needed Skills to Support DOD Operations Overseas by Volunteering for a Civilian Deployment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Many civilians cannot meet these requirements due to older ages medical issues and physical constraints. 
+																	Throughout the process you will be working closely with a Civilian Expeditionary Workforce CEW processor assigned to you to assist you during all phases of pre- deployment. 
+																	Sign Up for the Opportunity of a Lifetime. 
+																	This booklet is a quick reference guide intended to assist Brigade Combat Team Safety Professionals BCTSPs in advising their commands and in preparing and maintaining accident prevention programs during deployment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As a deployee you will live. 
+																	United States Department of Defense. 
+																	Civilians Train to Deploy. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/22/d4/a222d4560d5ab9b0a939c022a85e92a3.jpg" data-lightbox="roadtrip" data-title="Remembrance In Afghanistan British Soldier Afghanistan British Armed Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/22/d4/a222d4560d5ab9b0a939c022a85e92a3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP-h5N8uy5ZNKoN8islHvGalCwJPW4CDsaWA';" alt="Remembrance In Afghanistan British Soldier Afghanistan British Armed Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Remembrance In Afghanistan British Soldier Afghanistan British Armed Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.dvidshub.net/media/thumbs/frames/video/2010/769020/486x274_q75.jpg" data-lightbox="roadtrip" data-title="Expeditionary Home Page">
+											<img class="card-img v-image ads-img " src="https://cdn.dvidshub.net/media/thumbs/frames/video/2010/769020/486x274_q75.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjdrq1uhBRJ-7sQnXAJzUrYYeX6ukSG7ejbA';" alt="Expeditionary Home Page">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Expeditionary Home Page</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/25/a8/f325a82d97f146e56ed26375543a6472.jpg" data-lightbox="roadtrip" data-title="Yeah They May Want To Rethink And Rewrite Everything For The Air Force Since Some Of Us Have Actually Been Do Military Humor Navy Military Humor Military Jokes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/25/a8/f325a82d97f146e56ed26375543a6472.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQINLPeJmJ8lkQ_X0mLNclzd6BAHMei7KTGgQ';" alt="Yeah They May Want To Rethink And Rewrite Everything For The Air Force Since Some Of Us Have Actually Been Do Military Humor Navy Military Humor Military Jokes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yeah They May Want To Rethink And Rewrite Everything For The Air Force Since Some Of Us Have Actually Been Do Military Humor Navy Military Humor Military Jokes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.acq.osd.mil/eie/images/Calculation.jpg" data-lightbox="roadtrip" data-title="Construction">
+											<img class="card-img v-image ads-img " src="https://www.acq.osd.mil/eie/images/Calculation.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXnl4fVTNTKNZjRDtWQAsWffPuM5klQeDSFA';" alt="Construction">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Construction</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/57/c6/d1/57c6d1594f1d5b2a59b400949c2e3b68.jpg" data-lightbox="roadtrip" data-title="Statement Of Work Sample Elegant Free 32 Statement Of Work Examples Samples In Pdf Statement Of Work How To Make Brochure Statement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/57/c6/d1/57c6d1594f1d5b2a59b400949c2e3b68.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfRfZ2OTNvxyytzaol1-4yXT9aYv2tZkpVMw';" alt="Statement Of Work Sample Elegant Free 32 Statement Of Work Examples Samples In Pdf Statement Of Work How To Make Brochure Statement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Statement Of Work Sample Elegant Free 32 Statement Of Work Examples Samples In Pdf Statement Of Work How To Make Brochure Statement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/76/3d/d7/763dd7c666d971d607ab6814376a50de.jpg" data-lightbox="roadtrip" data-title="This Sample Resume For A Marine Seeking A Position In Law Enforcement Shows How You Can Translate Your Militar In 2021 Police Officer Resume Police Jobs Paper Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/76/3d/d7/763dd7c666d971d607ab6814376a50de.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZMs8i9ME0qVtq3LQpy9MR8AEWFLE0lR6MYA';" alt="This Sample Resume For A Marine Seeking A Position In Law Enforcement Shows How You Can Translate Your Militar In 2021 Police Officer Resume Police Jobs Paper Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Sample Resume For A Marine Seeking A Position In Law Enforcement Shows How You Can Translate Your Militar In 2021 Police Officer Resume Police Jobs Paper Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/images/2018/09/09/529380/size0-full.jpg" data-lightbox="roadtrip" data-title="Asg A Site Manager Honored For Service To Resolute Support Calls Tour The Best Of His Life Article The United States Army">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/images/2018/09/09/529380/size0-full.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoVPsmKPozFt-RVsD-4H9N3daNSDEVEx0oyA';" alt="Asg A Site Manager Honored For Service To Resolute Support Calls Tour The Best Of His Life Article The United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Asg A Site Manager Honored For Service To Resolute Support Calls Tour The Best Of His Life Article The United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cusnc.navy.mil/portals/17/New%20Arrivals/clothing%20policy-approved.jpg?ver=2017-05-14-050954-773" data-lightbox="roadtrip" data-title="Civilian Attire Policy">
+											<img class="card-img v-image ads-img " src="https://www.cusnc.navy.mil/portals/17/New%20Arrivals/clothing%20policy-approved.jpg?ver=2017-05-14-050954-773" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7MY8GwBxmvW1NOsehFyEice8o5yAnmd727g';" alt="Civilian Attire Policy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Civilian Attire Policy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/73/48/b973481e41208b9aba0fcf920ee3267d.png" data-lightbox="roadtrip" data-title="Stationed In Germany The Usareur License Moving To Germany Germany Military Move">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/73/48/b973481e41208b9aba0fcf920ee3267d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShaarSoPsaK473T-GP8nshLGXQ0ASZW3mxXQ';" alt="Stationed In Germany The Usareur License Moving To Germany Germany Military Move">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stationed In Germany The Usareur License Moving To Germany Germany Military Move</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/b4/c5/51b4c5d1509ac965bc813fcfea280fcb.png" data-lightbox="roadtrip" data-title="Space A Locations What You Need To Know Before You Fly Poppin Smoke Military Discounts Family Adventure Travel Space A Flights">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/b4/c5/51b4c5d1509ac965bc813fcfea280fcb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZie9LSrDeZqg2iK3KFFNlsIQ6TnKi1keO8Q';" alt="Space A Locations What You Need To Know Before You Fly Poppin Smoke Military Discounts Family Adventure Travel Space A Flights">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Space A Locations What You Need To Know Before You Fly Poppin Smoke Military Discounts Family Adventure Travel Space A Flights</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/39/f0/4539f0caaedf5aa68771e9f56674b7ab.jpg" data-lightbox="roadtrip" data-title="Defense Gov Photos News Photo Military Working Dogs Dog Soldiers Military Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/39/f0/4539f0caaedf5aa68771e9f56674b7ab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNvaS6qFgWM4tEgA6QofPBD_iDUFHOd_A55Q';" alt="Defense Gov Photos News Photo Military Working Dogs Dog Soldiers Military Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Defense Gov Photos News Photo Military Working Dogs Dog Soldiers Military Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="7WEdD2lVGwCDOM" data-lightbox="roadtrip" data-title="Https Apps Dtic Mil Dtic Tr Fulltext U2 1054707 Pdf">
+											<img class="card-img v-image ads-img " src="7WEdD2lVGwCDOM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo7G21CRzvWzfk9O4EtCmPcmlggvCAiDJ8_w';" alt="Https Apps Dtic Mil Dtic Tr Fulltext U2 1054707 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Apps Dtic Mil Dtic Tr Fulltext U2 1054707 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.stripes.com/polopoly_fs/1.140735.1302551154!/image/652456181.jpg_gen/derivatives/landscape_804/652456181.jpg" data-lightbox="roadtrip" data-title="Can Dod Civilians Outrank Troops The Rumor Doctor Stripes">
+											<img class="card-img v-image ads-img " src="https://www.stripes.com/polopoly_fs/1.140735.1302551154!/image/652456181.jpg_gen/derivatives/landscape_804/652456181.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRK19J8HARaddUrrAjmzV0ql-1wdSenXZSfg';" alt="Can Dod Civilians Outrank Troops The Rumor Doctor Stripes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can Dod Civilians Outrank Troops The Rumor Doctor Stripes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/dod-civilian-employees-benefits.html">Dod Civilian Employees Benefits</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-employee-education-benefits.html">Dod Civilian Employee Education Benefits</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-masters-program.html">Dod Civilian Masters Program</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-housing-allowance-hawaii.html">Dod Civilian Housing Allowance Hawaii</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-job-codes.html">Dod Civilian Job Codes</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-employee-travel.html">Dod Civilian Employee Travel</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-flight-discounts.html">Dod Civilian Flight Discounts</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-jobs-afghanistan.html">Dod Civilian Jobs Afghanistan</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-employee-dependent-id-card.html">Dod Civilian Employee Dependent Id Card</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-family-medical-leave-act.html">Dod Civilian Family Medical Leave Act</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-incentive-awards.html">Dod Civilian Incentive Awards</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-health-benefits.html">Dod Civilian Health Benefits</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-known-traveler-number.html">Dod Civilian Known Traveler Number</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-gs-pay-chart.html">Dod Civilian Gs Pay Chart</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-drug-abuse-testing-program.html">Dod Civilian Drug Abuse Testing Program</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-jobs-in-germany.html">Dod Civilian Jobs In Germany</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-jobs-near-me.html">Dod Civilian Jobs Near Me</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-employee-discounts.html">Dod Civilian Employee Discounts</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-expeditionary-workforce.html">Dod Civilian Expeditionary Workforce</a></li>
+													<li class="list-group-item"><a href="/dod-civilian-employee-perks.html">Dod Civilian Employee Perks</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

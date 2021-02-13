@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Is Navy Part Of Dod - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Is Navy Part Of Dod",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/73/a6/24/73a6243e8adea0ae71a1ad8bf12bb077.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=is+navy+part+of+dod",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Is Navy Part Of Dod</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">A secondary item reparable component minor end item and repair part whose failure renders the supported end item or weapons system inoperable is considered an essential item. As a part of this programme we are working to meet the governments aspiration for 10 of new recruits into the armed forces to be from BAME communities by 2020. Three senior Defense Department officials took part in a discussion about missile defense capabilities in 2030 and the demands of tomorrow at the Missile Defense 2030 symposium. <br>				
+			</p>
+										<a class="badge badge-light" href="/department-of-defense-office-of-naval-research.html">department of defense office of naval research</a>
+											<a class="badge badge-warning" href="/department-of-defense-moderna-vaccine.html">department of defense moderna vaccine</a>
+											<a class="badge badge-secondary" href="/department-of-defense-network-definition.html">department of defense network definition</a>
+											<a class="badge badge-warning" href="/department-of-defense-service-branches.html">department of defense service branches</a>
+											<a class="badge badge-success" href="/department-of-defense-manual-520001.html">department of defense manual 520001</a>
+											<a class="badge badge-success" href="/department-of-defense-patrick-air-force-base.html">department of defense patrick air force base</a>
+											<a class="badge badge-light" href="/department-of-defense-economic-definition.html">department of defense economic definition</a>
+											<a class="badge badge-light" href="/department-of-defense-definition-quizlet.html">department of defense definition quizlet</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you've come to pay a visit to the right blog.  Our website provides you with hints for viewing the highest quality video and image content, search and locate more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, especially Youtube, therefore we recommend this movie for you to view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/b4/55/acb455390f3a665de07bdbb51e434538.jpg" data-lightbox="roadtrip" data-title="Service Uniform Us Navy Uniform Regulations Navy Uniforms Us Navy Uniforms New Navy Uniform">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/b4/55/acb455390f3a665de07bdbb51e434538.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqaev_0myl52cUM8KK5QbEsSFn3h8_yE5grQ';" alt="Service Uniform Us Navy Uniform Regulations Navy Uniforms Us Navy Uniforms New Navy Uniform">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Service Uniform Us Navy Uniform Regulations Navy Uniforms Us Navy Uniforms New Navy Uniform</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/06/3b/c9/063bc9f94b21a1a4d9eb03c21f5784a8.jpg" data-lightbox="roadtrip" data-title="Why Do China S Marines Wear Blue Battle Dress Uniforms Quora Marineblau Kleid Us Navy Uniform">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/06/3b/c9/063bc9f94b21a1a4d9eb03c21f5784a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJs-DBODsb0tIwlxVZfT0OxPVL1LXMRyOncA';" alt="Why Do China S Marines Wear Blue Battle Dress Uniforms Quora Marineblau Kleid Us Navy Uniform">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why Do China S Marines Wear Blue Battle Dress Uniforms Quora Marineblau Kleid Us Navy Uniform</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/97/a4/09/97a40915292094613ed05728f64233d9.jpg" data-lightbox="roadtrip" data-title="Photos Military Women Female Marines Female Pilot">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/97/a4/09/97a40915292094613ed05728f64233d9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7dKOCEHe8EH4KZyqUCsG_ec7pQxsis4269w';" alt="Photos Military Women Female Marines Female Pilot">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photos Military Women Female Marines Female Pilot</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/ba/6f/edba6f396147e6c7cfbf34db0b653fa4.jpg" data-lightbox="roadtrip" data-title="Pin On U S Military General">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/ba/6f/edba6f396147e6c7cfbf34db0b653fa4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-dfnujhW49-pr40xiZvwODOLHwSVJPvjiPA';" alt="Pin On U S Military General">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On U S Military General</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/5d/b3/d85db381bea7dc5f084466e42d07c629.jpg" data-lightbox="roadtrip" data-title="Dod Photo By Petty Officer 2nd Class Walter M Wayman U S Navy Military Heroes Navy Military United States Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/5d/b3/d85db381bea7dc5f084466e42d07c629.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvJaGlEDeB7ha4VJXnBPjN7aizBFXzigXpgQ';" alt="Dod Photo By Petty Officer 2nd Class Walter M Wayman U S Navy Military Heroes Navy Military United States Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dod Photo By Petty Officer 2nd Class Walter M Wayman U S Navy Military Heroes Navy Military United States Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/d0/72/3fd072ddd34389371067c92cb4b359fb.jpg" data-lightbox="roadtrip" data-title="U S Navy Photo By Mass Communication Specialist 1st Class Julie Matyascik Us Navy Women Navy Military Military Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/d0/72/3fd072ddd34389371067c92cb4b359fb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG5bnRsnl-5YT5skZyE4fv1jwYl2LaVzeCzQ';" alt="U S Navy Photo By Mass Communication Specialist 1st Class Julie Matyascik Us Navy Women Navy Military Military Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Navy Photo By Mass Communication Specialist 1st Class Julie Matyascik Us Navy Women Navy Military Military Women</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/be/ba/4c/beba4c2494595b4c90000b10495097ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG5bnRsnl-5YT5skZyE4fv1jwYl2LaVzeCzQ';" alt="U S Navy Photo By Mass Communication Specialist 1st Class Julie Matyascik Us Navy Women Navy Military Military Women">
+										<div class="card-body">
+						<h3 class="h5"><b>It is based primarily on Department of Defense DoD Instruction 85001 and Secretary of the Navy SECNAV Instruction SECNAVINST 52393A.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Is navy part of dod</strong>. 
+								
+																	Marine Corps hasnt always been part of the US. 
+																	So maritime knowledge has always been a critical part of being a marine but the US. 
+																	2930-12-305-1216 or 12-305-1216 or 2930123051216. 
+																	WASHINGTON After a bruising year-long fight with Congress part of the Navys plan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are two chains of command. 
+																	FOR THE DEPARTMENT OF THE NAVY 27 Nov 07 I. 
+																	The DOD is the largest employer in the world with over 13 million active-duty service members soldiers marines. 
+																	The Coast Guard is not administered by the DOD. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Additionally we are striving to. 
+																	For example you can enter any of the following. 
+																	The purpose of this website is to facilitate effective information flow about information managementinformation technology and cybersecurity issues and initiatives occuring within the Department of the Navy. 
+																	Part of the Department of Homeland Security during peacetime the Coast. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The DoD is transitioning to one common authentication logon certificate on CACs called the Personal Identity Verification PIV Authentication. 
+																	The United States Department of the Navy DN is one of the three military departments within the Department of Defense of the United States of AmericaThe Department of the Navy was established by an Act of Congress on 30 April 1798 initiated by the recommendation of James McHenry to provide a government organizational structure to the United States Navy USN the United States Marine. 
+																	WASHINGTON The US. 
+																	Navy website DoD Resource Locator 45376 sponsored by the Department of the Navy Chief Information Officer DON CIO. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The United States Department of Defense DoD USDOD or DOD is an executive branch department of the federal government charged with coordinating and supervising all agencies and functions of the government directly related to national security and the United States Armed Forces. 
+																	Until 1834 the Marines were an independent service. 
+																	This is the first of a three-part series on the Navys struggles to develop unmanned ships and systems. 
+																	Our proprietary software will cross reference between NATO Part Numbers and US NSN Part Numbers where applicable. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Elements of multinational commands such as NATO and NORAD as well as non-combat agencies such as the Defense Intelligence Agency and the National Security Agency. 
+																	The United States Department of Defense DoD has a complex organizational structureIt includes the Army Navy the Marine Corps Air Force Space Force the Unified combatant commands US. 
+																	PURPOSE This document defines Platform Information Technology IT for IT networks systems and IT components within the Department of the Navy DON. 
+																	Official Military Service Seals And Other Trademarks Page 2. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Department was established in 1947 and is currently divided into three major Departmentsthe Department of the Army Navy and Air Forceand has a. 
+																	DoD Regulation 41401-R DoD Materiel Management Regulation provides DoD policy establishes a uniform essentiality coding structure and requires that the degree. 
+																	This is the final installment of a three-part series on the Navys struggles to develop unmanned ships and systems. 
+																	This will affect all NAVY 311 online resources. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Navys structure is not as straightforward as the other military services its pretty complex. 
+																	Navy began last year racing down a path to field a 355. 
+																	This is a list of Agencies under the United States Department of Defense DoD which was formerly and shortly known as the National Military EstablishmentIts main responsibilities are to control the Armed Forces of the United States. 
+																	Definitions concepts and interpretation are derived from. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The four military services plus the Coast Guard. 
+																	This is an official US. 
+																	Military Services and other DoD Components have many other protected insignia that are both graphic and word marks. 
+																	The following DoD and Military Seals may be used only by the Military Departments for official purposes and are protected by law from unauthorized use. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Coast Guard provides law and maritime safety enforcement marine and environmental protection and military naval support. 
+																	Instead it is part of the Department of Homeland Security. 
+																	There are five armed forces. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/a6/24/73a6243e8adea0ae71a1ad8bf12bb077.jpg" data-lightbox="roadtrip" data-title="To All Usa Military Basses And Usa Military Report To All Usa Military Soldiers You Know Part 14 Alpha Overi Police Badge Military Police Military Insignia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/a6/24/73a6243e8adea0ae71a1ad8bf12bb077.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7s6pqqP6NOr9B7qhZb1s1J5pTLzy_RF09tg';" alt="To All Usa Military Basses And Usa Military Report To All Usa Military Soldiers You Know Part 14 Alpha Overi Police Badge Military Police Military Insignia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">To All Usa Military Basses And Usa Military Report To All Usa Military Soldiers You Know Part 14 Alpha Overi Police Badge Military Police Military Insignia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/bf/c9/d1bfc96ed2a438776d79282f058859bd.jpg" data-lightbox="roadtrip" data-title="Policeman Special Police U S Naval Base Pearl Harbor Department Of Defense Police Badge Military Insignia Special Police">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/bf/c9/d1bfc96ed2a438776d79282f058859bd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR014v-qluvkOVmLlEV-6Nkhftx5kH614CLGg';" alt="Policeman Special Police U S Naval Base Pearl Harbor Department Of Defense Police Badge Military Insignia Special Police">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Policeman Special Police U S Naval Base Pearl Harbor Department Of Defense Police Badge Military Insignia Special Police</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/14/5e/0f145eab77821f869b08d40476b364fe.jpg" data-lightbox="roadtrip" data-title="U S Navy Seal Team Members Secure A Landing Zone As Part Of A Downed Pilot Scenario During Desert Rescue Xi At Naval A Navy Seals Us Army Rangers Army Rangers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/14/5e/0f145eab77821f869b08d40476b364fe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf0c6tu8Z6hKnTBPbKJPRgC_CiFi60qGCxxw';" alt="U S Navy Seal Team Members Secure A Landing Zone As Part Of A Downed Pilot Scenario During Desert Rescue Xi At Naval A Navy Seals Us Army Rangers Army Rangers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Navy Seal Team Members Secure A Landing Zone As Part Of A Downed Pilot Scenario During Desert Rescue Xi At Naval A Navy Seals Us Army Rangers Army Rangers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/39/68/ff39685d64869793cdfd8a642d81a404.jpg" data-lightbox="roadtrip" data-title="U S Navy Photo By Petty Officer 2nd Class Oscar Espinoza Usnavy Military Heroes Chief Petty Officer Navy Mom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/39/68/ff39685d64869793cdfd8a642d81a404.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHEc1lqPIkj_yAx0uez2AYwbwzITT9ouZVTQ';" alt="U S Navy Photo By Petty Officer 2nd Class Oscar Espinoza Usnavy Military Heroes Chief Petty Officer Navy Mom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Navy Photo By Petty Officer 2nd Class Oscar Espinoza Usnavy Military Heroes Chief Petty Officer Navy Mom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/5b/ae/d8/5baed85a2b9e4087fe4344fbfb8e21fc.jpg" data-lightbox="roadtrip" data-title="Pin By Matias G Gojman On Special Forces Military Soldiers Naval Special Warfare Special Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/5b/ae/d8/5baed85a2b9e4087fe4344fbfb8e21fc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiPstv1p3lrit2lzssURn6Jif7Quvf0uHb5Q';" alt="Pin By Matias G Gojman On Special Forces Military Soldiers Naval Special Warfare Special Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Matias G Gojman On Special Forces Military Soldiers Naval Special Warfare Special Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/2c/ad/da2cad308d381b72c07e25c8be370347.jpg" data-lightbox="roadtrip" data-title="U S Navy Seals Pictured On The Deck Of A Ship During Vessel Boarding Search And Seizure Vbss Training Us D Navy Seals Us Navy Seals Military Special Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/2c/ad/da2cad308d381b72c07e25c8be370347.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6lQzKSMS8VXnlZ8f_gsTBHwDGb-aUJkwBUA';" alt="U S Navy Seals Pictured On The Deck Of A Ship During Vessel Boarding Search And Seizure Vbss Training Us D Navy Seals Us Navy Seals Military Special Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Navy Seals Pictured On The Deck Of A Ship During Vessel Boarding Search And Seizure Vbss Training Us D Navy Seals Us Navy Seals Military Special Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/fb/53/aefb536faea9b9a12ad09e1e26380383.jpg" data-lightbox="roadtrip" data-title="Woodland Pattern Navy Dress Uniforms Navy Uniforms Navy Blue Dresses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/fb/53/aefb536faea9b9a12ad09e1e26380383.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwn4JDcp_I1x8sedbe24gdSxsQsLIdx0g1ZQ';" alt="Woodland Pattern Navy Dress Uniforms Navy Uniforms Navy Blue Dresses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Woodland Pattern Navy Dress Uniforms Navy Uniforms Navy Blue Dresses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/7f/24/937f24681fa4e4e088742b07122e2246.png" data-lightbox="roadtrip" data-title="Pin On Us Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/7f/24/937f24681fa4e4e088742b07122e2246.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDkczhzm9AGLw7YFzd7MPgXw2PNoLW_0P3Nw';" alt="Pin On Us Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Us Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/76/7d/41767da7a0d26533ad1e7ee7b5373e52.jpg" data-lightbox="roadtrip" data-title="The Top 10 Realities The First Female Navy Seal Trainee Will Face Sofrep Female Soldier Soldier Army Girl">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/76/7d/41767da7a0d26533ad1e7ee7b5373e52.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjiw9jQVcnF3D4-bDecu1tWadRKJ6z120c8w';" alt="The Top 10 Realities The First Female Navy Seal Trainee Will Face Sofrep Female Soldier Soldier Army Girl">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Top 10 Realities The First Female Navy Seal Trainee Will Face Sofrep Female Soldier Soldier Army Girl</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/0e/6f/4b0e6f015df33930d084566a6dcda902.jpg" data-lightbox="roadtrip" data-title="A New U S Army Uniform For Female Soldiers Army Women Female Soldier Military Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/0e/6f/4b0e6f015df33930d084566a6dcda902.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeceM-JlfjeizhmzSzoN_mdHfU5IJfXeOWpg';" alt="A New U S Army Uniform For Female Soldiers Army Women Female Soldier Military Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A New U S Army Uniform For Female Soldiers Army Women Female Soldier Military Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/30/32/79303262ef71ffbf40ab5c7a4a78f67a.jpg" data-lightbox="roadtrip" data-title="The Missiles Were Fired From Areas In The Control Of Houthi Rebels But The U S Can T Say Yet Who Was R Us Navy Ships Navy Ships Arleigh Burke Class Destroyer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/30/32/79303262ef71ffbf40ab5c7a4a78f67a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN7E5eqcGALUfqCfdDdXYNxQw09axiDwUQHA';" alt="The Missiles Were Fired From Areas In The Control Of Houthi Rebels But The U S Can T Say Yet Who Was R Us Navy Ships Navy Ships Arleigh Burke Class Destroyer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Missiles Were Fired From Areas In The Control Of Houthi Rebels But The U S Can T Say Yet Who Was R Us Navy Ships Navy Ships Arleigh Burke Class Destroyer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/6c/b2/3f6cb2ec328e3d54bcfd8559faf7deb0.jpg" data-lightbox="roadtrip" data-title="Via Dod Buzz As It Rethinks Its Global Posture For A Possible Shift To The Asia Pacific Region The U S Army Wants In 2020 Landing Craft Navy Ships Venezuela Beaches">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/6c/b2/3f6cb2ec328e3d54bcfd8559faf7deb0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvbjSWjvlklqt1t-JQi60EFXR5eV21j7s3Dg';" alt="Via Dod Buzz As It Rethinks Its Global Posture For A Possible Shift To The Asia Pacific Region The U S Army Wants In 2020 Landing Craft Navy Ships Venezuela Beaches">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Via Dod Buzz As It Rethinks Its Global Posture For A Possible Shift To The Asia Pacific Region The U S Army Wants In 2020 Landing Craft Navy Ships Venezuela Beaches</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/ba/4c/beba4c2494595b4c90000b10495097ed.jpg" data-lightbox="roadtrip" data-title="Royal Canadian Navy News And Operations Article View Naval Reserve News Commanding Officer Of Hmcs Prevost Full Tim Royal Canadian Navy Navy News Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/ba/4c/beba4c2494595b4c90000b10495097ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWtiRZDrtuBlUy59ab2Irn1pbfPPa-rmCDzA';" alt="Royal Canadian Navy News And Operations Article View Naval Reserve News Commanding Officer Of Hmcs Prevost Full Tim Royal Canadian Navy Navy News Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Royal Canadian Navy News And Operations Article View Naval Reserve News Commanding Officer Of Hmcs Prevost Full Tim Royal Canadian Navy Navy News Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-to-hire-retired-military.html">How To Hire Retired Military</a></li>
+													<li class="list-group-item"><a href="/how-to-look-up-dod-id-number.html">How To Look Up Dod Id Number</a></li>
+													<li class="list-group-item"><a href="/how-to-get-in-the-sa-army.html">How To Get In The Sa Army</a></li>
+													<li class="list-group-item"><a href="/how-to-calculate-military-retirement.html">How To Calculate Military Retirement</a></li>
+													<li class="list-group-item"><a href="/how-to-contact-whistleblower.html">How To Contact Whistleblower</a></li>
+													<li class="list-group-item"><a href="/how-to-create-a-budget-for-the-next-fiscal-year.html">How To Create A Budget For The Next Fiscal Year</a></li>
+													<li class="list-group-item"><a href="/how-to-determine-military-retirement-date.html">How To Determine Military Retirement Date</a></li>
+													<li class="list-group-item"><a href="/how-to-look-up-dodaac-codes.html">How To Look Up Dodaac Codes</a></li>
+													<li class="list-group-item"><a href="/how-to-calculate-army-reserve-retirement-points.html">How To Calculate Army Reserve Retirement Points</a></li>
+													<li class="list-group-item"><a href="/how-to-get-a-deceased-persons-military-records.html">How To Get A Deceased Persons Military Records</a></li>
+													<li class="list-group-item"><a href="/how-to-find-a-unit-dodaac.html">How To Find A Unit Dodaac</a></li>
+													<li class="list-group-item"><a href="/how-to-calculate-fers-retirement-date.html">How To Calculate Fers Retirement Date</a></li>
+													<li class="list-group-item"><a href="/how-to-join-military.html">How To Join Military</a></li>
+													<li class="list-group-item"><a href="/how-to-look-up-military-status.html">How To Look Up Military Status</a></li>
+													<li class="list-group-item"><a href="/how-to-calculate-dod-disability-pay.html">How To Calculate Dod Disability Pay</a></li>
+													<li class="list-group-item"><a href="/how-to-get-a-free-legal-advice.html">How To Get A Free Legal Advice</a></li>
+													<li class="list-group-item"><a href="/how-to-get-a-copy-of-your-military-dd-214.html">How To Get A Copy Of Your Military Dd 214</a></li>
+													<li class="list-group-item"><a href="/how-to-look-up-someones-dd214.html">How To Look Up Someones Dd214</a></li>
+													<li class="list-group-item"><a href="/how-to-file-a-complaint-against-a-dod-civilian.html">How To File A Complaint Against A Dod Civilian</a></li>
+													<li class="list-group-item"><a href="/how-to-find-service-records-for-military-service.html">How To Find Service Records For Military Service</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

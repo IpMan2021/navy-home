@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Are The Primary Military Leaders Within The Dod - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Are The Primary Military Leaders Within The Dod",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/564x/f7/13/a2/f713a234be2cd9c75bd1c114e0734365.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+are+the+primary+military+leaders+within+the+dod",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Are The Primary Military Leaders Within The Dod</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">According to the Department of Defenses DOD 2018 Annual Suicide Report from 2013 to 2018 the suicide rate for the US. This is a list of the highest-ranking general and flag officers generals and admirals who have served in the armed forces of the United States. Click to see full answer Also question is who is the primary military leader that advises the president. <br>				
+			</p>
+										<a class="badge badge-danger" href="/how-to-qualify-for-military-housing.html">how to qualify for military housing</a>
+											<a class="badge badge-primary" href="/how-to-look-up-wwii-military-records.html">how to look up wwii military records</a>
+											<a class="badge badge-secondary" href="/hr-army-mos.html">hr army mos</a>
+											<a class="badge badge-danger" href="/hr-army-officer.html">hr army officer</a>
+											<a class="badge badge-dark" href="/hr-military-meaning.html">hr military meaning</a>
+											<a class="badge badge-success" href="/how-to-verify-dod-civilian-employment.html">how to verify dod civilian employment</a>
+											<a class="badge badge-info" href="/hr-pay-army.html">hr pay army</a>
+											<a class="badge badge-warning" href="/hr-number-army.html">hr number army</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you've come to pay a visit to the right blog.  Our website provides you with suggestions for viewing the highest quality video and image content, hunt and find more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, especially Youtube, so we recommend this video that you view.  You can also contribute to supporting this site by sharing videos and images that you like on this blog on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this website.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/75/bc/ec75bc0f393543cb2cb8a5a097e09bdf.jpg" data-lightbox="roadtrip" data-title="Pin On Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/75/bc/ec75bc0f393543cb2cb8a5a097e09bdf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHFurygQfYGQzisXmXZ8w7FxJP-2qY5alzCA';" alt="Pin On Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Marines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/39/f0/16/39f016f58e84e3eeafd2af34232a4fcb.jpg" data-lightbox="roadtrip" data-title="Pin By Ohiorockfan On Istoria In 2020 Marine Corps Parris Island United States Marine Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/39/f0/16/39f016f58e84e3eeafd2af34232a4fcb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSty3QcC1CRHfbHJpt9GnKVOidbqTpsXhMJhg';" alt="Pin By Ohiorockfan On Istoria In 2020 Marine Corps Parris Island United States Marine Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Ohiorockfan On Istoria In 2020 Marine Corps Parris Island United States Marine Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/79/47/7e79473e9ee1994d2a6aea0996fe2d17.jpg" data-lightbox="roadtrip" data-title="Marine Corps Recruit Depot San Diego United States Marine Corps Us Marine Corps Marine Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/79/47/7e79473e9ee1994d2a6aea0996fe2d17.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7qp-rrUw9LqdFprjmWECbC7800ttzduw_9w';" alt="Marine Corps Recruit Depot San Diego United States Marine Corps Us Marine Corps Marine Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marine Corps Recruit Depot San Diego United States Marine Corps Us Marine Corps Marine Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/27/0f/73270fe24027ecf0090c5e3882e29fd6.jpg" data-lightbox="roadtrip" data-title="Pin On Kindle Store">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/27/0f/73270fe24027ecf0090c5e3882e29fd6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOAa8rMqi8KNPam3b0G9CS54bYQmldoN20hw';" alt="Pin On Kindle Store">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Kindle Store</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/4c/e6/a74ce6866f974aa25a9bc363805de9a5.png" data-lightbox="roadtrip" data-title="Diversity Makes Military Stronger Dod Panel Says Wounded Warrior Warrior Tragedy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/4c/e6/a74ce6866f974aa25a9bc363805de9a5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEbtMFqy2gbmC-bvWVcAUPiby8E0h55KNS7Q';" alt="Diversity Makes Military Stronger Dod Panel Says Wounded Warrior Warrior Tragedy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Diversity Makes Military Stronger Dod Panel Says Wounded Warrior Warrior Tragedy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/c0/41/46c041e0accbe38da4b3f1ee28bab7ad.jpg" data-lightbox="roadtrip" data-title="If You Can Make Better Business Intelligence Resume You Will Be Better Than Other Candidates And You Ll Be Chosen For The Position You Need Actual Resume F">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/c0/41/46c041e0accbe38da4b3f1ee28bab7ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl_59NJA3zb-ShPtI15pSXeseNMucShz0KHw';" alt="If You Can Make Better Business Intelligence Resume You Will Be Better Than Other Candidates And You Ll Be Chosen For The Position You Need Actual Resume F">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Can Make Better Business Intelligence Resume You Will Be Better Than Other Candidates And You Ll Be Chosen For The Position You Need Actual Resume F</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/a7/4c/e6/a74ce6866f974aa25a9bc363805de9a5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl_59NJA3zb-ShPtI15pSXeseNMucShz0KHw';" alt="If You Can Make Better Business Intelligence Resume You Will Be Better Than Other Candidates And You Ll Be Chosen For The Position You Need Actual Resume F">
+										<div class="card-body">
+						<h3 class="h5"><b>On the other hand our Army prides itself on its high level of performance in a number of recent conflicts so our leadership must be effective.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What are the primary military leaders within the dod</strong>. 
+								
+																	The United States Department of Defense DoD USDOD or DOD is an executive branch department of the federal government charged with coordinating and supervising all agencies and functions of the government directly related to national security and the United States Armed ForcesThe DOD is the largest employer in the world with over 13 million active-duty service members soldiers marines. 
+																	To earn the position of a DOD Leader you must have completed the following-Reached the highest commissioned officer rank-Have 10 months Minimum-1 year of service in DOD-Be approved by the Cabinet and the other DOD Leaders-Be able to lead and organize a force of 60 members in an executive fashion and command them in games -Be very knowledgable of all of DOD-Be able to do diplomacy. 
+																	Explain civilian control over military. 
+																	Chairman of the Joint Chiefs of Staff Army Gen. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The DoD operates a Joint Senior Enlisted Professional Military Education SEJPME course designed to integrate members from across all branches of service into a unified force. 
+																	The Secretary of Defense is the principal defense policy adviser to the President and is responsible for the formulation of general defense policy and policy related to all matters of direct concern to the Department of Defense and for the execution of approved policy. 
+																	Only those holding a rank equivalent to the modern rank of five stars or more or four stars at a time when such rank was extraordinary are listed. 
+																	Which is typically the logistics combat element within a MEB. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Furthermore Patricia Kime 2019 stated Mental health appointments among active-duty troops accounted for roughly 16. 
+																	Under the direction of the President the Secretary. 
+																	It is reasonable to ask what Modern Military Leadership is and why change to our leadership approach is. 
+																	Primary Occupational Needs for Deployment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The DoD Department of Defense policy is that training will be a prerequisite before an employee manager or contractor is permitted to access DoD systems and that such training is now. 
+																	Top Civilian and Military Leaders. 
+																	Of all military medical appointments or 1. 
+																	The chairman of the Joint Chiefs of Staff is the nations highest-ranking military officer and the principal military advisor to the president the secretary of defense and the National Security Council. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The secretary of defenses position of command and authority over the military is second only to that of the president of the United States who is the commander-in-chiefThis position corresponds to what is generally known. 
+																	His primary life experience is as a senior military officer he remains subject to the Uniform Code of Military Justice and for most people his first name is still the honorific general. 
+																	The Marine Corps principal organization for all missions across the range of military operations composed of forces task organized under a single commander responding rapidly to a contingency anywhere in the world. 
+																	The US Department of Defense DoD said it plans to expand its activities in standards-setting organizations including the 3GPP which is the primary global technology-development association for 5G. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A military also known collectively as armed forces is a heavily armed highly organized force primarily intended for warfareIt is typically officially authorized and maintained by a sovereign state with its members identifiable by their distinct military uniformIt may consist of one or more military branches such as an army navy air force space force marines or coast guard. 
+																	To provide military forces needed to deter war and protect the security of the united states. 
+																	The Joint Chiefs of Staff JCS is a body of senior uniformed leaders in the United States Department of Defense which advises the president of the United States the secretary of defense the Homeland Security Council and the National Security Council on military matters. 
+																	Armed forces since 1981 is four stars or a pay grade of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The secretary of defense is the highest ranking leader in the department and serves as the principal advisor to the president the commander in chief of the armed forces on. 
+																	Examine the mission of the Department of Defense. 
+																	Army active component increased from 185 to 248 suicides per 100000 service members DOD 2019. 
+																	A MEB is a MAGTF constructed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The highest rank held by anyone in the US. 
+																	Click to see full answer. 
+																	What is the ground combat element in a MEF. 
+																	Identify the four major responsibility inherent to DoDs mission. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Defense Secretary Lloyd Austin is ordering military leaders to spend time talking to their troops about extremism in the ranks after a number of former and current military members took part in. 
+																	The DOD Expeditionary Civilian workforce performs jobs that represent a broad range of occupational needs within deployed locations. 
+																	The Australian Army senior leadership team has been articulating the need for our Army leadership style to evolve to take on a more modern form. 
+																	The SEJPME Course is designed to expose enlisted personnel to joint education and prepare them to succeed by improving their ability to operate effectively as part of a future joint force and supervise multiple Service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Consequently what primary military leader advises the president within the DoD. 
+																	The secretary of defense SecDef is the leader and chief executive officer of the United States Department of Defense the executive department of the US. 
+																	- planning military strategy - maintaining armed forces - operating military bases around the world - defending the countries from foreign threats. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/89/64/108964eb266f21cff73607f36bef4f6e.jpg" data-lightbox="roadtrip" data-title="New Tricare Fees Could Be Coming To You Primary Care News Proposal">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/89/64/108964eb266f21cff73607f36bef4f6e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWaakOwQOf6wqnuF9OvWElkspW05EZq65zLg';" alt="New Tricare Fees Could Be Coming To You Primary Care News Proposal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Tricare Fees Could Be Coming To You Primary Care News Proposal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/58/a3/2a58a3fb37bb396884c92a5397164fac.jpg" data-lightbox="roadtrip" data-title="Pin On Military Units Wwii">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/58/a3/2a58a3fb37bb396884c92a5397164fac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXaNivaGD8noYkRx6MgipS435zvmYxe-Fc5Q';" alt="Pin On Military Units Wwii">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Units Wwii</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/03/90/830390c0eae444f545bec778acb11007.jpg" data-lightbox="roadtrip" data-title="Freedom Fighter A Tribute To Women In The Military Military Heroes Combat Medic Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/03/90/830390c0eae444f545bec778acb11007.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtiGSxsa8pUEkEM5GcTx_izc6YAW_rcPBvBA';" alt="Freedom Fighter A Tribute To Women In The Military Military Heroes Combat Medic Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Freedom Fighter A Tribute To Women In The Military Military Heroes Combat Medic Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/a9/14/e5a914cd588c9ac6487518523e07a85f.jpg" data-lightbox="roadtrip" data-title="Dod Reviews Plans To Integrate Women Into Newly Opened Combat Roles Combat Women Role">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/a9/14/e5a914cd588c9ac6487518523e07a85f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj-U_qT9eiEv3JRIKWEFMu25TlQfurbKMfEA';" alt="Dod Reviews Plans To Integrate Women Into Newly Opened Combat Roles Combat Women Role">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dod Reviews Plans To Integrate Women Into Newly Opened Combat Roles Combat Women Role</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/b3/77/06b3778a3690f7c3db88971cba7a4b2f.png" data-lightbox="roadtrip" data-title="How World War I Made The Middle East What It Is Today Dodlive Library Of Congress Photos World War I Canadian History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/b3/77/06b3778a3690f7c3db88971cba7a4b2f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsrG8L1Nxk1zew8SxNPUkPWi_uwUlhlcTQwg';" alt="How World War I Made The Middle East What It Is Today Dodlive Library Of Congress Photos World War I Canadian History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How World War I Made The Middle East What It Is Today Dodlive Library Of Congress Photos World War I Canadian History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/6e/70/026e70eac16211ce868acd91d01764ae.jpg" data-lightbox="roadtrip" data-title="Usmc Drill Instructors Recruit Training Regiment Us Marine Corps United States Marine Corps American Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/6e/70/026e70eac16211ce868acd91d01764ae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD_PUlqKLD57OmD-FkWFLtxXig_bBIACO6Sw';" alt="Usmc Drill Instructors Recruit Training Regiment Us Marine Corps United States Marine Corps American Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usmc Drill Instructors Recruit Training Regiment Us Marine Corps United States Marine Corps American Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/27/a9/7c/27a97c4235f28cc885f2c67e42d3365b.jpg" data-lightbox="roadtrip" data-title="Analysis How Nigerias Defence Fared In Three Years Of Mansur Dan Alis Leadership Defence Casualty Air Marshal">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/27/a9/7c/27a97c4235f28cc885f2c67e42d3365b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJdlgY9rp_8cZc_nN4mj3A-Epj01_bz0Xg9Q';" alt="Analysis How Nigerias Defence Fared In Three Years Of Mansur Dan Alis Leadership Defence Casualty Air Marshal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Analysis How Nigerias Defence Fared In Three Years Of Mansur Dan Alis Leadership Defence Casualty Air Marshal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/a0/1c/63a01caa9693ba441b548f745cf3d77b.jpg" data-lightbox="roadtrip" data-title="Dod Gov Doc History Of African Americans In The Lis Gisig Gov Info Sources Data Docs African American History Month Naval History African American">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/a0/1c/63a01caa9693ba441b548f745cf3d77b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN3AR9dOAMf13uzhubXoqnJPq7bO_nwRQRFA';" alt="Dod Gov Doc History Of African Americans In The Lis Gisig Gov Info Sources Data Docs African American History Month Naval History African American">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dod Gov Doc History Of African Americans In The Lis Gisig Gov Info Sources Data Docs African American History Month Naval History African American</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/47/3e/4e473ee66f0600a1b4207397719aa8cb.png" data-lightbox="roadtrip" data-title="File Us Marinecorps Seal Svg Wikimedia Commons United States Marine Corps United States Marine Marine Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/47/3e/4e473ee66f0600a1b4207397719aa8cb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUHwZEHPjVc6n3xp8JPnrXS-l1soFl3uVipQ';" alt="File Us Marinecorps Seal Svg Wikimedia Commons United States Marine Corps United States Marine Marine Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">File Us Marinecorps Seal Svg Wikimedia Commons United States Marine Corps United States Marine Marine Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/36/4d/0b364dc33e39aa3e0cc6b11cb5a4a5c4.png" data-lightbox="roadtrip" data-title="Pin On Attention Whores And Such">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/36/4d/0b364dc33e39aa3e0cc6b11cb5a4a5c4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLG7TWgKRc9oxmvaS5arFHgfBnJRB0u_OjUw';" alt="Pin On Attention Whores And Such">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Attention Whores And Such</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/95/14/169514a545caa4e298fec2476d41d644.jpg" data-lightbox="roadtrip" data-title="Warrant Officer Resume Examples Best Of Tello Resume Resume Examples Warrant Officer Teacher Resume Examples">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/95/14/169514a545caa4e298fec2476d41d644.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszCKiTax4JFNAIyd-7cv8SwjU00NP-iPZCA';" alt="Warrant Officer Resume Examples Best Of Tello Resume Resume Examples Warrant Officer Teacher Resume Examples">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Warrant Officer Resume Examples Best Of Tello Resume Resume Examples Warrant Officer Teacher Resume Examples</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/25/2a/cb/252acb54ee77e2d8160d12c1b9263b41.jpg" data-lightbox="roadtrip" data-title="J79 With Components Labeled Jet Engine Aircraft Design General Electric">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/25/2a/cb/252acb54ee77e2d8160d12c1b9263b41.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQlxeKCm9GM8khVkv6GXW0RLJaHSJYqyPGYw';" alt="J79 With Components Labeled Jet Engine Aircraft Design General Electric">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">J79 With Components Labeled Jet Engine Aircraft Design General Electric</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/f7/13/a2/f713a234be2cd9c75bd1c114e0734365.jpg" data-lightbox="roadtrip" data-title="Exclusive Documents Show U S Military Allowed To Shoot At Moving Vehicles At U S Mexico Ports Of Entry Moving Port Marine Officer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/f7/13/a2/f713a234be2cd9c75bd1c114e0734365.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8ZNkvvfeco05tHykslvnqHbTgIxsGVxaxqA';" alt="Exclusive Documents Show U S Military Allowed To Shoot At Moving Vehicles At U S Mexico Ports Of Entry Moving Port Marine Officer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Exclusive Documents Show U S Military Allowed To Shoot At Moving Vehicles At U S Mexico Ports Of Entry Moving Port Marine Officer</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-records-from-world-war-ii.html">Military Records From World War Ii</a></li>
+													<li class="list-group-item"><a href="/military-resource-pack-minecraft.html">Military Resource Pack Minecraft</a></li>
+													<li class="list-group-item"><a href="/military-professional-resources-incorporated.html">Military Professional Resources Incorporated</a></li>
+													<li class="list-group-item"><a href="/military-retirement-and-va-calculator.html">Military Retirement And Va Calculator</a></li>
+													<li class="list-group-item"><a href="/military-retirement-calculator-tax-rate.html">Military Retirement Calculator Tax Rate</a></li>
+													<li class="list-group-item"><a href="/military-retirement-calculator-2020.html">Military Retirement Calculator 2020</a></li>
+													<li class="list-group-item"><a href="/military-records-archives-st-louis-mo.html">Military Records Archives St Louis Mo</a></li>
+													<li class="list-group-item"><a href="/military-retirement-calculator-usaa.html">Military Retirement Calculator Usaa</a></li>
+													<li class="list-group-item"><a href="/military-retirement-and-divorce-calculator.html">Military Retirement And Divorce Calculator</a></li>
+													<li class="list-group-item"><a href="/military-retirement-calculator-for-reservist.html">Military Retirement Calculator For Reservist</a></li>
+													<li class="list-group-item"><a href="/military-records-of-deceased-veterans.html">Military Records Of Deceased Veterans</a></li>
+													<li class="list-group-item"><a href="/military-quotes-about-hard-times.html">Military Quotes About Hard Times</a></li>
+													<li class="list-group-item"><a href="/military-retirement-calculator-for-national-guard.html">Military Retirement Calculator For National Guard</a></li>
+													<li class="list-group-item"><a href="/military-retirement-calculator-disability.html">Military Retirement Calculator Disability</a></li>
+													<li class="list-group-item"><a href="/military-retirement-benefits-calculator.html">Military Retirement Benefits Calculator</a></li>
+													<li class="list-group-item"><a href="/military-retirement-and-va-disability-calculator.html">Military Retirement And Va Disability Calculator</a></li>
+													<li class="list-group-item"><a href="/military-retirement-calculator-reserve-air-force.html">Military Retirement Calculator Reserve Air Force</a></li>
+													<li class="list-group-item"><a href="/military-recruiting-center-near-me.html">Military Recruiting Center Near Me</a></li>
+													<li class="list-group-item"><a href="/military-resource-definition.html">Military Resource Definition</a></li>
+													<li class="list-group-item"><a href="/military-police-station-jblm.html">Military Police Station Jblm</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

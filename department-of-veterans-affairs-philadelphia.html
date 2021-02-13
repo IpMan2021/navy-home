@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Department Of Veterans Affairs Philadelphia - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Department Of Veterans Affairs Philadelphia",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/600x315/99/00/26/9900260144d306b2f420afd931e9b692.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=department+of+veterans+affairs+philadelphia",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Department Of Veterans Affairs Philadelphia</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">For maps and directions to Department of Veterans Affairs view the map to the right. Department of Veterans Affairs Philadelphia PA 2 weeks ago Be among the first 25 applicants See who US. Easy access to downtown Philadelphia allows residents to participate in field trips to patriotic attractions such as the Liberty Bell the Philadelphia Vietnam Veterans Memorial and Independence Hall. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/dod-civilian-overseas-pay-calculator.html">dod civilian overseas pay calculator</a>
+											<a class="badge badge-primary" href="/dod-civilian-pay-increase-2021.html">dod civilian pay increase 2021</a>
+											<a class="badge badge-success" href="/dod-civilian-pcs-benefits.html">dod civilian pcs benefits</a>
+											<a class="badge badge-warning" href="/dod-civilian-pay-raises-by-year.html">dod civilian pay raises by year</a>
+											<a class="badge badge-warning" href="/dod-civilian-service-pin.html">dod civilian service pin</a>
+											<a class="badge badge-warning" href="/dod-civilian-superior-award.html">dod civilian superior award</a>
+											<a class="badge badge-light" href="/dod-civilian-pay-scale-2020.html">dod civilian pay scale 2020</a>
+											<a class="badge badge-primary" href="/dod-civilian-retirement-process.html">dod civilian retirement process</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to visit the ideal blog.  Our site provides you with hints for viewing the maximum quality video and picture content, search and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, so we recommend this movie that you view.  You can also contribute to supporting this website by sharing videos and images that you enjoy on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information you get on this website.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/0b/2a/b3/0b2ab3007561cda38b5954923a6534d6--department-of-veterans-affairs-regional.jpg" data-lightbox="roadtrip" data-title="The Department Of Veteran S Affairs Philadelphia Regional Office And Insurance Center Building Where I Department Of Veterans Affairs Region Building">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/0b/2a/b3/0b2ab3007561cda38b5954923a6534d6--department-of-veterans-affairs-regional.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAo3S9OzaUg2Ne0z6OYY7qzuLnYZmCoJkKuw';" alt="The Department Of Veteran S Affairs Philadelphia Regional Office And Insurance Center Building Where I Department Of Veterans Affairs Region Building">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Department Of Veteran S Affairs Philadelphia Regional Office And Insurance Center Building Where I Department Of Veterans Affairs Region Building</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/1a/ee/f41aee30c687d2d6cc5e261984f9df08.jpg" data-lightbox="roadtrip" data-title="Pin On Legislation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/1a/ee/f41aee30c687d2d6cc5e261984f9df08.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVmNVtkwEoBcDCVNpBJxVTbQdUW0vdUSncXQ';" alt="Pin On Legislation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Legislation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/ce/06/82ce0659ca958e09f8f389b2ba74b34e.jpg" data-lightbox="roadtrip" data-title="Plaque Insignia Of Department Of Veterans Affairs Wall Plaque With Insignia Of Sponsored Ve Veterans Affairs Department Of Veterans Affairs Whistleblower">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/ce/06/82ce0659ca958e09f8f389b2ba74b34e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNSS4x1RYptPBx3oLbpd7-FUCZ4SceDhq7w';" alt="Plaque Insignia Of Department Of Veterans Affairs Wall Plaque With Insignia Of Sponsored Ve Veterans Affairs Department Of Veterans Affairs Whistleblower">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Plaque Insignia Of Department Of Veterans Affairs Wall Plaque With Insignia Of Sponsored Ve Veterans Affairs Department Of Veterans Affairs Whistleblower</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/52/d9/af/52d9af46ff37abd79eca03773fc99d99.jpg" data-lightbox="roadtrip" data-title="Pin On Income Tax">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/52/d9/af/52d9af46ff37abd79eca03773fc99d99.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwBC6xXfI4UVHmaqdTddaGLp2Zj77ToPvcJA';" alt="Pin On Income Tax">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Income Tax</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/96/79/cd967912725ba6dda2a8012070a0d5a5.jpg" data-lightbox="roadtrip" data-title="Does History Repeat Itself For Us The Va Scandal Is Personal Scandal History Repeats Philly Cheese Steak Sandwich">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/96/79/cd967912725ba6dda2a8012070a0d5a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgEq-posnqPP2Pj_nBbMjjmxm9FH_af3iWCA';" alt="Does History Repeat Itself For Us The Va Scandal Is Personal Scandal History Repeats Philly Cheese Steak Sandwich">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Does History Repeat Itself For Us The Va Scandal Is Personal Scandal History Repeats Philly Cheese Steak Sandwich</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/99/00/26/9900260144d306b2f420afd931e9b692.jpg" data-lightbox="roadtrip" data-title="Philadelphia Vietnam Veterans Memorial Tryphilly Com Vietnam Veterans Memorial Vietnam Veterans Vietnam Memorial">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/99/00/26/9900260144d306b2f420afd931e9b692.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQALdJJ3tulvVt0yVsH7EOAy6a59Kj5Hb-nOg';" alt="Philadelphia Vietnam Veterans Memorial Tryphilly Com Vietnam Veterans Memorial Vietnam Veterans Vietnam Memorial">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Philadelphia Vietnam Veterans Memorial Tryphilly Com Vietnam Veterans Memorial Vietnam Veterans Vietnam Memorial</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/564x/e9/53/a5/e953a5bfa2e0c7fe92cd3fe6a3a54063.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQALdJJ3tulvVt0yVsH7EOAy6a59Kj5Hb-nOg';" alt="Philadelphia Vietnam Veterans Memorial Tryphilly Com Vietnam Veterans Memorial Vietnam Veterans Vietnam Memorial">
+										<div class="card-body">
+						<h3 class="h5"><b>The United States government is a massive employer and is always looking for qualified candidates to fill a wide variety of open employment positions in locations across the country.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Department of veterans affairs philadelphia</strong>. 
+								
+																	Leverage your professional network and get hired. 
+																	Philadelphia PA 19144 Monday-Friday 830am-400pm Directions. 
+																	Todays top 29 Department Of Veterans Affairs jobs in Philadelphia Pennsylvania United States. 
+																	New Department Of Veterans Affairs jobs added daily. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VHAs primary mission is to provide medical care and services to Americas military Veterans. 
+																	See reviews photos directions phone numbers and more for Department Of Veterans Affairs locations in Philadelphia PA. 
+																	Veteran Services connects veterans with several government agencies and nonprofit organizations at the federal Ohio state and New Philadelphia level. 
+																	They can be contacted via phone at 215 381-3023 for pricing hours and directions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Department of Veterans Affairs Regional Office Insurance Center VAROIC in Philadelphia is one of 58 offices throughout the country dedicated to serving Veterans and their dependents. 
+																	Serving the veterans of our city providing them with the information they need regarding all benefits social services and counseling they are entitled to. 
+																	McSwain announced that Ralph Johnson 54 of Kinzers PA former Chief of Environmental Management Services at the Corporal Michael J. 
+																	The Veterans Health Administration VHA is the largest of three administrations that comprise the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Cresenz Veterans Affairs Medical Center VAMC in Philadelphia PA was charged by Indictment for soliciting and accepting bribes in connection with contracts and purchase orders at the medical center. 
+																	Department of Veterans Affairs. 
+																	The City of Philadelphias Office of Veterans Affairs worked with PHL Councils Veterans Advisory Commission the Philadelphia Police Department Warriors Watch Riders US. 
+																	For reviews of Department of Veterans Affairs see below. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Veterans Affairs has hired for this role. 
+																	If you havent been to. 
+																	VA does not endorse and is not responsible for the content of the linked websites. 
+																	47 US Department of Veterans Affairs reviews in Philadelphia PA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Below youll find a Qualification Summary for an active open job listing from the Department of Veterans Affairs. 
+																	See reviews photos directions phone numbers and more for Department Of Veterans Affairs locations in Northeast Philadelphia Philadelphia PA. 
+																	City of Philadelphia An official website of the City of Philadelphia government Heres how you know. 
+																	The opening is for a Cook in Philadelphia. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For residents that enjoy sports the Philadelphia Phillies Eagles 76ers and Flyers pro sports teams are also popular destinations. 
+																	The US Department Of Veterans Affairs - VA New Philadelphia Clinic located in New Philadelphia OH provides support for veterans of the US Armed Forces. 
+																	Veterans Affairs The Office for Veterans Affairs mission is to provide advice and assistance to Pennsylvanias nearly 800000 veterans and their families and to provide quality care to aging veterans. 
+																	We process claims for Compensation Pension Death Benefits Vocational Rehabilitation Employment and Life Insurance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Veterans Affairs is located at the address Po Box 8079 in Philadelphia Pennsylvania 19101. 
+																	90 reviews from Department of Veterans Affairs employees about Department of Veterans Affairs culture salaries benefits work-life balance management job security and more. 
+																	Department of Veterans Affairs Affairs Washington Crossing National Cemetery and Brian W Donnelly Funeral Home to lay these Veterans to rest. 
+																	Veteran Services connects veterans with several government agencies and nonprofit organizations at the federal Pennsylvania state and Philadelphia level. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By clicking on the links above you will leave the Department of Veterans Affairs Website. 
+																	PHILADELPHIA United States Attorney William M. 
+																	He spoke with NBC10s Lauren Mayk about the continued fight against the coronavirus pandemic and his concerns for the. 
+																	The US Department of Veterans Affairs-Philadelphia Regional Benefit Office located in Philadelphia PA provides support for veterans of the US Armed Forces. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Secretary of Veterans Affairs Robert Wilkie visited Philadelphia on Tuesday. 
+																	Apply to Housekeeper Business Development Specialist Registered Nurse and more. 
+																	A free inside look at company reviews and salaries posted anonymously by employees. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/dc/6b/bcdc6b21dcf4db7279871ec3559efefb.jpg" data-lightbox="roadtrip" data-title="Different Styles In Phila Architecture Va Loan Investment Property Va Mortgages">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/dc/6b/bcdc6b21dcf4db7279871ec3559efefb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjvqCmtEUFw2kcLgaUxGltCuD07P-_q3ZsRg';" alt="Different Styles In Phila Architecture Va Loan Investment Property Va Mortgages">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Different Styles In Phila Architecture Va Loan Investment Property Va Mortgages</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/e2/02/13e2023cde47cd5aa23a8898001ec989.png" data-lightbox="roadtrip" data-title="5 Patriotic Options For Veterans Day Or Any Patriotic Holiday Army Veteran Military Veterans Department Of Veterans Affairs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/e2/02/13e2023cde47cd5aa23a8898001ec989.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdP8o1EOvTY7fAYzCAFTE_09hZiVWBma0UTw';" alt="5 Patriotic Options For Veterans Day Or Any Patriotic Holiday Army Veteran Military Veterans Department Of Veterans Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Patriotic Options For Veterans Day Or Any Patriotic Holiday Army Veteran Military Veterans Department Of Veterans Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/37/c7/a237c7ae659c6680711f2727d6e71efc.jpg" data-lightbox="roadtrip" data-title="Pin On Health Fitness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/37/c7/a237c7ae659c6680711f2727d6e71efc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ64l_osVq_p6GdfOCa2R0WPmtYLMh6vpzNnw';" alt="Pin On Health Fitness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Health Fitness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/02/6a/6c026a83fcfe7333def765f01509130f.jpg" data-lightbox="roadtrip" data-title="Outpatient Pharmacy Healthcare Design Health Design Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/02/6a/6c026a83fcfe7333def765f01509130f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp3ffKOpHNPWvmOCOr14KXYHUIpg5EY-n9oQ';" alt="Outpatient Pharmacy Healthcare Design Health Design Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Outpatient Pharmacy Healthcare Design Health Design Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/48/a8/f348a8603d0e194eb6de5da028b41bfd.jpg" data-lightbox="roadtrip" data-title="Commercial Window Shield Was Awarded A Contract To Supply And Install Solar Window Film To All Exterior Windows In T Window Film Windows Exterior Solar Windows">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/48/a8/f348a8603d0e194eb6de5da028b41bfd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjJu_kpV59BKvoBI89klcADiCR8cFtT4BGQg';" alt="Commercial Window Shield Was Awarded A Contract To Supply And Install Solar Window Film To All Exterior Windows In T Window Film Windows Exterior Solar Windows">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Commercial Window Shield Was Awarded A Contract To Supply And Install Solar Window Film To All Exterior Windows In T Window Film Windows Exterior Solar Windows</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/e9/53/a5/e953a5bfa2e0c7fe92cd3fe6a3a54063.jpg" data-lightbox="roadtrip" data-title="Pin On Veterans Pension">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/e9/53/a5/e953a5bfa2e0c7fe92cd3fe6a3a54063.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdk7pztvszqwInKXNvNTIUaA3fE_wMyl9A_g';" alt="Pin On Veterans Pension">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Veterans Pension</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/5d/ca/065dca182fc2d6c11f9268a507f11050.jpg" data-lightbox="roadtrip" data-title="Mathematician Thinks There S A Way To Pick Your Lotto Numbers With A Greater Chance To Win Lotto Numbers Lottery Strategy Lottery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/5d/ca/065dca182fc2d6c11f9268a507f11050.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIdj8ldo2N-QYjraauCL8D5vYhDB2T0PbRwQ';" alt="Mathematician Thinks There S A Way To Pick Your Lotto Numbers With A Greater Chance To Win Lotto Numbers Lottery Strategy Lottery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mathematician Thinks There S A Way To Pick Your Lotto Numbers With A Greater Chance To Win Lotto Numbers Lottery Strategy Lottery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/55/2f/2c552f42cf70c0293c32b826ccb77bef.jpg" data-lightbox="roadtrip" data-title="Pin On Tshirt For Maxime">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/55/2f/2c552f42cf70c0293c32b826ccb77bef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxsp8zmSXBdkgWjpM_PuxYg51nd-XrinLwQg';" alt="Pin On Tshirt For Maxime">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Tshirt For Maxime</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/76/5b/c5765b6bbb768ce749b3b1ca9456182e.jpg" data-lightbox="roadtrip" data-title="Pin On Great Travel Memories">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/76/5b/c5765b6bbb768ce749b3b1ca9456182e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1NcMhCu_axjCu6pByZjuKRlRNHKxPZnAUww';" alt="Pin On Great Travel Memories">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Great Travel Memories</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/a7/c8/47a7c8c7bc0ca89578e75d5529b1b1e0.jpg" data-lightbox="roadtrip" data-title="Pin On Veteran Millenials">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/a7/c8/47a7c8c7bc0ca89578e75d5529b1b1e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-_UyU85yktcqUrta2DKXQWLI9bhHCr-lWHA';" alt="Pin On Veteran Millenials">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Veteran Millenials</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/8a/59/8a/8a598adbc524c15572b35edacd785293.jpg" data-lightbox="roadtrip" data-title="Philly Va Training Slides Depicted Veterans As Oscar The Grouch Oscar The Grouch Veteran Grouch">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/8a/59/8a/8a598adbc524c15572b35edacd785293.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7rt8ykPsv6cfplRfp7nDP5-TMDNsIK3OQ-g';" alt="Philly Va Training Slides Depicted Veterans As Oscar The Grouch Oscar The Grouch Veteran Grouch">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Philly Va Training Slides Depicted Veterans As Oscar The Grouch Oscar The Grouch Veteran Grouch</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/50/63/685063aae251af51a449f34a0364878d.jpg" data-lightbox="roadtrip" data-title="Pin On Church Leadership">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/50/63/685063aae251af51a449f34a0364878d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrlPUG8WDlU1QJmi4uv6ytX8CT3nyrhhT5TQ';" alt="Pin On Church Leadership">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Church Leadership</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/48/96/d748960d800c754a6fab9165acf5c355.jpg" data-lightbox="roadtrip" data-title="Va Joins The U S Army In Celebrating Its 240th Birthday Here Are Just Four Short Stories Of The Thousands Of Army Veterans Whos Us Army Birthday Us Army Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/48/96/d748960d800c754a6fab9165acf5c355.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvOx0FNLN8tQMutadmHjlZpfycT8lMzGJsQA';" alt="Va Joins The U S Army In Celebrating Its 240th Birthday Here Are Just Four Short Stories Of The Thousands Of Army Veterans Whos Us Army Birthday Us Army Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Joins The U S Army In Celebrating Its 240th Birthday Here Are Just Four Short Stories Of The Thousands Of Army Veterans Whos Us Army Birthday Us Army Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-spouse-depression.html">Military Spouse Depression</a></li>
+													<li class="list-group-item"><a href="/military-service-database-search.html">Military Service Database Search</a></li>
+													<li class="list-group-item"><a href="/military-service-center.html">Military Service Center</a></li>
+													<li class="list-group-item"><a href="/military-retirement-division-formula.html">Military Retirement Division Formula</a></li>
+													<li class="list-group-item"><a href="/military-retirement-pay-calculator-2020.html">Military Retirement Pay Calculator 2020</a></li>
+													<li class="list-group-item"><a href="/military-retirement-pay-calculator-with-disability.html">Military Retirement Pay Calculator With Disability</a></li>
+													<li class="list-group-item"><a href="/military-shirt-leather-jacket.html">Military Shirt Leather Jacket</a></li>
+													<li class="list-group-item"><a href="/military-spouse-quote.html">Military Spouse Quote</a></li>
+													<li class="list-group-item"><a href="/military-service-records-world-war-2.html">Military Service Records World War 2</a></li>
+													<li class="list-group-item"><a href="/military-retirement-pay-calculator-air-force.html">Military Retirement Pay Calculator Air Force</a></li>
+													<li class="list-group-item"><a href="/military-retirement-post-office.html">Military Retirement Post Office</a></li>
+													<li class="list-group-item"><a href="/military-retirement-pay-calculator-with-sbp.html">Military Retirement Pay Calculator With Sbp</a></li>
+													<li class="list-group-item"><a href="/military-spouse-handbook.html">Military Spouse Handbook</a></li>
+													<li class="list-group-item"><a href="/military-retirement-check-calculator.html">Military Retirement Check Calculator</a></li>
+													<li class="list-group-item"><a href="/military-retirement-calculator-with-disability.html">Military Retirement Calculator With Disability</a></li>
+													<li class="list-group-item"><a href="/military-romance-heroes.html">Military Romance Heroes</a></li>
+													<li class="list-group-item"><a href="/military-retirement-survivor-benefits-calculator.html">Military Retirement Survivor Benefits Calculator</a></li>
+													<li class="list-group-item"><a href="/military-spouse-id.html">Military Spouse Id</a></li>
+													<li class="list-group-item"><a href="/military-retirement-compensation-calculator.html">Military Retirement Compensation Calculator</a></li>
+													<li class="list-group-item"><a href="/military-spouses.html">Military Spouses</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

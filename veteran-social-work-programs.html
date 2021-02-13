@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Veteran Social Work Programs - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Veteran Social Work Programs",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/05/50/90/055090549e75a84da58c5c003fbba4f1.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=veteran+social+work+programs",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Veteran Social Work Programs</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Social Work in the US. The Advanced Standing option is for students who already hold a Bachelor of Social Work BSW from a CSWE-accredited program and graduated with a minimum GPA of 30. Advanced standing courses for online MSW programs with a concentration in military social work may include Mental Health and Substance Abuse Military Culture and Environment Clinical Social Work Practice with Military Members and Veterans and Marital Issues Within the Military Family. <br>				
+			</p>
+										<a class="badge badge-info" href="/department-of-defense-mla-status.html">department of defense mla status</a>
+											<a class="badge badge-secondary" href="/department-of-defense-manual-134833-volume-2.html">department of defense manual 134833 volume 2</a>
+											<a class="badge badge-light" href="/department-of-defense-distinguished-civilian-service-medal.html">department of defense distinguished civilian service medal</a>
+											<a class="badge badge-warning" href="/department-of-defense-spending-2018.html">department of defense spending 2018</a>
+											<a class="badge badge-warning" href="/department-of-defense-assault-rifle-definition.html">department of defense assault rifle definition</a>
+											<a class="badge badge-dark" href="/department-of-defense-civilian-tuition-assistance-program.html">department of defense civilian tuition assistance program</a>
+											<a class="badge badge-primary" href="/department-of-defense-navy-yard.html">department of defense navy yard</a>
+											<a class="badge badge-info" href="/department-of-defense-canada-procurement.html">department of defense canada procurement</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to visit the right blog.  Our website provides you with hints for viewing the maximum quality video and image content, search and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, especially Youtube, therefore we recommend this video that you see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/2a/f0/22/2af022eed5986eade41813c6a38436f8.jpg" data-lightbox="roadtrip" data-title="The Only Prerequisite For Pursuing A Career In Military Social Work Is Caring About The Military Community Social Work Programs Social Work Social Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/2a/f0/22/2af022eed5986eade41813c6a38436f8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtrjB5RZqR6it5IDvY05A-dXy3_5R9viRtAg';" alt="The Only Prerequisite For Pursuing A Career In Military Social Work Is Caring About The Military Community Social Work Programs Social Work Social Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Only Prerequisite For Pursuing A Career In Military Social Work Is Caring About The Military Community Social Work Programs Social Work Social Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/33/b7/2b33b7d85d9ddaa1628dcdf8166bc280.png" data-lightbox="roadtrip" data-title="Bsw Military Veteran Program School Of Social Work Ut Arlington Veterans Programs Social Work Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/33/b7/2b33b7d85d9ddaa1628dcdf8166bc280.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTrvXNtT3ocC9aoXQoOSirq7EP09cqV_42Zg';" alt="Bsw Military Veteran Program School Of Social Work Ut Arlington Veterans Programs Social Work Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bsw Military Veteran Program School Of Social Work Ut Arlington Veterans Programs Social Work Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/50/90/055090549e75a84da58c5c003fbba4f1.jpg" data-lightbox="roadtrip" data-title="Pin On Still Learning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/50/90/055090549e75a84da58c5c003fbba4f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR24bgy4n75ywzv5ucBHVGaiEWZ55JKzYPdYg';" alt="Pin On Still Learning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Still Learning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f4/24/b4/f424b4d9d281576120e73b8b2cc25341.jpg" data-lightbox="roadtrip" data-title="Veterans Day Bulletin Boards Veteran Day Decoration Doors Boards Bulletin Day Deco Door Decorations Classroom Patriotic Classroom Veterans Day Activities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f4/24/b4/f424b4d9d281576120e73b8b2cc25341.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG-TOoRqE-NkIXIxWLOHU7iTm4cIUJQ_wZkQ';" alt="Veterans Day Bulletin Boards Veteran Day Decoration Doors Boards Bulletin Day Deco Door Decorations Classroom Patriotic Classroom Veterans Day Activities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Day Bulletin Boards Veteran Day Decoration Doors Boards Bulletin Day Deco Door Decorations Classroom Patriotic Classroom Veterans Day Activities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/b4/cd/beb4cd10cdcf90b5d0d5d410c191958c.jpg" data-lightbox="roadtrip" data-title="What Is Veterans Day What Is A Veteran Who Is In The Armed Services Students Can F Social Studies Education Homeschool Programs Teacher Classroom Elementary">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/b4/cd/beb4cd10cdcf90b5d0d5d410c191958c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRllRlGxHgOgChnS97i5dBvE_Z2hLEyJWQ8JQ';" alt="What Is Veterans Day What Is A Veteran Who Is In The Armed Services Students Can F Social Studies Education Homeschool Programs Teacher Classroom Elementary">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Veterans Day What Is A Veteran Who Is In The Armed Services Students Can F Social Studies Education Homeschool Programs Teacher Classroom Elementary</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/14/e0/2f14e0313a23493017fa14aa0ab942da.png" data-lightbox="roadtrip" data-title="Locate A Va Hospital Or Clinic Caregiver Support Va Social Workers Aging And Disability Resource Center Or Elder Car Caregiver Support Va Hospital Caregiver">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/14/e0/2f14e0313a23493017fa14aa0ab942da.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJIrSKWzn_yho2xqLX15sXLBecXMW7RUFRnw';" alt="Locate A Va Hospital Or Clinic Caregiver Support Va Social Workers Aging And Disability Resource Center Or Elder Car Caregiver Support Va Hospital Caregiver">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Locate A Va Hospital Or Clinic Caregiver Support Va Social Workers Aging And Disability Resource Center Or Elder Car Caregiver Support Va Hospital Caregiver</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/87/ea/11/87ea11f4af41e6d1026f9fc7e2395039.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJIrSKWzn_yho2xqLX15sXLBecXMW7RUFRnw';" alt="Locate A Va Hospital Or Clinic Caregiver Support Va Social Workers Aging And Disability Resource Center Or Elder Car Caregiver Support Va Hospital Caregiver">
+										<div class="card-body">
+						<h3 class="h5"><b>Social Work Schl of Students pursuing a Master of Social Work degree may choose a specialization in military social work.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Veteran social work programs</strong>. 
+								
+																	VA is the largest employer of social workers in the Nation with over 12000 Masters prepared social workers. 
+																	Overview of Online Certificate Programs in Military Social Work There is at least one online certificate program in military and veteran culture that is designed for helping professionals such as. 
+																	Social workers may assist military families and veterans with either a bachelors or masters degree in social work. 
+																	The VA operates the largest and most comprehensive clinical training program for social workers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Homeless program social workers work in the same settings yet focus on providing veterans with resources and referrals to VA and community programs serving the homeless Veteran social workers often fulfill a wide variety of tasks to support veterans and their families. 
+																	Many universities and colleges with social work programs have affiliation agreements for students to complete field placements at VA facilities. 
+																	The social work trainee program offers expansive clinical training for MSW candidates. 
+																	The Military Social Work track helps you learn how to meet the unique needs of active military members veterans and their families. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Social Workers have worked in the VA since 1926. 
+																	Today social workers offer a variety of services to. 
+																	Analyze the current support structures and resources within the military culture. 
+																	A graduate social work program prepares you to administer clinical assessments provide supervision to entry-level military social workers and offer resources to service members and their families. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With a masters degree in social work you will be eligible to seek employment as a commissioned officer in the military or military reserve. 
+																	Better understand military culture. 
+																	Students interested in a military social work certificate will find the curriculum is designed to focus on the intricacies involved in working with veterans and members of the military community. 
+																	Master of Social Work Military Social Work In the online MSW at USC you will find both an advanced standing program 37 credits and traditional 60 credit program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA trains more social work graduate students than any other single agency. 
+																	This Pentagon produced item is about the USC School of Social Works Military Social Work program. 
+																	MSU Combat Veterans Certificate Program Designed for people interested in working with veterans who have been exposed to the trauma of war or military conflict the Combat Veterans Certificate Program includes an option for current MSW students and one for Human Service Professionals with a minimum of a bachelors degree in a human services field. 
+																	The United States Department of Veterans Affairs is the largest employer of masters level social workers in the United States. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Social Work Program provides policy development for the professional practice of social work for VAs social work programs nationwide. 
+																	The Military Social Work program track is designed to complement any department and will prepare you to. 
+																	This years Best Social Work Colleges for Veterans in the United States ranking analyzed 275 colleges that offered a bachelors degree in social work. 
+																	The VA is affiliated with over 230 graduate schools of social work and trains approximately 1500 MSW interns a year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If eligible you can reduce your completion time by skipping intro-level classes and starting your degree with advanced-level courses. 
+																	Bedford VAMC has 17 paid stipend positions yearly for second year MSW interns from accredited Graduate Schools of Social Work placed in various settings throughout the facility. 
+																	The VA has a rich history of. 
+																	Identify characteristics of military culture branches and generational differences. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA is the largest employer of Social Workers in the Nation with over 15000 Masters prepared social workers on staff. 
+																	VA Social Workers over 90 years of Serving Veterans. 
+																	However some roles like psychotherapist are only available to those with graduate education. 
+																	Discover social work intership opportunites. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Veterans Affairs VA Social workers are important providers of services to service members veterans and their families. 
+																	University of Nevada Reno offers education on military and veteran culture through the VetSMART programThe university also offers the master of social work through online courses. 
+																	This program offers clinical placements in community and facility-based treatment programs including inpatient residential and. 
+																	The program is opening an academic center in Rancho Bernar. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Care for service members veterans and their families who are dealing with a range of physical mental and psychosocial issues. 
+																	A BSW may link individuals with resources make referrals andor serve as case manager for those with high needs. 
+																	Finding the Best Social Work Schools for Vets Social Work is the 24 most popular major in the country with 22681 bachelors degrees awarded in 2018-2019. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/17/59/081759c9942954fad8c91c30ca40f4c6.jpg" data-lightbox="roadtrip" data-title="Iowa Joins Ge S Military Veteran Job Training Program Veteran Jobs Job Training Training Programs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/17/59/081759c9942954fad8c91c30ca40f4c6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdqH85sdhZ-Lws-7eMNnYDCAjxUs_emcoxVg';" alt="Iowa Joins Ge S Military Veteran Job Training Program Veteran Jobs Job Training Training Programs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iowa Joins Ge S Military Veteran Job Training Program Veteran Jobs Job Training Training Programs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/3a/9c/ae3a9c81532e722234ca42a41e8ee783.png" data-lightbox="roadtrip" data-title="Avasw Home Page Social Worker Social Worker">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/3a/9c/ae3a9c81532e722234ca42a41e8ee783.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0rWr-DWCU6MgoLTzEdMWBOImVrn4VnxwtPQ';" alt="Avasw Home Page Social Worker Social Worker">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Avasw Home Page Social Worker Social Worker</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/84/81/0f/84810f497d6c94f360f4b10b1c403293.jpg" data-lightbox="roadtrip" data-title="Meet The Newly Minted Msws Dedicating Their Lives To Military Social Work Click Through Social Work Veterans Health Care At Risk Youth">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/84/81/0f/84810f497d6c94f360f4b10b1c403293.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYhCgoxZb_d5L0aTWL_jX5lZqLhEgDL3OwXg';" alt="Meet The Newly Minted Msws Dedicating Their Lives To Military Social Work Click Through Social Work Veterans Health Care At Risk Youth">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meet The Newly Minted Msws Dedicating Their Lives To Military Social Work Click Through Social Work Veterans Health Care At Risk Youth</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/dd/c8/89ddc8318e9e92af25a3c6ec907e20be.jpg" data-lightbox="roadtrip" data-title="School Shows Military Social Work Impact Social Work Military Social">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/dd/c8/89ddc8318e9e92af25a3c6ec907e20be.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1y9CoGGiHTuuK7jDmADNZ2jg9RDlVcMjR7Q';" alt="School Shows Military Social Work Impact Social Work Military Social">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">School Shows Military Social Work Impact Social Work Military Social</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/02/24/2d0224767f25f8290f52658f21344d4a.jpg" data-lightbox="roadtrip" data-title="Pin On Military Veteran Support Charities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/02/24/2d0224767f25f8290f52658f21344d4a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkSTnRniDKx3HOe3ky6itHQdcPXK23bowyMQ';" alt="Pin On Military Veteran Support Charities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Veteran Support Charities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/ea/11/87ea11f4af41e6d1026f9fc7e2395039.jpg" data-lightbox="roadtrip" data-title="Supporting Our Vets Jpg 3300 5100 Military Transition Veteran Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/ea/11/87ea11f4af41e6d1026f9fc7e2395039.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPy3Pye4XsnK-P4nE8aMp8DQLKfA9eQ84Tiw';" alt="Supporting Our Vets Jpg 3300 5100 Military Transition Veteran Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Supporting Our Vets Jpg 3300 5100 Military Transition Veteran Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/a5/29/dc/a529dccbca6f0eb6bd7db71b7cad6473.jpg" data-lightbox="roadtrip" data-title="New Institute For Military Veteran Family Wellness Steve Hicks School Of Social Work University Of Texas Social Work University School Department Social Work">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/a5/29/dc/a529dccbca6f0eb6bd7db71b7cad6473.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbFpUpTuDPKpse4l5_hi3CI1-p4oDKMsrmig';" alt="New Institute For Military Veteran Family Wellness Steve Hicks School Of Social Work University Of Texas Social Work University School Department Social Work">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Institute For Military Veteran Family Wellness Steve Hicks School Of Social Work University Of Texas Social Work University School Department Social Work</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5f/33/c2/5f33c2f7abbc175f0912dbd9eea6ff6d.jpg" data-lightbox="roadtrip" data-title="Social Work Education At Undergraduate And Graduate Levels Master S And Doctoral Is Responsible For Social Work Programs Social Work Bachelors In Social Work">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5f/33/c2/5f33c2f7abbc175f0912dbd9eea6ff6d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN5CfnIzGFzSU8nxocRTSCs-q3S-RAIv7p3g';" alt="Social Work Education At Undergraduate And Graduate Levels Master S And Doctoral Is Responsible For Social Work Programs Social Work Bachelors In Social Work">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Social Work Education At Undergraduate And Graduate Levels Master S And Doctoral Is Responsible For Social Work Programs Social Work Bachelors In Social Work</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/27/6f/85276fd50240f36f9dc72fa782f1c896.jpg" data-lightbox="roadtrip" data-title="Newhome Programs For Military Veterans Available Houston Texas Orlando Tampa Miami Flo Military Relocation Incentive Programs Veteran Owned Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/27/6f/85276fd50240f36f9dc72fa782f1c896.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb0RYdhw1FmhHsoxHgcR16onM0IcJDXrY23g';" alt="Newhome Programs For Military Veterans Available Houston Texas Orlando Tampa Miami Flo Military Relocation Incentive Programs Veteran Owned Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Newhome Programs For Military Veterans Available Houston Texas Orlando Tampa Miami Flo Military Relocation Incentive Programs Veteran Owned Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/16/db/1b16db8d2bee4a2ac60bb48b560c3c24.png" data-lightbox="roadtrip" data-title="Pin On Best Of Insane Freedom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/16/db/1b16db8d2bee4a2ac60bb48b560c3c24.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2zvY21L_n-vV8h3Hi7FVlO8syaO0TVizsaw';" alt="Pin On Best Of Insane Freedom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Best Of Insane Freedom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/92/c1/04/92c104ce1c80a9200ad7132c483c4242.jpg" data-lightbox="roadtrip" data-title="4 Real Reasons Your Va Obm Or Smm Business Isn T Working Sara Wiles Virtual Assistant Social Media Management Business Virtual Assistant Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/92/c1/04/92c104ce1c80a9200ad7132c483c4242.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFTreVma22ilto7sG6CMOyLdPFG0-BM85sIQ';" alt="4 Real Reasons Your Va Obm Or Smm Business Isn T Working Sara Wiles Virtual Assistant Social Media Management Business Virtual Assistant Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 Real Reasons Your Va Obm Or Smm Business Isn T Working Sara Wiles Virtual Assistant Social Media Management Business Virtual Assistant Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b5/05/50/b50550157d9be38e4f762c0cc3568ac8.jpg" data-lightbox="roadtrip" data-title="Glen Pena Has Dedicated His Life To Helping Others After Serving 9 1 2 Years In The U S Marine Corps Pe Veterans Programs Intervention Strategy Msw Programs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b5/05/50/b50550157d9be38e4f762c0cc3568ac8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWuDuxIt8EJ_SZv6RTIaJM_cNCvnT1ew9jhg';" alt="Glen Pena Has Dedicated His Life To Helping Others After Serving 9 1 2 Years In The U S Marine Corps Pe Veterans Programs Intervention Strategy Msw Programs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Glen Pena Has Dedicated His Life To Helping Others After Serving 9 1 2 Years In The U S Marine Corps Pe Veterans Programs Intervention Strategy Msw Programs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/d0/e3/b4d0e33db366429dc4d5f8a879d273ae.jpg" data-lightbox="roadtrip" data-title="Https Www Hopeisherefoundation Org Programs Hope To Hire Hiring Our Heroes Military Veterans Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/d0/e3/b4d0e33db366429dc4d5f8a879d273ae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSemXNSQ3Ya734MrU7GEPbQwZbkzMHg66LQZA';" alt="Https Www Hopeisherefoundation Org Programs Hope To Hire Hiring Our Heroes Military Veterans Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Hopeisherefoundation Org Programs Hope To Hire Hiring Our Heroes Military Veterans Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/why-is-the-coast-guard-not-under-the-department-of-defense.html">Why Is The Coast Guard Not Under The Department Of Defense</a></li>
+													<li class="list-group-item"><a href="/www-military-archives-records.html">Www Military Archives Records</a></li>
+													<li class="list-group-item"><a href="/why-is-coast-guard-under-homeland-security.html">Why Is Coast Guard Under Homeland Security</a></li>
+													<li class="list-group-item"><a href="/will-covid-vaccine-be-mandatory.html">Will Covid Vaccine Be Mandatory</a></li>
+													<li class="list-group-item"><a href="/wisconsin-department-of-military-affairs-human-resources.html">Wisconsin Department Of Military Affairs Human Resources</a></li>
+													<li class="list-group-item"><a href="/will-space-force-have-special-forces.html">Will Space Force Have Special Forces</a></li>
+													<li class="list-group-item"><a href="/world-war-1-war-records-uk.html">World War 1 War Records Uk</a></li>
+													<li class="list-group-item"><a href="/will-we-get-a-raise-in-2021.html">Will We Get A Raise In 2021</a></li>
+													<li class="list-group-item"><a href="/ww1-soldier-database.html">Ww1 Soldier Database</a></li>
+													<li class="list-group-item"><a href="/ww1-soldier-records-uk.html">Ww1 Soldier Records Uk</a></li>
+													<li class="list-group-item"><a href="/wisconsin-civil-war-veterans-database.html">Wisconsin Civil War Veterans Database</a></li>
+													<li class="list-group-item"><a href="/wwwarchivesgovveteransmilitary-service-recordsindexhtml.html">Wwwarchivesgovveteransmilitary Service Recordsindexhtml</a></li>
+													<li class="list-group-item"><a href="/ymca-dating-my-spouse.html">Ymca Dating My Spouse</a></li>
+													<li class="list-group-item"><a href="/world-war-1-veterans-database-uk.html">World War 1 Veterans Database Uk</a></li>
+													<li class="list-group-item"><a href="/why-police-need-military-equipment.html">Why Police Need Military Equipment</a></li>
+													<li class="list-group-item"><a href="/world-military-aircraft-database.html">World Military Aircraft Database</a></li>
+													<li class="list-group-item"><a href="/world-veteran-athletics-records.html">World Veteran Athletics Records</a></li>
+													<li class="list-group-item"><a href="/world-war-1-veterans-database-free.html">World War 1 Veterans Database Free</a></li>
+													<li class="list-group-item"><a href="/world-war-2-military-records-new-zealand.html">World War 2 Military Records New Zealand</a></li>
+													<li class="list-group-item"><a href="/world-war-2-military-records-navy.html">World War 2 Military Records Navy</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

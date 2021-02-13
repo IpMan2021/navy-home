@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Dod Department Of The Army - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Dod Department Of The Army",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/d1/7a/bb/d17abb0ecd8c2ded9a42d1cf5797e593.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=dod+department+of+the+army",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Dod Department Of The Army</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Head to the redesigned Defensegov where you can learn all about the Defense Department. Official website for US. The Department of Defense or the service component to be performed by the grantee or NGB. <br>				
+			</p>
+										<a class="badge badge-success" href="/how-to-calculate-my-navy-retirement-pay.html">how to calculate my navy retirement pay</a>
+											<a class="badge badge-warning" href="/how-to-look-up-military-status.html">how to look up military status</a>
+											<a class="badge badge-success" href="/how-to-calculate-army-reserve-retirement-points.html">how to calculate army reserve retirement points</a>
+											<a class="badge badge-info" href="/how-to-get-a-military-spouse-id-card.html">how to get a military spouse id card</a>
+											<a class="badge badge-info" href="/how-to-find-army-dod-id-number.html">how to find army dod id number</a>
+											<a class="badge badge-warning" href="/how-to-calculate-military-retirement-pay.html">how to calculate military retirement pay</a>
+											<a class="badge badge-danger" href="/how-to-install-dod-pki-certificate.html">how to install dod pki certificate</a>
+											<a class="badge badge-danger" href="/how-to-correct-military-records.html">how to correct military records</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you've come to pay a visit to the ideal site.  Our website provides you with hints for seeing the highest quality video and image content, search and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, especially Youtube, therefore we recommend this video for you to view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/b0/1e/7eb01e6c467d53cc1bc24a26df240751.jpg" data-lightbox="roadtrip" data-title="Army Emblem Us Army Logo United States Army Military Logo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/b0/1e/7eb01e6c467d53cc1bc24a26df240751.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjSZtTwbpGtprN182O17ptmgvKlPBBxspyHQ';" alt="Army Emblem Us Army Logo United States Army Military Logo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Emblem Us Army Logo United States Army Military Logo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/8e/5f/6a8e5faccc122971735d3ea9308cca64.png" data-lightbox="roadtrip" data-title="Emblem Of The United States Department Of The Army Svg United States Symbols Army The Unit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/8e/5f/6a8e5faccc122971735d3ea9308cca64.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRshQEJUlUhoGWmwF3kR8CHJWTmtzlA6QD-kg';" alt="Emblem Of The United States Department Of The Army Svg United States Symbols Army The Unit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Emblem Of The United States Department Of The Army Svg United States Symbols Army The Unit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/76/c6/4076c6a754f1bac6217dc267535de885.png" data-lightbox="roadtrip" data-title="The Department Of Defense Dod Arose From A Restructuring Of The Us Military In 1949 A Response To United States Armed Forces Us Military Bases Armed Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/76/c6/4076c6a754f1bac6217dc267535de885.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLlVrQM7paOEFDTL7m_VJf3ymbO5lSGwbdmA';" alt="The Department Of Defense Dod Arose From A Restructuring Of The Us Military In 1949 A Response To United States Armed Forces Us Military Bases Armed Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Department Of Defense Dod Arose From A Restructuring Of The Us Military In 1949 A Response To United States Armed Forces Us Military Bases Armed Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/1e/80/aa1e803c63732e794b506eecf07ce88a.png" data-lightbox="roadtrip" data-title="Seal Of The U S Department Of The Air Force Daf Is One Of The Three Military Departments Within T United States Air Force Air Force Veteran Air Force Mom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/1e/80/aa1e803c63732e794b506eecf07ce88a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5vyYpeRSU_rguUWo7eq8Mng4oglsdQL-a7w';" alt="Seal Of The U S Department Of The Air Force Daf Is One Of The Three Military Departments Within T United States Air Force Air Force Veteran Air Force Mom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Seal Of The U S Department Of The Air Force Daf Is One Of The Three Military Departments Within T United States Air Force Air Force Veteran Air Force Mom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/b2/2a/b3b22aec926c8eeaf3c82e16c419f346.jpg" data-lightbox="roadtrip" data-title="Military Heroes Military Heroes American Soldiers Hero">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/b2/2a/b3b22aec926c8eeaf3c82e16c419f346.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK2LBdNjmTnRKMH6DXu68MKASg3ai2U3Fkjg';" alt="Military Heroes Military Heroes American Soldiers Hero">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Heroes Military Heroes American Soldiers Hero</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/7a/bb/d17abb0ecd8c2ded9a42d1cf5797e593.jpg" data-lightbox="roadtrip" data-title="Pin On U S A Government Legal Structure">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/7a/bb/d17abb0ecd8c2ded9a42d1cf5797e593.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnnV62xSxbbyXtPRt8SOJDHK1cZa4-WELu_w';" alt="Pin On U S A Government Legal Structure">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On U S A Government Legal Structure</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/af/21/5f/af215f6bf6a89ad05d225304f07f4e5d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnnV62xSxbbyXtPRt8SOJDHK1cZa4-WELu_w';" alt="Pin On U S A Government Legal Structure">
+										<div class="card-body">
+						<h3 class="h5"><b>January 20 2017 August 7 2017 Under Secretary of Defense.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Dod department of the army</strong>. 
+								
+																	Federal Contract and Grant Awards and Opportunities for the Department of the Army DOD GovTribe Federal Agency 51. 
+																	Army Hosts the DoD Warrior Games in September 2021. 
+																	Military personnel are supporting public services across the UK to assist with the response to COVID-19. 
+																	Find some of the most requested links below or see a full list by category. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is a list of Agencies under the United States Department of Defense DoD which was formerly and shortly known as the National Military Establishment. 
+																	August 3 2017 May 2019 Under Secretary of Defense Acquisition and Sustainment Jimmy MacStravic. 
+																	Office Nominee Assumed office Left office Secretary of the Army. 
+																	Department of the Army. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As director of the Defense Departments Military Working Dog Program based here Rolfe and his staff are responsible for the health and welfare of some of the most unheralded members of the fighting force. 
+																	The Department of the Army is the federal government agency within which the United States Army USA is organized and it is led by the secretary of the Army who has statutory authority under 10 USC. 
+																	Army Colonel David Rolfes military career has gone to the dogs. 
+																	Inspect ditch and drain dredged material containment areas related to dredging operations performed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army announces release of DoD Counter-Small UAS Strategy January 7 2021 Army Statement on Shooting in Rockford Illinois December 27 2020 US. 
+																	It also employed about 761000 civilians. 
+																	We will protect our people territories values and interests at home and overseas through strong armed. 
+																	A small percentage of military medical personnel and top Defense Department officials including Acting Defense Secretary Chris Miller are expected to be the first DoD personnel to receive Pfizer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military the Army provides the ground forces that protect the United States. 
+																	Department of the Army. 
+																	Became Chief Management Officer of the Department of Defense. 
+																	Director of Cost Assessment and Program Evaluation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Defense Integrated Military Human Resources System was an enterprise program of the Business Transformation Agency s Defense Business Systems Acquisition Executive within the United States Department of Defense DoD. 
+																	This page has the latest information on the MODs activities. 
+																	Its estimated 2300 working dogs. 
+																	Department of Defense is the nations largest employer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	About us We work for a secure and prosperous United Kingdom with global reach and influence. 
+																	The Pentagon Washington DC 20310. 
+																	The Defense Department today released its Annual Report on Sexual Assault in the Military which shows that service member reporting of sexual assault increased by about 10 percent in fiscal year. 
+																	Army organizes trains and equips active duty and Reserve forces to preserve the peace security and defense of the United States. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	3013 to conduct its affairs and to prescribe regulations for its government subject to the limits of the law and the directions of the secretary of defense and the president. 
+																	The Department of Defense has many components aside from the service branches. 
+																	Its main responsibilities are to control the Armed Forces of the United States. 
+																	It had about 136 million active duty personnel and 801000 reservists as of June 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The largest and oldest service in the US. 
+																	There were about 224000 combined personnel overseas in over 170 countries. 
+																	Explore trending topics experience DOD through interactive pieces engage by testing your wit with quizzes and observe DOD in action via photos and videos. 
+																	The United States Department of Defense DoD USDOD or DOD is an executive branch department of the federal government charged with coordinating and supervising all agencies and functions of the government directly related to national security and the United States Armed ForcesThe DOD is the largest employer in the world with over 13 million active-duty service members soldiers marines. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A component of the Department of the Navy the. 
+																	12008 - Dredged Material Containment Area. 
+																	Pre-1917 Army Records 1917 and Later Army Records. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/af/21/5f/af215f6bf6a89ad05d225304f07f4e5d.jpg" data-lightbox="roadtrip" data-title="Army Memorandum Template 4 Memorandum Template Memo Template Paper Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/af/21/5f/af215f6bf6a89ad05d225304f07f4e5d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcYAZyhVz646mjPal8iiZTazTlnqqmCAJtUA';" alt="Army Memorandum Template 4 Memorandum Template Memo Template Paper Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Memorandum Template 4 Memorandum Template Memo Template Paper Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/b9/6d/f9b96d28703a9c7277669c4573f7aff6.jpg" data-lightbox="roadtrip" data-title="This Is My Father Civilian Dad Joins His Deployed Son In Afghanistan Deployed Son Afghanistan Dads">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/b9/6d/f9b96d28703a9c7277669c4573f7aff6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAmLgAnyOgrRjDgFh5q4Z6nBQa0XMAool73Q';" alt="This Is My Father Civilian Dad Joins His Deployed Son In Afghanistan Deployed Son Afghanistan Dads">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is My Father Civilian Dad Joins His Deployed Son In Afghanistan Deployed Son Afghanistan Dads</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/0f/ac/420facc829a2c8ec9dba75e2f82dfc81.jpg" data-lightbox="roadtrip" data-title="Pin On World Military Ranks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/0f/ac/420facc829a2c8ec9dba75e2f82dfc81.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyAOlXEK4w6srmlkzQaBsAWl39w68O6EoBhA';" alt="Pin On World Military Ranks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On World Military Ranks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5a/f6/ee/5af6ee3cfdca259b19ce15d74e105620.jpg" data-lightbox="roadtrip" data-title="V31101 Carved 3d Wall Plaque Of The Seal Of The Us Department Of Defense Version 2 Carved Wood Plaque Carving Sign Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5a/f6/ee/5af6ee3cfdca259b19ce15d74e105620.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwGlxOeXrWe2Y9v_cSuAGCcQLzhIDF565zhw';" alt="V31101 Carved 3d Wall Plaque Of The Seal Of The Us Department Of Defense Version 2 Carved Wood Plaque Carving Sign Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">V31101 Carved 3d Wall Plaque Of The Seal Of The Us Department Of Defense Version 2 Carved Wood Plaque Carving Sign Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/c2/d5/15c2d5c62a2ebe4a8b9ffaeb6aa09e76.jpg" data-lightbox="roadtrip" data-title="Army Memorandum For Record Template Best Of 19 Of Memorandum For Record Template Pdf With A Letterhead Template Notes Template Memorandum">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/c2/d5/15c2d5c62a2ebe4a8b9ffaeb6aa09e76.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ9liwNOJJ7mJ2bajoiTCPHXfixUfYZPOdCw';" alt="Army Memorandum For Record Template Best Of 19 Of Memorandum For Record Template Pdf With A Letterhead Template Notes Template Memorandum">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Memorandum For Record Template Best Of 19 Of Memorandum For Record Template Pdf With A Letterhead Template Notes Template Memorandum</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/d0/46/40d0463ca4aa5abd8da41b2096ae0da5.jpg" data-lightbox="roadtrip" data-title="Dep Of Def Organization How To Plan Business Plan Template Business Plan Template Free">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/d0/46/40d0463ca4aa5abd8da41b2096ae0da5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiWUVKxbBMycHlX_SEY62N9cnT2kCqzSYvUA';" alt="Dep Of Def Organization How To Plan Business Plan Template Business Plan Template Free">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dep Of Def Organization How To Plan Business Plan Template Business Plan Template Free</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/78/65/4c786550e1e97438d72a743142f5ef05.png" data-lightbox="roadtrip" data-title="What Is Ddform 2606 Download Pdf And Other Information Instructions And Latest Version Of This Dodform Here Development Programs Child Development Records">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/78/65/4c786550e1e97438d72a743142f5ef05.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQPJnBQJpcqs8f9UtzlOKTNXUgEvIviozbzw';" alt="What Is Ddform 2606 Download Pdf And Other Information Instructions And Latest Version Of This Dodform Here Development Programs Child Development Records">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Ddform 2606 Download Pdf And Other Information Instructions And Latest Version Of This Dodform Here Development Programs Child Development Records</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/35/d7/4435d7ee17bc6f3ade8a73e350e56508.jpg" data-lightbox="roadtrip" data-title="Pin On Heroes Keepers Of Our Country">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/35/d7/4435d7ee17bc6f3ade8a73e350e56508.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjCc8aUsKyvwwUbBpCkC8mJ6bLxWNH-Vd4nA';" alt="Pin On Heroes Keepers Of Our Country">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Heroes Keepers Of Our Country</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/66/92/1c/66921cdf7eed8d13635f1d185d20c4f5.jpg" data-lightbox="roadtrip" data-title="Organization Of The United States Department Of Defense Dod Wikipedia How To Plan Business Plan Template Business Plan Template Free">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/66/92/1c/66921cdf7eed8d13635f1d185d20c4f5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSBzQZU7Di7QgeVvr8-L3pvWi67phA0-rGiA';" alt="Organization Of The United States Department Of Defense Dod Wikipedia How To Plan Business Plan Template Business Plan Template Free">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Organization Of The United States Department Of Defense Dod Wikipedia How To Plan Business Plan Template Business Plan Template Free</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/7e/b0/1e/7eb01e6c467d53cc1bc24a26df240751.jpg" data-lightbox="roadtrip" data-title="Army Emblem Us Army Logo United States Army Military Logo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/7e/b0/1e/7eb01e6c467d53cc1bc24a26df240751.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGNn5RsOq5_HwnIz1tSV8zH4MVOhxmQxomhg';" alt="Army Emblem Us Army Logo United States Army Military Logo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Emblem Us Army Logo United States Army Military Logo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/6e/c6/0c6ec606f9f293d45480efb0d0b8db0c.jpg" data-lightbox="roadtrip" data-title="701st Military Police Group Military Police Police Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/6e/c6/0c6ec606f9f293d45480efb0d0b8db0c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQredq3yIVgN01aB2bq9UTVcwtJ12GEF7p5lQ';" alt="701st Military Police Group Military Police Police Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">701st Military Police Group Military Police Police Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/b5/c6/59b5c68bbb797bc50fd7cc29afe3f7b2.jpg" data-lightbox="roadtrip" data-title="United States Department Of Defense How To Plan Business Plan Template Business Plan Template Free">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/b5/c6/59b5c68bbb797bc50fd7cc29afe3f7b2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_yhjyxaDMDgTiJUWbLD1XYjfKIiwL71QgfA';" alt="United States Department Of Defense How To Plan Business Plan Template Business Plan Template Free">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United States Department Of Defense How To Plan Business Plan Template Business Plan Template Free</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5b/90/e2/5b90e2e2fe1d66a86e9c025cbe97a03a.jpg" data-lightbox="roadtrip" data-title="U S Dod Approves Army Mobile Power Program As Joint Capability Demonstration In 2020 Army Joint Science And Technology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5b/90/e2/5b90e2e2fe1d66a86e9c025cbe97a03a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoqq7bEVtJ5PyfeEJshbwOLBtEySqr8o3KnA';" alt="U S Dod Approves Army Mobile Power Program As Joint Capability Demonstration In 2020 Army Joint Science And Technology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Dod Approves Army Mobile Power Program As Joint Capability Demonstration In 2020 Army Joint Science And Technology</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/department-of-the-army-inspector-general-website.html">Department Of The Army Inspector General Website</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-inspector-general.html">Department Of The Army Inspector General</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-government-purchase-card-operating-procedures.html">Department Of The Army Government Purchase Card Operating Procedures</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-office-of-the-surgeon-general.html">Department Of The Army Office Of The Surgeon General</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-pamphlet-670-1.html">Department Of The Army Pamphlet 670 1</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-permit.html">Department Of The Army Permit</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-memorandum-letterhead.html">Department Of The Army Memorandum Letterhead</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-oig.html">Department Of The Army Oig</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-installation-management-command.html">Department Of The Army Installation Management Command</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-incident-reporting-requirements-and-procedures.html">Department Of The Army Incident Reporting Requirements And Procedures</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-headquarters.html">Department Of The Army Headquarters</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-hq.html">Department Of The Army Hq</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-ig-foia.html">Department Of The Army Ig Foia</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-medals.html">Department Of The Army Medals</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-phone-number.html">Department Of The Army Phone Number</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-jobs.html">Department Of The Army Jobs</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-government-purchase-card-operating-procedures-2019.html">Department Of The Army Government Purchase Card Operating Procedures 2019</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-orders.html">Department Of The Army Orders</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-memo-november-14-2018.html">Department Of The Army Memo November 14 2018</a></li>
+													<li class="list-group-item"><a href="/department-of-the-army-jobs-vacancies.html">Department Of The Army Jobs Vacancies</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

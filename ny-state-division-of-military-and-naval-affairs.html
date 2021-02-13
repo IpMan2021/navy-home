@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ny State Division Of Military And Naval Affairs - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ny State Division Of Military And Naval Affairs",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/e0/ae/e6/e0aee681b5a2343c9f63e13f8f33797e.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ny+state+division+of+military+and+naval+affairs",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ny State Division Of Military And Naval Affairs</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Division of Military and Naval Affairs DMNA provides fully capable land air and naval military forces and facilities executing global missions across unified air and land operations in support of our communities State and Nation. It is headed by New Yorks Adjutant General Maj. Contact Information for key offices and personnel at the New York State Division of Military Naval Affairs. <br>				
+			</p>
+										<a class="badge badge-success" href="/military-dog-in-news.html">military dog in news</a>
+											<a class="badge badge-danger" href="/military-dog-tags-keychain.html">military dog tags keychain</a>
+											<a class="badge badge-light" href="/military-dog-tag-chain-history.html">military dog tag chain history</a>
+											<a class="badge badge-light" href="/military-dog-tag-design.html">military dog tag design</a>
+											<a class="badge badge-danger" href="/military-dog-tag-uses.html">military dog tag uses</a>
+											<a class="badge badge-secondary" href="/military-dog-tag-bottle-opener.html">military dog tag bottle opener</a>
+											<a class="badge badge-warning" href="/military-dog-tag-art.html">military dog tag art</a>
+											<a class="badge badge-danger" href="/military-dog-tags-on-soldier.html">military dog tags on soldier</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you've come to visit the right site.  Our site gives you suggestions for seeing the maximum quality video and image content, hunt and find more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, particularly Youtube, therefore we recommend this video for you to view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/ae/e6/e0aee681b5a2343c9f63e13f8f33797e.jpg" data-lightbox="roadtrip" data-title="New York State Military And Naval Affairs Suburban Grand Central Terminal Chevrolet Tahoe Police Cars Emergency Vehicles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/ae/e6/e0aee681b5a2343c9f63e13f8f33797e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNL1nMhpdwOHZ39c4PrbjetiwFR6mkdOlSvA';" alt="New York State Military And Naval Affairs Suburban Grand Central Terminal Chevrolet Tahoe Police Cars Emergency Vehicles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New York State Military And Naval Affairs Suburban Grand Central Terminal Chevrolet Tahoe Police Cars Emergency Vehicles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/c2/51/86c251c174f8a7d4ed4246e2f3f667c6.jpg" data-lightbox="roadtrip" data-title="Fire Fites In Afghanistan Military And Naval Affairs News Fallen 9 11 Firefighters Remembered Firefighter Military Naval">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/c2/51/86c251c174f8a7d4ed4246e2f3f667c6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrMVcHXvl8CP8rgAWE7xkEJ7oj55bxMa5GGQ';" alt="Fire Fites In Afghanistan Military And Naval Affairs News Fallen 9 11 Firefighters Remembered Firefighter Military Naval">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fire Fites In Afghanistan Military And Naval Affairs News Fallen 9 11 Firefighters Remembered Firefighter Military Naval</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9c/45/5e/9c455e8f9fcc70f9048a7d8b799ccb62.jpg" data-lightbox="roadtrip" data-title="Pin On America">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9c/45/5e/9c455e8f9fcc70f9048a7d8b799ccb62.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrGZRvXrXOZ19zH9xWh-eb2-0mlepouwRZRw';" alt="Pin On America">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On America</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/d3/21/64/d32164b7f2fdf49ac909eba07ba18674.jpg" data-lightbox="roadtrip" data-title="Pin On Interesting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/d3/21/64/d32164b7f2fdf49ac909eba07ba18674.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPNGYwsF7wrLqmkHh98t0GYzLXYltK_ru89g';" alt="Pin On Interesting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Interesting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/61/09/c96109a6be9545c4061a48ae3bc1198b.jpg" data-lightbox="roadtrip" data-title="More Fort Drum Soldiers To Deploy This Fall Fort Drum 10th Mountain Division Army Patches">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/61/09/c96109a6be9545c4061a48ae3bc1198b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPOKiD9n8NRb7NZxkAW7bHb5hodp86QpsR0g';" alt="More Fort Drum Soldiers To Deploy This Fall Fort Drum 10th Mountain Division Army Patches">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">More Fort Drum Soldiers To Deploy This Fall Fort Drum 10th Mountain Division Army Patches</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/d7/17/00d71714b8fd57975b9bbab0bdf2d134.jpg" data-lightbox="roadtrip" data-title="Pin Op Respect Honor Sacrifice">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/d7/17/00d71714b8fd57975b9bbab0bdf2d134.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGzvGGz8s0m5BGqQVd0mGpT4Tk5jNOM80NMA';" alt="Pin Op Respect Honor Sacrifice">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Op Respect Honor Sacrifice</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/600x315/af/a5/48/afa5489fdbcda0d6873209d6836b751e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGzvGGz8s0m5BGqQVd0mGpT4Tk5jNOM80NMA';" alt="Pin Op Respect Honor Sacrifice">
+										<div class="card-body">
+						<h3 class="h5"><b>The Division of Military and Naval Affairs DMNA manages New York States military forces which comprise the New York Army National Guard New York Air National Guard New York Naval Militia and New York Guard.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ny state division of military and naval affairs</strong>. 
+								
+																	The Division of Military and Naval Affairs DMNA manages New York States military forces which are composed of the New York Army National Guard the New York Air National Guard the New York Naval Militia and the New York Guard. 
+																	COVID-19 is still spreading even as the vaccine is here. 
+																	February 2 2021 128 pm COVID-19 Updates. 
+																	The New York State Division of Military and Naval Affairs DMNA is the states executive agency responsible to the Governor for managing New Yorks Military Forces which consists of nearly 20000 members of the New York Army National Guard the New York Air National Guard the New York Naval Militia and the New York Guard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Division of Military and Naval Affairs DMNA provides fully capable land air and naval military forces and facilities executing global missions across unified air and land operations in support of our communities State and Nation. 
+																	The Division consists of. 
+																	The New York State Division of Military and Naval Affairs DMNA is responsible for the states New York Army National Guard New York Air National Guard New York Guard and the New York Naval Militia. 
+																	The Linked Data Service provides access to commonly found standards and vocabularies promulgated by the Library of Congress. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Through the States militia DMNA maintains a well-trained military force ready to respond to civil emergencies natural disasters and threats to the nations security. 
+																	ShermanOConnell and Aronowitz Albany New York for Plaintiff-Appellant. 
+																	February 2 2021 128 pm COVID-19 Updates. 
+																	With the Governor of New York Andrew Cuomo serving as Commander in Chief of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The New York State Division of Military and Naval Affairs NYS DMNA is responsible for the states New York Army National Guard New York Air National Guard New York Guard and the New York Naval Militia. 
+																	New Yorks Division of Military and Naval Affairs encompasses all of New Yorks Reserve Forces including the Army National Guard Air National Guard Naval Militia and New York Guard. 
+																	Wear a mask social distance and stay up to date on New York States vaccination program. 
+																	Governor Andrew Cuomo Major General. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Wear a mask social distance and stay up to date on New York States vaccination program. 
+																	The New York State Division of Military and Naval Affairs directs the activities of the New York Army National Guard 10022 Soldiers and the New York Air National Guard 5900 Airmenboth federal reserve forcesand the New York Naval Militia 2700 Sailors and the New York Guard 500 uniformed volunteersstate only forces-- in response to state emergencies and missions in addition to federal military requirements. 
+																	Datasets available include LCSH BIBFRAME LC Name Authorities LC Classification MARC codes PREMIS vocabularies ISO language codes and more. 
+																	Murphy appointed on February 15 20101 with the Governor of New York Andrew Cuomo serving as Commander in Chief of the states. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NewYork State Division of Military and Naval Affairs DMNA is responsible for the states NewYorkArmyNationalGuard NewYorkAirNationalGuard NewYorkGuard and the NewYorkNavalMilitia. 
+																	State Army and Air Force Technician and AGR Vacancies Contact Information and Links to Job Banks and Other Opportunities Services and Job-search Tools through the New York Division of Military and Naval Affairs. 
+																	Get the Facts. 
+																	The Division of Military and Naval Affairs DMNA has two primary missions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Shields Jr appointed on October 1 2018. 
+																	The Division operates and maintains a large capital portfolio which includes 40 ArmoriesReadiness Centers the New York State Military Museum and Veterans Research Center three Combined. 
+																	NEW YORK STATE DIVISION OF MILITARY AND NAVAL AFFAIRS and New York State Army National Guard Defendants-Appellees. 
+																	This unit includes armory maintenance workers armory mechanics clerks and office. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Represented by the Civil Service Employees Association Local 1000 AFSCME AFL-CIO Inc. 
+																	CSEA the Division of Military and Naval Affairs Unit is comprised of civilian employees within the division who are involved in the administration of the New York Army National Guard and New York Air National Guard. 
+																	January 07 1999 Before. 
+																	The Division consists of the New York Army National Guard the New York Air National Guard the Naval Militia and the New York Guard all of which are overseen by State Headquarters in Latham New York. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	KEARSE and WALKER Circuit Judges and WEINSTEIN District Judge. 
+																	Organization and Staffing The Division operates under the direction of The Adjutant General TAG who is appointed by the Governor. 
+																	This includes data values and the controlled vocabularies that house them. 
+																	Buskus Assistant Attorney General Peter H. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The New York State Division of Military and Naval Affairs NYS DMNA is responsible for the states New York Army National Guard New York Air National Guard New York Guard and the New York Naval MilitiaIt is headed by Adjutant General of New York Major General Raymond F. 
+																	COVID-19 is still spreading even as the vaccine is here. 
+																	The Division of Military and Naval Affairs DMNA provides fully capable land air and naval military forces and facilities executing global missions across unified air and land operations in support of our communities State and Nation. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/78/fb/5d78fb8955feff7fddbf66c4db0cbbbf.jpg" data-lightbox="roadtrip" data-title="U S Army Soldiers From The 10th Mountain Division And The 3rd Infantry Regiment The Old Guard Stand At Ease In Times Square Durin Army Soldier Army Infantry">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/78/fb/5d78fb8955feff7fddbf66c4db0cbbbf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvmexTFc_53iSMi4jX25nzOsCs8xyFwFg0Bw';" alt="U S Army Soldiers From The 10th Mountain Division And The 3rd Infantry Regiment The Old Guard Stand At Ease In Times Square Durin Army Soldier Army Infantry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Soldiers From The 10th Mountain Division And The 3rd Infantry Regiment The Old Guard Stand At Ease In Times Square Durin Army Soldier Army Infantry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/d0/71/a3d0718e7c3951045eac2388721d08d3.jpg" data-lightbox="roadtrip" data-title="U S Army Forces Command Forscom Army Strong Army Fort Bliss">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/d0/71/a3d0718e7c3951045eac2388721d08d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJOLWTBbSAW5P_ifPm0OE8AkL6fFO75pjnaw';" alt="U S Army Forces Command Forscom Army Strong Army Fort Bliss">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Forces Command Forscom Army Strong Army Fort Bliss</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/af/a5/48/afa5489fdbcda0d6873209d6836b751e.jpg" data-lightbox="roadtrip" data-title="The Civil War And American Art American Art Civil War Art Romanticism Paintings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/af/a5/48/afa5489fdbcda0d6873209d6836b751e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBR7zm0wrJrOrsA4GHqibFLVbbBu4aRFdwRg';" alt="The Civil War And American Art American Art Civil War Art Romanticism Paintings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Civil War And American Art American Art Civil War Art Romanticism Paintings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/2b/b5/f42bb53f68437c989635dc47feca4ded.jpg" data-lightbox="roadtrip" data-title="Official Civilian Defense Insignia Jpg 553 800 Civil Defense Civilization Defense">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/2b/b5/f42bb53f68437c989635dc47feca4ded.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLvkcuexyf0Crhqw-iyqxzkWMbrCY4jlzDTQ';" alt="Official Civilian Defense Insignia Jpg 553 800 Civil Defense Civilization Defense">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Official Civilian Defense Insignia Jpg 553 800 Civil Defense Civilization Defense</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/33/fd/ed33fdd6c6f2b9752d9a07bbd9e86161.jpg" data-lightbox="roadtrip" data-title="Pin On Armystrong Looks Like This">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/33/fd/ed33fdd6c6f2b9752d9a07bbd9e86161.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtNMoYeolVAmk8sC1SlTKAPViR8RvyPbhjDA';" alt="Pin On Armystrong Looks Like This">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Armystrong Looks Like This</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/d7/67/71d767f85d877c274dc7a2d5dcadf911.jpg" data-lightbox="roadtrip" data-title="The Paras Last Drop Gamil Airfield 1956 In 2020 Military History Us Special Forces Naval History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/d7/67/71d767f85d877c274dc7a2d5dcadf911.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKwImCJI6LK5HZUhwmaAFF57g4GNT3OS4Ntw';" alt="The Paras Last Drop Gamil Airfield 1956 In 2020 Military History Us Special Forces Naval History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Paras Last Drop Gamil Airfield 1956 In 2020 Military History Us Special Forces Naval History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/a6/95/6aa695822c2e387d2986ce44021180fa.jpg" data-lightbox="roadtrip" data-title="This Official Us Military Photo Title Is Both Totally Absurd And Deeply Revealing Military Military Photos Us Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/a6/95/6aa695822c2e387d2986ce44021180fa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrvOdo-H9Q46dYxuRRIM3Bd5UWCjHi-hsvrw';" alt="This Official Us Military Photo Title Is Both Totally Absurd And Deeply Revealing Military Military Photos Us Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Official Us Military Photo Title Is Both Totally Absurd And Deeply Revealing Military Military Photos Us Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/31/6d/60316dd4bbfc3bb6249817838a641737.jpg" data-lightbox="roadtrip" data-title="An M1ip Static Display Outside Nydmna In Latham Ny Tank Usabot Nydmna M1abrams Thor Military Naval Army Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/31/6d/60316dd4bbfc3bb6249817838a641737.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg9yg-HvJT7Pm9D8I10KSbnxYKHBN6EhHNew';" alt="An M1ip Static Display Outside Nydmna In Latham Ny Tank Usabot Nydmna M1abrams Thor Military Naval Army Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">An M1ip Static Display Outside Nydmna In Latham Ny Tank Usabot Nydmna M1abrams Thor Military Naval Army Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/c1/23/22c12304621f1097d4da9f8d281d652c.jpg" data-lightbox="roadtrip" data-title="140514 A Wz553 799 Photo Army Strong Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/c1/23/22c12304621f1097d4da9f8d281d652c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSsSsABHO5asG2gLKpnCyXr7GgrbxZMbM1Cg';" alt="140514 A Wz553 799 Photo Army Strong Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">140514 A Wz553 799 Photo Army Strong Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/68/37/83/68378350f42871006ba94cd3b7a875c8.jpg" data-lightbox="roadtrip" data-title="Cadet Taylor England Along With Her Teammates Quickly Change Their Socks After A Water Crossing Event During The Sandhurst Military Infantry Cadet Challenges">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/68/37/83/68378350f42871006ba94cd3b7a875c8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiLL-7HfDxsiUietigg6DPK4Vgd3KalIvwuQ';" alt="Cadet Taylor England Along With Her Teammates Quickly Change Their Socks After A Water Crossing Event During The Sandhurst Military Infantry Cadet Challenges">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cadet Taylor England Along With Her Teammates Quickly Change Their Socks After A Water Crossing Event During The Sandhurst Military Infantry Cadet Challenges</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/af/09/7faf09881e2aafc9c063aae81b70548e.jpg" data-lightbox="roadtrip" data-title="Us 10th Special Forces Group Airborne Mar 3 2016 1186x800 Militaryporn Special Forces Special Forces Training Special Forces Gear">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/af/09/7faf09881e2aafc9c063aae81b70548e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpfkSHV-orTfnRdxLxNGo88qwuKz8Ic-x2pw';" alt="Us 10th Special Forces Group Airborne Mar 3 2016 1186x800 Militaryporn Special Forces Special Forces Training Special Forces Gear">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us 10th Special Forces Group Airborne Mar 3 2016 1186x800 Militaryporn Special Forces Special Forces Training Special Forces Gear</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/04/5a/e8045ad25e309f22bc52a41e7ae39309.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/04/5a/e8045ad25e309f22bc52a41e7ae39309.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzOXJBDMGScTkEBjPRqRPO3Bmr0Wu3YWwtOQ';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/0c/7b/ca0c7bbf165424677c913b3fd81c066e.jpg" data-lightbox="roadtrip" data-title="Lt Jennifer Adcock Administers The Oath Of Enlistment To Hospital Corpsman Second Class Claudio Brenes In 2020 United States Military Flight Deck United States Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/0c/7b/ca0c7bbf165424677c913b3fd81c066e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWIVf3sz6NDlqUh24EzM6PO53CGILajJ16IQ';" alt="Lt Jennifer Adcock Administers The Oath Of Enlistment To Hospital Corpsman Second Class Claudio Brenes In 2020 United States Military Flight Deck United States Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lt Jennifer Adcock Administers The Oath Of Enlistment To Hospital Corpsman Second Class Claudio Brenes In 2020 United States Military Flight Deck United States Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-foia-program.html">Army Foia Program</a></li>
+													<li class="list-group-item"><a href="/army-enlisted-pay-scale-monthly.html">Army Enlisted Pay Scale Monthly</a></li>
+													<li class="list-group-item"><a href="/army-hair-regulations-female-2020.html">Army Hair Regulations Female 2020</a></li>
+													<li class="list-group-item"><a href="/army-foia-library.html">Army Foia Library</a></li>
+													<li class="list-group-item"><a href="/army-fire-service-ww2.html">Army Fire Service Ww2</a></li>
+													<li class="list-group-item"><a href="/army-helpline-1904.html">Army Helpline 1904</a></li>
+													<li class="list-group-item"><a href="/army-fire-service-jobs.html">Army Fire Service Jobs</a></li>
+													<li class="list-group-item"><a href="/army-eo-hotline.html">Army Eo Hotline</a></li>
+													<li class="list-group-item"><a href="/army-foia-request-status.html">Army Foia Request Status</a></li>
+													<li class="list-group-item"><a href="/army-dots-transfer.html">Army Dots Transfer</a></li>
+													<li class="list-group-item"><a href="/army-green-dodge-durango.html">Army Green Dodge Durango</a></li>
+													<li class="list-group-item"><a href="/army-hr-information-systems.html">Army Hr Information Systems</a></li>
+													<li class="list-group-item"><a href="/army-dpw-academy.html">Army Dpw Academy</a></li>
+													<li class="list-group-item"><a href="/army-hat-among-us.html">Army Hat Among Us</a></li>
+													<li class="list-group-item"><a href="/army-help-hotline.html">Army Help Hotline</a></li>
+													<li class="list-group-item"><a href="/army-green-dodge-demon.html">Army Green Dodge Demon</a></li>
+													<li class="list-group-item"><a href="/army-hr-core-competencies.html">Army Hr Core Competencies</a></li>
+													<li class="list-group-item"><a href="/army-hair-regulations-female-hair-color.html">Army Hair Regulations Female Hair Color</a></li>
+													<li class="list-group-item"><a href="/army-hair-regulations-female-ponytail.html">Army Hair Regulations Female Ponytail</a></li>
+													<li class="list-group-item"><a href="/army-haircut-at-home.html">Army Haircut At Home</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

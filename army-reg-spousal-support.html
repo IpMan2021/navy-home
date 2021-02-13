@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Reg Spousal Support - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Reg Spousal Support",
+  "datePublished": "2021-02-13",
+  "image": "https://api.army.mil/e2/c/images/2018/05/29/518660/original.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+reg+spousal+support",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Reg Spousal Support</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Army Regulation 608-99 requires that Soldiers support their dependants. Army Regulation 608-99 effective 29 November 2003 explains the Department of the Armys policy guidance and procedures for Soldiers concerning family support child custody paternity claims. CArmy Regulation AR 60899 Family Support Child Custody and Paternity 29October 2003 2PurposeThis directive supplements Armypolicyonrequirements for spousal financial support. <br>				
+			</p>
+										<a class="badge badge-info" href="/military-benefits-for-veterans-2020.html">military benefits for veterans 2020</a>
+											<a class="badge badge-dark" href="/military-96-hour-rule.html">military 96 hour rule</a>
+											<a class="badge badge-secondary" href="/masters-swimming-records-usa.html">masters swimming records usa</a>
+											<a class="badge badge-warning" href="/mfrc-gagetown-address.html">mfrc gagetown address</a>
+											<a class="badge badge-secondary" href="/military-benefits-for-veterans-by-state.html">military benefits for veterans by state</a>
+											<a class="badge badge-success" href="/mfa-scholarship-recipients.html">mfa scholarship recipients</a>
+											<a class="badge badge-success" href="/military-accounts-department-pakistan.html">military accounts department pakistan</a>
+											<a class="badge badge-secondary" href="/military-24-hour-ration-pack.html">military 24 hour ration pack</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you have come to visit the ideal blog.  Our website provides you with suggestions for seeing the maximum quality video and picture content, hunt and locate more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, especially Youtube, therefore we recommend this movie for you to view.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/Military%20Father%20%26%20Son%202.jpg?itok=riJ0Lkd2" data-lightbox="roadtrip" data-title="Army Family Support Requirements Military Divorce Guide">
+											<img class="card-img v-image ads-img " src="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/Military%20Father%20%26%20Son%202.jpg?itok=riJ0Lkd2" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7yqmY-0Eu9lucZFacZScPdpBcLqFyVGo3kA';" alt="Army Family Support Requirements Military Divorce Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Family Support Requirements Military Divorce Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/52/0f/e0520f96ecb9cdb0f87892ebe87e45ed.jpg" data-lightbox="roadtrip" data-title="Pin On Chart">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/52/0f/e0520f96ecb9cdb0f87892ebe87e45ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2zl2PY1LdrXX6etySCwwS0vjM6c7EkvuVhQ';" alt="Pin On Chart">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Chart</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="zqBzMozykKCgwM" data-lightbox="roadtrip" data-title="Https 8tharmy Korea Army Mil Sja Assets Doc Legal Army Support Requirements Pdf">
+											<img class="card-img v-image ads-img " src="zqBzMozykKCgwM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxgrQv92ELekLM9aQqNm1vjRpWE57EP5tLBw';" alt="Https 8tharmy Korea Army Mil Sja Assets Doc Legal Army Support Requirements Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https 8tharmy Korea Army Mil Sja Assets Doc Legal Army Support Requirements Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="f81rfHndN_pblM" data-lightbox="roadtrip" data-title="Https Www 7atc Army Mil Portals 17 Documents Sja Familysupportguideline Ar608 99 Pdf">
+											<img class="card-img v-image ads-img " src="f81rfHndN_pblM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-XjQAax82RIQ1MBgBIs_MfXhbWvBrMeKzVA';" alt="Https Www 7atc Army Mil Portals 17 Documents Sja Familysupportguideline Ar608 99 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www 7atc Army Mil Portals 17 Documents Sja Familysupportguideline Ar608 99 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images02.military.com/sites/default/files/styles/full/public/paycheck-thumbnails/2011/03/army-kid-777.jpg?itok=dwqbzL9t" data-lightbox="roadtrip" data-title="Required Family Support During A Military Divorce Military Com">
+											<img class="card-img v-image ads-img " src="https://images02.military.com/sites/default/files/styles/full/public/paycheck-thumbnails/2011/03/army-kid-777.jpg?itok=dwqbzL9t" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_VmhXm51-_qXKugMEF60Hgo8I-f2X3tBr8w';" alt="Required Family Support During A Military Divorce Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Required Family Support During A Military Divorce Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="kU02tSzfBsaM4M" data-lightbox="roadtrip" data-title="Https Www Benning Army Mil Mcoe Sja Content Pdf Ar 20608 99 20family 20support Pdf">
+											<img class="card-img v-image ads-img " src="kU02tSzfBsaM4M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_MogMdthIofzSd9urmPgNfzaLgrtLMX1mAw';" alt="Https Www Benning Army Mil Mcoe Sja Content Pdf Ar 20608 99 20family 20support Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Benning Army Mil Mcoe Sja Content Pdf Ar 20608 99 20family 20support Pdf</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.sandboxx.us/wp-content/uploads/2020/02/mil-couple-on-porch.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_MogMdthIofzSd9urmPgNfzaLgrtLMX1mAw';" alt="Https Www Benning Army Mil Mcoe Sja Content Pdf Ar 20608 99 20family 20support Pdf">
+										<div class="card-body">
+						<h3 class="h5"><b>Army regulations do not control how much an individual will have to pay the ex-spouse once the divorce is final.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army reg spousal support</strong>. 
+								
+																	The military benefits youre entitled to as a military spouse include but arent limited to. 
+																	SOLDIERS MUST COMPLY WITH COURT ORDERS AND WRITTENSUPPORT AGREEMENTS Under Army Regulation 608-99 a Soldier is required to provide financial support to family members and to obey court orders on. 
+																	Spousal support differs from personnel to personnel and from service to service. 
+																	For example Army Regulation 608-99 FAMILY SUPPORT CHILD CUSTODY AND PATERNITY requires a soldier to provide an amount equal to BAH Type II at the With Dependent Rate at the with dependent rate unless there is a court order or written agreement providing for a different amount. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jurisdiction to determine child support or spousal support. 
+																	Army Regulation 608-99 states that every soldier must provide a certain amount to their families. 
+																	AThe interim support requirements outlined inreference 1c paragraph 26apply when a Soldier and spouse are unable to arrive at a written financial support agreement or a court has not issued a. 
+																	To successfully do so its helpful to know about the military spouse support. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The specifics are usually left up to the Soldier and his or her spouse but if there is a dispute between the parties regarding financial support commanders follow the guidance in Army Regulation 608-99 which been in place for many years. 
+																	Army Regulation 608-99 sets forth Armys policy on financial support of family members paternity and child custody. 
+																	Housing or a housing allowance This is an additional amount paid to service members instead of providing quarters. 
+																	If the soldier has more than one support obligation that amount is divided equally among the supported. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If your spouse abandoned your family you should be entitled to a portion of this allowance. 
+																	All payments are based upon BAH-II and is the housing allowance without the locality allowance found on page 2 of the military pay chart. 
+																	For soldiers who have more than one obligation must divide the money equally among the parties. 
+																	Army Regulation 608-99 Family Support Child Custody Paternity requires soldiers to pay temporary support depending upon the family situation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These regulations require members to provide adequate support to family members but without a court order the military cant compel a member to pay support. 
+																	During the adjustment period spouses take on new roles adapt to new schedules and learn new ways of handling many of lifes obstacles. 
+																	It is different for those in the army the navy and the air force. 
+																	Additionally under certain scenarios the amount of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Soldiers are required to. 
+																	Yes for Army personnel US Army Regulation AR 608-99 requires soldiers to support family members during periods of separation if they do not live in on-post government quarters. 
+																	Section 659 title 42 United States Code 42 USC 659 authorizes a soldiers military pay or military retired pay to be garnished in order to enforce court-ordered financial support obligations. 
+																	Army Regulation AR 608-99 spells out when a Soldier is required to provide financial support to family members. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If the spouse lives in on-post government housing the Army member will not have to pay any support. 
+																	However while a divorce is pending the Army member will be required to provide spousal support. 
+																	If youve recently married into the military or you or your spouse has just joined you may be feeling both nervous and excited about the future. 
+																	Army Regulation 608-99 Family Support Child Custody and Paternity addresses the issue of family support. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Absent a court order separation agreement or oral agreement between the spouses. 
+																	WHAT IS A SOLDIERS OBLIGATION UNDER THE REGULATION. 
+																	I find this regulation to be wordy and a bit confusing. 
+																	Military service has regulations when it comes to military divorce and separation especially when it comes to spousal and child support. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	AR 608-99 provides that a soldier separated from his or her family members will. 
+																	Remember AR 608-99 only kicks in if there is no oral or written agreement or court order specifically addressing financial spousal support. 
+																	The amount due to a. 
+																	There are some parts that are. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Therefore if your spouse has been ordered by a court to provide a set amount of support or the two of you have already agreed in. 
+																	The bottom line is that the Army requires Soldiers to provide financial support to family members. 
+																	This is a fairly complicated question that can only be answered during a legal assistance appointment. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="jVXT6QxreVsqjM" data-lightbox="roadtrip" data-title="Http Www Usarj Army Mil Portals 33 Cmdstaffs Sja Doc Army Alimony And Child Support Rules Pdf">
+											<img class="card-img v-image ads-img " src="jVXT6QxreVsqjM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6kWyaU_n-eVy4K1uRO3sxMmNBx18Grpjx5Q';" alt="Http Www Usarj Army Mil Portals 33 Cmdstaffs Sja Doc Army Alimony And Child Support Rules Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Usarj Army Mil Portals 33 Cmdstaffs Sja Doc Army Alimony And Child Support Rules Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://myarmybenefits.us.army.mil/Images/Army%20Specific%20Misc/SGLI%20Army.jpg" data-lightbox="roadtrip" data-title="Family Separation Allowance Fsa The Official Army Benefits Website">
+											<img class="card-img v-image ads-img " src="https://myarmybenefits.us.army.mil/Images/Army%20Specific%20Misc/SGLI%20Army.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwNXq6JWU7nIkTg7FEJT2D-xpTCTbvBrKHDQ';" alt="Family Separation Allowance Fsa The Official Army Benefits Website">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Family Separation Allowance Fsa The Official Army Benefits Website</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.mcmillanmetro.com/wp-content/uploads/2020/11/Depositphotos_334599104_xl-2015-300x200.jpg" data-lightbox="roadtrip" data-title="Military Dependent Support Requirements Mcmillan Metro">
+											<img class="card-img v-image ads-img " src="https://www.mcmillanmetro.com/wp-content/uploads/2020/11/Depositphotos_334599104_xl-2015-300x200.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAjYgK99HwSr0yPF3O7HZJCQstcQlciPR7DQ';" alt="Military Dependent Support Requirements Mcmillan Metro">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Dependent Support Requirements Mcmillan Metro</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/images/2018/05/29/518660/original.jpg" data-lightbox="roadtrip" data-title="Dependent Financial Support And Ar 608 99 Article The United States Army">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/images/2018/05/29/518660/original.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGzLsD3H6rJKH9HupXw5-i3Il46SI0UaYMaA';" alt="Dependent Financial Support And Ar 608 99 Article The United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dependent Financial Support And Ar 608 99 Article The United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="Jx_y4x_wP6n0pM" data-lightbox="roadtrip" data-title="Https Home Army Mil Bliss Index Php Download File View 631 330">
+											<img class="card-img v-image ads-img " src="Jx_y4x_wP6n0pM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFTqAqTv0CB0AKC2oFWQC70USIHuLfHRkhag';" alt="Https Home Army Mil Bliss Index Php Download File View 631 330">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Home Army Mil Bliss Index Php Download File View 631 330</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images01.military.com/sites/default/files/styles/full/public/media/spouse/2016/05/spouse-retirement-ceremony-1200x800.jpg?itok=kNIGpM4j" data-lightbox="roadtrip" data-title="Are There Any Military Spouse Retirement Benefits Military Com">
+											<img class="card-img v-image ads-img " src="https://images01.military.com/sites/default/files/styles/full/public/media/spouse/2016/05/spouse-retirement-ceremony-1200x800.jpg?itok=kNIGpM4j" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlg-zR8ALQWtuZAkw3uFd08oLLHZ7LmHpHPg';" alt="Are There Any Military Spouse Retirement Benefits Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are There Any Military Spouse Retirement Benefits Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/Soldiers.jpg?itok=Unn5wW14" data-lightbox="roadtrip" data-title="Reserve Family Law Issues Military Divorce Guide">
+											<img class="card-img v-image ads-img " src="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/Soldiers.jpg?itok=Unn5wW14" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe7KkXTbnldlYNTi0yRquTLgwqrF6RnwqCxg';" alt="Reserve Family Law Issues Military Divorce Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reserve Family Law Issues Military Divorce Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/500_AirForceParade.jpg?itok=JHD-fijx" data-lightbox="roadtrip" data-title="Air Force Family Support Requirements Military Divorce Guide">
+											<img class="card-img v-image ads-img " src="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/500_AirForceParade.jpg?itok=JHD-fijx" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTmUTuafQ9b0NZxzodq5OY1KnxWQJCKXcOZg';" alt="Air Force Family Support Requirements Military Divorce Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Family Support Requirements Military Divorce Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2019/11/dual-military-couples-mil-benefits.jpg" data-lightbox="roadtrip" data-title="Benefits Of Dual Military Couples Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2019/11/dual-military-couples-mil-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDagF0AVys9NFmdRFKIr4xbtqrYe7nAB4Gaw';" alt="Benefits Of Dual Military Couples Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Benefits Of Dual Military Couples Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/images/2020/05/15/f5444d90/original.jpg" data-lightbox="roadtrip" data-title="Expanded Program Aids Military Employees With Job Transfer Opportunities Article The United States Army">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/images/2020/05/15/f5444d90/original.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc5thr3Z30oqKCv-4iJSvRv-cGRWNQzEuCqw';" alt="Expanded Program Aids Military Employees With Job Transfer Opportunities Article The United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Expanded Program Aids Military Employees With Job Transfer Opportunities Article The United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militaryfamily.org/wp-content/uploads/army-wedding-550-1.jpg" data-lightbox="roadtrip" data-title="Marriage Divorce National Military Family Association">
+											<img class="card-img v-image ads-img " src="https://militaryfamily.org/wp-content/uploads/army-wedding-550-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhHT5oppALifO1l4woz0tXMehaOjBKM_liOA';" alt="Marriage Divorce National Military Family Association">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marriage Divorce National Military Family Association</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.sandboxx.us/wp-content/uploads/2020/02/mil-couple-on-porch.jpg" data-lightbox="roadtrip" data-title="5 Important Aspects Of Dual Military Marriage To Look At Together Sandboxx">
+											<img class="card-img v-image ads-img " src="https://www.sandboxx.us/wp-content/uploads/2020/02/mil-couple-on-porch.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1a5m800Z1RIfhWduRx7rmOqIewST_HwHtcw';" alt="5 Important Aspects Of Dual Military Marriage To Look At Together Sandboxx">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Important Aspects Of Dual Military Marriage To Look At Together Sandboxx</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.armytimes.com/resizer/KN32-rk7RVJ9It-znrVRqSLnRo0=/1200x0/filters:quality(100)/arc-anglerfish-arc2-prod-mco.s3.amazonaws.com/public/DHIMCVBNIJCWDBEYOUNOJJS5ME.jpg" data-lightbox="roadtrip" data-title="Be An Army Ranger Now Long List Of Job Opportunities">
+											<img class="card-img v-image ads-img " src="https://www.armytimes.com/resizer/KN32-rk7RVJ9It-znrVRqSLnRo0=/1200x0/filters:quality(100)/arc-anglerfish-arc2-prod-mco.s3.amazonaws.com/public/DHIMCVBNIJCWDBEYOUNOJJS5ME.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQriYB0ZUHt5-TAaVw8Jh1JjInRkFW8dTmdOw';" alt="Be An Army Ranger Now Long List Of Job Opportunities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Be An Army Ranger Now Long List Of Job Opportunities</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/the-salvation-army-us-hq.html">The Salvation Army Us Hq</a></li>
+													<li class="list-group-item"><a href="/texas-military-department-state-jobs.html">Texas Military Department State Jobs</a></li>
+													<li class="list-group-item"><a href="/the-british-army-login.html">The British Army Login</a></li>
+													<li class="list-group-item"><a href="/texas-military-department-counseling.html">Texas Military Department Counseling</a></li>
+													<li class="list-group-item"><a href="/the-british-army-training.html">The British Army Training</a></li>
+													<li class="list-group-item"><a href="/texas-military-department-retirement-services.html">Texas Military Department Retirement Services</a></li>
+													<li class="list-group-item"><a href="/the-army-public-affairs-program.html">The Army Public Affairs Program</a></li>
+													<li class="list-group-item"><a href="/texas-military-department-ein.html">Texas Military Department Ein</a></li>
+													<li class="list-group-item"><a href="/the-british-army-salary.html">The British Army Salary</a></li>
+													<li class="list-group-item"><a href="/the-army-wife-handbook.html">The Army Wife Handbook</a></li>
+													<li class="list-group-item"><a href="/texas-military-department-twitter.html">Texas Military Department Twitter</a></li>
+													<li class="list-group-item"><a href="/texas-military-department-glassdoor.html">Texas Military Department Glassdoor</a></li>
+													<li class="list-group-item"><a href="/the-military-wife-and-mom-boundaries-routines-and-early-bedtimes.html">The Military Wife And Mom Boundaries Routines And Early Bedtimes</a></li>
+													<li class="list-group-item"><a href="/tsa-precheck-for-dod-civilians-spouse.html">Tsa Precheck For Dod Civilians Spouse</a></li>
+													<li class="list-group-item"><a href="/the-home-depot-military-discount-online.html">The Home Depot Military Discount Online</a></li>
+													<li class="list-group-item"><a href="/three-departments-of-military.html">Three Departments Of Military</a></li>
+													<li class="list-group-item"><a href="/texas-military-department-headquarters.html">Texas Military Department Headquarters</a></li>
+													<li class="list-group-item"><a href="/types-of-leave-military.html">Types Of Leave Military</a></li>
+													<li class="list-group-item"><a href="/the-army-wife-handbook-pdf.html">The Army Wife Handbook Pdf</a></li>
+													<li class="list-group-item"><a href="/texas-military-department-staff.html">Texas Military Department Staff</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

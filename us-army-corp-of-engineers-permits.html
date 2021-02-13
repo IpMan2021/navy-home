@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Army Corp Of Engineers Permits - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Army Corp Of Engineers Permits",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/5f/e3/11/5fe311709dfe183a02d32f02a037170e.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+army+corp+of+engineers+permits",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Army Corp Of Engineers Permits</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">This page is meant to provide you with a brief overview of the three 3 most common types of US. Army Corps of Engineers permits - the Nationwide Permits the Regional General Permit No. Louis District should be mailed to one copy to each. <br>				
+			</p>
+										<a class="badge badge-warning" href="/military-dog-bl-movie-eng-sub.html">military dog bl movie eng sub</a>
+											<a class="badge badge-info" href="/military-cap-visor.html">military cap visor</a>
+											<a class="badge badge-primary" href="/military-departments.html">military departments</a>
+											<a class="badge badge-danger" href="/military-dog-fight-videos.html">military dog fight videos</a>
+											<a class="badge badge-success" href="/military-cap-name.html">military cap name</a>
+											<a class="badge badge-dark" href="/military-dog-ear-tattoo.html">military dog ear tattoo</a>
+											<a class="badge badge-dark" href="/military-dog-chinese-movie-2019.html">military dog chinese movie 2019</a>
+											<a class="badge badge-secondary" href="/military-crisis-line.html">military crisis line</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you've come to pay a visit to the ideal blog.  Our site provides you with suggestions for seeing the maximum quality video and picture content, search and locate more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this movie that you see.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/89/94/be89940723e759162d4f619b9feadf76.png" data-lightbox="roadtrip" data-title="Nationwide Permit Reissuance Gt Headquarters U S Army Corps Of Engineers Gt Fact Sheet Article View Standing Rock Army Corps Of Engineers Sioux Tribe">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/89/94/be89940723e759162d4f619b9feadf76.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_xFpOeIcOA1ovH4rQfcdL0PxJverYpTEUng';" alt="Nationwide Permit Reissuance Gt Headquarters U S Army Corps Of Engineers Gt Fact Sheet Article View Standing Rock Army Corps Of Engineers Sioux Tribe">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nationwide Permit Reissuance Gt Headquarters U S Army Corps Of Engineers Gt Fact Sheet Article View Standing Rock Army Corps Of Engineers Sioux Tribe</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3c/83/3c/3c833ccddc455c3be60fd17643e6c2fa.png" data-lightbox="roadtrip" data-title="Pin On News Alternative">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3c/83/3c/3c833ccddc455c3be60fd17643e6c2fa.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSONenukS5VUNKF8hr4sqaJllzgtElxGF5NKw';" alt="Pin On News Alternative">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On News Alternative</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/17/e6/ef17e61f7813a732ef513d5782bd62ff.jpg" data-lightbox="roadtrip" data-title="Commissioners Need To Fight For Mobile S Drinking Water Drinking Water Us Army Corps Of Engineers Watersheds">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/17/e6/ef17e61f7813a732ef513d5782bd62ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9xuoGENodeBdl-p70bROy1VTlQ5LD2gXGkg';" alt="Commissioners Need To Fight For Mobile S Drinking Water Drinking Water Us Army Corps Of Engineers Watersheds">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Commissioners Need To Fight For Mobile S Drinking Water Drinking Water Us Army Corps Of Engineers Watersheds</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/24/f2/f8/24f2f8a588e4afeea41a79c6a08c9898--engineers-army.jpg" data-lightbox="roadtrip" data-title="Nationwide Permit Information Permit Nationwide Army Corps Of Engineers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/24/f2/f8/24f2f8a588e4afeea41a79c6a08c9898--engineers-army.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpFUdTbyCyLxiksd-kG9gKwsm9GdI7VMy5_g';" alt="Nationwide Permit Information Permit Nationwide Army Corps Of Engineers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nationwide Permit Information Permit Nationwide Army Corps Of Engineers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/b6/a2/c1b6a2c08714e356ab340d5ecf669701.jpg" data-lightbox="roadtrip" data-title="Pin On Scam Alerts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/b6/a2/c1b6a2c08714e356ab340d5ecf669701.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCKu-bJ-TiTGhkpMFrzkEvOMpBzytd_cN65w';" alt="Pin On Scam Alerts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Scam Alerts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/c9/e4/5fc9e491b0425694beb67a78ba97bd60.jpg" data-lightbox="roadtrip" data-title="Pin On Political">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/c9/e4/5fc9e491b0425694beb67a78ba97bd60.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYN74gLGl-07Q1zHvViafWsxu-gefW4cFiYA';" alt="Pin On Political">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Political</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/63/d0/cd/63d0cd3d4bc879a9d1d2f71458d1e87b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYN74gLGl-07Q1zHvViafWsxu-gefW4cFiYA';" alt="Pin On Political">
+										<div class="card-body">
+						<h3 class="h5"><b>Section 408 Permissions This site describes the process for review and approval of all requests to modify alter or occupy any existing US.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us army corp of engineers permits</strong>. 
+								
+																	Of Natural Resources Office of Water Resources One Natural Resources Way 2nd Floor Springfield Illinois 62702-1271 Illinois Environmental Protection Agency 1021 North Grand Avenue. 
+																	The Corps of Engineers has an administrative appeal process whereby applicants and landowners may appeal denied permits issued permits that contain requirements that are unacceptable to the applicant or approved jurisdictional determinations. 
+																	Louis MO 63103-2833 Illinois Dept. 
+																	Army Corps of Engineers USACE Regulatory Program involves the regulating of discharges of dredged or fill material into waters of the United States and structures or work in navigable waters of the United States under section 404 of the Clean Water Act and section 10 of the Rivers and Harbors Act of 1899. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Headquarters for minor projects in certain areas across the country have been suspended and replaced with a state general permit GP in each state. 
+																	Any person firm or agency--including any government agency--planning to place structures or conduct work in navigable waters of the United States or dump place or deposit dredged or fill. 
+																	Army Corps of Engineers announced today that it has prepared its proposal to renew and revise 52 nationwide permits for work in wetlands and other waters that are. 
+																	Regulatory Division Post Office Box 2288 Mobile Alabama 36628-0001. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	State Programmatic General Permits Nationwide Permits Letters of. 
+																	For additional information please contact the US. 
+																	Section 404 of the Clean Water Act authorizes the Army Corps to oversee permitting for actions that fill or dredge waterways. 
+																	The Regulatory Branch in the New Orleans Districts Operations Division is responsible for administering the US Army Corps of Engineers Corps Regulatory Program in southern Louisiana. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Louis District Regulatory Branch 1222 Spruce St. 
+																	The GPs vary by state reduce duplication in review between the Corps and the state and expedite the permit review process for the. 
+																	In the New England District the nationwide permits a series of general permits issued by Corps Washington DC. 
+																	Army Corps of Engineers Attention. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For website corrections write to CESAM-PAusacearmymil. 
+																	Army Corps of Engineers. 
+																	Partnering in peace and war to strengthen our nations security energize the economy and reduce risks from disasters. 
+																	Nationwide permits intended for minor actions are issued for projects that are expected to do minimal environmental damage to streams and wetlands. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Corps of Engineers-constructed public works. 
+																	1 and the Individual Permit. 
+																	The joint permit application should be submitted to Maryland Department of Natural Resources Fisheries Service Shellfish Program. 
+																	Army Corps of Engineers Permitting Process Information The Permit Process consists of a number of steps involving the applicant the Corps of Engineers public andor private organizations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is the official public website of the Mobile District US. 
+																	You may call the Corps at 251. 
+																	Regional General Permits are issued by the District Engineer for a general category of activities when the activities are similar in nature and cause minimal environmental. 
+																	The mission of the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	US Army Corps of Engineers St. 
+																	Army Corps of Engineers and the Maryland Department of Natural Resources are accepting Joint Applications for State Commercial Shellfish Aquaculture leases and Corps of Engineers Federal Permits in the Chesapeake Bay its tributaries and the Coastal Bays. 
+																	Army Corps of Engineers is to deliver vital public and military engineering services. 
+																	Although these decisions are made by Corps District offices requests for appeals of such decisions are appealed to the Corps Division offices. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The regulatory authorities and responsibilities of the Corps Regulatory Program are based on the following laws. 
+																	Illinois permit applications in the St. 
+																	Army Corps of Engineers authorizes projects in several different ways with several different types of permits. 
+																	You need to enable JavaScript to run this app. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A proposed projects impacts to these areas will determine what permit. 
+																	Browse Final and Pending Permits Issued This web page is a portal into the Corps of Engineers regulatory data management system ie ORM that provides permit reports from every District and. 
+																	Army Corps of Engineers Baltimore District authorizes work in waters of the United States under four types of permits. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/20/dc/1a20dc4770d8b8fb756b2b30a92503a6.jpg" data-lightbox="roadtrip" data-title="Bring Home A Story Recreation Gov In 2020 Us Army Corps Of Engineers Travel Usa Army Corps Of Engineers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/20/dc/1a20dc4770d8b8fb756b2b30a92503a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzEqw8l_5SwJAbCCfL5BqCMLsbsPwNviDmTQ';" alt="Bring Home A Story Recreation Gov In 2020 Us Army Corps Of Engineers Travel Usa Army Corps Of Engineers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bring Home A Story Recreation Gov In 2020 Us Army Corps Of Engineers Travel Usa Army Corps Of Engineers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/74/85/007485c1f7439ffa81ed631cb169c249.jpg" data-lightbox="roadtrip" data-title="Us Army Piles On To Coal Woes Nixes New Export Terminal Us Army Corps Of Engineers Army Corps Of Engineers Renewable Energy News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/74/85/007485c1f7439ffa81ed631cb169c249.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbcM4j_b3FM5BaRzyze65F4evaDqenMwsheA';" alt="Us Army Piles On To Coal Woes Nixes New Export Terminal Us Army Corps Of Engineers Army Corps Of Engineers Renewable Energy News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Piles On To Coal Woes Nixes New Export Terminal Us Army Corps Of Engineers Army Corps Of Engineers Renewable Energy News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/a0/f7/c6a0f7681c60e842ec5b44a80cf974d6.png" data-lightbox="roadtrip" data-title="Advancing Nature Based Solutions Overview Of Living Shorelines In The Usa Http Www Pewtrusts Org Media Asse Army Corps Of Engineers Solutions Resilience">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/a0/f7/c6a0f7681c60e842ec5b44a80cf974d6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4eHWChMjIbYI1sz-Xu3xO163G5Oa80Nppyw';" alt="Advancing Nature Based Solutions Overview Of Living Shorelines In The Usa Http Www Pewtrusts Org Media Asse Army Corps Of Engineers Solutions Resilience">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Advancing Nature Based Solutions Overview Of Living Shorelines In The Usa Http Www Pewtrusts Org Media Asse Army Corps Of Engineers Solutions Resilience</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/92/79/8d927907183e3c9262b6054a075cb611.jpg" data-lightbox="roadtrip" data-title="After Years Of Rejection Under The Obama Administration The Pebble Partnership Is Finally Allowed To Apply For A Permit An Obama Administration Permit Sayings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/92/79/8d927907183e3c9262b6054a075cb611.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8eupAH_4m3ozmZzGAg5RRfdoe10pdp4CzAA';" alt="After Years Of Rejection Under The Obama Administration The Pebble Partnership Is Finally Allowed To Apply For A Permit An Obama Administration Permit Sayings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">After Years Of Rejection Under The Obama Administration The Pebble Partnership Is Finally Allowed To Apply For A Permit An Obama Administration Permit Sayings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/d0/0b/5ed00b2f64fd4261059c2e071b5329c9.jpg" data-lightbox="roadtrip" data-title="Pin On Pale Blue Dot">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/d0/0b/5ed00b2f64fd4261059c2e071b5329c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf4YWVupaLebVw9VYvsZx6aUIJtyjMCLTcIg';" alt="Pin On Pale Blue Dot">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Pale Blue Dot</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/b6/1f/5db61fb9d5af56a0d9f6cf0dd49e9d8c.jpg" data-lightbox="roadtrip" data-title="Dakota Access Pipeline Us Denies Key Permit A Win For Standing Rock Protesters The Guardian Rss Standing Rock Dakota Access Standing Rock Protest">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/b6/1f/5db61fb9d5af56a0d9f6cf0dd49e9d8c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf4UvBy2yr-6ONCgxLei3mjCbwdDx_5t-H5g';" alt="Dakota Access Pipeline Us Denies Key Permit A Win For Standing Rock Protesters The Guardian Rss Standing Rock Dakota Access Standing Rock Protest">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dakota Access Pipeline Us Denies Key Permit A Win For Standing Rock Protesters The Guardian Rss Standing Rock Dakota Access Standing Rock Protest</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/e3/11/5fe311709dfe183a02d32f02a037170e.jpg" data-lightbox="roadtrip" data-title="Users Opponents Take Sides On Corps Nationwide Project Permit Makeover Offshore Wind Army Corps Of Engineers American Universities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/e3/11/5fe311709dfe183a02d32f02a037170e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLhw2zArWkaCWdMkYSQl1DqJlBIyj3HEBWiQ';" alt="Users Opponents Take Sides On Corps Nationwide Project Permit Makeover Offshore Wind Army Corps Of Engineers American Universities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Users Opponents Take Sides On Corps Nationwide Project Permit Makeover Offshore Wind Army Corps Of Engineers American Universities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/b0/23/a8b0233213fea8544ca9dd080ddacbb0.png" data-lightbox="roadtrip" data-title="Us Judge Cancels Permit For Keystone Xl Pipeline From Canada In 2020 Pipeline Project Army Corps Of Engineers Supreme Court">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/b0/23/a8b0233213fea8544ca9dd080ddacbb0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxWaOp1eAlgnTdtj_np7dc6YEhAB8MGksGlg';" alt="Us Judge Cancels Permit For Keystone Xl Pipeline From Canada In 2020 Pipeline Project Army Corps Of Engineers Supreme Court">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Judge Cancels Permit For Keystone Xl Pipeline From Canada In 2020 Pipeline Project Army Corps Of Engineers Supreme Court</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/f3/68/67/f36867804947bae9de1c6dca0c640996.jpg" data-lightbox="roadtrip" data-title="Pin On Military Aviation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/f3/68/67/f36867804947bae9de1c6dca0c640996.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPz0VGSVC4q6XzqbPKEit6Ht6to6DwpGTE8w';" alt="Pin On Military Aviation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Aviation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/27/f9/83/27f9835eb5e535e090d249916f7d359f.jpg" data-lightbox="roadtrip" data-title="Major Louisiana Coastal Restoration Project Won T Get Permits Before 2022 Corps Of Engineers Says Coastal Coastal Life Restoration">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/27/f9/83/27f9835eb5e535e090d249916f7d359f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUoKB2kkI7N78xgUOuQLTzT9u_DODvxSVzIw';" alt="Major Louisiana Coastal Restoration Project Won T Get Permits Before 2022 Corps Of Engineers Says Coastal Coastal Life Restoration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Major Louisiana Coastal Restoration Project Won T Get Permits Before 2022 Corps Of Engineers Says Coastal Coastal Life Restoration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2e/84/42/2e8442496192644c7549478a1828ed29.jpg" data-lightbox="roadtrip" data-title="Pin On Getaka">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2e/84/42/2e8442496192644c7549478a1828ed29.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ0nPDwFftsPBycXs_KZc_JDmpV0MhylyTgw';" alt="Pin On Getaka">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Getaka</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/d3/c3/c4d3c3cc1ee8af4ab3fc754a0449f836.png" data-lightbox="roadtrip" data-title="Dakota Access Pipeline Us Denies Key Permit A Win For Standing Rock Protesters Standing Rock Protest Standing Rock Army Corps Of Engineers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/d3/c3/c4d3c3cc1ee8af4ab3fc754a0449f836.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLmOeWyt-eNniauSgdnlomn9ANf0QBGZjvWA';" alt="Dakota Access Pipeline Us Denies Key Permit A Win For Standing Rock Protesters Standing Rock Protest Standing Rock Army Corps Of Engineers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dakota Access Pipeline Us Denies Key Permit A Win For Standing Rock Protesters Standing Rock Protest Standing Rock Army Corps Of Engineers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/d0/cd/63d0cd3d4bc879a9d1d2f71458d1e87b.jpg" data-lightbox="roadtrip" data-title="Victory U S Judge Revokes Permit For Keystone Xl Pipeline That Was Expected To Stretch From Canada To Nebraska Xl Pipeline Victorious Army Corps Of Engineers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/d0/cd/63d0cd3d4bc879a9d1d2f71458d1e87b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMaZGCEqs5eoyVuzUwwaOO-0N1kOgDFtunaQ';" alt="Victory U S Judge Revokes Permit For Keystone Xl Pipeline That Was Expected To Stretch From Canada To Nebraska Xl Pipeline Victorious Army Corps Of Engineers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Victory U S Judge Revokes Permit For Keystone Xl Pipeline That Was Expected To Stretch From Canada To Nebraska Xl Pipeline Victorious Army Corps Of Engineers</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/mycanal-hdr.html">Mycanal Hdr</a></li>
+													<li class="list-group-item"><a href="/national-archives-washington-dc-veterans.html">National Archives Washington Dc Veterans</a></li>
+													<li class="list-group-item"><a href="/mycargo-pelni.html">Mycargo Pelni</a></li>
+													<li class="list-group-item"><a href="/national-archives-military-service-records-website.html">National Archives Military Service Records Website</a></li>
+													<li class="list-group-item"><a href="/national-archives-va-dd214.html">National Archives Va Dd214</a></li>
+													<li class="list-group-item"><a href="/national-archives-and-records-service-of-south-africa-pretoria.html">National Archives And Records Service Of South Africa Pretoria</a></li>
+													<li class="list-group-item"><a href="/mycanal-hd.html">Mycanal Hd</a></li>
+													<li class="list-group-item"><a href="/national-va-archives.html">National Va Archives</a></li>
+													<li class="list-group-item"><a href="/navy-veterans-records.html">Navy Veterans Records</a></li>
+													<li class="list-group-item"><a href="/national-archives-and-records-services-of-south-africa.html">National Archives And Records Services Of South Africa</a></li>
+													<li class="list-group-item"><a href="/national-archives-military-medical-records.html">National Archives Military Medical Records</a></li>
+													<li class="list-group-item"><a href="/mycanal-harry-potter.html">Mycanal Harry Potter</a></li>
+													<li class="list-group-item"><a href="/navy-recruiting-center-near-me.html">Navy Recruiting Center Near Me</a></li>
+													<li class="list-group-item"><a href="/national-archives-military-records-dd214.html">National Archives Military Records Dd214</a></li>
+													<li class="list-group-item"><a href="/mycanal-freebox-revolution.html">Mycanal Freebox Revolution</a></li>
+													<li class="list-group-item"><a href="/national-archives-vs-library-of-congress.html">National Archives Vs Library Of Congress</a></li>
+													<li class="list-group-item"><a href="/mycanal-pc.html">Mycanal Pc</a></li>
+													<li class="list-group-item"><a href="/mycar.html">Mycar</a></li>
+													<li class="list-group-item"><a href="/navy-veterans-service-records.html">Navy Veterans Service Records</a></li>
+													<li class="list-group-item"><a href="/national-archives-request-military-service-records.html">National Archives Request Military Service Records</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

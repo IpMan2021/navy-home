@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Department Of The Army Task Management Tool - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Department Of The Army Task Management Tool",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/72/77/5a/72775a0c5477e007fcb4de8e2a5b85c7.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=department+of+the+army+task+management+tool",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Department Of The Army Task Management Tool</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Begin risk management after gathering tasks facts assumptions limitations. Taskers are directives or action items at the executive level that require responses. How the Army manages information and facilitates the movement of knowledge has changed dramatically in recent years. <br>				
+			</p>
+										<a class="badge badge-dark" href="/when-did-last-us-troops-leave-vietnam.html">when did last us troops leave vietnam</a>
+											<a class="badge badge-success" href="/who-is-the-dod-inspector-general.html">who is the dod inspector general</a>
+											<a class="badge badge-secondary" href="/what-percentage-of-gdp-is-spent-on-defense.html">what percentage of gdp is spent on defense</a>
+											<a class="badge badge-secondary" href="/when-did-the-coast-guard-become-homeland-security.html">when did the coast guard become homeland security</a>
+											<a class="badge badge-light" href="/what-states-have-travel-restrictions-due-to-covid.html">what states have travel restrictions due to covid</a>
+											<a class="badge badge-dark" href="/when-did-us-army-start.html">when did us army start</a>
+											<a class="badge badge-primary" href="/who-is-the-secretary-of-defense-2020.html">who is the secretary of defense 2020</a>
+											<a class="badge badge-warning" href="/where-are-the-canadian-forces-bases.html">where are the canadian forces bases</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you've come to visit the ideal blog.  Our website gives you suggestions for seeing the highest quality video and image content, search and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this movie that you see.  It is also possible to contribute to supporting this site by sharing videos and graphics that you enjoy on this site on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4d/2a/cc/4d2acc711f089c01a9924415aece74cf.png" data-lightbox="roadtrip" data-title="Gap Analysis Template Download Project Management Templates Project Management Tools Business Analysis">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4d/2a/cc/4d2acc711f089c01a9924415aece74cf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC3ETflGwwHPrxTbfJcXlYYNn697fehFQ1DA';" alt="Gap Analysis Template Download Project Management Templates Project Management Tools Business Analysis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gap Analysis Template Download Project Management Templates Project Management Tools Business Analysis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/c5/2b/bdc52b2712e08b67a863487b95cdea20.png" data-lightbox="roadtrip" data-title="Change Management Tools And Techniques Change Management Project Management Professional Change Leadership">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/c5/2b/bdc52b2712e08b67a863487b95cdea20.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGCDygLreWDGBn-BTk2TZlyXUlYFGMBSAt-g';" alt="Change Management Tools And Techniques Change Management Project Management Professional Change Leadership">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Change Management Tools And Techniques Change Management Project Management Professional Change Leadership</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/7d/14/f17d143e19115eb159740be5db77e29b.jpg" data-lightbox="roadtrip" data-title="Kitchen Station Task List Chefs Resources Business Plan Template Pdf Task List Restaurant Management">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/7d/14/f17d143e19115eb159740be5db77e29b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2mHT98lefNn-4gKR9NQUpoW7vOgedoslD0g';" alt="Kitchen Station Task List Chefs Resources Business Plan Template Pdf Task List Restaurant Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kitchen Station Task List Chefs Resources Business Plan Template Pdf Task List Restaurant Management</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e9/f8/04/e9f804766d32292b3001e64ce5c71f82.jpg" data-lightbox="roadtrip" data-title="Performance Goals And Expectations Examples Army Lovely Goals And Expe Career Development Plan Professional Development Plan Personal Development Plan Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e9/f8/04/e9f804766d32292b3001e64ce5c71f82.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfVVXCoT1Ru9ZSkdoxiE0PRBwN4ShmKnhXUg';" alt="Performance Goals And Expectations Examples Army Lovely Goals And Expe Career Development Plan Professional Development Plan Personal Development Plan Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Performance Goals And Expectations Examples Army Lovely Goals And Expe Career Development Plan Professional Development Plan Personal Development Plan Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/3d/15/8c3d157d610ec7b41147b8fd6b7109c2.jpg" data-lightbox="roadtrip" data-title="Stakeholder Analysis Winning Support For Your Projects Stakeholder Analysis Project Management Tools Project Management">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/3d/15/8c3d157d610ec7b41147b8fd6b7109c2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwXM1muWSdtoxEVlsH5yh5oahms_3mnbWHBg';" alt="Stakeholder Analysis Winning Support For Your Projects Stakeholder Analysis Project Management Tools Project Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stakeholder Analysis Winning Support For Your Projects Stakeholder Analysis Project Management Tools Project Management</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/b5/36/68b536a8a8703f53c6e64def40cb206a.png" data-lightbox="roadtrip" data-title="Gap Analysis Template Download Project Management Templates Project Management Tools Business Analysis">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/b5/36/68b536a8a8703f53c6e64def40cb206a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSju_iiYIHSBcSdsaYL2dDSwynByyZCmDVMQw';" alt="Gap Analysis Template Download Project Management Templates Project Management Tools Business Analysis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gap Analysis Template Download Project Management Templates Project Management Tools Business Analysis</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.villanovau.com/wp-content/uploads/2019/09/Kanban-Board-Project-Management-1.jpg?w=724&amp;h=375&amp;crop=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSju_iiYIHSBcSdsaYL2dDSwynByyZCmDVMQw';" alt="Gap Analysis Template Download Project Management Templates Project Management Tools Business Analysis">
+										<div class="card-body">
+						<h3 class="h5"><b>ATP 5-19 14 April 2014 is changed as follows.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Department of the army task management tool</strong>. 
+								
+																	Units primary management tool to ensure training is conducted on time and by qualified trainers with the required resources Provides soldiers information on specific training event location uniform datetime instructor and references 6 to 8 week period prior to execution of training. 
+																	File this transmittal sheet in. 
+																	The Army embraced knowledge management as a discipline in 2003. 
+																	A new collaborative staff management task tracking tool is helping the Headquarters of the Army save time and money and keep an eye on the enormous number of tasks projects and personnel it manages on a daily basis. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Applying the Supply Chain Operations Reference model to military logistics can be a powerful tool to improve the Department of Defenses supply chain. 
+																	Changing the name of this rarely utilized tool will help staffs simultaneously employ multiple defeat mechanisms to present multiple dilemmas to enemy decision-makers thus enabling the unit to impose its will in the form of physical temporal and cognitive effects. 
+																	This includes the growth of knowledge management in the Army and refinement of associated technologyboth hardware and software. 
+																	However very little published data. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of the Army Washington DC 8 September 2014 Risk Management 1. 
+																	The Department of Defense DOD supply chain is a multibillion-dollar business. 
+																	Unresolved Management has not agreed to implement the recommendation or has not proposed. 
+																	Integrated Product and Process Development IPPD is the DoD management technique that simultaneously integrates all essential acquisition activities through the use of Integrated Product Teams IPT to optimize design manufacturing and supportability processes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The purpose of United States psychological operations is to induce or reinforce behavior favorable to US. 
+																	Accenture Federal Services Task Management Tool TMT is proven over a decade to help federal agencies improve staff efficiency and reduce missed deadlines. 
+																	Department of the Army 2016. 
+																	At the same time they know who else they are working with and can easily collaborate. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However like supply chains in the commercial sector new developments in technology organization and processes have not been incorporated into the DOD supply. 
+																	The synchronization matrix tool focuses on. 
+																	Recognizing that the ability to. 
+																	Operational units are expected to use Army standards ie TEO to evaluate training at home station. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Psychological operations PSYOP are operations to convey selected information and indicators to audiences to influence their emotions motives and objective reasoning and ultimately the behavior of governments organizations groups and individuals. 
+																	February 15 2018 - In June 2017 the Program Office Army Enterprise Staff Management System AESMS replaced the Headquarters Department of the Army HQDA Tasker Tracking System with a. 
+																	The automated CATS tool resides in the Digital Training Management System DTMS and a non-tailorable CATS viewer can be found on the Army Training Network ATN website. 
+																	USFK is the fourth Army entity to use the Task Management Tool TMT an Accenture solution that works with the Defense Departments non-secure and secure IP networks and allows users to complete taskers electronically in one application. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Task Management Tool TMT - Tasker Correspondence Approval Automation And so we need to be able to have a solution that provides transparency in the process so that any given time anybody involved in the task knows whats going on with it. 
+																	Recently the scale for the task proficiency standards has been expanded to T T- Trained P P- Marginally Practiced or U Untrained. 
+																	Provides a comprehensive view of tasks from beginning to end Assigns tasks to teams or individuals Creates levels of sub-assignments as needed. 
+																	Individual and collective tasks. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Warriors if you are reading this publication you are a member of or will soon assume duties in Americas Chemical Biological Radiological and Nuclear Response Enterprise. 
+																	The tool was developed to improve procurement and cash management on the battlefield and to provide immediate visibility into purchases and payments to finance and contracting offices and to. 
+																	The task force members felt the specifics would be best developed by a subsequent implementation team that would include front line managers who would design use and evolve the diagnostic tool. 
+																	Headquarters Department of the Army. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The following categories are used to describe agency managements comments to individual recommendations. 
+																	The ATN Webpage at. 
+																	Chief Information Officer Department of Defense 1a 1b 1c None None Please provide Management Comments by January 11 2019. 
+																	Remove Old Pages Insert New Pages Pages i through ii Pages i through ii Pages 1-7 through 1-8 Pages 1-7 through 1-8 Pages A-1 through A-10 Pages A-1 through A-13 4. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This change replaces DD Form 2977 Deliberate Risk Assessment Worksheet. 
+																	The Chemical Biological Radiological and Nuclear Response Enterprise is an insurance policy for a nuclear d etonation of an i mprovised device or some other. 
+																	Department-wide infrastructure to provide tools and connectivity policies to democratize data and digital tools as underlying technologies change training to employ those tools effectively. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/d2/d3/3bd2d38412a53e894392ac02b43a8ee9.png" data-lightbox="roadtrip" data-title="What Is Business Process Monitoring In 2020 Reviews Features Pricing Comparison Pat Research B2b Reviews Buying Guides Best Practices Business Process Business Process Management Business Intelligence">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/d2/d3/3bd2d38412a53e894392ac02b43a8ee9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ0MDGEt90HaAQ4U4IzkeNsOhSuwVr9BWRWQ';" alt="What Is Business Process Monitoring In 2020 Reviews Features Pricing Comparison Pat Research B2b Reviews Buying Guides Best Practices Business Process Business Process Management Business Intelligence">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Business Process Monitoring In 2020 Reviews Features Pricing Comparison Pat Research B2b Reviews Buying Guides Best Practices Business Process Business Process Management Business Intelligence</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5c/5f/64/5c5f646a16440b0300335b2a62330927.png" data-lightbox="roadtrip" data-title="4 Quick Steps To Set Up Sharepoint For Project Management Sharepoint Sharepoint2013 Sharepoint2016 Sharepoint2013 Sharepoint Project Management Management">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5c/5f/64/5c5f646a16440b0300335b2a62330927.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuqa9iAjqjRmvnn-L-L8K8UMPzZC-lfutyAA';" alt="4 Quick Steps To Set Up Sharepoint For Project Management Sharepoint Sharepoint2013 Sharepoint2016 Sharepoint2013 Sharepoint Project Management Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 Quick Steps To Set Up Sharepoint For Project Management Sharepoint Sharepoint2013 Sharepoint2016 Sharepoint2013 Sharepoint Project Management Management</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/20/7f/10207f8305e816ad8b1d23f15a20ed82.jpg" data-lightbox="roadtrip" data-title="7 Software Your Accounting Department Cant Survive Without Accounting Infographic Tax Preparation Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/20/7f/10207f8305e816ad8b1d23f15a20ed82.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMMs07K-YLfpbpHEymPhA7OwRfQ9nd-64GRA';" alt="7 Software Your Accounting Department Cant Survive Without Accounting Infographic Tax Preparation Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 Software Your Accounting Department Cant Survive Without Accounting Infographic Tax Preparation Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/97/88/aa9788701ff69ce96749b7b235e3a82d.png" data-lightbox="roadtrip" data-title="Lean Six Sigma World Conference What Is The Difference Between Lean And Six Sigma Lean Six Sigma Sigma Project Management Templates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/97/88/aa9788701ff69ce96749b7b235e3a82d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMvYqwhvQt_n-RycZ4sTUySllTKzCInADD0Q';" alt="Lean Six Sigma World Conference What Is The Difference Between Lean And Six Sigma Lean Six Sigma Sigma Project Management Templates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lean Six Sigma World Conference What Is The Difference Between Lean And Six Sigma Lean Six Sigma Sigma Project Management Templates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/7e/b1/2c/7eb12c2373fa785069c143a0058fb199.jpg" data-lightbox="roadtrip" data-title="Demand Work Prioritization Matrix It Portfolio And Project Management Project Management Dashboard Portfolio Management Project Management">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/7e/b1/2c/7eb12c2373fa785069c143a0058fb199.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpyMkYimhWSMGyc3UMwtML9-xuOjlAQqPZAg';" alt="Demand Work Prioritization Matrix It Portfolio And Project Management Project Management Dashboard Portfolio Management Project Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Demand Work Prioritization Matrix It Portfolio And Project Management Project Management Dashboard Portfolio Management Project Management</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.villanovau.com/wp-content/uploads/2019/09/Kanban-Board-Project-Management-1.jpg?w=724&amp;h=375&amp;crop=1" data-lightbox="roadtrip" data-title="The Importance Of Kanban In Project Management Villanova University">
+											<img class="card-img v-image ads-img " src="https://www.villanovau.com/wp-content/uploads/2019/09/Kanban-Board-Project-Management-1.jpg?w=724&amp;h=375&amp;crop=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9_m_e8Q_7AHpiKh2lha4wfOuzvyeuZ5Mf6Q';" alt="The Importance Of Kanban In Project Management Villanova University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Importance Of Kanban In Project Management Villanova University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/56/1f/ed561f2487f341b2c9ab5b0b872df64c.jpg" data-lightbox="roadtrip" data-title="Editable Ideas Of Army Drivers Training Certificate Template With Army Certif Certificate Of Completion Template Training Certificate Certificate Of Completion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/56/1f/ed561f2487f341b2c9ab5b0b872df64c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzJDRSauQFrxjjy_xdvSAGubeWIjpFwsgD3Q';" alt="Editable Ideas Of Army Drivers Training Certificate Template With Army Certif Certificate Of Completion Template Training Certificate Certificate Of Completion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Editable Ideas Of Army Drivers Training Certificate Template With Army Certif Certificate Of Completion Template Training Certificate Certificate Of Completion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/b2/35/1db235c3b1faca44e1b3ac42786db759.gif" data-lightbox="roadtrip" data-title="Strategy Development Methodology Strategies Corporate Strategy Scientific Management">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/b2/35/1db235c3b1faca44e1b3ac42786db759.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrPEw8ZHes3f5mZ6OncRDwSzPkBYdvR5SK1g';" alt="Strategy Development Methodology Strategies Corporate Strategy Scientific Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Strategy Development Methodology Strategies Corporate Strategy Scientific Management</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/66/d0/e8/66d0e888179dd25a5a579eb5f7bce3c1.jpg" data-lightbox="roadtrip" data-title="Army Memorandum For Record Template Inspirational 3 4 Army Memo Template Memorandum Template Memorandum Memo Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/66/d0/e8/66d0e888179dd25a5a579eb5f7bce3c1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Clkhvvw3m5beUEyJOO0w_Sq2lCI1ojCQ5A';" alt="Army Memorandum For Record Template Inspirational 3 4 Army Memo Template Memorandum Template Memorandum Memo Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Memorandum For Record Template Inspirational 3 4 Army Memo Template Memorandum Template Memorandum Memo Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/e1/2d/d9e12df2099fe14180b14b8c0bb6c71f.jpg" data-lightbox="roadtrip" data-title="The Complete U S Army Survival Guide To Firecraft Tools Camouflage Tracking Movement And Combat Survival Survival Guide Survivor Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/e1/2d/d9e12df2099fe14180b14b8c0bb6c71f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCa_U3Nw5Z3yjInssQ4PcR-I-JJOgsJYJHqw';" alt="The Complete U S Army Survival Guide To Firecraft Tools Camouflage Tracking Movement And Combat Survival Survival Guide Survivor Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Complete U S Army Survival Guide To Firecraft Tools Camouflage Tracking Movement And Combat Survival Survival Guide Survivor Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/7b/6e/3e7b6e46a03c9489dac9d0552c0a72b2.jpg" data-lightbox="roadtrip" data-title="Coach 39 On Marketing Plan For Graphic Design Business Web Design Business Web Design Business Plan Marketing Plan Marketing Funnel Digital Marketing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/7b/6e/3e7b6e46a03c9489dac9d0552c0a72b2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBrreyl2UX3lWGsbbrFrBe2DICpiXeniZOrw';" alt="Coach 39 On Marketing Plan For Graphic Design Business Web Design Business Web Design Business Plan Marketing Plan Marketing Funnel Digital Marketing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coach 39 On Marketing Plan For Graphic Design Business Web Design Business Web Design Business Plan Marketing Plan Marketing Funnel Digital Marketing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/eb/7f/35eb7f5fc1c2e7c6306d4461f2601367.jpg" data-lightbox="roadtrip" data-title="Free Excel Construction Schedule Template If You Manage A Team Employee Or Busy Household It Business Plan Template Statement Template Invoice Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/eb/7f/35eb7f5fc1c2e7c6306d4461f2601367.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRppgYHBEMPI9-cFC9ClJeLffvGX1W25OqUyA';" alt="Free Excel Construction Schedule Template If You Manage A Team Employee Or Busy Household It Business Plan Template Statement Template Invoice Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Excel Construction Schedule Template If You Manage A Team Employee Or Busy Household It Business Plan Template Statement Template Invoice Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/77/5a/72775a0c5477e007fcb4de8e2a5b85c7.png" data-lightbox="roadtrip" data-title="Top 7 Retail Management Software In 2020 Reviews Features Pricing Comparison Pat Research B2b Reviews Buying Guides Best Practices Retail Software Management Predictive Analytics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/77/5a/72775a0c5477e007fcb4de8e2a5b85c7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4tiRLijoPFEKvrg5lzSxbQzBQKKICXyttIg';" alt="Top 7 Retail Management Software In 2020 Reviews Features Pricing Comparison Pat Research B2b Reviews Buying Guides Best Practices Retail Software Management Predictive Analytics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 7 Retail Management Software In 2020 Reviews Features Pricing Comparison Pat Research B2b Reviews Buying Guides Best Practices Retail Software Management Predictive Analytics</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/us-military-bravery-medals.html">Us Military Bravery Medals</a></li>
+													<li class="list-group-item"><a href="/us-military-budget-2019-percentage.html">Us Military Budget 2019 Percentage</a></li>
+													<li class="list-group-item"><a href="/us-military-budget-compared-to-other-countries.html">Us Military Budget Compared To Other Countries</a></li>
+													<li class="list-group-item"><a href="/us-military-budget-2019-compared-to-other-countries.html">Us Military Budget 2019 Compared To Other Countries</a></li>
+													<li class="list-group-item"><a href="/us-military-purchasing-department.html">Us Military Purchasing Department</a></li>
+													<li class="list-group-item"><a href="/uw-marching-band-store.html">Uw Marching Band Store</a></li>
+													<li class="list-group-item"><a href="/uwf-military-and-veterans-resource-center.html">Uwf Military And Veterans Resource Center</a></li>
+													<li class="list-group-item"><a href="/us-military-deers-office-locator.html">Us Military Deers Office Locator</a></li>
+													<li class="list-group-item"><a href="/uw-marching-band-shirt.html">Uw Marching Band Shirt</a></li>
+													<li class="list-group-item"><a href="/uwm-march-on-milwaukee.html">Uwm March On Milwaukee</a></li>
+													<li class="list-group-item"><a href="/us-military-budget-by-year-chart.html">Us Military Budget By Year Chart</a></li>
+													<li class="list-group-item"><a href="/us-navy-wife-tries-to-ship-military-boats-to-china.html">Us Navy Wife Tries To Ship Military Boats To China</a></li>
+													<li class="list-group-item"><a href="/utah-department-of-military-and-veterans-affairs.html">Utah Department Of Military And Veterans Affairs</a></li>
+													<li class="list-group-item"><a href="/us-military-records-world-war-2.html">Us Military Records World War 2</a></li>
+													<li class="list-group-item"><a href="/us-military-hr.html">Us Military Hr</a></li>
+													<li class="list-group-item"><a href="/us-military-budget-2018-compared-to-other-countries.html">Us Military Budget 2018 Compared To Other Countries</a></li>
+													<li class="list-group-item"><a href="/us-military-budget-gdp.html">Us Military Budget Gdp</a></li>
+													<li class="list-group-item"><a href="/uw-madison-marching-band-facebook.html">Uw Madison Marching Band Facebook</a></li>
+													<li class="list-group-item"><a href="/us-military-budget-2020-compared-to-other-countries.html">Us Military Budget 2020 Compared To Other Countries</a></li>
+													<li class="list-group-item"><a href="/us-military-budget-over-time.html">Us Military Budget Over Time</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

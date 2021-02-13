@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Army Corp Of Engineers Texas - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Army Corp Of Engineers Texas",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/5b/81/ce/5b81ceb99523ff7d772b4fa4a02f2086.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+army+corp+of+engineers+texas",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Army Corp Of Engineers Texas</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Army Corps of Engineers published Engineer Circular 1110-2-6075 Inundation Maps and Emergency Action Plans and Incident Management for Dams and Levee Systems in October. Us Army Corps Of Engineers the Engineer in 401 Granger Dam Rd the Taylor the Texas 76574. Menu Reservations Make Reservations. <br>				
+			</p>
+										<a class="badge badge-dark" href="/department-of-national-defence-north-bay.html">department of national defence north bay</a>
+											<a class="badge badge-warning" href="/department-of-national-defence-salaries.html">department of national defence salaries</a>
+											<a class="badge badge-info" href="/department-of-the-army-awards.html">department of the army awards</a>
+											<a class="badge badge-secondary" href="/department-of-national-defence-victoria-bc-address.html">department of national defence victoria bc address</a>
+											<a class="badge badge-primary" href="/department-of-national-defence-policy-officer-recruitment-program.html">department of national defence policy officer recruitment program</a>
+											<a class="badge badge-warning" href="/department-of-the-army-budget-2019.html">department of the army budget 2019</a>
+											<a class="badge badge-danger" href="/department-of-the-army-army-human-resources-command.html">department of the army army human resources command</a>
+											<a class="badge badge-primary" href="/department-of-national-defence-united-states.html">department of national defence united states</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you have come to visit the ideal site.  Our website gives you hints for viewing the highest quality video and picture content, hunt and locate more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, especially Youtube, so we recommend this movie that you view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/04/f4/f904f46d7a4c5b62ff02a4bddfd97cd3.jpg" data-lightbox="roadtrip" data-title="Army Corp Of Engineers Coe Campgrounds Rv Trips Planning Army Corps Of Engineers Rv Parks And Campgrounds">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/04/f4/f904f46d7a4c5b62ff02a4bddfd97cd3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzYaRAJMxx6ZX3P48Pj4igXb0Zz1u5vXABoA';" alt="Army Corp Of Engineers Coe Campgrounds Rv Trips Planning Army Corps Of Engineers Rv Parks And Campgrounds">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Corp Of Engineers Coe Campgrounds Rv Trips Planning Army Corps Of Engineers Rv Parks And Campgrounds</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/69/a9/b269a9da7836aa854ff83a801986fcc4.png" data-lightbox="roadtrip" data-title="Us Army Corps Of Engineers File Us Armycorpsofengineers Traditionallogo Svg Wikimedia Commo Us Army Corps Of Engineers Army Corps Of Engineers Army Tattoos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/69/a9/b269a9da7836aa854ff83a801986fcc4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrHZYr_x5a-nwZ60IFux39m7iC-GEr7GXAIQ';" alt="Us Army Corps Of Engineers File Us Armycorpsofengineers Traditionallogo Svg Wikimedia Commo Us Army Corps Of Engineers Army Corps Of Engineers Army Tattoos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Corps Of Engineers File Us Armycorpsofengineers Traditionallogo Svg Wikimedia Commo Us Army Corps Of Engineers Army Corps Of Engineers Army Tattoos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/a8/97/c9a89712f8eb13df0ed421ce19b1988f.png" data-lightbox="roadtrip" data-title="Headquarters U S Army Corps Of Engineers Army Corps Of Engineers Us Army Corps Of Engineers Army Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/a8/97/c9a89712f8eb13df0ed421ce19b1988f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRslLZz1rPjWh7EKETX9yfyeK90NxP-_et_Yw';" alt="Headquarters U S Army Corps Of Engineers Army Corps Of Engineers Us Army Corps Of Engineers Army Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Headquarters U S Army Corps Of Engineers Army Corps Of Engineers Us Army Corps Of Engineers Army Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/e0/e3/37e0e3b659f468023bc2d27c2b25b144.png" data-lightbox="roadtrip" data-title="Us Army Corps Of Engineers Army Corps Of Engineers Us Army Corps Of Engineers Army Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/e0/e3/37e0e3b659f468023bc2d27c2b25b144.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4PawQxsHgo1lUlR5kUulW0IC4Tce5OqVPpA';" alt="Us Army Corps Of Engineers Army Corps Of Engineers Us Army Corps Of Engineers Army Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Corps Of Engineers Army Corps Of Engineers Us Army Corps Of Engineers Army Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/aa/cc/28aaccd82c0ab8c01beb5a0cb92b3ac1.jpg" data-lightbox="roadtrip" data-title="The U S Army Corps Of Engineers Galveston District Partnered With The U S Coast Guard To Provide Army Corps Of Engineers Galveston Us Army Corps Of Engineers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/aa/cc/28aaccd82c0ab8c01beb5a0cb92b3ac1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROZ4oayGZPLvhggHLDJlG65kgZpkMgQ-LTwA';" alt="The U S Army Corps Of Engineers Galveston District Partnered With The U S Coast Guard To Provide Army Corps Of Engineers Galveston Us Army Corps Of Engineers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The U S Army Corps Of Engineers Galveston District Partnered With The U S Coast Guard To Provide Army Corps Of Engineers Galveston Us Army Corps Of Engineers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/f3/ef/bcf3ef16f6ea403b316cff7d59ee8d28.jpg" data-lightbox="roadtrip" data-title="Tpw19 U S Army Corps Of Engineers 1847 Mexican American War American Military History Mexican War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/f3/ef/bcf3ef16f6ea403b316cff7d59ee8d28.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcrjLGFDtgygxfI_QQC9QCQLkMhpGndm-nsQ';" alt="Tpw19 U S Army Corps Of Engineers 1847 Mexican American War American Military History Mexican War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tpw19 U S Army Corps Of Engineers 1847 Mexican American War American Military History Mexican War</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/45/ff/49/45ff49336ee3dfd9f752a43c781d470f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcrjLGFDtgygxfI_QQC9QCQLkMhpGndm-nsQ';" alt="Tpw19 U S Army Corps Of Engineers 1847 Mexican American War American Military History Mexican War">
+										<div class="card-body">
+						<h3 class="h5"><b>Texas State Website texasgov About the Comanche Army Corps of Engineers The Comanche Army Corps of Engineers located in Comanche TX is a branch location of the federal Army Corps of Engineers USACECOE.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us army corp of engineers texas</strong>. 
+								
+																	Texas There are 28 Army Corps of Engineers in Texas serving a population of 27419612 people in an area of 261181 square miles. 
+																	Engineer regiment military construction and civil works. 
+																	The US Army Corps of Engineers offers a wide variety of recreation to visitors. 
+																	Provide flood damage reduction to the local area water. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The United States Army Corps of Engineers USACE National Oceanic and Atmospheric Administration NOAA and US. 
+																	This update allows for the use and public dissemination of inundation maps in emergency action plans EAP and the 1252021 Read More. 
+																	Army Corps of Engineers Fort Worth District welcomes you to Navarro Mills Lake located in central Texas about 20 miles west of Corsicana Texas and about 35 miles east of Waco Texas. 
+																	Army Corps of Engineers is to deliver vital public and military engineering services. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Welcome to the US. 
+																	Get directions reviews and information for US Army Corps of Engineers in Clifton TX. 
+																	To help you locate items of interest weve included a list below of the most frequently requested topics. 
+																	US Army Corps of Engineers Campgrounds in Texas. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Corps of Engineers Galveston Districts website. 
+																	Geological Survey USGS have signed a Memorandum of Understanding MOU to form an innovative partnership of federal agencies to address Americas growing water resources challenges. 
+																	The mission of the US. 
+																	Army Corps of Engineers Dallas Floodway Project Pump Station. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Army Corps of Engineers provides public engineering services in peace and war to strengthen national security energize the economy and reduce risks from disasters. 
+																	In total there are 25 US Army Corps of Engineers lakes that offer various forms of recreation. 
+																	This may include hiking camping fishing and even hunting. 
+																	The Army Corps of Engineers perform a wide range of civil military and environmental engineering services in Comanche County. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Corps of Engineers Fort Worth District welcomes you to Granger Lake located between Taylor and Granger Texas. 
+																	Army Corps of Engineers is one of the worlds premier public engineering design and construction management agencies. 
+																	There is 1 Army Corps of Engineers per 979271 people and 1 Army Corps of Engineers per 9327 square miles. 
+																	Civil engineers plan design construct and maintain the nations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Corps of Engineers USACE Galveston District Real Estate Division will be going door-to-door in Port Arthur on Dec 1 in Freeport on Dec 8 and in Orange County on Dec 9 to secure rights-of-entry ROE from individual landowners in order to access property as part of the Sabine Pass to Galveston Bay Texas Coastal Storm Risk Management CSRM and Ecosystem Restoration Project. 
+																	Us Army Corps of Engineers Texas. 
+																	US Army Corps of Engineers Clifton TX 76634. 
+																	Camping fishing and picnicking are just a few. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Corps of Engineers today announced the start of repairs to the entrance jetty of the Corpus Christi Ship Channel located at Aransas. 
+																	Built in 1965 for flood control by the US Army Corps of Engineers Bardwell Lake is located two miles southwest of Ennis off of State Highway 34. 
+																	Here youll find a wealth of information concerning our mission areas how to conduct business with the Corps locations photos upcoming events and news. 
+																	Bardwell Lake is located in the Blackland Prairie region of southwestern Ellis County. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Partnering in peace and war to strengthen our nations security energize the economy and reduce risks from disasters. 
+																	Proctor Lake Texas constructed by the Corps of Engineers to provide flood control drinking water and recreation The United States Army Corps of Engineers USACE is an engineer formation of the United States Army that has three primary mission areas. 
+																	Click on the graphic icons to learn more. 
+																	Order Online Tickets Tickets See Availability Directions locationtagLinevaluetext. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ill explain in further detail with each individual post but you can access all of the information by clicking each parks name. 
+																	National Water Safety Program. 
+																	CORPUS CHRISTI Texas The Galveston District of the US. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/ba/0c/2bba0cfdecb396593ba5623e16504d21.jpg" data-lightbox="roadtrip" data-title="U S Army Corps Of Engineers Sam Rayburn Lake Home Page Texas Lakes Lake Army Corps Of Engineers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/ba/0c/2bba0cfdecb396593ba5623e16504d21.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrEVkRcOSk0Vvn7rfQg9yEDtDlmQ0h5fJj-Q';" alt="U S Army Corps Of Engineers Sam Rayburn Lake Home Page Texas Lakes Lake Army Corps Of Engineers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Corps Of Engineers Sam Rayburn Lake Home Page Texas Lakes Lake Army Corps Of Engineers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/dd/b8/fbddb86f513ad03298fad7db750ff4ec.jpg" data-lightbox="roadtrip" data-title="Pin By Pat Thibideau On Retirement Travel Many Reasons Many Season S Rv Trips Planning Army Corps Of Engineers Rv Parks And Campgrounds">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/dd/b8/fbddb86f513ad03298fad7db750ff4ec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReVfRRsf0zpp0YOF6cvUTI8XBCUNawtefIlg';" alt="Pin By Pat Thibideau On Retirement Travel Many Reasons Many Season S Rv Trips Planning Army Corps Of Engineers Rv Parks And Campgrounds">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Pat Thibideau On Retirement Travel Many Reasons Many Season S Rv Trips Planning Army Corps Of Engineers Rv Parks And Campgrounds</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/5b/a5/c55ba5dca93d57e0b0977f4f1d41c6d6.jpg" data-lightbox="roadtrip" data-title="U S Army Corps Of Engineers Corps Parks Rocky Point Campground Park Resorts Park Army Corps Of Engineers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/5b/a5/c55ba5dca93d57e0b0977f4f1d41c6d6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBHof3UQ9IeoVncduIwftpaE57FeL_RZ3kFA';" alt="U S Army Corps Of Engineers Corps Parks Rocky Point Campground Park Resorts Park Army Corps Of Engineers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Corps Of Engineers Corps Parks Rocky Point Campground Park Resorts Park Army Corps Of Engineers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/9e/60/839e6080ced911907b938987148e7beb.png" data-lightbox="roadtrip" data-title="Camping In Proctor Lake Texas Army Corps Of Engineers Lake Texas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/9e/60/839e6080ced911907b938987148e7beb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGP17HkGBU89WbXBkwV_4QSNzkPCfWiTGNBQ';" alt="Camping In Proctor Lake Texas Army Corps Of Engineers Lake Texas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Camping In Proctor Lake Texas Army Corps Of Engineers Lake Texas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e1/d7/3e/e1d73e2075201dd8bf6685f3da9ee60e.jpg" data-lightbox="roadtrip" data-title="Third Fort Hood Soldier Body Is Found Near The Texas Base In A Month In 2020 Fort Hood Army Service Ribbon Army Corps Of Engineers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e1/d7/3e/e1d73e2075201dd8bf6685f3da9ee60e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwB-PlhSuyxZ-9fB2G4O1-5NtsiMpqggTSag';" alt="Third Fort Hood Soldier Body Is Found Near The Texas Base In A Month In 2020 Fort Hood Army Service Ribbon Army Corps Of Engineers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Third Fort Hood Soldier Body Is Found Near The Texas Base In A Month In 2020 Fort Hood Army Service Ribbon Army Corps Of Engineers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/56/50/86565087449ac24057b9c1dd6bf3e127.jpg" data-lightbox="roadtrip" data-title="U S Army Corps Of Engineers Natural Resources Natural Resources Army Corps Of Engineers Nature">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/56/50/86565087449ac24057b9c1dd6bf3e127.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvZQaUoLvJxiSWmXmF1ZRpPY3ERJkvs2-ESw';" alt="U S Army Corps Of Engineers Natural Resources Natural Resources Army Corps Of Engineers Nature">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Corps Of Engineers Natural Resources Natural Resources Army Corps Of Engineers Nature</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/52/e2/f952e258eb0fa2ae6805aecb5d5769d2.jpg" data-lightbox="roadtrip" data-title="The U S Army Corps Of Engineers Galveston District Has Introduced A Plan To Invite Contractors To Perform H Army Corps Of Engineers Galveston Cameron Parish">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/52/e2/f952e258eb0fa2ae6805aecb5d5769d2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnWq5LJmxBDf59aqghnpIzrRCmbhNqE2ltXg';" alt="The U S Army Corps Of Engineers Galveston District Has Introduced A Plan To Invite Contractors To Perform H Army Corps Of Engineers Galveston Cameron Parish">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The U S Army Corps Of Engineers Galveston District Has Introduced A Plan To Invite Contractors To Perform H Army Corps Of Engineers Galveston Cameron Parish</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/44/4d/81444d985d33a68ba0c1eb448f81f79f.jpg" data-lightbox="roadtrip" data-title="Army Engineers Have Played A Role In Every Major U S Military Conflict Since The Revolutionary War W Army Corps Army Corps Of Engineers Battle Of Bunker Hill">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/44/4d/81444d985d33a68ba0c1eb448f81f79f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlWbM9-v26XT-rotz0e6-fdYRwoT8Q1ZReRQ';" alt="Army Engineers Have Played A Role In Every Major U S Military Conflict Since The Revolutionary War W Army Corps Army Corps Of Engineers Battle Of Bunker Hill">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Engineers Have Played A Role In Every Major U S Military Conflict Since The Revolutionary War W Army Corps Army Corps Of Engineers Battle Of Bunker Hill</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/14/92/e51492c3774dcfcc55c507a2e6a86726.jpg" data-lightbox="roadtrip" data-title="Milford Dam Geary County U S Army Corps Of Engineers Army Corps Of Engineers Dam Milford">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/14/92/e51492c3774dcfcc55c507a2e6a86726.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTfdK55yBqSpHfmHlg9-RyoOf6zTAm24yfhw';" alt="Milford Dam Geary County U S Army Corps Of Engineers Army Corps Of Engineers Dam Milford">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Milford Dam Geary County U S Army Corps Of Engineers Army Corps Of Engineers Dam Milford</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/65/dc/d8/65dcd80576d554d7918b0435d99dce87.jpg" data-lightbox="roadtrip" data-title="The Best Camping Sites In Texas In 2020 Camping In Texas Military Campgrounds Oregon Coast Camping">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/65/dc/d8/65dcd80576d554d7918b0435d99dce87.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB7A_RR5D6T7fCXIllRITKhxPv6n6cgzWOWQ';" alt="The Best Camping Sites In Texas In 2020 Camping In Texas Military Campgrounds Oregon Coast Camping">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Best Camping Sites In Texas In 2020 Camping In Texas Military Campgrounds Oregon Coast Camping</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5b/81/ce/5b81ceb99523ff7d772b4fa4a02f2086.jpg" data-lightbox="roadtrip" data-title="Lake Georgetown Texas Georgetown Lake Places To See Lake">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5b/81/ce/5b81ceb99523ff7d772b4fa4a02f2086.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbzYuz-giqZ5KsQhEVbpLEmSoRhdEA0GLTPg';" alt="Lake Georgetown Texas Georgetown Lake Places To See Lake">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lake Georgetown Texas Georgetown Lake Places To See Lake</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/ff/49/45ff49336ee3dfd9f752a43c781d470f.jpg" data-lightbox="roadtrip" data-title="Pin On Wwii Us Home Front">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/ff/49/45ff49336ee3dfd9f752a43c781d470f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT17vDJcTNIGh9uAE-q9Ze1hIBfqRXGcorI8Q';" alt="Pin On Wwii Us Home Front">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Wwii Us Home Front</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/11/94/ec1194d2f3aba49f7c44d18733b525e8.jpg" data-lightbox="roadtrip" data-title="Pin On The Ohio River">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/11/94/ec1194d2f3aba49f7c44d18733b525e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8HLBlea432S9h2TBK7KwMxM-EOkU-JQasMQ';" alt="Pin On The Ohio River">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On The Ohio River</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/redux-military-retirement-calculator-2014.html">Redux Military Retirement Calculator 2014</a></li>
+													<li class="list-group-item"><a href="/rebirth-of-the-little-military-wife-wattpad.html">Rebirth Of The Little Military Wife Wattpad</a></li>
+													<li class="list-group-item"><a href="/royal-air-force-hr-jobs.html">Royal Air Force Hr Jobs</a></li>
+													<li class="list-group-item"><a href="/resources-in-military.html">Resources In Military</a></li>
+													<li class="list-group-item"><a href="/public-affairs-army-officer.html">Public Affairs Army Officer</a></li>
+													<li class="list-group-item"><a href="/royal-army-chaplains-department-ww2.html">Royal Army Chaplains Department Ww2</a></li>
+													<li class="list-group-item"><a href="/public-affairs-officer-navy-job-description.html">Public Affairs Officer Navy Job Description</a></li>
+													<li class="list-group-item"><a href="/political-military-affairs-twitter.html">Political Military Affairs Twitter</a></li>
+													<li class="list-group-item"><a href="/portalmycampusc.html">Portalmycampusc</a></li>
+													<li class="list-group-item"><a href="/recordable-books-for-military-families.html">Recordable Books For Military Families</a></li>
+													<li class="list-group-item"><a href="/regent-university-military-resource-center.html">Regent University Military Resource Center</a></li>
+													<li class="list-group-item"><a href="/royal-australian-army-chaplains-department.html">Royal Australian Army Chaplains Department</a></li>
+													<li class="list-group-item"><a href="/public-affairs-officer-army-national-guard.html">Public Affairs Officer Army National Guard</a></li>
+													<li class="list-group-item"><a href="/salvation-army-family-resource-centre-calgary.html">Salvation Army Family Resource Centre Calgary</a></li>
+													<li class="list-group-item"><a href="/roblox-military-officer-hat.html">Roblox Military Officer Hat</a></li>
+													<li class="list-group-item"><a href="/public-affairs-army-ait.html">Public Affairs Army Ait</a></li>
+													<li class="list-group-item"><a href="/primary-sources-on-roman-military.html">Primary Sources On Roman Military</a></li>
+													<li class="list-group-item"><a href="/roman-army-primary-sources.html">Roman Army Primary Sources</a></li>
+													<li class="list-group-item"><a href="/salvation-army-accounts-department.html">Salvation Army Accounts Department</a></li>
+													<li class="list-group-item"><a href="/public-affairs-officer-navy-reserve.html">Public Affairs Officer Navy Reserve</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

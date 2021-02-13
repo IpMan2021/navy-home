@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Army Reserve Headquarters Address - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Army Reserve Headquarters Address",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/474x/1e/14/62/1e1462e7787c71cdaaa99b0b6b1ac100.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+army+reserve+headquarters+address",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Army Reserve Headquarters Address</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Contact information map and directions contact form opening hours services ratings photos videos and announcements from US Army Forces Command-US Army Reserve Command STB Government Organization Knox Street Fort Bragg NC. Get Quote Call 910 570-8019 Get directions WhatsApp 910 570-8019 Message 910 570-8019 Contact Us Find Table Make Appointment Place Order View Menu. Army Corps of Engineers. <br>				
+			</p>
+										<a class="badge badge-success" href="/what-happens-at-a-funeral-with-military-honors.html">what happens at a funeral with military honors</a>
+											<a class="badge badge-primary" href="/what-font-is-used-on-military-dog-tags.html">what font is used on military dog tags</a>
+											<a class="badge badge-primary" href="/what-is-a-dod-program.html">what is a dod program</a>
+											<a class="badge badge-info" href="/what-is-a-dod-id-card.html">what is a dod id card</a>
+											<a class="badge badge-light" href="/what-is-12-hour-in-military-time.html">what is 12 hour in military time</a>
+											<a class="badge badge-warning" href="/what-is-dod-disability.html">what is dod disability</a>
+											<a class="badge badge-light" href="/what-is-counterintelligence-in-the-army.html">what is counterintelligence in the army</a>
+											<a class="badge badge-warning" href="/what-is-a-military-engagement.html">what is a military engagement</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you have come to pay a visit to the ideal blog.  Our site gives you suggestions for viewing the highest quality video and picture content, hunt and find more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, particularly Youtube, so we recommend this video for you to view.  It is also possible to contribute to supporting this site by sharing videos and images that you like on this site on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information that you get on this website.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/83/85/738385dd41d2171427c5d8aeab746499.gif" data-lightbox="roadtrip" data-title="Army Reserve Command Usarc Army Reserve Army Divisions Us Army Reserve">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/83/85/738385dd41d2171427c5d8aeab746499.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKYiZ1X8wZs2dAkh5_Iqehkl5H7LiA0j9AzQ';" alt="Army Reserve Command Usarc Army Reserve Army Divisions Us Army Reserve">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Reserve Command Usarc Army Reserve Army Divisions Us Army Reserve</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/ae/c4/0daec4247ee022a3decdf170960e714e.jpg" data-lightbox="roadtrip" data-title="Herstory Officers In The U S Army Us Army Infantry Army Reserve Army Infantry">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/ae/c4/0daec4247ee022a3decdf170960e714e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5yQtnIJ4UmRI6ZYa_6ZPwfPK9AhK1wbKlUg';" alt="Herstory Officers In The U S Army Us Army Infantry Army Reserve Army Infantry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Herstory Officers In The U S Army Us Army Infantry Army Reserve Army Infantry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/12/cd/1b/12cd1b1de85b285c8668473618571598.jpg" data-lightbox="roadtrip" data-title="Pin On Patriotism Noire Style">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/12/cd/1b/12cd1b1de85b285c8668473618571598.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZqETR9vf8ddEkejuGRSOWVq7ytetYfPnSZQ';" alt="Pin On Patriotism Noire Style">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Patriotism Noire Style</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/00/9f/78009f88368c71fc2f035f70848db54d.jpg" data-lightbox="roadtrip" data-title="Veteran Spotlight Richard Us Army Staff Sergeant Army Reserve Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/00/9f/78009f88368c71fc2f035f70848db54d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUjNAslTEeyjUfp79HUuYozviM6j11d30Buw';" alt="Veteran Spotlight Richard Us Army Staff Sergeant Army Reserve Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Spotlight Richard Us Army Staff Sergeant Army Reserve Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/1e/14/62/1e1462e7787c71cdaaa99b0b6b1ac100.jpg" data-lightbox="roadtrip" data-title="Ebay Ad Url For Excellence Commander Us Central Command Gen David Petraeus Version 2 In 2020 Army Challenge Coins Army Reserve Leadership Excellence">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/1e/14/62/1e1462e7787c71cdaaa99b0b6b1ac100.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1bkRyewBlRNODATcJlyVVYN6Exa87bLAhOg';" alt="Ebay Ad Url For Excellence Commander Us Central Command Gen David Petraeus Version 2 In 2020 Army Challenge Coins Army Reserve Leadership Excellence">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ebay Ad Url For Excellence Commander Us Central Command Gen David Petraeus Version 2 In 2020 Army Challenge Coins Army Reserve Leadership Excellence</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/92/55/be925521d879ba1b0404443f2dbb9451.png" data-lightbox="roadtrip" data-title="Basic Deployment Order Letter Order Letter Deployment Letters Us Army Reserve">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/92/55/be925521d879ba1b0404443f2dbb9451.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmRY7FgS1vtynND1Jr2Bzfww1ld_gRe3pLtA';" alt="Basic Deployment Order Letter Order Letter Deployment Letters Us Army Reserve">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Basic Deployment Order Letter Order Letter Deployment Letters Us Army Reserve</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/78/00/9f/78009f88368c71fc2f035f70848db54d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmRY7FgS1vtynND1Jr2Bzfww1ld_gRe3pLtA';" alt="Basic Deployment Order Letter Order Letter Deployment Letters Us Army Reserve">
+										<div class="card-body">
+						<h3 class="h5"><b>Army Human Resources Command Soldiers First United States Army Human Resources Command Soldiers First Site Map.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us army reserve headquarters address</strong>. 
+								
+																	The Defence Forces Press Office is based in Defence Forces Headquarters Newbridge Co. 
+																	USARC is responsible for the staffing training management and deployment of units to ensure readiness for Army missions. 
+																	Shanahan Office of Army Reserve History United States Army Reserve Command Fort McPherson Georgia October 2003 DONOVAN RESEARCH LIBRARY 8150 MARNE ROAD BLDG 9230 FORT BENNING GA 31905 o. 
+																	Army Reserve Command G-1 Fort Bragg official page. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	6 This organization delivers premier services and programs to enhance personnel readiness. 
+																	Army Reserve the federal military reserve force of the United States. 
+																	520 Wisser Road Fort Shafter Honolulu Hawaii General Inquiries. 
+																	The United States Department of the Army DA is one of the three military departments within the Department of Defense of the United States of AmericaThe Department of the Army is the federal government agency within which the United States Army USA is organized and it is led by the secretary of the Army who has statutory authority under 10 USC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	ARMY RESERVE coMMAND FORT McPIIERSN iERGIA ---- --- - - - -----UNITED STATES ARMY RESERVE STAFF RIDE BRIEFING BOOK SERIES CHICKAMAUGA STAFF RIDE BRIEFING BOOK Edward P. 
+																	808-787-6020 335th Signal Command Theater. 
+																	Once signed in select ReserveRetireeVeteran record and select edit in the contact information field to update or you can contact the Reserve Retirements Branch at the US Army Human Resources Command to ensure they have your current mailing address by calling them at 1-888-276-9472. 
+																	About the Press Office. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is the formation responsible for the operational command of a combination of Regular and Reserve units in the country and acts as a regional administration HQ for other Regular and Reserve Units who are based in Scotland but are under the command of Brigades elsewhere. 
+																	Army Reserve Element Bldg. 
+																	The Pentagon Washington DC 20310. 
+																	The headquarters team is responsible for the leadership organization scheduling logistics and media relations for the Golden Knights mission. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Do not process store or transmit any Personally Identifiable Information PII UNCLASSIFIEDFOUO or CLASSIFIED information on this system. 
+																	The Official site of the US. 
+																	Government Office in Fort Bragg. 
+																	Its a great place to learn about who we are and what we do. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Its the behind-the-scenes work that gets the parachute teams to where they need to be and make it possible for them to put on an amazing show of professionalism. 
+																	3013 to conduct its affairs and to. 
+																	2021 Smallwood Reynolds Stewart Stewart Associates Inc. 
+																	Soldiers interested in becoming an Individual Mobilized Augmentee with the Corps of Engineers can contact the Headquarters IMA Coordinator at 202 761-8963 or email Reserve Component Inbox. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Welcome to the Headquarters US. 
+																	Call now 910 570-8019. 
+																	The security accreditation level of this site is UNCLASSIFIED and below. 
+																	Reserve soldiers can be assigned to one of the Corps nine Divisions or one of the forty-four Districts or Centers located all over the world. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Fort Bragg NC 28310. 
+																	311th Signal Command Theater - US. 
+																	Globally engaged for more than 15 consecutive years of war the Army Reserve has been and continues to be an essential element of the Total Army and the Joint Force. 
+																	See 2 photos and 1 tip from 53 visitors to Headquarters United States Army Reserve Command. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is the hub of a network of Regional Press Offices representing the Army Air Corps Naval Service Reserve and all Overseas Units. 
+																	Headquarters commands Army Reserve Headquarters - Fort Bragg formerly United States Army Reserve Command USARC located at Fort Bragg North Carolina Through USARC the CAR commands all Army Reserve units. 
+																	Who We Are current. 
+																	WASHINGTON Army News Service Dec. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	51st Infantry Brigade is an Adaptive Force Brigade based in Stirling and is the most senior headquarters in Scotland. 
+																	Department of Defense Related Agency. 
+																	21 2011 -- Having celebrated its official ribbon-cutting the Office of the Chief of the Army Reserve has relocated to its new headquarters building at Fort. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/c4/57/5fc457f7b41efe9445aff06fb8e49bd1.jpg" data-lightbox="roadtrip" data-title="Pin On Events">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/c4/57/5fc457f7b41efe9445aff06fb8e49bd1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDv_anT-L7EBbKIJzqOm0LXwtVhjSxEXTQBg';" alt="Pin On Events">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Events</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/1c/64/781c642edf380a75011c3fbe994ffad5.jpg" data-lightbox="roadtrip" data-title="Fort Bragg N C Shares Happy Birthday To The U S Army Reserve We Re Proud That The U S Army Reserve C Army Reserve Military Heroes United States Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/1c/64/781c642edf380a75011c3fbe994ffad5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUHpWP_AcVxmuDRPem78kgcoP_G7PIGLsmIw';" alt="Fort Bragg N C Shares Happy Birthday To The U S Army Reserve We Re Proud That The U S Army Reserve C Army Reserve Military Heroes United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fort Bragg N C Shares Happy Birthday To The U S Army Reserve We Re Proud That The U S Army Reserve C Army Reserve Military Heroes United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/72/e1/a872e1acfcbca9f20fee0f5613fb9981.jpg" data-lightbox="roadtrip" data-title="Jody Daniels Becomes First Woman To Lead U S Army Reserve In 2020 Army Reserve Us Army Reserve Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/72/e1/a872e1acfcbca9f20fee0f5613fb9981.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUnqPVnhjnlgLX9TSDKTje7iaNjQae8JWJig';" alt="Jody Daniels Becomes First Woman To Lead U S Army Reserve In 2020 Army Reserve Us Army Reserve Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jody Daniels Becomes First Woman To Lead U S Army Reserve In 2020 Army Reserve Us Army Reserve Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/53/61/8e5361eeea6bdb28c1f918b59e0be61d.jpg" data-lightbox="roadtrip" data-title="Retired Command Sgt Maj Michele S Jones The 9th Command Sergeant Major Of The U S Army Reserve And Capt Deshauna Bar Military Women Military Army Reserve">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/53/61/8e5361eeea6bdb28c1f918b59e0be61d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUcRLs-Fb71kz6lzIlbfeGJERQ7qPdMvnh-A';" alt="Retired Command Sgt Maj Michele S Jones The 9th Command Sergeant Major Of The U S Army Reserve And Capt Deshauna Bar Military Women Military Army Reserve">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Retired Command Sgt Maj Michele S Jones The 9th Command Sergeant Major Of The U S Army Reserve And Capt Deshauna Bar Military Women Military Army Reserve</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/19/88/0e1988508b394a16b7c200c7dde87129.jpg" data-lightbox="roadtrip" data-title="Michele S Jones Was The First Woman In The United States Army Reserve To Reach The Position Of C Women In History Black History Facts African American History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/19/88/0e1988508b394a16b7c200c7dde87129.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY8qdjWjlB7zPt4-GMda8SzyMQ19jxWlXxSw';" alt="Michele S Jones Was The First Woman In The United States Army Reserve To Reach The Position Of C Women In History Black History Facts African American History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Michele S Jones Was The First Woman In The United States Army Reserve To Reach The Position Of C Women In History Black History Facts African American History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/57/f9/2857f97da1e542bf57504e0373436ac9.jpg" data-lightbox="roadtrip" data-title="Third Woman Graduates Ranger School Army Reserve Army Rangers Ranger School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/57/f9/2857f97da1e542bf57504e0373436ac9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8kkub6VGPLd6GRBCfpASYNoMbdGLGOJUmzA';" alt="Third Woman Graduates Ranger School Army Reserve Army Rangers Ranger School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Third Woman Graduates Ranger School Army Reserve Army Rangers Ranger School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/26/1b/a5261b87876a36c9162109169e6aa96c.jpg" data-lightbox="roadtrip" data-title="U S Army Col Michael D Smith Former Commander Of The New Army Reserve Cyber Operations Group 335th Signal Command Theater Army Reserve Adelphi Sergeant">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/26/1b/a5261b87876a36c9162109169e6aa96c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPT_Aj-4i7AoedJ4l8SmHBJowr_fQ1-KaK-Q';" alt="U S Army Col Michael D Smith Former Commander Of The New Army Reserve Cyber Operations Group 335th Signal Command Theater Army Reserve Adelphi Sergeant">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Col Michael D Smith Former Commander Of The New Army Reserve Cyber Operations Group 335th Signal Command Theater Army Reserve Adelphi Sergeant</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/d8/2b/e5d82bbc8107ee5017976988c5ac1fbc.jpg" data-lightbox="roadtrip" data-title="Military Com Reports Reserve Soldiers Prepare To March As One Soldier Inauguration Army Reserve">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/d8/2b/e5d82bbc8107ee5017976988c5ac1fbc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrl_0qaMAOhP-Prk3yiibQIhvLDWV30ys6rw';" alt="Military Com Reports Reserve Soldiers Prepare To March As One Soldier Inauguration Army Reserve">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Com Reports Reserve Soldiers Prepare To March As One Soldier Inauguration Army Reserve</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/bc/81/85bc81a08b540c21b3b0dd6b0603ae70.jpg" data-lightbox="roadtrip" data-title="Forscom Usarc Celebrate The Army S 238th Birthday Us Army Uniforms Army Reserve Army Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/bc/81/85bc81a08b540c21b3b0dd6b0603ae70.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsmpP5M7M4eCZQ0QKXLNoqCXiyAiczE3HFkw';" alt="Forscom Usarc Celebrate The Army S 238th Birthday Us Army Uniforms Army Reserve Army Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Forscom Usarc Celebrate The Army S 238th Birthday Us Army Uniforms Army Reserve Army Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/69/57/3b6957eeba2718f6fc4bf3ea92478885.jpg" data-lightbox="roadtrip" data-title="7th Army Reserve Command Class A Patch Army Reserve Army Patches Patches">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/69/57/3b6957eeba2718f6fc4bf3ea92478885.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Hlh1vO2n_BY4vcZwic-NYlf7GQ0kATGcXw';" alt="7th Army Reserve Command Class A Patch Army Reserve Army Patches Patches">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7th Army Reserve Command Class A Patch Army Reserve Army Patches Patches</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/25/69/67/256967570bc2cf59c23e197d5d76c3ec.jpg" data-lightbox="roadtrip" data-title="Senate Confirms First Ever Female Commander Of The Us Army Reserve Gen Jody J Daniels In 2020 Army Reserve Us Army Reserve Army Corps Of Engineers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/25/69/67/256967570bc2cf59c23e197d5d76c3ec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGImjOKO2fCqU5Nds2ZooDJnpZcYfKCwTk7w';" alt="Senate Confirms First Ever Female Commander Of The Us Army Reserve Gen Jody J Daniels In 2020 Army Reserve Us Army Reserve Army Corps Of Engineers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Senate Confirms First Ever Female Commander Of The Us Army Reserve Gen Jody J Daniels In 2020 Army Reserve Us Army Reserve Army Corps Of Engineers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/28/b5/8a28b51bed3fc105b5c1d8acb45fffb8.jpg" data-lightbox="roadtrip" data-title="A U S Army Reserve Drill Sergeant Assigned To The 98th Training Division Instructs U S Army Cadet Command Rotc Cadet Drill And Ceremony Army Reserve Rotc">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/28/b5/8a28b51bed3fc105b5c1d8acb45fffb8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2oGk0S_7avyB6ipKYvMH7pRUMjRHja2yv5g';" alt="A U S Army Reserve Drill Sergeant Assigned To The 98th Training Division Instructs U S Army Cadet Command Rotc Cadet Drill And Ceremony Army Reserve Rotc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A U S Army Reserve Drill Sergeant Assigned To The 98th Training Division Instructs U S Army Cadet Command Rotc Cadet Drill And Ceremony Army Reserve Rotc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/44/12/f14412cdeb1861ed23e44bb4e4432456.png" data-lightbox="roadtrip" data-title="Pin On Guam 2019">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/44/12/f14412cdeb1861ed23e44bb4e4432456.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNVeFLfEeFypJMO9Rl5Uo9glzdjEDfr-00Nw';" alt="Pin On Guam 2019">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guam 2019</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/united-states-army-headquarters-address.html">United States Army Headquarters Address</a></li>
+													<li class="list-group-item"><a href="/united-states-army-human-resource-command.html">United States Army Human Resource Command</a></li>
+													<li class="list-group-item"><a href="/united-states-army-human-resource-center.html">United States Army Human Resource Center</a></li>
+													<li class="list-group-item"><a href="/united-states-army-human-resources-phone-number.html">United States Army Human Resources Phone Number</a></li>
+													<li class="list-group-item"><a href="/united-states-army-pentagon-address.html">United States Army Pentagon Address</a></li>
+													<li class="list-group-item"><a href="/us-army-address-and-phone-number.html">Us Army Address And Phone Number</a></li>
+													<li class="list-group-item"><a href="/united-states-army-reserve-hrc.html">United States Army Reserve Hrc</a></li>
+													<li class="list-group-item"><a href="/us-army-cecom-address.html">Us Army Cecom Address</a></li>
+													<li class="list-group-item"><a href="/united-states-military-budget-by-branch.html">United States Military Budget By Branch</a></li>
+													<li class="list-group-item"><a href="/us-army-armor-hat.html">Us Army Armor Hat</a></li>
+													<li class="list-group-item"><a href="/united-states-army-hq-address.html">United States Army Hq Address</a></li>
+													<li class="list-group-item"><a href="/us-army-campaign-hat.html">Us Army Campaign Hat</a></li>
+													<li class="list-group-item"><a href="/us-army-address-in-washington-dc.html">Us Army Address In Washington Dc</a></li>
+													<li class="list-group-item"><a href="/us-army-cavalry-hats-for-sale.html">Us Army Cavalry Hats For Sale</a></li>
+													<li class="list-group-item"><a href="/united-states-military-budget-history.html">United States Military Budget History</a></li>
+													<li class="list-group-item"><a href="/united-states-coast-guard-homeland-security.html">United States Coast Guard Homeland Security</a></li>
+													<li class="list-group-item"><a href="/us-army-budget-office.html">Us Army Budget Office</a></li>
+													<li class="list-group-item"><a href="/us-army-address-for-unemployment.html">Us Army Address For Unemployment</a></li>
+													<li class="list-group-item"><a href="/us-air-force-hr-address.html">Us Air Force Hr Address</a></li>
+													<li class="list-group-item"><a href="/uk-national-archives-military-service-records.html">Uk National Archives Military Service Records</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

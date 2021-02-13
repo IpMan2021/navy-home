@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Utah Department Of Veterans Military Affairs - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Utah Department Of Veterans Military Affairs",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/24/ed/3e/24ed3e7f6f13535ac949a0d257f9f5dc.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=utah+department+of+veterans+military+affairs",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Utah Department Of Veterans Military Affairs</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Utah Department of Veterans Affairs is the administering agency for this benefit. We encourage individuals interested in applying for the program to please fill out the waitlist form below. National Guard Employment Support Program - Utah. <br>				
+			</p>
+										<a class="badge badge-light" href="/can-veterans-get-a-mil-email-address.html">can veterans get a mil email address</a>
+											<a class="badge badge-success" href="/canadian-armed-forces-intelligence-officer-salary.html">canadian armed forces intelligence officer salary</a>
+											<a class="badge badge-primary" href="/can-government-employees-live-in-military-housing.html">can government employees live in military housing</a>
+											<a class="badge badge-info" href="/canadian-armed-forces-base-quebec.html">canadian armed forces base quebec</a>
+											<a class="badge badge-success" href="/can-military-dogs-be-adopted.html">can military dogs be adopted</a>
+											<a class="badge badge-success" href="/canadian-armed-forces-base-valcartier.html">canadian armed forces base valcartier</a>
+											<a class="badge badge-success" href="/can-retired-military-live-on-base-in-hawaii.html">can retired military live on base in hawaii</a>
+											<a class="badge badge-dark" href="/canadian-armed-forces-base-ottawa.html">canadian armed forces base ottawa</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you have come to visit the right site.  Our site gives you suggestions for seeing the highest quality video and image content, search and find more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, especially Youtube, so we recommend this movie that you view.  You can also contribute to supporting this website by sharing videos and images that you enjoy on this site on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/ed/3e/24ed3e7f6f13535ac949a0d257f9f5dc.jpg" data-lightbox="roadtrip" data-title="Utah Veterans Owned Business Partnership Utah Dept Of Veterans And Military Affairs Veteran Owned Business Business Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/ed/3e/24ed3e7f6f13535ac949a0d257f9f5dc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9EPTnIyBsEmb4UtlGrFolJQ2_RdgJz_GJtw';" alt="Utah Veterans Owned Business Partnership Utah Dept Of Veterans And Military Affairs Veteran Owned Business Business Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Utah Veterans Owned Business Partnership Utah Dept Of Veterans And Military Affairs Veteran Owned Business Business Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/d4/fe/e4d4fee636e8d8dc412a886b5a03222b.png" data-lightbox="roadtrip" data-title="Military Appreciation Day For Utah State Parks Utah Dept Of Veterans And Military Affairs Veterans Day Military Appreciation Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/d4/fe/e4d4fee636e8d8dc412a886b5a03222b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeRopcXIpid-IemTRRbRZJNfPCpBNOc2RLWA';" alt="Military Appreciation Day For Utah State Parks Utah Dept Of Veterans And Military Affairs Veterans Day Military Appreciation Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Appreciation Day For Utah State Parks Utah Dept Of Veterans And Military Affairs Veterans Day Military Appreciation Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3b/25/97/3b2597b8e38f53316db692f7e1581c1b.jpg" data-lightbox="roadtrip" data-title="Veterans Day Celebration Image Veterans Day Military Appreciation Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3b/25/97/3b2597b8e38f53316db692f7e1581c1b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrn5d6YIgxoPjUIHdcSfP1xiOaJ8y4zDseaA';" alt="Veterans Day Celebration Image Veterans Day Military Appreciation Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Day Celebration Image Veterans Day Military Appreciation Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/ed/84/88ed84d1949a2eeab3437b5df92e679c.png" data-lightbox="roadtrip" data-title="Salute Utah Flyover To Honor Frontline Responders Veterans And Lift Spirits Across Utah On Thursday Utah Dept Of Veterans And Military Affairs Fighter Jets Fighter Planes Fighter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/ed/84/88ed84d1949a2eeab3437b5df92e679c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFbDo4T5xtdEoYBZtuXd4n-5WyTFUYQDRPdw';" alt="Salute Utah Flyover To Honor Frontline Responders Veterans And Lift Spirits Across Utah On Thursday Utah Dept Of Veterans And Military Affairs Fighter Jets Fighter Planes Fighter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Salute Utah Flyover To Honor Frontline Responders Veterans And Lift Spirits Across Utah On Thursday Utah Dept Of Veterans And Military Affairs Fighter Jets Fighter Planes Fighter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/24/22/b3/2422b3de6717b3ac50bd0b5c31f73ca8.jpg" data-lightbox="roadtrip" data-title="A Group Of Volunteers From Hill Air Force Base Helped The Bluffdale Utah Memorial Park S Staff Place Flags By Over 4300 Veterans Day Military Benefits Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/24/22/b3/2422b3de6717b3ac50bd0b5c31f73ca8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Fxdc3DA50XA9JZCjz2phi1q0q8Ru6n1gPQ';" alt="A Group Of Volunteers From Hill Air Force Base Helped The Bluffdale Utah Memorial Park S Staff Place Flags By Over 4300 Veterans Day Military Benefits Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Group Of Volunteers From Hill Air Force Base Helped The Bluffdale Utah Memorial Park S Staff Place Flags By Over 4300 Veterans Day Military Benefits Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/55/3e/0a553e46a6a0e5757157a145542cc3b9.jpg" data-lightbox="roadtrip" data-title="Pin On Direct Source News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/55/3e/0a553e46a6a0e5757157a145542cc3b9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmF0kknkEmpxZn3lb-nDkdn8JnWVsmI9yeQ';" alt="Pin On Direct Source News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Direct Source News</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/474x/24/22/b3/2422b3de6717b3ac50bd0b5c31f73ca8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmF0kknkEmpxZn3lb-nDkdn8JnWVsmI9yeQ';" alt="Pin On Direct Source News">
+										<div class="card-body">
+						<h3 class="h5"><b>This will be a little different than the normal TTHs as we will have SMEs available for the specific subject area.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Utah department of veterans military affairs</strong>. 
+								
+																	First COVID-19 vaccine administered for our front line healthcare workers. 
+																	Who is eligible for the Scott. 
+																	Due to budget cuts under SB5001 the Utah Department of Veterans Military Affairs has suspended the Utah Veteran First Time Homebuyer Grant Program. 
+																	The American Legion Department of Utah. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA Salt Lake City Health Care System. 
+																	9 mins Big news for our Veterans Homes. 
+																	This week the state Division of Consumer Protection along with the Utah Department of Veterans and Military Affairs identified a new scam targeting military veterans and their family members. 
+																	This week the state Division of Consumer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See more of Utah Department of Veterans and Military Affairs on Facebook. 
+																	For more information regarding the UDVMA can be reached by phone at 801 326-2372 or email at veteransutahgov. 
+																	We hope this program may resume at a later date. 
+																	Utah Department of Veterans and Military Affairs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	23 2020 Gephardt Daily Officials are warning Utahns of a new scam targeting military veterans and their families. 
+																	The Utah Department of Veterans Affairs UDVA is committed to improving the lives of Veterans. 
+																	Any personal information collected by the UDVA will be kept confidential and will only be used for notification regarding Veteran related events and Veterans benefits changes. 
+																	The Utah Division of Consumer Protection and Department of Veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	SALT LAKE CITY Consumer advocates are warning Utah military families to be on the lookout for scams specifically aimed at defrauding veterans. 
+																	Manage the Utah Department of Veterans and Military Affairs VTS database coordinate site participation for pilot sites located in partnering states establish data sharing agreements with state. 
+																	See more of Utah Department of Veterans and Military Affairs on Facebook. 
+																	Utah Department of Workforce Services. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Filling out the waitlist form does not guarantee a grant or confirm eligibility. 
+																	The Utah Department of Veterans Military Affairs will work with event partners to announce rescheduled dates for these events in the future. 
+																	VA Salt Lake City Health Care System. 
+																	The American Legion Department of Utah. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Happiness for Heroes invites community members to rally their friends family and coworkers to send messages of support encouragement and gratitude to the residents and Utahs four Veterans Homes. 
+																	Utah Department of Veterans and Military Affairs posted a video to playlist Happiness for Heroes. 
+																	Utah Department of Veterans and Military Affairs. 
+																	Utah Department of Veterans and Military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Honor Utah Veterans on Nov. 
+																	SALT LAKE CITY Consumer advocates are warning Utah military families to be on the lookout for scams specifically aimed at defrauding veterans. 
+																	May 14 2020 Thurl Bailey former Utah Jazz player and long-time team game analyst shares a message of hope and encouragement for residents of Utahs Veterans Homes. 
+																	The Utah Department of Veterans Military Affairs is providing information resources and assistance to Veterans service members and their families impacted by the global COVID-19 pandemic. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Utah Department of Veterans and Military Affairs December 2 at 1048 AM Based on the great support VA has decided to do a December TTH schedule. 
+																	Utah Department of Veterans and Military Affairs January 29 at 752 AM Members of the Utah National Guard return home after deploying to DC for the inauguration. 
+																	2020 Veterans Day Message from Governor Herbert. 
+																	Public Government Service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Utah Department of Veterans Military Affairs welcomes the following types of well-wishes and messages. 
+																	Call 1-800-894-9497 or 801 326-2372 for information on how to use this benefit. 
+																	84 views November 11. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/4a/c6/584ac60e425aef264516936d0819e7ba.jpg" data-lightbox="roadtrip" data-title="New Mexico Department Of Veteran Services Veterans Services Veteran Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/4a/c6/584ac60e425aef264516936d0819e7ba.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSooWAIWiAGzHpTnvDn9iW09c3rTaAEV4_ZkQ';" alt="New Mexico Department Of Veteran Services Veterans Services Veteran Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Mexico Department Of Veteran Services Veterans Services Veteran Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/29/b7/6229b77f2553bab241c70e04fc4b5fa8.jpg" data-lightbox="roadtrip" data-title="Steve Griffin The Salt Lake Tribune Iraq War Veteran Gordon Ewell Right Of Eagle Mountain Utah Shakes Hands With War Veterans Iraq War Veteran Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/29/b7/6229b77f2553bab241c70e04fc4b5fa8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz7ZfQwz1BxylLceY8vPt4zP0UajBPH71dmg';" alt="Steve Griffin The Salt Lake Tribune Iraq War Veteran Gordon Ewell Right Of Eagle Mountain Utah Shakes Hands With War Veterans Iraq War Veteran Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Steve Griffin The Salt Lake Tribune Iraq War Veteran Gordon Ewell Right Of Eagle Mountain Utah Shakes Hands With War Veterans Iraq War Veteran Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/3e/08/ee/3e08eea87a13949bad14de8f90c61908.jpg" data-lightbox="roadtrip" data-title="Just Stuff I Like Both Hot Guns And Girls Female Army Soldier Military Women Army Girl">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/3e/08/ee/3e08eea87a13949bad14de8f90c61908.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtt3kIJCtfqpWS74UbK10o8oRejZ8BQMCeAA';" alt="Just Stuff I Like Both Hot Guns And Girls Female Army Soldier Military Women Army Girl">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Just Stuff I Like Both Hot Guns And Girls Female Army Soldier Military Women Army Girl</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/f8/97/d5f897004015f0cbce525fa12a479435.jpg" data-lightbox="roadtrip" data-title="We Are Sharing The Information About The Different Loans Dubai And Loans Uae Get Information On Different Loans In Dubai Prior To Ge Va Loan Loan Va Mortgages">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/f8/97/d5f897004015f0cbce525fa12a479435.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi-UVtPj0JfMWW5T_a-rbPBzW0emVSLEBSMg';" alt="We Are Sharing The Information About The Different Loans Dubai And Loans Uae Get Information On Different Loans In Dubai Prior To Ge Va Loan Loan Va Mortgages">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Are Sharing The Information About The Different Loans Dubai And Loans Uae Get Information On Different Loans In Dubai Prior To Ge Va Loan Loan Va Mortgages</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/7f/4d/067f4da0b63f2b1bbd2e8ddf88e815f4.png" data-lightbox="roadtrip" data-title="Rfaz Veteran Veterans Ld24 Ld24dem Ld24dems Azdem Azdems Election Elections Elections2020 Ph In 2020 Department Of Veterans Affairs Veterans Affairs Phx Az">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/7f/4d/067f4da0b63f2b1bbd2e8ddf88e815f4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGVrmMcMNmzhZrsqdIBuMRbDsb_EnZixlU7g';" alt="Rfaz Veteran Veterans Ld24 Ld24dem Ld24dems Azdem Azdems Election Elections Elections2020 Ph In 2020 Department Of Veterans Affairs Veterans Affairs Phx Az">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rfaz Veteran Veterans Ld24 Ld24dem Ld24dems Azdem Azdems Election Elections Elections2020 Ph In 2020 Department Of Veterans Affairs Veterans Affairs Phx Az</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/f4/14/16f4149d1469359987621d8bd4cfb6c8.jpg" data-lightbox="roadtrip" data-title="Us Department Of Veterans Affairs Police Badge Police Badge Police Patches Fire Badge">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/f4/14/16f4149d1469359987621d8bd4cfb6c8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCRB4W2xkt_J2Z6R5txz5y6S3CGUy2D93_Qw';" alt="Us Department Of Veterans Affairs Police Badge Police Badge Police Patches Fire Badge">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Department Of Veterans Affairs Police Badge Police Badge Police Patches Fire Badge</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/00/5f/60/005f603ad6fed92ebd87d7f2aba2f38d.jpg" data-lightbox="roadtrip" data-title="Vietnam Pow Visits Trail Of Honor With Lingering Memories Of War Vietnam Era Veterans Vietnam Vietnam Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/00/5f/60/005f603ad6fed92ebd87d7f2aba2f38d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToWg1az4_LVWSUwgzXd_I--vV4kHMSHbOtKw';" alt="Vietnam Pow Visits Trail Of Honor With Lingering Memories Of War Vietnam Era Veterans Vietnam Vietnam Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vietnam Pow Visits Trail Of Honor With Lingering Memories Of War Vietnam Era Veterans Vietnam Vietnam Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/92/d4/3e/92d43e44576505b30564d73ddd96ac99.jpg" data-lightbox="roadtrip" data-title="Pin On Truth About Military And Ptsd">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/92/d4/3e/92d43e44576505b30564d73ddd96ac99.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdwEjgKi2kxJHZOJxhwlqXzCP2notIyj0B2Q';" alt="Pin On Truth About Military And Ptsd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Truth About Military And Ptsd</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/5c/a8/9a5ca895084a36bdb8e35a623e7b45bb.jpg" data-lightbox="roadtrip" data-title="11 Days 11 Stories The Toughest And The Fittest Military Family Military Men Tough">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/5c/a8/9a5ca895084a36bdb8e35a623e7b45bb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGSa9Ee97s1ZFCBE2MIEb90RaKszWbQaf9NA';" alt="11 Days 11 Stories The Toughest And The Fittest Military Family Military Men Tough">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">11 Days 11 Stories The Toughest And The Fittest Military Family Military Men Tough</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/1b/3c/811b3c478b39dcf1f08a1ada950f6903.jpg" data-lightbox="roadtrip" data-title="Veterans Day Main Page Veterans Day Discounts Veterans Day Veterans Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/1b/3c/811b3c478b39dcf1f08a1ada950f6903.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9svvYWSfvd9nrKOwrbzzYXeqRYqSLsbQBzA';" alt="Veterans Day Main Page Veterans Day Discounts Veterans Day Veterans Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Day Main Page Veterans Day Discounts Veterans Day Veterans Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a0/61/8a/a0618a42da00048deb3b6feaa2850912.jpg" data-lightbox="roadtrip" data-title="Pin By Monika Mckemie On Marine Corps Military Love Marines Girlfriend My Marine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a0/61/8a/a0618a42da00048deb3b6feaa2850912.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgR_HRlU6a05LW_x5swihaw9S5PQ786GPcRg';" alt="Pin By Monika Mckemie On Marine Corps Military Love Marines Girlfriend My Marine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Monika Mckemie On Marine Corps Military Love Marines Girlfriend My Marine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4d/2e/cc/4d2ecc8e93ef5f63d5096c0e2685a755.jpg" data-lightbox="roadtrip" data-title="Pin By Stuart Turner On Vada Show Soldier Army Police Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4d/2e/cc/4d2ecc8e93ef5f63d5096c0e2685a755.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMPyaK85BBnu1cgvTmNis48Mlzz1c80bQ2sw';" alt="Pin By Stuart Turner On Vada Show Soldier Army Police Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Stuart Turner On Vada Show Soldier Army Police Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/ea/29/2cea298f213fc46ac2248291192aa43a.jpg" data-lightbox="roadtrip" data-title="Pin On Viral Trendy News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/ea/29/2cea298f213fc46ac2248291192aa43a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfgaieSlhTOjAe5Xg2YSXJEoJHQyYBE0l95Q';" alt="Pin On Viral Trendy News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Viral Trendy News</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-is-ministry-of-defence-pakistan.html">What Is Ministry Of Defence Pakistan</a></li>
+													<li class="list-group-item"><a href="/what-is-the-defence-budget-of-india-in-2019.html">What Is The Defence Budget Of India In 2019</a></li>
+													<li class="list-group-item"><a href="/what-is-nasas-budget-for-2020.html">What Is Nasas Budget For 2020</a></li>
+													<li class="list-group-item"><a href="/what-is-the-us-military-budget-compared-to-other-countries.html">What Is The Us Military Budget Compared To Other Countries</a></li>
+													<li class="list-group-item"><a href="/what-is-the-army-highest-enlisted-pay-grade.html">What Is The Army Highest Enlisted Pay Grade</a></li>
+													<li class="list-group-item"><a href="/what-is-the-army-base-in-washington-state.html">What Is The Army Base In Washington State</a></li>
+													<li class="list-group-item"><a href="/what-is-the-difference-between-hr-and-personnel.html">What Is The Difference Between Hr And Personnel</a></li>
+													<li class="list-group-item"><a href="/what-is-the-federal-military-budget.html">What Is The Federal Military Budget</a></li>
+													<li class="list-group-item"><a href="/what-is-the-defence-intelligence-agency.html">What Is The Defence Intelligence Agency</a></li>
+													<li class="list-group-item"><a href="/what-is-the-army-responsible-for.html">What Is The Army Responsible For</a></li>
+													<li class="list-group-item"><a href="/what-jobs-are-in-the-military.html">What Jobs Are In The Military</a></li>
+													<li class="list-group-item"><a href="/what-is-the-army-symbol.html">What Is The Army Symbol</a></li>
+													<li class="list-group-item"><a href="/what-is-the-veterans-crisis-hotline.html">What Is The Veterans Crisis Hotline</a></li>
+													<li class="list-group-item"><a href="/what-is-overseas-housing-allowance.html">What Is Overseas Housing Allowance</a></li>
+													<li class="list-group-item"><a href="/what-is-the-average-salary-of-a-financial-advisor.html">What Is The Average Salary Of A Financial Advisor</a></li>
+													<li class="list-group-item"><a href="/what-is-the-army-human-resource-command.html">What Is The Army Human Resource Command</a></li>
+													<li class="list-group-item"><a href="/what-is-military-counterintelligence.html">What Is Military Counterintelligence</a></li>
+													<li class="list-group-item"><a href="/what-is-the-army-career-skills-program.html">What Is The Army Career Skills Program</a></li>
+													<li class="list-group-item"><a href="/what-is-military-entrance-processing-station.html">What Is Military Entrance Processing Station</a></li>
+													<li class="list-group-item"><a href="/what-j-is-a-military-group.html">What J Is A Military Group</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

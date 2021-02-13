@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Department Of Veterans Affairs Wa - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Department Of Veterans Affairs Wa",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/736x/22/1f/d0/221fd061f4e4c89f909cf7c70b74516c.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=department+of+veterans+affairs+wa",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Department Of Veterans Affairs Wa</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">These services include veteran benefits assistance services for veterans with disabilities and information about. Business contact details for Department Of Veterans Affairs - Western Australian Office including phone number reviews map location - TrueLocal. Department of Veterans Affairs 810 Vermont Avenue NW Washington DC 20420. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/ncaa-eligibility-login.html">ncaa eligibility login</a>
+											<a class="badge badge-info" href="/ncaa-eligibility-quick-reference-guide.html">ncaa eligibility quick reference guide</a>
+											<a class="badge badge-secondary" href="/ncaa-eligibility-information.html">ncaa eligibility information</a>
+											<a class="badge badge-warning" href="/ncaa-eligibility-gpa-sat-scale.html">ncaa eligibility gpa sat scale</a>
+											<a class="badge badge-info" href="/ncaa-eligibility-espn.html">ncaa eligibility espn</a>
+											<a class="badge badge-secondary" href="/ncaa-eligibility-email-address.html">ncaa eligibility email address</a>
+											<a class="badge badge-success" href="/ncaa-eligibility-fee-waiver.html">ncaa eligibility fee waiver</a>
+											<a class="badge badge-warning" href="/ncaa-eligibility-center-login.html">ncaa eligibility center login</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you have come to pay a visit to the right site.  Our website gives you hints for seeing the maximum quality video and image content, search and find more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, particularly Youtube, therefore we recommend this video that you see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/35/ce/8735ce8c4480653965735edf1eae274c.jpg" data-lightbox="roadtrip" data-title="Department Of Veteran S Affairs Vancouver Wa And Spokane Wa Windowgraphics Window Graphics Door Letters Vinyl Lettering">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/35/ce/8735ce8c4480653965735edf1eae274c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLDwGzng5zEpq8kn3_cKYrg208eMu26_94I3ClGL_VcwBukWe3_zgAv4WQk_UJmdjRMldMoA&amp;ec=45771803';" alt="Department Of Veteran S Affairs Vancouver Wa And Spokane Wa Windowgraphics Window Graphics Door Letters Vinyl Lettering">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Department Of Veteran S Affairs Vancouver Wa And Spokane Wa Windowgraphics Window Graphics Door Letters Vinyl Lettering</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/87/53/8c/87538c3d20c09ec1596d138fcb4700f6.jpg" data-lightbox="roadtrip" data-title="Pin On Memorial Day Images">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/87/53/8c/87538c3d20c09ec1596d138fcb4700f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQByiqSmlmPeL3fau0vaWDujszwjOFcq8LXGJLooJDuDXeOmcNrN_rH195dOPpJqVNOc-GDEg&amp;ec=45771803';" alt="Pin On Memorial Day Images">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Memorial Day Images</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/12/1f/a7121f1d6bc08662ecec098fda31d077.jpg" data-lightbox="roadtrip" data-title="Vfw Ladies Auxiliary The Ladies Auxiliary To The Veterans Of Foreign Wars Post 7835 The Spanish American War Veteran War Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/12/1f/a7121f1d6bc08662ecec098fda31d077.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0sPPWwM2Fs1uvZZZ7uzEzsaZMTx_MvTufstHXx_5O8-q-OUqmGro4YKXYw-f6ZUaQt705MA&amp;ec=45771803';" alt="Vfw Ladies Auxiliary The Ladies Auxiliary To The Veterans Of Foreign Wars Post 7835 The Spanish American War Veteran War Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vfw Ladies Auxiliary The Ladies Auxiliary To The Veterans Of Foreign Wars Post 7835 The Spanish American War Veteran War Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/16/8d/50168d282edf86bf61e902a42c5ef463.jpg" data-lightbox="roadtrip" data-title="Veterans Day No Background 500 Happy Veterans Day Background Images 2020 Veterans Day Wa In 2020 Veterans Day Images Memorial Day Thank You Veterans Day Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/16/8d/50168d282edf86bf61e902a42c5ef463.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTecitGJlxpPM1jfcczkLoTy7qLn88X456jPT3cLMbQmN-4L0ggyXh-_vZ16Z2jSQ0WeJtb8Q&amp;ec=45771803';" alt="Veterans Day No Background 500 Happy Veterans Day Background Images 2020 Veterans Day Wa In 2020 Veterans Day Images Memorial Day Thank You Veterans Day Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Day No Background 500 Happy Veterans Day Background Images 2020 Veterans Day Wa In 2020 Veterans Day Images Memorial Day Thank You Veterans Day Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/af/53/13af53ff1d7b9bcfc20311bae29d0dd7.png" data-lightbox="roadtrip" data-title="Va Loans The Complete Guide From Veterans United Home Loans Va Loan Va Mortgages Veterans United">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/af/53/13af53ff1d7b9bcfc20311bae29d0dd7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4s3IcxYiDP2beSasDnfMDDSj7hQJcx4l7A5gDFsAqiZOfMFkMgtt0LtXab0nzvdeO_6BMSQ&amp;ec=45771803';" alt="Va Loans The Complete Guide From Veterans United Home Loans Va Loan Va Mortgages Veterans United">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Loans The Complete Guide From Veterans United Home Loans Va Loan Va Mortgages Veterans United</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/79/19/7c79195580483765e5c952bcaeaa8554.png" data-lightbox="roadtrip" data-title="President Obama Has Earned The Trust And Confidence Of Veterans Video Veracity Stew Veterans Affairs Department Of Veterans Affairs Va Loan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/79/19/7c79195580483765e5c952bcaeaa8554.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Wx2ZFOhWCYpqVlQDx_bZMF9-r81lR3cng_PI0Yv9q8KUkJ1_yeuXDqL1YTAY3uvT8OI_4A&amp;ec=45771803';" alt="President Obama Has Earned The Trust And Confidence Of Veterans Video Veracity Stew Veterans Affairs Department Of Veterans Affairs Va Loan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">President Obama Has Earned The Trust And Confidence Of Veterans Video Veracity Stew Veterans Affairs Department Of Veterans Affairs Va Loan</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/13/af/53/13af53ff1d7b9bcfc20311bae29d0dd7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Wx2ZFOhWCYpqVlQDx_bZMF9-r81lR3cng_PI0Yv9q8KUkJ1_yeuXDqL1YTAY3uvT8OI_4A&amp;ec=45771803';" alt="President Obama Has Earned The Trust And Confidence Of Veterans Video Veracity Stew Veterans Affairs Department Of Veterans Affairs Va Loan">
+										<div class="card-body">
+						<h3 class="h5"><b>9600 Veterans Drive Tacoma WA 98493 253-582-8440.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Department of veterans affairs wa</strong>. 
+								
+																	Washington State Department of Veterans Affairs Olympia Washington. 
+																	8285 likes 115 talking about this. 
+																	Logo of the US. 
+																	Last updated October 14 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Washington State Department of Veterans Affairs helps connect veterans and their family members to the benefits and services they earned through their military service. 
+																	The Washington State Department of Veterans Affairs located in Olympia WA provides support for veterans of the US Armed Forces. 
+																	Apply for a printed Veteran ID card get your VA benefit letters and medical records and. 
+																	We pay our respects to Elders past and present. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We recognise and celebrate Aboriginal and Torres Strait Islander people as the First Peoples of Australia and their continuing spiritual and cultural connection to land sea and community. 
+																	The Aberdeen Veterans Affairs Department located in Aberdeen WA provides support for veterans of the US Armed Forces. 
+																	The Department of Veterans Affairs acknowledges the Traditional Custodians of Country throughout Australia. 
+																	Veteran Services connects veterans with several government agencies and nonprofit organizations at the federal Washington state and Aberdeen level. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	WDVA complies with the requirements of the Americans with. 
+																	Department of Veterans Affairs is seen on Friday September 8 at the Department of Veterans Affairs office in Washington DC. 
+																	US Department of Veterans Affairs 38 Spokane WA Remote 43251 - 62269 a year Responsible for all administrative details of the department such as ordering supplies and equipment fund control and weekly monthly and quarterly reports. 
+																	To speak with someone at DVA call 1800 VETERAN. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veteran Services connects veterans with several government agencies and nonprofit organizations at the federal Washington state and Olympia level. 
+																	Our Central Office is located in Olympia and includes a Veterans Service Center as well as administrative support for all agency programs. 
+																	The Department of Veterans Affairs acknowledges the Traditional Custodians of Country throughout Australia. 
+																	Get help from Veterans Crisis Line. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apply for and manage your GI Bill and other education benefits to help pay for college and training programs. 
+																	Explore VA life insurance options for Veterans service members and families. 
+																	Hello and welcome to the Washington Department of Veterans Affairs Facebook page. 
+																	Manage your policy online file claims for benefits and access helpful resources. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Call 1-800-273-8255 Press 1 Text to 838255. 
+																	The Tibor Rubin Veteran Affairs Medical Center in Long Beach on Wednesday July 31 2019. 
+																	Close this modal. 
+																	The Department of Veterans Affairs runs programs benefiting veterans and members of their families. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department Of Veterans Affairs - Western Australian Office in Perth WA 6000. 
+																	To speak with someone at DVA call 1800 VETERAN. 
+																	Last updated October 12 2018. 
+																	The Washington State Department of Veterans Affairs WDVA including the State Veterans Homes does not discriminate against any person on the basis of race color national origin gender sexual orientation disability or age in admission treatment or participation in its programs services and activities or in employment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We pay our respects to Elders past and present. 
+																	Apply to Registered Nurse Program Analyst Laborer and more. 
+																	The Washington State Department of Veterans Affairs WDVA including the State Veterans Homes does not discriminate against any person on the basis of race color national origin sex gender disability or age in admission treatment or participation in its programs services and activities or in employment. 
+																	See reviews photos directions phone numbers and more for Department Of Veterans Affairs locations in Silverdale WA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Washington State Department of Veterans Affairs helps connect veterans and their family members to the benefits and services they earned through their military service. 
+																	Department of Veterans Affairs 810 Vermont Avenue NW Washington DC 20420. 
+																	We recognise and celebrate Aboriginal and Torres Strait Islander people as the First Peoples of Australia and their continuing spiritual and cultural connection to land sea and community. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/dd/87/0ddd87eb4bdfb38cd756eddb20e7dab1.jpg" data-lightbox="roadtrip" data-title="Pin By Hobbyhawk Gifts And Hobbies On Support Our Military Veterans Day Veteran Honoring Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/dd/87/0ddd87eb4bdfb38cd756eddb20e7dab1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg5NosY8izUZlFpHHg1Ze1Z71KbYtvE1RRxWfVV3r-yCcqZztCRu3fk5NDgMZMyNDLtrsrPA&amp;ec=45771803';" alt="Pin By Hobbyhawk Gifts And Hobbies On Support Our Military Veterans Day Veteran Honoring Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Hobbyhawk Gifts And Hobbies On Support Our Military Veterans Day Veteran Honoring Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/cc/a9/dfcca9dd389e97d2169a60a613cdd83a.png" data-lightbox="roadtrip" data-title="Va Puget Sound Np Residency Seattle Wa Family Nurse Practitioner Puget Sound Puget">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/cc/a9/dfcca9dd389e97d2169a60a613cdd83a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRarBqpJf-T5-69_tRBGFB-XVDyz92bcCUv2UJAXdBAATflCyBl-LqME439ylwQ4K0thEm6Kg&amp;ec=45771803';" alt="Va Puget Sound Np Residency Seattle Wa Family Nurse Practitioner Puget Sound Puget">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Puget Sound Np Residency Seattle Wa Family Nurse Practitioner Puget Sound Puget</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/93/c5/ea93c564557c3ed07036f6cb16e19439.png" data-lightbox="roadtrip" data-title="Pin On Veterans Events">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/93/c5/ea93c564557c3ed07036f6cb16e19439.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4qH516RVuOUCk6rnSz5m4tTF5Bn-_DOHdfqukk2wfW84PjlWHYFF3P4IMPSbPFnFfagCl1Q&amp;ec=45771803';" alt="Pin On Veterans Events">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Veterans Events</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/41/4b/5f414b7477f18ddb9c29fae2cd65d553.jpg" data-lightbox="roadtrip" data-title="Va Sec Waitlist Problems Are Because Of Vietnam Era Vets Vietnam Veterans Vietnam War Vietnam Era Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/41/4b/5f414b7477f18ddb9c29fae2cd65d553.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRnuncVLV3d4end56-BkMeZKtLfPmPJVJLrtScNCLK_Jzd03lahArPqEThCN2FPRgtJ8KE9A&amp;ec=45771803';" alt="Va Sec Waitlist Problems Are Because Of Vietnam Era Vets Vietnam Veterans Vietnam War Vietnam Era Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Sec Waitlist Problems Are Because Of Vietnam Era Vets Vietnam Veterans Vietnam War Vietnam Era Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/a6/2a/18a62a5f219f69cd0bf913d295edb2cf.png" data-lightbox="roadtrip" data-title="Pin By Roxanne On Va Loans Va Loan Home Loans Home Equity Loan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/a6/2a/18a62a5f219f69cd0bf913d295edb2cf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr_AqZP0gA-bkmKvwvwpI5d2ltZgZhGljkykGL4Xhc8Ya3BUHi7-XBTxMA-mWtPvEUqI_PHQ&amp;ec=45771803';" alt="Pin By Roxanne On Va Loans Va Loan Home Loans Home Equity Loan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Roxanne On Va Loans Va Loan Home Loans Home Equity Loan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/07/34/5107344cf4d077dd5dd12d2dc3b6376b.jpg" data-lightbox="roadtrip" data-title="Veterans Day Flyer Template Free Best Of Nov 11 Veterans Day Ceremony Flyer Template Program Template Flyer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/07/34/5107344cf4d077dd5dd12d2dc3b6376b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWLMPvloiy11I5ZxgWj_BJU-l85jN3d95VQljyM74kVnQKSj7j-yOLMXoVirWMBphcv8NZWw&amp;ec=45771803';" alt="Veterans Day Flyer Template Free Best Of Nov 11 Veterans Day Ceremony Flyer Template Program Template Flyer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Day Flyer Template Free Best Of Nov 11 Veterans Day Ceremony Flyer Template Program Template Flyer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/22/1f/d0/221fd061f4e4c89f909cf7c70b74516c.jpg" data-lightbox="roadtrip" data-title="Vietnam War Veterans Day Remembering Those Who Served Vietnam Veterans Day Vietnam War Vietnam War Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/22/1f/d0/221fd061f4e4c89f909cf7c70b74516c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOe_vYEcS8jtyb8IwLFWAR4YY9-36O6OupX2aWeup2VYz3CxMYEB1uWAOEAWnVfTvKmvrtMQ&amp;ec=45771803';" alt="Vietnam War Veterans Day Remembering Those Who Served Vietnam Veterans Day Vietnam War Vietnam War Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vietnam War Veterans Day Remembering Those Who Served Vietnam Veterans Day Vietnam War Vietnam War Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/f7/37/13f73727bb43713e7785f553d1004af7.jpg" data-lightbox="roadtrip" data-title="Paralyzed Veterans Of America Veterans Of America Department Of Veterans Affairs Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/f7/37/13f73727bb43713e7785f553d1004af7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSATjFv2lJXO4eb51iYll0J9VCakYjtb7BZa6A62ZPR9ZZoOrW6tJATFt8ByNIA8p1oDghJ7Q&amp;ec=45771803';" alt="Paralyzed Veterans Of America Veterans Of America Department Of Veterans Affairs Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Paralyzed Veterans Of America Veterans Of America Department Of Veterans Affairs Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/86/9c/b3869c834aacc203894273f1d45c320d.jpg" data-lightbox="roadtrip" data-title="49 New Acceptance Insurance Anniston Al Collection In 2020 Department Of Veterans Affairs Veteran Veterans Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/86/9c/b3869c834aacc203894273f1d45c320d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsWOBcdGkkFwcMzedYXmmr2LNdd_sKlSZfUoeCy7UKBkMnUgZwaZmfQ9e1K543lc8ZyT07kw&amp;ec=45771803';" alt="49 New Acceptance Insurance Anniston Al Collection In 2020 Department Of Veterans Affairs Veteran Veterans Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">49 New Acceptance Insurance Anniston Al Collection In 2020 Department Of Veterans Affairs Veteran Veterans Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/30/d7/6c/30d76cf7a0c7b7d9b9dec30b936d0a50--pensions-military-veterans.jpg" data-lightbox="roadtrip" data-title="Tomfernandez28 S Blog Iraq War Veteran Military Veterans War Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/30/d7/6c/30d76cf7a0c7b7d9b9dec30b936d0a50--pensions-military-veterans.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9msKpxcqatEIyZ4rn2tXrf06LhqYPrHY53eiHtDnm2MOBNqY3hm52wflDBkAiYZ01uwGkJA&amp;ec=45771803';" alt="Tomfernandez28 S Blog Iraq War Veteran Military Veterans War Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tomfernandez28 S Blog Iraq War Veteran Military Veterans War Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/30/e8/4d/30e84de7e3c8e1503658d7aa6800c79a.jpg" data-lightbox="roadtrip" data-title="Veterans 5 Must Know Tricks For Making An Offer That Can T Be Refused Va Loan Va Mortgage Loans Va Mortgages">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/30/e8/4d/30e84de7e3c8e1503658d7aa6800c79a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuubZaliZ1Pvnc0an_expwlaWeilMaZMwcH8cSwB4ZEJihmzbv6oj0DGxZxOAVVHyzeEEUGQ&amp;ec=45771803';" alt="Veterans 5 Must Know Tricks For Making An Offer That Can T Be Refused Va Loan Va Mortgage Loans Va Mortgages">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans 5 Must Know Tricks For Making An Offer That Can T Be Refused Va Loan Va Mortgage Loans Va Mortgages</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/8d/4b/cd/8d4bcd78db4f78229a95aa4d38e07bb2.jpg" data-lightbox="roadtrip" data-title="What Is Va Loan An Overview Of Va Home Loan 2019 Va Loan Va Mortgages Refinance Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/8d/4b/cd/8d4bcd78db4f78229a95aa4d38e07bb2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2FgWNnHiKFA5FIIXdcGVIww-RZAA4yQj2dFlcAA88ccgWE-25viJGAx7H37M4oserufyf1Q&amp;ec=45771803';" alt="What Is Va Loan An Overview Of Va Home Loan 2019 Va Loan Va Mortgages Refinance Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Va Loan An Overview Of Va Home Loan 2019 Va Loan Va Mortgages Refinance Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/82/6b/5c/826b5c2e19e6341cf810bc25f15dd044.jpg" data-lightbox="roadtrip" data-title="Kentucky Va Loan Va Home Loans Va Mortgage Rates In Ky Va Loan First Time Wa Va Loan First Time Watchi This Before Va Mortgages Va Loan Va Mortgage Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/82/6b/5c/826b5c2e19e6341cf810bc25f15dd044.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTM0Hvayf8PXSQcCQ_S5Y-YzFAjG-8cHKQclKDqTbBl3G6ET4F09dpmPxPpbZHb4mIZbB5zg&amp;ec=45771803';" alt="Kentucky Va Loan Va Home Loans Va Mortgage Rates In Ky Va Loan First Time Wa Va Loan First Time Watchi This Before Va Mortgages Va Loan Va Mortgage Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kentucky Va Loan Va Home Loans Va Mortgage Rates In Ky Va Loan First Time Wa Va Loan First Time Watchi This Before Va Mortgages Va Loan Va Mortgage Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/foia-army-reading-room.html">Foia Army Reading Room</a></li>
+													<li class="list-group-item"><a href="/financial-assistance-for-veterans-starting-a-business.html">Financial Assistance For Veterans Starting A Business</a></li>
+													<li class="list-group-item"><a href="/financial-help-for-military-families.html">Financial Help For Military Families</a></li>
+													<li class="list-group-item"><a href="/free-math-tutoring-for-veterans.html">Free Math Tutoring For Veterans</a></li>
+													<li class="list-group-item"><a href="/fire-service-and-army-reserves.html">Fire Service And Army Reserves</a></li>
+													<li class="list-group-item"><a href="/financial-assistance-for-veterans-medical-bills.html">Financial Assistance For Veterans Medical Bills</a></li>
+													<li class="list-group-item"><a href="/financial-help-for-veterans-with-dementia.html">Financial Help For Veterans With Dementia</a></li>
+													<li class="list-group-item"><a href="/free-military-financial-counseling.html">Free Military Financial Counseling</a></li>
+													<li class="list-group-item"><a href="/financial-help-for-veterans-uk.html">Financial Help For Veterans Uk</a></li>
+													<li class="list-group-item"><a href="/financial-help-for-veterans-widows.html">Financial Help For Veterans Widows</a></li>
+													<li class="list-group-item"><a href="/fort-bragg-soldier-support-center-finance-office.html">Fort Bragg Soldier Support Center Finance Office</a></li>
+													<li class="list-group-item"><a href="/financial-debt-counseling-army.html">Financial Debt Counseling Army</a></li>
+													<li class="list-group-item"><a href="/financial-assistance-for-spouses-of-deceased-veterans.html">Financial Assistance For Spouses Of Deceased Veterans</a></li>
+													<li class="list-group-item"><a href="/financial-management-counseling-army.html">Financial Management Counseling Army</a></li>
+													<li class="list-group-item"><a href="/free-counseling-military-one-source.html">Free Counseling Military One Source</a></li>
+													<li class="list-group-item"><a href="/fort-knox-army-human-resource-command.html">Fort Knox Army Human Resource Command</a></li>
+													<li class="list-group-item"><a href="/financial-help-for-widows-of-veterans.html">Financial Help For Widows Of Veterans</a></li>
+													<li class="list-group-item"><a href="/free-online-classes-for-military.html">Free Online Classes For Military</a></li>
+													<li class="list-group-item"><a href="/free-online-certification-courses-for-veterans.html">Free Online Certification Courses For Veterans</a></li>
+													<li class="list-group-item"><a href="/financial-help-for-veterans-during-covid-19.html">Financial Help For Veterans During Covid 19</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

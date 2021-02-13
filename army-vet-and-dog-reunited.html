@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Vet And Dog Reunited - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Vet And Dog Reunited",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/236x/0f/9d/30/0f9d3039bef8d6c3cade243c006fa5f9--army-dogs-military-dogs.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+vet+and+dog+reunited",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Vet And Dog Reunited</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Jason Bos reunited with his military service dog Cila or Cece as he calls her at the pet cargo facility at OHare. An Army vet was reunited with his beloved pup in whats being called a Christmas miracle When Geoff Hoffman walked up to his Oklahoma home on Dec. Animals mostly dogs and horses are an important part of Army life. <br>				
+			</p>
+										<a class="badge badge-primary" href="/military-caps-near-me.html">military caps near me</a>
+											<a class="badge badge-light" href="/military-dog-full-movie-sub-indo.html">military dog full movie sub indo</a>
+											<a class="badge badge-secondary" href="/military-debt-relief-programs.html">military debt relief programs</a>
+											<a class="badge badge-primary" href="/military-cap-names.html">military cap names</a>
+											<a class="badge badge-dark" href="/military-department-of-indiana.html">military department of indiana</a>
+											<a class="badge badge-warning" href="/military-debt-program.html">military debt program</a>
+											<a class="badge badge-warning" href="/military-department-concerned-with-supply-of-arms.html">military department concerned with supply of arms</a>
+											<a class="badge badge-warning" href="/military-department-ct.html">military department ct</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you have come to pay a visit to the ideal site.  Our site provides you with hints for viewing the highest quality video and picture content, search and locate more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, particularly Youtube, so we recommend this video that you view.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/68/6d/9f686db6e07c7e955e1089ec0f313eb4.jpg" data-lightbox="roadtrip" data-title="Troops Reunited With Overseas Dogs The Veterans Site Http Theveteranssite Greatergood Com Clicktogive Vet Article Troops Reunited With Overseas Dogs92 Helden">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/68/6d/9f686db6e07c7e955e1089ec0f313eb4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi2DZO_cV969eihPSykt0GqnWkGJqFuGXsfw';" alt="Troops Reunited With Overseas Dogs The Veterans Site Http Theveteranssite Greatergood Com Clicktogive Vet Article Troops Reunited With Overseas Dogs92 Helden">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Troops Reunited With Overseas Dogs The Veterans Site Http Theveteranssite Greatergood Com Clicktogive Vet Article Troops Reunited With Overseas Dogs92 Helden</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/26/d3/04/26d3043ded2b24a3b358b4c4c3ded598--army-sergeant-the-veteran.jpg" data-lightbox="roadtrip" data-title="Army Vet And Dog Reunited Military Dogs Dogs Military Service Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/26/d3/04/26d3043ded2b24a3b358b4c4c3ded598--army-sergeant-the-veteran.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbHZHgVecUPUKT2ksNSybi-gm6nm6Kb1FeBw';" alt="Army Vet And Dog Reunited Military Dogs Dogs Military Service Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Vet And Dog Reunited Military Dogs Dogs Military Service Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/9e/12/759e12ca2c872a8545c5552ace7b909e.jpg" data-lightbox="roadtrip" data-title="Afghan Vets Reunited In Ny With 8 Battlefield Dogs Military Dogs Military Working Dogs Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/9e/12/759e12ca2c872a8545c5552ace7b909e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxcqXxAP9KwF8cJBaLUqOaeU9FFz7sOr0zOw';" alt="Afghan Vets Reunited In Ny With 8 Battlefield Dogs Military Dogs Military Working Dogs Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Afghan Vets Reunited In Ny With 8 Battlefield Dogs Military Dogs Military Working Dogs Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/73/00/5873002f2cd9538fa1120cef4e873773.jpg" data-lightbox="roadtrip" data-title="Afghan Vets Reunited In Ny With 8 Battlefield Dogs Puppy Dog Photos Dogs Military Working Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/73/00/5873002f2cd9538fa1120cef4e873773.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSRMd-CY4tWVjjB_XCc1TrUQyTa3M2CPs7Hw';" alt="Afghan Vets Reunited In Ny With 8 Battlefield Dogs Puppy Dog Photos Dogs Military Working Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Afghan Vets Reunited In Ny With 8 Battlefield Dogs Puppy Dog Photos Dogs Military Working Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/08/42/250842357a3cdf269441391491157548.jpg" data-lightbox="roadtrip" data-title="Meet The Woman Reuniting Vets With Their Retired Service Dogs Nbc Nigh Military Dogs Military Working Dogs Service Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/08/42/250842357a3cdf269441391491157548.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9p26xapV4bzZfehZeW-7uItyEKM9kEK2b-g';" alt="Meet The Woman Reuniting Vets With Their Retired Service Dogs Nbc Nigh Military Dogs Military Working Dogs Service Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meet The Woman Reuniting Vets With Their Retired Service Dogs Nbc Nigh Military Dogs Military Working Dogs Service Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/44/50/1f445027f4fe7dc315a33a616bd49970.jpg" data-lightbox="roadtrip" data-title="Retired Military Dog Reunited With Handler After Dramatic Series Of Events Military Dogs Military Working Dogs Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/44/50/1f445027f4fe7dc315a33a616bd49970.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXCEThudZT5AHtFzylEAz5wKMQpUfz-taRIA';" alt="Retired Military Dog Reunited With Handler After Dramatic Series Of Events Military Dogs Military Working Dogs Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Retired Military Dog Reunited With Handler After Dramatic Series Of Events Military Dogs Military Working Dogs Dogs</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/58/73/00/5873002f2cd9538fa1120cef4e873773.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXCEThudZT5AHtFzylEAz5wKMQpUfz-taRIA';" alt="Retired Military Dog Reunited With Handler After Dramatic Series Of Events Military Dogs Military Working Dogs Dogs">
+										<div class="card-body">
+						<h3 class="h5"><b>Categories Video Reunions Army Dogs.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army vet and dog reunited</strong>. 
+								
+																	09 Apr 2014 Posted by Member 26835147. 
+																	He didnt know where hed get the money though he considered selling his car to the scrapyard to get the cash he needed. 
+																	Given Credit To. 
+																	On Saturday Army veteran Julio Munoz finally found the dog he has been missing for three years Ben the canine who fought alongside him in Afghanistan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jason Bos reunited with the military service dog Cila today at OHare International Airport. 
+																	For TODAY NBCs Kerry. 
+																	Alec Alcoser than his partner when they served in Afghanistan. 
+																	Its great experience which can. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	LETS CONNECTChicago Tribune httptribin1ErxACIGo. 
+																	Andrew Brown and his canine companion a military dog named Rocky recovering side by side after they were injured in Afghanistan went viral the pair have been reunited. 
+																	You could be preparing an operating theatre one day and nursing hospitalized animals the next. 
+																	Julio Munoz and Ben in Afghanistan Rick. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Veteran Joshua Tucker is reunited with his Military Working Dog SSD Ellen. 
+																	This is a touching video of a veteran reuniting with his bomb-sniffing dog. 
+																	As a Veterinary Technician you take care of them alongside our highly skilled Army Vets. 
+																	20 he knew something was wrong. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You work all over the world and deal with everything from injured search dogs to sick cavalry horses. 
+																	Army veteran Julio Munoz waited three years but it finally happened. 
+																	FOX NEWS CHANNELAs seen on On the Record with Greta Van SusterenAn injured Army vet has finally been reunited with his combat dog after the. 
+																	Sergeant Kevin Urquidez found out he was going to Afghanistan just four months after he adopted his dog Hector from a. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The four-legged animals have been going to wars alongside soldiers throughout history. 
+																	Afghan Vet Reunited with Dog. 
+																	The soldier and his partner on the battlefield reunited. 
+																	Man Taking Down Christmas Lights Doesnt Notice Dog Following Him Onto Roof. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army veteran Jason Bos was reunited with his long-lost war pooch it was hard to tell who was more excited. 
+																	A 93-year-old US Army veteran said he was humbled and honoured to be reunited with the dog tag he lost while in Britain during World War Two. 
+																	The veteran now in better health was at least able to greet his two dogs and promised hed be back the next day with the adoption fee. 
+																	By The German Shepherd Dog Community Guest Contributor at Relieved Dogs have long played important roles in many aspects of life including battle. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	17 Jan 2012 Posted by Member 26835147. 
+																	Army Vet and Service Dog Reunited. 
+																	Military dog and soldier reunited after three years apart May 16th 2019. 
+																	After two years apart Cila the chocolate Labrador Retriever leaped. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Munoz had been separated from his beloved service dog Ben after fighting alongside one another in Afghanistan. 
+																	Transcript for Army veteran reunites with dog he worked with in Afghanistan Finally tonight here America strong. 
+																	Both of them were badly injured in a. 
+																	While dogs trained for the army are definitely a tough lot they are still the sweet. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It took a few years to cut through the military red tape but an Army vet back in the US has been reunited with the bomb-sniffing dog he deployed with in Afghanistan reports the Army Times. 
+																	Army Vet And Dog Injured In Suicide Bomber Attack Reunited No one was closer to Army Spc. 
+																	Owner is reunited with dog that vanished SIX YEARS ago after vet turns detective to track her down when terrier was discovered wandering on a road A mum who lost her dog six years ago has been. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/27/0c/2d/270c2d477794c5681995f997c37c4596.jpg" data-lightbox="roadtrip" data-title="Afghan Vets Reunited In Ny With 8 Battlefield Dogs Puppy Dog Photos Dogs New Puppy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/27/0c/2d/270c2d477794c5681995f997c37c4596.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP99MGwc4Zy4IKl6B6Y48k4Z5XBUy2vw4Bww';" alt="Afghan Vets Reunited In Ny With 8 Battlefield Dogs Puppy Dog Photos Dogs New Puppy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Afghan Vets Reunited In Ny With 8 Battlefield Dogs Puppy Dog Photos Dogs New Puppy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/c9/5a/c7c95adacd7f7caa5742fd1345167637.png" data-lightbox="roadtrip" data-title="Soldier Is Finally Reunited With His Service Dog After Two Years Getaway Dog In 2020 Service Dogs Service Dog Patches Military Service Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/c9/5a/c7c95adacd7f7caa5742fd1345167637.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMFZ5pLqdS_yM-7G5D0EP6flDGqdZGo9yUAA';" alt="Soldier Is Finally Reunited With His Service Dog After Two Years Getaway Dog In 2020 Service Dogs Service Dog Patches Military Service Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soldier Is Finally Reunited With His Service Dog After Two Years Getaway Dog In 2020 Service Dogs Service Dog Patches Military Service Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/99/49/549949736fb8ca2ab11445ece89e284a.png" data-lightbox="roadtrip" data-title="Golden Retriever Cries And Cries When Reunited With Soldier Daddy Military Dogs Military Working Dogs Working Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/99/49/549949736fb8ca2ab11445ece89e284a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdzItu2asrv9zE3SeqZCnQ2Nw76KCHTaRJ_g';" alt="Golden Retriever Cries And Cries When Reunited With Soldier Daddy Military Dogs Military Working Dogs Working Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Golden Retriever Cries And Cries When Reunited With Soldier Daddy Military Dogs Military Working Dogs Working Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/0f/db/790fdb20d398ab7ecc15b2c268768f9d.jpg" data-lightbox="roadtrip" data-title="Pin On My Happy Place">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/0f/db/790fdb20d398ab7ecc15b2c268768f9d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI9n3N4oSg8WXBZoLGPHmON9f1xDKfGDDgqw';" alt="Pin On My Happy Place">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Happy Place</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/f2/c4/2cf2c40c1f712d21dcdd30a3f739d062.jpg" data-lightbox="roadtrip" data-title="Pin On Dog Days">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/f2/c4/2cf2c40c1f712d21dcdd30a3f739d062.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSstqCPiQS4O9ORah8cyTrMQ_zJ6nLJiqZ43Q';" alt="Pin On Dog Days">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Dog Days</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/81/0e/b3/810eb3e0fa99652f7267e1e6e11a7c3c.jpg" data-lightbox="roadtrip" data-title="Pin On Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/81/0e/b3/810eb3e0fa99652f7267e1e6e11a7c3c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNgj7G2OAfbncF2ja-pOY4yLmyt-odJMc7xw';" alt="Pin On Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3a/e6/ca/3ae6ca9b1ce53984bf35009f6c77433b.jpg" data-lightbox="roadtrip" data-title="New Jersey Police Dog Army Vet Partner Accept Donated Patriotic Doghouse Fox News Police Dogs Military Dogs Dog Houses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3a/e6/ca/3ae6ca9b1ce53984bf35009f6c77433b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDRwh8-nT0ItHOLWXLCPlkCbFNDgRJh6m9pQ';" alt="New Jersey Police Dog Army Vet Partner Accept Donated Patriotic Doghouse Fox News Police Dogs Military Dogs Dog Houses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Jersey Police Dog Army Vet Partner Accept Donated Patriotic Doghouse Fox News Police Dogs Military Dogs Dog Houses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/15/65/731565056c8f9982459435b41fce90e0.jpg" data-lightbox="roadtrip" data-title="Pin On Dogs Are Awesome">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/15/65/731565056c8f9982459435b41fce90e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJNY7QPVb_5lAkPROsDHT00uK_PocbXe3SMw';" alt="Pin On Dogs Are Awesome">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Dogs Are Awesome</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/c0/06/7ec00651db42e59a82288d5d24b64ee6.jpg" data-lightbox="roadtrip" data-title="Meet The Woman Reuniting Vets With Their Retired Service Dogs Service Dogs Military Working Dogs Military Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/c0/06/7ec00651db42e59a82288d5d24b64ee6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOSyX5eP3OOVt3df6o4C6pqqNskMH5jxFSHg';" alt="Meet The Woman Reuniting Vets With Their Retired Service Dogs Service Dogs Military Working Dogs Military Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meet The Woman Reuniting Vets With Their Retired Service Dogs Service Dogs Military Working Dogs Military Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/e2/02/3de202df2ba9aff976ad3d7b6a03a0b4.jpg" data-lightbox="roadtrip" data-title="Injured Soldier Reunited With K 9 Hero War Dogs Dog Soldiers Military Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/e2/02/3de202df2ba9aff976ad3d7b6a03a0b4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC8USsm3_lztqnWRHQoI3VGwjWJhLHxJ46xA';" alt="Injured Soldier Reunited With K 9 Hero War Dogs Dog Soldiers Military Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Injured Soldier Reunited With K 9 Hero War Dogs Dog Soldiers Military Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/4b/99/c14b990f922304fc867e440f3f54e85b.jpg" data-lightbox="roadtrip" data-title="Seven Years After Her Dog Was Stolen Army Veteran Kelly Accettola And Bemis Were Reunited Army Veteran Pets She Dog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/4b/99/c14b990f922304fc867e440f3f54e85b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYui5dqcq3m38lB12ld-CkFiti882OLvhiUg';" alt="Seven Years After Her Dog Was Stolen Army Veteran Kelly Accettola And Bemis Were Reunited Army Veteran Pets She Dog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Seven Years After Her Dog Was Stolen Army Veteran Kelly Accettola And Bemis Were Reunited Army Veteran Pets She Dog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/0f/9d/30/0f9d3039bef8d6c3cade243c006fa5f9--army-dogs-military-dogs.jpg" data-lightbox="roadtrip" data-title="Pin On Missionk9rescue Org Reunion Stories">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/0f/9d/30/0f9d3039bef8d6c3cade243c006fa5f9--army-dogs-military-dogs.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9HFf0f90KuO7fqerDgI2DM9Ii0wBa39BeiQ';" alt="Pin On Missionk9rescue Org Reunion Stories">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Missionk9rescue Org Reunion Stories</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/da/fe/c5dafe65bad51a808541ce764be2fa93.jpg" data-lightbox="roadtrip" data-title="It S A Bond That You Ll Never Have With Anyone Else Navy Vet Reunited With K 9 Partner Vvito In 2020 Military Dogs Working Dogs Belgian Malinois">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/da/fe/c5dafe65bad51a808541ce764be2fa93.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnYzIkE3MSz-hLAmvIlMPWeW59cUZloV9bVA';" alt="It S A Bond That You Ll Never Have With Anyone Else Navy Vet Reunited With K 9 Partner Vvito In 2020 Military Dogs Working Dogs Belgian Malinois">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">It S A Bond That You Ll Never Have With Anyone Else Navy Vet Reunited With K 9 Partner Vvito In 2020 Military Dogs Working Dogs Belgian Malinois</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/lincoln-military-housing-office-hours.html">Lincoln Military Housing Office Hours</a></li>
+													<li class="list-group-item"><a href="/marc-mitchell-uwo-ratemyprof.html">Marc Mitchell Uwo Ratemyprof</a></li>
+													<li class="list-group-item"><a href="/lone-star-military-resource-group.html">Lone Star Military Resource Group</a></li>
+													<li class="list-group-item"><a href="/marine-recruiting-center-near-me.html">Marine Recruiting Center Near Me</a></li>
+													<li class="list-group-item"><a href="/linkedin-premium-military-spouse.html">Linkedin Premium Military Spouse</a></li>
+													<li class="list-group-item"><a href="/juilliard-mfa-scholarship.html">Juilliard Mfa Scholarship</a></li>
+													<li class="list-group-item"><a href="/lesson-plan-uk-army.html">Lesson Plan Uk Army</a></li>
+													<li class="list-group-item"><a href="/lesson-plan-british-army.html">Lesson Plan British Army</a></li>
+													<li class="list-group-item"><a href="/mango-languages-free-for-military.html">Mango Languages Free For Military</a></li>
+													<li class="list-group-item"><a href="/job-programs-for-military-veterans.html">Job Programs For Military Veterans</a></li>
+													<li class="list-group-item"><a href="/kentucky-department-of-military-affairs.html">Kentucky Department Of Military Affairs</a></li>
+													<li class="list-group-item"><a href="/maryland-state-military-department.html">Maryland State Military Department</a></li>
+													<li class="list-group-item"><a href="/job-training-programs-in-fredericksburg-va.html">Job Training Programs In Fredericksburg Va</a></li>
+													<li class="list-group-item"><a href="/maryland-military-department-jobs.html">Maryland Military Department Jobs</a></li>
+													<li class="list-group-item"><a href="/list-of-department-in-us-army.html">List Of Department In Us Army</a></li>
+													<li class="list-group-item"><a href="/job-programs-for-veterans.html">Job Programs For Veterans</a></li>
+													<li class="list-group-item"><a href="/list-of-departments-in-the-us-army.html">List Of Departments In The Us Army</a></li>
+													<li class="list-group-item"><a href="/kurtz-military-hat.html">Kurtz Military Hat</a></li>
+													<li class="list-group-item"><a href="/lesson-plan-army-cadets.html">Lesson Plan Army Cadets</a></li>
+													<li class="list-group-item"><a href="/lowes-military-discount-spouse.html">Lowes Military Discount Spouse</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

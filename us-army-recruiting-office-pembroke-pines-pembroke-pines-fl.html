@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Army Recruiting Office Pembroke Pines Pembroke Pines Fl - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Army Recruiting Office Pembroke Pines Pembroke Pines Fl",
+  "datePublished": "2021-02-13",
+  "image": "https://i.ytimg.com/vi/QfQtWf2sHMg/hqdefault.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+army+recruiting+office+pembroke+pines+pembroke+pines+fl",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Army Recruiting Office Pembroke Pines Pembroke Pines Fl</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Find army recruiter in Pembroke Lakes Regional Center Pembroke Pines FL on Yellowbook. Get reviews and contact details for each business including videos opening hours and more. For more information follow the link. <br>				
+			</p>
+										<a class="badge badge-light" href="/us-army-corps-of-engineers-pittsburgh-office.html">us army corps of engineers pittsburgh office</a>
+											<a class="badge badge-warning" href="/us-army-corps-of-engineers-publications.html">us army corps of engineers publications</a>
+											<a class="badge badge-light" href="/us-army-corps-of-engineers-hec-ras-download.html">us army corps of engineers hec ras download</a>
+											<a class="badge badge-light" href="/us-army-dodge-power-wagon.html">us army dodge power wagon</a>
+											<a class="badge badge-light" href="/us-army-element-hq-us-indo-pacific-command.html">us army element hq us indo pacific command</a>
+											<a class="badge badge-light" href="/us-army-corps-of-engineers-yatesville-lake.html">us army corps of engineers yatesville lake</a>
+											<a class="badge badge-primary" href="/us-army-field-hat.html">us army field hat</a>
+											<a class="badge badge-primary" href="/us-army-corps-of-engineers-safety-and-health-requirements-manual.html">us army corps of engineers safety and health requirements manual</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you have come to pay a visit to the right blog.  Our site provides you with hints for seeing the maximum quality video and image content, search and locate more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie for you to view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1495966280448194" data-lightbox="roadtrip" data-title="Army Recruiting Office Pembroke Pines Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1495966280448194" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9Wx46e1_o_jLa3Tu0qIXju1BwaIVzX1YgbQ';" alt="Army Recruiting Office Pembroke Pines Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Recruiting Office Pembroke Pines Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lh3.googleusercontent.com/R_upzpzOvDVqvXs96gyt1jGonjIKM9dKyGpFUIGBhpInNa5u--Th8lSv0w25aFtXeYKe3ly0=w1080-h608-p-no-v0" data-lightbox="roadtrip" data-title="U S Army Recruiting Center Pembroke Pines Military Recruiting Office In Pembroke Pines">
+											<img class="card-img v-image ads-img " src="https://lh3.googleusercontent.com/R_upzpzOvDVqvXs96gyt1jGonjIKM9dKyGpFUIGBhpInNa5u--Th8lSv0w25aFtXeYKe3ly0=w1080-h608-p-no-v0" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiA95HAvFyCbns_iw09SEQ4pLITnyO_ULeEw';" alt="U S Army Recruiting Center Pembroke Pines Military Recruiting Office In Pembroke Pines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Recruiting Center Pembroke Pines Military Recruiting Office In Pembroke Pines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1251455525227223" data-lightbox="roadtrip" data-title="Usaf Recruiting Pembroke Pines Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1251455525227223" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP4vAmxqaMsPfxpQ8507i7jK3g1DQmbpnAiA';" alt="Usaf Recruiting Pembroke Pines Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usaf Recruiting Pembroke Pines Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://securitylicensetraining.com/wp-content/uploads/2016/04/Security-Training-Class-Picture-1024x576.jpg" data-lightbox="roadtrip" data-title="The Security Training Group Pembroke Pines">
+											<img class="card-img v-image ads-img " src="https://securitylicensetraining.com/wp-content/uploads/2016/04/Security-Training-Class-Picture-1024x576.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU1-oAbS6Eq1PcIuG6dkc8NR2Hpt897otRkQ';" alt="The Security Training Group Pembroke Pines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Security Training Group Pembroke Pines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/QfQtWf2sHMg/hqdefault.jpg" data-lightbox="roadtrip" data-title="Security License Pembroke Pines Fl Armed Unarmed License">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/QfQtWf2sHMg/hqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7jZSMIfKHqBxMeDo8uCmC9BXUTVsgkAacxg';" alt="Security License Pembroke Pines Fl Armed Unarmed License">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Security License Pembroke Pines Fl Armed Unarmed License</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/31/3f/6a/313f6aebe042176166626fd557380c88.jpg" data-lightbox="roadtrip" data-title="La Colonia Medical Center Pembroke Pines Servir A Nuestros Pacientes A Traves De La Atencion Y El Cuidado De Su Salu Pembroke Pines Fl Medical Center Medical">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/31/3f/6a/313f6aebe042176166626fd557380c88.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2pMKPi-7jowRVmY6E_ztlfdkNhQRwJ9-vDw';" alt="La Colonia Medical Center Pembroke Pines Servir A Nuestros Pacientes A Traves De La Atencion Y El Cuidado De Su Salu Pembroke Pines Fl Medical Center Medical">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">La Colonia Medical Center Pembroke Pines Servir A Nuestros Pacientes A Traves De La Atencion Y El Cuidado De Su Salu Pembroke Pines Fl Medical Center Medical</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1495966280448194" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2pMKPi-7jowRVmY6E_ztlfdkNhQRwJ9-vDw';" alt="La Colonia Medical Center Pembroke Pines Servir A Nuestros Pacientes A Traves De La Atencion Y El Cuidado De Su Salu Pembroke Pines Fl Medical Center Medical">
+										<div class="card-body">
+						<h3 class="h5"><b>Near the intersection of Pines Blvd and SW 71st Ave.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us army recruiting office pembroke pines pembroke pines fl</strong>. 
+								
+																	Check out this weeks meet your recruiter edition. 
+																	Order Online Tickets Tickets See Availability. 
+																	7100 Hollywood Blvd Ste 16 Pembroke Pines FL 33024. 
+																	Its official motto is Join Us - Progress with Us Pembroke Pines was named one of the best cities in which to live in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	US Army Recruiting Recruiting-Us Armed Force in 18247 Pines Blvd Pembroke Pines Florida 33029. 
+																	We inform the public of what the Army and Army Reserves is. 
+																	The City of Pembroke Pines 601 City Center Way Pembroke Pines FL 33025 Phone. 
+																	If you have an interest in Law Enforcement scan the QR Code to request an interview for our Dec 8th Indeed Virtual Career Fair to see if you qualify. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Please refine your search byLocalization What who. 
+																	See reviews photos directions phone numbers and more for Us Army Recruiting Office locations in Pembroke Pines FL. 
+																	Army Recruiting Office Pembroke Pines Pembroke Pines Florida. 
+																	We interview thru virtual methods so you dont have to leave your home to talk with us. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	HttpsgousagovxAPFd or Text ASMS to GOARMY 462-769 01222021. 
+																	Menu Reservations Make Reservations. 
+																	Army Recruiting Office Pembroke Pines December 5 at 702 AM As a Military Police youll protect peoples lives and property on Army installations by enforcing military laws and regulations. 
+																	See reviews photos directions phone numbers and more for Us Army Recruiting locations in Pembroke Pines FL. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	US Navy Recruiting Office 18213 Pines Blvd Pembroke Pines FL 33029. 
+																	Army Recruiting Office Pembroke Pines Pembroke Pines Florida. 
+																	1233 likes 4 talking about this 106 were here. 
+																	Find army recruiter in Pembroke Lakes South Pembroke Pines FL on Yellowbook. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We inform the public of what the Army and Army Reserves is. 
+																	Verify your listing. 
+																	We interview thru virtual methods so you dont have to leave. 
+																	We inform the public of what the Army and Army Reserves is. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See reviews photos directions phone numbers and more for the best Armed Forces Recruiting in Pembroke Pines FL. 
+																	7100 Pines Blvd 16 Pembroke Pines FL 33024. 
+																	Army Recruiting Office Pembroke Pines October 1 at 656 AM In the US Army you dont have to wait until youre out to use your educational benefits and unlike some other branches the US Army wont restrict the schools you can attend. 
+																	Reviews 954 441-6392 Website. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See reviews photos directions phone numbers and more for Us Army Recruiting Station locations in Pembroke Pines FL. 
+																	Pembroke Pines is a city in Broward County Florida United States. 
+																	Find army recruiter in Surrounding Interchange Park Pembroke Pines FL on Yellowbook. 
+																	ATMs Hotels Night Clubs Parkings Movie Theaters. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Is this your business. 
+																	Get reviews and contact details for each business including videos opening hours and more. 
+																	Get directions reviews and information for US Navy Recruiting Office in Pembroke Pines FL. 
+																	Hours may change under current circumstances. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get reviews and contact details for each business including videos opening hours and more. 
+																	Army Recruiting Office Hollywood. 
+																	The city had a population of 154750 at the 2010 census making it the second most populous city in Broward County the tenth most populous in Florida and the 150th most populous in the United States. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="Pj4xlu65yz0rLM" data-lightbox="roadtrip" data-title="Http Ppines Com Documentcenter View 1631">
+											<img class="card-img v-image ads-img " src="Pj4xlu65yz0rLM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWSVZ7bALgXQpkINCqlJ6_Zj-qY85D9-y6LQ';" alt="Http Ppines Com Documentcenter View 1631">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Ppines Com Documentcenter View 1631</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/Dx8gXyPRdgQ/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Pembroke Pines Police Department Coffee With A Cop Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/Dx8gXyPRdgQ/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUSARu2s9tUghLAt2YVEmC4iEcBbVtAkQOTQ';" alt="Pembroke Pines Police Department Coffee With A Cop Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pembroke Pines Police Department Coffee With A Cop Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.dvidshub.net/media/thumbs/photos/1301/814169/1000w_q95.jpg" data-lightbox="roadtrip" data-title="Dvids Images Pembroke Pines Fla Marine Graduates As Platoon Honor Graduate Image 2 Of 6">
+											<img class="card-img v-image ads-img " src="https://cdn.dvidshub.net/media/thumbs/photos/1301/814169/1000w_q95.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZIqKB3TviXXhEwKYQz3rvOz5_IjEK7HWFug';" alt="Dvids Images Pembroke Pines Fla Marine Graduates As Platoon Honor Graduate Image 2 Of 6">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dvids Images Pembroke Pines Fla Marine Graduates As Platoon Honor Graduate Image 2 Of 6</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ppines.com/images/CivicAlerts/1/City%20Center.jpg" data-lightbox="roadtrip" data-title="City Of Pembroke Pines Careers Jobs Zippia">
+											<img class="card-img v-image ads-img " src="https://www.ppines.com/images/CivicAlerts/1/City%20Center.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZuLBzsGpVORj8LucvnX7BWI5LHpL4DhoyHA';" alt="City Of Pembroke Pines Careers Jobs Zippia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">City Of Pembroke Pines Careers Jobs Zippia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://static.talentflux.com/jobimage/cashier-pembroke-pines--floor-decor-r014774.png" data-lightbox="roadtrip" data-title="Cashier At Floor Decor In Pembroke Pines Florida R014774">
+											<img class="card-img v-image ads-img " src="https://static.talentflux.com/jobimage/cashier-pembroke-pines--floor-decor-r014774.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCs7cS1n6ZXsduy4T83JnQ-xnEjaucWM9pTQ';" alt="Cashier At Floor Decor In Pembroke Pines Florida R014774">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cashier At Floor Decor In Pembroke Pines Florida R014774</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1457518214420240" data-lightbox="roadtrip" data-title="J N Offices Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1457518214420240" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkBuaOoBmEX3Hj1639Oq8L5FyC52xlzrG4Yw';" alt="J N Offices Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">J N Offices Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1968840063369128" data-lightbox="roadtrip" data-title="Navy Recruiting Station Pembroke Pines Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1968840063369128" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWLAiCtImLmz5gsj9iWzbSrvIswZIgkNkHww';" alt="Navy Recruiting Station Pembroke Pines Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Recruiting Station Pembroke Pines Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="Rk0GQDr_qJPTYM" data-lightbox="roadtrip" data-title="Https Www Pinescharter Net Documentcenter View 1137 Student Code Of Conduct Bidid">
+											<img class="card-img v-image ads-img " src="Rk0GQDr_qJPTYM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZgT8H2uv8bXEICb9SQt787yve6YcGBGNyoA';" alt="Https Www Pinescharter Net Documentcenter View 1137 Student Code Of Conduct Bidid">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Pinescharter Net Documentcenter View 1137 Student Code Of Conduct Bidid</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i0.wp.com/www.soulofmiami.org/wp-content/uploads/2019/02/Forester-Event-Flyer-Side-1.jpg?fit=333%2C500" data-lightbox="roadtrip" data-title="The Soul Of Miami Page 19 What Are You Doing Tonight">
+											<img class="card-img v-image ads-img " src="https://i0.wp.com/www.soulofmiami.org/wp-content/uploads/2019/02/Forester-Event-Flyer-Side-1.jpg?fit=333%2C500" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsECMM8J91AzqeQ33Z50z9OhXksDWKD2x1mg';" alt="The Soul Of Miami Page 19 What Are You Doing Tonight">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Soul Of Miami Page 19 What Are You Doing Tonight</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/ac/02/d7ac028e80ac5fc2ef7a7e994369eae4.jpg" data-lightbox="roadtrip" data-title="Pembroke Lakes Mall Shopping Plan Mall Pembroke Lake">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/ac/02/d7ac028e80ac5fc2ef7a7e994369eae4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAATDjqio4F1o85IZTcI4KG76Iw3ngHBBgsQ';" alt="Pembroke Lakes Mall Shopping Plan Mall Pembroke Lake">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pembroke Lakes Mall Shopping Plan Mall Pembroke Lake</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="4DbNTfa8QZ-bWM" data-lightbox="roadtrip" data-title="Https Centralcampus Pinescharter Net Documentcenter View 119">
+											<img class="card-img v-image ads-img " src="4DbNTfa8QZ-bWM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCyOlXEw_h2N3v3FIA0ciSDQhAh19O7HOS0g';" alt="Https Centralcampus Pinescharter Net Documentcenter View 119">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Centralcampus Pinescharter Net Documentcenter View 119</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.keiseruniversity.edu/wp-content/uploads/2020/10/Pembroke-Pines-Esports.jpg" data-lightbox="roadtrip" data-title="Esports Popularity Is Exploding Now More Than Ever Keiser University">
+											<img class="card-img v-image ads-img " src="https://www.keiseruniversity.edu/wp-content/uploads/2020/10/Pembroke-Pines-Esports.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgW8WgDfhMv0-S3JoNbbMHt_mC3NKPfv6Gcg';" alt="Esports Popularity Is Exploding Now More Than Ever Keiser University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Esports Popularity Is Exploding Now More Than Ever Keiser University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.businessyab.com/assets/uploads/c164cefaa388c65ab5326451c289c12f_-united-states-florida-broward-county-pembroke-pines-pembroke-road-20701-waste-management-pembroke-pines-fl.jpg" data-lightbox="roadtrip" data-title="Waste Management Pembroke Pines Fl 20701 Pembroke Rd Pembroke Pines Fl 33029 Usa">
+											<img class="card-img v-image ads-img " src="https://cdn.businessyab.com/assets/uploads/c164cefaa388c65ab5326451c289c12f_-united-states-florida-broward-county-pembroke-pines-pembroke-road-20701-waste-management-pembroke-pines-fl.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ06KWXaoSm_0UbtXy-24V9EO6gUEegSbBD7g';" alt="Waste Management Pembroke Pines Fl 20701 Pembroke Rd Pembroke Pines Fl 33029 Usa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Waste Management Pembroke Pines Fl 20701 Pembroke Rd Pembroke Pines Fl 33029 Usa</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/first-world-war-military-records-uk.html">First World War Military Records Uk</a></li>
+													<li class="list-group-item"><a href="/foia-request-army-corps-of-engineers.html">Foia Request Army Corps Of Engineers</a></li>
+													<li class="list-group-item"><a href="/fiscal-2021-defense-spending-bill.html">Fiscal 2021 Defense Spending Bill</a></li>
+													<li class="list-group-item"><a href="/foia-us-army.html">Foia Us Army</a></li>
+													<li class="list-group-item"><a href="/fort-knox-army-human-resource-command.html">Fort Knox Army Human Resource Command</a></li>
+													<li class="list-group-item"><a href="/financial-assistance-for-veterans-in-houston-texas.html">Financial Assistance For Veterans In Houston Texas</a></li>
+													<li class="list-group-item"><a href="/free-online-counseling-for-military.html">Free Online Counseling For Military</a></li>
+													<li class="list-group-item"><a href="/foia-request-us-army.html">Foia Request Us Army</a></li>
+													<li class="list-group-item"><a href="/financial-aid-for-veterans-spouses.html">Financial Aid For Veterans Spouses</a></li>
+													<li class="list-group-item"><a href="/financial-assistance-for-spouses-of-deceased-veterans.html">Financial Assistance For Spouses Of Deceased Veterans</a></li>
+													<li class="list-group-item"><a href="/foia-request-to-army.html">Foia Request To Army</a></li>
+													<li class="list-group-item"><a href="/free-online-certifications-for-veterans.html">Free Online Certifications For Veterans</a></li>
+													<li class="list-group-item"><a href="/free-online-certification-courses-for-veterans.html">Free Online Certification Courses For Veterans</a></li>
+													<li class="list-group-item"><a href="/free-online-college-for-disabled-veterans.html">Free Online College For Disabled Veterans</a></li>
+													<li class="list-group-item"><a href="/financial-help-for-army-reserve-soldiers.html">Financial Help For Army Reserve Soldiers</a></li>
+													<li class="list-group-item"><a href="/financial-assistance-for-veterans-spouses.html">Financial Assistance For Veterans Spouses</a></li>
+													<li class="list-group-item"><a href="/first-world-war-military-records-online.html">First World War Military Records Online</a></li>
+													<li class="list-group-item"><a href="/free-marriage-counseling-for-military-families.html">Free Marriage Counseling For Military Families</a></li>
+													<li class="list-group-item"><a href="/financial-aid-for-veterans-in-need.html">Financial Aid For Veterans In Need</a></li>
+													<li class="list-group-item"><a href="/financial-assistance-for-widows-of-veterans.html">Financial Assistance For Widows Of Veterans</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

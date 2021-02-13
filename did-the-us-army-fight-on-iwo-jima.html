@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Did The Us Army Fight On Iwo Jima - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Did The Us Army Fight On Iwo Jima",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/736x/6a/15/2f/6a152fe9dd31dd20ae86db49d9eb8e20.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=did+the+us+army+fight+on+iwo+jima",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Did The Us Army Fight On Iwo Jima</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The American invasion of Iwo Jima came after Allied forces had island-hopped across the Pacific and had conducted successful campaigns in the Solomon Gilbert Marshall and Mariana Islands. I ask because director Spike Lee is accusing the director of the movie Flags of our Fathers Clint Eastwood almost of racism for not showing black soldiers in this WW2 film. In anticipation of the Battle of Iwo Jima Lieutenant General Tadamichi Kuribayashi prepared a defense that broke with Japanese military doctrine. <br>				
+			</p>
+										<a class="badge badge-danger" href="/department-of-defense-definition-for-dummies.html">department of defense definition for dummies</a>
+											<a class="badge badge-primary" href="/department-of-defense-civilian-jobs-overseas.html">department of defense civilian jobs overseas</a>
+											<a class="badge badge-primary" href="/department-of-defense-federal-spending.html">department of defense federal spending</a>
+											<a class="badge badge-danger" href="/department-of-defense-military-lending-act-federal-register.html">department of defense military lending act federal register</a>
+											<a class="badge badge-light" href="/department-of-defense-scott-air-force-base-il.html">department of defense scott air force base il</a>
+											<a class="badge badge-light" href="/department-of-defense-patrick-air-force-base.html">department of defense patrick air force base</a>
+											<a class="badge badge-light" href="/department-of-defense-civilian-awards-program.html">department of defense civilian awards program</a>
+											<a class="badge badge-secondary" href="/department-of-defense-program-of-record-definition.html">department of defense program of record definition</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you have come to visit the right blog.  Our website provides you with suggestions for seeing the highest quality video and picture content, search and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, especially Youtube, therefore we recommend this movie for you to view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/24/4c/7d/244c7df419a240e9b306b70aa29f2219.jpg" data-lightbox="roadtrip" data-title="Us Marines Pose After 10 Days Of Fighting On Iwo Jima Photo Usmc Iwo Jima Iwo Military History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/24/4c/7d/244c7df419a240e9b306b70aa29f2219.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZenV1CVVXJUuGdcyhWFe3G8YJn2z6Yh0bHg';" alt="Us Marines Pose After 10 Days Of Fighting On Iwo Jima Photo Usmc Iwo Jima Iwo Military History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Marines Pose After 10 Days Of Fighting On Iwo Jima Photo Usmc Iwo Jima Iwo Military History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/ba/0a/b4ba0a9584eac6d4c026dc4d5aa7b737.jpg" data-lightbox="roadtrip" data-title="Assault On The Beachhead Iwo Jima 1945 Battle Of Iwo Jima Iwo Iwo Jima">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/ba/0a/b4ba0a9584eac6d4c026dc4d5aa7b737.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs3FtN51PsIMHgENKIjyeeWuXqNlwTHKK3oQ';" alt="Assault On The Beachhead Iwo Jima 1945 Battle Of Iwo Jima Iwo Iwo Jima">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Assault On The Beachhead Iwo Jima 1945 Battle Of Iwo Jima Iwo Iwo Jima</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6a/15/2f/6a152fe9dd31dd20ae86db49d9eb8e20.jpg" data-lightbox="roadtrip" data-title="Japanese Troops Being Captured By Americans On Iwo Jima Japan 5 April 1945 This Must Have Been A Rare Photo Considering The Ja World War Two Wwii History Iwo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6a/15/2f/6a152fe9dd31dd20ae86db49d9eb8e20.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMokj-Gf4oQi30Lyakx2jmTaZS5wf0Afi0Bw';" alt="Japanese Troops Being Captured By Americans On Iwo Jima Japan 5 April 1945 This Must Have Been A Rare Photo Considering The Ja World War Two Wwii History Iwo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Japanese Troops Being Captured By Americans On Iwo Jima Japan 5 April 1945 This Must Have Been A Rare Photo Considering The Ja World War Two Wwii History Iwo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/f5/70/4af57097409d468d0e5d27d8037a8c6a.jpg" data-lightbox="roadtrip" data-title="World War Two Iwo Jima Photograph Symbol Of Victory Iwo Jima Flag Battle Of Iwo Jima Iwo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/f5/70/4af57097409d468d0e5d27d8037a8c6a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgx6St-0PWCl8Bn6AyUfKgopx39ZoaSZ0Ylw';" alt="World War Two Iwo Jima Photograph Symbol Of Victory Iwo Jima Flag Battle Of Iwo Jima Iwo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">World War Two Iwo Jima Photograph Symbol Of Victory Iwo Jima Flag Battle Of Iwo Jima Iwo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/ca/2f/62ca2fc465dae9693d5b7fa2e51d5424.jpg" data-lightbox="roadtrip" data-title="1945 Marines And American Forces Began The Battle For Iwo Jima The Seizure Of Iwo Jima Was Deemed Necessary But Would Not Co Iwo Jima Battle Of Iwo Jima Iwo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/ca/2f/62ca2fc465dae9693d5b7fa2e51d5424.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9rEjr3H0vXUsPunmfoi_zFdukgafsQrImmQ';" alt="1945 Marines And American Forces Began The Battle For Iwo Jima The Seizure Of Iwo Jima Was Deemed Necessary But Would Not Co Iwo Jima Battle Of Iwo Jima Iwo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1945 Marines And American Forces Began The Battle For Iwo Jima The Seizure Of Iwo Jima Was Deemed Necessary But Would Not Co Iwo Jima Battle Of Iwo Jima Iwo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/56/1f/78561faaa4c89fbd01301347c6ebfb67.jpg" data-lightbox="roadtrip" data-title="Striking Images From The Battle Of Iwo Jima 70th Anniversary Battle Of Iwo Jima Iwo Jima Iwo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/56/1f/78561faaa4c89fbd01301347c6ebfb67.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNoD8AHnadIrn6GtCQubwq-10cDAIWvj76Jg';" alt="Striking Images From The Battle Of Iwo Jima 70th Anniversary Battle Of Iwo Jima Iwo Jima Iwo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Striking Images From The Battle Of Iwo Jima 70th Anniversary Battle Of Iwo Jima Iwo Jima Iwo</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/00/84/0a/00840a4875b51c250ecfec7359fb666b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNoD8AHnadIrn6GtCQubwq-10cDAIWvj76Jg';" alt="Striking Images From The Battle Of Iwo Jima 70th Anniversary Battle Of Iwo Jima Iwo Jima Iwo">
+										<div class="card-body">
+						<h3 class="h5"><b>Paramarines at San Diego were transferred to the 5th Marine Division which landed on Iwo Jima on February 19 1945.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Did the us army fight on iwo jima</strong>. 
+								
+																	Rather than defending the beaches Kuribayashi devised a defense that maximized enemy attrition. 
+																	The battle for Iwo Jima fought 70 years ago provided one of historys greatest examples of strong dedicated men laying down their lives for others. 
+																	Starting on 15 June 1944 the US. 
+																	The Battle of Iwo Jima 19 February 26 March 1945 was a major battle in which the United States Marine Corps and Navy landed on and eventually captured the island of Iwo Jima from the Imperial Japanese Army IJA during World War II. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Marine Corps Washington DC. 
+																	The United States Marines on Iwo Jima The Battle and the Flag Raisings by Bernard C. 
+																	General Tadamichi Kuribayashi the Japanese commander on Iwo Jima wasnt going to give up without a fight. 
+																	American forces invaded the island on February 19 1945 and the ensuing Battle of Iwo Jima lasted for five weeks. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In some of the bloodiest fighting of World War II its believed that all but 200. 
+																	He turned the island into a fortress with a vast network of pillboxes bunkers and fortified caves linked by trenches and 11 miles of underground tunnels. 
+																	The Battle of Iwo Jima was fought from February 19 to March 26 1945 during World War II 1939-1945. 
+																	Nalty and Danny J. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Battle of Iwo Jima February 19March 16 1945 World War II conflict between the United States and the Empire of Japan. 
+																	These would contain a combination of naval artillery shellings and aerial bombings that went on for nine months. 
+																	They were on Iwo Jima from March 1945 - September 1945. 
+																	Such devotion to duty is forever worthy of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Air Forces began naval bombardments and air raids against Iwo Jima which would become the longest and most intense in the Pacific theater. 
+																	The Battle of Iwo Jima 19 February 26 March 1945 was a major battle in which the United States Marine Corps landed on and eventually captured the island of Iwo Jima from the Imperial Japanese Army during World War II. 
+																	It was administered by the Tokyo metropolitan government. 
+																	During World War II the obscure islands were suddenly of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	John Basilone November 4 1916 February 19 1945 was a United States Marine Corps Gunnery Sergeant who received the Medal of Honor for heroism above and beyond the call of duty during the Battle for Henderson Field in the Guadalcanal Campaign and the Navy Cross posthumously for extraordinary heroism during the Battle of Iwo Jima. 
+																	To the US Iwo Jimas importance lay in its location midway between Japan and American bomber bases in the Marianas. 
+																	Crawford History and Museums Divison Headquarters US. 
+																	I know blacks fought honorably during WW2 but did they fight this particular battle that would make Spike Lee accusations true. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The US Armys 147th Regimental Combat Teams 1st 2nd and 3rd Battalions were involved in the battle. 
+																	Did black soldiers fight along side white soldiers on the island of Iwo Jima during WW2. 
+																	The United States mounted an amphibious invasion of the island of Iwo Jima as part of its Pacific campaign against Japan. 
+																	Located south and west of the midpoint between Tokyo and Saipan the island of Iwo Jima was needed by the United States Army Air Forces as an emergency landing site for its B-29 Superfortress strategic bombing campaign against the Empire of Japan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Battle of Iwo Jima On February 19 1945 American soldiers make their first strike on the Japanese Home Islands at Iwo Jima. 
+																	Iwo Jima was Japanese home soil part of Japan only 650 miles from Tokyo. 
+																	Hundreds of hidden artillery mortar machine gun and sniper positions were set up. 
+																	During the battle to take the island from the Japanese more than 70000 Marines and attached Army and Navy personnel set foot on Iwo Jima. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	That included combat soldiers but also medical corpsmen chaplains service and supply soldiers and others. 
+																	No foreign army in Japans 5000 year history had successfully trod on Japanese soil. 
+																	The US assault was preceded. 
+																	Navy and the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hayes assisted in the raising of the American flag on Mount Suribachi on 23 February 1945 depicted in Joe Rosenthal s iconic photograph. 
+																	The American plan of attack was made in anticipation of a standard defense. 
+																	In addition the US Army had on Iwo. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/12/c9/b912c994e4127476fa882112f0ad3516.jpg" data-lightbox="roadtrip" data-title="The Battle Of Iwo Jima Event Pictures And Information Fold3 Com Battle Of Iwo Jima Iwo Jima Military Records">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/12/c9/b912c994e4127476fa882112f0ad3516.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX3BkCsUeZewS4ZBOMC56ukMlCeBHgZYukwA';" alt="The Battle Of Iwo Jima Event Pictures And Information Fold3 Com Battle Of Iwo Jima Iwo Jima Military Records">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Battle Of Iwo Jima Event Pictures And Information Fold3 Com Battle Of Iwo Jima Iwo Jima Military Records</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/8c/33/ca8c3326cc3096824191933a030f9175.jpg" data-lightbox="roadtrip" data-title="Captain Price Officially Supported By A Battle Of Iwo Jima Iwo Jima Iwo Jima Today">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/8c/33/ca8c3326cc3096824191933a030f9175.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkpHJay24laAZiTfpQEfIGblMZjcGo400OjQ';" alt="Captain Price Officially Supported By A Battle Of Iwo Jima Iwo Jima Iwo Jima Today">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Captain Price Officially Supported By A Battle Of Iwo Jima Iwo Jima Iwo Jima Today</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/03/f5/f703f5a7d4637e9e5f13fbcc83d96861.jpg" data-lightbox="roadtrip" data-title="Iwo Jima Battle Of Iwo Jima Iwo Jima Flag Iwo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/03/f5/f703f5a7d4637e9e5f13fbcc83d96861.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqMORMH_toLKv4nYnzstHK30woVqiNG39mWg';" alt="Iwo Jima Battle Of Iwo Jima Iwo Jima Flag Iwo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iwo Jima Battle Of Iwo Jima Iwo Jima Flag Iwo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4d/12/4f/4d124f822f6f382dcfe47326cd5f3b5d.gif" data-lightbox="roadtrip" data-title="Pin On Military History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4d/12/4f/4d124f822f6f382dcfe47326cd5f3b5d.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjfWGwSB0kphMfc16su9t6YEvD4XjgvpMNEQ';" alt="Pin On Military History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/db/20/cfdb20dd6d8919e601384f0c91ea3cc0.jpg" data-lightbox="roadtrip" data-title="Pin On U S History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/db/20/cfdb20dd6d8919e601384f0c91ea3cc0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy2UQraXHkF50SIQ_TDDoLdhyt-9mFrm5WoA';" alt="Pin On U S History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On U S History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/e7/17/34/e717349b2081c98b8342911bca596953.jpg" data-lightbox="roadtrip" data-title="24 Iwo Jima War Memorial Vintagetopia Iwo Iwo Jima History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/e7/17/34/e717349b2081c98b8342911bca596953.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY2r0D0O4M-FaJhJzdAfFO4FABwc68Yu9FLg';" alt="24 Iwo Jima War Memorial Vintagetopia Iwo Iwo Jima History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">24 Iwo Jima War Memorial Vintagetopia Iwo Iwo Jima History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/c2/b4/1cc2b4ba2bf9e1b907cb0b6c098bd8bd.jpg" data-lightbox="roadtrip" data-title="A Company End Of Iwo Jima The 37 Survivors Out Of 228 Who Landed War Heroes Iwo Jima Wwii">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/c2/b4/1cc2b4ba2bf9e1b907cb0b6c098bd8bd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJWJub2ESYOnvcaoJiLLPHvxH7Dbi8VR9GRQ';" alt="A Company End Of Iwo Jima The 37 Survivors Out Of 228 Who Landed War Heroes Iwo Jima Wwii">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Company End Of Iwo Jima The 37 Survivors Out Of 228 Who Landed War Heroes Iwo Jima Wwii</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/28/86/e62886dc159f96487fd1ae67ab2346b1.jpg" data-lightbox="roadtrip" data-title="Korean War Wounded By Granger Battle Of Iwo Jima Iwo Jima Flag Iwo Jima">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/28/86/e62886dc159f96487fd1ae67ab2346b1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrEK0EuIGt7gYoD93DwLyOR0O1zHl1tyO4ow';" alt="Korean War Wounded By Granger Battle Of Iwo Jima Iwo Jima Flag Iwo Jima">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Korean War Wounded By Granger Battle Of Iwo Jima Iwo Jima Flag Iwo Jima</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/22/3e/a8223efdd25a7333ff2892224e9c99ae.jpg" data-lightbox="roadtrip" data-title="Marines During The First Flag Raising On Iwo Jima Courtesy Of Betty Michels Mcmahon Daughter Of Jimmy Michels One Of The Fi Battle Of Iwo Jima Iwo Jima Usmc">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/22/3e/a8223efdd25a7333ff2892224e9c99ae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-hr9JB0iRpLLzWgvgr7JIzKJPPKS0fdqbSQ';" alt="Marines During The First Flag Raising On Iwo Jima Courtesy Of Betty Michels Mcmahon Daughter Of Jimmy Michels One Of The Fi Battle Of Iwo Jima Iwo Jima Usmc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marines During The First Flag Raising On Iwo Jima Courtesy Of Betty Michels Mcmahon Daughter Of Jimmy Michels One Of The Fi Battle Of Iwo Jima Iwo Jima Usmc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/f9/bf/26f9bfc9c153150115fd5d242c9a2137.jpg" data-lightbox="roadtrip" data-title="24 Iwo Jima War Memorial Vintagetopia Battle Of Iwo Jima Iwo Jima Iwo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/f9/bf/26f9bfc9c153150115fd5d242c9a2137.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0NvIfEYZJqRlTT0eMXLMjf1UjnrKBH6nEw';" alt="24 Iwo Jima War Memorial Vintagetopia Battle Of Iwo Jima Iwo Jima Iwo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">24 Iwo Jima War Memorial Vintagetopia Battle Of Iwo Jima Iwo Jima Iwo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/7d/c5/a17dc5164e8f1cace86dd2a95fdbba6e.jpg" data-lightbox="roadtrip" data-title="Machtzumsieg Iwo Jima Iwo Battle Of Iwo Jima">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/7d/c5/a17dc5164e8f1cace86dd2a95fdbba6e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaLRS3IRLC91jsTMNg8yje3iN4861ny66jYA';" alt="Machtzumsieg Iwo Jima Iwo Battle Of Iwo Jima">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Machtzumsieg Iwo Jima Iwo Battle Of Iwo Jima</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/84/0a/00840a4875b51c250ecfec7359fb666b.jpg" data-lightbox="roadtrip" data-title="Pin On World War Ii Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/84/0a/00840a4875b51c250ecfec7359fb666b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIB6Qg6n38SwyoxZOr_BICBOUliE9NuC9xPQ';" alt="Pin On World War Ii Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On World War Ii Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/ca/3c/c8ca3c78f9ebb5db896eb610660d787e.jpg" data-lightbox="roadtrip" data-title="Pin On Ww2 Island Hopping">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/ca/3c/c8ca3c78f9ebb5db896eb610660d787e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu7p7NWSnbeI0UNlnBIYcXwSKN_i2RNAPY6w';" alt="Pin On Ww2 Island Hopping">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ww2 Island Hopping</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/us-army-jag-headquarters.html">Us Army Jag Headquarters</a></li>
+													<li class="list-group-item"><a href="/us-army-pacific-headquarters.html">Us Army Pacific Headquarters</a></li>
+													<li class="list-group-item"><a href="/us-army-personnel-in-afghanistan.html">Us Army Personnel In Afghanistan</a></li>
+													<li class="list-group-item"><a href="/us-army-personnel-directory.html">Us Army Personnel Directory</a></li>
+													<li class="list-group-item"><a href="/us-army-north-dock-yokohama.html">Us Army North Dock Yokohama</a></li>
+													<li class="list-group-item"><a href="/us-army-officer-jobs.html">Us Army Officer Jobs</a></li>
+													<li class="list-group-item"><a href="/us-army-naf-hr.html">Us Army Naf Hr</a></li>
+													<li class="list-group-item"><a href="/us-army-number-of-personnel.html">Us Army Number Of Personnel</a></li>
+													<li class="list-group-item"><a href="/us-army-national-guard-human-resources.html">Us Army National Guard Human Resources</a></li>
+													<li class="list-group-item"><a href="/us-army-national-guard-ranks.html">Us Army National Guard Ranks</a></li>
+													<li class="list-group-item"><a href="/us-army-medals-for-bravery.html">Us Army Medals For Bravery</a></li>
+													<li class="list-group-item"><a href="/us-army-officer-pay-scale.html">Us Army Officer Pay Scale</a></li>
+													<li class="list-group-item"><a href="/us-army-national-guard-headquarters.html">Us Army National Guard Headquarters</a></li>
+													<li class="list-group-item"><a href="/us-army-m37-hat.html">Us Army M37 Hat</a></li>
+													<li class="list-group-item"><a href="/us-army-personnel-management.html">Us Army Personnel Management</a></li>
+													<li class="list-group-item"><a href="/us-army-personnel-archives.html">Us Army Personnel Archives</a></li>
+													<li class="list-group-item"><a href="/us-army-officer-pay.html">Us Army Officer Pay</a></li>
+													<li class="list-group-item"><a href="/us-army-personnel-center-st-louis-mo.html">Us Army Personnel Center St Louis Mo</a></li>
+													<li class="list-group-item"><a href="/us-army-personnel-accountability-regulation.html">Us Army Personnel Accountability Regulation</a></li>
+													<li class="list-group-item"><a href="/us-army-main-office.html">Us Army Main Office</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

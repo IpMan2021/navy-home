@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Does Home Depot Give Military Discount On Appliances - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Does Home Depot Give Military Discount On Appliances",
+  "datePublished": "2021-02-13",
+  "image": "https://media2.s-nbcnews.com/j/newscms/2020_46/3427025/fingerprint-resistant-black-stainless-steel-samsung-french-door-refrigerators-rf28r7351sg-64-1000-5fa974844639b_114ee616deccff12795c1cb644289e7e.fit-720w.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navy Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=does+home+depot+give+military+discount+on+appliances",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="369f3ff97a5fa796" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Navy Home" class="navbar-brand mb-1">Navy Home</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Does Home Depot Give Military Discount On Appliances</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">While weve gotten a lot of feedback from visitors apparently Home Depot offers a 10 off discount to active duty military. Home Depot here does not give the military discount on appliances. Because the Home Depot does not post an official military discount policy online or in their stores its often misinterpreted by managers and cashiers. <br>				
+			</p>
+										<a class="badge badge-light" href="/department-of-the-army-information-security-program.html">department of the army information security program</a>
+											<a class="badge badge-primary" href="/department-of-the-army-kaiserslautern.html">department of the army kaiserslautern</a>
+											<a class="badge badge-warning" href="/department-of-the-army-office-of-general-counsel.html">department of the army office of general counsel</a>
+											<a class="badge badge-light" href="/department-of-the-army-government-purchase-card-operating-procedures.html">department of the army government purchase card operating procedures</a>
+											<a class="badge badge-success" href="/department-of-the-army-jobs-vacancies.html">department of the army jobs vacancies</a>
+											<a class="badge badge-primary" href="/department-of-the-army-letterhead-fillable.html">department of the army letterhead fillable</a>
+											<a class="badge badge-primary" href="/department-of-the-army-orders.html">department of the army orders</a>
+											<a class="badge badge-success" href="/department-of-the-army-pathways-intern-program.html">department of the army pathways intern program</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to pay a visit to the right site.  Our website provides you with suggestions for seeing the maximum quality video and picture content, hunt and locate more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie that you view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://p4t6u7k5.stackpathcdn.com/wp-content/uploads/The-Home-Depot-Appliance-Return-Policy-Featured-Image.jpg" data-lightbox="roadtrip" data-title="The Home Depot Appliance Return Policy Used Time Limit Damaged Etc First Quarter Finance">
+											<img class="card-img v-image ads-img " src="https://p4t6u7k5.stackpathcdn.com/wp-content/uploads/The-Home-Depot-Appliance-Return-Policy-Featured-Image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3If9gPOnHD9c8inoC6ftS1Qn7ZfEJvLQCSQ';" alt="The Home Depot Appliance Return Policy Used Time Limit Damaged Etc First Quarter Finance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Home Depot Appliance Return Policy Used Time Limit Damaged Etc First Quarter Finance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.mos.cms.futurecdn.net/25BJEhTaA89vuPVHd4eX6n-1200-80.jpg" data-lightbox="roadtrip" data-title="Home Depot Black Friday Deals 2020 The Best Deals For Your Home At The Lowest Prices Of The Season Techradar">
+											<img class="card-img v-image ads-img " src="https://cdn.mos.cms.futurecdn.net/25BJEhTaA89vuPVHd4eX6n-1200-80.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSIjMgXTfSRrGGodcsOqfF-9tTX37Hy_5rLA';" alt="Home Depot Black Friday Deals 2020 The Best Deals For Your Home At The Lowest Prices Of The Season Techradar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Depot Black Friday Deals 2020 The Best Deals For Your Home At The Lowest Prices Of The Season Techradar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://themilitarywallet.com/wp-content/uploads/2013/03/home-depot-lowes-military-discounts-getstencil-580x387.jpg" data-lightbox="roadtrip" data-title="Home Depot And Lowe S 10 Military Discount Policy Year Round">
+											<img class="card-img v-image ads-img " src="https://themilitarywallet.com/wp-content/uploads/2013/03/home-depot-lowes-military-discounts-getstencil-580x387.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZrShnvdGHkCp3InxjCzOcUg0FVR5gD8Ddyg';" alt="Home Depot And Lowe S 10 Military Discount Policy Year Round">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Depot And Lowe S 10 Military Discount Policy Year Round</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/7a/71/117a716dfa26a53741eac72ffbe26f2b.jpg" data-lightbox="roadtrip" data-title="15 Off Home Depot Promo Code October 2020 50 Off 250 Discount Coupon Reddit In 2020 Home Depot Coupons Home Depot Home Depot Online">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/7a/71/117a716dfa26a53741eac72ffbe26f2b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ144e_93BtMqSJdTUPas5ZNzXF9lLEni-FWA';" alt="15 Off Home Depot Promo Code October 2020 50 Off 250 Discount Coupon Reddit In 2020 Home Depot Coupons Home Depot Home Depot Online">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">15 Off Home Depot Promo Code October 2020 50 Off 250 Discount Coupon Reddit In 2020 Home Depot Coupons Home Depot Home Depot Online</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b6/d6/5f/b6d65fd3b1a87deaf6d191f2c68b98c1.jpg" data-lightbox="roadtrip" data-title="Home Depot Online Promo Code Home Depot Moving Coupon Home Depot Promo Code Generator Home Depot Ap Home Depot Coupons Home Depot Sales Home Depot Online">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b6/d6/5f/b6d65fd3b1a87deaf6d191f2c68b98c1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZvnRr__7HzlLySXGAadAz7RuXFJkpfCmT5A';" alt="Home Depot Online Promo Code Home Depot Moving Coupon Home Depot Promo Code Generator Home Depot Ap Home Depot Coupons Home Depot Sales Home Depot Online">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Depot Online Promo Code Home Depot Moving Coupon Home Depot Promo Code Generator Home Depot Ap Home Depot Coupons Home Depot Sales Home Depot Online</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/ff/66/65ff66e3fff2caf5b084d60ef1d0bc48.jpg" data-lightbox="roadtrip" data-title="Kitchen Appliance Packages The Home Depot Kitchen Appliance Packages Kitchen Appliances Lg French Door Refrigerator">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/ff/66/65ff66e3fff2caf5b084d60ef1d0bc48.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNRYxyGhaeJcJzvWq2PTbCO70U0gxDMORyFw';" alt="Kitchen Appliance Packages The Home Depot Kitchen Appliance Packages Kitchen Appliances Lg French Door Refrigerator">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kitchen Appliance Packages The Home Depot Kitchen Appliance Packages Kitchen Appliances Lg French Door Refrigerator</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://cdn.mos.cms.futurecdn.net/25BJEhTaA89vuPVHd4eX6n-1200-80.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNRYxyGhaeJcJzvWq2PTbCO70U0gxDMORyFw';" alt="Kitchen Appliance Packages The Home Depot Kitchen Appliance Packages Kitchen Appliances Lg French Door Refrigerator">
+										<div class="card-body">
+						<h3 class="h5"><b>So went across the street to Lowes and they do.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Does home depot give military discount on appliances</strong>. 
+								
+																	Nice to get a 10 discount on a pricey refrigerator. 
+																	It is available at Home Depot before you confirm the shopping cart Expires. 
+																	Unfortunately they dont do a very good job of explaining the exact terms and conditions of the military discount anywhere on their website. 
+																	This is given as a form of gratitude and appreciation for all veterans services. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The retailer offers several exclusive brands such as Behr paint Chem-Dry carpet cleaning products and American Woodmark cabinetry as well as in-house brands such as. 
+																	Military personnel will receive a 10 discount off their purchase at checkout up to 40 cash back. 
+																	Absolutely It supports military discount. 
+																	However the Home Depot Veterans Discount 2017 was discontinued effectively. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	While Home Depot only gives it for random in store items now. 
+																	Home Depot offers a 10 OFF military discount on regularly priced merchandise for in-store purchases for active duty retired military and reservists at participating locations. 
+																	To claim this discount all you have to do is show your valid Military ID to the cashier at checkout. 
+																	No Military Discount is given on-line. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Home Depot does offer a discount for those in the military. 
+																	Those with a. 
+																	Home Depots 10 discount is applicable to purchases with a 500 maximum discount. 
+																	Historically Home Depot offered a 10 discount to veterans and military members on holidays like the 4th July Veterans Day and Memorial Day. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This leads to a lot of confusion and frustration among veterans and active military members. 
+																	Also Lowes gives the discount for online and in store purchases. 
+																	The discount is not available for online purchases. 
+																	So as to gain great benefits people had better use the wonderfuk promotion - Up to 60 OFF Off Your Next Purchase With 10 Off Home Depot Military Discount. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Home Depot is a home improvement supplies store that sells construction products power tools plants and other services. 
+																	There are some exclusions including installation products or services Gift Cards special buy appliances and some commodities such as building materials. 
+																	Lowes offers a 10 off discount to all active duty members of the military as well as their. 
+																	Guess where I will be making my purchase. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Home depot offers a 10 off military discount for in store items for active duty retired military guard and reserve every day of the year and for veterans on veterans day memorial day and the 4th of july only. 
+																	Tell me all you want Home Depot about supporting military and veterans but this insanity says otherwise. 
+																	If an item is on sale one additional discount may apply such as a coupon 10 off offer or military discount however during our promotions where a blanket 10 is offered on all merchandise such as appliances during the recent Memorial Day Event no additional discount will apply since an additional 10 has already been taken off. 
+																	The home depot does not have a senior discount but it does offer other ways to save from rebates to price match guarantees. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Home Depot honors the military with a 10 veterans discount as well as various holiday promotions. 
+																	I did have to wait a day or two for delivery of the refrigerator. 
+																	February 28 2021 852 used. 
+																	According to their website Home Depot offers a 10 off military discount on regularly priced items for in-store purchases for active duty retired military National Guard and Reserve at participating locations with government military ID card. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	According to their website Home Depot offers a 10 off military discount on regularly priced items for in-store purchases for active duty retired military National Guard and Reserve at participating locations with government military ID card. 
+																	Those days include the following. 
+																	Members of the military and veterans in the market for appliances like refrigerators dryers washing machines coffeemakers microwaves gas and electric stove rangers and more can simply go to ShopIDme and find dozens upon dozens of exclusive military discounts on all of these house-improving devices. 
+																	Customers are required to show a valid government-issued military ID card to redeem this offer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Home Depot you need to step up. 
+																	Lowes has the exact same item on-line for a tad more but will price match Home Depot and give a Military Discount of 10. 
+																	1 days ago Home Depot does offer a discount for those in the military. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/ec/f2/7aecf2068668833f7c8b038987c4c1ef.png" data-lightbox="roadtrip" data-title="Build Basic Home Depot Coupons Home Depot Home Depot Canada">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/ec/f2/7aecf2068668833f7c8b038987c4c1ef.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTla_DKlPAyMohq-wn5bNaU3OLOOxhh9pr4BQ';" alt="Build Basic Home Depot Coupons Home Depot Home Depot Canada">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Build Basic Home Depot Coupons Home Depot Home Depot Canada</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/17/3c/f9173c17d87f8874eecd16edbd08c380.jpg" data-lightbox="roadtrip" data-title="Summit Appliance 39 In Compact Kitchen In White C39elglass The Home Depot Compact Kitchen Small Kitchenette Kitchen Design Small">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/17/3c/f9173c17d87f8874eecd16edbd08c380.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTATuZHjz-Yrw3O44o_w_aeUu5D34nb2A-Lng';" alt="Summit Appliance 39 In Compact Kitchen In White C39elglass The Home Depot Compact Kitchen Small Kitchenette Kitchen Design Small">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Summit Appliance 39 In Compact Kitchen In White C39elglass The Home Depot Compact Kitchen Small Kitchenette Kitchen Design Small</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://prod-cdn-thekrazycouponlady.imgix.net/wp-content/uploads/2019/01/home-depot-kitchen-2019-1547254656.jpg?auto=compress,format&amp;fit=max" data-lightbox="roadtrip" data-title="12 Home Depot Discounts That Will Save You Hundreds On Your Home Remodel The Krazy Coupon Lady">
+											<img class="card-img v-image ads-img " src="https://prod-cdn-thekrazycouponlady.imgix.net/wp-content/uploads/2019/01/home-depot-kitchen-2019-1547254656.jpg?auto=compress,format&amp;fit=max" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0LmmvoAaIJUZlD3hQAC_CGfv2yWIpHX6MUA';" alt="12 Home Depot Discounts That Will Save You Hundreds On Your Home Remodel The Krazy Coupon Lady">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">12 Home Depot Discounts That Will Save You Hundreds On Your Home Remodel The Krazy Coupon Lady</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/4d/26/d14d26999097bf7e38f65f32e350cad3.jpg" data-lightbox="roadtrip" data-title="Kitchen Appliance Packages Home Depot Kitchen Kitchen Appliances Kitchen Electrical Appliances">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/4d/26/d14d26999097bf7e38f65f32e350cad3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLd-fl4S8G58BC0ApV2AzOSWnOuyyExOD2IQ';" alt="Kitchen Appliance Packages Home Depot Kitchen Kitchen Appliances Kitchen Electrical Appliances">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kitchen Appliance Packages Home Depot Kitchen Kitchen Appliances Kitchen Electrical Appliances</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/00/13/eb/0013eb25426220d47cd5b5ed092066cc.jpg" data-lightbox="roadtrip" data-title="30 Off Home Depot Coupons Promo Codes July 2019 Home Depot Coupons Home Depot Online Home Depot Flooring">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/00/13/eb/0013eb25426220d47cd5b5ed092066cc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjZLPO_Y7pAFU1X6ukDlLMpL1LJVlYR0kgDg';" alt="30 Off Home Depot Coupons Promo Codes July 2019 Home Depot Coupons Home Depot Online Home Depot Flooring">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">30 Off Home Depot Coupons Promo Codes July 2019 Home Depot Coupons Home Depot Online Home Depot Flooring</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://slickdeals.net/blog/wp-content/uploads/2019/06/Home-Depot-July-4-hero-1.jpg" data-lightbox="roadtrip" data-title="Save Up To 40 During Home Depot S July 4th Sale">
+											<img class="card-img v-image ads-img " src="https://slickdeals.net/blog/wp-content/uploads/2019/06/Home-Depot-July-4-hero-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDi9NVeItw2_-pTBht2QlT9JAhRVdcHhwrPQ';" alt="Save Up To 40 During Home Depot S July 4th Sale">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Save Up To 40 During Home Depot S July 4th Sale</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://contentgrid.homedepot-static.com/hdus/en_US/DTCCOMNEW/fetch/FetchRules/Partial/D29a-BAU-Microwaves-Hero-Adapt-Rev2.png" data-lightbox="roadtrip" data-title="Microwaves At The Home Depot">
+											<img class="card-img v-image ads-img " src="https://contentgrid.homedepot-static.com/hdus/en_US/DTCCOMNEW/fetch/FetchRules/Partial/D29a-BAU-Microwaves-Hero-Adapt-Rev2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREABWxG9rWgl39JMNX-O7TWQUKUHODJCZCGQ';" alt="Microwaves At The Home Depot">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Microwaves At The Home Depot</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/xhqpJZConhA/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Here S Real Deal Home Depot Lowes Appliance Discounts Rebates Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/xhqpJZConhA/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs1wecLM0-b_blhltJ1pv8_TqKuaAVg7k1Cg';" alt="Here S Real Deal Home Depot Lowes Appliance Discounts Rebates Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here S Real Deal Home Depot Lowes Appliance Discounts Rebates Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/96/7a/9b/967a9b6270bb213496bb583e1c621c9a.jpg" data-lightbox="roadtrip" data-title="Does Home Depot Repair Appliances Homeappliancesandelectronics Id 1427243925 Homeappliancesofferinchennai In 2020 Building Blocks Toys Building Blocks Toys">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/96/7a/9b/967a9b6270bb213496bb583e1c621c9a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuVQWfba8ktLkTYk5zkZuYzIzxKOzBC7N2pw';" alt="Does Home Depot Repair Appliances Homeappliancesandelectronics Id 1427243925 Homeappliancesofferinchennai In 2020 Building Blocks Toys Building Blocks Toys">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Does Home Depot Repair Appliances Homeappliancesandelectronics Id 1427243925 Homeappliancesofferinchennai In 2020 Building Blocks Toys Building Blocks Toys</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/6f/26/1b6f261f135d623b91cf0a873d5676b2.jpg" data-lightbox="roadtrip" data-title="Home Depot Black Friday 2017 Ads And Deals As Usual Home Depot Is One Of The Best Black Friday Sales For Huge Discounts On Major Appliances Home Improvement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/6f/26/1b6f261f135d623b91cf0a873d5676b2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWQ06I9CaGNfPCVOYVSGye19gTFN4Zs3vxPg';" alt="Home Depot Black Friday 2017 Ads And Deals As Usual Home Depot Is One Of The Best Black Friday Sales For Huge Discounts On Major Appliances Home Improvement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Depot Black Friday 2017 Ads And Deals As Usual Home Depot Is One Of The Best Black Friday Sales For Huge Discounts On Major Appliances Home Improvement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mma.prnewswire.com/media/1308936/Home_Depot_2020_Innovation_Award_Winners.jpg?p=twitter" data-lightbox="roadtrip" data-title="The Home Depot Announces 2020 Innovation Award Winners">
+											<img class="card-img v-image ads-img " src="https://mma.prnewswire.com/media/1308936/Home_Depot_2020_Innovation_Award_Winners.jpg?p=twitter" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDmIaLsnaL8BKwtVHN_a0MbvEpnlShzrR3rQ';" alt="The Home Depot Announces 2020 Innovation Award Winners">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Home Depot Announces 2020 Innovation Award Winners</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media2.s-nbcnews.com/j/newscms/2020_46/3427025/fingerprint-resistant-black-stainless-steel-samsung-french-door-refrigerators-rf28r7351sg-64-1000-5fa974844639b_114ee616deccff12795c1cb644289e7e.fit-720w.jpg" data-lightbox="roadtrip" data-title="Home Depot Black Friday 2020 Best Home Depot Deals And Sales">
+											<img class="card-img v-image ads-img " src="https://media2.s-nbcnews.com/j/newscms/2020_46/3427025/fingerprint-resistant-black-stainless-steel-samsung-french-door-refrigerators-rf28r7351sg-64-1000-5fa974844639b_114ee616deccff12795c1cb644289e7e.fit-720w.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRepfYvCdZpgnKKDVUOw0S1F6QJ_AhsKTD9jA';" alt="Home Depot Black Friday 2020 Best Home Depot Deals And Sales">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Depot Black Friday 2020 Best Home Depot Deals And Sales</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i2.wp.com/www.operationmilitarykids.org/wp-content/uploads/2019/05/home-depot-military-discount.png?fit=600%2C411&amp;ssl=1" data-lightbox="roadtrip" data-title="Home Depot Military Discount Updated 2020 Veterans Day">
+											<img class="card-img v-image ads-img " src="https://i2.wp.com/www.operationmilitarykids.org/wp-content/uploads/2019/05/home-depot-military-discount.png?fit=600%2C411&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwNSlAS9k-Nh-gnrDLw15maQhfEbQqsBCafw';" alt="Home Depot Military Discount Updated 2020 Veterans Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Depot Military Discount Updated 2020 Veterans Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/home-depot-military-discount-labor-day.html">Home Depot Military Discount Labor Day</a></li>
+													<li class="list-group-item"><a href="/headquarters-department-of-the-army-hqda.html">Headquarters Department Of The Army Hqda</a></li>
+													<li class="list-group-item"><a href="/home-depot-military-discount-appliances.html">Home Depot Military Discount Appliances</a></li>
+													<li class="list-group-item"><a href="/home-depot-military-discount-policy.html">Home Depot Military Discount Policy</a></li>
+													<li class="list-group-item"><a href="/home-depot-military-discount-application.html">Home Depot Military Discount Application</a></li>
+													<li class="list-group-item"><a href="/heron-preston-nike-air-force-1.html">Heron Preston Nike Air Force 1</a></li>
+													<li class="list-group-item"><a href="/home-depot-no-military-discount.html">Home Depot No Military Discount</a></li>
+													<li class="list-group-item"><a href="/home-depot-military-discount-for-appliances.html">Home Depot Military Discount For Appliances</a></li>
+													<li class="list-group-item"><a href="/home-depot-military-discount-registration.html">Home Depot Military Discount Registration</a></li>
+													<li class="list-group-item"><a href="/home-depot-military-discount-discontinued.html">Home Depot Military Discount Discontinued</a></li>
+													<li class="list-group-item"><a href="/headquarters-department-of-the-army-structure.html">Headquarters Department Of The Army Structure</a></li>
+													<li class="list-group-item"><a href="/headquarters-department-of-the-army-and-direct-reporting-units.html">Headquarters Department Of The Army And Direct Reporting Units</a></li>
+													<li class="list-group-item"><a href="/home-depot-military-discount-coupon.html">Home Depot Military Discount Coupon</a></li>
+													<li class="list-group-item"><a href="/home-depot-military-discount-available-online.html">Home Depot Military Discount Available Online</a></li>
+													<li class="list-group-item"><a href="/home-depot-military-discount-for-spouses.html">Home Depot Military Discount For Spouses</a></li>
+													<li class="list-group-item"><a href="/home-depot-military-discount-maximum.html">Home Depot Military Discount Maximum</a></li>
+													<li class="list-group-item"><a href="/hire-vets-medallion-program-application.html">Hire Vets Medallion Program Application</a></li>
+													<li class="list-group-item"><a href="/home-depot-military-discount-veterans-day.html">Home Depot Military Discount Veterans Day</a></li>
+													<li class="list-group-item"><a href="/hiring-our-heroes-travis-air-force-base.html">Hiring Our Heroes Travis Air Force Base</a></li>
+													<li class="list-group-item"><a href="/home-depot-guam-military-discount.html">Home Depot Guam Military Discount</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>
